@@ -1,0 +1,165 @@
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794239431.582943    9052 litert_lm_loader.cc:550] TFLite model type: tf_lite_vision_encoder not found for prefer activation type. Use system's default backend activation type. System's default activation type for Text decoder is fp16. Vision encoder and audio encoder default is fp32.
+W0000 00:00:1794239431.583891    9052 litert_lm_loader.cc:532] TFLite model type: tf_lite_vision_encoder not found for backend constraints. Skipping.
+W0000 00:00:1794239431.583323   22204 litert_lm_loader.cc:407] Section not found: SP_Tokenizer
+W0000 00:00:1794239431.587408   22204 litert_lm_loader.cc:407] Section not found: SP_Tokenizer
+W0000 00:00:1794239431.587517   22204 litert_lm_loader.cc:407] Section not found: HF_Tokenizer_Zlib
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001A01414F2E0, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001A01414EB60, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001A01416C6F0, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001A01416C510, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+INFO: [delegate_webgpu.cc:349] Create WebGPU environment (use_low_power=0, enable_host_mapped_pointer=1)
+I0000 00:00:1794239433.024763    9052 environment.cc:570] Selected adapter: NVIDIA GeForce RTX 5080 Laptop GPU, arch=blackwell, vendor=nvidia, backend=Direct3D 12, adapterType=Discrete GPU
+INFO: [delegate_webgpu.cc:370] Created a WebGPU environment.
+INFO: [environment.cc:47] Adding options to the existing LiteRT environment
+INFO: [gpu_environment.cc:459] Failed to create OpenCL context.
+INFO: [gpu_environment.h:155] Created LiteRT GpuEnvironment.
+INFO: [environment.cc:47] Adding options to the existing LiteRT environment
+I0000 00:00:1794239433.116423    9052 delegate_webgpu.cc:758] # of threads to upload weights = 2
+I0000 00:00:1794239433.116576    9052 delegate_webgpu.cc:766] # of threads to compile kernels = 1
+I0000 00:00:1794239438.171655    9052 delegate_kernel.cc:360] Total 112 external tensors are used for delegate inputs and outputs
+I0000 00:00:1794239438.171896    9052 delegate_kernel.cc:1015] Initializing WebGPU-based API from serialized data.
+I0000 00:00:1794239439.851055    9052 delegate_kernel.cc:360] Total 113 external tensors are used for delegate inputs and outputs
+I0000 00:00:1794239439.852824    9052 delegate_kernel.cc:1015] Initializing WebGPU-based API from serialized data.
+W0000 00:00:1794239439.976521    9052 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794239439.976681    9052 litert_lm_loader.cc:497] TFLite model for type: tf_lite_end_of_audio not found. Skipping.
+W0000 00:00:1794239439.976764    9052 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794239439.976833    9052 litert_lm_loader.cc:497] TFLite model for type: tf_lite_end_of_vision not found. Skipping.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1794239439.995112    9052 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794239439.995265    9052 litert_lm_loader.cc:497] TFLite model for type: tf_lite_per_layer_embedder not found. Skipping.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001A022AC4590, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001A022AC5850, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+W0000 00:00:1794239440.020276    9052 litert_lm_loader.cc:550] TFLite model type: tf_lite_vision_encoder not found for prefer activation type. Use system's default backend activation type. System's default activation type for Text decoder is fp16. Vision encoder and audio encoder default is fp32.
+W0000 00:00:1794239440.020457    9052 litert_lm_loader.cc:532] TFLite model type: tf_lite_vision_encoder not found for backend constraints. Skipping.
+W0000 00:00:1794239440.038026    9052 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794239440.038218    9052 litert_lm_loader.cc:497] TFLite model for type: tf_lite_audio_adapter not found. Skipping.
+W0000 00:00:1794239440.038300    9052 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794239440.038365    9052 litert_lm_loader.cc:497] TFLite model for type: tf_lite_audio_adapter not found. Skipping.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+E0000 00:00:1794239448.798472   22568 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239448.798994   22568 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239448.804232   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239448.804508   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239468.862685   34680 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239468.867271   34680 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239468.901575   34680 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239468.902882   34680 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239468.904012   34680 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239468.907836   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239468.908359   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239468.908486   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239468.908563   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239468.908810   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239596.945700   19508 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239596.986654   19508 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239596.987109   19508 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239596.991590   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239596.991820   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239596.991901   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239599.174266    2436 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239599.216497    2436 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239599.221595   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239599.221936   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239615.012795   16312 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239615.055654   16312 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239615.055972   16312 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239615.056210   16312 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239615.056428   16312 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239615.060282   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239615.060487   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239615.060581   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239615.060666   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239615.060754   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239636.061967   26012 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239636.104373   26012 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239636.104666   26012 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239636.104890   26012 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239636.105110   26012 environment.cc:106] Validation error: [Buffer (unlabeled)] usage (Storage(read-write)|Storage(read-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794239636.109706   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239636.109963   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239636.110190   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239636.110464   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794239636.110547   30252 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=000001A022AC4590, name=GPU WebGPU
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=000001A022AC5850, name=CpuAccelerator

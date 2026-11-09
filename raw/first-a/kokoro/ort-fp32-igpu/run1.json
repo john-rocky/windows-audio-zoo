@@ -1,0 +1,47 @@
+{
+ "runner": "run_tts_ort.py",
+ "started": "2026-11-09T15:10:46.528806+09:00",
+ "argv": [
+  "--model",
+  "C:\\src\\audiozoo\\models\\onnx-community__Kokoro-82M-v1.0-ONNX\\onnx\\model.onnx",
+  "--voice-bin",
+  "C:\\src\\audiozoo\\models\\onnx-community__Kokoro-82M-v1.0-ONNX\\voices\\af_heart.bin",
+  "--ep",
+  "openvino",
+  "--ov-device",
+  "GPU",
+  "--set",
+  "T50",
+  "--fixtures",
+  "C:\\src\\audiozoo\\fixtures",
+  "--first",
+  "10",
+  "--out",
+  "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ort-fp32-igpu\\run1.json"
+ ],
+ "pid": 23004,
+ "status": "ERROR",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.004
+ },
+ "rows": [],
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime": "1.31.1",
+  "onnxruntime-ep-openvino": "1.8.1",
+  "onnxruntime-ep-webgpu": "0.5.0",
+  "kokoro-onnx": "0.6.1",
+  "espeakng-loader": "0.2.4",
+  "phonemizer": "3.6.0",
+  "numpy": "2.5.4"
+ },
+ "cuda_dll_dirs": [],
+ "error": "Traceback (most recent call last):\n  File \"C:\\src\\audiozoo\\pc\\run_tts_ort.py\", line 51, in main\n    sess = device_session(ort, args.model, args, args.ep, dev)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\src\\audiozoo\\pc\\run_asr_ort_parakeet.py\", line 49, in device_session\n    return ort.InferenceSession(path, sess_options=so)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\src\\audiozoo\\.venv-ort\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 683, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"C:\\src\\audiozoo\\.venv-ort\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 789, in _create_inference_session\n    sess.initialize_session(providers, provider_options, disabled_optimizers)\nonnxruntime.capi.onnxruntime_pybind11_state.EPFail: [ONNXRuntimeError] : 11 : EP_FAIL : Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nCheck 'inputRank == 2 || inputRank == 4 || inputRank == 5' failed at src\\plugins\\intel_gpu\\src\\plugin\\ops\\interpolate.cpp:37:\nMode 'linear_onnx' supports only 2D or 4D, 5D tensors\n\n\n\n",
+ "peak_working_set_bytes": 1053470720,
+ "peak_pagefile_bytes": 1442582528,
+ "ended": "2026-11-09T15:10:53.109866+09:00",
+ "process_s": 6.581
+}

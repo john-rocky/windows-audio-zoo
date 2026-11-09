@@ -1,0 +1,24 @@
+{
+    "known_rtf":  0.26535,
+    "known_from":  "this sitting\u0027s head (3 runs, spread 1.6 %)",
+    "head":  [
+                 0.26342,
+                 0.26777,
+                 0.26535
+             ],
+    "tail":  [
+                 0.25861
+             ],
+    "verdict":  "PASS (tail off 2.5 %)",
+    "left_cells":  [
+                       "qwen3asr/litertlm-cpu",
+                       "whisper/genai-fp32-cpu",
+                       "whisper/ovg-int8-cpu",
+                       "qwen3asr/ovg-int8-cpu",
+                       "whisper/ovg-fp16-cpu",
+                       "whisper/ovg-int4-cpu",
+                       "qwen3asr/ovg-fp16-cpu",
+                       "granite/litertlm-cpu"
+                   ],
+    "end_by":  "2026-11-09T21:05:00+09:00"
+}

@@ -1,0 +1,46 @@
+{
+ "cell": "kokoro/ort-fp32-npu",
+ "model": "kokoro",
+ "runtime": "ONNX Runtime 1.31.1",
+ "form": "fp32",
+ "device": "npu",
+ "device_name": "Intel NPU",
+ "set": null,
+ "mode": "first",
+ "sitting": "first-an",
+ "status": "CRASH",
+ "record": {
+  "run": null,
+  "meta": "raw/first-an/kokoro/ort-fp32-npu/run1.meta.json",
+  "chain_log": "raw/first-an/chain.log"
+ },
+ "error": "no runner JSON: exit 0xC0000005 after 22 s",
+ "versions": null,
+ "load_s": null,
+ "summary": null,
+ "gate": null,
+ "power": null,
+ "desktop_locked": null,
+ "engine": {
+  "elapsedSeconds": 22.297,
+  "peakWorkingSetBytes": 1035468800,
+  "gpuMiBPeak": {
+   "0x00000000_0x00012C48": {
+    "shared": 0,
+    "dedicated": 0
+   },
+   "0x00000000_0x0001260E": {
+    "shared": 23,
+    "dedicated": 0
+   },
+   "0x00000000_0x00013E4C": {
+    "shared": 0,
+    "dedicated": 0
+   }
+  },
+  "exitCode": -1073741819,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1
+}

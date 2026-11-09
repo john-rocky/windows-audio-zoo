@@ -1,0 +1,5 @@
+curl: (56) schannel: server closed abruptly (missing close_notify)
+curl: (56) schannel: server closed abruptly (missing close_notify)
+curl: (56) schannel: server closed abruptly (missing close_notify)
+curl: (56) schannel: server closed abruptly (missing close_notify)
+curl: (28) Operation too slow. Less than 102400 bytes/sec transferred the last 60 seconds

@@ -1,0 +1,105 @@
+{
+    "cell":  "whisper/genai-fp32-cpu",
+    "device":  "cpu",
+    "role":  null,
+    "run":  1,
+    "mode":  "first",
+    "sitting":  "first-a",
+    "start":  "2026-11-09T13:54:05.4256418+09:00",
+    "osBuild":  "26200.9711",
+    "gate":  null,
+    "before":  {
+                   "load":  {
+                                "cpu":  36.7,
+                                "build_ms":  0,
+                                "top":  [
+                                            "python 6036 2.38 core",
+                                            "python 29492 1.59 core",
+                                            "python 21952 1.21 core",
+                                            "System 4 0.33 core",
+                                            "MsMpEng 5548 0.11 core"
+                                        ]
+                            },
+                   "nvidia":  "P4, 1785 MHz, 9001 MHz, 65.49 W, 43 %, 2542 MiB, 65",
+                   "availGB":  14.8
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-genai\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_asr_genai.py --model-dir C:\\src\\audiozoo\\exports\\whisper-genai-fp32-cpu --ep cpu --set S150 --fixtures C:\\src\\audiozoo\\fixtures --first 10 --out C:\\src\\audiozoo\\runs\\first-a\\whisper\\genai-fp32-cpu\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  27756,
+                   "elapsedSeconds":  240.239,
+                   "peakWorkingSetBytes":  3906179072,
+                   "gpuMiBPeak":  {
+
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P5, 1747 MHz, 810 MHz, 48.97 W, 33 %, 2548 MiB, 66",
+                                         "10s P2, 1950 MHz, 11001 MHz, 38.20 W, 38 %, 2500 MiB, 65",
+                                         "15s P4, 1837 MHz, 9001 MHz, 30.20 W, 33 %, 2538 MiB, 66",
+                                         "20s P2, 1507 MHz, 11001 MHz, 70.62 W, 1 %, 2750 MiB, 66",
+                                         "25s P4, 2317 MHz, 9001 MHz, 65.54 W, 43 %, 2546 MiB, 66",
+                                         "30s P5, 1725 MHz, 810 MHz, 51.54 W, 65 %, 2544 MiB, 66",
+                                         "35s P4, 540 MHz, 9001 MHz, 45.82 W, 46 %, 2544 MiB, 64",
+                                         "40s P2, 2002 MHz, 11001 MHz, 47.47 W, 0 %, 2524 MiB, 64",
+                                         "45s P4, 1537 MHz, 9001 MHz, 36.68 W, 7 %, 2704 MiB, 65",
+                                         "50s P4, 1380 MHz, 9001 MHz, 34.94 W, 25 %, 2544 MiB, 63",
+                                         "55s P5, 1282 MHz, 810 MHz, 56.82 W, 85 %, 2576 MiB, 68",
+                                         "60s P4, 2077 MHz, 9001 MHz, 41.41 W, 2 %, 2542 MiB, 64",
+                                         "65s P4, 1702 MHz, 9001 MHz, 88.10 W, 85 %, 2538 MiB, 70",
+                                         "70s P4, 1095 MHz, 9001 MHz, 17.12 W, 0 %, 2536 MiB, 64",
+                                         "75s P2, 1725 MHz, 11001 MHz, 36.55 W, 30 %, 2640 MiB, 68",
+                                         "80s P4, 1612 MHz, 9001 MHz, 56.44 W, 40 %, 2562 MiB, 66",
+                                         "86s P2, 2070 MHz, 11001 MHz, 51.96 W, 46 %, 2562 MiB, 65",
+                                         "90s P4, 1972 MHz, 9001 MHz, 63.33 W, 40 %, 2558 MiB, 67",
+                                         "95s P2, 2302 MHz, 11001 MHz, 57.09 W, 40 %, 2558 MiB, 67",
+                                         "100s P4, 1537 MHz, 9001 MHz, 56.39 W, 63 %, 2796 MiB, 68",
+                                         "105s P4, 180 MHz, 9001 MHz, 26.67 W, 12 %, 2572 MiB, 64",
+                                         "110s P2, 2070 MHz, 11001 MHz, 71.05 W, 27 %, 2602 MiB, 67",
+                                         "115s P4, 1965 MHz, 9001 MHz, 45.22 W, 34 %, 2566 MiB, 66",
+                                         "120s P4, 1860 MHz, 9001 MHz, 41.69 W, 25 %, 2570 MiB, 67",
+                                         "125s P0, 2310 MHz, 14001 MHz, 68.64 W, 37 %, 2570 MiB, 68",
+                                         "130s P4, 2145 MHz, 9001 MHz, 73.48 W, 96 %, 2708 MiB, 72",
+                                         "135s P4, 2632 MHz, 9001 MHz, 30.84 W, 10 %, 2682 MiB, 68",
+                                         "140s P4, 1867 MHz, 9001 MHz, 47.30 W, 10 %, 2682 MiB, 66",
+                                         "145s P4, 2280 MHz, 9001 MHz, 60.45 W, 34 %, 2682 MiB, 68",
+                                         "150s P4, 1657 MHz, 9001 MHz, 90.67 W, 82 %, 2708 MiB, 70",
+                                         "155s P4, 2077 MHz, 9001 MHz, 50.96 W, 45 %, 2656 MiB, 67",
+                                         "160s P0, 1920 MHz, 14001 MHz, 20.52 W, 0 %, 0 MiB, 65",
+                                         "165s P0, 127 MHz, 14001 MHz, 20.64 W, 0 %, 0 MiB, 63",
+                                         "170s P0, 405 MHz, 14001 MHz, 20.44 W, 0 %, 0 MiB, 63",
+                                         "175s P0, 630 MHz, 14001 MHz, 20.08 W, 0 %, 0 MiB, 62",
+                                         "180s P0, 1432 MHz, 14001 MHz, 19.86 W, 0 %, 0 MiB, 61",
+                                         "185s P0, 26152 MHz, 14001 MHz, 19.71 W, 0 %, 0 MiB, 61",
+                                         "190s P0, 1950 MHz, 14001 MHz, 19.86 W, 0 %, 0 MiB, 60",
+                                         "196s P0, 4087 MHz, 14001 MHz, 19.59 W, 0 %, 0 MiB, 60",
+                                         "200s P0, 240 MHz, 14001 MHz, 19.71 W, 0 %, 0 MiB, 60",
+                                         "205s P0, 412 MHz, 14001 MHz, 19.69 W, 0 %, 0 MiB, 59",
+                                         "210s P0, 1402 MHz, 14001 MHz, 19.66 W, 0 %, 0 MiB, 59",
+                                         "215s P0, 6832 MHz, 14001 MHz, 19.63 W, 0 %, 0 MiB, 59",
+                                         "220s P0, 442 MHz, 14001 MHz, 19.51 W, 0 %, 0 MiB, 59",
+                                         "225s P0, 22680 MHz, 14001 MHz, 19.46 W, 0 %, 0 MiB, 59",
+                                         "230s P0, 2182 MHz, 14001 MHz, 19.30 W, 0 %, 0 MiB, 58",
+                                         "235s P0, 525 MHz, 14001 MHz, 19.28 W, 0 %, 0 MiB, 58"
+                                     ]
+               },
+    "after":  {
+                  "load":  {
+                               "cpu":  24,
+                               "build_ms":  0,
+                               "top":  [
+                                           "python 29492 1.51 core",
+                                           "System 4 1.25 core",
+                                           "powershell 19180 1.01 core",
+                                           "WmiPrvSE 7560 0.02 core",
+                                           "powershell 29896 0.02 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 1245 MHz, 14001 MHz, 19.69 W, 0 %, 0 MiB, 58"
+              },
+    "end":  "2026-11-09T13:58:06.7394920+09:00",
+    "tries":  1
+}

@@ -1,0 +1,81 @@
+{
+    "cell":  "whisper/genai-fp16-rtx",
+    "device":  "rtx",
+    "role":  null,
+    "run":  1,
+    "mode":  "timed",
+    "sitting":  "s4",
+    "start":  "2026-11-10T00:38:51.7426937+09:00",
+    "osBuild":  "26200.9711",
+    "desktopLocked":  true,
+    "power":  {
+                  "msiUserScenarioMode":  1,
+                  "overlayAc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "overlayDc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "battery":  "status 2, 96 %"
+              },
+    "gate":  {
+                 "quietGate":  "quiet",
+                 "cpuReads":  [
+                                  2.8,
+                                  0.8,
+                                  0.1
+                              ],
+                 "nvidiaMiB":  0,
+                 "availGB":  25.2,
+                 "ramNeedGB":  6,
+                 "gpuEngines":  null
+             },
+    "before":  {
+                   "load":  {
+                                "cpu":  2.5,
+                                "build_ms":  0,
+                                "top":  [
+                                            "System 4 0.38 core",
+                                            "powershell 15784 0.02 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 5932 MHz, 14001 MHz, 18.30 W, 0 %, 0 MiB, 52",
+                   "availGB":  25.2
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-genai-cuda\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_asr_genai.py --model-dir C:\\src\\audiozoo\\exports\\whisper-genai-fp16-cuda --ep cuda --set S150 --fixtures C:\\src\\audiozoo\\fixtures --out C:\\src\\audiozoo\\runs\\s4\\whisper\\genai-fp16-rtx\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  28660,
+                   "elapsedSeconds":  30.375,
+                   "peakWorkingSetBytes":  1433239552,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x00012C48":  {
+                                                                    "shared":  204,
+                                                                    "dedicated":  3066
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P2, 1500 MHz, 11001 MHz, 18.48 W, 14 %, 2990 MiB, 52",
+                                         "10s P2, 2152 MHz, 11001 MHz, 59.15 W, 75 %, 3060 MiB, 57",
+                                         "15s P2, 1470 MHz, 11001 MHz, 83.24 W, 79 %, 3062 MiB, 59",
+                                         "20s P0, 1717 MHz, 14001 MHz, 84.03 W, 41 %, 3066 MiB, 61",
+                                         "25s P0, 1627 MHz, 14001 MHz, 77.35 W, 38 %, 3066 MiB, 64"
+                                     ]
+               },
+    "after":  {
+                  "load":  {
+                               "cpu":  3.2,
+                               "build_ms":  0,
+                               "top":  [
+                                           "System 4 0.42 core",
+                                           "powershell 15784 0.03 core",
+                                           "WmiPrvSE 7560 0.02 core",
+                                           "PresentMonService 9072 0.02 core",
+                                           "NVDisplay.Container 3412 0.02 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 2017 MHz, 14001 MHz, 19.34 W, 0 %, 0 MiB, 57"
+              },
+    "end":  "2026-11-10T00:39:24.0174822+09:00",
+    "tries":  1
+}

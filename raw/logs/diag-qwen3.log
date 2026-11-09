@@ -1,0 +1,8 @@
+[2026-11-09T14:03:47.4979079+09:00] steps diag-qwen3 start: 1 steps, pid 19592
+[2026-11-09T14:03:47.6235301+09:00] ref-qwen3asr-pkg start: C:\src\audiozoo\.venv-ovexport\Scripts\python.exe -I C:\src\audiozoo\pc\ref_qwen_asr_pkg.py --model-dir C:\src\audiozoo\models\Qwen__Qwen3-ASR-1.7B --set S150 --first 10 --fixtures C:\src\audiozoo\fixtures --out C:\src\audiozoo\refs\qwen3asr-pkg\first10.json
+[2026-11-09T14:07:58.1881617+09:00] ref-qwen3asr-pkg: killed for another lane's lock (2026-11-09T14:07:56.9356049+09:00) after 250 s; runs again when it is gone
+[2026-11-09T14:07:58.1881617+09:00] ref-qwen3asr-pkg: another lane holds the lock (another lane's lock 2026-11-09T14:07:56.9356049+09:00): waiting
+[2026-11-09T14:13:23.7561877+09:00] ref-qwen3asr-pkg: the lock has been free 60 s: going on
+[2026-11-09T14:13:23.7561877+09:00] ref-qwen3asr-pkg start (try 2): C:\src\audiozoo\.venv-ovexport\Scripts\python.exe -I C:\src\audiozoo\pc\ref_qwen_asr_pkg.py --model-dir C:\src\audiozoo\models\Qwen__Qwen3-ASR-1.7B --set S150 --first 10 --fixtures C:\src\audiozoo\fixtures --out C:\src\audiozoo\refs\qwen3asr-pkg\first10.json
+[2026-11-09T14:18:04.2661987+09:00] ref-qwen3asr-pkg end: exit 0, 14.3 min
+[2026-11-09T14:18:04.2762976+09:00] steps diag-qwen3 done: OK

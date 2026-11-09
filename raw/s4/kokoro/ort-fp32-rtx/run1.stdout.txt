@@ -1,0 +1,8 @@
+ENGINE_PID 28256
+{"n": 1, "id": "en_us_1660", "wall_s": 0.27, "text": ""}
+{"n": 2, "id": "en_us_1661", "wall_s": 0.208, "text": ""}
+{"n": 10, "id": "en_us_1669", "wall_s": 0.222, "text": ""}
+{"n": 20, "id": "en_us_1679", "wall_s": 0.151, "text": ""}
+{"n": 30, "id": "en_us_1689", "wall_s": 0.47, "text": ""}
+{"n": 40, "id": "en_us_1699", "wall_s": 0.321, "text": ""}
+{"n": 50, "id": "en_us_1709", "wall_s": 0.304, "text": ""}

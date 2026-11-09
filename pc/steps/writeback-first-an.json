@@ -1,0 +1,17 @@
+[
+ {
+  "name": "writeback-first-an",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\writeback.py",
+   "--asr-dir",
+   "{ROOT}\\models\\OpenVINO__whisper-large-v3-turbo-fp16-ov",
+   "--run-json",
+   "{ROOT}\\runs\\first-an\\kokoro\\ovg-fp16-npu\\run1.json",
+   "{ROOT}\\runs\\first-an\\kokoro\\ort-fp32-npu\\run1.json"
+  ],
+  "timeout_min": 60,
+  "venv": "ovg",
+  "ram_gb": 4
+ }
+]

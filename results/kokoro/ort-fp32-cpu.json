@@ -1,0 +1,103 @@
+{
+ "cell": "kokoro/ort-fp32-cpu",
+ "model": "kokoro",
+ "runtime": "ONNX Runtime 1.31.1",
+ "form": "fp32",
+ "device": "cpu",
+ "device_name": "CPU (Core Ultra 9 386H)",
+ "set": "T50",
+ "mode": "timed",
+ "sitting": "s4",
+ "status": "OK",
+ "record": {
+  "run": "raw/s4/kokoro/ort-fp32-cpu/run1.json",
+  "meta": "raw/s4/kokoro/ort-fp32-cpu/run1.meta.json",
+  "chain_log": "raw/s4/chain.log",
+  "writeback": "raw/s4/kokoro/ort-fp32-cpu/run1.writeback.json"
+ },
+ "error": null,
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime": "1.31.1",
+  "onnxruntime-ep-openvino": "1.8.1",
+  "onnxruntime-ep-webgpu": "0.5.0",
+  "kokoro-onnx": "0.6.1",
+  "espeakng-loader": "0.2.4",
+  "phonemizer": "3.6.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": 0.979,
+ "summary": {
+  "clips": 50,
+  "audio_s": 422.421,
+  "wall_s": 69.831,
+  "rtf": 0.16531,
+  "silent": 0
+ },
+ "gate": {
+  "quietGate": "quiet",
+  "cpuReads": [
+   2.7,
+   0.6,
+   0.6
+  ],
+  "nvidiaMiB": 0,
+  "availGB": 25.2,
+  "ramNeedGB": 3,
+  "gpuEngines": null
+ },
+ "power": {
+  "msiUserScenarioMode": 1,
+  "overlayAc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "overlayDc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "battery": "status 2, 96 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 74.177,
+  "peakWorkingSetBytes": 917475328,
+  "gpuMiBPeak": {},
+  "exitCode": 0,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1,
+ "control": {
+  "known_rtf": 0.26228,
+  "known_from": "this sitting's head (3 runs, spread 0.7 %)",
+  "head": [
+   0.2631,
+   0.26228,
+   0.26128
+  ],
+  "tail": [
+   0.26548
+  ],
+  "verdict": "PASS (tail off 1.2 %)"
+ },
+ "accuracy": {
+  "metric": "write-back WER",
+  "err": 36,
+  "n": 1150,
+  "rate_pct": 3.13,
+  "texts": 50
+ },
+ "reference": {
+  "path": "raw/refs/kokoro/ref.writeback.json",
+  "writeback_wer": 2.87
+ },
+ "line": {
+  "writeback": {
+   "run": 3.13,
+   "ref": 2.87,
+   "bar": 3.87,
+   "pass": true
+  },
+  "silent": {
+   "n": 0,
+   "pass": true
+  },
+  "pass": true
+ },
+ "first_vs_timed_equal": "10/10"
+}

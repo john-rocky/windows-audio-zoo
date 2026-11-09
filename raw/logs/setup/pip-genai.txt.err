@@ -1,0 +1,22 @@
+Using Python 3.12.16 environment at: C:\src\audiozoo\.venv-genai
+Resolved 8 packages in 272ms
+Downloading onnxruntime (14.2MiB)
+Downloading onnxruntime-genai (4.5MiB)
+Downloading onnxruntime-ep-webgpu (13.0MiB)
+Downloading onnxruntime-ep-openvino (72.3MiB)
+ Downloaded onnxruntime-genai
+ Downloaded onnxruntime-ep-webgpu
+ Downloaded onnxruntime
+Downloading onnxruntime-ep-openvino (72.3MiB)
+Downloading onnxruntime-ep-openvino (72.3MiB)
+ Downloaded onnxruntime-ep-openvino
+Prepared 7 packages in 62m 13s
+Installed 8 packages in 28.52s
+ + flatbuffers==25.12.19
+ + numpy==2.5.4
+ + onnxruntime==1.31.1
+ + onnxruntime-ep-openvino==1.8.1
+ + onnxruntime-ep-webgpu==0.5.0
+ + onnxruntime-genai==0.19.0
+ + packaging==26.3
+ + protobuf==7.36.2

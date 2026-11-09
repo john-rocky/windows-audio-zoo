@@ -1,0 +1,169 @@
+{
+ "cell": "qwen3asr/ovg-int8-igpu",
+ "model": "qwen3asr",
+ "runtime": "OpenVINO GenAI 2026.4.1",
+ "form": "int8",
+ "device": "igpu",
+ "device_name": "Intel GPU",
+ "set": "S150",
+ "mode": "timed",
+ "sitting": "s4",
+ "status": "OK",
+ "record": {
+  "run": "raw/s4/qwen3asr/ovg-int8-igpu/run1.json",
+  "meta": "raw/s4/qwen3asr/ovg-int8-igpu/run1.meta.json",
+  "chain_log": "raw/s4/chain.log"
+ },
+ "error": null,
+ "versions": {
+  "python": "3.12.16",
+  "openvino-genai": "2026.4.1.0",
+  "openvino": "2026.4.1",
+  "openvino-tokenizers": "2026.4.1.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": 10.566,
+ "summary": {
+  "clips": 150,
+  "audio_s": 1806.26,
+  "wall_s": 157.396,
+  "rtf": 0.08714,
+  "empty": 0,
+  "first_token_ms_mean": 166.21,
+  "split_half_rtf": [
+   0.08488,
+   0.08957
+  ]
+ },
+ "gate": {
+  "quietGate": "quiet",
+  "cpuReads": [
+   3.5,
+   0.5,
+   0.3
+  ],
+  "nvidiaMiB": 0,
+  "availGB": 25.2,
+  "ramNeedGB": 7,
+  "gpuEngines": 0
+ },
+ "power": {
+  "msiUserScenarioMode": 1,
+  "overlayAc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "overlayDc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "battery": "status 2, 96 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 171.823,
+  "peakWorkingSetBytes": 4851175424,
+  "gpuMiBPeak": {
+   "0x00000000_0x0001260E": {
+    "shared": 2856,
+    "dedicated": 0
+   },
+   "0x00000000_0x00012C48": {
+    "shared": 0,
+    "dedicated": 0
+   }
+  },
+  "exitCode": 0,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1,
+ "control": {
+  "known_rtf": 0.26228,
+  "known_from": "this sitting's head (3 runs, spread 0.7 %)",
+  "head": [
+   0.2631,
+   0.26228,
+   0.26128
+  ],
+  "tail": [
+   0.26548
+  ],
+  "verdict": "PASS (tail off 1.2 %)"
+ },
+ "accuracy": {
+  "en_us": {
+   "metric": "WER",
+   "err": 57,
+   "n": 1150,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 4.957
+  },
+  "cmn_hans_cn": {
+   "metric": "CER",
+   "err": 155,
+   "n": 1954,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 7.932
+  },
+  "ja_jp": {
+   "metric": "CER",
+   "err": 192,
+   "n": 2689,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 7.14
+  }
+ },
+ "reference": {
+  "path": "raw/refs/qwen3asr-fp32/ref_transformers_official.jsonl",
+  "scores": {
+   "en_us": {
+    "metric": "WER",
+    "err": 50,
+    "n": 1150,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 4.348
+   },
+   "cmn_hans_cn": {
+    "metric": "CER",
+    "err": 134,
+    "n": 1954,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 6.858
+   },
+   "ja_jp": {
+    "metric": "CER",
+    "err": 148,
+    "n": 2689,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 5.504
+   }
+  }
+ },
+ "line": {
+  "en_us": {
+   "run": 4.957,
+   "ref": 4.348,
+   "bar": 4.848,
+   "pass": false
+  },
+  "cmn_hans_cn": {
+   "run": 7.932,
+   "ref": 6.858,
+   "bar": 7.358,
+   "pass": false
+  },
+  "ja_jp": {
+   "run": 7.14,
+   "ref": 5.504,
+   "bar": 6.004,
+   "pass": false
+  },
+  "empty": {
+   "n": 0,
+   "pass": true
+  },
+  "pass": false
+ },
+ "first_vs_timed_equal": "30/30"
+}

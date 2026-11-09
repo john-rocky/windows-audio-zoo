@@ -1,0 +1,48 @@
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794203417.592941   20364 litert_lm_loader.cc:550] TFLite model type: tf_lite_vision_encoder not found for prefer activation type. Use system's default backend activation type. System's default activation type for Text decoder is fp16. Vision encoder and audio encoder default is fp32.
+W0000 00:00:1794203417.632142   20364 litert_lm_loader.cc:532] TFLite model type: tf_lite_vision_encoder not found for backend constraints. Skipping.
+W0000 00:00:1794203417.593334   30604 litert_lm_loader.cc:407] Section not found: SP_Tokenizer
+W0000 00:00:1794203417.637633   30604 litert_lm_loader.cc:407] Section not found: SP_Tokenizer
+W0000 00:00:1794203417.637823   30604 litert_lm_loader.cc:407] Section not found: HF_Tokenizer_Zlib
+W0000 00:00:1794203417.638048   20364 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794203417.638186   20364 litert_lm_loader.cc:497] TFLite model for type: tf_lite_aux not found. Skipping.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0000026E80E411D0, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0000026E80E42310, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0000026E80E42250, name=NpuAccelerator
+INFO: [npu_registry.cc:30] NPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0000026E80E41470, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0000026E80E42430, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+W0000 00:00:1794203417.661323   20364 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794203417.661431   20364 litert_lm_loader.cc:497] TFLite model for type: tf_lite_aux not found. Skipping.
+W0000 00:00:1794203417.661499   20364 llm_litert_compiled_model_executor_factory.cc:340] NPU backend requested, but TF_LITE_AUX is not packaged in the model. Using the generic LiteRT compiler-plugin path.
+WARNING: [compiled_model.cc:1628] Failed to apply compiler plugins: No compiler plugin found
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1794203420.599059   20364 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794203420.600116   20364 litert_lm_loader.cc:497] TFLite model for type: tf_lite_end_of_audio not found. Skipping.
+W0000 00:00:1794203420.646172   20364 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794203420.646392   20364 litert_lm_loader.cc:497] TFLite model for type: tf_lite_end_of_vision not found. Skipping.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+W0000 00:00:1794203420.649862   20364 embedding_lookup_text.cc:352] No signature key was provided. The Embedding model is expected to have exactly one signature but got 4. Using the first signature: decode_embedder
+W0000 00:00:1794203420.650175   20364 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794203420.650423   20364 litert_lm_loader.cc:497] TFLite model for type: tf_lite_per_layer_embedder not found. Skipping.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=00000271421B87F0, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=00000271421B8610, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+W0000 00:00:1794203421.690733   20364 litert_lm_loader.cc:550] TFLite model type: tf_lite_vision_encoder not found for prefer activation type. Use system's default backend activation type. System's default activation type for Text decoder is fp16. Vision encoder and audio encoder default is fp32.
+W0000 00:00:1794203421.740241   20364 litert_lm_loader.cc:532] TFLite model type: tf_lite_vision_encoder not found for backend constraints. Skipping.
+W0000 00:00:1794203421.746813   20364 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794203421.747119   20364 litert_lm_loader.cc:497] TFLite model for type: tf_lite_audio_adapter not found. Skipping.
+W0000 00:00:1794203421.747276   20364 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794203421.747414   20364 litert_lm_loader.cc:497] TFLite model for type: tf_lite_audio_adapter not found. Skipping.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.

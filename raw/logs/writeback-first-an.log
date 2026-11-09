@@ -1,0 +1,4 @@
+[2026-11-09T15:15:45.8497127+09:00] steps writeback-first-an start: 1 steps, pid 11732
+[2026-11-09T15:15:45.9467861+09:00] writeback-first-an start: C:\src\audiozoo\.venv-ovg\Scripts\python.exe -I C:\src\audiozoo\pc\writeback.py --asr-dir C:\src\audiozoo\models\OpenVINO__whisper-large-v3-turbo-fp16-ov --run-json C:\src\audiozoo\runs\first-an\kokoro\ovg-fp16-npu\run1.json C:\src\audiozoo\runs\first-an\kokoro\ort-fp32-npu\run1.json
+[2026-11-09T15:18:04.2293654+09:00] writeback-first-an end: exit 0, 2.3 min
+[2026-11-09T15:18:04.2611190+09:00] steps writeback-first-an done: OK

@@ -1,0 +1,4 @@
+ENGINE_PID 764
+[ERROR] 15:15:10.766 [IE::FrontEnd::importNetwork]   Upper bounds are not specified for node '/encoder/text_encoder/embedding/Gather' (type 'Gather'): input '1' bounds are '[1, 9223372036854775807]'
+[ERROR] 15:15:10.770 [IE::FrontEnd::importNetwork]   Upper bounds are not specified for node '/encoder/text_encoder/Transpose' (type 'Transpose'): input '0' bounds are '[1, 9223372036854775807, 512]'
+[ERROR] 15:15:10.771 [IE::FrontEnd::importNetwork]   Upper bounds are not specified for node '/encoder/text_encoder/cnn.0/cnn.0.0/Conv/WithoutBiases' (type 'Convolution'): input '0' bounds are '[1, 512, 9223372036854775807]'

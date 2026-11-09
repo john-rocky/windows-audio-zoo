@@ -1,0 +1,6 @@
+ENGINE_PID 20032
+[ERROR] 14:43:48.232 [IE::FrontEnd::importNetwork]   Upper bounds are not specified for node '/model/preprocessing/Gather_1' (type 'Gather'): input '1' bounds are '[9223372036854775807, 9223372036854775807]'
+[ERROR] 14:43:48.233 [IE::FrontEnd::importNetwork]   Upper bounds are not specified for node 'ShapeOf_6614' (type 'ShapeOf'): input '0' bounds are '[9223372036854775807, 20, 9223372036854775807, 64]'
+[ERROR] 14:43:48.233 [IE::FrontEnd::importNetwork]   Upper bounds are not specified for node 'ShapeOf_6620' (type 'ShapeOf'): input '0' bounds are '[9223372036854775807, 9223372036854775807]'
+[ERROR] 14:43:48.234 [vpux-compiler] Got non broadcastable dimensions pair : '9223372036854775807' and 448'
+[ERROR] 14:43:48.234 [IE::FrontEnd::importNetwork]   Upper bounds are not specified for node '/model/preprocessing/Add' (type 'Add'): input '0' bounds are '[9223372036854775807, 9223372036854775807, 1280]'

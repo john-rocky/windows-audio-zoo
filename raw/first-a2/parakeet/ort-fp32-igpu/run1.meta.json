@@ -1,0 +1,77 @@
+{
+    "cell":  "parakeet/ort-fp32-igpu",
+    "device":  "igpu",
+    "role":  null,
+    "run":  1,
+    "mode":  "first",
+    "sitting":  "first-a2",
+    "start":  "2026-11-09T14:59:47.8334117+09:00",
+    "osBuild":  "26200.9711",
+    "gate":  null,
+    "before":  {
+                   "load":  {
+                                "cpu":  43.9,
+                                "build_ms":  0,
+                                "top":  [
+                                            "python 3168 3.81 core",
+                                            "python 16488 1.95 core",
+                                            "System 4 0.83 core",
+                                            "MsMpEng 5548 0.08 core",
+                                            "powershell 33988 0.05 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 1522 MHz, 14001 MHz, 18.71 W, 0 %, 0 MiB, 55",
+                   "availGB":  12.1
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-ort\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_asr_ort_parakeet.py --model-dir C:\\src\\audiozoo\\models\\istupakov__parakeet-tdt-0.6b-v3-onnx --ep openvino --ov-device GPU --set S150 --fixtures C:\\src\\audiozoo\\fixtures --first 10 --out C:\\src\\audiozoo\\runs\\first-a2\\parakeet\\ort-fp32-igpu\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  23724,
+                   "elapsedSeconds":  41.079,
+                   "peakWorkingSetBytes":  6517407744,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x00012C48":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x0001260E":  {
+                                                                    "shared":  3269,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x00013E4C":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P0, 5475 MHz, 14001 MHz, 18.85 W, 0 %, 0 MiB, 55",
+                                         "10s P4, 1350 MHz, 9001 MHz, 19.41 W, 0 %, 0 MiB, 55",
+                                         "15s P0, 780 MHz, 14001 MHz, 18.75 W, 0 %, 0 MiB, 55",
+                                         "21s P0, 2175 MHz, 14001 MHz, 18.93 W, 0 %, 0 MiB, 56",
+                                         "25s P0, 18292 MHz, 14001 MHz, 19.12 W, 0 %, 0 MiB, 56",
+                                         "30s P4, 1492 MHz, 9001 MHz, 18.88 W, 0 %, 0 MiB, 56",
+                                         "35s P0, 13500 MHz, 14001 MHz, 18.91 W, 0 %, 0 MiB, 56",
+                                         "40s P4, 1327 MHz, 9001 MHz, 17.41 W, 0 %, 0 MiB, 56"
+                                     ]
+               },
+    "after":  {
+                  "load":  {
+                               "cpu":  44.3,
+                               "build_ms":  0,
+                               "top":  [
+                                           "python 16488 1.99 core",
+                                           "MsMpEng 5548 1.77 core",
+                                           "python 3168 1.28 core",
+                                           "git 30992 0.97 core",
+                                           "System 4 0.4 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 720 MHz, 14001 MHz, 19.16 W, 0 %, 0 MiB, 56"
+              },
+    "end":  "2026-11-09T15:00:30.9871844+09:00",
+    "tries":  1
+}

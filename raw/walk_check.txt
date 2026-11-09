@@ -1,0 +1,67 @@
+OK      1 pc\chain.ps1
+OK      1 pc\steps.ps1
+OK      1 pc\zlib.ps1
+OK      1 pc\lock.ps1
+OK      1 pc\launch.ps1
+OK      1 pc\wait_done.ps1
+OK      1 pc\audiolib.py
+OK      1 shelf\hub_manifest.json
+OK      1 fixtures\meta.json
+OK      1 fixtures\s220\clips.json
+OK      2 python\cpython-3.12-windows-x86_64-none\python.exe
+OK      2 .venv-ovg\Scripts\python.exe
+OK      2 logs\versions-ovg.txt
+OK      2 .venv-genai\Scripts\python.exe
+OK      2 logs\versions-genai.txt
+OK      2 .venv-genai-cuda\Scripts\python.exe
+OK      2 logs\versions-genai-cuda.txt
+OK      2 .venv-ort\Scripts\python.exe
+OK      2 logs\versions-ort.txt
+OK      2 .venv-ort-cuda\Scripts\python.exe
+OK      2 logs\versions-ort-cuda.txt
+OK      2 .venv-litertlm\Scripts\python.exe
+OK      2 logs\versions-litertlm.txt
+OK      2 .venv-ref\Scripts\python.exe
+OK      2 logs\versions-ref.txt
+OK      2 .venv-ovexport\Scripts\python.exe
+OK      2 logs\versions-ovexport.txt
+DONE    2 logs\setup.done = FAIL pip-ort-cuda 2026-11-09T12:15:42.9424541+09:00
+DONE    2 logs\fetch.done = OK 2026-11-09T12:16:47.4552608+09:00
+OK      2 models\fetch_report.json
+OK      2 models: 234 files of 13 repos checked by size (0 missing or different)
+OK      3 refs\whisper\ref.json
+OK      3 refs\parakeet\ref.json
+OK      3 refs\kokoro\ref.json
+OK      3 refs\kokoro\ref.writeback.json
+DONE    3 logs\refs.done = FAIL ref-parakeet 2026-11-09T13:57:25.9899997+09:00
+OK      3 exports\whisper-genai-fp32-cpu\genai_config.json
+OK      3 exports\whisper-genai-fp32-cpu\encoder.onnx
+OK      3 exports\whisper-genai-fp32-cpu\decoder.onnx
+OK      3 exports\whisper-genai-fp16-cuda\genai_config.json
+OK      3 exports\whisper-genai-fp16-cuda\encoder.onnx
+OK      3 exports\whisper-genai-fp16-cuda\decoder.onnx
+DONE    3 logs\export-whisper.done = OK 2026-11-09T13:23:28.1734957+09:00
+OK      4 exports\qwen3asr-ov-fp16\openvino_encoder_model.xml
+OK      4 exports\qwen3asr-ov-fp16\openvino_decoder_model.xml
+OK      4 exports\qwen3asr-ov-fp16\openvino_tokenizer.xml
+OK      4 exports\qwen3asr-ov-fp16\openvino_detokenizer.xml
+OK      4 exports\qwen3asr-ov-int8\openvino_encoder_model.xml
+OK      4 exports\qwen3asr-ov-int8\openvino_decoder_model.xml
+OK      4 exports\qwen3asr-ov-int8\openvino_tokenizer.xml
+OK      4 exports\qwen3asr-ov-int8\openvino_detokenizer.xml
+DONE    4 logs\export-ov.done = OK 2026-11-09T13:38:28.3391496+09:00
+DONE    sit runs\first-a\chain.done = OK 2026-11-09T15:10:57.7643092+09:00
+RUNS    sit first-a: ERROR 3, OK 25
+DONE    sit runs\first-an\chain.done = OK 2026-11-09T15:15:29.4946697+09:00
+RUNS    sit first-an: ERROR 2, no runner JSON 3, OK 4
+DONE    sit runs\first-b\chain.done = OK 2026-11-09T13:56:47.6156530+09:00
+RUNS    sit first-b: OK 5
+DONE    sit runs\first-bn\chain.done = OK 2026-11-09T13:40:24.6205402+09:00
+RUNS    sit first-bn: ERROR 1
+DONE    sit runs\first-a2\chain.done = OK 2026-11-09T15:00:31.0498326+09:00
+RUNS    sit first-a2: OK 1
+DONE    sit runs\s1\chain.done = OK 2026-11-09T20:39:29.0941686+09:00
+RUNS    sit s1: left (end_by) 8, OK 10
+DONE    sit runs\s4\chain.done = OK 2026-11-10T04:50:24.5673247+09:00
+RUNS    sit s4: OK 40
+walk check: 0 missing

@@ -1,0 +1,44 @@
+[2026-11-09T18:11:26.1370871+09:00] chain start: plan C:\src\audiozoo\pc\plans\s1.json mode timed, 16 units, pid 20996
+[2026-11-09T18:11:34.8838798+09:00] adapters: 0x00000000_0x00012C48=nvidia, 0x00000000_0x0001260E=intel-gpu, 0x00000000_0x00012BB8=?, 0x00000000_0x00013E4C=npu?
+[2026-11-09T18:11:34.9154455+09:00] settle 180 s inside the lock before the control rows
+[2026-11-09T18:14:42.5460013+09:00] control-warm run 1 start
+[2026-11-09T18:16:23.0285330+09:00] control-warm run 1 end: exit 0, OK, 98.446 s
+[2026-11-09T18:16:29.0162617+09:00] control-head run 1 start
+[2026-11-09T18:18:10.4431608+09:00] control-head run 1 end: exit 0, OK, 99.452 s
+[2026-11-09T18:18:37.8214088+09:00] control-head run 2 start
+[2026-11-09T18:20:19.9200930+09:00] control-head run 2 end: exit 0, OK, 100.058 s
+[2026-11-09T18:20:47.3127602+09:00] control-head run 3 start
+[2026-11-09T18:22:28.5354372+09:00] control-head run 3 end: exit 0, OK, 99.185 s
+[2026-11-09T18:22:28.5906956+09:00] control head: rtf 0.26342, 0.26777, 0.26535 vs known 0.26535 (this sitting's head (3 runs, spread 1.6 %)): off 0.7 %
+[2026-11-09T18:22:34.6219600+09:00] parakeet/ort-int8-cpu run 1 start
+[2026-11-09T18:23:23.4351041+09:00] parakeet/ort-int8-cpu run 1 end: exit 0, OK, 46.837 s
+[2026-11-09T18:23:29.3854426+09:00] parakeet/ort-fp32-cpu run 1 start
+[2026-11-09T18:24:30.4233777+09:00] parakeet/ort-fp32-cpu run 1 end: exit 0, OK, 59.043 s
+[2026-11-09T18:24:36.3753637+09:00] kokoro/ovg-fp16-cpu run 1 start
+[2026-11-09T18:26:02.2430804+09:00] kokoro/ovg-fp16-cpu run 1 end: exit 0, OK, 83.879 s
+[2026-11-09T18:26:08.2125616+09:00] kokoro/ovg-int8-cpu run 1 start
+[2026-11-09T18:27:34.0025226+09:00] kokoro/ovg-int8-cpu run 1 end: exit 0, OK, 83.825 s
+[2026-11-09T18:27:39.5172481+09:00] kokoro/ort-fp32-cpu run 1 start
+[2026-11-09T18:28:51.6485430+09:00] kokoro/ort-fp32-cpu run 1 end: exit 0, OK, 70.113 s
+[2026-11-09T18:28:51.6646003+09:00] duty: held 18 min and the next run would end past 30 min (about 18 min), others waiting (2 notes of other lanes): release for 16.5 min
+[2026-11-09T18:28:51.6963463+09:00] lock released
+[2026-11-09T18:28:51.7125470+09:00] window.txt: Z3 open until 2026-11-09T18:45:21.6963463+09:00
+[2026-11-09T18:45:23.6492806+09:00] waiting for the lock: another lane's lock
+[2026-11-09T19:33:54.9346443+09:00] waiting for the lock: another lane's lock
+[2026-11-09T19:34:35.0183415+09:00] waiting for the lock: another lane's lock
+[2026-11-09T20:13:19.4038693+09:00] waiting for the lock: another lane's lock
+[2026-11-09T20:34:21.8214069+09:00] lock: TAKEN (timing: sitting s1 (taken back after a duty gap))
+[2026-11-09T20:34:21.8214069+09:00] settle 180 s inside the lock after the take-back
+[2026-11-09T20:37:41.0191526+09:00] gate: PASS (cpu 0.4 % build 0 ms rtx 0 MiB | cpu 1.1 % build 0 ms rtx 0 MiB | cpu 1.4 % build 0 ms rtx 0 MiB)
+[2026-11-09T20:37:41.0326151+09:00] end_by 21:05: qwen3asr/litertlm-cpu not started, left for a later sitting
+[2026-11-09T20:37:41.0346284+09:00] end_by 21:05: whisper/genai-fp32-cpu not started, left for a later sitting
+[2026-11-09T20:37:41.0346284+09:00] end_by 21:05: whisper/ovg-int8-cpu not started, left for a later sitting
+[2026-11-09T20:37:41.0366403+09:00] end_by 21:05: qwen3asr/ovg-int8-cpu not started, left for a later sitting
+[2026-11-09T20:37:41.0366403+09:00] end_by 21:05: whisper/ovg-fp16-cpu not started, left for a later sitting
+[2026-11-09T20:37:41.0386529+09:00] end_by 21:05: whisper/ovg-int4-cpu not started, left for a later sitting
+[2026-11-09T20:37:41.0386529+09:00] end_by 21:05: qwen3asr/ovg-fp16-cpu not started, left for a later sitting
+[2026-11-09T20:37:41.0406682+09:00] end_by 21:05: granite/litertlm-cpu not started, left for a later sitting
+[2026-11-09T20:37:46.9830094+09:00] control-tail run 1 start
+[2026-11-09T20:39:29.0783973+09:00] control-tail run 1 end: exit 0, OK, 100.231 s
+[2026-11-09T20:39:29.0783973+09:00] control tail: rtf 0.25861: PASS (tail off 2.5 %)
+[2026-11-09T20:39:29.0941686+09:00] chain done: OK

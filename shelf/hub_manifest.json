@@ -1,0 +1,1536 @@
+[
+ {
+  "repo": "OpenVINO/whisper-large-v3-turbo-fp16-ov",
+  "folder": "",
+  "revision": "0250c28d68c7c10d6b5cb39707e876c0c66ab6f8",
+  "license": "mit",
+  "main_now": "0250c28d68c7c10d6b5cb39707e876c0c66ab6f8",
+  "bytes": 1627649856,
+  "files": [
+   {
+    "path": "added_tokens.json",
+    "size": 34648,
+    "sha256": null,
+    "blob": "1b33526d33aaa60d79f78ae8651dae50b730185a"
+   },
+   {
+    "path": "config.json",
+    "size": 1192,
+    "sha256": null,
+    "blob": "0079af9ec2f9c4db4825894aa84d11a58384986e"
+   },
+   {
+    "path": "generation_config.json",
+    "size": 3767,
+    "sha256": null,
+    "blob": "62d0c663b790efd48dcc55e6d6816579bfb35fea"
+   },
+   {
+    "path": "merges.txt",
+    "size": 493869,
+    "sha256": null,
+    "blob": "6038932a2a1f09a66991b1c2adae0d14066fa29e"
+   },
+   {
+    "path": "normalizer.json",
+    "size": 52666,
+    "sha256": null,
+    "blob": "dd6ae819ad738ac1a546e9f9282ef325c33b9ea0"
+   },
+   {
+    "path": "openvino_decoder_model.bin",
+    "size": 343818396,
+    "sha256": "58fbe879d2e028fc7792036ba660fde0e6c8dd85b71d596cd1a144672a807b73",
+    "blob": "e95f946879e73a616c5fcc969f0ef4c9fcbe4eaf"
+   },
+   {
+    "path": "openvino_decoder_model.xml",
+    "size": 344388,
+    "sha256": null,
+    "blob": "aa02eae9539da8a510e578496a7f7547ea3109e2"
+   },
+   {
+    "path": "openvino_detokenizer.bin",
+    "size": 736198,
+    "sha256": "f2b3c47825a1089525ff65c0c8e49271e1dee69a401a04fc827ac2de5b7766e4",
+    "blob": "4119793f1f0d99145d31e4724cf2616094aeb10c"
+   },
+   {
+    "path": "openvino_detokenizer.xml",
+    "size": 9779,
+    "sha256": null,
+    "blob": "fb8da2a73340d91467b59efb69ea65e021f99963"
+   },
+   {
+    "path": "openvino_encoder_model.bin",
+    "size": 1273938026,
+    "sha256": "d36aff56fa2215fd93ffe4e4eb17be8a97fbad16f97f6c96126d79161b5e9b83",
+    "blob": "30252dd0304dc4c8038435d271a025b6303cea69"
+   },
+   {
+    "path": "openvino_encoder_model.xml",
+    "size": 1239274,
+    "sha256": null,
+    "blob": "cf13e1462c34077bec3d54ace9bfc6146f121cd5"
+   },
+   {
+    "path": "openvino_tokenizer.bin",
+    "size": 1898973,
+    "sha256": "adfa3d9a2920d0f314121270a960ab331ec0f05838544bb8ecaaa422282a6fd4",
+    "blob": "caeb8fc81a59bc0839c63bb41ab26a128da2e53e"
+   },
+   {
+    "path": "openvino_tokenizer.xml",
+    "size": 27091,
+    "sha256": null,
+    "blob": "af201f0ab3c90b964ad5ed12b0c2a825371b60f6"
+   },
+   {
+    "path": "preprocessor_config.json",
+    "size": 357,
+    "sha256": null,
+    "blob": "3f567c1115178e9fd2e1ef818dca934e22ca0c85"
+   },
+   {
+    "path": "special_tokens_map.json",
+    "size": 2186,
+    "sha256": null,
+    "blob": "312bc106291bb51bf2cc1648df070bef963a0639"
+   },
+   {
+    "path": "tokenizer.json",
+    "size": 3930645,
+    "sha256": null,
+    "blob": "33c8354828689f5daef89956ad477df739eccd16"
+   },
+   {
+    "path": "tokenizer_config.json",
+    "size": 282873,
+    "sha256": null,
+    "blob": "5bff1ae6346582c59a1999bb0e1784b6642540b4"
+   },
+   {
+    "path": "vocab.json",
+    "size": 835528,
+    "sha256": null,
+    "blob": "b45bc0e97a5511c917c112c42231cdbf455e200d"
+   }
+  ]
+ },
+ {
+  "repo": "OpenVINO/whisper-large-v3-turbo-int8-ov",
+  "folder": "",
+  "revision": "b568445dd5dc8c695bde596f8acbb4694fd6ba64",
+  "license": "mit",
+  "main_now": "b568445dd5dc8c695bde596f8acbb4694fd6ba64",
+  "bytes": 828087998,
+  "files": [
+   {
+    "path": "added_tokens.json",
+    "size": 34648,
+    "sha256": null,
+    "blob": "1b33526d33aaa60d79f78ae8651dae50b730185a"
+   },
+   {
+    "path": "config.json",
+    "size": 1192,
+    "sha256": null,
+    "blob": "0079af9ec2f9c4db4825894aa84d11a58384986e"
+   },
+   {
+    "path": "generation_config.json",
+    "size": 3767,
+    "sha256": null,
+    "blob": "62d0c663b790efd48dcc55e6d6816579bfb35fea"
+   },
+   {
+    "path": "merges.txt",
+    "size": 493869,
+    "sha256": null,
+    "blob": "6038932a2a1f09a66991b1c2adae0d14066fa29e"
+   },
+   {
+    "path": "normalizer.json",
+    "size": 52666,
+    "sha256": null,
+    "blob": "dd6ae819ad738ac1a546e9f9282ef325c33b9ea0"
+   },
+   {
+    "path": "openvino_config.json",
+    "size": 622,
+    "sha256": null,
+    "blob": "61404c9d6534b6223577201c5fa66a2b46dd339d"
+   },
+   {
+    "path": "openvino_decoder_model.bin",
+    "size": 172534710,
+    "sha256": "c064991cbafc4381567d29972b7013dc24026de9c326d03eb1e6e4fc44aa959f",
+    "blob": "c266c2b55d9fe3df117ba83f2805cdb84a6bed51"
+   },
+   {
+    "path": "openvino_decoder_model.xml",
+    "size": 391642,
+    "sha256": null,
+    "blob": "08de0c7254fed32a7ab795a700385b469b757ffe"
+   },
+   {
+    "path": "openvino_detokenizer.bin",
+    "size": 736198,
+    "sha256": "f2b3c47825a1089525ff65c0c8e49271e1dee69a401a04fc827ac2de5b7766e4",
+    "blob": "4119793f1f0d99145d31e4724cf2616094aeb10c"
+   },
+   {
+    "path": "openvino_detokenizer.xml",
+    "size": 9779,
+    "sha256": null,
+    "blob": "0e725b33db491fe7fa65cd1e4789051a3ed2fd55"
+   },
+   {
+    "path": "openvino_encoder_model.bin",
+    "size": 645332592,
+    "sha256": "0590a8f35f96d57801c55990028d917821ac721026e34b7f3f59d7561fc908e6",
+    "blob": "ae60ed2dcf80c1be0dfa235bc90d2b81cc1f9aa5"
+   },
+   {
+    "path": "openvino_encoder_model.xml",
+    "size": 1518660,
+    "sha256": null,
+    "blob": "fe98e2d8e2df197058e8edcf97c4cd9d767cc80b"
+   },
+   {
+    "path": "openvino_tokenizer.bin",
+    "size": 1898973,
+    "sha256": "adfa3d9a2920d0f314121270a960ab331ec0f05838544bb8ecaaa422282a6fd4",
+    "blob": "caeb8fc81a59bc0839c63bb41ab26a128da2e53e"
+   },
+   {
+    "path": "openvino_tokenizer.xml",
+    "size": 27091,
+    "sha256": null,
+    "blob": "4b194dcb8bf562d120a71096cdb5346712dca5b3"
+   },
+   {
+    "path": "preprocessor_config.json",
+    "size": 357,
+    "sha256": null,
+    "blob": "3f567c1115178e9fd2e1ef818dca934e22ca0c85"
+   },
+   {
+    "path": "special_tokens_map.json",
+    "size": 2186,
+    "sha256": null,
+    "blob": "312bc106291bb51bf2cc1648df070bef963a0639"
+   },
+   {
+    "path": "tokenizer.json",
+    "size": 3930645,
+    "sha256": null,
+    "blob": "33c8354828689f5daef89956ad477df739eccd16"
+   },
+   {
+    "path": "tokenizer_config.json",
+    "size": 282873,
+    "sha256": null,
+    "blob": "5bff1ae6346582c59a1999bb0e1784b6642540b4"
+   },
+   {
+    "path": "vocab.json",
+    "size": 835528,
+    "sha256": null,
+    "blob": "b45bc0e97a5511c917c112c42231cdbf455e200d"
+   }
+  ]
+ },
+ {
+  "repo": "OpenVINO/whisper-large-v3-turbo-int4-ov",
+  "folder": "",
+  "revision": "ae50b4d9a9dbaf16f2df59c23f3984e42f864dfc",
+  "license": "mit",
+  "main_now": "ae50b4d9a9dbaf16f2df59c23f3984e42f864dfc",
+  "bytes": 477514336,
+  "files": [
+   {
+    "path": "added_tokens.json",
+    "size": 34648,
+    "sha256": null,
+    "blob": "1b33526d33aaa60d79f78ae8651dae50b730185a"
+   },
+   {
+    "path": "config.json",
+    "size": 1192,
+    "sha256": null,
+    "blob": "0079af9ec2f9c4db4825894aa84d11a58384986e"
+   },
+   {
+    "path": "generation_config.json",
+    "size": 3767,
+    "sha256": null,
+    "blob": "62d0c663b790efd48dcc55e6d6816579bfb35fea"
+   },
+   {
+    "path": "merges.txt",
+    "size": 493869,
+    "sha256": null,
+    "blob": "6038932a2a1f09a66991b1c2adae0d14066fa29e"
+   },
+   {
+    "path": "normalizer.json",
+    "size": 52666,
+    "sha256": null,
+    "blob": "dd6ae819ad738ac1a546e9f9282ef325c33b9ea0"
+   },
+   {
+    "path": "openvino_config.json",
+    "size": 622,
+    "sha256": null,
+    "blob": "61404c9d6534b6223577201c5fa66a2b46dd339d"
+   },
+   {
+    "path": "openvino_decoder_model.bin",
+    "size": 121954278,
+    "sha256": "70a34bd26aa8b802535420239d61b8d6cc0876ef777046d395c788435bc5572e",
+    "blob": "f5cf048250e4fe2dafad2bdeacb7d9a44b493d2e"
+   },
+   {
+    "path": "openvino_decoder_model.xml",
+    "size": 433734,
+    "sha256": null,
+    "blob": "c32a38f8dd5398cf1a38523f305e97ebb00a7771"
+   },
+   {
+    "path": "openvino_detokenizer.bin",
+    "size": 736198,
+    "sha256": "f2b3c47825a1089525ff65c0c8e49271e1dee69a401a04fc827ac2de5b7766e4",
+    "blob": "4119793f1f0d99145d31e4724cf2616094aeb10c"
+   },
+   {
+    "path": "openvino_detokenizer.xml",
+    "size": 9779,
+    "sha256": null,
+    "blob": "0e725b33db491fe7fa65cd1e4789051a3ed2fd55"
+   },
+   {
+    "path": "openvino_encoder_model.bin",
+    "size": 345094560,
+    "sha256": "86edfce9765b229a6a47b0036ef2eb96ff898675d424c51fc2b165e088d3bbc4",
+    "blob": "e76cc7af29a5d40ee2f5e84976c381839a14f016"
+   },
+   {
+    "path": "openvino_encoder_model.xml",
+    "size": 1721370,
+    "sha256": null,
+    "blob": "1cea6c8c6a730c0cb54f3903b984750f901eacdd"
+   },
+   {
+    "path": "openvino_tokenizer.bin",
+    "size": 1898973,
+    "sha256": "adfa3d9a2920d0f314121270a960ab331ec0f05838544bb8ecaaa422282a6fd4",
+    "blob": "caeb8fc81a59bc0839c63bb41ab26a128da2e53e"
+   },
+   {
+    "path": "openvino_tokenizer.xml",
+    "size": 27091,
+    "sha256": null,
+    "blob": "4b194dcb8bf562d120a71096cdb5346712dca5b3"
+   },
+   {
+    "path": "preprocessor_config.json",
+    "size": 357,
+    "sha256": null,
+    "blob": "3f567c1115178e9fd2e1ef818dca934e22ca0c85"
+   },
+   {
+    "path": "special_tokens_map.json",
+    "size": 2186,
+    "sha256": null,
+    "blob": "312bc106291bb51bf2cc1648df070bef963a0639"
+   },
+   {
+    "path": "tokenizer.json",
+    "size": 3930645,
+    "sha256": null,
+    "blob": "33c8354828689f5daef89956ad477df739eccd16"
+   },
+   {
+    "path": "tokenizer_config.json",
+    "size": 282873,
+    "sha256": null,
+    "blob": "5bff1ae6346582c59a1999bb0e1784b6642540b4"
+   },
+   {
+    "path": "vocab.json",
+    "size": 835528,
+    "sha256": null,
+    "blob": "b45bc0e97a5511c917c112c42231cdbf455e200d"
+   }
+  ]
+ },
+ {
+  "repo": "openai/whisper-large-v3-turbo",
+  "folder": "",
+  "revision": "41f01f3fe87f28c78e2fbf8b568835947dd65ed9",
+  "license": "mit",
+  "main_now": "41f01f3fe87f28c78e2fbf8b568835947dd65ed9",
+  "bytes": 1622443339,
+  "files": [
+   {
+    "path": "added_tokens.json",
+    "size": 34648,
+    "sha256": null,
+    "blob": "1b33526d33aaa60d79f78ae8651dae50b730185a"
+   },
+   {
+    "path": "config.json",
+    "size": 1256,
+    "sha256": null,
+    "blob": "ad2f44ff1ed66e12765b2392dc041469db91a462"
+   },
+   {
+    "path": "generation_config.json",
+    "size": 3772,
+    "sha256": null,
+    "blob": "cbe752958dc3e4671b0e0220aa1c545423a6d5f5"
+   },
+   {
+    "path": "merges.txt",
+    "size": 493869,
+    "sha256": null,
+    "blob": "6038932a2a1f09a66991b1c2adae0d14066fa29e"
+   },
+   {
+    "path": "model.safetensors",
+    "size": 1617824864,
+    "sha256": "542566a422ae4f3fd23f1ba11add198fca01bbf82e66e6a2857b3f608b1eb9d1",
+    "blob": "d31c58c2bcd43b726463567df91f9a2b0581dd8e"
+   },
+   {
+    "path": "normalizer.json",
+    "size": 52666,
+    "sha256": null,
+    "blob": "dd6ae819ad738ac1a546e9f9282ef325c33b9ea0"
+   },
+   {
+    "path": "preprocessor_config.json",
+    "size": 340,
+    "sha256": null,
+    "blob": "931c77a740890c46365c7ae0c9d350ba3cca908f"
+   },
+   {
+    "path": "special_tokens_map.json",
+    "size": 2186,
+    "sha256": null,
+    "blob": "312bc106291bb51bf2cc1648df070bef963a0639"
+   },
+   {
+    "path": "tokenizer.json",
+    "size": 2710337,
+    "sha256": null,
+    "blob": "17456db595adc78a973f97d69d8cb50bc87c0b1c"
+   },
+   {
+    "path": "tokenizer_config.json",
+    "size": 282843,
+    "sha256": null,
+    "blob": "06ffdc8308eae6bb7bd1fdd81e94b0a881a539ab"
+   },
+   {
+    "path": "vocab.json",
+    "size": 1036558,
+    "sha256": null,
+    "blob": "0f3456460629e21d559c6daa23ab6ce3644e8271"
+   }
+  ]
+ },
+ {
+  "repo": "Qwen/Qwen3-ASR-1.7B",
+  "folder": "",
+  "revision": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+  "license": "apache-2.0",
+  "main_now": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+  "bytes": 4703055333,
+  "files": [
+   {
+    "path": "chat_template.json",
+    "size": 1161,
+    "sha256": null,
+    "blob": "c44736493efd71ec96218cc626904698cdb13235"
+   },
+   {
+    "path": "config.json",
+    "size": 6194,
+    "sha256": null,
+    "blob": "2bc16c9d4ca08963715cfb94d879799b9adbd0e9"
+   },
+   {
+    "path": "generation_config.json",
+    "size": 142,
+    "sha256": null,
+    "blob": "7382a4d347c0a865b76bb1b8277f66a5ac312854"
+   },
+   {
+    "path": "merges.txt",
+    "size": 1671853,
+    "sha256": null,
+    "blob": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7"
+   },
+   {
+    "path": "model-00001-of-00002.safetensors",
+    "size": 4220320824,
+    "sha256": "a4cd1f1a04d90b757dc7f7dd26254e69a013b19e80efe590a83c6a3bde8608d6",
+    "blob": "1522f6592ff361cdc8b95692bbd8c513d68fc40a"
+   },
+   {
+    "path": "model-00002-of-00002.safetensors",
+    "size": 478200688,
+    "sha256": "6e0b9d9e09e2e0238e7ef3cc8a484ab387e91b90f1900bedf88bc92d7929ccfc",
+    "blob": "5a13bd2988d1368745384b4acb6e8bab73f98a75"
+   },
+   {
+    "path": "model.safetensors.index.json",
+    "size": 64821,
+    "sha256": null,
+    "blob": "1048a4eb4f21fef9aea06d8568a784b2b5595689"
+   },
+   {
+    "path": "preprocessor_config.json",
+    "size": 330,
+    "sha256": null,
+    "blob": "8f7f07346466d5d494ec0d4969d1c3d0190eed72"
+   },
+   {
+    "path": "tokenizer_config.json",
+    "size": 12487,
+    "sha256": null,
+    "blob": "b93109843922a40c6654c5449d3bf95372267c66"
+   },
+   {
+    "path": "vocab.json",
+    "size": 2776833,
+    "sha256": null,
+    "blob": "4783fe10ac3adce15ac8f358ef5462739852c569"
+   }
+  ]
+ },
+ {
+  "repo": "litert-community/Qwen3-ASR-1.7B",
+  "folder": "",
+  "revision": "2ad21a0bf38433cc96eb9aa54b95c5d70d7cbbe9",
+  "license": "apache-2.0",
+  "main_now": "2ad21a0bf38433cc96eb9aa54b95c5d70d7cbbe9",
+  "bytes": 2693087232,
+  "files": [
+   {
+    "path": "Qwen3-ASR-1.7B.litertlm",
+    "size": 2693087232,
+    "sha256": "4d585d4108d7297bbda51ac6ff75ebe1d1dfd15df48a8f1da7c570d04b6bd983",
+    "blob": "29180ff250917486b24b48a42597170c5bc52b92"
+   }
+  ]
+ },
+ {
+  "repo": "litert-community/granite-speech-5.0-2b",
+  "folder": "",
+  "revision": "c344fa2ac34eacb943906a9b1959f389f76a61f1",
+  "license": "apache-2.0",
+  "main_now": "c344fa2ac34eacb943906a9b1959f389f76a61f1",
+  "bytes": 2846586867,
+  "files": [
+   {
+    "path": "granite-speech-5.0-2b.litertlm",
+    "size": 2846558336,
+    "sha256": "c90a3dae17d3399acbce3f9642a308d65bd0214134ce958562dbb2ef90337265",
+    "blob": "fd0ccca8b5cfaadd55da8acdd28d926fd7a090a8"
+   },
+   {
+    "path": "litertlm_manifest.json",
+    "size": 28531,
+    "sha256": null,
+    "blob": "a1b19ac218b551d1a3575fe0138f2afeb2842613"
+   }
+  ]
+ },
+ {
+  "repo": "istupakov/parakeet-tdt-0.6b-v3-onnx",
+  "folder": "",
+  "revision": "8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce",
+  "license": "cc-by-4.0",
+  "main_now": "8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce",
+  "bytes": 3220331722,
+  "files": [
+   {
+    "path": "config.json",
+    "size": 97,
+    "sha256": null,
+    "blob": "02a773005666393de591dfd55230b778da1653d8"
+   },
+   {
+    "path": "decoder_joint-model.int8.onnx",
+    "size": 18202004,
+    "sha256": "eea7483ee3d1a30375daedc8ed83e3960c91b098812127a0d99d1c8977667a70",
+    "blob": "86f5a1716b5726e3b80701ef99076d44b3c36b0c"
+   },
+   {
+    "path": "decoder_joint-model.onnx",
+    "size": 72520893,
+    "sha256": "e978ddf6688527182c10fde2eb4b83068421648985ef23f7a86be732be8706c1",
+    "blob": "2bf979877f435dd1c7101dcd284b5c2f8f96ba59"
+   },
+   {
+    "path": "encoder-model.int8.onnx",
+    "size": 652183999,
+    "sha256": "6139d2fa7e1b086097b277c7149725edbab89cc7c7ae64b23c741be4055aff09",
+    "blob": "f60d30a325223080203157bba7bf86df44a69dc3"
+   },
+   {
+    "path": "encoder-model.onnx",
+    "size": 41770866,
+    "sha256": "98a74b21b4cc0017c1e7030319a4a96f4a9506e50f0708f3a516d02a77c96bb1",
+    "blob": "ddee653804b6de146c6ef9bc3477cbe0c21b9786"
+   },
+   {
+    "path": "encoder-model.onnx.data",
+    "size": 2435420160,
+    "sha256": "9a22d372c51455c34f13405da2520baefb7125bd16981397561423ed32d24f36",
+    "blob": "8cf944dd1b9cf1fc21deebe73298153ce9049f5c"
+   },
+   {
+    "path": "nemo128.onnx",
+    "size": 139764,
+    "sha256": "a9fde1486ebfcc08f328d75ad4610c67835fea58c73ba57e3209a6f6cf019e9f",
+    "blob": "0e84a16fc38fca70b132300a700249e8236fe729"
+   },
+   {
+    "path": "vocab.txt",
+    "size": 93939,
+    "sha256": null,
+    "blob": "fc43e1c723e262df60b70e1919614417162d1fe2"
+   }
+  ]
+ },
+ {
+  "repo": "nvidia/parakeet-tdt-0.6b-v3",
+  "folder": "",
+  "revision": "541d1f99c6b0c3cd0b11a95167540bb8edefd82b",
+  "license": "cc-by-4.0",
+  "main_now": "541d1f99c6b0c3cd0b11a95167540bb8edefd82b",
+  "bytes": 2509473204,
+  "files": [
+   {
+    "path": "config.json",
+    "size": 1153,
+    "sha256": null,
+    "blob": "969c65410a736e4a3922f968b3481b2418aba786"
+   },
+   {
+    "path": "generation_config.json",
+    "size": 289,
+    "sha256": null,
+    "blob": "e368b292e2ad5232aae2a3e45f4761097e5fc216"
+   },
+   {
+    "path": "model.safetensors",
+    "size": 2508311120,
+    "sha256": "3a2026366188c8c68598edbbff92f8d11590a08e0ae2e6775544e7b07d6a5e11",
+    "blob": "2d98cb6ea8e6f7c2dce6d7a88def7404169340a0"
+   },
+   {
+    "path": "processor_config.json",
+    "size": 392,
+    "sha256": null,
+    "blob": "7acffca89b7dd12e0ebcd085c7181c91cae6575c"
+   },
+   {
+    "path": "tokenizer.json",
+    "size": 1159960,
+    "sha256": null,
+    "blob": "a10a554cf61e38108756650018d5781ae9675c1d"
+   },
+   {
+    "path": "tokenizer_config.json",
+    "size": 290,
+    "sha256": null,
+    "blob": "8a31c60ee8ce7b81b999061d3a233845cf8bd033"
+   }
+  ]
+ },
+ {
+  "repo": "OpenVINO/Kokoro-82M-fp16-ov",
+  "folder": "",
+  "revision": "787375b6f2bea4e25555bc6686a43fe52083713a",
+  "license": "apache-2.0",
+  "main_now": "787375b6f2bea4e25555bc6686a43fe52083713a",
+  "bytes": 235236153,
+  "files": [
+   {
+    "path": "config.json",
+    "size": 3170,
+    "sha256": null,
+    "blob": "4200c1bb662af99e27b798a7b51924cc6b4913f0"
+   },
+   {
+    "path": "data/gb_gold.json",
+    "size": 2838552,
+    "sha256": null,
+    "blob": "8c7de92c8bf311dcd145fdde163a9d43ffa7d08a"
+   },
+   {
+    "path": "data/gb_silver.json",
+    "size": 3663898,
+    "sha256": null,
+    "blob": "9c9d24390be5cda8a6c102d845ab012fe3d2ae4b"
+   },
+   {
+    "path": "data/ja_words.txt",
+    "size": 1921140,
+    "sha256": null,
+    "blob": "fb3b5b1f87e8dcf113857f96ffe845869a616908"
+   },
+   {
+    "path": "data/us_gold.json",
+    "size": 3000469,
+    "sha256": null,
+    "blob": "8ef4bdc43cf8e29a8d259e674f3c3d60e1b0376b"
+   },
+   {
+    "path": "data/us_silver.json",
+    "size": 3099517,
+    "sha256": null,
+    "blob": "121ba0c4a4ed40d284a58f9fd1fcaa2003613df0"
+   },
+   {
+    "path": "data/vi_acronyms.json",
+    "size": 136822,
+    "sha256": null,
+    "blob": "4ef629467cacab81f8741985a74066a0710e72eb"
+   },
+   {
+    "path": "data/vi_symbols.json",
+    "size": 1298,
+    "sha256": null,
+    "blob": "f3a56d5658eaed35777bdfbf98a694aacfeb64dc"
+   },
+   {
+    "path": "data/vi_teencode.json",
+    "size": 10889,
+    "sha256": null,
+    "blob": "ae75e5aa8b89827209eeabda142c2dc62f618f4c"
+   },
+   {
+    "path": "openvino_model.bin",
+    "size": 190018895,
+    "sha256": "62a9f805c419bedaf1eab758ee1a8b50923d30c912d8c0eb44b2b55288815896",
+    "blob": "0b4e299bccd96ae40e3f4e7e97094bf0a09e38b3"
+   },
+   {
+    "path": "openvino_model.xml",
+    "size": 2340543,
+    "sha256": null,
+    "blob": "58e8e195e1991ed1c4260cf39fcf5ed5f3dedfdb"
+   },
+   {
+    "path": "voices/af_alloy.bin",
+    "size": 522240,
+    "sha256": "c4a6b876047fd7fb472edf4ebd63cfac7c3b958a7cae7c106e8f038ca6308c45",
+    "blob": "0905106b01371419a35a8a56b5fb811a38a94ced"
+   },
+   {
+    "path": "voices/af_aoede.bin",
+    "size": 522240,
+    "sha256": "4a004c33430762e2461eedb2013fad808ef4ab3121f5300f554476caf58d8361",
+    "blob": "645743d70543d6d12a2ba8d8d71e6cff28696712"
+   },
+   {
+    "path": "voices/af_bella.bin",
+    "size": 522240,
+    "sha256": "f69d836209b78eb8c66e75e3cda491e26ea838a3674257e9d4e5703cbaf55c8b",
+    "blob": "365633a9291e723da03eef8d4a044bdde938285f"
+   },
+   {
+    "path": "voices/af_heart.bin",
+    "size": 522240,
+    "sha256": "d583ccff3cdca2f7fae535cb998ac07e9fcb90f09737b9a41fa2734ec44a8f0b",
+    "blob": "e256d26664ef513affbcf7bace1246bbcffea5c3"
+   },
+   {
+    "path": "voices/af_jessica.bin",
+    "size": 522240,
+    "sha256": "a240a5e3c15b43563d6e923bdca8ef5613a23471d9b77653694012435df23bd8",
+    "blob": "4c49329c879859697d41b96e0bb155ec64f4cb40"
+   },
+   {
+    "path": "voices/af_kore.bin",
+    "size": 522240,
+    "sha256": "9be5221b6a941c04b561959b8ff0b06e809444dcc4ab7e75a7b23606f691819e",
+    "blob": "6b4042256fec935d32b9552d542d57f3a1f85c20"
+   },
+   {
+    "path": "voices/af_nicole.bin",
+    "size": 522240,
+    "sha256": "cd2191ab31b914ed7b318416b0e4440fdf392ddad9106a060819aa600a64f59a",
+    "blob": "672a558c7b1bb5ba3c3b5bd8b3684fda3fc3af92"
+   },
+   {
+    "path": "voices/af_nova.bin",
+    "size": 522240,
+    "sha256": "18778272caa0d0eebaea251c35fd635f038434f9eee5e691d02a174bd328414f",
+    "blob": "e9c42fa5fc5c808b55f5765de52509a7a76e6cce"
+   },
+   {
+    "path": "voices/af_river.bin",
+    "size": 522240,
+    "sha256": "00a2bcf82b1d86e8f19902ede58c65ccf6c0e43b44b7d74fad54e5d8933c9c30",
+    "blob": "a95eb345a5abebeccc4ed296fad15bfc7227968f"
+   },
+   {
+    "path": "voices/af_sarah.bin",
+    "size": 522240,
+    "sha256": "4409fbc125afabacc615d94db5398d847006a737b0247d6892b7a9a0007a2f0a",
+    "blob": "73133faa5c39d9c86c4133f63b8f06fec15d4732"
+   },
+   {
+    "path": "voices/af_sky.bin",
+    "size": 522240,
+    "sha256": "4435255c9744f3f31659e0d714ab7689bf65d9e77ec1cce060f083912614f0b9",
+    "blob": "ad74f167c9c89528657b5ede844603fbab1e7396"
+   },
+   {
+    "path": "voices/am_adam.bin",
+    "size": 522240,
+    "sha256": "162b035ed91cfc48b6046982184c645f72edcdd1b82843347f605d7bf7b15716",
+    "blob": "b9d8c252d31ebf3fde34c76d39c78c819929b5cf"
+   },
+   {
+    "path": "voices/am_echo.bin",
+    "size": 522240,
+    "sha256": "3968b92c3c4cd1c4416dbded36c13eaa388a90d5788d02a13e4d781f5f8cf3c3",
+    "blob": "4045c77f0c13881efc4d871783a04a75b1746c32"
+   },
+   {
+    "path": "voices/am_eric.bin",
+    "size": 522240,
+    "sha256": "e8b5be17edd1e3636901ce7598baafe2dc8dd8ff707a0c23bf9e461add7e2832",
+    "blob": "19e2962d883dd389170ed6e7d841bb33169b940d"
+   },
+   {
+    "path": "voices/am_fenrir.bin",
+    "size": 522240,
+    "sha256": "c27989f741f7ee34d273a39d8a595cc0837d35f5ced9a29b7cc162614616df43",
+    "blob": "8f11b76a4bee997e468e1658237134e4bcd84e28"
+   },
+   {
+    "path": "voices/am_liam.bin",
+    "size": 522240,
+    "sha256": "52403be32fd047c6a44517cb0bcd6b134f2a18baa73e70ef41651e0eab921ade",
+    "blob": "ded1f17a0bb1b50a0c1768cbba429e377a23caf3"
+   },
+   {
+    "path": "voices/am_michael.bin",
+    "size": 522240,
+    "sha256": "1d1f21dd8da39c30705cd4c75d039d265e9bc4a2a93ed09bc9e1b1225eb95ba1",
+    "blob": "fe0ada256058dc58006d5ba628b37a7e73c85e5f"
+   },
+   {
+    "path": "voices/am_onyx.bin",
+    "size": 522240,
+    "sha256": "da5d135b424164916d75a68ffb4c2abce3d7d5ccc82dd1ee6cf447ce286145e6",
+    "blob": "5404c566a71636d445e91891fe1544897ebbdd15"
+   },
+   {
+    "path": "voices/am_puck.bin",
+    "size": 522240,
+    "sha256": "fcf73c989033e9233e0b98713eca600c8c74dcc1614b37009d5450ff4a2274a0",
+    "blob": "501a49dee17309d44af14812508ba6d957f132fa"
+   },
+   {
+    "path": "voices/am_santa.bin",
+    "size": 522240,
+    "sha256": "61150cf726ab6c5ed7a99f90a304f91f5a72c00c592e89ec94e5df11c319227a",
+    "blob": "d5acb14ca0820a858b74b4eb938770048887518b"
+   },
+   {
+    "path": "voices/bf_alice.bin",
+    "size": 522240,
+    "sha256": "08afa6ba24da61ea5e8efa139e5aadc938d83f0a6da5a900adaf763ac1da5573",
+    "blob": "bf7311cf04a0fdbbc74d24819ec711ddeed89ad7"
+   },
+   {
+    "path": "voices/bf_emma.bin",
+    "size": 522240,
+    "sha256": "669fe0647f9dd04fcab92f1439a40eeb4c8b4ab1f82e4996fe3d918ce4a63b73",
+    "blob": "436db46f637565323f32e25974a45bedc737d54d"
+   },
+   {
+    "path": "voices/bf_isabella.bin",
+    "size": 522240,
+    "sha256": "3754352c4aaa46d17f27654ab7518d65b62ad6163a0f55a5f4330c2da2c4e94f",
+    "blob": "a4fb02a24bf46b8b31a550a5c98a6061d1f7e61b"
+   },
+   {
+    "path": "voices/bf_lily.bin",
+    "size": 522240,
+    "sha256": "5e0ee32ebe64a467124976b14e69590746f1c4ce41a12b587a50c862edfea335",
+    "blob": "5b52d4ace80c24d44bad51e1ab00ab5ac72ff02a"
+   },
+   {
+    "path": "voices/bm_daniel.bin",
+    "size": 522240,
+    "sha256": "6b3194bbceffb746733cbc22c8f593dd44e401a71d53895a2dca891bc595a1e8",
+    "blob": "cb5de2d02e84598d5c586c0ddb52a8d858a5cfda"
+   },
+   {
+    "path": "voices/bm_fable.bin",
+    "size": 522240,
+    "sha256": "f889083196807b4adb15e9204252165f503b8d33d3982e681c52443c49d798f1",
+    "blob": "065e0cfdbf027293c544cea3841ec0692360ce53"
+   },
+   {
+    "path": "voices/bm_george.bin",
+    "size": 522240,
+    "sha256": "c4b235a4c1f2cd3b939fed08b899ce9385638b763f7b73a59616c4fc9bd6c9bc",
+    "blob": "197a97c2421b8be060b5d3408a318010d2ea9fff"
+   },
+   {
+    "path": "voices/bm_lewis.bin",
+    "size": 522240,
+    "sha256": "b8f671cef828c30e66fdf0b0756a76bba58f6bb3398cbbf27058642acbcedb97",
+    "blob": "7057c1d0c24ff3b1ed4a197e1ee20b73b8796c25"
+   },
+   {
+    "path": "voices/ef_dora.bin",
+    "size": 522240,
+    "sha256": "f66ec66bd295acb18372e37008533a9a3228483ccd294e7538d5d9294ac9a532",
+    "blob": "c2468cadd556a59c87a9cd0354d030490cac47fc"
+   },
+   {
+    "path": "voices/em_alex.bin",
+    "size": 522240,
+    "sha256": "27809e9eafdcbcfff90a3016c697568676531de2a2c39cee29c96c7bd6b83e95",
+    "blob": "a9b33eee4548de7c954afb457242017688851a42"
+   },
+   {
+    "path": "voices/em_santa.bin",
+    "size": 522240,
+    "sha256": "ad43b774e1ca24d05c6161297d8aeb770ac3d29bb95daf516727af5f7d543683",
+    "blob": "8efed8adedd03e37bf2ddd18c1ce3f1fce53555b"
+   },
+   {
+    "path": "voices/ff_siwis.bin",
+    "size": 522240,
+    "sha256": "a35f5675ad08948e326ae75fd0ea16ba5d0042e4f76b5f3d1df77d0a48c54861",
+    "blob": "3a44c9837070fbeee9ccd7c450b8e49bcb18d1b7"
+   },
+   {
+    "path": "voices/hf_alpha.bin",
+    "size": 522240,
+    "sha256": "040be6a4425411cc01fda5fd06693c76bfa78572632852bc8cda9c99232ffb56",
+    "blob": "2d9537173500579b57a3a904d43e7580f16d96c6"
+   },
+   {
+    "path": "voices/hf_beta.bin",
+    "size": 522240,
+    "sha256": "cd83ae0bb9b2e4e4fb92b4973bd8d1822ca0036d3c498bf4fc89aa8e33917cc7",
+    "blob": "b1b377744ac61427ca4e3552f9568cede6ea8967"
+   },
+   {
+    "path": "voices/hm_omega.bin",
+    "size": 522240,
+    "sha256": "b02d9222d9ed00ce26b302173a862c2c93f96cc40b5c422b8d14910b9ff34137",
+    "blob": "1f89ea0d8469cb8e278990f5f370ead72c09014a"
+   },
+   {
+    "path": "voices/hm_psi.bin",
+    "size": 522240,
+    "sha256": "644daf88ba8aeb7bd08950bbdcd4453bb280864e49dc4df93fabc6be32e03f37",
+    "blob": "d7c3d9883bdc4fb06d22927a35391bf821079f3c"
+   },
+   {
+    "path": "voices/if_sara.bin",
+    "size": 522240,
+    "sha256": "409b69248798fcdc2542330c76953d230710f19b057e59cb82fdc3c4cf71265c",
+    "blob": "e8cd84e218c4c9ce7ece4f003954cd76a8a61ff8"
+   },
+   {
+    "path": "voices/im_nicola.bin",
+    "size": 522240,
+    "sha256": "bc578e510d52a96d6940d46f12e96d7b3df00905dbea075113226d100e6e1ab0",
+    "blob": "b48311bb43c81af5a7b95527b89425837604eeb5"
+   },
+   {
+    "path": "voices/jf_alpha.bin",
+    "size": 522240,
+    "sha256": "56b479360aad9f367aeb8cef908f9201cf48b4555e488c5f4590c9dfcd978bb6",
+    "blob": "83a8995db03971fa879c84187e9e56b2fb715c48"
+   },
+   {
+    "path": "voices/jf_gongitsune.bin",
+    "size": 522240,
+    "sha256": "0f1181f3772d27b7c12aaf4bcd71e31b186c4146e330d074a3dc64ee392af396",
+    "blob": "045ff4a60d3df8921071e6e34a12360b20883acb"
+   },
+   {
+    "path": "voices/jf_nezumi.bin",
+    "size": 522240,
+    "sha256": "13cb71eebb0b48739d444558322aa35a8c9a489b80e1e631f14d2e6aea93026b",
+    "blob": "98272c7033adc199cde4f279f9ef40ff62548f10"
+   },
+   {
+    "path": "voices/jf_tebukuro.bin",
+    "size": 522240,
+    "sha256": "29c6c0561b4288d59639677bebe7533c919743d5ea68d0d2ae992644beea6696",
+    "blob": "e7121307fb63c7c14606b160d1592fad03debbf7"
+   },
+   {
+    "path": "voices/jm_kumo.bin",
+    "size": 522240,
+    "sha256": "09e959d239724c734d65661f06f14cdabcddfd476bfaaad905a937099ae9e64f",
+    "blob": "af8f3c1b79daac42ec9f9a2f078f8aab7bd7234e"
+   },
+   {
+    "path": "voices/pf_dora.bin",
+    "size": 522240,
+    "sha256": "3da7b5b2d91847ebf5646f57631af6ececae3c29a89cd300f06edf9aa6cfe9ee",
+    "blob": "949bbcf9ed786d6a51533b58e69f7472a3897c84"
+   },
+   {
+    "path": "voices/pm_alex.bin",
+    "size": 522240,
+    "sha256": "0175c753f59c54e7fd5a995bedef0c5ff2fb67e0043dd3dcb2ae74ec2acbeb2a",
+    "blob": "7176e7d7174261a7c042af73d28d1f6e38faeec5"
+   },
+   {
+    "path": "voices/pm_santa.bin",
+    "size": 522240,
+    "sha256": "8b012db3185778afe2e45a62cbad69db73021774fe68dda634bcc748a982eede",
+    "blob": "8ed31c5f91479ab87fff03ad77ea0a8e66bcb363"
+   },
+   {
+    "path": "voices/zf_xiaobei.bin",
+    "size": 522240,
+    "sha256": "5dde6e1c9c4f12c8b327bc29c0cee361a23b52b952c04636858ba637ec66e640",
+    "blob": "99d4ef5e4bd2070b2818313a2b3bd870585cff56"
+   },
+   {
+    "path": "voices/zf_xiaoni.bin",
+    "size": 522240,
+    "sha256": "08892b62a39af0a615cd0581238db7e19e44c578e8fa0bfd0e586e93327d9cba",
+    "blob": "9768ba2ad29094d2a915b6ba09b693933922ad0b"
+   },
+   {
+    "path": "voices/zf_xiaoxiao.bin",
+    "size": 522240,
+    "sha256": "03adb5d5e3ddd88b047954e974e651cb0a4b524c985057e5d872e962c7be1169",
+    "blob": "08508f54eee19db6403be880dda675d89b7fef0b"
+   },
+   {
+    "path": "voices/zf_xiaoyi.bin",
+    "size": 522240,
+    "sha256": "bc1555c5c486099196ac254bae5e0bb543c121952a3092f50b7d8724f1bc36b3",
+    "blob": "ed7e6f44599967924ac9e81f3e402886e87d0e5b"
+   },
+   {
+    "path": "voices/zm_yunjian.bin",
+    "size": 522240,
+    "sha256": "de48a00bdbf3649f07162269a2b6e0513604389bfac8a2e6c75cb34b323ad6fa",
+    "blob": "a33d071bb70b69fa8d5d8d1c2c0febf84a656869"
+   },
+   {
+    "path": "voices/zm_yunxi.bin",
+    "size": 522240,
+    "sha256": "7243892fb4e560d47014090ddf010f8b8b790f3c6b029ff82b2ac06aa4e27c8b",
+    "blob": "8e3207d5a3e87f736d74cf92a7949fe6522f14a6"
+   },
+   {
+    "path": "voices/zm_yunxia.bin",
+    "size": 522240,
+    "sha256": "6b2b8fc15b3df19a368daebe5c581c7fabf433ee5b8a17ffd6b3d723cff8936d",
+    "blob": "991f997115796bfd7202e1eae38c23065b8b7c92"
+   },
+   {
+    "path": "voices/zm_yunyang.bin",
+    "size": 522240,
+    "sha256": "261e2c89470534dbbcb8fd98b8fdc495ec94063d9bb6c8277f7be43cccba3f42",
+    "blob": "c3bea5cfad6993bb8f2a0e80a5a8c57d58f9a0d8"
+   }
+  ]
+ },
+ {
+  "repo": "OpenVINO/Kokoro-82M-int8-ov",
+  "folder": "",
+  "revision": "9c035d0bfab136f0c1c525a5841d3411d7220c66",
+  "license": "apache-2.0",
+  "main_now": "9c035d0bfab136f0c1c525a5841d3411d7220c66",
+  "bytes": 159453654,
+  "files": [
+   {
+    "path": "config.json",
+    "size": 3170,
+    "sha256": null,
+    "blob": "4200c1bb662af99e27b798a7b51924cc6b4913f0"
+   },
+   {
+    "path": "data/gb_gold.json",
+    "size": 2838552,
+    "sha256": null,
+    "blob": "8c7de92c8bf311dcd145fdde163a9d43ffa7d08a"
+   },
+   {
+    "path": "data/gb_silver.json",
+    "size": 3663898,
+    "sha256": null,
+    "blob": "9c9d24390be5cda8a6c102d845ab012fe3d2ae4b"
+   },
+   {
+    "path": "data/ja_words.txt",
+    "size": 1921140,
+    "sha256": null,
+    "blob": "fb3b5b1f87e8dcf113857f96ffe845869a616908"
+   },
+   {
+    "path": "data/us_gold.json",
+    "size": 3000469,
+    "sha256": null,
+    "blob": "8ef4bdc43cf8e29a8d259e674f3c3d60e1b0376b"
+   },
+   {
+    "path": "data/us_silver.json",
+    "size": 3099517,
+    "sha256": null,
+    "blob": "121ba0c4a4ed40d284a58f9fd1fcaa2003613df0"
+   },
+   {
+    "path": "data/vi_acronyms.json",
+    "size": 136822,
+    "sha256": null,
+    "blob": "4ef629467cacab81f8741985a74066a0710e72eb"
+   },
+   {
+    "path": "data/vi_symbols.json",
+    "size": 1298,
+    "sha256": null,
+    "blob": "f3a56d5658eaed35777bdfbf98a694aacfeb64dc"
+   },
+   {
+    "path": "data/vi_teencode.json",
+    "size": 10889,
+    "sha256": null,
+    "blob": "ae75e5aa8b89827209eeabda142c2dc62f618f4c"
+   },
+   {
+    "path": "openvino_config.json",
+    "size": 440,
+    "sha256": null,
+    "blob": "5f14ba67a9a138885521064d61e185b8c8cf1210"
+   },
+   {
+    "path": "openvino_model.bin",
+    "size": 114025461,
+    "sha256": "c879cdd88275b9bfa25e51204d969013d701ea8699e15f99fd1957caf75a29ab",
+    "blob": "c56fa967f1ca3cbe849334d636153b4efcb283fe"
+   },
+   {
+    "path": "openvino_model.xml",
+    "size": 2551038,
+    "sha256": null,
+    "blob": "9648b3abe5aba26b6ebf0127d0c99ac8bc9f08a0"
+   },
+   {
+    "path": "voices/af_alloy.bin",
+    "size": 522240,
+    "sha256": "c4a6b876047fd7fb472edf4ebd63cfac7c3b958a7cae7c106e8f038ca6308c45",
+    "blob": "0905106b01371419a35a8a56b5fb811a38a94ced"
+   },
+   {
+    "path": "voices/af_aoede.bin",
+    "size": 522240,
+    "sha256": "4a004c33430762e2461eedb2013fad808ef4ab3121f5300f554476caf58d8361",
+    "blob": "645743d70543d6d12a2ba8d8d71e6cff28696712"
+   },
+   {
+    "path": "voices/af_bella.bin",
+    "size": 522240,
+    "sha256": "f69d836209b78eb8c66e75e3cda491e26ea838a3674257e9d4e5703cbaf55c8b",
+    "blob": "365633a9291e723da03eef8d4a044bdde938285f"
+   },
+   {
+    "path": "voices/af_heart.bin",
+    "size": 522240,
+    "sha256": "d583ccff3cdca2f7fae535cb998ac07e9fcb90f09737b9a41fa2734ec44a8f0b",
+    "blob": "e256d26664ef513affbcf7bace1246bbcffea5c3"
+   },
+   {
+    "path": "voices/af_jessica.bin",
+    "size": 522240,
+    "sha256": "a240a5e3c15b43563d6e923bdca8ef5613a23471d9b77653694012435df23bd8",
+    "blob": "4c49329c879859697d41b96e0bb155ec64f4cb40"
+   },
+   {
+    "path": "voices/af_kore.bin",
+    "size": 522240,
+    "sha256": "9be5221b6a941c04b561959b8ff0b06e809444dcc4ab7e75a7b23606f691819e",
+    "blob": "6b4042256fec935d32b9552d542d57f3a1f85c20"
+   },
+   {
+    "path": "voices/af_nicole.bin",
+    "size": 522240,
+    "sha256": "cd2191ab31b914ed7b318416b0e4440fdf392ddad9106a060819aa600a64f59a",
+    "blob": "672a558c7b1bb5ba3c3b5bd8b3684fda3fc3af92"
+   },
+   {
+    "path": "voices/af_nova.bin",
+    "size": 522240,
+    "sha256": "18778272caa0d0eebaea251c35fd635f038434f9eee5e691d02a174bd328414f",
+    "blob": "e9c42fa5fc5c808b55f5765de52509a7a76e6cce"
+   },
+   {
+    "path": "voices/af_river.bin",
+    "size": 522240,
+    "sha256": "00a2bcf82b1d86e8f19902ede58c65ccf6c0e43b44b7d74fad54e5d8933c9c30",
+    "blob": "a95eb345a5abebeccc4ed296fad15bfc7227968f"
+   },
+   {
+    "path": "voices/af_sarah.bin",
+    "size": 522240,
+    "sha256": "4409fbc125afabacc615d94db5398d847006a737b0247d6892b7a9a0007a2f0a",
+    "blob": "73133faa5c39d9c86c4133f63b8f06fec15d4732"
+   },
+   {
+    "path": "voices/af_sky.bin",
+    "size": 522240,
+    "sha256": "4435255c9744f3f31659e0d714ab7689bf65d9e77ec1cce060f083912614f0b9",
+    "blob": "ad74f167c9c89528657b5ede844603fbab1e7396"
+   },
+   {
+    "path": "voices/am_adam.bin",
+    "size": 522240,
+    "sha256": "162b035ed91cfc48b6046982184c645f72edcdd1b82843347f605d7bf7b15716",
+    "blob": "b9d8c252d31ebf3fde34c76d39c78c819929b5cf"
+   },
+   {
+    "path": "voices/am_echo.bin",
+    "size": 522240,
+    "sha256": "3968b92c3c4cd1c4416dbded36c13eaa388a90d5788d02a13e4d781f5f8cf3c3",
+    "blob": "4045c77f0c13881efc4d871783a04a75b1746c32"
+   },
+   {
+    "path": "voices/am_eric.bin",
+    "size": 522240,
+    "sha256": "e8b5be17edd1e3636901ce7598baafe2dc8dd8ff707a0c23bf9e461add7e2832",
+    "blob": "19e2962d883dd389170ed6e7d841bb33169b940d"
+   },
+   {
+    "path": "voices/am_fenrir.bin",
+    "size": 522240,
+    "sha256": "c27989f741f7ee34d273a39d8a595cc0837d35f5ced9a29b7cc162614616df43",
+    "blob": "8f11b76a4bee997e468e1658237134e4bcd84e28"
+   },
+   {
+    "path": "voices/am_liam.bin",
+    "size": 522240,
+    "sha256": "52403be32fd047c6a44517cb0bcd6b134f2a18baa73e70ef41651e0eab921ade",
+    "blob": "ded1f17a0bb1b50a0c1768cbba429e377a23caf3"
+   },
+   {
+    "path": "voices/am_michael.bin",
+    "size": 522240,
+    "sha256": "1d1f21dd8da39c30705cd4c75d039d265e9bc4a2a93ed09bc9e1b1225eb95ba1",
+    "blob": "fe0ada256058dc58006d5ba628b37a7e73c85e5f"
+   },
+   {
+    "path": "voices/am_onyx.bin",
+    "size": 522240,
+    "sha256": "da5d135b424164916d75a68ffb4c2abce3d7d5ccc82dd1ee6cf447ce286145e6",
+    "blob": "5404c566a71636d445e91891fe1544897ebbdd15"
+   },
+   {
+    "path": "voices/am_puck.bin",
+    "size": 522240,
+    "sha256": "fcf73c989033e9233e0b98713eca600c8c74dcc1614b37009d5450ff4a2274a0",
+    "blob": "501a49dee17309d44af14812508ba6d957f132fa"
+   },
+   {
+    "path": "voices/am_santa.bin",
+    "size": 522240,
+    "sha256": "61150cf726ab6c5ed7a99f90a304f91f5a72c00c592e89ec94e5df11c319227a",
+    "blob": "d5acb14ca0820a858b74b4eb938770048887518b"
+   },
+   {
+    "path": "voices/bf_alice.bin",
+    "size": 522240,
+    "sha256": "08afa6ba24da61ea5e8efa139e5aadc938d83f0a6da5a900adaf763ac1da5573",
+    "blob": "bf7311cf04a0fdbbc74d24819ec711ddeed89ad7"
+   },
+   {
+    "path": "voices/bf_emma.bin",
+    "size": 522240,
+    "sha256": "669fe0647f9dd04fcab92f1439a40eeb4c8b4ab1f82e4996fe3d918ce4a63b73",
+    "blob": "436db46f637565323f32e25974a45bedc737d54d"
+   },
+   {
+    "path": "voices/bf_isabella.bin",
+    "size": 522240,
+    "sha256": "3754352c4aaa46d17f27654ab7518d65b62ad6163a0f55a5f4330c2da2c4e94f",
+    "blob": "a4fb02a24bf46b8b31a550a5c98a6061d1f7e61b"
+   },
+   {
+    "path": "voices/bf_lily.bin",
+    "size": 522240,
+    "sha256": "5e0ee32ebe64a467124976b14e69590746f1c4ce41a12b587a50c862edfea335",
+    "blob": "5b52d4ace80c24d44bad51e1ab00ab5ac72ff02a"
+   },
+   {
+    "path": "voices/bm_daniel.bin",
+    "size": 522240,
+    "sha256": "6b3194bbceffb746733cbc22c8f593dd44e401a71d53895a2dca891bc595a1e8",
+    "blob": "cb5de2d02e84598d5c586c0ddb52a8d858a5cfda"
+   },
+   {
+    "path": "voices/bm_fable.bin",
+    "size": 522240,
+    "sha256": "f889083196807b4adb15e9204252165f503b8d33d3982e681c52443c49d798f1",
+    "blob": "065e0cfdbf027293c544cea3841ec0692360ce53"
+   },
+   {
+    "path": "voices/bm_george.bin",
+    "size": 522240,
+    "sha256": "c4b235a4c1f2cd3b939fed08b899ce9385638b763f7b73a59616c4fc9bd6c9bc",
+    "blob": "197a97c2421b8be060b5d3408a318010d2ea9fff"
+   },
+   {
+    "path": "voices/bm_lewis.bin",
+    "size": 522240,
+    "sha256": "b8f671cef828c30e66fdf0b0756a76bba58f6bb3398cbbf27058642acbcedb97",
+    "blob": "7057c1d0c24ff3b1ed4a197e1ee20b73b8796c25"
+   },
+   {
+    "path": "voices/ef_dora.bin",
+    "size": 522240,
+    "sha256": "f66ec66bd295acb18372e37008533a9a3228483ccd294e7538d5d9294ac9a532",
+    "blob": "c2468cadd556a59c87a9cd0354d030490cac47fc"
+   },
+   {
+    "path": "voices/em_alex.bin",
+    "size": 522240,
+    "sha256": "27809e9eafdcbcfff90a3016c697568676531de2a2c39cee29c96c7bd6b83e95",
+    "blob": "a9b33eee4548de7c954afb457242017688851a42"
+   },
+   {
+    "path": "voices/em_santa.bin",
+    "size": 522240,
+    "sha256": "ad43b774e1ca24d05c6161297d8aeb770ac3d29bb95daf516727af5f7d543683",
+    "blob": "8efed8adedd03e37bf2ddd18c1ce3f1fce53555b"
+   },
+   {
+    "path": "voices/ff_siwis.bin",
+    "size": 522240,
+    "sha256": "a35f5675ad08948e326ae75fd0ea16ba5d0042e4f76b5f3d1df77d0a48c54861",
+    "blob": "3a44c9837070fbeee9ccd7c450b8e49bcb18d1b7"
+   },
+   {
+    "path": "voices/hf_alpha.bin",
+    "size": 522240,
+    "sha256": "040be6a4425411cc01fda5fd06693c76bfa78572632852bc8cda9c99232ffb56",
+    "blob": "2d9537173500579b57a3a904d43e7580f16d96c6"
+   },
+   {
+    "path": "voices/hf_beta.bin",
+    "size": 522240,
+    "sha256": "cd83ae0bb9b2e4e4fb92b4973bd8d1822ca0036d3c498bf4fc89aa8e33917cc7",
+    "blob": "b1b377744ac61427ca4e3552f9568cede6ea8967"
+   },
+   {
+    "path": "voices/hm_omega.bin",
+    "size": 522240,
+    "sha256": "b02d9222d9ed00ce26b302173a862c2c93f96cc40b5c422b8d14910b9ff34137",
+    "blob": "1f89ea0d8469cb8e278990f5f370ead72c09014a"
+   },
+   {
+    "path": "voices/hm_psi.bin",
+    "size": 522240,
+    "sha256": "644daf88ba8aeb7bd08950bbdcd4453bb280864e49dc4df93fabc6be32e03f37",
+    "blob": "d7c3d9883bdc4fb06d22927a35391bf821079f3c"
+   },
+   {
+    "path": "voices/if_sara.bin",
+    "size": 522240,
+    "sha256": "409b69248798fcdc2542330c76953d230710f19b057e59cb82fdc3c4cf71265c",
+    "blob": "e8cd84e218c4c9ce7ece4f003954cd76a8a61ff8"
+   },
+   {
+    "path": "voices/im_nicola.bin",
+    "size": 522240,
+    "sha256": "bc578e510d52a96d6940d46f12e96d7b3df00905dbea075113226d100e6e1ab0",
+    "blob": "b48311bb43c81af5a7b95527b89425837604eeb5"
+   },
+   {
+    "path": "voices/jf_alpha.bin",
+    "size": 522240,
+    "sha256": "56b479360aad9f367aeb8cef908f9201cf48b4555e488c5f4590c9dfcd978bb6",
+    "blob": "83a8995db03971fa879c84187e9e56b2fb715c48"
+   },
+   {
+    "path": "voices/jf_gongitsune.bin",
+    "size": 522240,
+    "sha256": "0f1181f3772d27b7c12aaf4bcd71e31b186c4146e330d074a3dc64ee392af396",
+    "blob": "045ff4a60d3df8921071e6e34a12360b20883acb"
+   },
+   {
+    "path": "voices/jf_nezumi.bin",
+    "size": 522240,
+    "sha256": "13cb71eebb0b48739d444558322aa35a8c9a489b80e1e631f14d2e6aea93026b",
+    "blob": "98272c7033adc199cde4f279f9ef40ff62548f10"
+   },
+   {
+    "path": "voices/jf_tebukuro.bin",
+    "size": 522240,
+    "sha256": "29c6c0561b4288d59639677bebe7533c919743d5ea68d0d2ae992644beea6696",
+    "blob": "e7121307fb63c7c14606b160d1592fad03debbf7"
+   },
+   {
+    "path": "voices/jm_kumo.bin",
+    "size": 522240,
+    "sha256": "09e959d239724c734d65661f06f14cdabcddfd476bfaaad905a937099ae9e64f",
+    "blob": "af8f3c1b79daac42ec9f9a2f078f8aab7bd7234e"
+   },
+   {
+    "path": "voices/pf_dora.bin",
+    "size": 522240,
+    "sha256": "3da7b5b2d91847ebf5646f57631af6ececae3c29a89cd300f06edf9aa6cfe9ee",
+    "blob": "949bbcf9ed786d6a51533b58e69f7472a3897c84"
+   },
+   {
+    "path": "voices/pm_alex.bin",
+    "size": 522240,
+    "sha256": "0175c753f59c54e7fd5a995bedef0c5ff2fb67e0043dd3dcb2ae74ec2acbeb2a",
+    "blob": "7176e7d7174261a7c042af73d28d1f6e38faeec5"
+   },
+   {
+    "path": "voices/pm_santa.bin",
+    "size": 522240,
+    "sha256": "8b012db3185778afe2e45a62cbad69db73021774fe68dda634bcc748a982eede",
+    "blob": "8ed31c5f91479ab87fff03ad77ea0a8e66bcb363"
+   },
+   {
+    "path": "voices/zf_xiaobei.bin",
+    "size": 522240,
+    "sha256": "5dde6e1c9c4f12c8b327bc29c0cee361a23b52b952c04636858ba637ec66e640",
+    "blob": "99d4ef5e4bd2070b2818313a2b3bd870585cff56"
+   },
+   {
+    "path": "voices/zf_xiaoni.bin",
+    "size": 522240,
+    "sha256": "08892b62a39af0a615cd0581238db7e19e44c578e8fa0bfd0e586e93327d9cba",
+    "blob": "9768ba2ad29094d2a915b6ba09b693933922ad0b"
+   },
+   {
+    "path": "voices/zf_xiaoxiao.bin",
+    "size": 522240,
+    "sha256": "03adb5d5e3ddd88b047954e974e651cb0a4b524c985057e5d872e962c7be1169",
+    "blob": "08508f54eee19db6403be880dda675d89b7fef0b"
+   },
+   {
+    "path": "voices/zf_xiaoyi.bin",
+    "size": 522240,
+    "sha256": "bc1555c5c486099196ac254bae5e0bb543c121952a3092f50b7d8724f1bc36b3",
+    "blob": "ed7e6f44599967924ac9e81f3e402886e87d0e5b"
+   },
+   {
+    "path": "voices/zm_yunjian.bin",
+    "size": 522240,
+    "sha256": "de48a00bdbf3649f07162269a2b6e0513604389bfac8a2e6c75cb34b323ad6fa",
+    "blob": "a33d071bb70b69fa8d5d8d1c2c0febf84a656869"
+   },
+   {
+    "path": "voices/zm_yunxi.bin",
+    "size": 522240,
+    "sha256": "7243892fb4e560d47014090ddf010f8b8b790f3c6b029ff82b2ac06aa4e27c8b",
+    "blob": "8e3207d5a3e87f736d74cf92a7949fe6522f14a6"
+   },
+   {
+    "path": "voices/zm_yunxia.bin",
+    "size": 522240,
+    "sha256": "6b2b8fc15b3df19a368daebe5c581c7fabf433ee5b8a17ffd6b3d723cff8936d",
+    "blob": "991f997115796bfd7202e1eae38c23065b8b7c92"
+   },
+   {
+    "path": "voices/zm_yunyang.bin",
+    "size": 522240,
+    "sha256": "261e2c89470534dbbcb8fd98b8fdc495ec94063d9bb6c8277f7be43cccba3f42",
+    "blob": "c3bea5cfad6993bb8f2a0e80a5a8c57d58f9a0d8"
+   }
+  ]
+ },
+ {
+  "repo": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "folder": "",
+  "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+  "license": "apache-2.0",
+  "main_now": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+  "bytes": 489292866,
+  "files": [
+   {
+    "path": "config.json",
+    "size": 44,
+    "sha256": null,
+    "blob": "790faf216e7e3f490e71e8bc80df79ed8941101c"
+   },
+   {
+    "path": "onnx/model.onnx",
+    "size": 325532232,
+    "sha256": "8fbea51ea711f2af382e88c833d9e288c6dc82ce5e98421ea61c058ce21a34cb",
+    "blob": "eb62e9670f5a2a719ae2a7e954acc62ca2c83c9d"
+   },
+   {
+    "path": "onnx/model_fp16.onnx",
+    "size": 163234740,
+    "sha256": "ba4527a874b42b21e35f468c10d326fdff3c7fc8cac1f85e9eb6c0dfc35c334a",
+    "blob": "4bf719116fd4cfa15113b06652f2977d1a360bc9"
+   },
+   {
+    "path": "tokenizer.json",
+    "size": 3497,
+    "sha256": null,
+    "blob": "4280f55fc1c32211bc9bb4d55545759a00054ecd"
+   },
+   {
+    "path": "tokenizer_config.json",
+    "size": 113,
+    "sha256": null,
+    "blob": "5c81e9a3a06db9139900d6ee5b60e8bb701ccb0b"
+   },
+   {
+    "path": "voices/af_heart.bin",
+    "size": 522240,
+    "sha256": "d583ccff3cdca2f7fae535cb998ac07e9fcb90f09737b9a41fa2734ec44a8f0b",
+    "blob": "e256d26664ef513affbcf7bace1246bbcffea5c3"
+   }
+  ]
+ },
+ {
+  "repo": "hexgrad/Kokoro-82M",
+  "folder": "",
+  "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "license": "apache-2.0",
+  "main_now": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "bytes": 327738002,
+  "files": [
+   {
+    "path": "config.json",
+    "size": 2351,
+    "sha256": null,
+    "blob": "14a726edd3718279eac426630879ff743955b16a"
+   },
+   {
+    "path": "kokoro-v1_0.pth",
+    "size": 327212226,
+    "sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+    "blob": "15769c415594dcb424579ba3dfae3085578aac4e"
+   },
+   {
+    "path": "voices/af_heart.pt",
+    "size": 523425,
+    "sha256": "0ab5709b8ffab19bfd849cd11d98f75b60af7733253ad0d67b12382a102cb4ff",
+    "blob": "23a296174457c31b22b694f6e07e4e1b558122bf"
+   }
+  ]
+ }
+]

@@ -1,0 +1,121 @@
+{
+    "cell":  "kokoro/ovg-int8-igpu",
+    "device":  "igpu",
+    "role":  null,
+    "run":  1,
+    "mode":  "first",
+    "sitting":  "first-a",
+    "start":  "2026-11-09T15:04:49.8334261+09:00",
+    "osBuild":  "26200.9711",
+    "gate":  null,
+    "before":  {
+                   "load":  {
+                                "cpu":  101.4,
+                                "build_ms":  15062,
+                                "top":  [
+                                            "cl 24392 3.94 core",
+                                            "cl 28520 3.93 core",
+                                            "cl 27396 2.32 core",
+                                            "cl 22356 2.09 core",
+                                            "cl 27672 1.44 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 2227 MHz, 14001 MHz, 19.15 W, 0 %, 0 MiB, 57",
+                   "availGB":  13
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-ovg\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_tts_ovg.py --model-dir C:\\src\\audiozoo\\models\\OpenVINO__Kokoro-82M-int8-ov --device GPU.0 --cache-dir C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-int8-igpu\\cache --set T50 --fixtures C:\\src\\audiozoo\\fixtures --first 10 --out C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-int8-igpu\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  12740,
+                   "elapsedSeconds":  281.849,
+                   "peakWorkingSetBytes":  3267874816,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x0001260E":  {
+                                                                    "shared":  1998,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x00012C48":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P0, 1095 MHz, 14001 MHz, 18.98 W, 0 %, 0 MiB, 57",
+                                         "10s P0, 2407 MHz, 14001 MHz, 19.00 W, 0 %, 0 MiB, 57",
+                                         "15s P0, 33450 MHz, 14001 MHz, 19.25 W, 0 %, 0 MiB, 57",
+                                         "20s P0, 7732 MHz, 14001 MHz, 19.34 W, 0 %, 0 MiB, 57",
+                                         "25s P0, 17325 MHz, 14001 MHz, 19.33 W, 0 %, 0 MiB, 57",
+                                         "30s P0, 9517 MHz, 14001 MHz, 19.07 W, 0 %, 0 MiB, 57",
+                                         "35s P0, 472 MHz, 14001 MHz, 19.14 W, 0 %, 0 MiB, 57",
+                                         "40s P0, 3442 MHz, 14001 MHz, 19.04 W, 0 %, 0 MiB, 57",
+                                         "45s P0, 1192 MHz, 14001 MHz, 19.08 W, 0 %, 0 MiB, 57",
+                                         "50s P0, 90 MHz, 14001 MHz, 19.15 W, 0 %, 0 MiB, 58",
+                                         "55s P0, 982 MHz, 14001 MHz, 19.14 W, 0 %, 0 MiB, 58",
+                                         "60s P0, 870 MHz, 14001 MHz, 19.30 W, 0 %, 0 MiB, 58",
+                                         "66s P0, 5340 MHz, 14001 MHz, 19.12 W, 0 %, 0 MiB, 58",
+                                         "70s P0, 1620 MHz, 14001 MHz, 19.01 W, 0 %, 0 MiB, 58",
+                                         "75s P0, 420 MHz, 14001 MHz, 19.27 W, 0 %, 0 MiB, 58",
+                                         "81s P0, 1830 MHz, 14001 MHz, 19.25 W, 0 %, 0 MiB, 58",
+                                         "85s P0, 5677 MHz, 14001 MHz, 19.11 W, 0 %, 0 MiB, 58",
+                                         "90s P0, 210 MHz, 14001 MHz, 19.35 W, 0 %, 0 MiB, 58",
+                                         "95s P0, 1942 MHz, 14001 MHz, 19.32 W, 0 %, 0 MiB, 58",
+                                         "100s P0, 1035 MHz, 14001 MHz, 19.03 W, 0 %, 0 MiB, 58",
+                                         "105s P0, 165 MHz, 14001 MHz, 19.24 W, 0 %, 0 MiB, 58",
+                                         "111s P0, 1717 MHz, 14001 MHz, 19.53 W, 0 %, 0 MiB, 58",
+                                         "115s P0, 7717 MHz, 14001 MHz, 19.61 W, 0 %, 0 MiB, 58",
+                                         "121s P0, 2347 MHz, 14001 MHz, 19.40 W, 0 %, 0 MiB, 58",
+                                         "125s P0, 3637 MHz, 14001 MHz, 19.02 W, 0 %, 0 MiB, 58",
+                                         "130s P0, 1080 MHz, 14001 MHz, 19.24 W, 0 %, 0 MiB, 58",
+                                         "135s P0, 3825 MHz, 14001 MHz, 19.35 W, 0 %, 0 MiB, 58",
+                                         "140s P0, 1395 MHz, 14001 MHz, 19.37 W, 0 %, 0 MiB, 58",
+                                         "145s P0, 637 MHz, 14001 MHz, 19.37 W, 0 %, 0 MiB, 58",
+                                         "150s P0, 1920 MHz, 14001 MHz, 19.41 W, 0 %, 0 MiB, 58",
+                                         "155s P0, 1035 MHz, 14001 MHz, 19.23 W, 0 %, 0 MiB, 58",
+                                         "160s P0, 2265 MHz, 14001 MHz, 19.43 W, 0 %, 0 MiB, 58",
+                                         "165s P0, 1252 MHz, 14001 MHz, 19.17 W, 0 %, 0 MiB, 58",
+                                         "170s P0, 900 MHz, 14001 MHz, 19.46 W, 0 %, 0 MiB, 58",
+                                         "175s P0, 1747 MHz, 14001 MHz, 19.08 W, 0 %, 0 MiB, 58",
+                                         "180s P0, 9622 MHz, 14001 MHz, 19.25 W, 0 %, 0 MiB, 58",
+                                         "185s P0, 5655 MHz, 14001 MHz, 19.40 W, 0 %, 0 MiB, 58",
+                                         "190s P0, 6600 MHz, 14001 MHz, 19.23 W, 0 %, 0 MiB, 58",
+                                         "195s P0, 1260 MHz, 14001 MHz, 19.08 W, 0 %, 0 MiB, 58",
+                                         "200s P0, 330 MHz, 14001 MHz, 19.18 W, 0 %, 0 MiB, 58",
+                                         "205s P0, 1672 MHz, 14001 MHz, 19.54 W, 0 %, 0 MiB, 58",
+                                         "210s P0, 4815 MHz, 14001 MHz, 19.37 W, 0 %, 0 MiB, 58",
+                                         "215s P0, 885 MHz, 14001 MHz, 19.41 W, 0 %, 0 MiB, 58",
+                                         "220s P0, 3637 MHz, 14001 MHz, 19.16 W, 0 %, 0 MiB, 58",
+                                         "225s P0, 2565 MHz, 14001 MHz, 19.37 W, 0 %, 0 MiB, 58",
+                                         "230s P0, 577 MHz, 14001 MHz, 19.20 W, 0 %, 0 MiB, 58",
+                                         "235s P0, 3345 MHz, 14001 MHz, 19.36 W, 0 %, 0 MiB, 58",
+                                         "240s P0, 1725 MHz, 14001 MHz, 19.38 W, 0 %, 0 MiB, 58",
+                                         "245s P0, 1020 MHz, 14001 MHz, 19.24 W, 0 %, 0 MiB, 58",
+                                         "250s P0, 2167 MHz, 14001 MHz, 19.13 W, 0 %, 0 MiB, 58",
+                                         "256s P0, 2235 MHz, 14001 MHz, 19.53 W, 0 %, 0 MiB, 58",
+                                         "260s P0, 960 MHz, 14001 MHz, 19.40 W, 0 %, 0 MiB, 58",
+                                         "265s P0, 1777 MHz, 14001 MHz, 19.35 W, 0 %, 0 MiB, 58",
+                                         "270s P0, 8520 MHz, 14001 MHz, 19.43 W, 0 %, 0 MiB, 58",
+                                         "275s P0, 1755 MHz, 14001 MHz, 19.46 W, 0 %, 0 MiB, 58",
+                                         "280s P0, 2325 MHz, 14001 MHz, 19.24 W, 0 %, 0 MiB, 58"
+                                     ]
+               },
+    "after":  {
+                  "load":  {
+                               "cpu":  97.7,
+                               "build_ms":  13859,
+                               "top":  [
+                                           "cl 10424 5.79 core",
+                                           "cl 5640 3.52 core",
+                                           "cl 26804 1.98 core",
+                                           "cl 18360 1.28 core",
+                                           "python 3168 0.93 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 4875 MHz, 14001 MHz, 19.33 W, 0 %, 0 MiB, 58"
+              },
+    "end":  "2026-11-09T15:09:33.3242845+09:00",
+    "tries":  1
+}

@@ -1,0 +1,11 @@
+python 3.12.16
+executable C:\src\audiozoo\.venv-genai\Scripts\python.exe
+base_executable C:\src\audiozoo\python\cpython-3.12-windows-x86_64-none\python.exe
+flatbuffers==25.12.19
+numpy==2.5.4
+onnxruntime-ep-openvino==1.8.1
+onnxruntime-ep-webgpu==0.5.0
+onnxruntime-genai==0.19.0
+onnxruntime==1.31.1
+packaging==26.3
+protobuf==7.36.2

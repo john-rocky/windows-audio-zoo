@@ -1,0 +1,43 @@
+{
+ "runner": "run_asr_ort_parakeet.py",
+ "started": "2026-11-09T14:58:29.086802+09:00",
+ "argv": [
+  "--model-dir",
+  "C:\\src\\audiozoo\\models\\istupakov__parakeet-tdt-0.6b-v3-onnx",
+  "--ep",
+  "openvino",
+  "--ov-device",
+  "GPU",
+  "--set",
+  "S150",
+  "--fixtures",
+  "C:\\src\\audiozoo\\fixtures",
+  "--first",
+  "10",
+  "--out",
+  "C:\\src\\audiozoo\\runs\\first-a\\parakeet\\ort-fp32-igpu\\run1.json"
+ ],
+ "pid": 11140,
+ "status": "ERROR",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.001
+ },
+ "rows": [],
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime": "1.31.1",
+  "onnxruntime-ep-openvino": "1.8.1",
+  "onnxruntime-ep-webgpu": "0.5.0",
+  "onnx-asr": "0.12.0",
+  "numpy": "2.5.4"
+ },
+ "cuda_dll_dirs": [],
+ "error": "Traceback (most recent call last):\n  File \"C:\\src\\audiozoo\\pc\\run_asr_ort_parakeet.py\", line 88, in main\n    model.asr._encoder = device_session(ort, enc, args, args.ep, dev)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\src\\audiozoo\\pc\\run_asr_ort_parakeet.py\", line 40, in device_session\n    raise RuntimeError(f\"no OpenVINO EP device {args.ov_device}: \"\nRuntimeError: no OpenVINO EP device GPU: [None, 'NPU', 'GPU.0', 'CPU', 'NPU', 'GPU.0', 'CPU']\n",
+ "peak_working_set_bytes": 2485387264,
+ "peak_pagefile_bytes": 2973663232,
+ "ended": "2026-11-09T14:58:37.633128+09:00",
+ "process_s": 8.541
+}

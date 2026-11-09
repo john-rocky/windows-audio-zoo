@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "C:\src\audiozoo\pc\ref_hf.py", line 48, in main
+    proc = transformers.AutoProcessor.from_pretrained(args.model_dir)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\src\audiozoo\.venv-ref\Lib\site-packages\transformers\models\auto\processing_auto.py", line 350, in from_pretrained
+    return processor_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\src\audiozoo\.venv-ref\Lib\site-packages\transformers\processing_utils.py", line 1749, in from_pretrained
+    args = cls._get_arguments_from_pretrained(pretrained_model_name_or_path, processor_dict, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\src\audiozoo\.venv-ref\Lib\site-packages\transformers\processing_utils.py", line 1889, in _get_arguments_from_pretrained
+    sub_processor = auto_processor_class.from_pretrained(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\src\audiozoo\.venv-ref\Lib\site-packages\transformers\models\auto\feature_extraction_auto.py", line 371, in from_pretrained
+    return feature_extractor_class.from_pretrained(pretrained_model_name_or_path, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\src\audiozoo\.venv-ref\Lib\site-packages\transformers\utils\import_utils.py", line 2437, in __getattribute__
+    requires_backends(cls, cls._backends)
+  File "C:\src\audiozoo\.venv-ref\Lib\site-packages\transformers\utils\import_utils.py", line 2423, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+ParakeetFeatureExtractor requires the librosa library. But that was not found in your environment. You can install them with pip:
+`pip install librosa`
+Please note that you may need to restart your runtime after installation.
+
+

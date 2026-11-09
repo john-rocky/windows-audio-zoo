@@ -1,0 +1,109 @@
+{
+ "cell": "kokoro/ovg-int8-igpu",
+ "model": "kokoro",
+ "runtime": "OpenVINO GenAI 2026.4.1",
+ "form": "int8",
+ "device": "igpu",
+ "device_name": "Intel GPU",
+ "set": "T50",
+ "mode": "timed",
+ "sitting": "s4",
+ "status": "OK",
+ "record": {
+  "run": "raw/s4/kokoro/ovg-int8-igpu/run1.json",
+  "meta": "raw/s4/kokoro/ovg-int8-igpu/run1.meta.json",
+  "chain_log": "raw/s4/chain.log",
+  "writeback": "raw/s4/kokoro/ovg-int8-igpu/run1.writeback.json"
+ },
+ "error": null,
+ "versions": {
+  "python": "3.12.16",
+  "openvino-genai": "2026.4.1.0",
+  "openvino": "2026.4.1",
+  "openvino-tokenizers": "2026.4.1.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": 5.727,
+ "summary": {
+  "clips": 50,
+  "audio_s": 431.35,
+  "wall_s": 444.226,
+  "rtf": 1.02985,
+  "silent": 0
+ },
+ "gate": {
+  "quietGate": "quiet",
+  "cpuReads": [
+   3.6,
+   0.6,
+   0.9
+  ],
+  "nvidiaMiB": 0,
+  "availGB": 25,
+  "ramNeedGB": 3,
+  "gpuEngines": 0
+ },
+ "power": {
+  "msiUserScenarioMode": 1,
+  "overlayAc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "overlayDc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "battery": "status 2, 96 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 456.454,
+  "peakWorkingSetBytes": 4032348160,
+  "gpuMiBPeak": {
+   "0x00000000_0x0001260E": {
+    "shared": 2790,
+    "dedicated": 0
+   },
+   "0x00000000_0x00012C48": {
+    "shared": 0,
+    "dedicated": 0
+   }
+  },
+  "exitCode": 0,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1,
+ "control": {
+  "known_rtf": 0.26228,
+  "known_from": "this sitting's head (3 runs, spread 0.7 %)",
+  "head": [
+   0.2631,
+   0.26228,
+   0.26128
+  ],
+  "tail": [
+   0.26548
+  ],
+  "verdict": "PASS (tail off 1.2 %)"
+ },
+ "accuracy": {
+  "metric": "write-back WER",
+  "err": 49,
+  "n": 1150,
+  "rate_pct": 4.261,
+  "texts": 50
+ },
+ "reference": {
+  "path": "raw/refs/kokoro/ref.writeback.json",
+  "writeback_wer": 2.87
+ },
+ "line": {
+  "writeback": {
+   "run": 4.261,
+   "ref": 2.87,
+   "bar": 3.87,
+   "pass": false
+  },
+  "silent": {
+   "n": 0,
+   "pass": true
+  },
+  "pass": false
+ },
+ "first_vs_timed_equal": "10/10"
+}

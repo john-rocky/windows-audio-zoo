@@ -1,0 +1,157 @@
+{
+ "runner": "run_asr_ort_parakeet.py",
+ "started": "2026-11-09T14:57:08.547994+09:00",
+ "argv": [
+  "--model-dir",
+  "C:\\src\\audiozoo\\models\\istupakov__parakeet-tdt-0.6b-v3-onnx",
+  "--ep",
+  "cpu",
+  "--set",
+  "S150",
+  "--fixtures",
+  "C:\\src\\audiozoo\\fixtures",
+  "--first",
+  "10",
+  "--out",
+  "C:\\src\\audiozoo\\runs\\first-a\\parakeet\\ort-fp32-cpu\\run1.json"
+ ],
+ "pid": 8348,
+ "status": "OK",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.001
+ },
+ "rows": [
+  {
+   "id": "en_us_1660",
+   "lang": "en_us",
+   "seconds": 10.68,
+   "wall_s": 1.5350739999848884,
+   "text": "Romanticism had a large element of cultural determinism drawn from writers such as Goth, Pitt and Schlagel.",
+   "first_token_ms": null
+  },
+  {
+   "id": "en_us_1661",
+   "lang": "en_us",
+   "seconds": 6.36,
+   "wall_s": 1.6394746000005398,
+   "text": "He did not set a figure for the cuts saying they will be made based on China's economic output.",
+   "first_token_ms": null
+  },
+  {
+   "id": "en_us_1662",
+   "lang": "en_us",
+   "seconds": 8.38,
+   "wall_s": 1.5262061999819707,
+   "text": "Alloys are basically a mixture of 2 or more metals. Don't forget there are many elements on the PRI table.",
+   "first_token_ms": null
+  },
+  {
+   "id": "en_us_1663",
+   "lang": "en_us",
+   "seconds": 12.12,
+   "wall_s": 1.4832142000086606,
+   "text": "Chokamo Valley Chile's premier climbing destination known as the Yosemite of South America, with a variety of granite big walls and crags.",
+   "first_token_ms": null
+  },
+  {
+   "id": "en_us_1664",
+   "lang": "en_us",
+   "seconds": 8.36,
+   "wall_s": 1.3088538000010885,
+   "text": "Swirl the two dry powers together and then with clean wet hands squeeze them into a ball.",
+   "first_token_ms": null
+  },
+  {
+   "id": "en_us_1665",
+   "lang": "en_us",
+   "seconds": 8.28,
+   "wall_s": 1.6327517000027,
+   "text": "The document, according to the leak, will refer to the borders dispute which Palestine wants based on the borders before the 1967 Mideast War.",
+   "first_token_ms": null
+  },
+  {
+   "id": "en_us_1666",
+   "lang": "en_us",
+   "seconds": 8.34,
+   "wall_s": 1.4570841999957338,
+   "text": "You may also wish to consult the advice of governments other than your own, but their advice is designed for their citizens.",
+   "first_token_ms": null
+  },
+  {
+   "id": "en_us_1667",
+   "lang": "en_us",
+   "seconds": 14.22,
+   "wall_s": 1.5791779000137467,
+   "text": "Generally speaking, two behaviors can emerge as managers begin to lead their former peers. One end of the spectrum is trying to remain one of the guys, or gals.",
+   "first_token_ms": null
+  },
+  {
+   "id": "en_us_1668",
+   "lang": "en_us",
+   "seconds": 13.32,
+   "wall_s": 1.4102077999850735,
+   "text": "It may also be beneficial for one to buy a wild card which provides entry to either selections of parks in South Africa or all of the South African national parks.",
+   "first_token_ms": null
+  },
+  {
+   "id": "en_us_1669",
+   "lang": "en_us",
+   "seconds": 7.2,
+   "wall_s": 1.5548946000053547,
+   "text": "Police Superintendent Chandra Shikar Sonaki said the accused appeared in court with covered faces.",
+   "first_token_ms": null
+  }
+ ],
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime": "1.31.1",
+  "onnxruntime-ep-openvino": "1.8.1",
+  "onnxruntime-ep-webgpu": "0.5.0",
+  "onnx-asr": "0.12.0",
+  "numpy": "2.5.4"
+ },
+ "cuda_dll_dirs": [],
+ "load_s": 12.296,
+ "device": {},
+ "session_providers": {
+  "encoder": [
+   "CPUExecutionProvider"
+  ],
+  "decoder_joint": [
+   "CPUExecutionProvider"
+  ]
+ },
+ "workload": {
+  "set": "S150",
+  "langs": [
+   "en_us"
+  ],
+  "first": 10,
+  "decode": "TDT greedy (onnx-asr)",
+  "files": [
+   "encoder-model.onnx",
+   "decoder_joint-model.onnx"
+  ],
+  "preprocessor": "onnx-asr NemoPreprocessorNumpy (built with the CPU providers)"
+ },
+ "warmup_s": 1.795,
+ "summary": {
+  "clips": 10,
+  "audio_s": 97.26,
+  "wall_s": 15.127,
+  "rtf": 0.15553,
+  "empty": 0,
+  "first_token_ms_mean": null,
+  "split_half_rtf": [
+   0.14746,
+   0.16375
+  ]
+ },
+ "peak_working_set_bytes": 4571971584,
+ "peak_pagefile_bytes": 5048569856,
+ "ended": "2026-11-09T14:57:38.460581+09:00",
+ "process_s": 29.914
+}

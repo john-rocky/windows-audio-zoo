@@ -1,0 +1,157 @@
+{
+ "runner": "run_tts_ovg.py",
+ "started": "2026-11-09T14:59:11.835998+09:00",
+ "argv": [
+  "--model-dir",
+  "C:\\src\\audiozoo\\models\\OpenVINO__Kokoro-82M-fp16-ov",
+  "--device",
+  "GPU.0",
+  "--cache-dir",
+  "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-fp16-igpu\\cache",
+  "--set",
+  "T50",
+  "--fixtures",
+  "C:\\src\\audiozoo\\fixtures",
+  "--first",
+  "10",
+  "--out",
+  "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-fp16-igpu\\run1.json"
+ ],
+ "pid": 16488,
+ "status": "OK",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.001
+ },
+ "rows": [
+  {
+   "id": "en_us_1660",
+   "text_in": "Romanticism had a large element of cultural determinism, drawn from writers such as Goethe, Fichte, and Schlegel.",
+   "wall_s": 18.555789400008507,
+   "audio_s": 6.625,
+   "rate": 24000,
+   "peak_abs": 0.3772481679916382,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-fp16-igpu\\wav\\en_us_1660.wav"
+  },
+  {
+   "id": "en_us_1661",
+   "text_in": "He did not set a figure for the cuts, saying they will be made based on China's economic output.",
+   "wall_s": 17.764627800002927,
+   "audio_s": 6.0,
+   "rate": 24000,
+   "peak_abs": 0.5692338347434998,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-fp16-igpu\\wav\\en_us_1661.wav"
+  },
+  {
+   "id": "en_us_1662",
+   "text_in": "Alloys are basically a mixture of two or more metals. Don't forget that there are many elements on the periodic table.",
+   "wall_s": 20.37826810000115,
+   "audio_s": 7.525,
+   "rate": 24000,
+   "peak_abs": 0.3895275592803955,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-fp16-igpu\\wav\\en_us_1662.wav"
+  },
+  {
+   "id": "en_us_1663",
+   "text_in": "Cochamó Valley - Chile's premier climbing destination, known as the Yosemite of South America, with a variety of granite big walls and crags.",
+   "wall_s": 20.6363229000126,
+   "audio_s": 8.5,
+   "rate": 24000,
+   "peak_abs": 0.4343133568763733,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-fp16-igpu\\wav\\en_us_1663.wav"
+  },
+  {
+   "id": "en_us_1664",
+   "text_in": "Swirl the two dry powders together and then, with clean wet hands, squeeze them into a ball.",
+   "wall_s": 17.146399399993243,
+   "audio_s": 6.225,
+   "rate": 24000,
+   "peak_abs": 0.40050452947616577,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-fp16-igpu\\wav\\en_us_1664.wav"
+  },
+  {
+   "id": "en_us_1665",
+   "text_in": "The document, according to the leak, will refer to the borders dispute, which Palestine wants based on the borders before the 1967 Mideast War.",
+   "wall_s": 20.599916999985,
+   "audio_s": 9.6,
+   "rate": 24000,
+   "peak_abs": 0.4858197867870331,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-fp16-igpu\\wav\\en_us_1665.wav"
+  },
+  {
+   "id": "en_us_1666",
+   "text_in": "You may also wish to consult the advice of governments other than your own, but their advice is designed for their citizens.",
+   "wall_s": 17.165508300007787,
+   "audio_s": 7.5,
+   "rate": 24000,
+   "peak_abs": 0.40410491824150085,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-fp16-igpu\\wav\\en_us_1666.wav"
+  },
+  {
+   "id": "en_us_1667",
+   "text_in": "Generally speaking, two behaviors can emerge as managers begin to lead their former peers. One end of the spectrum is trying to remain “one of the guys” (or gals).",
+   "wall_s": 31.134243099979358,
+   "audio_s": 10.4,
+   "rate": 24000,
+   "peak_abs": 0.4593047499656677,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-fp16-igpu\\wav\\en_us_1667.wav"
+  },
+  {
+   "id": "en_us_1668",
+   "text_in": "It may also be beneficial for one to buy a Wild Card, which provides entry to either selections of parks in South Africa or all of the South African National Parks.",
+   "wall_s": 30.710946199978935,
+   "audio_s": 10.65,
+   "rate": 24000,
+   "peak_abs": 0.42896631360054016,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-fp16-igpu\\wav\\en_us_1668.wav"
+  },
+  {
+   "id": "en_us_1669",
+   "text_in": "Police superintendent Chandra Shekhar Solanki said the accused appeared in court with covered faces.",
+   "wall_s": 28.72476420001476,
+   "audio_s": 5.125,
+   "rate": 24000,
+   "peak_abs": 0.3456873893737793,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-fp16-igpu\\wav\\en_us_1669.wav"
+  }
+ ],
+ "versions": {
+  "python": "3.12.16",
+  "openvino-genai": "2026.4.1.0",
+  "openvino": "2026.4.1",
+  "openvino-tokenizers": "2026.4.1.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": 17.878,
+ "workload": {
+  "set": "T50",
+  "voice": "af_heart",
+  "language": "en-us",
+  "speed": 1.0,
+  "g2p": "pipeline built-in dictionary + espeak-ng fallback if present"
+ },
+ "warmup_s": 25.812,
+ "summary": {
+  "clips": 10,
+  "audio_s": 78.15,
+  "wall_s": 222.817,
+  "rtf": 2.85114,
+  "silent": 0
+ },
+ "peak_working_set_bytes": 3196674048,
+ "peak_pagefile_bytes": 3617501184,
+ "ended": "2026-11-09T15:03:38.599359+09:00",
+ "process_s": 266.754
+}

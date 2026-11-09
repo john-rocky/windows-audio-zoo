@@ -1,0 +1,139 @@
+{
+    "cell":  "qwen3asr/ovg-int8-cpu",
+    "device":  "cpu",
+    "role":  null,
+    "run":  1,
+    "mode":  "timed",
+    "sitting":  "s4",
+    "start":  "2026-11-10T02:09:18.3915924+09:00",
+    "osBuild":  "26200.9711",
+    "desktopLocked":  true,
+    "power":  {
+                  "msiUserScenarioMode":  1,
+                  "overlayAc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "overlayDc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "battery":  "status 2, 96 %"
+              },
+    "gate":  {
+                 "quietGate":  "quiet",
+                 "cpuReads":  [
+                                  2.8,
+                                  1.5,
+                                  0.5
+                              ],
+                 "nvidiaMiB":  0,
+                 "availGB":  25.1,
+                 "ramNeedGB":  7,
+                 "gpuEngines":  null
+             },
+    "before":  {
+                   "load":  {
+                                "cpu":  2.6,
+                                "build_ms":  0,
+                                "top":  [
+                                            "System 4 0.36 core",
+                                            "WidgetService 14828 0.02 core",
+                                            "svchost 2388 0.02 core",
+                                            "powershell 19400 0.02 core",
+                                            "SoundTune 13836 0.02 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 2010 MHz, 14001 MHz, 18.86 W, 0 %, 0 MiB, 55",
+                   "availGB":  25.1
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-ovg\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_asr_ovg.py --model-dir C:\\src\\audiozoo\\exports\\qwen3asr-ov-int8 --family qwen3asr --device CPU --cache-dir C:\\src\\audiozoo\\runs\\s4\\qwen3asr\\ovg-int8-cpu\\cache --set S150 --fixtures C:\\src\\audiozoo\\fixtures --out C:\\src\\audiozoo\\runs\\s4\\qwen3asr\\ovg-int8-cpu\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  8452,
+                   "elapsedSeconds":  316.846,
+                   "peakWorkingSetBytes":  6713692160,
+                   "gpuMiBPeak":  {
+
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P0, 2595 MHz, 14001 MHz, 18.75 W, 0 %, 0 MiB, 55",
+                                         "10s P0, 8520 MHz, 14001 MHz, 18.44 W, 0 %, 0 MiB, 55",
+                                         "15s P0, 2407 MHz, 14001 MHz, 18.57 W, 0 %, 0 MiB, 55",
+                                         "20s P0, 465 MHz, 14001 MHz, 18.72 W, 0 %, 0 MiB, 55",
+                                         "25s P0, 20827 MHz, 14001 MHz, 18.76 W, 0 %, 0 MiB, 55",
+                                         "30s P0, 1972 MHz, 14001 MHz, 18.70 W, 0 %, 0 MiB, 55",
+                                         "35s P0, 8647 MHz, 14001 MHz, 18.79 W, 0 %, 0 MiB, 55",
+                                         "40s P0, 1867 MHz, 14001 MHz, 18.62 W, 0 %, 0 MiB, 55",
+                                         "45s P0, 3262 MHz, 14001 MHz, 18.67 W, 0 %, 0 MiB, 55",
+                                         "50s P0, 2362 MHz, 14001 MHz, 18.55 W, 0 %, 0 MiB, 55",
+                                         "55s P0, 607 MHz, 14001 MHz, 18.60 W, 0 %, 0 MiB, 55",
+                                         "60s P0, 1305 MHz, 14001 MHz, 18.78 W, 0 %, 0 MiB, 55",
+                                         "65s P0, 322 MHz, 14001 MHz, 18.65 W, 0 %, 0 MiB, 55",
+                                         "70s P0, 1267 MHz, 14001 MHz, 18.72 W, 0 %, 0 MiB, 55",
+                                         "75s P0, 720 MHz, 14001 MHz, 18.70 W, 0 %, 0 MiB, 55",
+                                         "80s P0, 1770 MHz, 14001 MHz, 18.65 W, 0 %, 0 MiB, 55",
+                                         "85s P0, 3465 MHz, 14001 MHz, 18.74 W, 0 %, 0 MiB, 55",
+                                         "90s P0, 6945 MHz, 14001 MHz, 18.65 W, 0 %, 0 MiB, 55",
+                                         "95s P0, 1410 MHz, 14001 MHz, 18.80 W, 0 %, 0 MiB, 55",
+                                         "100s P0, 7215 MHz, 14001 MHz, 18.64 W, 0 %, 0 MiB, 55",
+                                         "105s P0, 382 MHz, 14001 MHz, 18.78 W, 0 %, 0 MiB, 55",
+                                         "110s P0, 2520 MHz, 14001 MHz, 18.60 W, 0 %, 0 MiB, 55",
+                                         "115s P0, 990 MHz, 14001 MHz, 18.54 W, 0 %, 0 MiB, 55",
+                                         "120s P0, 4942 MHz, 14001 MHz, 18.77 W, 0 %, 0 MiB, 55",
+                                         "125s P0, 1485 MHz, 14001 MHz, 18.66 W, 0 %, 0 MiB, 55",
+                                         "130s P0, 967 MHz, 14001 MHz, 18.61 W, 0 %, 0 MiB, 55",
+                                         "135s P0, 5160 MHz, 14001 MHz, 18.59 W, 0 %, 0 MiB, 55",
+                                         "140s P0, 1365 MHz, 14001 MHz, 18.70 W, 0 %, 0 MiB, 55",
+                                         "145s P0, 4695 MHz, 14001 MHz, 18.53 W, 0 %, 0 MiB, 55",
+                                         "150s P0, 1725 MHz, 14001 MHz, 18.58 W, 0 %, 0 MiB, 55",
+                                         "155s P0, 3547 MHz, 14001 MHz, 18.49 W, 0 %, 0 MiB, 55",
+                                         "160s P0, 1402 MHz, 14001 MHz, 18.64 W, 0 %, 0 MiB, 55",
+                                         "165s P0, 2340 MHz, 14001 MHz, 18.73 W, 0 %, 0 MiB, 55",
+                                         "170s P0, 150 MHz, 14001 MHz, 18.70 W, 0 %, 0 MiB, 55",
+                                         "175s P0, 3825 MHz, 14001 MHz, 18.64 W, 0 %, 0 MiB, 55",
+                                         "180s P0, 855 MHz, 14001 MHz, 18.45 W, 0 %, 0 MiB, 55",
+                                         "185s P0, 2707 MHz, 14001 MHz, 18.49 W, 0 %, 0 MiB, 55",
+                                         "190s P0, 1507 MHz, 14001 MHz, 18.64 W, 0 %, 0 MiB, 55",
+                                         "195s P0, 165 MHz, 14001 MHz, 18.52 W, 0 %, 0 MiB, 55",
+                                         "200s P0, 937 MHz, 14001 MHz, 18.68 W, 0 %, 0 MiB, 55",
+                                         "206s P0, 9277 MHz, 14001 MHz, 18.66 W, 0 %, 0 MiB, 55",
+                                         "210s P0, 18090 MHz, 14001 MHz, 18.47 W, 0 %, 0 MiB, 55",
+                                         "215s P0, 2542 MHz, 14001 MHz, 18.55 W, 0 %, 0 MiB, 55",
+                                         "220s P0, 1590 MHz, 14001 MHz, 18.72 W, 0 %, 0 MiB, 55",
+                                         "225s P0, 14055 MHz, 14001 MHz, 18.69 W, 0 %, 0 MiB, 55",
+                                         "230s P0, 2415 MHz, 14001 MHz, 18.54 W, 0 %, 0 MiB, 55",
+                                         "235s P0, 7852 MHz, 14001 MHz, 18.65 W, 0 %, 0 MiB, 55",
+                                         "240s P0, 165 MHz, 14001 MHz, 18.59 W, 0 %, 0 MiB, 55",
+                                         "245s P0, 982 MHz, 14001 MHz, 18.69 W, 0 %, 0 MiB, 55",
+                                         "250s P0, 607 MHz, 14001 MHz, 18.63 W, 0 %, 0 MiB, 55",
+                                         "255s P0, 1980 MHz, 14001 MHz, 18.48 W, 0 %, 0 MiB, 55",
+                                         "260s P0, 14895 MHz, 14001 MHz, 18.59 W, 0 %, 0 MiB, 55",
+                                         "265s P0, 291 MHz, 14001 MHz, 18.48 W, 0 %, 0 MiB, 55",
+                                         "270s P0, 2737 MHz, 14001 MHz, 18.72 W, 0 %, 0 MiB, 55",
+                                         "275s P0, 3052 MHz, 14001 MHz, 18.75 W, 0 %, 0 MiB, 55",
+                                         "280s P0, 1732 MHz, 14001 MHz, 18.62 W, 0 %, 0 MiB, 55",
+                                         "285s P0, 360 MHz, 14001 MHz, 18.55 W, 0 %, 0 MiB, 55",
+                                         "290s P0, 60172 MHz, 14001 MHz, 18.33 W, 0 %, 0 MiB, 55",
+                                         "295s P0, 1192 MHz, 14001 MHz, 18.51 W, 0 %, 0 MiB, 55",
+                                         "300s P0, 6202 MHz, 14001 MHz, 18.62 W, 0 %, 0 MiB, 55",
+                                         "305s P0, 1042 MHz, 14001 MHz, 18.65 W, 0 %, 0 MiB, 55",
+                                         "310s P0, 2407 MHz, 14001 MHz, 18.39 W, 0 %, 0 MiB, 55",
+                                         "315s P0, 1515 MHz, 14001 MHz, 18.72 W, 0 %, 0 MiB, 55"
+                                     ]
+               },
+    "after":  {
+                  "load":  {
+                               "cpu":  1.4,
+                               "build_ms":  0,
+                               "top":  [
+                                           "System 4 0.11 core",
+                                           "svchost 5144 0.02 core",
+                                           "svchost 5480 0.02 core",
+                                           "WUDFHost 9528 0.02 core",
+                                           "powershell 15784 0.02 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 772 MHz, 14001 MHz, 18.58 W, 0 %, 0 MiB, 54"
+              },
+    "end":  "2026-11-10T02:14:37.1948607+09:00",
+    "tries":  1
+}

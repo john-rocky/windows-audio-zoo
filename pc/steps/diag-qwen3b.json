@@ -1,0 +1,24 @@
+[
+ {
+  "name": "ref-qwen3asr-ovpy-fp16",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\ref_qwen_asr_ovpy.py",
+   "--ir-dir",
+   "{ROOT}\\exports\\qwen3asr-ov-fp16",
+   "--model-dir",
+   "{ROOT}\\models\\Qwen__Qwen3-ASR-1.7B",
+   "--set",
+   "S150",
+   "--first",
+   "10",
+   "--fixtures",
+   "{FIX}",
+   "--out",
+   "{ROOT}\\refs\\qwen3asr-ovpy\\fp16-f32.json"
+  ],
+  "timeout_min": 40,
+  "venv": "ovexport",
+  "ram_gb": 8
+ }
+]

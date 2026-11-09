@@ -1,0 +1,174 @@
+{
+ "cell": "whisper/genai-fp32-igpu",
+ "model": "whisper",
+ "runtime": "ONNX Runtime GenAI 0.19.0",
+ "form": "fp32",
+ "device": "igpu",
+ "device_name": "Intel GPU",
+ "set": "S150",
+ "mode": "timed",
+ "sitting": "s4",
+ "status": "OK",
+ "record": {
+  "run": "raw/s4/whisper/genai-fp32-igpu/run1.json",
+  "meta": "raw/s4/whisper/genai-fp32-igpu/run1.meta.json",
+  "chain_log": "raw/s4/chain.log"
+ },
+ "error": null,
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime-genai": "0.19.0",
+  "onnxruntime": "1.31.1",
+  "onnxruntime-ep-openvino": "1.8.1",
+  "onnxruntime-ep-webgpu": "0.5.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": 15.963,
+ "summary": {
+  "clips": 150,
+  "audio_s": 1806.26,
+  "wall_s": 633.983,
+  "rtf": 0.35099,
+  "empty": 0,
+  "first_token_ms_mean": 3699.93,
+  "split_half_rtf": [
+   0.33992,
+   0.36288
+  ]
+ },
+ "gate": {
+  "quietGate": "quiet",
+  "cpuReads": [
+   2.4,
+   2.1,
+   0.4
+  ],
+  "nvidiaMiB": 0,
+  "availGB": 25,
+  "ramNeedGB": 6,
+  "gpuEngines": 0
+ },
+ "power": {
+  "msiUserScenarioMode": 1,
+  "overlayAc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "overlayDc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "battery": "status 2, 96 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 656.996,
+  "peakWorkingSetBytes": 4506906624,
+  "gpuMiBPeak": {
+   "0x00000000_0x00012C48": {
+    "shared": 0,
+    "dedicated": 0
+   },
+   "0x00000000_0x0001260E": {
+    "shared": 1042,
+    "dedicated": 0
+   },
+   "0x00000000_0x00013E4C": {
+    "shared": 0,
+    "dedicated": 0
+   }
+  },
+  "exitCode": 0,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1,
+ "control": {
+  "known_rtf": 0.26228,
+  "known_from": "this sitting's head (3 runs, spread 0.7 %)",
+  "head": [
+   0.2631,
+   0.26228,
+   0.26128
+  ],
+  "tail": [
+   0.26548
+  ],
+  "verdict": "PASS (tail off 1.2 %)"
+ },
+ "accuracy": {
+  "en_us": {
+   "metric": "WER",
+   "err": 60,
+   "n": 1150,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 5.217
+  },
+  "cmn_hans_cn": {
+   "metric": "CER",
+   "err": 179,
+   "n": 1954,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 9.161
+  },
+  "ja_jp": {
+   "metric": "CER",
+   "err": 102,
+   "n": 2689,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 3.793
+  }
+ },
+ "reference": {
+  "path": "raw/refs/whisper/ref.json",
+  "scores": {
+   "en_us": {
+    "metric": "WER",
+    "err": 59,
+    "n": 1150,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 5.13
+   },
+   "cmn_hans_cn": {
+    "metric": "CER",
+    "err": 178,
+    "n": 1954,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 9.11
+   },
+   "ja_jp": {
+    "metric": "CER",
+    "err": 103,
+    "n": 2689,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 3.83
+   }
+  }
+ },
+ "line": {
+  "en_us": {
+   "run": 5.217,
+   "ref": 5.13,
+   "bar": 5.63,
+   "pass": true
+  },
+  "cmn_hans_cn": {
+   "run": 9.161,
+   "ref": 9.11,
+   "bar": 9.61,
+   "pass": true
+  },
+  "ja_jp": {
+   "run": 3.793,
+   "ref": 3.83,
+   "bar": 4.33,
+   "pass": true
+  },
+  "empty": {
+   "n": 0,
+   "pass": true
+  },
+  "pass": true
+ },
+ "first_vs_timed_equal": "30/30"
+}

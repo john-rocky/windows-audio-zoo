@@ -1,0 +1,25 @@
+ENGINE_PID 940
+{"n": 1, "id": "ls_clip00", "wall_s": 4.459, "text": "mister Quilter is the apostle of the middle classes, and we "}
+{"n": 2, "id": "ls_clip01", "wall_s": 4.346, "text": "Nor is mister Quilter's manner less interesting than his mat"}
+{"n": 10, "id": "ls_clip09", "wall_s": 4.809, "text": "He laments most bitterly the divorce that has been made betw"}
+{"n": 20, "id": "ls_clip19", "wall_s": 4.295, "text": "The king has fled in disgrace, and your friends are asking f"}
+{"n": 30, "id": "en_us_1669", "wall_s": 4.453, "text": "Police Superintendent Chandra Shekhar Solanki said the accus"}
+{"n": 40, "id": "en_us_1679", "wall_s": 4.259, "text": "Aerosmith have cancelled their remaining concerts on their t"}
+{"n": 50, "id": "en_us_1689", "wall_s": 4.691, "text": "Europe is a continent that is relatively small but with many"}
+{"n": 60, "id": "en_us_1699", "wall_s": 4.559, "text": "Bishkek was described as sinking into a state of anarchy by "}
+{"n": 70, "id": "en_us_1709", "wall_s": 4.571, "text": "The report is highly critical of almost every aspect of the "}
+{"n": 80, "id": "ja_jp_1671", "wall_s": 5.251, "text": "連邦議会は２００５年度から、わいせつ物取締法への資金提供を開始し、ｆｂｉはアタローズポールの２０人の捜査員を投入しなけれ"}
+{"n": 90, "id": "ja_jp_1684", "wall_s": 4.671, "text": "アピアはサモアの首都です。この町はウポル島にあり、人口は四万人弱です。"}
+{"n": 100, "id": "ja_jp_1695", "wall_s": 5.12, "text": "特に那須場にはオリーブオイルを塗ったパンにトマトとチーズチューナなどの調味料を加えたぽんぼりというシンプルな料理が人気で"}
+{"n": 110, "id": "ja_jp_1707", "wall_s": 4.929, "text": "ここは南アフリカの主な観光地の一つであり南アフリカ国立公園、ｓａｎパークスの目玉とされています。"}
+{"n": 120, "id": "ja_jp_1719", "wall_s": 5.094, "text": "悪天候とは物理的被害深刻な社会的困難人命に関わる被害につながりうる危険な気象現象の総称です。"}
+{"n": 130, "id": "fr_fr_1669", "wall_s": 4.733, "text": "Chandra Sekhar Solanki, commissaire de police, déclarait que"}
+{"n": 140, "id": "fr_fr_1680", "wall_s": 4.758, "text": "Athlète équilibré, le tigre peut grimper mais parfois diffic"}
+{"n": 150, "id": "de_de_1664", "wall_s": 4.592, "text": "Mischen Sie die zwei Trockenpulver zusammen und formen Sie d"}
+{"n": 160, "id": "de_de_1675", "wall_s": 4.653, "text": "Alle Substantive beginnen neben dem Wort sie für you immer m"}
+{"n": 170, "id": "de_de_1686", "wall_s": 4.781, "text": "Im Ergebnis kann die gemeinschaftliche Arbeit einer Organisa"}
+{"n": 180, "id": "es_419_1669", "wall_s": 4.755, "text": "Según manifestara el superintendente de la policía, Chandras"}
+{"n": 190, "id": "es_419_1679", "wall_s": 4.435, "text": "Aerosmith canceló los conciertos pendientes de su gira."}
+{"n": 200, "id": "pt_br_1664", "wall_s": 4.573, "text": "Misture os dois pós e, com a mãos limpas, moldes no formato "}
+{"n": 210, "id": "pt_br_1675", "wall_s": 4.702, "text": "Todos os substantivos, juntamente com a palavra se é para vo"}
+{"n": 220, "id": "pt_br_1685", "wall_s": 4.884, "text": "como exemplo, a forma de fotografia de imagem estática mais "}

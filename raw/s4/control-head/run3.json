@@ -1,0 +1,614 @@
+{
+ "runner": "run_asr_ovg.py",
+ "started": "2026-11-10T00:35:16.654819+09:00",
+ "argv": [
+  "--model-dir",
+  "C:\\src\\audiozoo\\models\\OpenVINO__whisper-large-v3-turbo-int8-ov",
+  "--family",
+  "whisper",
+  "--device",
+  "CPU",
+  "--cache-dir",
+  "C:\\src\\audiozoo\\runs\\s4\\control-head\\cache",
+  "--set",
+  "S150",
+  "--fixtures",
+  "C:\\src\\audiozoo\\fixtures",
+  "--first",
+  "10",
+  "--out",
+  "C:\\src\\audiozoo\\runs\\s4\\control-head\\run3.json"
+ ],
+ "pid": 30764,
+ "status": "OK",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.001
+ },
+ "rows": [
+  {
+   "id": "en_us_1660",
+   "lang": "en_us",
+   "seconds": 10.68,
+   "wall_s": 3.1620705000241287,
+   "text": " Romanticism had a large element of cultural determinism drawn from writers such as Goethe, Fichte, and Schlegel.",
+   "first_token_ms": 3044.861083984375,
+   "tokens": 29.0,
+   "tpot_ms": {
+    "mean": 4.128028392791748,
+    "std": 0.23419088125228882
+   },
+   "generate_ms": {
+    "mean": 3160.989990234375,
+    "std": 0.0
+   },
+   "language": "en"
+  },
+  {
+   "id": "en_us_1661",
+   "lang": "en_us",
+   "seconds": 6.36,
+   "wall_s": 2.6885067999828607,
+   "text": " He did not set a figure for the cuts saying they will be made based on China's economic output.",
+   "first_token_ms": 2599.9326171875,
+   "tokens": 22.0,
+   "tpot_ms": {
+    "mean": 4.158638000488281,
+    "std": 0.2734878957271576
+   },
+   "generate_ms": {
+    "mean": 2687.806884765625,
+    "std": 0.0
+   },
+   "language": "en"
+  },
+  {
+   "id": "en_us_1662",
+   "lang": "en_us",
+   "seconds": 8.38,
+   "wall_s": 3.172726300021168,
+   "text": " Alloys are basically a mixture of two or more metals. Don't forget there are many elements on the periodic table.",
+   "first_token_ms": 3072.160888671875,
+   "tokens": 25.0,
+   "tpot_ms": {
+    "mean": 4.132508277893066,
+    "std": 0.2802402079105377
+   },
+   "generate_ms": {
+    "mean": 3171.87890625,
+    "std": 0.0
+   },
+   "language": "en"
+  },
+  {
+   "id": "en_us_1663",
+   "lang": "en_us",
+   "seconds": 12.12,
+   "wall_s": 3.0430483000236563,
+   "text": " Chocamo Valley, Chile's premier climbing destination, known as the Yosemite of South America, with a variety of granite big walls and crags.",
+   "first_token_ms": 2886.79541015625,
+   "tokens": 35.0,
+   "tpot_ms": {
+    "mean": 4.546896934509277,
+    "std": 0.8188475966453552
+   },
+   "generate_ms": {
+    "mean": 3041.97412109375,
+    "std": 0.0
+   },
+   "language": "en"
+  },
+  {
+   "id": "en_us_1664",
+   "lang": "en_us",
+   "seconds": 8.36,
+   "wall_s": 2.806375200045295,
+   "text": " Swirl the two dry powers together and then with clean, wet hands squeeze them into a ball.",
+   "first_token_ms": 2722.249267578125,
+   "tokens": 21.0,
+   "tpot_ms": {
+    "mean": 4.13955020904541,
+    "std": 0.27919894456863403
+   },
+   "generate_ms": {
+    "mean": 2805.56494140625,
+    "std": 0.0
+   },
+   "language": "en"
+  },
+  {
+   "id": "en_us_1665",
+   "lang": "en_us",
+   "seconds": 8.28,
+   "wall_s": 3.2052847999730147,
+   "text": " The document, according to the leak, will refer to the borders dispute, which Palestine wants based on the borders before the 1967 Mid-East War.",
+   "first_token_ms": 3076.377685546875,
+   "tokens": 32.0,
+   "tpot_ms": {
+    "mean": 4.1122517585754395,
+    "std": 0.2186555415391922
+   },
+   "generate_ms": {
+    "mean": 3204.412109375,
+    "std": 0.0
+   },
+   "language": "en"
+  },
+  {
+   "id": "en_us_1666",
+   "lang": "en_us",
+   "seconds": 8.34,
+   "wall_s": 2.7188844999764115,
+   "text": " You may also wish to consult the advice of governments other than your own, but their advice is designed for their citizens.",
+   "first_token_ms": 2618.689453125,
+   "tokens": 25.0,
+   "tpot_ms": {
+    "mean": 4.118783473968506,
+    "std": 0.2550772428512573
+   },
+   "generate_ms": {
+    "mean": 2718.10205078125,
+    "std": 0.0
+   },
+   "language": "en"
+  },
+  {
+   "id": "en_us_1667",
+   "lang": "en_us",
+   "seconds": 14.22,
+   "wall_s": 3.2192945000133477,
+   "text": " Generally speaking, two behaviors can emerge as managers begin to lead their former peers. One end of the spectrum is trying to remain one of the guys, or gals.",
+   "first_token_ms": 3076.6201171875,
+   "tokens": 35.0,
+   "tpot_ms": {
+    "mean": 4.144079208374023,
+    "std": 0.223006471991539
+   },
+   "generate_ms": {
+    "mean": 3218.06103515625,
+    "std": 0.0
+   },
+   "language": "en"
+  },
+  {
+   "id": "en_us_1668",
+   "lang": "en_us",
+   "seconds": 13.32,
+   "wall_s": 3.1177896999870427,
+   "text": " It may also be beneficial for one to buy a wild card, which provides entry to either selections of parks in South Africa or all of the South African national parks.",
+   "first_token_ms": 2976.800537109375,
+   "tokens": 34.0,
+   "tpot_ms": {
+    "mean": 4.220578670501709,
+    "std": 0.5167980194091797
+   },
+   "generate_ms": {
+    "mean": 3116.638916015625,
+    "std": 0.0
+   },
+   "language": "en"
+  },
+  {
+   "id": "en_us_1669",
+   "lang": "en_us",
+   "seconds": 7.2,
+   "wall_s": 2.835030200018082,
+   "text": " Police Superintendent Chandra Shekar Solanke said the accused appeared in court with covered faces.",
+   "first_token_ms": 2754.461181640625,
+   "tokens": 20.0,
+   "tpot_ms": {
+    "mean": 4.175099849700928,
+    "std": 0.32463762164115906
+   },
+   "generate_ms": {
+    "mean": 2834.325927734375,
+    "std": 0.0
+   },
+   "language": "en"
+  },
+  {
+   "id": "cmn_hans_cn_1660",
+   "lang": "cmn_hans_cn",
+   "seconds": 9.6,
+   "wall_s": 3.2230728999711573,
+   "text": "浪漫主义具有很强的文化决定论色彩,这源于哥德、费希特和施莱格尔等作家。",
+   "first_token_ms": 3029.066162109375,
+   "tokens": 47.0,
+   "tpot_ms": {
+    "mean": 4.185952186584473,
+    "std": 0.1997540444135666
+   },
+   "generate_ms": {
+    "mean": 3222.176025390625,
+    "std": 0.0
+   },
+   "language": "zh"
+  },
+  {
+   "id": "cmn_hans_cn_1661",
+   "lang": "cmn_hans_cn",
+   "seconds": 7.74,
+   "wall_s": 2.771788000012748,
+   "text": "它没有设定削减数额只是表示将根据中国的经济产出来决定数额",
+   "first_token_ms": 2632.27783203125,
+   "tokens": 34.0,
+   "tpot_ms": {
+    "mean": 4.186678886413574,
+    "std": 0.2656934857368469
+   },
+   "generate_ms": {
+    "mean": 2770.969970703125,
+    "std": 0.0
+   },
+   "language": "zh"
+  },
+  {
+   "id": "cmn_hans_cn_1662",
+   "lang": "cmn_hans_cn",
+   "seconds": 7.5,
+   "wall_s": 3.226505900034681,
+   "text": "合金基本上由两种或以上金属混合而成不要忘记一点元素周期表上有很多元素",
+   "first_token_ms": 3100.4296875,
+   "tokens": 31.0,
+   "tpot_ms": {
+    "mean": 4.159759998321533,
+    "std": 0.22335612773895264
+   },
+   "generate_ms": {
+    "mean": 3225.764892578125,
+    "std": 0.0
+   },
+   "language": "zh"
+  },
+  {
+   "id": "cmn_hans_cn_1663",
+   "lang": "cmn_hans_cn",
+   "seconds": 13.38,
+   "wall_s": 3.2478382000117563,
+   "text": "这里首选登山目的地科查墨山谷被称为南美洲的优美圣地这里有各式各样的花岗岩大石壁和峭壁",
+   "first_token_ms": 2978.069580078125,
+   "tokens": 52.0,
+   "tpot_ms": {
+    "mean": 5.2536725997924805,
+    "std": 0.9944542646408081
+   },
+   "generate_ms": {
+    "mean": 3246.573974609375,
+    "std": 0.0
+   },
+   "language": "zh"
+  },
+  {
+   "id": "cmn_hans_cn_1664",
+   "lang": "cmn_hans_cn",
+   "seconds": 11.4,
+   "wall_s": 2.7847121999948286,
+   "text": "搅动两种干粉,使其混合然后用干净的湿手把它们揉成一个球",
+   "first_token_ms": 2667.247802734375,
+   "tokens": 29.0,
+   "tpot_ms": {
+    "mean": 4.135950088500977,
+    "std": 0.2506546080112457
+   },
+   "generate_ms": {
+    "mean": 2783.616943359375,
+    "std": 0.0
+   },
+   "language": "zh"
+  },
+  {
+   "id": "cmn_hans_cn_1665",
+   "lang": "cmn_hans_cn",
+   "seconds": 15.1,
+   "wall_s": 3.3273266999749467,
+   "text": "据透露这份文件将提及边界争端巴勒斯坦希望以1967年中东战争前的边界为基础",
+   "first_token_ms": 3146.521728515625,
+   "tokens": 44.0,
+   "tpot_ms": {
+    "mean": 4.157655715942383,
+    "std": 0.2279135286808014
+   },
+   "generate_ms": {
+    "mean": 3325.85009765625,
+    "std": 0.0
+   },
+   "language": "zh"
+  },
+  {
+   "id": "cmn_hans_cn_1666",
+   "lang": "cmn_hans_cn",
+   "seconds": 8.16,
+   "wall_s": 3.040032399992924,
+   "text": "你也可以咨询除贵国以外其他政府的建议但他们的建议是为他们的公民而制定的",
+   "first_token_ms": 2830.1142578125,
+   "tokens": 36.0,
+   "tpot_ms": {
+    "mean": 5.957291603088379,
+    "std": 0.3707156777381897
+   },
+   "generate_ms": {
+    "mean": 3039.259033203125,
+    "std": 0.0
+   },
+   "language": "zh"
+  },
+  {
+   "id": "cmn_hans_cn_1667",
+   "lang": "cmn_hans_cn",
+   "seconds": 15.64,
+   "wall_s": 3.0897762999520637,
+   "text": "一般来说,当管理者开始领导过去的同事时,会出现两种行为。一种情况是,他们会努力与团队成员保持亲密关系。",
+   "first_token_ms": 2861.78564453125,
+   "tokens": 56.0,
+   "tpot_ms": {
+    "mean": 4.110992908477783,
+    "std": 0.17430244386196136
+   },
+   "generate_ms": {
+    "mean": 3088.444091796875,
+    "std": 0.0
+   },
+   "language": "zh"
+  },
+  {
+   "id": "cmn_hans_cn_1668",
+   "lang": "cmn_hans_cn",
+   "seconds": 8.76,
+   "wall_s": 3.277522099961061,
+   "text": "买一张万能卡也有不少好处带着这张卡你可以进入南非的一些公园或者全部的国家公园",
+   "first_token_ms": 3119.99609375,
+   "tokens": 39.0,
+   "tpot_ms": {
+    "mean": 4.105326175689697,
+    "std": 0.18817086517810822
+   },
+   "generate_ms": {
+    "mean": 3276.615966796875,
+    "std": 0.0
+   },
+   "language": "zh"
+  },
+  {
+   "id": "cmn_hans_cn_1669",
+   "lang": "cmn_hans_cn",
+   "seconds": 6.84,
+   "wall_s": 2.855792800022755,
+   "text": "警察局长钱德拉·谢卡尔·索兰基说被告人出庭时都蒙住了脸",
+   "first_token_ms": 2718.065673828125,
+   "tokens": 34.0,
+   "tpot_ms": {
+    "mean": 4.134896755218506,
+    "std": 0.23628968000411987
+   },
+   "generate_ms": {
+    "mean": 2855.056884765625,
+    "std": 0.0
+   },
+   "language": "zh"
+  },
+  {
+   "id": "ja_jp_1661",
+   "lang": "ja_jp",
+   "seconds": 15.42,
+   "wall_s": 3.3380567000131123,
+   "text": "コシは削減する数値を定めませんでしたが削減は中国の経済産出量に基づいて実施されるだろうと述べました",
+   "first_token_ms": 3134.59375,
+   "tokens": 50.0,
+   "tpot_ms": {
+    "mean": 4.107865333557129,
+    "std": 0.17677368223667145
+   },
+   "generate_ms": {
+    "mean": 3336.428955078125,
+    "std": 0.0
+   },
+   "language": "ja"
+  },
+  {
+   "id": "ja_jp_1662",
+   "lang": "ja_jp",
+   "seconds": 14.58,
+   "wall_s": 3.31298919999972,
+   "text": "合金とは基本的には2種類以上の金属の混合物です周期表に載っているたくさんの元素を思い出してください",
+   "first_token_ms": 3095.537109375,
+   "tokens": 41.0,
+   "tpot_ms": {
+    "mean": 5.386712551116943,
+    "std": 0.9983464479446411
+   },
+   "generate_ms": {
+    "mean": 3311.60205078125,
+    "std": 0.0
+   },
+   "language": "ja"
+  },
+  {
+   "id": "ja_jp_1664",
+   "lang": "ja_jp",
+   "seconds": 9.9,
+   "wall_s": 2.886749900004361,
+   "text": "乾いた粉を2つ合わせてくるくるとこね回し清潔な塗りたてでぎゅっと握ります",
+   "first_token_ms": 2740.6748046875,
+   "tokens": 36.0,
+   "tpot_ms": {
+    "mean": 4.1309027671813965,
+    "std": 0.21892574429512024
+   },
+   "generate_ms": {
+    "mean": 2885.803955078125,
+    "std": 0.0
+   },
+   "language": "ja"
+  },
+  {
+   "id": "ja_jp_1665",
+   "lang": "ja_jp",
+   "seconds": 16.74,
+   "wall_s": 3.395825600018725,
+   "text": "漏れ聞いた情報によれば当該文書は国境紛争に言及するものでパレスチナの希望は1967年の中東戦争前の国境に基づくものです",
+   "first_token_ms": 3159.424072265625,
+   "tokens": 58.0,
+   "tpot_ms": {
+    "mean": 4.1091156005859375,
+    "std": 0.1690380871295929
+   },
+   "generate_ms": {
+    "mean": 3394.205078125,
+    "std": 0.0
+   },
+   "language": "ja"
+  },
+  {
+   "id": "ja_jp_1666",
+   "lang": "ja_jp",
+   "seconds": 13.56,
+   "wall_s": 3.126534899987746,
+   "text": "自国以外の政府からの助言を参考にしても変わりませんがそのような助言はその国の国民向けのものです",
+   "first_token_ms": 2937.284912109375,
+   "tokens": 39.0,
+   "tpot_ms": {
+    "mean": 4.930944919586182,
+    "std": 0.8751356601715088
+   },
+   "generate_ms": {
+    "mean": 3125.215087890625,
+    "std": 0.0
+   },
+   "language": "ja"
+  },
+  {
+   "id": "ja_jp_1667",
+   "lang": "ja_jp",
+   "seconds": 17.82,
+   "wall_s": 3.0359781999723054,
+   "text": "一般的に言えば管理職がかつての仲間を率いることになった場合2通りの行動が現れる可能性があります1つは仲間の1人のままでいようとする行動です",
+   "first_token_ms": 2795.179443359375,
+   "tokens": 59.0,
+   "tpot_ms": {
+    "mean": 4.11269474029541,
+    "std": 0.19382935762405396
+   },
+   "generate_ms": {
+    "mean": 3034.277099609375,
+    "std": 0.0
+   },
+   "language": "ja"
+  },
+  {
+   "id": "ja_jp_1668",
+   "lang": "ja_jp",
+   "seconds": 13.38,
+   "wall_s": 3.366245500044897,
+   "text": "ワイルドカードを購入するとお得な場合があります。南アフリカの主な公園、または南アフリカのすべての空国立公園に入場できます。",
+   "first_token_ms": 3134.378173828125,
+   "tokens": 57.0,
+   "tpot_ms": {
+    "mean": 4.109097957611084,
+    "std": 0.17273807525634766
+   },
+   "generate_ms": {
+    "mean": 3365.052978515625,
+    "std": 0.0
+   },
+   "language": "ja"
+  },
+  {
+   "id": "ja_jp_1669",
+   "lang": "ja_jp",
+   "seconds": 10.08,
+   "wall_s": 2.986430199991446,
+   "text": "警察のチャンドラシカールソランキ総監によれば被告人は顔を隠して法廷に出頭したそうです",
+   "first_token_ms": 2739.2314453125,
+   "tokens": 41.0,
+   "tpot_ms": {
+    "mean": 6.1369123458862305,
+    "std": 0.18747957050800323
+   },
+   "generate_ms": {
+    "mean": 2985.510009765625,
+    "std": 0.0
+   },
+   "language": "ja"
+  },
+  {
+   "id": "ja_jp_1670",
+   "lang": "ja_jp",
+   "seconds": 25.5,
+   "wall_s": 3.532285299967043,
+   "text": "そうした熱挙動は一定の温度をかなり保てる地球上の大洞窟ほど安定していないことが多いのですが、地中に深い穴ができる点を一致していますと、米国地質調査所、USGS宇宙地質学チームとアリゾナ州フラッグスタッフ区にあるノーザン・アリゾナ大学のグレン・プッシング氏は述べています。",
+   "first_token_ms": 2993.53515625,
+   "tokens": 131.0,
+   "tpot_ms": {
+    "mean": 4.121581554412842,
+    "std": 0.1398029625415802
+   },
+   "generate_ms": {
+    "mean": 3529.947998046875,
+    "std": 0.0
+   },
+   "language": "ja"
+  },
+  {
+   "id": "ja_jp_1671",
+   "lang": "ja_jp",
+   "seconds": 18.42,
+   "wall_s": 3.423392500029877,
+   "text": "連邦議会は2005年度からYセスブス取締法への資金提供を開始しFBIはアタルズポルノに10人の捜査員を投入しなければならないと規定しました",
+   "first_token_ms": 3137.1171875,
+   "tokens": 64.0,
+   "tpot_ms": {
+    "mean": 4.506658554077148,
+    "std": 0.4745746850967407
+   },
+   "generate_ms": {
+    "mean": 3421.6298828125,
+    "std": 0.0
+   },
+   "language": "ja"
+  }
+ ],
+ "versions": {
+  "python": "3.12.16",
+  "openvino-genai": "2026.4.1.0",
+  "openvino": "2026.4.1",
+  "openvino-tokenizers": "2026.4.1.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": 0.825,
+ "workload": {
+  "set": "S150",
+  "first": 10,
+  "max_new_tokens": 440,
+  "decode": "greedy",
+  "language": "fixed per clip",
+  "task": "transcribe",
+  "timestamps": false
+ },
+ "generation_config": {
+  "max_new_tokens": "18446744073709551615",
+  "num_beams": "1",
+  "do_sample": "False",
+  "language": "None",
+  "task": "None",
+  "return_timestamps": "False"
+ },
+ "warmup_s": 2.848,
+ "summary": {
+  "clips": 30,
+  "audio_s": 356.78,
+  "wall_s": 93.218,
+  "rtf": 0.26128,
+  "empty": 0,
+  "first_token_ms_mean": 2925.98,
+  "split_half_rtf": [
+   0.27156,
+   0.25167
+  ]
+ },
+ "peak_working_set_bytes": 2295775232,
+ "peak_pagefile_bytes": 1966952448,
+ "ended": "2026-11-10T00:36:53.861450+09:00",
+ "process_s": 97.203
+}

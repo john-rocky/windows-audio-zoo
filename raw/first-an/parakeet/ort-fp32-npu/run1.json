@@ -1,0 +1,43 @@
+{
+ "runner": "run_asr_ort_parakeet.py",
+ "started": "2026-11-09T15:12:21.977523+09:00",
+ "argv": [
+  "--model-dir",
+  "C:\\src\\audiozoo\\models\\istupakov__parakeet-tdt-0.6b-v3-onnx",
+  "--ep",
+  "openvino",
+  "--ov-device",
+  "NPU",
+  "--set",
+  "S150",
+  "--fixtures",
+  "C:\\src\\audiozoo\\fixtures",
+  "--first",
+  "10",
+  "--out",
+  "C:\\src\\audiozoo\\runs\\first-an\\parakeet\\ort-fp32-npu\\run1.json"
+ ],
+ "pid": 24656,
+ "status": "ERROR",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.001
+ },
+ "rows": [],
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime": "1.31.1",
+  "onnxruntime-ep-openvino": "1.8.1",
+  "onnxruntime-ep-webgpu": "0.5.0",
+  "onnx-asr": "0.12.0",
+  "numpy": "2.5.4"
+ },
+ "cuda_dll_dirs": [],
+ "error": "Traceback (most recent call last):\n  File \"C:\\src\\audiozoo\\pc\\run_asr_ort_parakeet.py\", line 91, in main\n    model.asr._encoder = device_session(ort, enc, args, args.ep, dev)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\src\\audiozoo\\pc\\run_asr_ort_parakeet.py\", line 49, in device_session\n    return ort.InferenceSession(path, sess_options=so)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\src\\audiozoo\\.venv-ort\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 683, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"C:\\src\\audiozoo\\.venv-ort\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 789, in _create_inference_session\n    sess.initialize_session(providers, provider_options, disabled_optimizers)\nonnxruntime.capi.onnxruntime_pybind11_state.EPFail: [ONNXRuntimeError] : 11 : EP_FAIL : Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\plugin\\src\\plugin.cpp:560:\nException from src\\plugins\\intel_npu\\src\\compiler_adapter\\src\\compiler_impl.cpp:323:\nCompilation failed. vclAllocatedExecutableCreate4 result: 0x78000004 - [NPU_VCL] Compiler returned msg:\nReshape node '/pre_encode/Reshape': expected exactly 1 dynamic output bound dimension, got 2\n\n\n\n\n",
+ "peak_working_set_bytes": 6925193216,
+ "peak_pagefile_bytes": 5319548928,
+ "ended": "2026-11-09T15:12:40.314800+09:00",
+ "process_s": 18.337
+}

@@ -1,0 +1,40 @@
+[
+ {
+  "name": "ov-qwen3asr-fp16",
+  "exe": "{ROOT}\\.venv-ovexport\\Scripts\\optimum-cli.exe",
+  "args": [
+   "export",
+   "openvino",
+   "--model",
+   "{ROOT}\\models\\Qwen__Qwen3-ASR-1.7B",
+   "--task",
+   "automatic-speech-recognition-with-past",
+   "--trust-remote-code",
+   "--weight-format",
+   "fp16",
+   "{ROOT}\\exports\\qwen3asr-ov-fp16"
+  ],
+  "timeout_min": 30,
+  "ram_gb": 14,
+  "lock": true
+ },
+ {
+  "name": "ov-qwen3asr-int8",
+  "exe": "{ROOT}\\.venv-ovexport\\Scripts\\optimum-cli.exe",
+  "args": [
+   "export",
+   "openvino",
+   "--model",
+   "{ROOT}\\models\\Qwen__Qwen3-ASR-1.7B",
+   "--task",
+   "automatic-speech-recognition-with-past",
+   "--trust-remote-code",
+   "--weight-format",
+   "int8",
+   "{ROOT}\\exports\\qwen3asr-ov-int8"
+  ],
+  "timeout_min": 30,
+  "ram_gb": 14,
+  "lock": true
+ }
+]

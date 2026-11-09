@@ -1,0 +1,8 @@
+# ONNX Runtime 1.31.1 with the OpenVINO and WebGPU EP plugins, for the models without a GenAI model type: Parakeet (onnx-asr's
+# preprocessor and model files) and Kokoro (kokoro-onnx: espeak-ng through espeakng-loader for its phonemes)
+onnxruntime==1.31.1
+onnxruntime-ep-openvino==1.8.1
+onnxruntime-ep-webgpu==0.5.0
+onnx-asr==0.12.0
+kokoro-onnx==0.6.1
+numpy==2.5.4

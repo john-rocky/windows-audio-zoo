@@ -1,0 +1,1 @@
+PATCHED: C:\src\audiozoo\.venv-ref\Lib\site-packages\onnxruntime_genai\models\builders\whisper.py (4 edits; the original is whisper.py.orig)

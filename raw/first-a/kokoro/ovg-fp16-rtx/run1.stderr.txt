@@ -1,0 +1,29 @@
+110 warnings generated.
+105 warnings generated.
+105 warnings generated.
+105 warnings generated.
+105 warnings generated.
+105 warnings generated.
+105 warnings generated.
+105 warnings generated.
+105 warnings generated.
+Traceback (most recent call last):
+  File "C:\src\audiozoo\pc\run_tts_ovg.py", line 59, in main
+    pipe = ov_genai.Text2SpeechPipeline(args.model_dir, args.device, **props)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Exception from src\inference\src\cpp\core.cpp:135:
+Exception from src\inference\src\dev\plugin.cpp:54:
+Check 'false' failed at src\plugins\intel_gpu\src\plugin\program_builder.cpp:168:
+[GPU] ProgramBuilder build failed!
+Check 'shape_type == shape_types::dynamic_shape || node->selected_impl != nullptr' failed at src\plugins\intel_gpu\src\graph\graph_optimizer\compile_graph.cpp:62:
+[GPU] Failed to select implementation for
+name:convert:Convert_70041
+type: reorder
+original_type: Convert Check '!kernels.empty()' failed at src\plugins\intel_gpu\src\kernel_selector\kernel_selector.cpp:70:
+[GPU] Could not find a suitable kernel for convert:Convert_70041 params raw string: F16_BFYX_v1_p0_0_v1_p0_0_v128_p0_0_v2180_p0_0;F32_BFYX_v1_p0_0_v1_p0_0_v128_p0_0_v2180_p0_0
+
+
+
+
+
+

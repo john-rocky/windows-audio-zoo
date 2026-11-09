@@ -1,0 +1,7 @@
+python 3.12.16
+executable C:\src\audiozoo\.venv-litertlm\Scripts\python.exe
+base_executable C:\src\audiozoo\python\cpython-3.12-windows-x86_64-none\python.exe
+litert-lm-api==0.19.1
+numpy==2.5.4
+openvino-telemetry==2025.2.0
+openvino==2026.4.1

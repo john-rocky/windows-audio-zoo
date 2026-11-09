@@ -1,0 +1,9 @@
+python 3.12.16
+executable C:\src\audiozoo\.venv-ovg\Scripts\python.exe
+base_executable C:\src\audiozoo\python\cpython-3.12-windows-x86_64-none\python.exe
+numpy==2.5.4
+openvino-genai==2026.4.1.0
+openvino-telemetry==2025.2.0
+openvino-tokenizers==2026.4.1.0
+openvino==2026.4.1
+scipy==1.18.1

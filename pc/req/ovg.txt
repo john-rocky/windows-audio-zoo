@@ -1,0 +1,7 @@
+# OpenVINO GenAI 2026.4.1: ASRPipeline (Whisper, Qwen3-ASR) and Text2SpeechPipeline (Kokoro), with its OpenVINO runtime and tokenizers of the same release
+openvino-genai==2026.4.1.0
+openvino==2026.4.1
+openvino-tokenizers==2026.4.1.0
+numpy==2.5.4
+# the TTS write-back (pc/writeback.py): 24 kHz -> 16 kHz
+scipy==1.18.1

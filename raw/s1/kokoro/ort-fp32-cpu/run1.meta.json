@@ -1,0 +1,78 @@
+{
+    "cell":  "kokoro/ort-fp32-cpu",
+    "device":  "cpu",
+    "role":  null,
+    "run":  1,
+    "mode":  "timed",
+    "sitting":  "s1",
+    "start":  "2026-11-09T18:27:39.5172481+09:00",
+    "osBuild":  "26200.9711",
+    "gate":  {
+                 "quietGate":  "quiet",
+                 "cpuReads":  [
+                                  3.5,
+                                  0.4,
+                                  0.6
+                              ],
+                 "nvidiaMiB":  0,
+                 "availGB":  24.3,
+                 "ramNeedGB":  3,
+                 "gpuEngines":  null
+             },
+    "before":  {
+                   "load":  {
+                                "cpu":  5.2,
+                                "build_ms":  0,
+                                "top":  [
+                                            "System 4 0.78 core",
+                                            "powershell 20996 0.02 core",
+                                            "svchost 5260 0.02 core",
+                                            "SearchIndexer 9480 0.02 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 5535 MHz, 14001 MHz, 19.22 W, 0 %, 0 MiB, 55",
+                   "availGB":  24.3
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-ort\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_tts_ort.py --model C:\\src\\audiozoo\\models\\onnx-community__Kokoro-82M-v1.0-ONNX\\onnx\\model.onnx --voice-bin C:\\src\\audiozoo\\models\\onnx-community__Kokoro-82M-v1.0-ONNX\\voices\\af_heart.bin --ep cpu --set T50 --fixtures C:\\src\\audiozoo\\fixtures --out C:\\src\\audiozoo\\runs\\s1\\kokoro\\ort-fp32-cpu\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  7896,
+                   "elapsedSeconds":  70.113,
+                   "peakWorkingSetBytes":  917147648,
+                   "gpuMiBPeak":  {
+
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P0, 352 MHz, 14001 MHz, 19.16 W, 0 %, 0 MiB, 56",
+                                         "10s P0, 3900 MHz, 14001 MHz, 18.98 W, 0 %, 0 MiB, 56",
+                                         "15s P0, 1830 MHz, 14001 MHz, 19.42 W, 0 %, 0 MiB, 57",
+                                         "20s P0, 1522 MHz, 14001 MHz, 19.40 W, 0 %, 0 MiB, 57",
+                                         "25s P0, 15457 MHz, 14001 MHz, 19.43 W, 0 %, 0 MiB, 58",
+                                         "30s P0, 667 MHz, 14001 MHz, 19.38 W, 0 %, 0 MiB, 58",
+                                         "35s P0, 585 MHz, 14001 MHz, 19.61 W, 0 %, 0 MiB, 58",
+                                         "40s P0, 915 MHz, 14001 MHz, 19.65 W, 0 %, 0 MiB, 59",
+                                         "45s P0, 5947 MHz, 14001 MHz, 19.85 W, 0 %, 0 MiB, 59",
+                                         "50s P0, 2917 MHz, 14001 MHz, 19.69 W, 0 %, 0 MiB, 59",
+                                         "55s P0, 17542 MHz, 14001 MHz, 19.92 W, 0 %, 0 MiB, 59",
+                                         "60s P0, 4852 MHz, 14001 MHz, 19.92 W, 0 %, 0 MiB, 59",
+                                         "65s P0, 2205 MHz, 14001 MHz, 20.00 W, 0 %, 0 MiB, 60"
+                                     ]
+               },
+    "after":  {
+                  "load":  {
+                               "cpu":  0.9,
+                               "build_ms":  0,
+                               "top":  [
+                                           "System 4 0.13 core",
+                                           "powershell 20844 0.02 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 47040 MHz, 14001 MHz, 20.06 W, 0 %, 0 MiB, 59"
+              },
+    "end":  "2026-11-09T18:28:51.6328100+09:00",
+    "tries":  1
+}

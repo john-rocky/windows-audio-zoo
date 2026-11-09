@@ -1,0 +1,55 @@
+{
+ "cell": "kokoro/ort-fp32-igpu",
+ "model": "kokoro",
+ "runtime": "ONNX Runtime 1.31.1",
+ "form": "fp32",
+ "device": "igpu",
+ "device_name": "Intel GPU",
+ "set": null,
+ "mode": "first",
+ "sitting": "first-a",
+ "status": "ERROR",
+ "record": {
+  "run": "raw/first-a/kokoro/ort-fp32-igpu/run1.json",
+  "meta": "raw/first-a/kokoro/ort-fp32-igpu/run1.meta.json",
+  "chain_log": "raw/first-a/chain.log"
+ },
+ "error": "Traceback (most recent call last):\n  File \"C:\\src\\audiozoo\\pc\\run_tts_ort.py\", line 51, in main\n    sess = device_session(ort, args.model, args, args.ep, dev)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\src\\audiozoo\\pc\\run_asr_ort_parakeet.py\", line 49, in device_session\n    return ort.InferenceSession(path, sess_options=so)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\src\\audiozoo\\.venv-ort\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 683, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"C:\\src\\audiozoo\\.venv-ort\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py\", line 789, in _create_inference_session\n    sess.initialize_session(providers, provider_options, disabled_optimizers)\nonnxruntime.capi.onnxruntime_pybind11_state.EPFail: [ONNXRuntimeError] : 11 : EP_FAIL : Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nCheck 'inputRank == 2 || inputRank == 4 || inputRank == 5' failed at src\\plugins\\intel_gpu\\src\\plugin\\ops\\interpolate.cpp:37:\nMode 'linear_onnx' supports only 2D or 4D, 5D tensors\n\n\n\n",
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime": "1.31.1",
+  "onnxruntime-ep-openvino": "1.8.1",
+  "onnxruntime-ep-webgpu": "0.5.0",
+  "kokoro-onnx": "0.6.1",
+  "espeakng-loader": "0.2.4",
+  "phonemizer": "3.6.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": null,
+ "summary": null,
+ "gate": null,
+ "power": null,
+ "desktop_locked": null,
+ "engine": {
+  "elapsedSeconds": 9.815,
+  "peakWorkingSetBytes": 1053470720,
+  "gpuMiBPeak": {
+   "0x00000000_0x00012C48": {
+    "shared": 0,
+    "dedicated": 0
+   },
+   "0x00000000_0x0001260E": {
+    "shared": 190,
+    "dedicated": 0
+   },
+   "0x00000000_0x00013E4C": {
+    "shared": 0,
+    "dedicated": 0
+   }
+  },
+  "exitCode": 1,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1
+}

@@ -1,0 +1,13 @@
+{
+    "known_rtf":  0.26228,
+    "known_from":  "this sitting\u0027s head (3 runs, spread 0.7 %)",
+    "head":  [
+                 0.2631,
+                 0.26228,
+                 0.26128
+             ],
+    "tail":  [
+                 0.26548
+             ],
+    "verdict":  "PASS (tail off 1.2 %)"
+}

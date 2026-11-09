@@ -1,0 +1,86 @@
+{
+    "cell":  "qwen3asr/ovg-fp16-igpu",
+    "device":  "igpu",
+    "role":  null,
+    "run":  1,
+    "mode":  "first",
+    "sitting":  "first-b",
+    "start":  "2026-11-09T13:44:44.9692490+09:00",
+    "osBuild":  "26200.9711",
+    "gate":  null,
+    "before":  {
+                   "load":  {
+                                "cpu":  94.8,
+                                "build_ms":  0,
+                                "top":  [
+                                            "python 26560 7.43 core",
+                                            "python 29948 4.84 core",
+                                            "python 16240 0.82 core",
+                                            "powershell 808 0.72 core",
+                                            "python 23900 0.5 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 1507 MHz, 14001 MHz, 18.76 W, 0 %, 0 MiB, 56",
+                   "availGB":  15.4
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-ovg\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_asr_ovg.py --model-dir C:\\src\\audiozoo\\exports\\qwen3asr-ov-fp16 --family qwen3asr --device GPU.0 --cache-dir C:\\src\\audiozoo\\runs\\first-b\\qwen3asr\\ovg-fp16-igpu\\cache --set S150 --fixtures C:\\src\\audiozoo\\fixtures --first 10 --out C:\\src\\audiozoo\\runs\\first-b\\qwen3asr\\ovg-fp16-igpu\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  29820,
+                   "elapsedSeconds":  107.449,
+                   "peakWorkingSetBytes":  5757689856,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x0001260E":  {
+                                                                    "shared":  4670,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x00012C48":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P4, 180 MHz, 9001 MHz, 15.10 W, 0 %, 0 MiB, 56",
+                                         "10s P0, 28095 MHz, 14001 MHz, 18.86 W, 0 %, 0 MiB, 56",
+                                         "15s P0, 4485 MHz, 14001 MHz, 18.76 W, 0 %, 0 MiB, 56",
+                                         "20s P0, 6390 MHz, 14001 MHz, 18.84 W, 0 %, 0 MiB, 56",
+                                         "25s P0, 4087 MHz, 14001 MHz, 18.76 W, 0 %, 0 MiB, 56",
+                                         "30s P4, 1492 MHz, 9001 MHz, 15.25 W, 0 %, 978 MiB, 56",
+                                         "35s P4, 1455 MHz, 9001 MHz, 15.03 W, 18 %, 1188 MiB, 55",
+                                         "40s P4, 1252 MHz, 9001 MHz, 40.01 W, 79 %, 2238 MiB, 58",
+                                         "45s P4, 2085 MHz, 9001 MHz, 88.39 W, 100 %, 2376 MiB, 65",
+                                         "50s P4, 1770 MHz, 9001 MHz, 63.22 W, 100 %, 2376 MiB, 67",
+                                         "55s P4, 2175 MHz, 9001 MHz, 75.86 W, 100 %, 2376 MiB, 70",
+                                         "61s P4, 2017 MHz, 9001 MHz, 84.90 W, 100 %, 2376 MiB, 70",
+                                         "65s P4, 1920 MHz, 9001 MHz, 83.93 W, 100 %, 2376 MiB, 70",
+                                         "70s P4, 2055 MHz, 9001 MHz, 83.50 W, 100 %, 2376 MiB, 73",
+                                         "75s P4, 2100 MHz, 9001 MHz, 98.28 W, 100 %, 2376 MiB, 74",
+                                         "80s P4, 1935 MHz, 9001 MHz, 83.26 W, 100 %, 2376 MiB, 73",
+                                         "85s P4, 1837 MHz, 9001 MHz, 70.21 W, 100 %, 2378 MiB, 73",
+                                         "90s P4, 2032 MHz, 9001 MHz, 80.65 W, 100 %, 2378 MiB, 75",
+                                         "95s P4, 2017 MHz, 9001 MHz, 83.96 W, 100 %, 2378 MiB, 74",
+                                         "100s P4, 1942 MHz, 9001 MHz, 80.52 W, 100 %, 2378 MiB, 74",
+                                         "105s P4, 1920 MHz, 9001 MHz, 76.63 W, 100 %, 2446 MiB, 74"
+                                     ]
+               },
+    "after":  {
+                  "load":  {
+                               "cpu":  36,
+                               "build_ms":  0,
+                               "top":  [
+                                           "python 6036 2.57 core",
+                                           "python 26980 1.88 core",
+                                           "python 16240 1.02 core",
+                                           "System 4 0.15 core",
+                                           "LEDKeeper2 8936 0.05 core"
+                                       ]
+                           },
+                  "nvidia":  "P4, 1980 MHz, 9001 MHz, 78.67 W, 100 %, 2378 MiB, 75"
+              },
+    "end":  "2026-11-09T13:46:33.5234216+09:00",
+    "tries":  1
+}

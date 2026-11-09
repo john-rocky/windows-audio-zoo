@@ -1,0 +1,74 @@
+[2026-11-09T12:17:51.4938470+09:00] chain start: plan C:\src\audiozoo\pc\plans\first-a.json mode first, 25 units, pid 27608
+[2026-11-09T12:18:02.3671609+09:00] adapters: 0x00000000_0x00012C48=nvidia, 0x00000000_0x0001260E=intel-gpu, 0x00000000_0x00012BB8=?, 0x00000000_0x00013E4C=npu?
+[2026-11-09T12:18:04.5771501+09:00] whisper/ovg-fp16-cpu run 1 start
+[2026-11-09T12:19:03.0708479+09:00] C:\src\audiozoo\runs\first-a\whisper\ovg-fp16-cpu\run1 suspended (3 processes) while another lane holds busy.txt (another lane's lock 2026-11-09T12:19:01.000+09:00)
+[2026-11-09T12:57:34.4692490+09:00] C:\src\audiozoo\runs\first-a\whisper\ovg-fp16-cpu\run1 resumed (3 processes) after 2311 s
+[2026-11-09T12:59:09.5769095+09:00] C:\src\audiozoo\runs\first-a\whisper\ovg-fp16-cpu\run1 suspended (3 processes) while another lane holds busy.txt (another lane's lock 2026-11-09T12:59:08.8549024+09:00)
+[2026-11-09T13:00:23.0844433+09:00] stopped from the Mac inside another lane's timing lock (that lane asked: suspended processes keep their RAM, its gate waits for 22 GB free); restarted later as kill-and-rerun
+[2026-11-09T13:34:13.6255428+09:00] chain start: plan C:\src\audiozoo\pc\plans\first-a.json mode first, 28 units, pid 29896
+[2026-11-09T13:34:28.3092480+09:00] adapters: 0x00000000_0x00012C48=nvidia, 0x00000000_0x0001260E=intel-gpu, 0x00000000_0x00012BB8=?, 0x00000000_0x00013E4C=npu?
+[2026-11-09T13:34:32.9141836+09:00] whisper/ovg-fp16-cpu run 1 start
+[2026-11-09T13:39:34.3109617+09:00] whisper/ovg-fp16-cpu run 1 end: exit 0, OK, 299.213 s
+[2026-11-09T13:39:36.3623284+09:00] whisper/ovg-fp16-igpu run 1 start
+[2026-11-09T13:40:14.1282124+09:00] whisper/ovg-fp16-igpu run 1 end: exit 0, OK, 35.757 s
+[2026-11-09T13:40:15.7360527+09:00] whisper/ovg-int8-cpu run 1 start
+[2026-11-09T13:44:17.0331656+09:00] whisper/ovg-int8-cpu run 1 end: exit 0, OK, 239.16 s
+[2026-11-09T13:44:19.2215527+09:00] whisper/ovg-int8-igpu run 1 start
+[2026-11-09T13:45:06.3172525+09:00] whisper/ovg-int8-igpu run 1 end: exit 0, OK, 45.358 s
+[2026-11-09T13:45:08.4668714+09:00] whisper/ovg-int8-rtx run 1 start
+[2026-11-09T13:48:00.2446727+09:00] whisper/ovg-int8-rtx run 1 end: exit 0, OK, 169.818 s
+[2026-11-09T13:48:02.2974750+09:00] whisper/ovg-int4-cpu run 1 start
+[2026-11-09T13:53:31.8017581+09:00] whisper/ovg-int4-cpu run 1 end: exit 0, OK, 328.378 s
+[2026-11-09T13:53:32.8956686+09:00] whisper/ovg-int4-igpu run 1 start
+[2026-11-09T13:54:04.3261939+09:00] whisper/ovg-int4-igpu run 1 end: exit 0, OK, 30.289 s
+[2026-11-09T13:54:05.4256418+09:00] whisper/genai-fp32-cpu run 1 start
+[2026-11-09T13:58:06.7613255+09:00] whisper/genai-fp32-cpu run 1 end: exit 0, OK, 240.239 s
+[2026-11-09T13:58:08.7343176+09:00] whisper/genai-fp32-igpu run 1 start
+[2026-11-09T13:58:44.1732588+09:00] whisper/genai-fp32-igpu run 1 stopped (another lane's lock or a slot); its files removed, run again after it
+[2026-11-09T13:58:44.1833213+09:00] whisper/genai-fp32-igpu run 1: another lane holds the lock (another lane's lock 2026-11-09T13:58:41.000+09:00): waiting
+[2026-11-09T14:02:34.5682544+09:00] whisper/genai-fp32-igpu run 1: the lock has been free 60 s: going on
+[2026-11-09T14:02:37.9306584+09:00] whisper/genai-fp32-igpu run 1 start
+[2026-11-09T14:06:13.0780405+09:00] whisper/genai-fp32-igpu run 1 end: exit 0, OK, 213.007 s
+[2026-11-09T14:06:15.2151193+09:00] whisper/genai-fp16-rtx run 1 start
+[2026-11-09T14:06:51.3074839+09:00] whisper/genai-fp16-rtx run 1 end: exit 0, OK, 34.026 s
+[2026-11-09T14:06:53.4203140+09:00] qwen3asr/litertlm-cpu run 1 start
+[2026-11-09T14:07:59.3307538+09:00] qwen3asr/litertlm-cpu run 1 stopped (another lane's lock or a slot); its files removed, run again after it
+[2026-11-09T14:07:59.3307538+09:00] qwen3asr/litertlm-cpu run 1: another lane holds the lock (another lane's lock 2026-11-09T14:07:56.9356049+09:00): waiting
+[2026-11-09T14:13:24.8746849+09:00] qwen3asr/litertlm-cpu run 1: the lock has been free 60 s: going on
+[2026-11-09T14:13:28.2454962+09:00] qwen3asr/litertlm-cpu run 1 start
+[2026-11-09T14:16:58.1264855+09:00] qwen3asr/litertlm-cpu run 1 end: exit 0, OK, 207.749 s
+[2026-11-09T14:16:59.7309951+09:00] qwen3asr/litertlm-igpu run 1 start
+[2026-11-09T14:18:34.1408856+09:00] qwen3asr/litertlm-igpu run 1 end: exit 0, OK, 92.453 s
+[2026-11-09T14:18:36.1061934+09:00] qwen3asr/litertlm-rtx run 1 start
+[2026-11-09T14:19:38.1338282+09:00] qwen3asr/litertlm-rtx run 1 end: exit 0, OK, 60.056 s
+[2026-11-09T14:19:39.6456916+09:00] granite/litertlm-cpu run 1 start
+[2026-11-09T14:39:45.4022966+09:00] granite/litertlm-cpu run 1 end: exit 0, OK, 1204.432 s
+[2026-11-09T14:39:47.4675146+09:00] granite/litertlm-igpu run 1 start
+[2026-11-09T14:49:09.4973416+09:00] granite/litertlm-igpu run 1 end: exit 0, OK, 560.044 s
+[2026-11-09T14:49:11.4629301+09:00] granite/litertlm-rtx run 1 start
+[2026-11-09T14:57:05.3284588+09:00] granite/litertlm-rtx run 1 end: exit 0, OK, 471.881 s
+[2026-11-09T14:57:07.3052409+09:00] parakeet/ort-fp32-cpu run 1 start
+[2026-11-09T14:57:40.9493753+09:00] parakeet/ort-fp32-cpu run 1 end: exit 0, OK, 31.61 s
+[2026-11-09T14:57:42.9347835+09:00] parakeet/ort-int8-cpu run 1 start
+[2026-11-09T14:58:01.0698641+09:00] parakeet/ort-int8-cpu run 1 end: exit 0, OK, 16.178 s
+[2026-11-09T14:58:02.9936004+09:00] parakeet/ort-fp32-rtx run 1 start
+[2026-11-09T14:58:26.8565768+09:00] parakeet/ort-fp32-rtx run 1 end: exit 0, OK, 21.931 s
+[2026-11-09T14:58:28.8368700+09:00] parakeet/ort-fp32-igpu run 1 start
+[2026-11-09T14:58:40.9621955+09:00] parakeet/ort-fp32-igpu run 1 end: exit 1, ERROR, 10.16 s
+[2026-11-09T14:58:42.9347439+09:00] kokoro/ovg-fp16-cpu run 1 start
+[2026-11-09T14:59:09.6100094+09:00] kokoro/ovg-fp16-cpu run 1 end: exit 0, OK, 24.489 s
+[2026-11-09T14:59:11.5830173+09:00] kokoro/ovg-fp16-igpu run 1 start
+[2026-11-09T15:03:45.2831208+09:00] kokoro/ovg-fp16-igpu run 1 end: exit 0, OK, 271.607 s
+[2026-11-09T15:03:46.9354929+09:00] kokoro/ovg-fp16-rtx run 1 start
+[2026-11-09T15:03:59.4439722+09:00] kokoro/ovg-fp16-rtx run 1 end: exit 1, ERROR, 10.361 s
+[2026-11-09T15:04:01.5922472+09:00] kokoro/ovg-int8-cpu run 1 start
+[2026-11-09T15:04:47.6707979+09:00] kokoro/ovg-int8-cpu run 1 end: exit 0, OK, 43.882 s
+[2026-11-09T15:04:49.8394432+09:00] kokoro/ovg-int8-igpu run 1 start
+[2026-11-09T15:09:33.3718068+09:00] kokoro/ovg-int8-igpu run 1 end: exit 0, OK, 281.849 s
+[2026-11-09T15:09:35.5779734+09:00] kokoro/ort-fp32-cpu run 1 start
+[2026-11-09T15:10:27.3632855+09:00] kokoro/ort-fp32-cpu run 1 end: exit 0, OK, 49.61 s
+[2026-11-09T15:10:29.4965332+09:00] kokoro/ort-fp32-rtx run 1 start
+[2026-11-09T15:10:43.6313862+09:00] kokoro/ort-fp32-rtx run 1 end: exit 0, OK, 12.581 s
+[2026-11-09T15:10:45.7646280+09:00] kokoro/ort-fp32-igpu run 1 start
+[2026-11-09T15:10:57.7522659+09:00] kokoro/ort-fp32-igpu run 1 end: exit 1, ERROR, 9.815 s
+[2026-11-09T15:10:57.7692473+09:00] chain done: OK

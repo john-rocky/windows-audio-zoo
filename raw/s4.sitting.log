@@ -1,0 +1,96 @@
+[2026-11-10 00:24:23 JST] sitting s4 start (expected end about 09:00)
+[2026-11-10 00:25:26 JST] lock: TAKEN 2026-11-10T00:25:26.7280118+09:00
+[2026-11-10 00:25:46 JST] gate: PASS 2026-11-10T00:25:47.3981979+09:00
+[2026-11-10 00:26:07 JST] chain: STARTED 15784 (1 process(es) with chain.ps1)
+[2026-11-10T00:25:48.6556044+09:00] chain start: plan C:\src\audiozoo\pc\plans\s4.json mode timed, 38 units, pid 15784
+[2026-11-10T00:25:57.3808126+09:00] adapters: 0x00000000_0x00012C48=nvidia, 0x00000000_0x0001260E=intel-gpu, 0x00000000_0x00012BB8=?, 0x00000000_0x00013E4C=npu?
+[2026-11-10T00:25:57.4125299+09:00] settle 180 s inside the lock before the control rows
+[2026-11-10T00:29:04.9749920+09:00] control-warm run 1 start
+[2026-11-10T00:30:53.8464648+09:00] control-warm run 1 end: exit 0, OK, 106.885 s
+[2026-11-10T00:30:59.7857508+09:00] control-head run 1 start
+[2026-11-10T00:32:41.3355644+09:00] control-head run 1 end: exit 0, OK, 99.547 s
+[2026-11-10T00:33:08.6656277+09:00] control-head run 2 start
+[2026-11-10T00:34:49.0705973+09:00] control-head run 2 end: exit 0, OK, 98.471 s
+[2026-11-10T00:35:16.4651049+09:00] control-head run 3 start
+[2026-11-10T00:36:56.3995532+09:00] control-head run 3 end: exit 0, OK, 97.981 s
+[2026-11-10T00:36:56.4473486+09:00] control head: rtf 0.2631, 0.26228, 0.26128 vs known 0.26228 (this sitting's head (3 runs, spread 0.7 %)): off 0.3 %
+[2026-11-10T00:37:02.4227949+09:00] parakeet/ort-fp32-rtx run 1 start
+[2026-11-10T00:37:26.2772022+09:00] parakeet/ort-fp32-rtx run 1 end: exit 0, OK, 21.979 s
+[2026-11-10T00:37:32.2077158+09:00] kokoro/ort-fp32-rtx run 1 start
+[2026-11-10T00:37:55.6178322+09:00] kokoro/ort-fp32-rtx run 1 end: exit 0, OK, 21.537 s
+[2026-11-10T00:38:01.5588284+09:00] parakeet/ort-int8-cpu run 1 start
+[2026-11-10T00:38:45.8672640+09:00] parakeet/ort-int8-cpu run 1 end: exit 0, OK, 42.343 s
+[2026-11-10T00:38:51.7746787+09:00] whisper/genai-fp16-rtx run 1 start
+[2026-11-10T00:39:24.0295313+09:00] whisper/genai-fp16-rtx run 1 end: exit 0, OK, 30.375 s
+[2026-11-10T00:39:29.9170515+09:00] parakeet/ort-fp32-cpu run 1 start
+[2026-11-10T00:40:36.9486422+09:00] parakeet/ort-fp32-cpu run 1 end: exit 0, OK, 64.996 s
+[2026-11-10T00:40:42.4148607+09:00] kokoro/ovg-fp16-cpu run 1 start
+[2026-11-10T00:42:11.2880191+09:00] kokoro/ovg-fp16-cpu run 1 end: exit 0, OK, 86.936 s
+[2026-11-10T00:42:23.1204136+09:00] whisper/ovg-int4-igpu run 1 start
+[2026-11-10T00:43:26.5072259+09:00] whisper/ovg-int4-igpu run 1 end: exit 0, OK, 61.459 s
+[2026-11-10T00:43:32.7837758+09:00] parakeet/ort-fp32-igpu run 1 start
+[2026-11-10T00:44:44.1407535+09:00] parakeet/ort-fp32-igpu run 1 end: exit 0, OK, 69.418 s
+[2026-11-10T00:44:50.4252620+09:00] whisper/ovg-fp16-igpu run 1 start
+[2026-11-10T00:46:16.3942612+09:00] whisper/ovg-fp16-igpu run 1 end: exit 0, OK, 84.039 s
+[2026-11-10T00:46:22.9980143+09:00] whisper/ovg-int8-igpu run 1 start
+[2026-11-10T00:47:30.6365631+09:00] whisper/ovg-int8-igpu run 1 end: exit 0, OK, 65.701 s
+[2026-11-10T00:47:36.5886188+09:00] kokoro/ovg-int8-cpu run 1 start
+[2026-11-10T00:49:02.9876843+09:00] kokoro/ovg-int8-cpu run 1 end: exit 0, OK, 84.337 s
+[2026-11-10T00:49:08.9364635+09:00] kokoro/ort-fp32-cpu run 1 start
+[2026-11-10T00:50:25.0501872+09:00] kokoro/ort-fp32-cpu run 1 end: exit 0, OK, 74.177 s
+[2026-11-10T00:50:31.0039431+09:00] qwen3asr/litertlm-rtx run 1 start
+[2026-11-10T00:54:30.2772385+09:00] qwen3asr/litertlm-rtx run 1 end: exit 0, OK, 237.344 s
+[2026-11-10T00:54:36.9268823+09:00] qwen3asr/ovg-int8-igpu run 1 start
+[2026-11-10T00:57:30.7120552+09:00] qwen3asr/ovg-int8-igpu run 1 end: exit 0, OK, 171.823 s
+[2026-11-10T00:57:36.6323788+09:00] kokoro/ovg-fp16-npu run 1 start
+[2026-11-10T00:59:15.5317883+09:00] kokoro/ovg-fp16-npu run 1 end: exit 0, OK, 96.957 s
+[2026-11-10T00:59:27.2491139+09:00] qwen3asr/litertlm-igpu run 1 start
+[2026-11-10T01:03:16.4369074+09:00] qwen3asr/litertlm-igpu run 1 end: exit 0, OK, 227.263 s
+[2026-11-10T01:03:23.1602130+09:00] qwen3asr/ovg-fp16-igpu run 1 start
+[2026-11-10T01:08:48.7786739+09:00] qwen3asr/ovg-fp16-igpu run 1 end: exit 0, OK, 323.665 s
+[2026-11-10T01:08:54.6913436+09:00] whisper/ovg-int8-npu run 1 start
+[2026-11-10T01:14:13.4817033+09:00] whisper/ovg-int8-npu run 1 end: exit 0, OK, 316.817 s
+[2026-11-10T01:14:19.3999402+09:00] whisper/ovg-fp16-npu run 1 start
+[2026-11-10T01:19:29.5093263+09:00] whisper/ovg-fp16-npu run 1 end: exit 0, OK, 308.166 s
+[2026-11-10T01:19:35.4654959+09:00] whisper/ovg-int8-rtx run 1 start
+[2026-11-10T01:30:10.1706461+09:00] whisper/ovg-int8-rtx run 1 end: exit 0, OK, 632.834 s
+[2026-11-10T01:30:16.0861341+09:00] qwen3asr/litertlm-cpu run 1 start
+[2026-11-10T01:39:28.1108430+09:00] qwen3asr/litertlm-cpu run 1 end: exit 0, OK, 550.132 s
+[2026-11-10T01:39:39.8072513+09:00] whisper/genai-fp32-igpu run 1 start
+[2026-11-10T01:50:38.7501950+09:00] whisper/genai-fp32-igpu run 1 end: exit 0, OK, 656.996 s
+[2026-11-10T01:50:44.6764330+09:00] whisper/genai-fp32-cpu run 1 start
+[2026-11-10T02:01:10.5761162+09:00] whisper/genai-fp32-cpu run 1 end: exit 0, OK, 623.941 s
+[2026-11-10T02:01:16.4910469+09:00] whisper/ovg-int8-cpu run 1 start
+[2026-11-10T02:09:12.4800481+09:00] whisper/ovg-int8-cpu run 1 end: exit 0, OK, 474.032 s
+[2026-11-10T02:09:18.4231940+09:00] qwen3asr/ovg-int8-cpu run 1 start
+[2026-11-10T02:14:37.2206659+09:00] qwen3asr/ovg-int8-cpu run 1 end: exit 0, OK, 316.846 s
+[2026-11-10T02:14:48.7869998+09:00] kokoro/ovg-fp16-igpu run 1 start
+[2026-11-10T02:24:44.3903901+09:00] kokoro/ovg-fp16-igpu run 1 end: exit 0, OK, 593.668 s
+[2026-11-10T02:24:50.9940839+09:00] kokoro/ovg-int8-igpu run 1 start
+[2026-11-10T02:32:29.3932896+09:00] kokoro/ovg-int8-igpu run 1 end: exit 0, OK, 456.454 s
+[2026-11-10T02:32:35.3358623+09:00] qwen3asr/ovg-int8-rtx run 1 start
+[2026-11-10T02:50:16.2998997+09:00] qwen3asr/ovg-int8-rtx run 1 end: exit 0, OK, 1059.044 s
+[2026-11-10T02:50:22.2211685+09:00] whisper/ovg-fp16-cpu run 1 start
+[2026-11-10T03:05:48.6035959+09:00] whisper/ovg-fp16-cpu run 1 end: exit 0, OK, 924.412 s
+[2026-11-10T03:05:54.5022595+09:00] granite/litertlm-rtx run 1 start
+[2026-11-10T03:23:43.6262758+09:00] granite/litertlm-rtx run 1 end: exit 0, OK, 1067.172 s
+[2026-11-10T03:23:49.6227752+09:00] whisper/ovg-int4-cpu run 1 start
+[2026-11-10T03:32:36.9885159+09:00] whisper/ovg-int4-cpu run 1 end: exit 0, OK, 525.464 s
+[2026-11-10T03:32:42.9126207+09:00] qwen3asr/ovg-fp16-cpu run 1 start
+[2026-11-10T03:43:11.7330702+09:00] qwen3asr/ovg-fp16-cpu run 1 end: exit 0, OK, 626.875 s
+[2026-11-10T03:43:23.7259394+09:00] granite/litertlm-igpu run 1 start
+[2026-11-10T04:01:09.8111186+09:00] granite/litertlm-igpu run 1 end: exit 0, OK, 1064.149 s
+[2026-11-10T04:01:15.7317756+09:00] qwen3asr/litertlm-npu run 1 start
+[2026-11-10T04:21:02.7660190+09:00] qwen3asr/litertlm-npu run 1 end: exit 0, OK, 1185.092 s
+[2026-11-10T04:21:08.6990499+09:00] granite/litertlm-cpu run 1 start
+[2026-11-10T04:48:34.6406551+09:00] granite/litertlm-cpu run 1 end: exit 0, OK, 1643.988 s
+[2026-11-10T04:48:40.5279815+09:00] control-tail run 1 start
+[2026-11-10T04:50:24.5514619+09:00] control-tail run 1 end: exit 0, OK, 102.08 s
+[2026-11-10T04:50:24.5514619+09:00] control tail: rtf 0.26548: PASS (tail off 1.2 %)
+[2026-11-10T04:50:24.5673247+09:00] chain done: OK
+DONE OK 2026-11-10T04:50:24.5673247+09:00 (C:\src\audiozoo\runs\s4\chain.done)
+[2026-11-10 04:50:33 JST] chain wait: DONE OK 2026-11-10T04:50:24.5673247+09:00 (C:\src\audiozoo\runs\s4\chain.done)
+[2026-11-10 04:50:36 JST] lock after the chain: busy: Z3 timing: sitting s4 done, the records go to the Mac, until 05:10 at the latest 2026-11-10T04:50:24.5759297+09:00 (0 min)
+[2026-11-10 04:50:38 JST] pulled runs\s4 -> raw/s4
+[2026-11-10 04:50:41 JST] release: RELEASED 2026-11-10T04:50:41.7280541+09:00
+[2026-11-10 04:50:41 JST] sitting s4 end: DONE OK 2026-11-10T04:50:24.5673247+09:00 (C:\src\audiozoo\runs\s4\chain.done)

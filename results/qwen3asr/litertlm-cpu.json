@@ -1,0 +1,159 @@
+{
+ "cell": "qwen3asr/litertlm-cpu",
+ "model": "qwen3asr",
+ "runtime": "LiteRT-LM 0.19.1",
+ "form": "bundle",
+ "device": "cpu",
+ "device_name": "CPU (Core Ultra 9 386H)",
+ "set": "S150",
+ "mode": "timed",
+ "sitting": "s4",
+ "status": "OK",
+ "record": {
+  "run": "raw/s4/qwen3asr/litertlm-cpu/run1.json",
+  "meta": "raw/s4/qwen3asr/litertlm-cpu/run1.meta.json",
+  "chain_log": "raw/s4/chain.log"
+ },
+ "error": null,
+ "versions": {
+  "python": "3.12.16",
+  "litert-lm-api": "0.19.1",
+  "openvino": "2026.4.1",
+  "numpy": "2.5.4"
+ },
+ "load_s": 1.67,
+ "summary": {
+  "clips": 150,
+  "audio_s": 1806.26,
+  "wall_s": 542.33,
+  "rtf": 0.30025,
+  "empty": 0,
+  "first_token_ms_mean": 2289.76,
+  "split_half_rtf": [
+   0.29114,
+   0.31004
+  ]
+ },
+ "gate": {
+  "quietGate": "quiet",
+  "cpuReads": [
+   3.2,
+   1.1,
+   1.1
+  ],
+  "nvidiaMiB": 0,
+  "availGB": 25.1,
+  "ramNeedGB": 7,
+  "gpuEngines": null
+ },
+ "power": {
+  "msiUserScenarioMode": 1,
+  "overlayAc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "overlayDc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "battery": "status 2, 96 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 550.132,
+  "peakWorkingSetBytes": 4072067072,
+  "gpuMiBPeak": {},
+  "exitCode": 0,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1,
+ "control": {
+  "known_rtf": 0.26228,
+  "known_from": "this sitting's head (3 runs, spread 0.7 %)",
+  "head": [
+   0.2631,
+   0.26228,
+   0.26128
+  ],
+  "tail": [
+   0.26548
+  ],
+  "verdict": "PASS (tail off 1.2 %)"
+ },
+ "accuracy": {
+  "en_us": {
+   "metric": "WER",
+   "err": 47,
+   "n": 1150,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 4.087
+  },
+  "cmn_hans_cn": {
+   "metric": "CER",
+   "err": 128,
+   "n": 1954,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 6.551
+  },
+  "ja_jp": {
+   "metric": "CER",
+   "err": 155,
+   "n": 2689,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 5.764
+  }
+ },
+ "reference": {
+  "path": "raw/refs/qwen3asr-fp32/ref_transformers_official.jsonl",
+  "scores": {
+   "en_us": {
+    "metric": "WER",
+    "err": 50,
+    "n": 1150,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 4.348
+   },
+   "cmn_hans_cn": {
+    "metric": "CER",
+    "err": 134,
+    "n": 1954,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 6.858
+   },
+   "ja_jp": {
+    "metric": "CER",
+    "err": 148,
+    "n": 2689,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 5.504
+   }
+  }
+ },
+ "line": {
+  "en_us": {
+   "run": 4.087,
+   "ref": 4.348,
+   "bar": 4.848,
+   "pass": true
+  },
+  "cmn_hans_cn": {
+   "run": 6.551,
+   "ref": 6.858,
+   "bar": 7.358,
+   "pass": true
+  },
+  "ja_jp": {
+   "run": 5.764,
+   "ref": 5.504,
+   "bar": 6.004,
+   "pass": true
+  },
+  "empty": {
+   "n": 0,
+   "pass": true
+  },
+  "pass": true
+ },
+ "first_vs_timed_equal": "30/30"
+}

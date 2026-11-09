@@ -1,0 +1,165 @@
+{
+ "cell": "whisper/ovg-fp16-npu",
+ "model": "whisper",
+ "runtime": "OpenVINO GenAI 2026.4.1",
+ "form": "fp16",
+ "device": "npu",
+ "device_name": "Intel NPU",
+ "set": "S150",
+ "mode": "timed",
+ "sitting": "s4",
+ "status": "OK",
+ "record": {
+  "run": "raw/s4/whisper/ovg-fp16-npu/run1.json",
+  "meta": "raw/s4/whisper/ovg-fp16-npu/run1.meta.json",
+  "chain_log": "raw/s4/chain.log"
+ },
+ "error": null,
+ "versions": {
+  "python": "3.12.16",
+  "openvino-genai": "2026.4.1.0",
+  "openvino": "2026.4.1",
+  "openvino-tokenizers": "2026.4.1.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": 221.492,
+ "summary": {
+  "clips": 150,
+  "audio_s": 1806.26,
+  "wall_s": 84.482,
+  "rtf": 0.04677,
+  "empty": 0,
+  "first_token_ms_mean": 299.8,
+  "split_half_rtf": [
+   0.04573,
+   0.04789
+  ]
+ },
+ "gate": {
+  "quietGate": "quiet",
+  "cpuReads": [
+   3.3,
+   1.5,
+   0.1
+  ],
+  "nvidiaMiB": 0,
+  "availGB": 25.2,
+  "ramNeedGB": 4,
+  "gpuEngines": null
+ },
+ "power": {
+  "msiUserScenarioMode": 1,
+  "overlayAc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "overlayDc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "battery": "status 2, 96 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 308.166,
+  "peakWorkingSetBytes": 6438117376,
+  "gpuMiBPeak": {
+   "0x00000000_0x00013E4C": {
+    "shared": 2495,
+    "dedicated": 0
+   }
+  },
+  "exitCode": 0,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1,
+ "control": {
+  "known_rtf": 0.26228,
+  "known_from": "this sitting's head (3 runs, spread 0.7 %)",
+  "head": [
+   0.2631,
+   0.26228,
+   0.26128
+  ],
+  "tail": [
+   0.26548
+  ],
+  "verdict": "PASS (tail off 1.2 %)"
+ },
+ "accuracy": {
+  "en_us": {
+   "metric": "WER",
+   "err": 59,
+   "n": 1150,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 5.13
+  },
+  "cmn_hans_cn": {
+   "metric": "CER",
+   "err": 178,
+   "n": 1954,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 9.11
+  },
+  "ja_jp": {
+   "metric": "CER",
+   "err": 103,
+   "n": 2689,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 3.83
+  }
+ },
+ "reference": {
+  "path": "raw/refs/whisper/ref.json",
+  "scores": {
+   "en_us": {
+    "metric": "WER",
+    "err": 59,
+    "n": 1150,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 5.13
+   },
+   "cmn_hans_cn": {
+    "metric": "CER",
+    "err": 178,
+    "n": 1954,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 9.11
+   },
+   "ja_jp": {
+    "metric": "CER",
+    "err": 103,
+    "n": 2689,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 3.83
+   }
+  }
+ },
+ "line": {
+  "en_us": {
+   "run": 5.13,
+   "ref": 5.13,
+   "bar": 5.63,
+   "pass": true
+  },
+  "cmn_hans_cn": {
+   "run": 9.11,
+   "ref": 9.11,
+   "bar": 9.61,
+   "pass": true
+  },
+  "ja_jp": {
+   "run": 3.83,
+   "ref": 3.83,
+   "bar": 4.33,
+   "pass": true
+  },
+  "empty": {
+   "n": 0,
+   "pass": true
+  },
+  "pass": true
+ },
+ "first_vs_timed_equal": "30/30"
+}

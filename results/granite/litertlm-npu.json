@@ -1,0 +1,46 @@
+{
+ "cell": "granite/litertlm-npu",
+ "model": "granite",
+ "runtime": "LiteRT-LM 0.19.1",
+ "form": "bundle",
+ "device": "npu",
+ "device_name": "Intel NPU",
+ "set": null,
+ "mode": "first",
+ "sitting": "first-an",
+ "status": "NO JSON",
+ "record": {
+  "run": null,
+  "meta": "raw/first-an/granite/litertlm-npu/run1.meta.json",
+  "chain_log": "raw/first-an/chain.log"
+ },
+ "error": "stopped by hand 21 min in, at 8 of the 70 first-pass clips (about 160 s per clip; ended at 15:12 on 11-09, its clip lines in run1.stdout.kept.txt)",
+ "versions": null,
+ "load_s": null,
+ "summary": null,
+ "gate": null,
+ "power": null,
+ "desktop_locked": null,
+ "engine": {
+  "elapsedSeconds": 1319.131,
+  "peakWorkingSetBytes": 10968178688,
+  "gpuMiBPeak": {
+   "0x00000000_0x00012C48": {
+    "shared": 0,
+    "dedicated": 0
+   },
+   "0x00000000_0x0001260E": {
+    "shared": 0,
+    "dedicated": 0
+   },
+   "0x00000000_0x00013E4C": {
+    "shared": 0,
+    "dedicated": 0
+   }
+  },
+  "exitCode": 1,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1
+}

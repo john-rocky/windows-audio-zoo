@@ -1,0 +1,4 @@
+[2026-11-09T14:19:46.6631727+09:00] steps diag-qwen3b start: 1 steps, pid 12604
+[2026-11-09T14:19:46.7086834+09:00] ref-qwen3asr-ovpy-fp16 start: C:\src\audiozoo\.venv-ovexport\Scripts\python.exe -I C:\src\audiozoo\pc\ref_qwen_asr_ovpy.py --ir-dir C:\src\audiozoo\exports\qwen3asr-ov-fp16 --model-dir C:\src\audiozoo\models\Qwen__Qwen3-ASR-1.7B --set S150 --first 10 --fixtures C:\src\audiozoo\fixtures --out C:\src\audiozoo\refs\qwen3asr-ovpy\fp16-f32.json
+[2026-11-09T14:46:04.2092932+09:00] ref-qwen3asr-ovpy-fp16 end: exit 0, 26.3 min
+[2026-11-09T14:46:04.2269936+09:00] steps diag-qwen3b done: OK

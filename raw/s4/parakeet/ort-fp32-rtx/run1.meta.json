@@ -1,0 +1,80 @@
+{
+    "cell":  "parakeet/ort-fp32-rtx",
+    "device":  "rtx",
+    "role":  null,
+    "run":  1,
+    "mode":  "timed",
+    "sitting":  "s4",
+    "start":  "2026-11-10T00:37:02.3912520+09:00",
+    "osBuild":  "26200.9711",
+    "desktopLocked":  true,
+    "power":  {
+                  "msiUserScenarioMode":  1,
+                  "overlayAc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "overlayDc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "battery":  "status 2, 96 %"
+              },
+    "gate":  {
+                 "quietGate":  "quiet",
+                 "cpuReads":  [
+                                  3.5,
+                                  0.6,
+                                  0.7
+                              ],
+                 "nvidiaMiB":  0,
+                 "availGB":  25.2,
+                 "ramNeedGB":  4,
+                 "gpuEngines":  null
+             },
+    "before":  {
+                   "load":  {
+                                "cpu":  2.1,
+                                "build_ms":  0,
+                                "top":  [
+                                            "System 4 0.32 core",
+                                            "svchost 5260 0.02 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 2422 MHz, 14001 MHz, 19.26 W, 0 %, 0 MiB, 57",
+                   "availGB":  25.3
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-ort-cuda\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_asr_ort_parakeet.py --model-dir C:\\src\\audiozoo\\models\\istupakov__parakeet-tdt-0.6b-v3-onnx --ep cuda --set S150 --fixtures C:\\src\\audiozoo\\fixtures --out C:\\src\\audiozoo\\runs\\s4\\parakeet\\ort-fp32-rtx\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  24628,
+                   "elapsedSeconds":  21.979,
+                   "peakWorkingSetBytes":  3028246528,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x00012C48":  {
+                                                                    "shared":  204,
+                                                                    "dedicated":  3800
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P0, 3150 MHz, 14001 MHz, 19.19 W, 0 %, 0 MiB, 56",
+                                         "10s P0, 3585 MHz, 14001 MHz, 19.01 W, 0 %, 8 MiB, 56",
+                                         "15s P2, 1522 MHz, 11001 MHz, 18.38 W, 0 %, 3602 MiB, 55",
+                                         "20s P4, 2820 MHz, 9001 MHz, 60.99 W, 17 %, 3800 MiB, 60"
+                                     ]
+               },
+    "after":  {
+                  "load":  {
+                               "cpu":  2.8,
+                               "build_ms":  0,
+                               "top":  [
+                                           "System 4 0.39 core",
+                                           "svchost 5080 0.02 core",
+                                           "MsMpEng 5548 0.02 core",
+                                           "powershell 15784 0.02 core",
+                                           "svchost 2388 0.02 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 7815 MHz, 14001 MHz, 19.30 W, 0 %, 0 MiB, 57"
+              },
+    "end":  "2026-11-10T00:37:26.2453868+09:00",
+    "tries":  1
+}

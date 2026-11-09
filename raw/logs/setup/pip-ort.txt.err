@@ -1,0 +1,26 @@
+Using Python 3.12.16 environment at: C:\src\audiozoo\.venv-ort
+Resolved 16 packages in 374ms
+Downloading onnx-asr (3.8MiB)
+Downloading espeakng-loader (9.0MiB)
+Downloading onnx-asr (3.8MiB)
+Downloading espeakng-loader (9.0MiB)
+ Downloaded onnx-asr
+ Downloaded espeakng-loader
+Prepared 9 packages in 1m 15s
+Installed 16 packages in 2.19s
+ + attrs==26.1.0
+ + cloudpickle==3.1.2
+ + dlinfo==2.0.0
+ + espeakng-loader==0.2.4
+ + flatbuffers==25.12.19
+ + joblib==1.6.0
+ + kokoro-onnx==0.6.1
+ + numpy==2.5.4
+ + onnx-asr==0.12.0
+ + onnxruntime==1.31.1
+ + onnxruntime-ep-openvino==1.8.1
+ + onnxruntime-ep-webgpu==0.5.0
+ + packaging==26.3
+ + phonemizer==3.6.0
+ + protobuf==7.36.2
+ + typing-extensions==4.16.0

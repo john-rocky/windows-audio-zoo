@@ -1,0 +1,232 @@
+{
+ "cell": "granite/litertlm-cpu",
+ "model": "granite",
+ "runtime": "LiteRT-LM 0.19.1",
+ "form": "bundle",
+ "device": "cpu",
+ "device_name": "CPU (Core Ultra 9 386H)",
+ "set": "S220",
+ "mode": "timed",
+ "sitting": "s4",
+ "status": "OK",
+ "record": {
+  "run": "raw/s4/granite/litertlm-cpu/run1.json",
+  "meta": "raw/s4/granite/litertlm-cpu/run1.meta.json",
+  "chain_log": "raw/s4/chain.log"
+ },
+ "error": null,
+ "versions": {
+  "python": "3.12.16",
+  "litert-lm-api": "0.19.1",
+  "openvino": "2026.4.1",
+  "numpy": "2.5.4"
+ },
+ "load_s": 1.661,
+ "summary": {
+  "clips": 220,
+  "audio_s": 2686.585,
+  "wall_s": 1632.769,
+  "rtf": 0.60775,
+  "empty": 0,
+  "first_token_ms_mean": 5324.41,
+  "split_half_rtf": [
+   0.61267,
+   0.60291
+  ]
+ },
+ "gate": {
+  "quietGate": "quiet",
+  "cpuReads": [
+   3,
+   1.3,
+   0.3
+  ],
+  "nvidiaMiB": 0,
+  "availGB": 24.4,
+  "ramNeedGB": 7,
+  "gpuEngines": null
+ },
+ "power": {
+  "msiUserScenarioMode": 1,
+  "overlayAc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "overlayDc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "battery": "status 2, 96 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 1643.988,
+  "peakWorkingSetBytes": 5380911104,
+  "gpuMiBPeak": {},
+  "exitCode": 0,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1,
+ "control": {
+  "known_rtf": 0.26228,
+  "known_from": "this sitting's head (3 runs, spread 0.7 %)",
+  "head": [
+   0.2631,
+   0.26228,
+   0.26128
+  ],
+  "tail": [
+   0.26548
+  ],
+  "verdict": "PASS (tail off 1.2 %)"
+ },
+ "accuracy": {
+  "groups": {
+   "en_fl": {
+    "err": 64,
+    "n": 1135,
+    "rate_pct": 5.639,
+    "clips": 50
+   },
+   "ja": {
+    "err": 141,
+    "n": 2689,
+    "rate_pct": 5.244,
+    "clips": 50
+   },
+   "eu": {
+    "err": 282,
+    "n": 2363,
+    "rate_pct": 11.934,
+    "clips": 100
+   },
+   "en_ls": {
+    "err": 10,
+    "n": 453,
+    "rate_pct": 2.208,
+    "clips": 20
+   },
+   "en70": {
+    "err": 74,
+    "n": 1588,
+    "rate_pct": 4.66,
+    "clips": 70
+   }
+  },
+  "sets": {
+   "en_ls": {
+    "err": 10,
+    "n": 453,
+    "clips": 20,
+    "empty": 0,
+    "loop": 0,
+    "not_eos": 0,
+    "ids_vs_ref": 0,
+    "ids_known": 0,
+    "rate_pct": 2.208
+   },
+   "en_fl": {
+    "err": 64,
+    "n": 1135,
+    "clips": 50,
+    "empty": 0,
+    "loop": 0,
+    "not_eos": 0,
+    "ids_vs_ref": 0,
+    "ids_known": 0,
+    "rate_pct": 5.639
+   },
+   "ja": {
+    "err": 141,
+    "n": 2689,
+    "clips": 50,
+    "empty": 0,
+    "loop": 0,
+    "not_eos": 0,
+    "ids_vs_ref": 0,
+    "ids_known": 0,
+    "rate_pct": 5.244
+   },
+   "fr": {
+    "err": 86,
+    "n": 638,
+    "clips": 25,
+    "empty": 0,
+    "loop": 0,
+    "not_eos": 0,
+    "ids_vs_ref": 0,
+    "ids_known": 0,
+    "rate_pct": 13.48
+   },
+   "de": {
+    "err": 58,
+    "n": 507,
+    "clips": 25,
+    "empty": 0,
+    "loop": 0,
+    "not_eos": 0,
+    "ids_vs_ref": 0,
+    "ids_known": 0,
+    "rate_pct": 11.44
+   },
+   "es": {
+    "err": 42,
+    "n": 637,
+    "clips": 25,
+    "empty": 0,
+    "loop": 0,
+    "not_eos": 0,
+    "ids_vs_ref": 0,
+    "ids_known": 0,
+    "rate_pct": 6.593
+   },
+   "pt": {
+    "err": 96,
+    "n": 581,
+    "clips": 25,
+    "empty": 0,
+    "loop": 0,
+    "not_eos": 0,
+    "ids_vs_ref": 0,
+    "ids_known": 0,
+    "rate_pct": 16.523
+   }
+  },
+  "totals": {
+   "clips": 220,
+   "empty": 0,
+   "loop": 0,
+   "not_eos": 0,
+   "ids_vs_ref": 0,
+   "ids_known": 0
+  }
+ },
+ "line": {
+  "en_fl": {
+   "run": 5.639,
+   "ref": 5.463,
+   "bar": 5.963,
+   "pass": true
+  },
+  "ja": {
+   "run": 5.244,
+   "ref": 5.132,
+   "bar": 5.632,
+   "pass": true
+  },
+  "eu": {
+   "run": 11.934,
+   "ref": 12.103,
+   "bar": 12.603,
+   "pass": true
+  },
+  "empty": {
+   "n": 0,
+   "pass": true
+  },
+  "loop": {
+   "n": 0,
+   "pass": true
+  },
+  "pass": true
+ },
+ "reference": {
+  "path": "raw/refs/granite-fp32/R_fp32_cpu.jsonl"
+ },
+ "first_vs_timed_equal": "70/70"
+}

@@ -1,0 +1,61 @@
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794249803.967310    6076 litert_lm_loader.cc:550] TFLite model type: tf_lite_vision_encoder not found for prefer activation type. Use system's default backend activation type. System's default activation type for Text decoder is fp16. Vision encoder and audio encoder default is fp32.
+W0000 00:00:1794249803.967942   33232 litert_lm_loader.cc:407] Section not found: SP_Tokenizer
+W0000 00:00:1794249803.968059    6076 litert_lm_loader.cc:532] TFLite model type: tf_lite_vision_encoder not found for backend constraints. Skipping.
+W0000 00:00:1794249803.968259   33232 litert_lm_loader.cc:407] Section not found: SP_Tokenizer
+W0000 00:00:1794249803.968497   33232 litert_lm_loader.cc:407] Section not found: HF_Tokenizer_Zlib
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=00000141621F3760, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=00000141621F2B00, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=00000141621F3880, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=00000141C7B60AE0, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+INFO: [delegate_webgpu.cc:349] Create WebGPU environment (use_low_power=0, enable_host_mapped_pointer=1)
+I0000 00:00:1794249805.386221    6076 environment.cc:570] Selected adapter: NVIDIA GeForce RTX 5080 Laptop GPU, arch=blackwell, vendor=nvidia, backend=Direct3D 12, adapterType=Discrete GPU
+INFO: [delegate_webgpu.cc:370] Created a WebGPU environment.
+INFO: [environment.cc:47] Adding options to the existing LiteRT environment
+INFO: [gpu_environment.cc:459] Failed to create OpenCL context.
+INFO: [gpu_environment.h:155] Created LiteRT GpuEnvironment.
+INFO: [environment.cc:47] Adding options to the existing LiteRT environment
+I0000 00:00:1794249805.414792    6076 delegate_webgpu.cc:758] # of threads to upload weights = 2
+I0000 00:00:1794249805.414933    6076 delegate_webgpu.cc:766] # of threads to compile kernels = 1
+I0000 00:00:1794249808.405623    6076 delegate_kernel.cc:360] Total 160 external tensors are used for delegate inputs and outputs
+I0000 00:00:1794249808.406593    6076 delegate_kernel.cc:1015] Initializing WebGPU-based API from serialized data.
+I0000 00:00:1794249808.648280    6076 delegate_kernel.cc:360] Total 160 external tensors are used for delegate inputs and outputs
+I0000 00:00:1794249808.648509    6076 delegate_kernel.cc:1015] Initializing WebGPU-based API from serialized data.
+I0000 00:00:1794249808.859260    6076 delegate_kernel.cc:360] Total 160 external tensors are used for delegate inputs and outputs
+I0000 00:00:1794249808.859691    6076 delegate_kernel.cc:1015] Initializing WebGPU-based API from serialized data.
+I0000 00:00:1794249809.637565    6076 delegate_kernel.cc:360] Total 161 external tensors are used for delegate inputs and outputs
+I0000 00:00:1794249809.639710    6076 delegate_kernel.cc:1015] Initializing WebGPU-based API from serialized data.
+W0000 00:00:1794249809.745799    6076 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794249809.746658    6076 litert_lm_loader.cc:497] TFLite model for type: tf_lite_end_of_audio not found. Skipping.
+W0000 00:00:1794249809.746741    6076 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794249809.746802    6076 litert_lm_loader.cc:497] TFLite model for type: tf_lite_end_of_vision not found. Skipping.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1794249809.749791    6076 embedding_lookup_text.cc:352] No signature key was provided. The Embedding model is expected to have exactly one signature but got 4. Using the first signature: decode_embedder
+W0000 00:00:1794249809.749972    6076 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794249809.750043    6076 litert_lm_loader.cc:497] TFLite model for type: tf_lite_per_layer_embedder not found. Skipping.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=00000141CFA4EA60, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=00000141CFA51700, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+W0000 00:00:1794249809.806645    6076 litert_lm_loader.cc:550] TFLite model type: tf_lite_vision_encoder not found for prefer activation type. Use system's default backend activation type. System's default activation type for Text decoder is fp16. Vision encoder and audio encoder default is fp32.
+W0000 00:00:1794249809.806905    6076 litert_lm_loader.cc:532] TFLite model type: tf_lite_vision_encoder not found for backend constraints. Skipping.
+W0000 00:00:1794249809.809363    6076 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794249809.809524    6076 litert_lm_loader.cc:497] TFLite model for type: tf_lite_audio_adapter not found. Skipping.
+W0000 00:00:1794249809.809609    6076 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794249809.809687    6076 litert_lm_loader.cc:497] TFLite model for type: tf_lite_audio_adapter not found. Skipping.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+E0000 00:00:1794249815.777533    9080 gpu_model_builder.cc:4150] TopK requires src tensor C dimension to be divisible by 4.
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=00000141CFA4EA60, name=GPU WebGPU
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=00000141CFA51700, name=CpuAccelerator

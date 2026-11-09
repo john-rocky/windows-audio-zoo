@@ -1,0 +1,93 @@
+{
+    "cell":  "whisper/ovg-int8-igpu",
+    "device":  "igpu",
+    "role":  null,
+    "run":  1,
+    "mode":  "timed",
+    "sitting":  "s4",
+    "start":  "2026-11-10T00:46:22.9663233+09:00",
+    "osBuild":  "26200.9711",
+    "desktopLocked":  true,
+    "power":  {
+                  "msiUserScenarioMode":  1,
+                  "overlayAc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "overlayDc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "battery":  "status 2, 96 %"
+              },
+    "gate":  {
+                 "quietGate":  "quiet",
+                 "cpuReads":  [
+                                  2.5,
+                                  0.8,
+                                  0.4
+                              ],
+                 "nvidiaMiB":  0,
+                 "availGB":  25.2,
+                 "ramNeedGB":  4,
+                 "gpuEngines":  0
+             },
+    "before":  {
+                   "load":  {
+                                "cpu":  0.3,
+                                "build_ms":  0,
+                                "top":  [
+                                            "System 4 0.02 core",
+                                            "powershell 31476 0.02 core",
+                                            "powershell 15784 0.02 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 465 MHz, 14001 MHz, 18.84 W, 0 %, 0 MiB, 55",
+                   "availGB":  25.2
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-ovg\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_asr_ovg.py --model-dir C:\\src\\audiozoo\\models\\OpenVINO__whisper-large-v3-turbo-int8-ov --family whisper --device GPU.0 --cache-dir C:\\src\\audiozoo\\runs\\s4\\whisper\\ovg-int8-igpu\\cache --set S150 --fixtures C:\\src\\audiozoo\\fixtures --out C:\\src\\audiozoo\\runs\\s4\\whisper\\ovg-int8-igpu\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  26084,
+                   "elapsedSeconds":  65.701,
+                   "peakWorkingSetBytes":  2634014720,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x0001260E":  {
+                                                                    "shared":  1043,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x00012C48":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P0, 10627 MHz, 14001 MHz, 18.75 W, 0 %, 0 MiB, 55",
+                                         "10s P0, 2392 MHz, 14001 MHz, 18.86 W, 0 %, 0 MiB, 55",
+                                         "15s P0, 1275 MHz, 14001 MHz, 18.99 W, 0 %, 0 MiB, 56",
+                                         "20s P0, 6390 MHz, 14001 MHz, 19.00 W, 0 %, 0 MiB, 56",
+                                         "25s P0, 442 MHz, 14001 MHz, 18.96 W, 0 %, 0 MiB, 56",
+                                         "30s P0, 337 MHz, 14001 MHz, 19.11 W, 0 %, 0 MiB, 57",
+                                         "35s P0, 2355 MHz, 14001 MHz, 19.15 W, 0 %, 0 MiB, 57",
+                                         "40s P0, 11925 MHz, 14001 MHz, 19.20 W, 0 %, 0 MiB, 57",
+                                         "45s P0, 202 MHz, 14001 MHz, 19.22 W, 0 %, 0 MiB, 57",
+                                         "50s P0, 817 MHz, 14001 MHz, 19.26 W, 0 %, 0 MiB, 57",
+                                         "56s P0, 8482 MHz, 14001 MHz, 19.26 W, 0 %, 0 MiB, 58",
+                                         "60s P0, 1230 MHz, 14001 MHz, 19.36 W, 0 %, 0 MiB, 58",
+                                         "65s P2, 1057 MHz, 11001 MHz, 21.47 W, 0 %, 0 MiB, 57"
+                                     ]
+               },
+    "after":  {
+                  "load":  {
+                               "cpu":  1.5,
+                               "build_ms":  0,
+                               "top":  [
+                                           "System 4 0.19 core",
+                                           "WmiPrvSE 7560 0.02 core",
+                                           "svchost 5080 0.02 core",
+                                           "svchost 17248 0.02 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 56925 MHz, 14001 MHz, 19.20 W, 0 %, 0 MiB, 57"
+              },
+    "end":  "2026-11-10T00:47:30.6207505+09:00",
+    "tries":  1
+}

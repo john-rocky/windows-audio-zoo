@@ -1,0 +1,8 @@
+[2026-11-09T13:26:14.2296699+09:00] steps export-ov start: 2 steps, pid 29376
+[2026-11-09T13:27:14.5354959+09:00] lock: TAKEN (export-ov ov-qwen3asr-fp16 (not a timing) until 13:58) after 60 s free
+[2026-11-09T13:27:24.6440817+09:00] ov-qwen3asr-fp16 start: C:\src\audiozoo\.venv-ovexport\Scripts\optimum-cli.exe export openvino --model C:\src\audiozoo\models\Qwen__Qwen3-ASR-1.7B --task automatic-speech-recognition-with-past --trust-remote-code --weight-format fp16 C:\src\audiozoo\exports\qwen3asr-ov-fp16
+[2026-11-09T13:33:43.0060420+09:00] ov-qwen3asr-fp16 end: exit 0, 6.3 min
+[2026-11-09T13:33:43.0191020+09:00] ov-qwen3asr-int8 start: C:\src\audiozoo\.venv-ovexport\Scripts\optimum-cli.exe export openvino --model C:\src\audiozoo\models\Qwen__Qwen3-ASR-1.7B --task automatic-speech-recognition-with-past --trust-remote-code --weight-format int8 C:\src\audiozoo\exports\qwen3asr-ov-int8
+[2026-11-09T13:38:28.2422705+09:00] lock kept as: first pass (not a timing) until 15:15
+[2026-11-09T13:38:28.2580538+09:00] ov-qwen3asr-int8 end: exit 0, 4.8 min
+[2026-11-09T13:38:28.3391496+09:00] steps export-ov done: OK

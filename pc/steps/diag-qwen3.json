@@ -1,0 +1,22 @@
+[
+ {
+  "name": "ref-qwen3asr-pkg",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\ref_qwen_asr_pkg.py",
+   "--model-dir",
+   "{ROOT}\\models\\Qwen__Qwen3-ASR-1.7B",
+   "--set",
+   "S150",
+   "--first",
+   "10",
+   "--fixtures",
+   "{FIX}",
+   "--out",
+   "{ROOT}\\refs\\qwen3asr-pkg\\first10.json"
+  ],
+  "timeout_min": 40,
+  "venv": "ovexport",
+  "ram_gb": 10
+ }
+]

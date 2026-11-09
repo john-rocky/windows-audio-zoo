@@ -1,0 +1,19 @@
+{
+ "asr": {
+  "pipeline": "openvino_genai.ASRPipeline",
+  "model": "OpenVINO__whisper-large-v3-turbo-fp16-ov",
+  "device": "CPU",
+  "language": "<|en|>",
+  "versions": {
+   "python": "3.12.16",
+   "openvino-genai": "2026.4.1.0",
+   "openvino": "2026.4.1",
+   "scipy": "1.18.1",
+   "numpy": "2.5.4"
+  }
+ },
+ "source": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-fp16-rtx\\run1.json",
+ "texts": {},
+ "started": "2026-11-09T15:16:03.317100+09:00",
+ "ended": "2026-11-09T15:16:03.317100+09:00"
+}

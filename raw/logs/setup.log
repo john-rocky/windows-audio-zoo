@@ -1,0 +1,61 @@
+[2026-11-09T10:41:01.3204601+09:00] steps setup start: 27 steps, pid 10940
+[2026-11-09T10:41:01.3998209+09:00] python start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe python install 3.12
+[2026-11-09T10:41:03.7224347+09:00] python end: exit 0, 0 min
+[2026-11-09T10:41:03.7384581+09:00] venv-ovg start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe venv C:\src\audiozoo\.venv-ovg --python 3.12 --python-preference only-managed --allow-existing
+[2026-11-09T10:41:10.9991043+09:00] venv-ovg end: exit 0, 0.1 min
+[2026-11-09T10:41:10.9991043+09:00] pip-ovg start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe pip install --python C:\src\audiozoo\.venv-ovg\Scripts\python.exe -r C:\src\audiozoo\pc\req\ovg.txt
+[2026-11-09T10:41:21.1161401+09:00] pip-ovg end: exit 0, 0.2 min
+[2026-11-09T10:41:21.1320615+09:00] versions-ovg start: C:\src\audiozoo\.venv-ovg\Scripts\python.exe -I C:\src\audiozoo\pc\venv_versions.py --out C:\src\audiozoo\logs\versions-ovg.txt
+[2026-11-09T10:41:21.5121560+09:00] versions-ovg end: exit 0, 0 min
+[2026-11-09T10:41:21.5282348+09:00] venv-genai start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe venv C:\src\audiozoo\.venv-genai --python 3.12 --python-preference only-managed --allow-existing
+[2026-11-09T10:41:21.5801229+09:00] venv-genai end: exit 0, 0 min
+[2026-11-09T10:41:21.5921844+09:00] pip-genai start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe pip install --python C:\src\audiozoo\.venv-genai\Scripts\python.exe -r C:\src\audiozoo\pc\req\genai.txt
+[2026-11-09T11:44:05.0733218+09:00] pip-genai end: exit 0, 62.7 min
+[2026-11-09T11:44:05.0894117+09:00] versions-genai start: C:\src\audiozoo\.venv-genai\Scripts\python.exe -I C:\src\audiozoo\pc\venv_versions.py --out C:\src\audiozoo\logs\versions-genai.txt
+[2026-11-09T11:44:05.4055717+09:00] versions-genai end: exit 0, 0 min
+[2026-11-09T11:44:05.4055717+09:00] venv-genai-cuda start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe venv C:\src\audiozoo\.venv-genai-cuda --python 3.12 --python-preference only-managed --allow-existing
+[2026-11-09T11:44:05.4852482+09:00] venv-genai-cuda end: exit 0, 0 min
+[2026-11-09T11:44:05.5012427+09:00] pip-genai-cuda start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe pip install --python C:\src\audiozoo\.venv-genai-cuda\Scripts\python.exe -r C:\src\audiozoo\pc\req\genai-cuda.txt
+[2026-11-09T11:44:20.2308177+09:00] pip-genai-cuda end: exit 0, 0.2 min
+[2026-11-09T11:44:20.2465172+09:00] versions-genai-cuda start: C:\src\audiozoo\.venv-genai-cuda\Scripts\python.exe -I C:\src\audiozoo\pc\venv_versions.py --out C:\src\audiozoo\logs\versions-genai-cuda.txt
+[2026-11-09T11:44:20.4209868+09:00] versions-genai-cuda end: exit 0, 0 min
+[2026-11-09T11:44:20.4368118+09:00] venv-ort start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe venv C:\src\audiozoo\.venv-ort --python 3.12 --python-preference only-managed --allow-existing
+[2026-11-09T11:44:20.4891509+09:00] venv-ort end: exit 0, 0 min
+[2026-11-09T11:44:20.4891509+09:00] pip-ort start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe pip install --python C:\src\audiozoo\.venv-ort\Scripts\python.exe -r C:\src\audiozoo\pc\req\ort.txt
+[2026-11-09T11:45:41.6835563+09:00] pip-ort end: exit 0, 1.4 min
+[2026-11-09T11:45:41.6853143+09:00] versions-ort start: C:\src\audiozoo\.venv-ort\Scripts\python.exe -I C:\src\audiozoo\pc\venv_versions.py --out C:\src\audiozoo\logs\versions-ort.txt
+[2026-11-09T11:45:42.0489690+09:00] versions-ort end: exit 0, 0 min
+[2026-11-09T11:45:42.0560658+09:00] venv-ort-cuda start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe venv C:\src\audiozoo\.venv-ort-cuda --python 3.12 --python-preference only-managed --allow-existing
+[2026-11-09T11:45:42.1072727+09:00] venv-ort-cuda end: exit 0, 0 min
+[2026-11-09T11:45:42.1072727+09:00] pip-ort-cuda start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe pip install --python C:\src\audiozoo\.venv-ort-cuda\Scripts\python.exe -r C:\src\audiozoo\pc\req\ort-cuda.txt
+[2026-11-09T12:11:36.8687414+09:00] pip-ort-cuda end: exit 1, 25.9 min
+[2026-11-09T12:11:36.9165479+09:00]     cause: Failed to extract archive: nvidia_cudnn_cu13-9.28.1.4-py3-none-win_amd64.whl
+[2026-11-09T12:11:36.9165479+09:00]     cause: I/O operation failed during extraction
+[2026-11-09T12:11:36.9165479+09:00]     cause: Failed to download distribution due to network timeout. Try increasing UV_HTTP_TIMEOUT (current value: 30s).
+[2026-11-09T12:11:36.9165479+09:00]   
+[2026-11-09T12:11:36.9165479+09:00]   hint: `nvidia-cudnn-cu13` (v9.28.1.4) was included because `onnxruntime-gpu[cudnn]` (v1.31.1) depends on `nvidia-cudnn-cu13`
+[2026-11-09T12:11:36.9165479+09:00] pip-ort-cuda-nodeps start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe pip install --python C:\src\audiozoo\.venv-ort-cuda\Scripts\python.exe --no-deps -r C:\src\audiozoo\pc\req\ort-cuda.nodeps.txt
+[2026-11-09T12:11:37.1552092+09:00] pip-ort-cuda-nodeps end: exit 0, 0 min
+[2026-11-09T12:11:37.1709507+09:00] versions-ort-cuda start: C:\src\audiozoo\.venv-ort-cuda\Scripts\python.exe -I C:\src\audiozoo\pc\venv_versions.py --out C:\src\audiozoo\logs\versions-ort-cuda.txt
+[2026-11-09T12:11:37.3933567+09:00] versions-ort-cuda end: exit 0, 0 min
+[2026-11-09T12:11:37.3933567+09:00] venv-litertlm start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe venv C:\src\audiozoo\.venv-litertlm --python 3.12 --python-preference only-managed --allow-existing
+[2026-11-09T12:11:37.4632095+09:00] venv-litertlm end: exit 0, 0 min
+[2026-11-09T12:11:37.4729756+09:00] pip-litertlm start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe pip install --python C:\src\audiozoo\.venv-litertlm\Scripts\python.exe -r C:\src\audiozoo\pc\req\litertlm.txt
+[2026-11-09T12:11:43.9211052+09:00] pip-litertlm end: exit 0, 0.1 min
+[2026-11-09T12:11:43.9211052+09:00] versions-litertlm start: C:\src\audiozoo\.venv-litertlm\Scripts\python.exe -I C:\src\audiozoo\pc\venv_versions.py --out C:\src\audiozoo\logs\versions-litertlm.txt
+[2026-11-09T12:11:44.0799789+09:00] versions-litertlm end: exit 0, 0 min
+[2026-11-09T12:11:44.0961719+09:00] venv-ref start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe venv C:\src\audiozoo\.venv-ref --python 3.12 --python-preference only-managed --allow-existing
+[2026-11-09T12:11:44.1428633+09:00] venv-ref end: exit 0, 0 min
+[2026-11-09T12:11:44.1428633+09:00] pip-ref start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe pip install --python C:\src\audiozoo\.venv-ref\Scripts\python.exe -r C:\src\audiozoo\pc\req\ref.txt
+[2026-11-09T12:14:29.5525185+09:00] pip-ref end: exit 0, 2.8 min
+[2026-11-09T12:14:29.5525185+09:00] versions-ref start: C:\src\audiozoo\.venv-ref\Scripts\python.exe -I C:\src\audiozoo\pc\venv_versions.py --out C:\src\audiozoo\logs\versions-ref.txt
+[2026-11-09T12:14:30.9304639+09:00] versions-ref end: exit 0, 0 min
+[2026-11-09T12:14:30.9304639+09:00] venv-ovexport start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe venv C:\src\audiozoo\.venv-ovexport --python 3.12 --python-preference only-managed --allow-existing
+[2026-11-09T12:14:30.9856680+09:00] venv-ovexport end: exit 0, 0 min
+[2026-11-09T12:14:30.9941107+09:00] pip-ovexport start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe pip install --python C:\src\audiozoo\.venv-ovexport\Scripts\python.exe -r C:\src\audiozoo\pc\req\ovexport.txt
+[2026-11-09T12:15:29.4127066+09:00] pip-ovexport end: exit 0, 1 min
+[2026-11-09T12:15:29.4127066+09:00] versions-ovexport start: C:\src\audiozoo\.venv-ovexport\Scripts\python.exe -I C:\src\audiozoo\pc\venv_versions.py --out C:\src\audiozoo\logs\versions-ovexport.txt
+[2026-11-09T12:15:30.7477791+09:00] versions-ovexport end: exit 0, 0 min
+[2026-11-09T12:15:30.7477791+09:00] fixtures start: C:\src\audiozoo\.venv-ovg\Scripts\python.exe -I C:\src\audiozoo\pc\check_fixtures.py --fixtures C:\src\audiozoo\fixtures
+[2026-11-09T12:15:42.9424541+09:00] fixtures end: exit 0, 0.2 min
+[2026-11-09T12:15:42.9424541+09:00] steps setup done: FAIL pip-ort-cuda

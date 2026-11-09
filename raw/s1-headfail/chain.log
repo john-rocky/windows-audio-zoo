@@ -1,0 +1,20 @@
+[2026-11-09T17:56:58.0863448+09:00] chain start: plan C:\src\audiozoo\pc\plans\s1.json mode timed, 16 units, pid 28856
+[2026-11-09T17:57:07.7043851+09:00] adapters: 0x00000000_0x00012C48=nvidia, 0x00000000_0x0001260E=intel-gpu, 0x00000000_0x00012BB8=?, 0x00000000_0x00013E4C=npu?
+[2026-11-09T17:57:07.7517343+09:00] settle 180 s inside the lock before the control rows
+[2026-11-09T18:00:15.6004610+09:00] control-warm run 1 start
+[2026-11-09T18:02:07.2119884+09:00] control-warm run 1 end: exit 0, OK, 109.485 s
+[2026-11-09T18:02:13.2013983+09:00] control-head run 1 start
+[2026-11-09T18:04:03.6602227+09:00] control-head run 1 end: exit 0, OK, 108.494 s
+[2026-11-09T18:04:31.0495266+09:00] control-head run 2 start
+[2026-11-09T18:06:11.2947744+09:00] control-head run 2 end: exit 0, OK, 98.294 s
+[2026-11-09T18:06:38.6483383+09:00] control-head run 3 start
+[2026-11-09T18:08:19.6448164+09:00] control-head run 3 end: exit 0, OK, 99.007 s
+[2026-11-09T18:08:19.9820653+09:00] chain error: control head: no known value (head spread 9.6 % over 3 runs)
+発生場所 C:\src\audiozoo\pc\chain.ps1:378 文字:156
++ ... unt) runs"; throw "control head: no known value ($($script:control.ve ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (control head: n... % over 3 runs):String) [], RuntimeException
+    + FullyQualifiedErrorId : control head: no known value (head spread 9.6 % over 3 runs)
+ 
+
+[2026-11-09T18:08:19.9892595+09:00] chain done: FAIL control head: no known value (head spread 9.6 % over 3 runs)

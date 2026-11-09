@@ -1,0 +1,10 @@
+Using Python 3.12.16 environment at: C:\src\audiozoo\.venv-litertlm
+Resolved 4 packages in 511ms
+Downloading litert-lm-api (26.2MiB)
+ Downloaded litert-lm-api
+Prepared 1 package in 2.95s
+Installed 4 packages in 2.68s
+ + litert-lm-api==0.19.1
+ + numpy==2.5.4
+ + openvino==2026.4.1
+ + openvino-telemetry==2025.2.0

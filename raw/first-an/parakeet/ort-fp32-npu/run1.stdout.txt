@@ -1,0 +1,4 @@
+ENGINE_PID 24656
+[ERROR] 15:12:39.440 [IE::FrontEnd::importNetwork]   Upper bounds are not specified for node '/Transpose' (type 'Transpose'): input '0' bounds are '[9223372036854775807, 128, 9223372036854775807]'
+[ERROR] 15:12:39.442 [IE::FrontEnd::importNetwork]   Upper bounds are not specified for node '/pre_encode/Unsqueeze' (type 'Unsqueeze'): input '0' bounds are '[9223372036854775807, 9223372036854775807, 128]'
+[ERROR] 15:12:39.442 [IE::FrontEnd::importNetwork]   Upper bounds are not specified for node '/pre_encode/conv/conv.0/Conv/WithoutBiases' (type 'Convolution'): input '0' bounds are '[9223372036854775807, 1, 9223372036854775807, 128]'

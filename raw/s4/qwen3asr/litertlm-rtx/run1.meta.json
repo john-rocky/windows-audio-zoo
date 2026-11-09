@@ -1,0 +1,133 @@
+{
+    "cell":  "qwen3asr/litertlm-rtx",
+    "device":  "rtx",
+    "role":  null,
+    "run":  1,
+    "mode":  "timed",
+    "sitting":  "s4",
+    "start":  "2026-11-10T00:50:30.9687862+09:00",
+    "osBuild":  "26200.9711",
+    "desktopLocked":  true,
+    "power":  {
+                  "msiUserScenarioMode":  1,
+                  "overlayAc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "overlayDc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "battery":  "status 2, 96 %"
+              },
+    "gate":  {
+                 "quietGate":  "quiet",
+                 "cpuReads":  [
+                                  3.4,
+                                  0.6,
+                                  0.7
+                              ],
+                 "nvidiaMiB":  0,
+                 "availGB":  25.2,
+                 "ramNeedGB":  7,
+                 "gpuEngines":  null
+             },
+    "before":  {
+                   "load":  {
+                                "cpu":  2.3,
+                                "build_ms":  0,
+                                "top":  [
+                                            "System 4 0.31 core",
+                                            "NVDisplay.Container 3412 0.03 core",
+                                            "powershell 15784 0.02 core",
+                                            "svchost 5260 0.02 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 11775 MHz, 14001 MHz, 19.59 W, 0 %, 0 MiB, 59",
+                   "availGB":  25.2
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-litertlm\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_asr_litertlm.py --bundle C:\\src\\audiozoo\\models\\litert-community__Qwen3-ASR-1.7B\\Qwen3-ASR-1.7B.litertlm --family qwen3asr --backend gpu --cache-dir C:\\src\\audiozoo\\runs\\s4\\qwen3asr\\litertlm-rtx\\cache --audio-backend cpu --gpu-pref 2 --set S150 --fixtures C:\\src\\audiozoo\\fixtures --out C:\\src\\audiozoo\\runs\\s4\\qwen3asr\\litertlm-rtx\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  26788,
+                   "elapsedSeconds":  237.344,
+                   "peakWorkingSetBytes":  2365820928,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x00012C48":  {
+                                                                    "shared":  474,
+                                                                    "dedicated":  2055
+                                                                },
+                                      "0x00000000_0x0001260E":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x00012BB8":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P2, 1590 MHz, 11001 MHz, 20.79 W, 6 %, 893 MiB, 58",
+                                         "10s P2, 1492 MHz, 11001 MHz, 18.60 W, 0 %, 1966 MiB, 57",
+                                         "15s P4, 277 MHz, 9001 MHz, 13.66 W, 0 %, 1980 MiB, 58",
+                                         "20s P4, 285 MHz, 9001 MHz, 17.04 W, 0 %, 1980 MiB, 59",
+                                         "25s P4, 2145 MHz, 9001 MHz, 88.65 W, 61 %, 1980 MiB, 62",
+                                         "30s P4, 1342 MHz, 9001 MHz, 156.48 W, 85 %, 1980 MiB, 68",
+                                         "35s P2, 1957 MHz, 11001 MHz, 54.39 W, 39 %, 1980 MiB, 62",
+                                         "40s P4, 285 MHz, 9001 MHz, 15.72 W, 0 %, 1980 MiB, 61",
+                                         "45s P4, 2047 MHz, 9001 MHz, 57.93 W, 59 %, 1980 MiB, 67",
+                                         "50s P4, 277 MHz, 9001 MHz, 15.84 W, 0 %, 1980 MiB, 61",
+                                         "55s P4, 802 MHz, 9001 MHz, 17.25 W, 0 %, 1980 MiB, 63",
+                                         "60s P4, 2107 MHz, 9001 MHz, 65.59 W, 68 %, 1980 MiB, 67",
+                                         "65s P4, 277 MHz, 9001 MHz, 15.86 W, 0 %, 1980 MiB, 62",
+                                         "70s P4, 2392 MHz, 9001 MHz, 95.22 W, 73 %, 1980 MiB, 68",
+                                         "75s P4, 1282 MHz, 9001 MHz, 17.92 W, 0 %, 1980 MiB, 64",
+                                         "80s P4, 2100 MHz, 9001 MHz, 100.84 W, 97 %, 1980 MiB, 67",
+                                         "85s P4, 277 MHz, 9001 MHz, 14.21 W, 0 %, 1980 MiB, 63",
+                                         "90s P4, 285 MHz, 9001 MHz, 16.91 W, 0 %, 1980 MiB, 63",
+                                         "95s P4, 1620 MHz, 9001 MHz, 16.64 W, 38 %, 1980 MiB, 65",
+                                         "100s P4, 772 MHz, 9001 MHz, 108.84 W, 25 %, 1980 MiB, 70",
+                                         "105s P2, 1252 MHz, 11001 MHz, 17.98 W, 0 %, 1980 MiB, 64",
+                                         "110s P0, 2587 MHz, 14001 MHz, 120.97 W, 76 %, 1980 MiB, 71",
+                                         "115s P4, 277 MHz, 9001 MHz, 14.80 W, 0 %, 1980 MiB, 64",
+                                         "120s P4, 592 MHz, 9001 MHz, 16.44 W, 0 %, 1980 MiB, 65",
+                                         "125s P4, 277 MHz, 9001 MHz, 16.50 W, 0 %, 1980 MiB, 64",
+                                         "130s P4, 300 MHz, 9001 MHz, 15.28 W, 0 %, 1980 MiB, 68",
+                                         "135s P4, 285 MHz, 9001 MHz, 14.37 W, 0 %, 1980 MiB, 63",
+                                         "140s P4, 2122 MHz, 9001 MHz, 71.16 W, 75 %, 1980 MiB, 69",
+                                         "145s P2, 2070 MHz, 11001 MHz, 48.12 W, 56 %, 1980 MiB, 68",
+                                         "150s P4, 697 MHz, 9001 MHz, 101.48 W, 100 %, 1980 MiB, 69",
+                                         "155s P4, 277 MHz, 9001 MHz, 17.05 W, 0 %, 1980 MiB, 63",
+                                         "160s P0, 1530 MHz, 14001 MHz, 19.63 W, 0 %, 1980 MiB, 66",
+                                         "165s P2, 2062 MHz, 11001 MHz, 62.58 W, 32 %, 1980 MiB, 69",
+                                         "170s P4, 277 MHz, 9001 MHz, 15.09 W, 0 %, 1980 MiB, 63",
+                                         "175s P4, 810 MHz, 9001 MHz, 103.44 W, 100 %, 1980 MiB, 70",
+                                         "180s P0, 2610 MHz, 14001 MHz, 120.41 W, 75 %, 1980 MiB, 70",
+                                         "185s P4, 277 MHz, 9001 MHz, 14.36 W, 0 %, 1980 MiB, 63",
+                                         "190s P4, 2400 MHz, 9001 MHz, 83.81 W, 59 %, 1980 MiB, 70",
+                                         "195s P4, 277 MHz, 9001 MHz, 16.39 W, 0 %, 1980 MiB, 63",
+                                         "200s P2, 2212 MHz, 11001 MHz, 48.97 W, 21 %, 1980 MiB, 67",
+                                         "205s P4, 277 MHz, 9001 MHz, 85.81 W, 66 %, 1980 MiB, 67",
+                                         "210s P4, 2025 MHz, 9001 MHz, 77.11 W, 75 %, 1980 MiB, 67",
+                                         "215s P4, 277 MHz, 9001 MHz, 14.39 W, 0 %, 1980 MiB, 64",
+                                         "220s P2, 2100 MHz, 11001 MHz, 103.10 W, 68 %, 1980 MiB, 68",
+                                         "225s P4, 277 MHz, 9001 MHz, 17.19 W, 0 %, 1980 MiB, 64",
+                                         "230s P2, 1252 MHz, 14001 MHz, 20.23 W, 0 %, 1980 MiB, 66",
+                                         "235s P2, 1897 MHz, 11001 MHz, 117.40 W, 78 %, 1980 MiB, 71"
+                                     ]
+               },
+    "after":  {
+                  "load":  {
+                               "cpu":  2,
+                               "build_ms":  0,
+                               "top":  [
+                                           "System 4 0.22 core",
+                                           "svchost 5480 0.03 core",
+                                           "MsMpEng 5548 0.03 core",
+                                           "powershell 15784 0.02 core",
+                                           "NVDisplay.Container 3412 0.02 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 5992 MHz, 14001 MHz, 20.68 W, 0 %, 0 MiB, 64"
+              },
+    "end":  "2026-11-10T00:54:30.2613451+09:00",
+    "tries":  1
+}

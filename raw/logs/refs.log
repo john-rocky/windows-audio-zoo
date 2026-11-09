@@ -1,0 +1,18 @@
+[2026-11-09T12:17:30.7259667+09:00] steps refs start: 4 steps, pid 33492
+[2026-11-09T12:17:30.7531353+09:00] ref-whisper start: C:\src\audiozoo\.venv-ref\Scripts\python.exe -I C:\src\audiozoo\pc\ref_hf.py --family whisper --model-dir C:\src\audiozoo\models\openai__whisper-large-v3-turbo --set S150 --fixtures C:\src\audiozoo\fixtures --out C:\src\audiozoo\refs\whisper\ref.json
+[2026-11-09T13:00:23.1002381+09:00] stopped from the Mac inside another lane's timing lock (that lane asked: suspended processes keep their RAM, its gate waits for 22 GB free); restarted later as kill-and-rerun
+[2026-11-09T13:22:00.3268433+09:00] steps refs start: 4 steps, pid 19600
+[2026-11-09T13:22:00.3749396+09:00] ref-whisper start: C:\src\audiozoo\.venv-ref\Scripts\python.exe -I C:\src\audiozoo\pc\ref_hf.py --family whisper --model-dir C:\src\audiozoo\models\openai__whisper-large-v3-turbo --set S150 --fixtures C:\src\audiozoo\fixtures --out C:\src\audiozoo\refs\whisper\ref.json
+[2026-11-09T13:38:36.8285069+09:00] ref-whisper end: exit 0, 16.6 min
+[2026-11-09T13:38:36.8443856+09:00] ref-parakeet start: C:\src\audiozoo\.venv-ref\Scripts\python.exe -I C:\src\audiozoo\pc\ref_hf.py --family parakeet --model-dir C:\src\audiozoo\models\nvidia__parakeet-tdt-0.6b-v3 --set S150 --langs en_us --fixtures C:\src\audiozoo\fixtures --out C:\src\audiozoo\refs\parakeet\ref.json
+[2026-11-09T13:38:45.4900383+09:00] ref-parakeet end: exit 1, 0.1 min
+[2026-11-09T13:38:45.5378358+09:00]   ParakeetFeatureExtractor requires the librosa library. But that was not found in your environment. You can install them with pip:
+[2026-11-09T13:38:45.5378358+09:00]   `pip install librosa`
+[2026-11-09T13:38:45.5378358+09:00]   Please note that you may need to restart your runtime after installation.
+[2026-11-09T13:38:45.5378358+09:00]   
+[2026-11-09T13:38:45.5378358+09:00]   
+[2026-11-09T13:38:45.5538845+09:00] ref-kokoro start: C:\src\audiozoo\.venv-ref\Scripts\python.exe -I C:\src\audiozoo\pc\ref_kokoro_pt.py --model-dir C:\src\audiozoo\models\hexgrad__Kokoro-82M --set T50 --fixtures C:\src\audiozoo\fixtures --out C:\src\audiozoo\refs\kokoro\ref.json
+[2026-11-09T13:46:00.3555586+09:00] ref-kokoro end: exit 0, 7.2 min
+[2026-11-09T13:46:00.3580689+09:00] writeback-ref-kokoro start: C:\src\audiozoo\.venv-ovg\Scripts\python.exe -I C:\src\audiozoo\pc\writeback.py --asr-dir C:\src\audiozoo\models\OpenVINO__whisper-large-v3-turbo-fp16-ov --run-json C:\src\audiozoo\refs\kokoro\ref.json
+[2026-11-09T13:57:25.9839044+09:00] writeback-ref-kokoro end: exit 0, 11.4 min
+[2026-11-09T13:57:25.9945461+09:00] steps refs done: FAIL ref-parakeet

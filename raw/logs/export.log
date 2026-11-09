@@ -1,0 +1,20 @@
+[2026-11-09T12:17:09.9122706+09:00] steps export start: 5 steps, pid 27940
+[2026-11-09T12:17:09.9284733+09:00] pip-genai-cuda start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe pip install --python C:\src\audiozoo\.venv-genai-cuda\Scripts\python.exe -r C:\src\audiozoo\pc\req\genai-cuda.txt
+[2026-11-09T12:17:10.7948212+09:00] pip-genai-cuda end: exit 0, 0 min
+[2026-11-09T12:17:10.8028563+09:00] genai-whisper-fp32-cpu start: C:\src\audiozoo\.venv-ref\Scripts\python.exe -I -m onnxruntime_genai.models.builder -i C:\src\audiozoo\models\openai__whisper-large-v3-turbo -o C:\src\audiozoo\exports\whisper-genai-fp32-cpu -p fp32 -e cpu -c C:\src\audiozoo\exports\cache-genai
+[2026-11-09T12:18:49.5791516+09:00] genai-whisper-fp32-cpu end: exit 1, 1.6 min
+[2026-11-09T12:18:49.6348904+09:00]       return self._modules[self._get_abs_string_index(idx)]
+[2026-11-09T12:18:49.6386543+09:00]                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-11-09T12:18:49.6406638+09:00]     File "C:\src\audiozoo\.venv-ref\Lib\site-packages\torch\nn\modules\container.py", line 376, in _get_abs_string_index
+[2026-11-09T12:18:49.6426697+09:00]       raise IndexError(f"index {idx} is out of range")
+[2026-11-09T12:18:49.6446789+09:00]   IndexError: index 4 is out of range
+[2026-11-09T12:18:49.6507308+09:00] genai-whisper-fp16-cuda start: C:\src\audiozoo\.venv-ref\Scripts\python.exe -I -m onnxruntime_genai.models.builder -i C:\src\audiozoo\models\openai__whisper-large-v3-turbo -o C:\src\audiozoo\exports\whisper-genai-fp16-cuda -p fp16 -e cuda -c C:\src\audiozoo\exports\cache-genai
+[2026-11-09T12:57:35.6222552+09:00] genai-whisper-fp16-cuda end: exit 1, 38.8 min
+[2026-11-09T12:57:35.6676577+09:00]       return self._modules[self._get_abs_string_index(idx)]
+[2026-11-09T12:57:35.6716723+09:00]                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-11-09T12:57:35.6756873+09:00]     File "C:\src\audiozoo\.venv-ref\Lib\site-packages\torch\nn\modules\container.py", line 376, in _get_abs_string_index
+[2026-11-09T12:57:35.6774363+09:00]       raise IndexError(f"index {idx} is out of range")
+[2026-11-09T12:57:35.6834597+09:00]   IndexError: index 4 is out of range
+[2026-11-09T12:57:35.8710647+09:00] lock: TAKEN (ov-qwen3asr-fp16 (not a timing) until 13:29)
+[2026-11-09T12:57:46.0098192+09:00] ov-qwen3asr-fp16 start: C:\src\audiozoo\.venv-ovexport\Scripts\optimum-cli.exe export openvino --model C:\src\audiozoo\models\Qwen__Qwen3-ASR-1.7B --task automatic-speech-recognition-with-past --trust-remote-code --weight-format fp16 C:\src\audiozoo\exports\qwen3asr-ov-fp16
+[2026-11-09T12:58:29.9907714+09:00] stopped from the Mac: ov-qwen3asr-fp16 took the lock 9 s after another lane gave it back, ahead of a third lane's timing (no 60 s settle after a suspension); lock released, the export list ends here

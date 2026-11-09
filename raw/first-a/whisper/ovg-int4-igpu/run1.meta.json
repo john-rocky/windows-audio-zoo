@@ -1,0 +1,70 @@
+{
+    "cell":  "whisper/ovg-int4-igpu",
+    "device":  "igpu",
+    "role":  null,
+    "run":  1,
+    "mode":  "first",
+    "sitting":  "first-a",
+    "start":  "2026-11-09T13:53:32.8801996+09:00",
+    "osBuild":  "26200.9711",
+    "gate":  null,
+    "before":  {
+                   "load":  {
+                                "cpu":  36.8,
+                                "build_ms":  0,
+                                "top":  [
+                                            "python 6036 2.41 core",
+                                            "python 29492 1.54 core",
+                                            "python 21952 1.35 core",
+                                            "MsMpEng 5548 0.24 core",
+                                            "System 4 0.14 core"
+                                        ]
+                            },
+                   "nvidia":  "P5, 1485 MHz, 810 MHz, 56.97 W, 59 %, 2672 MiB, 69",
+                   "availGB":  15
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-ovg\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_asr_ovg.py --model-dir C:\\src\\audiozoo\\models\\OpenVINO__whisper-large-v3-turbo-int4-ov --family whisper --device GPU.0 --cache-dir C:\\src\\audiozoo\\runs\\first-a\\whisper\\ovg-int4-igpu\\cache --set S150 --fixtures C:\\src\\audiozoo\\fixtures --first 10 --out C:\\src\\audiozoo\\runs\\first-a\\whisper\\ovg-int4-igpu\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  3348,
+                   "elapsedSeconds":  30.289,
+                   "peakWorkingSetBytes":  1483694080,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x0001260E":  {
+                                                                    "shared":  717,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x00012C48":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P4, 1350 MHz, 9001 MHz, 17.33 W, 15 %, 2492 MiB, 64",
+                                         "10s P4, 1530 MHz, 9001 MHz, 51.76 W, 77 %, 2480 MiB, 69",
+                                         "15s P4, 1650 MHz, 9001 MHz, 47.16 W, 36 %, 2522 MiB, 66",
+                                         "20s P4, 1440 MHz, 9001 MHz, 43.93 W, 18 %, 2532 MiB, 66",
+                                         "25s P4, 1065 MHz, 9001 MHz, 45.77 W, 5 %, 2488 MiB, 66"
+                                     ]
+               },
+    "after":  {
+                  "load":  {
+                               "cpu":  35,
+                               "build_ms":  0,
+                               "top":  [
+                                           "python 6036 2.36 core",
+                                           "python 29492 1.4 core",
+                                           "python 21952 1.18 core",
+                                           "System 4 0.26 core",
+                                           "MsMpEng 5548 0.2 core"
+                                       ]
+                           },
+                  "nvidia":  "P4, 2085 MHz, 9001 MHz, 33.91 W, 43 %, 2532 MiB, 65"
+              },
+    "end":  "2026-11-09T13:54:04.2643291+09:00",
+    "tries":  1
+}

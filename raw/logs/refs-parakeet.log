@@ -1,0 +1,8 @@
+[2026-11-09T13:40:07.3432697+09:00] steps refs-parakeet start: 3 steps, pid 34372
+[2026-11-09T13:40:07.4206247+09:00] pip-ref start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe pip install --python C:\src\audiozoo\.venv-ref\Scripts\python.exe -r C:\src\audiozoo\pc\req\ref.txt
+[2026-11-09T13:40:13.4207200+09:00] pip-ref end: exit 0, 0.1 min
+[2026-11-09T13:40:13.4417119+09:00] versions-ref start: C:\src\audiozoo\.venv-ref\Scripts\python.exe -I C:\src\audiozoo\pc\venv_versions.py --out C:\src\audiozoo\logs\versions-ref.txt
+[2026-11-09T13:40:13.9427312+09:00] versions-ref end: exit 0, 0 min
+[2026-11-09T13:40:13.9625574+09:00] ref-parakeet start: C:\src\audiozoo\.venv-ref\Scripts\python.exe -I C:\src\audiozoo\pc\ref_hf.py --family parakeet --model-dir C:\src\audiozoo\models\nvidia__parakeet-tdt-0.6b-v3 --set S150 --langs en_us --fixtures C:\src\audiozoo\fixtures --out C:\src\audiozoo\refs\parakeet\ref.json
+[2026-11-09T13:44:47.2662481+09:00] ref-parakeet end: exit 0, 4.6 min
+[2026-11-09T13:44:47.2792891+09:00] steps refs-parakeet done: OK

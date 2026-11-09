@@ -1,0 +1,48 @@
+{
+ "cell": "kokoro/ovg-fp16-rtx",
+ "model": "kokoro",
+ "runtime": "OpenVINO GenAI 2026.4.1",
+ "form": "fp16",
+ "device": "rtx",
+ "device_name": "RTX 5080 Laptop",
+ "set": null,
+ "mode": "first",
+ "sitting": "first-a",
+ "status": "ERROR",
+ "record": {
+  "run": "raw/first-a/kokoro/ovg-fp16-rtx/run1.json",
+  "meta": "raw/first-a/kokoro/ovg-fp16-rtx/run1.meta.json",
+  "chain_log": "raw/first-a/chain.log"
+ },
+ "error": "Traceback (most recent call last):\n  File \"C:\\src\\audiozoo\\pc\\run_tts_ovg.py\", line 59, in main\n    pipe = ov_genai.Text2SpeechPipeline(args.model_dir, args.device, **props)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:135:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nCheck 'false' failed at src\\plugins\\intel_gpu\\src\\plugin\\program_builder.cpp:168:\n[GPU] ProgramBuilder build failed!\nCheck 'shape_type == shape_types::dynamic_shape || node->selected_impl != nullptr' failed at src\\plugins\\intel_gpu\\src\\graph\\graph_optimizer\\compile_graph.cpp:62:\n[GPU] Failed to select implementation for\nname:convert:Convert_70041\ntype: reorder\noriginal_type: Convert Check '!kernels.empty()' failed at src\\plugins\\intel_gpu\\src\\kernel_selector\\kernel_selector.cpp:70:\n[GPU] Could not find a suitable kernel for convert:Convert_70041 params raw string: F16_BFYX_v1_p0_0_v1_p0_0_v128_p0_0_v2180_p0_0;F32_BFYX_v1_p0_0_v1_p0_0_v128_p0_0_v2180_p0_0\n\n\n\n\n\n",
+ "versions": {
+  "python": "3.12.16",
+  "openvino-genai": "2026.4.1.0",
+  "openvino": "2026.4.1",
+  "openvino-tokenizers": "2026.4.1.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": null,
+ "summary": null,
+ "gate": null,
+ "power": null,
+ "desktop_locked": null,
+ "engine": {
+  "elapsedSeconds": 10.361,
+  "peakWorkingSetBytes": 1225244672,
+  "gpuMiBPeak": {
+   "0x00000000_0x00012C48": {
+    "shared": 144,
+    "dedicated": 268
+   },
+   "0x00000000_0x0001260E": {
+    "shared": 21,
+    "dedicated": 0
+   }
+  },
+  "exitCode": 1,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1
+}

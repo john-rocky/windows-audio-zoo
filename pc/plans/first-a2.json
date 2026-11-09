@@ -1,0 +1,30 @@
+{
+ "sitting": "first-a2",
+ "made": "2026-11-09T14:59:34+09:00",
+ "mode": "first",
+ "units": [
+  {
+   "cell": "parakeet/ort-fp32-igpu",
+   "venv": "ort",
+   "script": "run_asr_ort_parakeet.py",
+   "device": "igpu",
+   "ram_need_gb": 4,
+   "timeout_min": 15,
+   "engines_gate": true,
+   "args": [
+    "--model-dir",
+    "{ROOT}\\models\\istupakov__parakeet-tdt-0.6b-v3-onnx",
+    "--ep",
+    "openvino",
+    "--ov-device",
+    "GPU",
+    "--set",
+    "S150",
+    "--fixtures",
+    "{FIX}",
+    "--first",
+    "10"
+   ]
+  }
+ ]
+}

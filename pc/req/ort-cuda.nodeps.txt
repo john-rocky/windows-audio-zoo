@@ -1,0 +1,2 @@
+# kokoro-onnx asks for onnxruntime (the CPU package), which would sit beside onnxruntime-gpu: installed without its dependencies
+kokoro-onnx==0.6.1

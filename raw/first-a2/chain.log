@@ -1,0 +1,5 @@
+[2026-11-09T14:59:36.8854419+09:00] chain start: plan C:\src\audiozoo\pc\plans\first-a2.json mode first, 1 units, pid 33988
+[2026-11-09T14:59:46.4277546+09:00] adapters: 0x00000000_0x00012C48=nvidia, 0x00000000_0x0001260E=intel-gpu, 0x00000000_0x00012BB8=?, 0x00000000_0x00013E4C=npu?
+[2026-11-09T14:59:47.8698735+09:00] parakeet/ort-fp32-igpu run 1 start
+[2026-11-09T15:00:31.0299812+09:00] parakeet/ort-fp32-igpu run 1 end: exit 0, OK, 41.079 s
+[2026-11-09T15:00:31.0508687+09:00] chain done: OK

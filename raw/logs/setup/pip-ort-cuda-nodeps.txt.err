@@ -1,0 +1,4 @@
+Using Python 3.12.16 environment at: C:\src\audiozoo\.venv-ort-cuda
+Resolved 1 package in 108ms
+Installed 1 package in 23ms
+ + kokoro-onnx==0.6.1

@@ -1,0 +1,76 @@
+[
+ {
+  "name": "ref-whisper",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\ref_hf.py",
+   "--family",
+   "whisper",
+   "--model-dir",
+   "{ROOT}\\models\\openai__whisper-large-v3-turbo",
+   "--set",
+   "S150",
+   "--fixtures",
+   "{FIX}",
+   "--out",
+   "{ROOT}\\refs\\whisper\\ref.json"
+  ],
+  "timeout_min": 120,
+  "venv": "ref",
+  "ram_gb": 6
+ },
+ {
+  "name": "ref-parakeet",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\ref_hf.py",
+   "--family",
+   "parakeet",
+   "--model-dir",
+   "{ROOT}\\models\\nvidia__parakeet-tdt-0.6b-v3",
+   "--set",
+   "S150",
+   "--langs",
+   "en_us",
+   "--fixtures",
+   "{FIX}",
+   "--out",
+   "{ROOT}\\refs\\parakeet\\ref.json"
+  ],
+  "timeout_min": 40,
+  "venv": "ref",
+  "ram_gb": 6
+ },
+ {
+  "name": "ref-kokoro",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\ref_kokoro_pt.py",
+   "--model-dir",
+   "{ROOT}\\models\\hexgrad__Kokoro-82M",
+   "--set",
+   "T50",
+   "--fixtures",
+   "{FIX}",
+   "--out",
+   "{ROOT}\\refs\\kokoro\\ref.json"
+  ],
+  "timeout_min": 40,
+  "venv": "ref",
+  "ram_gb": 4
+ },
+ {
+  "name": "writeback-ref-kokoro",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\writeback.py",
+   "--asr-dir",
+   "{ROOT}\\models\\OpenVINO__whisper-large-v3-turbo-fp16-ov",
+   "--run-json",
+   "{ROOT}\\refs\\kokoro\\ref.json"
+  ],
+  "timeout_min": 30,
+  "venv": "ovg",
+  "ram_gb": 4
+ }
+]

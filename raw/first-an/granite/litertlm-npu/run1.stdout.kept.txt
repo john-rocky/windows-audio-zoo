@@ -1,0 +1,9 @@
+ENGINE_PID 3168
+{"n": 1, "id": "ls_clip00", "wall_s": 12.716, "text": "mister Quilter is the apostle of the middle classes, and we "}
+{"n": 2, "id": "ls_clip01", "wall_s": 11.587, "text": "Nor is mister Quilter's manner less interesting than his mat"}
+{"n": 10, "id": "ls_clip09", "wall_s": 19.559, "text": "He laments most bitterly the divorce that has been made betw"}
+{"n": 20, "id": "en_us_1669", "wall_s": 12.212, "text": "Police superintendent Chandra Shekhar Solanki said the accus"}
+{"n": 30, "id": "ja_jp_1671", "wall_s": 24.86, "text": "連邦議会は２００５年度から、わいせつ物取締法への資金提供を開始し、ｆｂｉはアタローズポールの２０人の捜査員を投入しなけれ"}
+{"n": 40, "id": "fr_fr_1669", "wall_s": 16.016, "text": "Chandra Sekhar Solanki, commissaire de police, déclarait que"}
+{"n": 50, "id": "de_de_1669", "wall_s": 28.497, "text": "Die Polizeipräsidentin Chandra Shukhar Solanki gab an, die A"}
+{"n": 60, "id": "es_419_1669", "wall_s": 25.923, "text": "Según manifestara el superintendente de la policía, Chandras"}

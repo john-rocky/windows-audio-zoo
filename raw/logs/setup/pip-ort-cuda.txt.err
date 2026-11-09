@@ -1,0 +1,27 @@
+Using Python 3.12.16 environment at: C:\src\audiozoo\.venv-ort-cuda
+Resolved 20 packages in 95ms
+Downloading nvidia-cuda-nvrtc (47.0MiB)
+Downloading nvidia-cudnn-cu13 (388.2MiB)
+Downloading nvidia-cublas (407.5MiB)
+Downloading nvidia-cufft (156.9MiB)
+Downloading nvidia-curand (73.7MiB)
+Downloading nvidia-nvjitlink (39.5MiB)
+ Downloaded nvidia-nvjitlink
+ Downloaded nvidia-cuda-nvrtc
+ Downloaded nvidia-curand
+Downloading nvidia-cufft (156.9MiB)
+Downloading nvidia-cublas (407.5MiB)
+Downloading nvidia-cudnn-cu13 (388.2MiB)
+Downloading nvidia-cufft (156.9MiB)
+Downloading nvidia-cublas (407.5MiB)
+Downloading nvidia-cudnn-cu13 (388.2MiB)
+Downloading nvidia-cudnn-cu13 (388.2MiB)
+Downloading nvidia-cublas (407.5MiB)
+Downloading nvidia-cufft (156.9MiB)
+ Downloaded nvidia-cufft
+error: Failed to download `nvidia-cudnn-cu13==9.28.1.4`
+  cause: Failed to extract archive: nvidia_cudnn_cu13-9.28.1.4-py3-none-win_amd64.whl
+  cause: I/O operation failed during extraction
+  cause: Failed to download distribution due to network timeout. Try increasing UV_HTTP_TIMEOUT (current value: 30s).
+
+hint: `nvidia-cudnn-cu13` (v9.28.1.4) was included because `onnxruntime-gpu[cudnn]` (v1.31.1) depends on `nvidia-cudnn-cu13`

@@ -1,0 +1,160 @@
+{
+ "cell": "qwen3asr/ovg-fp16-cpu",
+ "model": "qwen3asr",
+ "runtime": "OpenVINO GenAI 2026.4.1",
+ "form": "fp16",
+ "device": "cpu",
+ "device_name": "CPU (Core Ultra 9 386H)",
+ "set": "S150",
+ "mode": "timed",
+ "sitting": "s4",
+ "status": "OK",
+ "record": {
+  "run": "raw/s4/qwen3asr/ovg-fp16-cpu/run1.json",
+  "meta": "raw/s4/qwen3asr/ovg-fp16-cpu/run1.meta.json",
+  "chain_log": "raw/s4/chain.log"
+ },
+ "error": null,
+ "versions": {
+  "python": "3.12.16",
+  "openvino-genai": "2026.4.1.0",
+  "openvino": "2026.4.1",
+  "openvino-tokenizers": "2026.4.1.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": 9.693,
+ "summary": {
+  "clips": 150,
+  "audio_s": 1806.26,
+  "wall_s": 611.009,
+  "rtf": 0.33827,
+  "empty": 0,
+  "first_token_ms_mean": 1952.62,
+  "split_half_rtf": [
+   0.33385,
+   0.34303
+  ]
+ },
+ "gate": {
+  "quietGate": "quiet",
+  "cpuReads": [
+   5.3,
+   5.6,
+   0.4
+  ],
+  "nvidiaMiB": 0,
+  "availGB": 24.2,
+  "ramNeedGB": 9,
+  "gpuEngines": null
+ },
+ "power": {
+  "msiUserScenarioMode": 1,
+  "overlayAc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "overlayDc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "battery": "status 2, 96 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 626.875,
+  "peakWorkingSetBytes": 12104429568,
+  "gpuMiBPeak": {},
+  "exitCode": 0,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1,
+ "control": {
+  "known_rtf": 0.26228,
+  "known_from": "this sitting's head (3 runs, spread 0.7 %)",
+  "head": [
+   0.2631,
+   0.26228,
+   0.26128
+  ],
+  "tail": [
+   0.26548
+  ],
+  "verdict": "PASS (tail off 1.2 %)"
+ },
+ "accuracy": {
+  "en_us": {
+   "metric": "WER",
+   "err": 58,
+   "n": 1150,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 5.043
+  },
+  "cmn_hans_cn": {
+   "metric": "CER",
+   "err": 154,
+   "n": 1954,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 7.881
+  },
+  "ja_jp": {
+   "metric": "CER",
+   "err": 186,
+   "n": 2689,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 6.917
+  }
+ },
+ "reference": {
+  "path": "raw/refs/qwen3asr-fp32/ref_transformers_official.jsonl",
+  "scores": {
+   "en_us": {
+    "metric": "WER",
+    "err": 50,
+    "n": 1150,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 4.348
+   },
+   "cmn_hans_cn": {
+    "metric": "CER",
+    "err": 134,
+    "n": 1954,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 6.858
+   },
+   "ja_jp": {
+    "metric": "CER",
+    "err": 148,
+    "n": 2689,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 5.504
+   }
+  }
+ },
+ "line": {
+  "en_us": {
+   "run": 5.043,
+   "ref": 4.348,
+   "bar": 4.848,
+   "pass": false
+  },
+  "cmn_hans_cn": {
+   "run": 7.881,
+   "ref": 6.858,
+   "bar": 7.358,
+   "pass": false
+  },
+  "ja_jp": {
+   "run": 6.917,
+   "ref": 5.504,
+   "bar": 6.004,
+   "pass": false
+  },
+  "empty": {
+   "n": 0,
+   "pass": true
+  },
+  "pass": false
+ },
+ "first_vs_timed_equal": "30/30"
+}

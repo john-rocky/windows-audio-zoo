@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+raw/**/*.bin
+raw/**/*.wav
+raw/**/*.npy
+/clips/
+# written by tools/table.py from results/ (a table across runtimes is not committed)
+RESULTS_AUDIO_WINDOWS.md
+# notes kept out of this repository
+FACTS.md
+facts_raw/
+ROUND*.md
+GO_STEPS_*.md
+fable_read_*.md
+LANE_CLOSE_*.md
+SPEED_LADDER.md
+*_deleted_paths.txt
+results/existing/
+hub/
+# Mac-side logs of the waits around the PC's lock (tools/, mtools/)
+raw/*.wait.log
+raw/retake*.log
+raw/*.endby_guard.log
+raw/left_cells.txt.*
+raw/sittings_run.log
+raw/after_sittings.log

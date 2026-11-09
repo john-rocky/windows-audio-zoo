@@ -1,0 +1,13 @@
+[2026-11-09T13:38:51.4448989+09:00] chain start: plan C:\src\audiozoo\pc\plans\first-b.json mode first, 5 units, pid 33452
+[2026-11-09T13:39:01.2057232+09:00] adapters: 0x00000000_0x00012C48=nvidia, 0x00000000_0x0001260E=intel-gpu, 0x00000000_0x00012BB8=?, 0x00000000_0x00013E4C=npu?
+[2026-11-09T13:39:03.5540062+09:00] qwen3asr/ovg-fp16-cpu run 1 start
+[2026-11-09T13:44:42.6610248+09:00] qwen3asr/ovg-fp16-cpu run 1 end: exit 0, OK, 336.829 s
+[2026-11-09T13:44:44.9838970+09:00] qwen3asr/ovg-fp16-igpu run 1 start
+[2026-11-09T13:46:33.5543954+09:00] qwen3asr/ovg-fp16-igpu run 1 end: exit 0, OK, 107.449 s
+[2026-11-09T13:46:34.6630005+09:00] qwen3asr/ovg-int8-cpu run 1 start
+[2026-11-09T13:50:41.0380251+09:00] qwen3asr/ovg-int8-cpu run 1 end: exit 0, OK, 244.316 s
+[2026-11-09T13:50:43.0742539+09:00] qwen3asr/ovg-int8-igpu run 1 start
+[2026-11-09T13:51:56.2172259+09:00] qwen3asr/ovg-int8-igpu run 1 end: exit 0, OK, 71.097 s
+[2026-11-09T13:51:58.2725406+09:00] qwen3asr/ovg-int8-rtx run 1 start
+[2026-11-09T13:56:47.6013340+09:00] qwen3asr/ovg-int8-rtx run 1 end: exit 0, OK, 287.964 s
+[2026-11-09T13:56:47.6196799+09:00] chain done: OK

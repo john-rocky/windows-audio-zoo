@@ -1,0 +1,32 @@
+[
+ {
+  "name": "python",
+  "exe": "uv",
+  "args": [
+   "python",
+   "install",
+   "3.12"
+  ],
+  "timeout_min": 15,
+  "stop_on_fail": true
+ },
+ {
+  "name": "fetch",
+  "exe": "uv",
+  "args": [
+   "run",
+   "--no-project",
+   "--python",
+   "3.12",
+   "--python-preference",
+   "only-managed",
+   "python",
+   "{ROOT}\\pc\\fetch.py",
+   "--manifest",
+   "{ROOT}\\shelf\\hub_manifest.json",
+   "--dest",
+   "{ROOT}\\models"
+  ],
+  "timeout_min": 240
+ }
+]

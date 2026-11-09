@@ -1,0 +1,18 @@
+ENGINE_PID 26788
+{"n": 1, "id": "en_us_1660", "wall_s": 1.34, "text": "Romanticism had a large element of cultural determinism, dra"}
+{"n": 2, "id": "en_us_1661", "wall_s": 1.268, "text": "He did not set a figure for the cuts, saying they will be ma"}
+{"n": 10, "id": "en_us_1669", "wall_s": 1.297, "text": "Police Superintendent Chandra Shikar Solanki said the accuse"}
+{"n": 20, "id": "en_us_1679", "wall_s": 1.228, "text": "Aerosmith have cancelled their remaining concerts on their t"}
+{"n": 30, "id": "en_us_1689", "wall_s": 1.372, "text": "Europe is a continent that is relatively small, but with man"}
+{"n": 40, "id": "en_us_1699", "wall_s": 1.41, "text": "Bishkek was described as sinking into a state of anarchy by "}
+{"n": 50, "id": "en_us_1709", "wall_s": 1.379, "text": "The report is highly critical of almost every aspect of the "}
+{"n": 60, "id": "cmn_hans_cn_1669", "wall_s": 1.276, "text": "警察局长钱德拉谢卡尔索兰基说，被告人出庭时都蒙住了脸。"}
+{"n": 70, "id": "cmn_hans_cn_1679", "wall_s": 1.272, "text": "空中铁匠乐队已经取消了他们巡回演唱会的剩余场次。"}
+{"n": 80, "id": "cmn_hans_cn_1689", "wall_s": 1.307, "text": "欧洲是片面积相对较小，但有着许多独立国家的大陆。在通常情况下，通常情况下，"}
+{"n": 90, "id": "cmn_hans_cn_1699", "wall_s": 1.403, "text": "一名观察者形容彼时凯克正在陷入无政府状态，成群的人们在街上游荡、掠夺商店、商店，甚至烧毁房屋。"}
+{"n": 100, "id": "cmn_hans_cn_1709", "wall_s": 1.368, "text": "该报告对行政当局目前对伊拉克政策的几乎每一个方面都提出了严厉批评，并敦促立即改变方向。"}
+{"n": 110, "id": "ja_jp_1671", "wall_s": 1.111, "text": "language Japanese"}
+{"n": 120, "id": "ja_jp_1684", "wall_s": 1.303, "text": "アピアはサモアの人です。この町はウポルトにあり、人口は4万人弱です。"}
+{"n": 130, "id": "ja_jp_1695", "wall_s": 1.517, "text": "特にナスバにはオリーブオイルを塗ったパンにトマトとチーズ、チューナなどの調味料を加えたパンボリというシンプルな料理が人気"}
+{"n": 140, "id": "ja_jp_1707", "wall_s": 1.398, "text": "ここは南アフリカの主な観光地の一つであり、南アフリカ国立公園（SAN Parks）が目玉とされ、されました。"}
+{"n": 150, "id": "ja_jp_1719", "wall_s": 1.402, "text": "悪天候とは物理的被害、深刻な社会的困難、人命に関わる被害に繋がり得る危険に妨害することでした。"}

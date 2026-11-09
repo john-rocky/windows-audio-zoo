@@ -1,0 +1,24 @@
+Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights:   3%|2         | 15/587 [00:00<00:04, 126.85it/s]Loading weights:   7%|7         | 42/587 [00:00<00:02, 201.30it/s]Loading weights:  11%|#         | 63/587 [00:00<00:02, 175.64it/s]Loading weights:  14%|#3        | 82/587 [00:00<00:03, 152.02it/s]Loading weights:  17%|#6        | 98/587 [00:00<00:03, 134.55it/s]Loading weights:  19%|#9        | 112/587 [00:00<00:03, 121.54it/s]Loading weights:  21%|##1       | 125/587 [00:01<00:05, 89.48it/s] Loading weights:  24%|##3       | 139/587 [00:01<00:04, 99.32it/s]Loading weights:  26%|##5       | 151/587 [00:01<00:04, 90.33it/s]Loading weights:  28%|##7       | 162/587 [00:01<00:04, 92.55it/s]Loading weights:  29%|##9       | 172/587 [00:01<00:04, 85.26it/s]Loading weights:  32%|###2      | 188/587 [00:01<00:04, 99.32it/s]Loading weights:  34%|###3      | 199/587 [00:01<00:04, 89.69it/s]Loading weights:  38%|###7      | 222/587 [00:01<00:03, 116.95it/s]Loading weights:  40%|####      | 235/587 [00:02<00:03, 114.00it/s]Loading weights:  42%|####2     | 247/587 [00:02<00:02, 114.50it/s]Loading weights:  45%|####4     | 262/587 [00:02<00:02, 123.34it/s]Loading weights:  47%|####6     | 275/587 [00:02<00:02, 106.31it/s]Loading weights:  50%|####9     | 291/587 [00:02<00:02, 105.25it/s]Loading weights:  51%|#####1    | 302/587 [00:02<00:02, 105.68it/s]Loading weights:  55%|#####4    | 320/587 [00:02<00:02, 124.04it/s]Loading weights:  57%|#####6    | 333/587 [00:03<00:02, 100.09it/s]Loading weights: 100%|##########| 587/587 [00:03<00:00, 188.32it/s]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\src\audiozoo\.venv-ref\Lib\site-packages\onnxruntime_genai\models\builder.py", line 1326, in <module>
+    create_model(
+  File "C:\src\audiozoo\.venv-ref\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\src\audiozoo\.venv-ref\Lib\site-packages\onnxruntime_genai\models\builder.py", line 898, in create_model
+    onnx_model.make_model(input_path)
+  File "C:\src\audiozoo\.venv-ref\Lib\site-packages\onnxruntime_genai\models\builders\whisper.py", line 485, in make_model
+    self.encoder.make_model(input_path)
+  File "C:\src\audiozoo\.venv-ref\Lib\site-packages\onnxruntime_genai\models\builders\base.py", line 6960, in make_model
+    self.make_postprocessing_nodes()
+  File "C:\src\audiozoo\.venv-ref\Lib\site-packages\onnxruntime_genai\models\builders\whisper.py", line 156, in make_postprocessing_nodes
+    proj = getattr(self.weights.model.decoder.layers[i].encoder_attn, proj_type)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\src\audiozoo\.venv-ref\Lib\site-packages\torch\nn\modules\container.py", line 392, in __getitem__
+    return self._modules[self._get_abs_string_index(idx)]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\src\audiozoo\.venv-ref\Lib\site-packages\torch\nn\modules\container.py", line 376, in _get_abs_string_index
+    raise IndexError(f"index {idx} is out of range")
+IndexError: index 4 is out of range

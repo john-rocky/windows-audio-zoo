@@ -1,0 +1,17 @@
+# The references (PyTorch, CPU, fp32): transformers for Whisper large-v3-turbo and Parakeet TDT (ParakeetForTDT, transformers >= 5.6),
+# hexgrad's kokoro package for Kokoro-82M; and ONNX Runtime GenAI 0.19.0's model builder (it imports torch, transformers, onnx_ir)
+torch==2.14.0
+transformers==5.22.2
+onnxruntime-genai==0.19.0
+onnxruntime==1.31.1
+onnx==1.23.2
+onnx-ir==1.1.0
+tqdm
+kokoro==0.9.4
+misaki[en]==0.9.4
+soundfile==0.14.0
+numpy==2.4.6
+# transformers' ParakeetFeatureExtractor needs librosa (11-09: "ParakeetFeatureExtractor requires the librosa library")
+librosa==1.0.0
+# misaki's English G2P loads spaCy's en_core_web_sm; a uv venv has no pip for spaCy's own download, so the wheel is here
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl

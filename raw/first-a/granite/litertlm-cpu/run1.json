@@ -1,0 +1,768 @@
+{
+ "runner": "run_asr_litertlm.py",
+ "started": "2026-11-09T14:19:39.898460+09:00",
+ "argv": [
+  "--bundle",
+  "C:\\src\\audiozoo\\models\\litert-community__granite-speech-5.0-2b\\granite-speech-5.0-2b.litertlm",
+  "--family",
+  "granite",
+  "--backend",
+  "cpu",
+  "--cache-dir",
+  "C:\\src\\audiozoo\\runs\\first-a\\granite\\litertlm-cpu\\cache",
+  "--set",
+  "S220",
+  "--fixtures",
+  "C:\\src\\audiozoo\\fixtures",
+  "--first",
+  "10",
+  "--out",
+  "C:\\src\\audiozoo\\runs\\first-a\\granite\\litertlm-cpu\\run1.json"
+ ],
+ "pid": 27328,
+ "status": "OK",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.001
+ },
+ "rows": [
+  {
+   "id": "ls_clip00",
+   "lang": "en_ls",
+   "seconds": 5.855,
+   "wall_s": 8.462752200022805,
+   "first_token_ms": 6936.241100018378,
+   "token_count": 101,
+   "raw": "mister Quilter is the apostle of the middle classes, and we are glad to welcome his gospel.",
+   "text": "mister Quilter is the apostle of the middle classes, and we are glad to welcome his gospel."
+  },
+  {
+   "id": "ls_clip01",
+   "lang": "en_ls",
+   "seconds": 4.815,
+   "wall_s": 9.01742540000123,
+   "first_token_ms": 8077.848100016126,
+   "token_count": 84,
+   "raw": "Nor is mister Quilter's manner less interesting than his matter.",
+   "text": "Nor is mister Quilter's manner less interesting than his matter."
+  },
+  {
+   "id": "ls_clip02",
+   "lang": "en_ls",
+   "seconds": 12.485,
+   "wall_s": 15.59474100000807,
+   "first_token_ms": 11581.574900017586,
+   "token_count": 181,
+   "raw": "He tells us that at this festive season of the year, with Christmas and roast beef looming before us, similes drawn from eating and its results occur most readily to the mind.",
+   "text": "He tells us that at this festive season of the year, with Christmas and roast beef looming before us, similes drawn from eating and its results occur most readily to the mind."
+  },
+  {
+   "id": "ls_clip03",
+   "lang": "en_ls",
+   "seconds": 9.9,
+   "wall_s": 15.67134729999816,
+   "first_token_ms": 12109.858999989228,
+   "token_count": 149,
+   "raw": "He has grave doubts whether Sir Frederic Leighton's work is really Greek after all, and can discover in it but little of rocky Ithaca.",
+   "text": "He has grave doubts whether Sir Frederic Leighton's work is really Greek after all, and can discover in it but little of rocky Ithaca."
+  },
+  {
+   "id": "ls_clip04",
+   "lang": "en_ls",
+   "seconds": 29.4,
+   "wall_s": 24.374422799999593,
+   "first_token_ms": 14338.872199994512,
+   "token_count": 404,
+   "raw": "Linnell's pictures are a sort of Upguard's and Adam's paintings, and Mason's exquisite idyls are as national as a jingo poem. Mr. Burke fosters landscapes smile at one much in the same way that Mr. Carker used to flash his teeth, and Mr. John Collier gives his sitter a cheerful slap on the back before he says, like a shampooer in a Turkish bath, \"Next man!\"",
+   "text": "Linnell's pictures are a sort of Upguard's and Adam's paintings, and Mason's exquisite idyls are as national as a jingo poem. Mr. Burke fosters landscapes smile at one much in the same way that Mr. Carker used to flash his teeth, and Mr. John Collier gives his sitter a cheerful slap on the back before he says, like a shampooer in a Turkish bath, \"Next man!\""
+  },
+  {
+   "id": "ls_clip05",
+   "lang": "en_ls",
+   "seconds": 9.01,
+   "wall_s": 14.531270500010578,
+   "first_token_ms": 12138.90740001807,
+   "token_count": 133,
+   "raw": "It is obviously unnecessary for us to point out how luminous these criticisms are, how delicate in expression.",
+   "text": "It is obviously unnecessary for us to point out how luminous these criticisms are, how delicate in expression."
+  },
+  {
+   "id": "ls_clip06",
+   "lang": "en_ls",
+   "seconds": 5.64,
+   "wall_s": 13.710626699990826,
+   "first_token_ms": 11980.904099997133,
+   "token_count": 92,
+   "raw": "On the general principles of art Mr. Quilter writes with equal lucidity.",
+   "text": "On the general principles of art Mr. Quilter writes with equal lucidity."
+  },
+  {
+   "id": "ls_clip07",
+   "lang": "en_ls",
+   "seconds": 9.24,
+   "wall_s": 14.135041400004411,
+   "first_token_ms": 11946.748699992895,
+   "token_count": 136,
+   "raw": "Painting, he tells us, is of a different quality to mathematics, and finish in art is adding more facto.",
+   "text": "Painting, he tells us, is of a different quality to mathematics, and finish in art is adding more facto."
+  },
+  {
+   "id": "ls_clip08",
+   "lang": "en_ls",
+   "seconds": 5.12,
+   "wall_s": 14.000811100006104,
+   "first_token_ms": 12206.83330000611,
+   "token_count": 89,
+   "raw": "As for etchings, they are of two kinds, British and foreign.",
+   "text": "As for etchings, they are of two kinds, British and foreign."
+  },
+  {
+   "id": "ls_clip09",
+   "lang": "en_ls",
+   "seconds": 18.29,
+   "wall_s": 19.504741899989313,
+   "first_token_ms": 14023.904900008347,
+   "token_count": 252,
+   "raw": "He laments most bitterly the divorce that has been made between decorative art and what we usually call pictures, makes the customary appeal to the Last Judgment, and reminds us that in the great days of art Michael Angelo was the furnishing upholsterer.",
+   "text": "He laments most bitterly the divorce that has been made between decorative art and what we usually call pictures, makes the customary appeal to the Last Judgment, and reminds us that in the great days of art Michael Angelo was the furnishing upholsterer."
+  },
+  {
+   "id": "en_us_1660",
+   "lang": "en_fl",
+   "seconds": 10.68,
+   "wall_s": 14.398192500026198,
+   "first_token_ms": 11954.234200005885,
+   "token_count": 154,
+   "raw": "Romanticism had a large element of cultural determinism, drawn from writers such as Goethe, Fichte and Schlegel.",
+   "text": "Romanticism had a large element of cultural determinism, drawn from writers such as Goethe, Fichte and Schlegel."
+  },
+  {
+   "id": "en_us_1661",
+   "lang": "en_fl",
+   "seconds": 6.36,
+   "wall_s": 14.584994400007417,
+   "first_token_ms": 12210.583300009603,
+   "token_count": 107,
+   "raw": "He did not set a figure for the cuts, saying they will be made based on China's economic output.",
+   "text": "He did not set a figure for the cuts, saying they will be made based on China's economic output."
+  },
+  {
+   "id": "en_us_1662",
+   "lang": "en_fl",
+   "seconds": 8.38,
+   "wall_s": 14.94098230000236,
+   "first_token_ms": 12173.423000000184,
+   "token_count": 127,
+   "raw": "Alloys are basically a mixture of two or more metals, don't forget there are many elements on the periodic table.",
+   "text": "Alloys are basically a mixture of two or more metals, don't forget there are many elements on the periodic table."
+  },
+  {
+   "id": "en_us_1663",
+   "lang": "en_fl",
+   "seconds": 12.12,
+   "wall_s": 16.065862400020706,
+   "first_token_ms": 12909.214500017697,
+   "token_count": 172,
+   "raw": "Chacomo Valley: Chile's premier climbing destination, known as the Yosemite of South America, with a variety of granite big walls and crags.",
+   "text": "Chacomo Valley: Chile's premier climbing destination, known as the Yosemite of South America, with a variety of granite big walls and crags."
+  },
+  {
+   "id": "en_us_1664",
+   "lang": "en_fl",
+   "seconds": 8.36,
+   "wall_s": 14.636783399997512,
+   "first_token_ms": 11777.30290000909,
+   "token_count": 129,
+   "raw": "Whew! Swirl the two dry powders together and then with clean wet hands squeeze them into a ball. Come on.",
+   "text": "Whew! Swirl the two dry powders together and then with clean wet hands squeeze them into a ball. Come on."
+  },
+  {
+   "id": "en_us_1665",
+   "lang": "en_fl",
+   "seconds": 8.28,
+   "wall_s": 15.602987699996447,
+   "first_token_ms": 12037.131399993086,
+   "token_count": 134,
+   "raw": "The document, according to the leak, will refer to the borders dispute, which Palestine wants based on the borders before the 1967 Middle East War.",
+   "text": "The document, according to the leak, will refer to the borders dispute, which Palestine wants based on the borders before the 1967 Middle East War."
+  },
+  {
+   "id": "en_us_1666",
+   "lang": "en_fl",
+   "seconds": 8.34,
+   "wall_s": 14.663762799988035,
+   "first_token_ms": 12083.385899983114,
+   "token_count": 127,
+   "raw": "You may also wish to consult the advice of governments other than your own, but their advice is designed for their citizens.",
+   "text": "You may also wish to consult the advice of governments other than your own, but their advice is designed for their citizens."
+  },
+  {
+   "id": "en_us_1667",
+   "lang": "en_fl",
+   "seconds": 14.22,
+   "wall_s": 16.209198099997593,
+   "first_token_ms": 12417.68859999138,
+   "token_count": 197,
+   "raw": "Generally speaking, two behaviors can emerge as managers begin to lead their former peers. One end of the spectrum is trying to remain one of the guys, or gals.",
+   "text": "Generally speaking, two behaviors can emerge as managers begin to lead their former peers. One end of the spectrum is trying to remain one of the guys, or gals."
+  },
+  {
+   "id": "en_us_1668",
+   "lang": "en_fl",
+   "seconds": 13.32,
+   "wall_s": 16.611588299972937,
+   "first_token_ms": 13041.692799975863,
+   "token_count": 186,
+   "raw": "It may also be beneficial for one to buy a wild card which provides entry to either selections of parks in South Africa or all of the South African National Parks.",
+   "text": "It may also be beneficial for one to buy a wild card which provides entry to either selections of parks in South Africa or all of the South African National Parks."
+  },
+  {
+   "id": "en_us_1669",
+   "lang": "en_fl",
+   "seconds": 7.2,
+   "wall_s": 14.227544499997748,
+   "first_token_ms": 12085.189599980367,
+   "token_count": 111,
+   "raw": "Police superintendent Chandra Shekhar Solanki said the accused appeared in court with covered faces.",
+   "text": "Police superintendent Chandra Shekhar Solanki said the accused appeared in court with covered faces."
+  },
+  {
+   "id": "ja_jp_1661",
+   "lang": "ja",
+   "seconds": 15.42,
+   "wall_s": 18.74393590001273,
+   "first_token_ms": 12440.483900019899,
+   "token_count": 231,
+   "raw": "越は削減する数値を定めませんでしたが削減は中国の経済産出量に基づいて実施されるだろうと述べました。",
+   "text": "越は削減する数値を定めませんでしたが削減は中国の経済産出量に基づいて実施されるだろうと述べました。"
+  },
+  {
+   "id": "ja_jp_1662",
+   "lang": "ja",
+   "seconds": 14.58,
+   "wall_s": 18.290369800000917,
+   "first_token_ms": 13126.709100004518,
+   "token_count": 212,
+   "raw": "合金とは基本的には2種類以上の金属の混合物です周期表に載っているたくさんの元素を思い出してください",
+   "text": "合金とは基本的には2種類以上の金属の混合物です周期表に載っているたくさんの元素を思い出してください"
+  },
+  {
+   "id": "ja_jp_1664",
+   "lang": "ja",
+   "seconds": 9.9,
+   "wall_s": 16.907015399978263,
+   "first_token_ms": 12410.231799993198,
+   "token_count": 165,
+   "raw": "乾いた粉をふたつ合わせてくるくるとこね回し清潔な縫い立てでぎゅっと握ります。",
+   "text": "乾いた粉をふたつ合わせてくるくるとこね回し清潔な縫い立てでぎゅっと握ります。"
+  },
+  {
+   "id": "ja_jp_1665",
+   "lang": "ja",
+   "seconds": 16.74,
+   "wall_s": 21.059166899998672,
+   "first_token_ms": 13013.333400012925,
+   "token_count": 260,
+   "raw": "漏れきた情報によれば、当該文書は国境紛争に言及するもので、パレスチナの希望は、１９６７年の中東戦争前の国境に基づくものです。",
+   "text": "漏れきた情報によれば、当該文書は国境紛争に言及するもので、パレスチナの希望は、１９６７年の中東戦争前の国境に基づくものです。"
+  },
+  {
+   "id": "ja_jp_1666",
+   "lang": "ja",
+   "seconds": 13.56,
+   "wall_s": 18.22426610000548,
+   "first_token_ms": 12891.998399980366,
+   "token_count": 204,
+   "raw": "自国以外の政府からの助言を参考にしてもかわいませんが、そのような助言はその国の国民向けのものです。",
+   "text": "自国以外の政府からの助言を参考にしてもかわいませんが、そのような助言はその国の国民向けのものです。"
+  },
+  {
+   "id": "ja_jp_1667",
+   "lang": "ja",
+   "seconds": 17.82,
+   "wall_s": 21.167553400009638,
+   "first_token_ms": 13089.342899998883,
+   "token_count": 270,
+   "raw": "一般的に言えば管理職がかつての仲間を引き入れることになった場合二通りの行動があらえる可能性があります一つは仲間の一人のままでいようとする行動です。",
+   "text": "一般的に言えば管理職がかつての仲間を引き入れることになった場合二通りの行動があらえる可能性があります一つは仲間の一人のままでいようとする行動です。"
+  },
+  {
+   "id": "ja_jp_1668",
+   "lang": "ja",
+   "seconds": 13.38,
+   "wall_s": 19.44585650000954,
+   "first_token_ms": 13244.699600007152,
+   "token_count": 211,
+   "raw": "ワイルドカードを購入するとお得な場合があります南アフリカの主な公園または南アフリカのすべての国立公園に入場できます。",
+   "text": "ワイルドカードを購入するとお得な場合があります南アフリカの主な公園または南アフリカのすべての国立公園に入場できます。"
+  },
+  {
+   "id": "ja_jp_1669",
+   "lang": "ja",
+   "seconds": 10.08,
+   "wall_s": 17.909090700006345,
+   "first_token_ms": 12297.402100026375,
+   "token_count": 173,
+   "raw": "警察のチャンドラシュカール・ソランキ総監によれば、被告人は顔を隠して法廷に出頭したそうです。",
+   "text": "警察のチャンドラシュカール・ソランキ総監によれば、被告人は顔を隠して法廷に出頭したそうです。"
+  },
+  {
+   "id": "ja_jp_1670",
+   "lang": "ja",
+   "seconds": 25.5,
+   "wall_s": 30.425268799997866,
+   "first_token_ms": 13654.09080000245,
+   "token_count": 421,
+   "raw": "そうした寝つき泥は一定の温度をかなり保てる地球上の大洞窟ほど安定していないことが多いのですが地中に深い穴ができる点を一致していますと米国地質調査所、ｕｓｇｓ宇宙地質学チームとアリゾナ州フラッグスタッフにあるノーザンアリゾナ大学のグレン・クッシング氏は述べています。",
+   "text": "そうした寝つき泥は一定の温度をかなり保てる地球上の大洞窟ほど安定していないことが多いのですが地中に深い穴ができる点を一致していますと米国地質調査所、ｕｓｇｓ宇宙地質学チームとアリゾナ州フラッグスタッフにあるノーザンアリゾナ大学のグレン・クッシング氏は述べています。"
+  },
+  {
+   "id": "ja_jp_1671",
+   "lang": "ja",
+   "seconds": 18.42,
+   "wall_s": 22.652556999993976,
+   "first_token_ms": 14047.117899986915,
+   "token_count": 285,
+   "raw": "連邦議会は２００５年度から、わいせつ物取締法への資金提供を開始し、ｆｂｉはアタローズポールの２０人の捜査員を投入しなければならないと規定しました。",
+   "text": "連邦議会は２００５年度から、わいせつ物取締法への資金提供を開始し、ｆｂｉはアタローズポールの２０人の捜査員を投入しなければならないと規定しました。"
+  },
+  {
+   "id": "fr_fr_1660",
+   "lang": "fr",
+   "seconds": 7.86,
+   "wall_s": 16.23235029997886,
+   "first_token_ms": 12177.874899993185,
+   "token_count": 136,
+   "raw": "Le romantisme présentait un important élément de déterminisme culturel tiré, d'écrivains tels que Goethe, Fichte et Schlegel.",
+   "text": "Le romantisme présentait un important élément de déterminisme culturel tiré, d'écrivains tels que Goethe, Fichte et Schlegel."
+  },
+  {
+   "id": "fr_fr_1661",
+   "lang": "fr",
+   "seconds": 10.56,
+   "wall_s": 15.168434899998829,
+   "first_token_ms": 11981.95419998956,
+   "token_count": 157,
+   "raw": "Il n’a pas chiffré ces réductions, disant qu’elles seront basées sur la production économique chinoise.",
+   "text": "Il n’a pas chiffré ces réductions, disant qu’elles seront basées sur la production économique chinoise."
+  },
+  {
+   "id": "fr_fr_1662",
+   "lang": "fr",
+   "seconds": 7.14,
+   "wall_s": 16.143773999996483,
+   "first_token_ms": 12027.298700006213,
+   "token_count": 131,
+   "raw": "Les alliages sont essentiellement un mélange de deux métaux au plus, n'oubliez pas que le tableau périodique comporte de nombreux éléments.",
+   "text": "Les alliages sont essentiellement un mélange de deux métaux au plus, n'oubliez pas que le tableau périodique comporte de nombreux éléments."
+  },
+  {
+   "id": "fr_fr_1663",
+   "lang": "fr",
+   "seconds": 11.82,
+   "wall_s": 18.65096219998668,
+   "first_token_ms": 13079.727099975571,
+   "token_count": 187,
+   "raw": "Vallée de Cautchumo, la destination d'excellence pour l'escalade au Chili connue comme le Yosemite d'Amérique du Sud avec de nombreuses grandes parois et falaises granitiques différentes.",
+   "text": "Vallée de Cautchumo, la destination d'excellence pour l'escalade au Chili connue comme le Yosemite d'Amérique du Sud avec de nombreuses grandes parois et falaises granitiques différentes."
+  },
+  {
+   "id": "fr_fr_1664",
+   "lang": "fr",
+   "seconds": 7.8,
+   "wall_s": 15.617878400022164,
+   "first_token_ms": 12146.328500006348,
+   "token_count": 128,
+   "raw": "Mélanger les deux poudres sèche ensemble, puis, avec les mains propres et humides, presser les en boules.",
+   "text": "Mélanger les deux poudres sèche ensemble, puis, avec les mains propres et humides, presser les en boules."
+  },
+  {
+   "id": "fr_fr_1665",
+   "lang": "fr",
+   "seconds": 16.38,
+   "wall_s": 19.11287120002089,
+   "first_token_ms": 12704.112700012047,
+   "token_count": 239,
+   "raw": "D'après la fuite, le document portera sur le différend à la frontière que la Palestine revendique sur la base des frontières existantes avant la guerre du Moyen-Orient de mille neuf cent soixante-sept.",
+   "text": "D'après la fuite, le document portera sur le différend à la frontière que la Palestine revendique sur la base des frontières existantes avant la guerre du Moyen-Orient de mille neuf cent soixante-sept."
+  },
+  {
+   "id": "fr_fr_1666",
+   "lang": "fr",
+   "seconds": 11.64,
+   "wall_s": 16.674277799989795,
+   "first_token_ms": 12981.735799985472,
+   "token_count": 168,
+   "raw": "Vous pouvez également avoir recours au conseil d’autre gouvernement que le vôtre, mais leurs conseils sont adaptés à leurs citoyens.",
+   "text": "Vous pouvez également avoir recours au conseil d’autre gouvernement que le vôtre, mais leurs conseils sont adaptés à leurs citoyens."
+  },
+  {
+   "id": "fr_fr_1667",
+   "lang": "fr",
+   "seconds": 14.88,
+   "wall_s": 19.492699900001753,
+   "first_token_ms": 12901.437500026077,
+   "token_count": 228,
+   "raw": "De manière générale, deux comportements peuvent émerger lorsqu'un manager devient le chef d'anciens collègues, d'une des extrémités du spectre étant d'essayer de rester le bouc épinois ou la bonne copine.",
+   "text": "De manière générale, deux comportements peuvent émerger lorsqu'un manager devient le chef d'anciens collègues, d'une des extrémités du spectre étant d'essayer de rester le bouc épinois ou la bonne copine."
+  },
+  {
+   "id": "fr_fr_1668",
+   "lang": "fr",
+   "seconds": 7.62,
+   "wall_s": 15.652358000021195,
+   "first_token_ms": 11044.816400011769,
+   "token_count": 138,
+   "raw": "Il peut être avantageux de se procurer une wildcard qui donne accès à un certain parc d'Afrique du Sud ainsi qu'à tous les parcs nationaux sud-africains.",
+   "text": "Il peut être avantageux de se procurer une wildcard qui donne accès à un certain parc d'Afrique du Sud ainsi qu'à tous les parcs nationaux sud-africains."
+  },
+  {
+   "id": "fr_fr_1669",
+   "lang": "fr",
+   "seconds": 9.6,
+   "wall_s": 16.716514300002018,
+   "first_token_ms": 12113.948700018227,
+   "token_count": 157,
+   "raw": "Chandra Sekhar Solanki, commissaire de police, déclarait que les personnes accusées avaient le visage dissimulé lorsqu'elles ont comparu devant le tribunal.",
+   "text": "Chandra Sekhar Solanki, commissaire de police, déclarait que les personnes accusées avaient le visage dissimulé lorsqu'elles ont comparu devant le tribunal."
+  },
+  {
+   "id": "de_de_1660",
+   "lang": "de",
+   "seconds": 10.38,
+   "wall_s": 16.102694999979576,
+   "first_token_ms": 12043.896999995923,
+   "token_count": 161,
+   "raw": "Die Romantik hatte ein starkes kulturell deterministisches Element, das sich aus Schriftstellern wie Goethe, Fichte und Schlegel schöpfte.",
+   "text": "Die Romantik hatte ein starkes kulturell deterministisches Element, das sich aus Schriftstellern wie Goethe, Fichte und Schlegel schöpfte."
+  },
+  {
+   "id": "de_de_1661",
+   "lang": "de",
+   "seconds": 6.66,
+   "wall_s": 14.856260900007328,
+   "first_token_ms": 11163.8060999976,
+   "token_count": 122,
+   "raw": "Er nannte keine Zahl für die Kürzungen, sondern sagte, sie würden auf der Grundlage der Wirtschaftsleistung Chinas vorgenommen.",
+   "text": "Er nannte keine Zahl für die Kürzungen, sondern sagte, sie würden auf der Grundlage der Wirtschaftsleistung Chinas vorgenommen."
+  },
+  {
+   "id": "de_de_1662",
+   "lang": "de",
+   "seconds": 23.46,
+   "wall_s": 17.675930200028233,
+   "first_token_ms": 13933.639900002163,
+   "token_count": 290,
+   "raw": "Legierungen sind im Grunde eine Mischung aus zwei oder mehr Metallen. Vergessen Sie nicht, dass es viele Elemente im Periodensystem gibt.",
+   "text": "Legierungen sind im Grunde eine Mischung aus zwei oder mehr Metallen. Vergessen Sie nicht, dass es viele Elemente im Periodensystem gibt."
+  },
+  {
+   "id": "de_de_1663",
+   "lang": "de",
+   "seconds": 9.78,
+   "wall_s": 17.234778799989726,
+   "first_token_ms": 12197.048000001814,
+   "token_count": 164,
+   "raw": "Das Cochamo-Tal Chiles wichtigstes Kletterziel, bekannt als der \"Josephite-Nationalpark von Südamerika\" mit einer Vielzahl von großen Granitwänden und Klippen.",
+   "text": "Das Cochamo-Tal Chiles wichtigstes Kletterziel, bekannt als der \"Josephite-Nationalpark von Südamerika\" mit einer Vielzahl von großen Granitwänden und Klippen."
+  },
+  {
+   "id": "de_de_1664",
+   "lang": "de",
+   "seconds": 8.7,
+   "wall_s": 14.280775199993514,
+   "first_token_ms": 11069.57190000685,
+   "token_count": 136,
+   "raw": "Mischen Sie die zwei Trockenpulver zusammen und formen Sie dann mit sauberen, nassen Händen zu einem Ball.",
+   "text": "Mischen Sie die zwei Trockenpulver zusammen und formen Sie dann mit sauberen, nassen Händen zu einem Ball."
+  },
+  {
+   "id": "de_de_1665",
+   "lang": "de",
+   "seconds": 10.68,
+   "wall_s": 19.22078859998146,
+   "first_token_ms": 12134.843100007856,
+   "token_count": 190,
+   "raw": "Dem Leak zufolge bezieht sich das Dokument auf den Grenzstreit, in dem die Palästinenser ein Zurücksetzen der Grenzen in den Zustand vor dem Sechstagekrieg von neunzehnhundertsiebenundsechzig fordern.",
+   "text": "Dem Leak zufolge bezieht sich das Dokument auf den Grenzstreit, in dem die Palästinenser ein Zurücksetzen der Grenzen in den Zustand vor dem Sechstagekrieg von neunzehnhundertsiebenundsechzig fordern."
+  },
+  {
+   "id": "de_de_1666",
+   "lang": "de",
+   "seconds": 17.76,
+   "wall_s": 18.314770799974212,
+   "first_token_ms": 13923.164499981795,
+   "token_count": 239,
+   "raw": "Sie können auch die Ratschläge anderer Regierungen als der Iren konsultieren, deren Hinweise sind jedoch auf ihre eigenen Stadtbürger zugeschnitten.",
+   "text": "Sie können auch die Ratschläge anderer Regierungen als der Iren konsultieren, deren Hinweise sind jedoch auf ihre eigenen Stadtbürger zugeschnitten."
+  },
+  {
+   "id": "de_de_1667",
+   "lang": "de",
+   "seconds": 27.66,
+   "wall_s": 20.375720600015484,
+   "first_token_ms": 13709.432300005574,
+   "token_count": 356,
+   "raw": "Im Allgemeinen können sich zwei Verhaltensweisen abzeichnen, wenn Manager beginnen, ihre ehemaligen Kollegen zu leiten. Das eine Ende des Spektrums ist der Versuch, einer der Jungens oder eines der Mädels zu bleiben.",
+   "text": "Im Allgemeinen können sich zwei Verhaltensweisen abzeichnen, wenn Manager beginnen, ihre ehemaligen Kollegen zu leiten. Das eine Ende des Spektrums ist der Versuch, einer der Jungens oder eines der Mädels zu bleiben."
+  },
+  {
+   "id": "de_de_1668",
+   "lang": "de",
+   "seconds": 14.7,
+   "wall_s": 18.406919600005494,
+   "first_token_ms": 13165.540000016335,
+   "token_count": 212,
+   "raw": "Es kann sich auch lohnen eine Wildkatze zu kaufen, die Zutritt entweder zu ausgewählten Parks in Südafrika oder zu allen südafrikanischen Nationalparks gewährt.",
+   "text": "Es kann sich auch lohnen eine Wildkatze zu kaufen, die Zutritt entweder zu ausgewählten Parks in Südafrika oder zu allen südafrikanischen Nationalparks gewährt."
+  },
+  {
+   "id": "de_de_1669",
+   "lang": "de",
+   "seconds": 12.78,
+   "wall_s": 16.724428299989086,
+   "first_token_ms": 12488.987799995812,
+   "token_count": 189,
+   "raw": "Die Polizeipräsidentin Chandra Shukhar Solanki gab an, die Angeklagten seien mit bedeckten Gesichtern vor Gericht erschienen.",
+   "text": "Die Polizeipräsidentin Chandra Shukhar Solanki gab an, die Angeklagten seien mit bedeckten Gesichtern vor Gericht erschienen."
+  },
+  {
+   "id": "es_419_1660",
+   "lang": "es",
+   "seconds": 10.86,
+   "wall_s": 16.447804099996574,
+   "first_token_ms": 13029.557400004705,
+   "token_count": 161,
+   "raw": "El elemento del determinismo cultural se encontraba muy presente en el romanticismo, según estudiosos como Goethe, Fichte y Schlegel.",
+   "text": "El elemento del determinismo cultural se encontraba muy presente en el romanticismo, según estudiosos como Goethe, Fichte y Schlegel."
+  },
+  {
+   "id": "es_419_1661",
+   "lang": "es",
+   "seconds": 7.8,
+   "wall_s": 15.251841099990997,
+   "first_token_ms": 11982.627499994123,
+   "token_count": 126,
+   "raw": "No mencionó una cifra para los recortes y manifestó que se harán en base a la producción económica de China.",
+   "text": "No mencionó una cifra para los recortes y manifestó que se harán en base a la producción económica de China."
+  },
+  {
+   "id": "es_419_1662",
+   "lang": "es",
+   "seconds": 8.82,
+   "wall_s": 14.771043700020527,
+   "first_token_ms": 11976.544700009981,
+   "token_count": 138,
+   "raw": "Las alaciones son básicamente una combinación de dos o más metales, recuerde que la tabla periódica tiene muchos elementos.",
+   "text": "Las alaciones son básicamente una combinación de dos o más metales, recuerde que la tabla periódica tiene muchos elementos."
+  },
+  {
+   "id": "es_419_1663",
+   "lang": "es",
+   "seconds": 15.42,
+   "wall_s": 18.238958800007822,
+   "first_token_ms": 13106.988599989563,
+   "token_count": 221,
+   "raw": "El valle de Cochemó es el destino para escalar más popular de Chile y es conocido como el Yosemite de Sudamérica, con variedad de extensos muros y rícos de granito.",
+   "text": "El valle de Cochemó es el destino para escalar más popular de Chile y es conocido como el Yosemite de Sudamérica, con variedad de extensos muros y rícos de granito."
+  },
+  {
+   "id": "es_419_1664",
+   "lang": "es",
+   "seconds": 10.02,
+   "wall_s": 16.245666200004052,
+   "first_token_ms": 12092.249400011497,
+   "token_count": 159,
+   "raw": "Agite ambos polvos secos juntos y después de hacerlo con las manos higienizadas y húmedas, exprímalos para formar una bola.",
+   "text": "Agite ambos polvos secos juntos y después de hacerlo con las manos higienizadas y húmedas, exprímalos para formar una bola."
+  },
+  {
+   "id": "es_419_1665",
+   "lang": "es",
+   "seconds": 17.1,
+   "wall_s": 18.99511899999925,
+   "first_token_ms": 12816.336799995042,
+   "token_count": 243,
+   "raw": "Según la información que se filtró, el documento tratará sobre el conflicto fronterizo que Palestina pretende resolver basándose en los límites vigentes en forma previa a la guerra del Medio Oriente de 1967.",
+   "text": "Según la información que se filtró, el documento tratará sobre el conflicto fronterizo que Palestina pretende resolver basándose en los límites vigentes en forma previa a la guerra del Medio Oriente de 1967."
+  },
+  {
+   "id": "es_419_1666",
+   "lang": "es",
+   "seconds": 10.14,
+   "wall_s": 15.292098599980818,
+   "first_token_ms": 12161.141199991107,
+   "token_count": 148,
+   "raw": "Es posible que quiera consultar las recomendaciones de otros gobiernos, pero están pensadas para sus propios ciudadanos.",
+   "text": "Es posible que quiera consultar las recomendaciones de otros gobiernos, pero están pensadas para sus propios ciudadanos."
+  },
+  {
+   "id": "es_419_1667",
+   "lang": "es",
+   "seconds": 18.3,
+   "wall_s": 19.965726299997186,
+   "first_token_ms": 14097.418499994092,
+   "token_count": 254,
+   "raw": "En general pueden darse dos tipos de comportamiento cuando los gerentes comienzan a liberar a sus antiguos compañeros. De un lado del espectro está el intento de continuar siendo uno de los muchachos o muchachas.",
+   "text": "En general pueden darse dos tipos de comportamiento cuando los gerentes comienzan a liberar a sus antiguos compañeros. De un lado del espectro está el intento de continuar siendo uno de los muchachos o muchachas."
+  },
+  {
+   "id": "es_419_1668",
+   "lang": "es",
+   "seconds": 12.6,
+   "wall_s": 16.455755900009535,
+   "first_token_ms": 12037.18110002228,
+   "token_count": 183,
+   "raw": "También puede ser conveniente comprar una \"wild card\" que permite la entrada a selecciones de parques en Sudáfrica o a todos los parques nacionales del país.",
+   "text": "También puede ser conveniente comprar una \"wild card\" que permite la entrada a selecciones de parques en Sudáfrica o a todos los parques nacionales del país."
+  },
+  {
+   "id": "es_419_1669",
+   "lang": "es",
+   "seconds": 11.22,
+   "wall_s": 17.48013159999391,
+   "first_token_ms": 12964.154899993446,
+   "token_count": 174,
+   "raw": "Según manifestara el superintendente de la policía, Chandrashekhar Solanki, los acusados se presentaron ante el tribunal con sus rostros cubiertos.",
+   "text": "Según manifestara el superintendente de la policía, Chandrashekhar Solanki, los acusados se presentaron ante el tribunal con sus rostros cubiertos."
+  },
+  {
+   "id": "pt_br_1660",
+   "lang": "pt",
+   "seconds": 10.68,
+   "wall_s": 15.262282599986065,
+   "first_token_ms": 12171.115500008455,
+   "token_count": 155,
+   "raw": "O romantismo tinha um grande elemento de determinismo cultural, extraído de escritores como Goethe, Fichte e Schelling.",
+   "text": "O romantismo tinha um grande elemento de determinismo cultural, extraído de escritores como Goethe, Fichte e Schelling."
+  },
+  {
+   "id": "pt_br_1661",
+   "lang": "pt",
+   "seconds": 9.24,
+   "wall_s": 14.506762899982277,
+   "first_token_ms": 10945.619399979478,
+   "token_count": 143,
+   "raw": "Ele não definiu um valor para os cortes, falando que eles serão feitos de acordo com a produção econômica da China.",
+   "text": "Ele não definiu um valor para os cortes, falando que eles serão feitos de acordo com a produção econômica da China."
+  },
+  {
+   "id": "pt_br_1662",
+   "lang": "pt",
+   "seconds": 27.06,
+   "wall_s": 21.418102700001327,
+   "first_token_ms": 14260.874100000365,
+   "token_count": 355,
+   "raw": "Ligas são simplesmente uma mistura de dois ou mais metais não se esqueça de que existem muitos elementos na tabela periódica ligas são simplesmente uma mistura de dois ou mais metais não se esqueça de que existem muitos elementos na tabela periódica",
+   "text": "Ligas são simplesmente uma mistura de dois ou mais metais não se esqueça de que existem muitos elementos na tabela periódica ligas são simplesmente uma mistura de dois ou mais metais não se esqueça de que existem muitos elementos na tabela periódica"
+  },
+  {
+   "id": "pt_br_1663",
+   "lang": "pt",
+   "seconds": 15.72,
+   "wall_s": 17.56580309997662,
+   "first_token_ms": 13025.424999999814,
+   "token_count": 223,
+   "raw": "Sendo o principal destino de escalada do Chile, o vale do Coxamó é conhecido como o yosemite da América do Sul, com uma variedade de grandes paredões e penhascos de granito.",
+   "text": "Sendo o principal destino de escalada do Chile, o vale do Coxamó é conhecido como o yosemite da América do Sul, com uma variedade de grandes paredões e penhascos de granito."
+  },
+  {
+   "id": "pt_br_1664",
+   "lang": "pt",
+   "seconds": 10.92,
+   "wall_s": 15.637489700020524,
+   "first_token_ms": 12921.326300012879,
+   "token_count": 154,
+   "raw": "Misture os dois pós e, com a mão limpa, moldes no formato de uma bola.",
+   "text": "Misture os dois pós e, com a mão limpa, moldes no formato de uma bola."
+  },
+  {
+   "id": "pt_br_1665",
+   "lang": "pt",
+   "seconds": 14.58,
+   "wall_s": 18.635796999995364,
+   "first_token_ms": 13004.145999992033,
+   "token_count": 216,
+   "raw": "O documento de acordo com o vazamento vai se referir à disputa de fronteiras que a Palestina quer com base nas fronteiras antes da guerra dos seis dias em mil novecentos e sessenta e sete.",
+   "text": "O documento de acordo com o vazamento vai se referir à disputa de fronteiras que a Palestina quer com base nas fronteiras antes da guerra dos seis dias em mil novecentos e sessenta e sete."
+  },
+  {
+   "id": "pt_br_1666",
+   "lang": "pt",
+   "seconds": 10.08,
+   "wall_s": 15.493691299983766,
+   "first_token_ms": 12022.938899986912,
+   "token_count": 159,
+   "raw": "Também é recomendável que você consulte outros governos além do seu, mas o aconselhamento deles é feito para os respectivos cidadãos.",
+   "text": "Também é recomendável que você consulte outros governos além do seu, mas o aconselhamento deles é feito para os respectivos cidadãos."
+  },
+  {
+   "id": "pt_br_1667",
+   "lang": "pt",
+   "seconds": 16.92,
+   "wall_s": 18.61858320000465,
+   "first_token_ms": 13036.842200002866,
+   "token_count": 239,
+   "raw": "Em termos gerais, duas condutas podem aflorar conforme gerentes começam a liderar seus antigos colegas de trabalho um lado do espectro tenta se manter como parte do grupo dos caras ou garotas.",
+   "text": "Em termos gerais, duas condutas podem aflorar conforme gerentes começam a liderar seus antigos colegas de trabalho um lado do espectro tenta se manter como parte do grupo dos caras ou garotas."
+  },
+  {
+   "id": "pt_br_1668",
+   "lang": "pt",
+   "seconds": 12.84,
+   "wall_s": 17.352216500003124,
+   "first_token_ms": 12919.234600005439,
+   "token_count": 189,
+   "raw": "pode ser muito útil também adquirir um wild card com ele você pode ter acesso a vários parques da África do Sul ou a todos os parques nacionais sul africanos",
+   "text": "pode ser muito útil também adquirir um wild card com ele você pode ter acesso a vários parques da África do Sul ou a todos os parques nacionais sul africanos"
+  },
+  {
+   "id": "pt_br_1669",
+   "lang": "pt",
+   "seconds": 10.8,
+   "wall_s": 15.119675399997504,
+   "first_token_ms": 12011.27310001175,
+   "token_count": 159,
+   "raw": "O acusado compareceu ao tribunal com rosto coberto, declarou o superintendente da polícia Chandrashekar Solanki.",
+   "text": "O acusado compareceu ao tribunal com rosto coberto, declarou o superintendente da polícia Chandrashekar Solanki."
+  }
+ ],
+ "versions": {
+  "python": "3.12.16",
+  "litert-lm-api": "0.19.1",
+  "openvino": "2026.4.1",
+  "numpy": "2.5.4"
+ },
+ "load_s": 3.827,
+ "workload": {
+  "set": "S220",
+  "first": 10,
+  "max_new_tokens": 256,
+  "decode": "greedy (top_k 1)",
+  "backend": "cpu",
+  "audio_backend": "cpu",
+  "cache_dir": "C:\\src\\audiozoo\\runs\\first-a\\granite\\litertlm-cpu\\cache",
+  "prompt": "bundle template, instruction after the audio: 'transcribe the speech with proper punctuation and capitalization.'",
+  "input": "Content.AudioFile(path), read inside the timed span"
+ },
+ "warmup_s": 8.948,
+ "render_warmup": "USER: <|audio|>transcribe the speech with proper punctuation and capitalization.\n ASSISTANT:",
+ "summary": {
+  "clips": 70,
+  "audio_s": 871.395,
+  "wall_s": 1187.18,
+  "rtf": 1.36239,
+  "empty": 0,
+  "first_token_ms_mean": 12425.99,
+  "split_half_rtf": [
+   1.37099,
+   1.35415
+  ]
+ },
+ "peak_working_set_bytes": 5369503744,
+ "peak_pagefile_bytes": 6576373760,
+ "ended": "2026-11-09T14:39:43.370345+09:00",
+ "process_s": 1203.458
+}

@@ -1,0 +1,4 @@
+ENGINE_PID 23724
+{"n": 1, "id": "en_us_1660", "wall_s": 2.049, "text": "Romanticism had a large element of cultural determinism draw"}
+{"n": 2, "id": "en_us_1661", "wall_s": 1.192, "text": "He did not set a figure for the cuts saying they will be mad"}
+{"n": 10, "id": "en_us_1669", "wall_s": 2.405, "text": "Police Superintendent Chandra Shikar Sonaki said the accused"}

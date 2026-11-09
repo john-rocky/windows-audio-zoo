@@ -1,0 +1,555 @@
+{
+ "runner": "run_tts_ovg.py",
+ "started": "2026-11-10T00:57:36.855336+09:00",
+ "argv": [
+  "--model-dir",
+  "C:\\src\\audiozoo\\models\\OpenVINO__Kokoro-82M-fp16-ov",
+  "--device",
+  "NPU",
+  "--cache-dir",
+  "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\cache",
+  "--set",
+  "T50",
+  "--fixtures",
+  "C:\\src\\audiozoo\\fixtures",
+  "--out",
+  "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\run1.json"
+ ],
+ "pid": 24200,
+ "status": "OK",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.001
+ },
+ "rows": [
+  {
+   "id": "en_us_1660",
+   "text_in": "Romanticism had a large element of cultural determinism, drawn from writers such as Goethe, Fichte, and Schlegel.",
+   "wall_s": 1.033323300012853,
+   "audio_s": 6.625,
+   "rate": 24000,
+   "peak_abs": 0.475192666053772,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1660.wav"
+  },
+  {
+   "id": "en_us_1661",
+   "text_in": "He did not set a figure for the cuts, saying they will be made based on China's economic output.",
+   "wall_s": 1.002847399970051,
+   "audio_s": 6.0,
+   "rate": 24000,
+   "peak_abs": 0.608738899230957,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1661.wav"
+  },
+  {
+   "id": "en_us_1662",
+   "text_in": "Alloys are basically a mixture of two or more metals. Don't forget that there are many elements on the periodic table.",
+   "wall_s": 1.0227980999625288,
+   "audio_s": 7.525,
+   "rate": 24000,
+   "peak_abs": 0.5818407535552979,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1662.wav"
+  },
+  {
+   "id": "en_us_1663",
+   "text_in": "Cochamó Valley - Chile's premier climbing destination, known as the Yosemite of South America, with a variety of granite big walls and crags.",
+   "wall_s": 0.9964703000150621,
+   "audio_s": 8.5,
+   "rate": 24000,
+   "peak_abs": 0.3109375834465027,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1663.wav"
+  },
+  {
+   "id": "en_us_1664",
+   "text_in": "Swirl the two dry powders together and then, with clean wet hands, squeeze them into a ball.",
+   "wall_s": 0.98685749998549,
+   "audio_s": 6.225,
+   "rate": 24000,
+   "peak_abs": 0.4298229515552521,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1664.wav"
+  },
+  {
+   "id": "en_us_1665",
+   "text_in": "The document, according to the leak, will refer to the borders dispute, which Palestine wants based on the borders before the 1967 Mideast War.",
+   "wall_s": 1.468035800033249,
+   "audio_s": 9.6,
+   "rate": 24000,
+   "peak_abs": 0.43652039766311646,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1665.wav"
+  },
+  {
+   "id": "en_us_1666",
+   "text_in": "You may also wish to consult the advice of governments other than your own, but their advice is designed for their citizens.",
+   "wall_s": 1.0371324999723583,
+   "audio_s": 7.5,
+   "rate": 24000,
+   "peak_abs": 0.44924214482307434,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1666.wav"
+  },
+  {
+   "id": "en_us_1667",
+   "text_in": "Generally speaking, two behaviors can emerge as managers begin to lead their former peers. One end of the spectrum is trying to remain “one of the guys” (or gals).",
+   "wall_s": 1.4922921999823302,
+   "audio_s": 10.425,
+   "rate": 24000,
+   "peak_abs": 0.49744635820388794,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1667.wav"
+  },
+  {
+   "id": "en_us_1668",
+   "text_in": "It may also be beneficial for one to buy a Wild Card, which provides entry to either selections of parks in South Africa or all of the South African National Parks.",
+   "wall_s": 1.4682545000105165,
+   "audio_s": 10.675,
+   "rate": 24000,
+   "peak_abs": 0.4427386522293091,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1668.wav"
+  },
+  {
+   "id": "en_us_1669",
+   "text_in": "Police superintendent Chandra Shekhar Solanki said the accused appeared in court with covered faces.",
+   "wall_s": 0.9839215000392869,
+   "audio_s": 5.15,
+   "rate": 24000,
+   "peak_abs": 0.4522153437137604,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1669.wav"
+  },
+  {
+   "id": "en_us_1670",
+   "text_in": "Their thermal behavior is not as steady as large caves on Earth that often maintain a fairly constant temperature, but it is consistent with these being deep holes in the ground,\" said Glen Cushing of the United States Geological Survey (USGS) Astrogeology Team and of Northern Arizona University located in Flagstaff, Arizona.",
+   "wall_s": 2.4975632000132464,
+   "audio_s": 20.95,
+   "rate": 24000,
+   "peak_abs": 0.432908833026886,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1670.wav"
+  },
+  {
+   "id": "en_us_1671",
+   "text_in": "Congress began funding the obscenity initiative in fiscal 2005 and specified that the FBI must devote 10 agents to adult pornography.",
+   "wall_s": 1.4610210999962874,
+   "audio_s": 9.5,
+   "rate": 24000,
+   "peak_abs": 0.39536523818969727,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1671.wav"
+  },
+  {
+   "id": "en_us_1672",
+   "text_in": "Be careful not to allow fabric to become too hot (which can cause shrinkage, or in extreme cases, scorch).",
+   "wall_s": 0.9863630999461748,
+   "audio_s": 6.775,
+   "rate": 24000,
+   "peak_abs": 0.36881116032600403,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1672.wav"
+  },
+  {
+   "id": "en_us_1673",
+   "text_in": "During the Revolutionary War, the thirteen states first formed a weak central government—with the Congress being its only component—under the Articles of Confederation.",
+   "wall_s": 1.5268696999992244,
+   "audio_s": 10.15,
+   "rate": 24000,
+   "peak_abs": 0.4448606073856354,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1673.wav"
+  },
+  {
+   "id": "en_us_1674",
+   "text_in": "In some areas boiling water for a minute is enough, in others several minutes are needed.",
+   "wall_s": 0.9848950000014156,
+   "audio_s": 5.575,
+   "rate": 24000,
+   "peak_abs": 0.5027610063552856,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1674.wav"
+  },
+  {
+   "id": "en_us_1675",
+   "text_in": "All nouns, alongside the word Sie for you, always begin with a capital letter, even in the middle of a sentence.",
+   "wall_s": 0.9766396000050008,
+   "audio_s": 6.85,
+   "rate": 24000,
+   "peak_abs": 0.43039751052856445,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1675.wav"
+  },
+  {
+   "id": "en_us_1676",
+   "text_in": "As with all South African National Parks, there are daily conservation and entry fees for the park.",
+   "wall_s": 0.9832950999843888,
+   "audio_s": 6.55,
+   "rate": 24000,
+   "peak_abs": 0.5838339328765869,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1676.wav"
+  },
+  {
+   "id": "en_us_1677",
+   "text_in": "Today, the only insects that cannot fold back their wings are dragon flies and mayflies.",
+   "wall_s": 1.0118332999991253,
+   "audio_s": 6.025,
+   "rate": 24000,
+   "peak_abs": 0.36558082699775696,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1677.wav"
+  },
+  {
+   "id": "en_us_1678",
+   "text_in": "Oliver Sacks, in his paper The President's Speech, indicated how people who are unable to understand speech because of brain damage are nevertheless able to assess sincerity accurately.",
+   "wall_s": 1.5147737000370398,
+   "audio_s": 12.025,
+   "rate": 24000,
+   "peak_abs": 0.48774251341819763,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1678.wav"
+  },
+  {
+   "id": "en_us_1679",
+   "text_in": "Aerosmith have cancelled their remaining concerts on their tour.",
+   "wall_s": 0.5005257000448182,
+   "audio_s": 3.3,
+   "rate": 24000,
+   "peak_abs": 0.3634229004383087,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1679.wav"
+  },
+  {
+   "id": "en_us_1680",
+   "text_in": "A well rounded athlete, the tiger can climb (though not well), swim, leap great distances and pull with five times the force of a strong human.",
+   "wall_s": 1.4571641000220552,
+   "audio_s": 9.1,
+   "rate": 24000,
+   "peak_abs": 0.4055703580379486,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1680.wav"
+  },
+  {
+   "id": "en_us_1681",
+   "text_in": "It isn’t alone though, experimentation, and an experiment is a test that is used to eliminate one or more of the possible hypotheses, asking questions, and making observations also guide scientific research.",
+   "wall_s": 1.9934871000004932,
+   "audio_s": 14.275,
+   "rate": 24000,
+   "peak_abs": 0.5013027787208557,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1681.wav"
+  },
+  {
+   "id": "en_us_1682",
+   "text_in": "While no one knows for certain who wrote it, it is known that early in its life, the large parchment document (it measures 29¾ inches by 24½ inches) was rolled up for storage.",
+   "wall_s": 1.482688700023573,
+   "audio_s": 11.55,
+   "rate": 24000,
+   "peak_abs": 0.3974662125110626,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1682.wav"
+  },
+  {
+   "id": "en_us_1683",
+   "text_in": "There are still many men and women alive who survived their time here, and many more who had loved ones who were murdered or worked to death there, Jews and non-Jews alike.",
+   "wall_s": 1.471083699958399,
+   "audio_s": 9.25,
+   "rate": 24000,
+   "peak_abs": 0.31422239542007446,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1683.wav"
+  },
+  {
+   "id": "en_us_1684",
+   "text_in": "Apia is the capital of Samoa. The town is on the island of Upolu and has a population of just under 40,000.",
+   "wall_s": 0.9800563000026159,
+   "audio_s": 7.775,
+   "rate": 24000,
+   "peak_abs": 0.45640623569488525,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1684.wav"
+  },
+  {
+   "id": "en_us_1685",
+   "text_in": "For example, the most common still image photography format in the world is 35mm, which was the dominant film size at the close of the analog film era.",
+   "wall_s": 1.5416593999834731,
+   "audio_s": 10.425,
+   "rate": 24000,
+   "peak_abs": 0.4098609387874603,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1685.wav"
+  },
+  {
+   "id": "en_us_1686",
+   "text_in": "As a result, the process of an organization working together to overcome an obstacle can lead to a new innovative process to serve the customer's need.",
+   "wall_s": 1.4580862000002526,
+   "audio_s": 9.6,
+   "rate": 24000,
+   "peak_abs": 0.3855508863925934,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1686.wav"
+  },
+  {
+   "id": "en_us_1687",
+   "text_in": "Segregation and recombination shuffle variation back and forth between the two pools with each generation.",
+   "wall_s": 0.9848379000322893,
+   "audio_s": 7.55,
+   "rate": 24000,
+   "peak_abs": 0.4784882366657257,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1687.wav"
+  },
+  {
+   "id": "en_us_1688",
+   "text_in": "The job of navies has traditionally been to ensure that your country maintains the ability to move your people and goods, while at the same time, interfering with your enemy's ability to move his people and goods.",
+   "wall_s": 1.469422200054396,
+   "audio_s": 12.725,
+   "rate": 24000,
+   "peak_abs": 0.5154033303260803,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1688.wav"
+  },
+  {
+   "id": "en_us_1689",
+   "text_in": "Europe is a continent that is relatively small but with many independent countries. Under normal circumstances, travelling through multiple countries would mean having to go through visa applications and passport control multiple times.",
+   "wall_s": 2.0209356999839656,
+   "audio_s": 15.05,
+   "rate": 24000,
+   "peak_abs": 0.45877373218536377,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1689.wav"
+  },
+  {
+   "id": "en_us_1690",
+   "text_in": "We agree with the USOC's statement that the interests of our athletes and clubs, and their sport, may be better served by moving forward with meaningful change within our organization, rather than decertification.",
+   "wall_s": 1.4715086999931373,
+   "audio_s": 11.3,
+   "rate": 24000,
+   "peak_abs": 0.4794582724571228,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1690.wav"
+  },
+  {
+   "id": "en_us_1691",
+   "text_in": "On some routes, the larger companies have their own planes, but for other routes and smaller firms there was a problem.",
+   "wall_s": 0.9816629000124522,
+   "audio_s": 7.125,
+   "rate": 24000,
+   "peak_abs": 0.5445979237556458,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1691.wav"
+  },
+  {
+   "id": "en_us_1692",
+   "text_in": "According to Japan's nuclear agency, radioactive caesium and iodine has been identified at the plant.",
+   "wall_s": 1.0444319000234827,
+   "audio_s": 6.75,
+   "rate": 24000,
+   "peak_abs": 0.4315832853317261,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1692.wav"
+  },
+  {
+   "id": "en_us_1693",
+   "text_in": "But, after losing the captain's wicket India only made 36 runs loosing 7 wickets to end the innings.",
+   "wall_s": 1.0004274000530131,
+   "audio_s": 7.025,
+   "rate": 24000,
+   "peak_abs": 0.615867555141449,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1693.wav"
+  },
+  {
+   "id": "en_us_1694",
+   "text_in": "Children are placed in Foster Care for a wide variety of reasons that range from neglect, to abuse, and even to extortion.",
+   "wall_s": 0.9887123000225984,
+   "audio_s": 8.2,
+   "rate": 24000,
+   "peak_abs": 0.340204656124115,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1694.wav"
+  },
+  {
+   "id": "en_us_1695",
+   "text_in": "A simple popular dinner, especially during the summer, is the Pa amb Oli: Bread with olive oil, tomato, and any available condiments such as cheese, tunafish, etc.",
+   "wall_s": 1.460224099981133,
+   "audio_s": 10.525,
+   "rate": 24000,
+   "peak_abs": 0.4115636944770813,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1695.wav"
+  },
+  {
+   "id": "en_us_1696",
+   "text_in": "The two compounds react with one another to form crystals that may block kidney function, researchers at the university said.",
+   "wall_s": 1.0246479999623261,
+   "audio_s": 7.525,
+   "rate": 24000,
+   "peak_abs": 0.3364917039871216,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1696.wav"
+  },
+  {
+   "id": "en_us_1697",
+   "text_in": "He has been unable to take the drugs needed to overcome his pain as they are banned from the Games.",
+   "wall_s": 1.0239342999993823,
+   "audio_s": 6.0,
+   "rate": 24000,
+   "peak_abs": 0.3551461100578308,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1697.wav"
+  },
+  {
+   "id": "en_us_1698",
+   "text_in": "Everything in the Universe is made of matter. All matter is made of tiny particles called atoms.",
+   "wall_s": 0.9792510999832302,
+   "audio_s": 6.3,
+   "rate": 24000,
+   "peak_abs": 0.4543653130531311,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1698.wav"
+  },
+  {
+   "id": "en_us_1699",
+   "text_in": "Bishkek was described as sinking into a state of \"anarchy\" by one observer, as gangs of people roamed the streets and plundered stores of consumer goods.",
+   "wall_s": 1.465474299970083,
+   "audio_s": 9.975,
+   "rate": 24000,
+   "peak_abs": 0.4822540283203125,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1699.wav"
+  },
+  {
+   "id": "en_us_1700",
+   "text_in": "It is thinner under the maria and thicker under the highlands.",
+   "wall_s": 0.5068005000357516,
+   "audio_s": 3.6,
+   "rate": 24000,
+   "peak_abs": 0.2853051722049713,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1700.wav"
+  },
+  {
+   "id": "en_us_1701",
+   "text_in": "Goats seem to have been first domesticated roughly 10,000 years ago in the Zagros Mountains of Iran.",
+   "wall_s": 1.020576599985361,
+   "audio_s": 6.35,
+   "rate": 24000,
+   "peak_abs": 0.5626463890075684,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1701.wav"
+  },
+  {
+   "id": "en_us_1702",
+   "text_in": "In just two weeks the Americans and Free French forces had liberated southern France and were turning towards Germany.",
+   "wall_s": 1.0265106000006199,
+   "audio_s": 7.475,
+   "rate": 24000,
+   "peak_abs": 0.3677149713039398,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1702.wav"
+  },
+  {
+   "id": "en_us_1703",
+   "text_in": "Martelly swore in a new Provisional Electoral Council (CEP) of nine members yesterday.",
+   "wall_s": 0.9865541000035591,
+   "audio_s": 5.425,
+   "rate": 24000,
+   "peak_abs": 0.3527216911315918,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1703.wav"
+  },
+  {
+   "id": "en_us_1704",
+   "text_in": "In 1990, it was added to the list of world heritage sites in danger, due to the threat of desert sands.",
+   "wall_s": 0.9846047000028193,
+   "audio_s": 7.225,
+   "rate": 24000,
+   "peak_abs": 0.7003625631332397,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1704.wav"
+  },
+  {
+   "id": "en_us_1705",
+   "text_in": "On 15 August 1940, the Allies invaded southern France, the invasion was called \"Operation Dragoon\".",
+   "wall_s": 0.9841484000207856,
+   "audio_s": 7.75,
+   "rate": 24000,
+   "peak_abs": 0.7433555126190186,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1705.wav"
+  },
+  {
+   "id": "en_us_1706",
+   "text_in": "More traditional churches often hold an Easter Vigil on Saturday night during the Easter weekend, with the congregations often breaking into celebration at the stroke of midnight to celebrate Christ's resurrection.",
+   "wall_s": 1.5241807000129484,
+   "audio_s": 13.375,
+   "rate": 24000,
+   "peak_abs": 0.6319007277488708,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1706.wav"
+  },
+  {
+   "id": "en_us_1707",
+   "text_in": "It is one of the main attractions of South Africa and it is considered the flagship of South African National Parks (SANParks).",
+   "wall_s": 1.0111764000030234,
+   "audio_s": 7.7,
+   "rate": 24000,
+   "peak_abs": 0.4780672788619995,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1707.wav"
+  },
+  {
+   "id": "en_us_1708",
+   "text_in": "Huhne has resigned and he will be replaced in the Cabinet by Ed Davey MP. Norman Lamb MP is expected to take the Business Minister job Davey is vacating.",
+   "wall_s": 1.4660631000297144,
+   "audio_s": 9.65,
+   "rate": 24000,
+   "peak_abs": 0.38594022393226624,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1708.wav"
+  },
+  {
+   "id": "en_us_1709",
+   "text_in": "The Report is highly critical of almost every aspect of the present policy of the Executive towards Iraq and it urges an immediate change of direction.",
+   "wall_s": 1.4661932000308298,
+   "audio_s": 9.475,
+   "rate": 24000,
+   "peak_abs": 0.4185842275619507,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\s4\\kokoro\\ovg-fp16-npu\\wav\\en_us_1709.wav"
+  }
+ ],
+ "versions": {
+  "python": "3.12.16",
+  "openvino-genai": "2026.4.1.0",
+  "openvino": "2026.4.1",
+  "openvino-tokenizers": "2026.4.1.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": 30.838,
+ "workload": {
+  "set": "T50",
+  "voice": "af_heart",
+  "language": "en-us",
+  "speed": 1.0,
+  "g2p": "pipeline built-in dictionary + espeak-ng fallback if present"
+ },
+ "warmup_s": 1.982,
+ "summary": {
+  "clips": 50,
+  "audio_s": 431.975,
+  "wall_s": 61.212,
+  "rtf": 0.1417,
+  "silent": 0
+ },
+ "peak_working_set_bytes": 1331245056,
+ "peak_pagefile_bytes": 1751015424,
+ "ended": "2026-11-10T00:59:11.988194+09:00",
+ "process_s": 95.124
+}

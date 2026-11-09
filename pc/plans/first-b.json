@@ -1,0 +1,132 @@
+{
+ "sitting": "first-b",
+ "made": "2026-11-09T13:27:00+09:00",
+ "mode": "first",
+ "units": [
+  {
+   "cell": "qwen3asr/ovg-fp16-cpu",
+   "venv": "ovg",
+   "script": "run_asr_ovg.py",
+   "device": "cpu",
+   "ram_need_gb": 9,
+   "timeout_min": 20,
+   "engines_gate": false,
+   "args": [
+    "--model-dir",
+    "{ROOT}\\exports\\qwen3asr-ov-fp16",
+    "--family",
+    "qwen3asr",
+    "--device",
+    "CPU",
+    "--cache-dir",
+    "{RUN}\\cache",
+    "--set",
+    "S150",
+    "--fixtures",
+    "{FIX}",
+    "--first",
+    "10"
+   ]
+  },
+  {
+   "cell": "qwen3asr/ovg-fp16-igpu",
+   "venv": "ovg",
+   "script": "run_asr_ovg.py",
+   "device": "igpu",
+   "ram_need_gb": 9,
+   "timeout_min": 15,
+   "engines_gate": true,
+   "args": [
+    "--model-dir",
+    "{ROOT}\\exports\\qwen3asr-ov-fp16",
+    "--family",
+    "qwen3asr",
+    "--device",
+    "GPU.0",
+    "--cache-dir",
+    "{RUN}\\cache",
+    "--set",
+    "S150",
+    "--fixtures",
+    "{FIX}",
+    "--first",
+    "10"
+   ]
+  },
+  {
+   "cell": "qwen3asr/ovg-int8-cpu",
+   "venv": "ovg",
+   "script": "run_asr_ovg.py",
+   "device": "cpu",
+   "ram_need_gb": 7,
+   "timeout_min": 20,
+   "engines_gate": false,
+   "args": [
+    "--model-dir",
+    "{ROOT}\\exports\\qwen3asr-ov-int8",
+    "--family",
+    "qwen3asr",
+    "--device",
+    "CPU",
+    "--cache-dir",
+    "{RUN}\\cache",
+    "--set",
+    "S150",
+    "--fixtures",
+    "{FIX}",
+    "--first",
+    "10"
+   ]
+  },
+  {
+   "cell": "qwen3asr/ovg-int8-igpu",
+   "venv": "ovg",
+   "script": "run_asr_ovg.py",
+   "device": "igpu",
+   "ram_need_gb": 7,
+   "timeout_min": 15,
+   "engines_gate": true,
+   "args": [
+    "--model-dir",
+    "{ROOT}\\exports\\qwen3asr-ov-int8",
+    "--family",
+    "qwen3asr",
+    "--device",
+    "GPU.0",
+    "--cache-dir",
+    "{RUN}\\cache",
+    "--set",
+    "S150",
+    "--fixtures",
+    "{FIX}",
+    "--first",
+    "10"
+   ]
+  },
+  {
+   "cell": "qwen3asr/ovg-int8-rtx",
+   "venv": "ovg",
+   "script": "run_asr_ovg.py",
+   "device": "rtx",
+   "ram_need_gb": 7,
+   "timeout_min": 15,
+   "engines_gate": false,
+   "args": [
+    "--model-dir",
+    "{ROOT}\\exports\\qwen3asr-ov-int8",
+    "--family",
+    "qwen3asr",
+    "--device",
+    "GPU.1",
+    "--cache-dir",
+    "{RUN}\\cache",
+    "--set",
+    "S150",
+    "--fixtures",
+    "{FIX}",
+    "--first",
+    "10"
+   ]
+  }
+ ]
+}

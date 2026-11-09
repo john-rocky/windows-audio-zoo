@@ -1,0 +1,17 @@
+Using Python 3.12.16 environment at: C:\src\audiozoo\.venv-genai-cuda
+Resolved 7 packages in 265ms
+Downloading onnxruntime-gpu (160.3MiB)
+Downloading onnxruntime-genai-cuda (8.6MiB)
+Downloading nvidia-cuda-runtime (2.7MiB)
+ Downloaded nvidia-cuda-runtime
+ Downloaded onnxruntime-genai-cuda
+ Downloaded onnxruntime-gpu
+Prepared 3 packages in 8.79s
+Installed 7 packages in 2.12s
+ + flatbuffers==25.12.19
+ + numpy==2.5.4
+ + nvidia-cuda-runtime==13.5.37
+ + onnxruntime-genai-cuda==0.19.0
+ + onnxruntime-gpu==1.31.1
+ + packaging==26.3
+ + protobuf==7.36.2

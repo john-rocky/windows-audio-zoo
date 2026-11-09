@@ -1,0 +1,9 @@
+Using Python 3.12.16 environment at: C:\src\audiozoo\.venv-genai-cuda
+Resolved 13 packages in 307ms
+Installed 6 packages in 404ms
+ + nvidia-cublas==13.10.0.20
+ + nvidia-cuda-nvrtc==13.5.37
+ + nvidia-cudnn-cu13==9.28.1.4
+ + nvidia-cufft==12.5.0.14
+ + nvidia-curand==10.4.5.25
+ + nvidia-nvjitlink==13.5.37

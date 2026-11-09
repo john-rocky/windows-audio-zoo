@@ -1,0 +1,100 @@
+[
+ {
+  "name": "writeback-s4-ort-fp32-cpu",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\writeback.py",
+   "--asr-dir",
+   "{ROOT}\\models\\OpenVINO__whisper-large-v3-turbo-fp16-ov",
+   "--run-json",
+   "{ROOT}\\runs\\s4\\kokoro\\ort-fp32-cpu\\run1.json"
+  ],
+  "timeout_min": 40,
+  "venv": "ovg",
+  "ram_gb": 4
+ },
+ {
+  "name": "writeback-s4-ort-fp32-rtx",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\writeback.py",
+   "--asr-dir",
+   "{ROOT}\\models\\OpenVINO__whisper-large-v3-turbo-fp16-ov",
+   "--run-json",
+   "{ROOT}\\runs\\s4\\kokoro\\ort-fp32-rtx\\run1.json"
+  ],
+  "timeout_min": 40,
+  "venv": "ovg",
+  "ram_gb": 4
+ },
+ {
+  "name": "writeback-s4-ovg-fp16-cpu",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\writeback.py",
+   "--asr-dir",
+   "{ROOT}\\models\\OpenVINO__whisper-large-v3-turbo-fp16-ov",
+   "--run-json",
+   "{ROOT}\\runs\\s4\\kokoro\\ovg-fp16-cpu\\run1.json"
+  ],
+  "timeout_min": 40,
+  "venv": "ovg",
+  "ram_gb": 4
+ },
+ {
+  "name": "writeback-s4-ovg-fp16-igpu",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\writeback.py",
+   "--asr-dir",
+   "{ROOT}\\models\\OpenVINO__whisper-large-v3-turbo-fp16-ov",
+   "--run-json",
+   "{ROOT}\\runs\\s4\\kokoro\\ovg-fp16-igpu\\run1.json"
+  ],
+  "timeout_min": 40,
+  "venv": "ovg",
+  "ram_gb": 4
+ },
+ {
+  "name": "writeback-s4-ovg-fp16-npu",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\writeback.py",
+   "--asr-dir",
+   "{ROOT}\\models\\OpenVINO__whisper-large-v3-turbo-fp16-ov",
+   "--run-json",
+   "{ROOT}\\runs\\s4\\kokoro\\ovg-fp16-npu\\run1.json"
+  ],
+  "timeout_min": 40,
+  "venv": "ovg",
+  "ram_gb": 4
+ },
+ {
+  "name": "writeback-s4-ovg-int8-cpu",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\writeback.py",
+   "--asr-dir",
+   "{ROOT}\\models\\OpenVINO__whisper-large-v3-turbo-fp16-ov",
+   "--run-json",
+   "{ROOT}\\runs\\s4\\kokoro\\ovg-int8-cpu\\run1.json"
+  ],
+  "timeout_min": 40,
+  "venv": "ovg",
+  "ram_gb": 4
+ },
+ {
+  "name": "writeback-s4-ovg-int8-igpu",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\writeback.py",
+   "--asr-dir",
+   "{ROOT}\\models\\OpenVINO__whisper-large-v3-turbo-fp16-ov",
+   "--run-json",
+   "{ROOT}\\runs\\s4\\kokoro\\ovg-int8-igpu\\run1.json"
+  ],
+  "timeout_min": 40,
+  "venv": "ovg",
+  "ram_gb": 4
+ }
+]

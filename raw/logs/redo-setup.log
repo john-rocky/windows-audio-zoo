@@ -1,0 +1,8 @@
+[2026-11-09T12:12:37.5433703+09:00] steps redo-setup start: 3 steps, pid 21928
+[2026-11-09T12:12:37.5905584+09:00] pip-ort-cuda start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe pip install --python C:\src\audiozoo\.venv-ort-cuda\Scripts\python.exe -r C:\src\audiozoo\pc\req\ort-cuda.txt
+[2026-11-09T12:15:05.9180000+09:00] pip-ort-cuda end: exit 0, 2.5 min
+[2026-11-09T12:15:05.9225661+09:00] pip-ort-cuda-nodeps start: C:\Users\USER\AppData\Local\Microsoft\WinGet\Links\uv.exe pip install --python C:\src\audiozoo\.venv-ort-cuda\Scripts\python.exe --no-deps -r C:\src\audiozoo\pc\req\ort-cuda.nodeps.txt
+[2026-11-09T12:15:06.0039981+09:00] pip-ort-cuda-nodeps end: exit 0, 0 min
+[2026-11-09T12:15:06.0039981+09:00] versions-ort-cuda start: C:\src\audiozoo\.venv-ort-cuda\Scripts\python.exe -I C:\src\audiozoo\pc\venv_versions.py --out C:\src\audiozoo\logs\versions-ort-cuda.txt
+[2026-11-09T12:15:06.4934228+09:00] versions-ort-cuda end: exit 0, 0 min
+[2026-11-09T12:15:06.4962187+09:00] steps redo-setup done: OK

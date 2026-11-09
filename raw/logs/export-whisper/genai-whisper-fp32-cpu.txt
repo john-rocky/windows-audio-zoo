@@ -1,0 +1,47 @@
+Valid precision + execution provider combinations are: FP32 CPU, FP32 CUDA, FP16 CUDA, FP16 DML, FP16 TRT-RTX, BF16 CUDA, BF16 TRT-RTX, INT8 CPU, INT8 CUDA, INT8 WebGPU, INT4 CPU, INT4 CUDA, INT4 DML, INT4 WebGPU
+Extra options: {}
+Attention (packed) is used in this model.
+Reading layer 0
+Reading layer 1
+Reading layer 2
+Reading layer 3
+Reading layer 4
+Reading layer 5
+Reading layer 6
+Reading layer 7
+Reading layer 8
+Reading layer 9
+Reading layer 10
+Reading layer 11
+Reading layer 12
+Reading layer 13
+Reading layer 14
+Reading layer 15
+Reading layer 16
+Reading layer 17
+Reading layer 18
+Reading layer 19
+Reading layer 20
+Reading layer 21
+Reading layer 22
+Reading layer 23
+Reading layer 24
+Reading layer 25
+Reading layer 26
+Reading layer 27
+Reading layer 28
+Reading layer 29
+Reading layer 30
+Reading layer 31
+Reading final norm
+Reading embedding layer
+Reading embedding layer
+Reading layer 0
+Reading layer 1
+Reading layer 2
+Reading layer 3
+Reading final norm
+Reading LM head
+Saving ONNX model in C:\src\audiozoo\exports\whisper-genai-fp32-cpu
+Saving ONNX model in C:\src\audiozoo\exports\whisper-genai-fp32-cpu
+Saving processing files in C:\src\audiozoo\exports\whisper-genai-fp32-cpu for GenAI

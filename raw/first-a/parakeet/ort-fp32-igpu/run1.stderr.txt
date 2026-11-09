@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\src\audiozoo\pc\run_asr_ort_parakeet.py", line 88, in main
+    model.asr._encoder = device_session(ort, enc, args, args.ep, dev)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\src\audiozoo\pc\run_asr_ort_parakeet.py", line 40, in device_session
+    raise RuntimeError(f"no OpenVINO EP device {args.ov_device}: "
+RuntimeError: no OpenVINO EP device GPU: [None, 'NPU', 'GPU.0', 'CPU', 'NPU', 'GPU.0', 'CPU']
+

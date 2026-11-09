@@ -1,0 +1,30 @@
+{
+ "asr": {
+  "pipeline": "openvino_genai.ASRPipeline",
+  "model": "OpenVINO__whisper-large-v3-turbo-fp16-ov",
+  "device": "CPU",
+  "language": "<|en|>",
+  "versions": {
+   "python": "3.12.16",
+   "openvino-genai": "2026.4.1.0",
+   "openvino": "2026.4.1",
+   "scipy": "1.18.1",
+   "numpy": "2.5.4"
+  }
+ },
+ "source": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ovg-int8-cpu\\run1.json",
+ "texts": {
+  "en_us_1660": "Romanticism had a large element of cultural determinism, drawn from writers such as and",
+  "en_us_1661": "He did not set a figure for the cuts, saying they will be made based on China's economic output.",
+  "en_us_1662": "Alloys are basically a mixture of two or more metals. Don't forget that there are many elements on the periodic table.",
+  "en_us_1663": "Valley Chile's premier climbing destination, known as the of South America, with a variety of granite big walls and crags,",
+  "en_us_1664": "Swirl the two dry powders together and then, with clean wet hands, squeeze them into a ball.",
+  "en_us_1665": "The document, according to the leak, will refer to the borders dispute, which Palestine wants based on the borders before the 1967 Mideast War.",
+  "en_us_1666": "You may also wish to consult the advice of governments other than your own, but their advice is designed for their citizens.",
+  "en_us_1667": "Generally speaking, two behaviors can emerge as managers begin to lead their former peers. One end of the spectrum is trying to remain one of the guys or gals.",
+  "en_us_1668": "It may also be beneficial for one to buy a wildcard, which provides entry to either selections of parks in South Africa or all of the South African national parks.",
+  "en_us_1669": "Police superintendent said the accused appeared in court with covered faces."
+ },
+ "started": "2026-11-09T15:16:03.323089+09:00",
+ "ended": "2026-11-09T15:18:07.735022+09:00"
+}

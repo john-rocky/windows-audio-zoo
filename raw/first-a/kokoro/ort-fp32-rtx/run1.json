@@ -1,0 +1,168 @@
+{
+ "runner": "run_tts_ort.py",
+ "started": "2026-11-09T15:10:29.946062+09:00",
+ "argv": [
+  "--model",
+  "C:\\src\\audiozoo\\models\\onnx-community__Kokoro-82M-v1.0-ONNX\\onnx\\model.onnx",
+  "--voice-bin",
+  "C:\\src\\audiozoo\\models\\onnx-community__Kokoro-82M-v1.0-ONNX\\voices\\af_heart.bin",
+  "--ep",
+  "cuda",
+  "--set",
+  "T50",
+  "--fixtures",
+  "C:\\src\\audiozoo\\fixtures",
+  "--first",
+  "10",
+  "--out",
+  "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ort-fp32-rtx\\run1.json"
+ ],
+ "pid": 9544,
+ "status": "OK",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.004
+ },
+ "rows": [
+  {
+   "id": "en_us_1660",
+   "text_in": "Romanticism had a large element of cultural determinism, drawn from writers such as Goethe, Fichte, and Schlegel.",
+   "wall_s": 0.4738698000146542,
+   "audio_s": 7.317333333333333,
+   "rate": 24000,
+   "peak_abs": 0.7183471918106079,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ort-fp32-rtx\\wav\\en_us_1660.wav"
+  },
+  {
+   "id": "en_us_1661",
+   "text_in": "He did not set a figure for the cuts, saying they will be made based on China's economic output.",
+   "wall_s": 0.3961475999967661,
+   "audio_s": 5.354666666666667,
+   "rate": 24000,
+   "peak_abs": 0.5775370597839355,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ort-fp32-rtx\\wav\\en_us_1661.wav"
+  },
+  {
+   "id": "en_us_1662",
+   "text_in": "Alloys are basically a mixture of two or more metals. Don't forget that there are many elements on the periodic table.",
+   "wall_s": 0.49383719998877496,
+   "audio_s": 6.997333333333334,
+   "rate": 24000,
+   "peak_abs": 0.6373759508132935,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ort-fp32-rtx\\wav\\en_us_1662.wav"
+  },
+  {
+   "id": "en_us_1663",
+   "text_in": "Cochamó Valley - Chile's premier climbing destination, known as the Yosemite of South America, with a variety of granite big walls and crags.",
+   "wall_s": 0.5918968000041787,
+   "audio_s": 8.938666666666666,
+   "rate": 24000,
+   "peak_abs": 0.5045425295829773,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ort-fp32-rtx\\wav\\en_us_1663.wav"
+  },
+  {
+   "id": "en_us_1664",
+   "text_in": "Swirl the two dry powders together and then, with clean wet hands, squeeze them into a ball.",
+   "wall_s": 0.4271347999747377,
+   "audio_s": 5.525333333333333,
+   "rate": 24000,
+   "peak_abs": 0.6510115265846252,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ort-fp32-rtx\\wav\\en_us_1664.wav"
+  },
+  {
+   "id": "en_us_1665",
+   "text_in": "The document, according to the leak, will refer to the borders dispute, which Palestine wants based on the borders before the 1967 Mideast War.",
+   "wall_s": 0.5542074000113644,
+   "audio_s": 9.365333333333334,
+   "rate": 24000,
+   "peak_abs": 0.527845561504364,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ort-fp32-rtx\\wav\\en_us_1665.wav"
+  },
+  {
+   "id": "en_us_1666",
+   "text_in": "You may also wish to consult the advice of governments other than your own, but their advice is designed for their citizens.",
+   "wall_s": 0.4348138000059407,
+   "audio_s": 6.997333333333334,
+   "rate": 24000,
+   "peak_abs": 0.5632782578468323,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ort-fp32-rtx\\wav\\en_us_1666.wav"
+  },
+  {
+   "id": "en_us_1667",
+   "text_in": "Generally speaking, two behaviors can emerge as managers begin to lead their former peers. One end of the spectrum is trying to remain “one of the guys” (or gals).",
+   "wall_s": 0.5713680000044405,
+   "audio_s": 10.24,
+   "rate": 24000,
+   "peak_abs": 0.5525653958320618,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ort-fp32-rtx\\wav\\en_us_1667.wav"
+  },
+  {
+   "id": "en_us_1668",
+   "text_in": "It may also be beneficial for one to buy a Wild Card, which provides entry to either selections of parks in South Africa or all of the South African National Parks.",
+   "wall_s": 0.581325300008757,
+   "audio_s": 10.304,
+   "rate": 24000,
+   "peak_abs": 0.775255560874939,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ort-fp32-rtx\\wav\\en_us_1668.wav"
+  },
+  {
+   "id": "en_us_1669",
+   "text_in": "Police superintendent Chandra Shekhar Solanki said the accused appeared in court with covered faces.",
+   "wall_s": 0.4062143000192009,
+   "audio_s": 6.016,
+   "rate": 24000,
+   "peak_abs": 0.5793616771697998,
+   "all_silent": false,
+   "wav": "C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ort-fp32-rtx\\wav\\en_us_1669.wav"
+  }
+ ],
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime-gpu": "1.31.1",
+  "kokoro-onnx": "0.6.1",
+  "espeakng-loader": "0.2.4",
+  "phonemizer": "3.6.0",
+  "numpy": "2.5.4"
+ },
+ "cuda_dll_dirs": [
+  "C:\\src\\audiozoo\\.venv-ort-cuda\\Lib\\site-packages\\nvidia\\cu13\\bin\\x86_64",
+  "C:\\src\\audiozoo\\.venv-ort-cuda\\Lib\\site-packages\\nvidia\\cudnn\\bin"
+ ],
+ "load_s": 3.29,
+ "device": {},
+ "session_providers": [
+  "CUDAExecutionProvider",
+  "CPUExecutionProvider"
+ ],
+ "workload": {
+  "set": "T50",
+  "voice": "af_heart",
+  "language": "en-us",
+  "speed": 1.0,
+  "g2p": "kokoro-onnx (espeak-ng through espeakng-loader)",
+  "model": "model.onnx"
+ },
+ "warmup_s": 1.977,
+ "summary": {
+  "clips": 10,
+  "audio_s": 77.056,
+  "wall_s": 4.931,
+  "rtf": 0.06399,
+  "silent": 0
+ },
+ "peak_working_set_bytes": 1283715072,
+ "peak_pagefile_bytes": 3492970496,
+ "ended": "2026-11-09T15:10:41.352613+09:00",
+ "process_s": 11.407
+}

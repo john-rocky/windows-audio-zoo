@@ -1,0 +1,38 @@
+{
+ "cell": "whisper/ovg-int4-npu",
+ "model": "whisper",
+ "runtime": "OpenVINO GenAI 2026.4.1",
+ "form": "int4",
+ "device": "npu",
+ "device_name": "Intel NPU",
+ "set": null,
+ "mode": "first",
+ "sitting": "first-an",
+ "status": "TIMEOUT",
+ "record": {
+  "run": null,
+  "meta": "raw/first-an/whisper/ovg-int4-npu/run1.meta.json",
+  "chain_log": "raw/first-an/chain.log"
+ },
+ "error": "no runner JSON: the chain's 30-min limit, try 3",
+ "versions": null,
+ "load_s": null,
+ "summary": null,
+ "gate": null,
+ "power": null,
+ "desktop_locked": null,
+ "engine": {
+  "elapsedSeconds": 1800.691,
+  "peakWorkingSetBytes": 1887436800,
+  "gpuMiBPeak": {
+   "0x00000000_0x00013E4C": {
+    "shared": 0,
+    "dedicated": 0
+   }
+  },
+  "exitCode": null,
+  "timedOut": true,
+  "suspendedSeconds": 0
+ },
+ "tries": 3
+}

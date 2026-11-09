@@ -1,0 +1,3602 @@
+{
+ "fixtures_root": "clips/s150",
+ "sample_rate": 16000,
+ "format": "wav PCM_16 mono",
+ "selection": {
+  "examples": "FunAudioLLM/Fun-ASR-Nano-2512@272c57b82523ada6fd87095e955f8e29100979ab example/*.mp3 -> ffmpeg 16 kHz mono s16",
+  "fleurs": "google/fleurs@70bb2e84b976b7e960aa89f1c648e09c59f894dd parquet-data/<config>/test-00000-of-00001.parquet; rows sorted by (id, path), first row per id, ascending id, first 50 with <= 30 s",
+  "fleurs_stats": {
+   "en_us": {
+    "rows": 647,
+    "unique_ids": 350,
+    "columns": [
+     "id",
+     "num_samples",
+     "path",
+     "audio",
+     "transcription",
+     "raw_transcription",
+     "gender",
+     "lang_id",
+     "language",
+     "lang_group_id"
+    ],
+    "skipped_over_30s_ids": [],
+    "picked": 50
+   },
+   "cmn_hans_cn": {
+    "rows": 945,
+    "unique_ids": 349,
+    "columns": [
+     "id",
+     "num_samples",
+     "path",
+     "audio",
+     "transcription",
+     "raw_transcription",
+     "gender",
+     "lang_id",
+     "language",
+     "lang_group_id"
+    ],
+    "skipped_over_30s_ids": [],
+    "picked": 50
+   },
+   "ja_jp": {
+    "rows": 650,
+    "unique_ids": 321,
+    "columns": [
+     "id",
+     "num_samples",
+     "path",
+     "audio",
+     "transcription",
+     "raw_transcription",
+     "gender",
+     "lang_id",
+     "language",
+     "lang_group_id"
+    ],
+    "skipped_over_30s_ids": [],
+    "picked": 50
+   }
+  }
+ },
+ "clips": [
+  {
+   "name": "zh",
+   "path": "examples/zh.wav",
+   "source": {
+    "repo": "FunAudioLLM/Fun-ASR-Nano-2512",
+    "revision": "272c57b82523ada6fd87095e955f8e29100979ab",
+    "file": "example/zh.mp3",
+    "file_sha256": "0e64de19e4ff9a02e682955c9112f32d2317cfdbb5bc2f3504664044c993f195",
+    "mp3_sample_rate_channels": "48000,1",
+    "decode": "ffmpeg -ac 1 -ar 16000 -sample_fmt s16"
+   },
+   "license": "Apache-2.0 model repo example",
+   "duration_s": 5.616,
+   "num_samples": 89856,
+   "sha256": "e5927d10846fd058fbd191d3dbe6520fba2d613dc18a8052ebcc7b789c5d3ff7",
+   "reference_text": null
+  },
+  {
+   "name": "en",
+   "path": "examples/en.wav",
+   "source": {
+    "repo": "FunAudioLLM/Fun-ASR-Nano-2512",
+    "revision": "272c57b82523ada6fd87095e955f8e29100979ab",
+    "file": "example/en.mp3",
+    "file_sha256": "f10378336a4e584f3f63799e62f99d5add3c2a401b51d3abe7d3a3a82f255ada",
+    "mp3_sample_rate_channels": "48000,1",
+    "decode": "ffmpeg -ac 1 -ar 16000 -sample_fmt s16"
+   },
+   "license": "Apache-2.0 model repo example",
+   "duration_s": 7.176,
+   "num_samples": 114816,
+   "sha256": "52b43a5e86f62650892309e70520730b3366749a2ee9485dc5c16653da90d5a4",
+   "reference_text": null
+  },
+  {
+   "name": "ja",
+   "path": "examples/ja.wav",
+   "source": {
+    "repo": "FunAudioLLM/Fun-ASR-Nano-2512",
+    "revision": "272c57b82523ada6fd87095e955f8e29100979ab",
+    "file": "example/ja.mp3",
+    "file_sha256": "496dbc43b289e1d0d0cb916df9737450bca56acd8aaca046a7a2472363b1be53",
+    "mp3_sample_rate_channels": "48000,1",
+    "decode": "ffmpeg -ac 1 -ar 16000 -sample_fmt s16"
+   },
+   "license": "Apache-2.0 model repo example",
+   "duration_s": 7.224,
+   "num_samples": 115584,
+   "sha256": "0457f63e3153715a82fb6a4266ec922d983d68d7b56547992f41321c8280e376",
+   "reference_text": null
+  },
+  {
+   "name": "ko",
+   "path": "examples/ko.wav",
+   "source": {
+    "repo": "FunAudioLLM/Fun-ASR-Nano-2512",
+    "revision": "272c57b82523ada6fd87095e955f8e29100979ab",
+    "file": "example/ko.mp3",
+    "file_sha256": "8612f62db8319a6cb4ab4b1d2039bfc32f174f89611889ddafdeb5c0a6070b5f",
+    "mp3_sample_rate_channels": "32000,1",
+    "decode": "ffmpeg -ac 1 -ar 16000 -sample_fmt s16"
+   },
+   "license": "Apache-2.0 model repo example",
+   "duration_s": 4.644,
+   "num_samples": 74304,
+   "sha256": "467ed0d08f4e57cba974c0bb4cbed2f0fa9d76d2b0a985299ca0c0408bb7b805",
+   "reference_text": null
+  },
+  {
+   "name": "yue",
+   "path": "examples/yue.wav",
+   "source": {
+    "repo": "FunAudioLLM/Fun-ASR-Nano-2512",
+    "revision": "272c57b82523ada6fd87095e955f8e29100979ab",
+    "file": "example/yue.mp3",
+    "file_sha256": "5098eebc13530a66e4eac1f30d3246e65c9cfc4e096665f9d395aca8eff0d181",
+    "mp3_sample_rate_channels": "32000,1",
+    "decode": "ffmpeg -ac 1 -ar 16000 -sample_fmt s16"
+   },
+   "license": "Apache-2.0 model repo example",
+   "duration_s": 5.184,
+   "num_samples": 82944,
+   "sha256": "fccb102423a70d4f982baa4e3647b7c9daefb47a776d6f5c6ea04340ff64cda0",
+   "reference_text": null
+  },
+  {
+   "name": "en_us_1660",
+   "path": "fleurs/en_us/1660.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1660,
+    "fleurs_file": "12742373433258665797.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.68,
+   "num_samples": 170880,
+   "sha256": "0f608e0e9e87ffca1289b5180322e7f88f532195820e4fdce53fc9ef5e67e4e7",
+   "reference_text": {
+    "transcription": "romanticism had a large element of cultural determinism drawn from writers such as goethe fichte and schlegel",
+    "raw_transcription": "Romanticism had a large element of cultural determinism, drawn from writers such as Goethe, Fichte, and Schlegel."
+   }
+  },
+  {
+   "name": "en_us_1661",
+   "path": "fleurs/en_us/1661.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1661,
+    "fleurs_file": "6917907748364342404.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 6.36,
+   "num_samples": 101760,
+   "sha256": "779f912307ff0982dfe146e19366685e8d57976e221b3bef271d199361d769b8",
+   "reference_text": {
+    "transcription": "he did not set a figure for the cuts saying they will be made based on china's economic output",
+    "raw_transcription": "He did not set a figure for the cuts, saying they will be made based on China's economic output."
+   }
+  },
+  {
+   "name": "en_us_1662",
+   "path": "fleurs/en_us/1662.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1662,
+    "fleurs_file": "10614481583312370701.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 8.38,
+   "num_samples": 134080,
+   "sha256": "b4a5f1c4c1c3769c7344892db3996ea04eb842baf6fa28be28acb1e79a95f03d",
+   "reference_text": {
+    "transcription": "alloys are basically a mixture of two or more metals don't forget that there are many elements on the periodic table",
+    "raw_transcription": "Alloys are basically a mixture of two or more metals. Don't forget that there are many elements on the periodic table."
+   }
+  },
+  {
+   "name": "en_us_1663",
+   "path": "fleurs/en_us/1663.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1663,
+    "fleurs_file": "3156459702070203007.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 12.12,
+   "num_samples": 193920,
+   "sha256": "3fba7a13be7eba17263cb9e017c41a0040e7bb4ab8e84d454ce9858520aa1507",
+   "reference_text": {
+    "transcription": "cochamó valley - chile's premier climbing destination known as the yosemite of south america with a variety of granite big walls and crags",
+    "raw_transcription": "Cochamó Valley - Chile's premier climbing destination, known as the Yosemite of South America, with a variety of granite big walls and crags."
+   }
+  },
+  {
+   "name": "en_us_1664",
+   "path": "fleurs/en_us/1664.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1664,
+    "fleurs_file": "13031516147694203229.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 8.36,
+   "num_samples": 133760,
+   "sha256": "702fa8c3cf5341589a026377caa98d463853a55d8e270b6f72856cbe1321b37e",
+   "reference_text": {
+    "transcription": "swirl the two dry powders together and then with clean wet hands squeeze them into a ball",
+    "raw_transcription": "Swirl the two dry powders together and then, with clean wet hands, squeeze them into a ball."
+   }
+  },
+  {
+   "name": "en_us_1665",
+   "path": "fleurs/en_us/1665.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1665,
+    "fleurs_file": "3364947814969998944.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 8.28,
+   "num_samples": 132480,
+   "sha256": "7077b38c6e54cbfa42fea8acacc931ebac9d015ba63b94ed57d9408745df4edd",
+   "reference_text": {
+    "transcription": "the document according to the leak will refer to the borders dispute which palestine wants based on the borders before the 1967 mideast war",
+    "raw_transcription": "The document, according to the leak, will refer to the borders dispute, which Palestine wants based on the borders before the 1967 Mideast War."
+   }
+  },
+  {
+   "name": "en_us_1666",
+   "path": "fleurs/en_us/1666.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1666,
+    "fleurs_file": "13875708868701082683.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 8.34,
+   "num_samples": 133440,
+   "sha256": "9ea7d021fefc00b6569be88250913b2998933780fc900df664e45137de884a84",
+   "reference_text": {
+    "transcription": "you may also wish to consult the advice of governments other than your own but their advice is designed for their citizens",
+    "raw_transcription": "You may also wish to consult the advice of governments other than your own, but their advice is designed for their citizens."
+   }
+  },
+  {
+   "name": "en_us_1667",
+   "path": "fleurs/en_us/1667.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1667,
+    "fleurs_file": "11554335886429174193.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 14.22,
+   "num_samples": 227520,
+   "sha256": "35123ac3a3e4a5aea39c2a54e4149db13e4404657ad34a93321639c2a5ebe551",
+   "reference_text": {
+    "transcription": "generally speaking two behaviors can emerge as managers begin to lead their former peers. one end of the spectrum is trying to remain  one of the guys” or gals",
+    "raw_transcription": "Generally speaking, two behaviors can emerge as managers begin to lead their former peers. One end of the spectrum is trying to remain “one of the guys” (or gals)."
+   }
+  },
+  {
+   "name": "en_us_1668",
+   "path": "fleurs/en_us/1668.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1668,
+    "fleurs_file": "12519810849995407480.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 13.32,
+   "num_samples": 213120,
+   "sha256": "89293c36ea8a2b0065a632f6cd9af35fcbcb442eaf43909c1a5780a74897e902",
+   "reference_text": {
+    "transcription": "it may also be beneficial for one to buy a wild card which provides entry to either selections of parks in south africa or all of the south african national parks",
+    "raw_transcription": "It may also be beneficial for one to buy a Wild Card, which provides entry to either selections of parks in South Africa or all of the South African National Parks."
+   }
+  },
+  {
+   "name": "en_us_1669",
+   "path": "fleurs/en_us/1669.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1669,
+    "fleurs_file": "15618717836108767541.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 7.2,
+   "num_samples": 115200,
+   "sha256": "c19bbd275356b0310fa0d0687a4a736a6f59d7c503de2769ae5309b3ac676142",
+   "reference_text": {
+    "transcription": "police superintendent chandra shekhar solanki said the accused appeared in court with covered faces",
+    "raw_transcription": "Police superintendent Chandra Shekhar Solanki said the accused appeared in court with covered faces."
+   }
+  },
+  {
+   "name": "en_us_1670",
+   "path": "fleurs/en_us/1670.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1670,
+    "fleurs_file": "2508559905589212221.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 29.3,
+   "num_samples": 468800,
+   "sha256": "523a4c84775ad35c1ce474012b9f31368da2d3ea9ab10e99f35a59182d417902",
+   "reference_text": {
+    "transcription": "their thermal behavior is not as steady as large caves on earth that often maintain a fairly constant temperature but it is consistent with these being deep holes in the ground, said glen cushing of the united states geological survey usgs astrogeology team and of northern arizona university located in flagstaff arizona",
+    "raw_transcription": "Their thermal behavior is not as steady as large caves on Earth that often maintain a fairly constant temperature, but it is consistent with these being deep holes in the ground,\" said Glen Cushing of the United States Geological Survey (USGS) Astrogeology Team and of Northern Arizona University located in Flagstaff, Arizona."
+   }
+  },
+  {
+   "name": "en_us_1671",
+   "path": "fleurs/en_us/1671.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1671,
+    "fleurs_file": "12784232275162817860.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.02,
+   "num_samples": 160320,
+   "sha256": "84845e2cb982b5d0e56c518c4e4bebdf071b0edce0726161347adca885c2202f",
+   "reference_text": {
+    "transcription": "congress began funding the obscenity initiative in fiscal 2005 and specified that the fbi must devote 10 agents to adult pornography",
+    "raw_transcription": "Congress began funding the obscenity initiative in fiscal 2005 and specified that the FBI must devote 10 agents to adult pornography."
+   }
+  },
+  {
+   "name": "en_us_1672",
+   "path": "fleurs/en_us/1672.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1672,
+    "fleurs_file": "3337787499768294195.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.16,
+   "num_samples": 162560,
+   "sha256": "9e11f406dde11a176e87d619600b5481af9a76b5669add902ef709238fe0f308",
+   "reference_text": {
+    "transcription": "be careful not to allow fabric to become too hot which can cause shrinkage or in extreme cases scorch",
+    "raw_transcription": "Be careful not to allow fabric to become too hot (which can cause shrinkage, or in extreme cases, scorch)."
+   }
+  },
+  {
+   "name": "en_us_1673",
+   "path": "fleurs/en_us/1673.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1673,
+    "fleurs_file": "2637301866626572038.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.08,
+   "num_samples": 161280,
+   "sha256": "48f640b35e2954d62f0d8abdade29b67b36af04e815aa61c4466363c1b4a6f00",
+   "reference_text": {
+    "transcription": "during the revolutionary war the thirteen states first formed a weak central government-with the congress being its only component-under the articles of confederation",
+    "raw_transcription": "During the Revolutionary War, the thirteen states first formed a weak central government—with the Congress being its only component—under the Articles of Confederation."
+   }
+  },
+  {
+   "name": "en_us_1674",
+   "path": "fleurs/en_us/1674.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1674,
+    "fleurs_file": "10492135991603561867.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 5.64,
+   "num_samples": 90240,
+   "sha256": "a8b0dbfb163abcdfcd0c98112d06d471293f498c63be8dd200601495e0a6b2bf",
+   "reference_text": {
+    "transcription": "in some areas boiling water for a minute is enough in others several minutes are needed",
+    "raw_transcription": "In some areas boiling water for a minute is enough, in others several minutes are needed."
+   }
+  },
+  {
+   "name": "en_us_1675",
+   "path": "fleurs/en_us/1675.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1675,
+    "fleurs_file": "10052240106321793346.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 8.76,
+   "num_samples": 140160,
+   "sha256": "fd99727983733f9771077fe1a030fcc44ea7e16be1e9396cff525db2886a8f0f",
+   "reference_text": {
+    "transcription": "all nouns alongside the word sie for you always begin with a capital letter even in the middle of a sentence",
+    "raw_transcription": "All nouns, alongside the word Sie for you, always begin with a capital letter, even in the middle of a sentence."
+   }
+  },
+  {
+   "name": "en_us_1676",
+   "path": "fleurs/en_us/1676.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1676,
+    "fleurs_file": "3236057319333367673.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 9.42,
+   "num_samples": 150720,
+   "sha256": "6a6ace0c274b05f2b287a0f246688c82ab1b2f24d00786860b92941365fa1307",
+   "reference_text": {
+    "transcription": "as with all south african national parks there are daily conservation and entry fees for the park",
+    "raw_transcription": "As with all South African National Parks, there are daily conservation and entry fees for the park."
+   }
+  },
+  {
+   "name": "en_us_1677",
+   "path": "fleurs/en_us/1677.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1677,
+    "fleurs_file": "1731561740051730459.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 5.94,
+   "num_samples": 95040,
+   "sha256": "6d4e9a0532459969ac13d6f16dc5099f93fb2a4d4637392a2a9c7e8ecb278cb7",
+   "reference_text": {
+    "transcription": "today the only insects that cannot fold back their wings are dragon flies and mayflies",
+    "raw_transcription": "Today, the only insects that cannot fold back their wings are dragon flies and mayflies."
+   }
+  },
+  {
+   "name": "en_us_1678",
+   "path": "fleurs/en_us/1678.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1678,
+    "fleurs_file": "1111475259790805601.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 12.78,
+   "num_samples": 204480,
+   "sha256": "4676663ad860d56c3b17f26f957fc2e86ee364111aa6e8b0c1430bb72006457d",
+   "reference_text": {
+    "transcription": "oliver sacks in his paper the president's speech indicated how people who are unable to understand speech because of brain damage are nevertheless able to assess sincerity accurately",
+    "raw_transcription": "Oliver Sacks, in his paper The President's Speech, indicated how people who are unable to understand speech because of brain damage are nevertheless able to assess sincerity accurately."
+   }
+  },
+  {
+   "name": "en_us_1679",
+   "path": "fleurs/en_us/1679.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1679,
+    "fleurs_file": "1830239880893513318.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 3.96,
+   "num_samples": 63360,
+   "sha256": "4ea752db78e6b44aa2f6f3619382d9d9df7d6bc731fae1d490f0a3c1d98df013",
+   "reference_text": {
+    "transcription": "aerosmith have cancelled their remaining concerts on their tour",
+    "raw_transcription": "Aerosmith have cancelled their remaining concerts on their tour."
+   }
+  },
+  {
+   "name": "en_us_1680",
+   "path": "fleurs/en_us/1680.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1680,
+    "fleurs_file": "10894616243452123700.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.2,
+   "num_samples": 163200,
+   "sha256": "8d69bfff7fcabafcbc2a96974129aaad5441572368963a350d467e3921805062",
+   "reference_text": {
+    "transcription": "a well rounded athlete the tiger can climb though not well swim leap great distances and pull with five times the force of a strong human",
+    "raw_transcription": "A well rounded athlete, the tiger can climb (though not well), swim, leap great distances and pull with five times the force of a strong human."
+   }
+  },
+  {
+   "name": "en_us_1681",
+   "path": "fleurs/en_us/1681.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1681,
+    "fleurs_file": "4822858934027125258.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 19.98,
+   "num_samples": 319680,
+   "sha256": "888ee8d39457730e1a8b22717084955eb971f9f5099bae090c49c28a4c9b6539",
+   "reference_text": {
+    "transcription": "it isn't alone though experimentation and an experiment is a test that is used to eliminate one or more of the possible hypotheses asking questions and making observations also guide scientific research",
+    "raw_transcription": "It isn’t alone though, experimentation, and an experiment is a test that is used to eliminate one or more of the possible hypotheses, asking questions, and making observations also guide scientific research."
+   }
+  },
+  {
+   "name": "en_us_1682",
+   "path": "fleurs/en_us/1682.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1682,
+    "fleurs_file": "9924305423057523453.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 15.64,
+   "num_samples": 250240,
+   "sha256": "9eaf2a82389a5a6025ce3b0d59efc3025779c0c6c58201dc8b2fd493ec4ef3c9",
+   "reference_text": {
+    "transcription": "while no one knows for certain who wrote it it is known that early in its life the large parchment document it measures 29¾ inches by 24½ inches was rolled up for storage",
+    "raw_transcription": "While no one knows for certain who wrote it, it is known that early in its life, the large parchment document (it measures 29¾ inches by 24½ inches) was rolled up for storage."
+   }
+  },
+  {
+   "name": "en_us_1683",
+   "path": "fleurs/en_us/1683.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1683,
+    "fleurs_file": "14624695685248966546.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.1,
+   "num_samples": 177600,
+   "sha256": "873b09d81c8ef85d0ab72cb1e9485baeaf87d54fc772fe26e01c765251c2a4cd",
+   "reference_text": {
+    "transcription": "there are still many men and women alive who survived their time here and many more who had loved ones who were murdered or worked to death there jews and non-jews alike",
+    "raw_transcription": "There are still many men and women alive who survived their time here, and many more who had loved ones who were murdered or worked to death there, Jews and non-Jews alike."
+   }
+  },
+  {
+   "name": "en_us_1684",
+   "path": "fleurs/en_us/1684.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1684,
+    "fleurs_file": "4496786334735634498.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.96,
+   "num_samples": 175360,
+   "sha256": "c788ee151ea8e0e9b7682521e4f2d901db0813138aabcbbeb6b2d5512dee6ae0",
+   "reference_text": {
+    "transcription": "apia is the capital of samoa the town is on the island of upolu and has a population of just under 40,000",
+    "raw_transcription": "Apia is the capital of Samoa. The town is on the island of Upolu and has a population of just under 40,000."
+   }
+  },
+  {
+   "name": "en_us_1685",
+   "path": "fleurs/en_us/1685.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1685,
+    "fleurs_file": "1045619486290403122.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 13.92,
+   "num_samples": 222720,
+   "sha256": "31db67c3bb01ffa42be033d2627da6e8dd301b99f5390f20e8be293cebba4cc4",
+   "reference_text": {
+    "transcription": "for example the most common still image photography format in the world is 35mm which was the dominant film size at the close of the analog film era",
+    "raw_transcription": "For example, the most common still image photography format in the world is 35mm, which was the dominant film size at the close of the analog film era."
+   }
+  },
+  {
+   "name": "en_us_1686",
+   "path": "fleurs/en_us/1686.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1686,
+    "fleurs_file": "8036301841859634130.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 12.12,
+   "num_samples": 193920,
+   "sha256": "d400fd5253713eda5e5e0cc0b1711a9ac047f76843392311e8c480d7efed9a24",
+   "reference_text": {
+    "transcription": "as a result the process of an organization working together to overcome an obstacle can lead to a new innovative process to serve the customer's need",
+    "raw_transcription": "As a result, the process of an organization working together to overcome an obstacle can lead to a new innovative process to serve the customer's need."
+   }
+  },
+  {
+   "name": "en_us_1687",
+   "path": "fleurs/en_us/1687.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1687,
+    "fleurs_file": "13888599635337906526.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.52,
+   "num_samples": 184320,
+   "sha256": "8cae96fd853a92d303bd8eb2e15d2bbe513aa29f28cef2973db3cea4324acd2c",
+   "reference_text": {
+    "transcription": "segregation and recombination shuffle variation back and forth between the two pools with each generation",
+    "raw_transcription": "Segregation and recombination shuffle variation back and forth between the two pools with each generation."
+   }
+  },
+  {
+   "name": "en_us_1688",
+   "path": "fleurs/en_us/1688.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1688,
+    "fleurs_file": "3039867296204116367.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 17.44,
+   "num_samples": 279040,
+   "sha256": "a7c88b00b6e6e8c5cc2fa422eeb4d4efe494277cf67a67ea302293d5e996c5d2",
+   "reference_text": {
+    "transcription": "the job of navies has traditionally been to ensure that your country maintains the ability to move your people and goods while at the same time interfering with your enemy's ability to move his people and goods",
+    "raw_transcription": "The job of navies has traditionally been to ensure that your country maintains the ability to move your people and goods, while at the same time, interfering with your enemy's ability to move his people and goods."
+   }
+  },
+  {
+   "name": "en_us_1689",
+   "path": "fleurs/en_us/1689.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1689,
+    "fleurs_file": "14328568808003469713.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 20.76,
+   "num_samples": 332160,
+   "sha256": "b75624f03ccffcb848380c4b86d60a505e020bb66e9d81dc4ec6bafbc8d8fbbe",
+   "reference_text": {
+    "transcription": "europe is a continent that is relatively small but with many independent countries under normal circumstances travelling through multiple countries would mean having to go through visa applications and passport control multiple times",
+    "raw_transcription": "Europe is a continent that is relatively small but with many independent countries. Under normal circumstances, travelling through multiple countries would mean having to go through visa applications and passport control multiple times."
+   }
+  },
+  {
+   "name": "en_us_1690",
+   "path": "fleurs/en_us/1690.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1690,
+    "fleurs_file": "13542330409815692480.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 19.66,
+   "num_samples": 314560,
+   "sha256": "dc86e4b98a1ed8c230b8fa26289b30d2a6095b8f4c2d3f96d6f28dc76fe1bb48",
+   "reference_text": {
+    "transcription": "we agree with the usoc's statement that the interests of our athletes and clubs and their sport may be better served by moving forward with meaningful change within our organization rather than decertification",
+    "raw_transcription": "We agree with the USOC's statement that the interests of our athletes and clubs, and their sport, may be better served by moving forward with meaningful change within our organization, rather than decertification."
+   }
+  },
+  {
+   "name": "en_us_1691",
+   "path": "fleurs/en_us/1691.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1691,
+    "fleurs_file": "12382404601461539160.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 9.36,
+   "num_samples": 149760,
+   "sha256": "7c0578608e3450723dfe75162c52d31b249fecd41f7602703f3cf413b4067d67",
+   "reference_text": {
+    "transcription": "on some routes the larger companies have their own planes but for other routes and smaller firms there was a problem",
+    "raw_transcription": "On some routes, the larger companies have their own planes, but for other routes and smaller firms there was a problem."
+   }
+  },
+  {
+   "name": "en_us_1692",
+   "path": "fleurs/en_us/1692.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1692,
+    "fleurs_file": "15494714124475485422.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 7.38,
+   "num_samples": 118080,
+   "sha256": "b8b9790bcfe00589463647d32c319527c9f082ab3fbda1b35d9817b6d355842e",
+   "reference_text": {
+    "transcription": "according to japan's nuclear agency radioactive caesium and iodine has been identified at the plant",
+    "raw_transcription": "According to Japan's nuclear agency, radioactive caesium and iodine has been identified at the plant."
+   }
+  },
+  {
+   "name": "en_us_1693",
+   "path": "fleurs/en_us/1693.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1693,
+    "fleurs_file": "14681158725429032808.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 8.52,
+   "num_samples": 136320,
+   "sha256": "f253623dcce2997b9cb4fc447560e6ee9ff60940fd74a0b602193482fa59f017",
+   "reference_text": {
+    "transcription": "but after losing the captain's wicket india only made 36 runs loosing 7 wickets to end the innings",
+    "raw_transcription": "But, after losing the captain's wicket India only made 36 runs loosing 7 wickets to end the innings."
+   }
+  },
+  {
+   "name": "en_us_1694",
+   "path": "fleurs/en_us/1694.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1694,
+    "fleurs_file": "14160468372285024125.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.72,
+   "num_samples": 171520,
+   "sha256": "0c80a83e3db209e66736282afb1323406ed58355b235cddccd9fcb6df61b7b3a",
+   "reference_text": {
+    "transcription": "children are placed in foster care for a wide variety of reasons that range from neglect to abuse and even to extortion",
+    "raw_transcription": "Children are placed in Foster Care for a wide variety of reasons that range from neglect, to abuse, and even to extortion."
+   }
+  },
+  {
+   "name": "en_us_1695",
+   "path": "fleurs/en_us/1695.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1695,
+    "fleurs_file": "14077379425479054842.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 12.24,
+   "num_samples": 195840,
+   "sha256": "09803e91abab0919da62d826562a31e31c2cc0cd28aa55b9bdb32545e1fa17b0",
+   "reference_text": {
+    "transcription": "a simple popular dinner especially during the summer is the pa amb oli bread with olive oil tomato and any available condiments such as cheese tunafish etc",
+    "raw_transcription": "A simple popular dinner, especially during the summer, is the Pa amb Oli: Bread with olive oil, tomato, and any available condiments such as cheese, tunafish, etc."
+   }
+  },
+  {
+   "name": "en_us_1696",
+   "path": "fleurs/en_us/1696.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1696,
+    "fleurs_file": "15824575839049156888.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 7.44,
+   "num_samples": 119040,
+   "sha256": "523a6d12f9f9a4ac9a7cca3c5f8a9f85fffe815baaca8cf2db90d240919ac5e5",
+   "reference_text": {
+    "transcription": "the two compounds react with one another to form crystals that may block kidney function researchers at the university said",
+    "raw_transcription": "The two compounds react with one another to form crystals that may block kidney function, researchers at the university said."
+   }
+  },
+  {
+   "name": "en_us_1697",
+   "path": "fleurs/en_us/1697.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1697,
+    "fleurs_file": "15004506730396162914.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 6.36,
+   "num_samples": 101760,
+   "sha256": "15c77c6f08384b585e461bb95fd5219d19e3a066517ff381e363e16cd1e10869",
+   "reference_text": {
+    "transcription": "he has been unable to take the drugs needed to overcome his pain as they are banned from the games",
+    "raw_transcription": "He has been unable to take the drugs needed to overcome his pain as they are banned from the Games."
+   }
+  },
+  {
+   "name": "en_us_1698",
+   "path": "fleurs/en_us/1698.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1698,
+    "fleurs_file": "11966709226632417907.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 6.42,
+   "num_samples": 102720,
+   "sha256": "36718ccfb636286c28b33bdd416b9df15e469c5dbfe591dc9e6d07ca749b7816",
+   "reference_text": {
+    "transcription": "everything in the universe is made of matter all matter is made of tiny particles called atoms",
+    "raw_transcription": "Everything in the Universe is made of matter. All matter is made of tiny particles called atoms."
+   }
+  },
+  {
+   "name": "en_us_1699",
+   "path": "fleurs/en_us/1699.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1699,
+    "fleurs_file": "1596269393232229615.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 9.6,
+   "num_samples": 153600,
+   "sha256": "fc00118eaa8e51db975f630f25f860c4e2b8da29a9eb2e5407aaa330b1e53b7d",
+   "reference_text": {
+    "transcription": "bishkek was described as sinking into a state of anarchy by one observer as gangs of people roamed the streets and plundered stores of consumer goods",
+    "raw_transcription": "Bishkek was described as sinking into a state of \"anarchy\" by one observer, as gangs of people roamed the streets and plundered stores of consumer goods."
+   }
+  },
+  {
+   "name": "en_us_1700",
+   "path": "fleurs/en_us/1700.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1700,
+    "fleurs_file": "15228527404193944906.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 7.2,
+   "num_samples": 115200,
+   "sha256": "598b942a19bb82aa17f4b68c0c26202fb65fe0e2abc3e1b752e3c6462f2f0e22",
+   "reference_text": {
+    "transcription": "it is thinner under the maria and thicker under the highlands",
+    "raw_transcription": "It is thinner under the maria and thicker under the highlands."
+   }
+  },
+  {
+   "name": "en_us_1701",
+   "path": "fleurs/en_us/1701.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1701,
+    "fleurs_file": "11147918080606585533.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.62,
+   "num_samples": 169920,
+   "sha256": "cec53572f50c9f3868d9b34471c473d39a2811ebd148768777b8940cc8e80ebe",
+   "reference_text": {
+    "transcription": "goats seem to have been first domesticated roughly 10,000 years ago in the zagros mountains of iran",
+    "raw_transcription": "Goats seem to have been first domesticated roughly 10,000 years ago in the Zagros Mountains of Iran."
+   }
+  },
+  {
+   "name": "en_us_1702",
+   "path": "fleurs/en_us/1702.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1702,
+    "fleurs_file": "1483818313790875806.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.18,
+   "num_samples": 162880,
+   "sha256": "a22dd526efaf3e23dc0456fae1b96229a062d1fcfac8ca03c67658b66b38b895",
+   "reference_text": {
+    "transcription": "in just two weeks the americans and free french forces had liberated southern france and were turning towards germany",
+    "raw_transcription": "In just two weeks the Americans and Free French forces had liberated southern France and were turning towards Germany."
+   }
+  },
+  {
+   "name": "en_us_1703",
+   "path": "fleurs/en_us/1703.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1703,
+    "fleurs_file": "6284223441572848962.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.12,
+   "num_samples": 161920,
+   "sha256": "3ab031faabde411f6c3d9e8b75afc33901c1093984d9a2a050a336e3c9e1a8bd",
+   "reference_text": {
+    "transcription": "martelly swore in a new provisional electoral council cep of nine members yesterday",
+    "raw_transcription": "Martelly swore in a new Provisional Electoral Council (CEP) of nine members yesterday."
+   }
+  },
+  {
+   "name": "en_us_1704",
+   "path": "fleurs/en_us/1704.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1704,
+    "fleurs_file": "13245569655363672734.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 7.32,
+   "num_samples": 117120,
+   "sha256": "f4758d7be3317aee631c24290d6dafd0b3b5f8a69986a31120ff0403ca667fbb",
+   "reference_text": {
+    "transcription": "in 1990 it was added to the list of world heritage sites in danger due to the threat of desert sands",
+    "raw_transcription": "In 1990, it was added to the list of world heritage sites in danger, due to the threat of desert sands."
+   }
+  },
+  {
+   "name": "en_us_1705",
+   "path": "fleurs/en_us/1705.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1705,
+    "fleurs_file": "10550734868852131138.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.12,
+   "num_samples": 161920,
+   "sha256": "a9a94845f7b92d15842d41fc20279c9ae8dd27144f31403a8fc909301792de3c",
+   "reference_text": {
+    "transcription": "on 15 august 1940 the allies invaded southern france the invasion was called operation dragoon",
+    "raw_transcription": "On 15 August 1940, the Allies invaded southern France, the invasion was called \"Operation Dragoon\"."
+   }
+  },
+  {
+   "name": "en_us_1706",
+   "path": "fleurs/en_us/1706.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1706,
+    "fleurs_file": "17858903836434412568.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 12.72,
+   "num_samples": 203520,
+   "sha256": "9cc7064adec3b7e5bcf04fb51b5b7a5976f7523244f365a7d0081175ea8d0277",
+   "reference_text": {
+    "transcription": "more traditional churches often hold an easter vigil on saturday night during the easter weekend with the congregations often breaking into celebration at the stroke of midnight to celebrate christ's resurrection",
+    "raw_transcription": "More traditional churches often hold an Easter Vigil on Saturday night during the Easter weekend, with the congregations often breaking into celebration at the stroke of midnight to celebrate Christ's resurrection."
+   }
+  },
+  {
+   "name": "en_us_1707",
+   "path": "fleurs/en_us/1707.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1707,
+    "fleurs_file": "7632932253248030737.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.92,
+   "num_samples": 174720,
+   "sha256": "b5cd010eb2452052d0629885892c1b9fec54ea334e3afef43303492cd00fa9d3",
+   "reference_text": {
+    "transcription": "it is one of the main attractions of south africa and it is considered the flagship of south african national parks sanparks",
+    "raw_transcription": "It is one of the main attractions of South Africa and it is considered the flagship of South African National Parks (SANParks)."
+   }
+  },
+  {
+   "name": "en_us_1708",
+   "path": "fleurs/en_us/1708.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1708,
+    "fleurs_file": "17720519199437095973.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 13.18,
+   "num_samples": 210880,
+   "sha256": "553d2971f64e0225347780afd8c9017a91925b36af745a0a94e6ee7c564f4d63",
+   "reference_text": {
+    "transcription": "huhne has resigned and he will be replaced in the cabinet by ed davey mp norman lamb mp is expected to take the business minister job davey is vacating",
+    "raw_transcription": "Huhne has resigned and he will be replaced in the Cabinet by Ed Davey MP. Norman Lamb MP is expected to take the Business Minister job Davey is vacating."
+   }
+  },
+  {
+   "name": "en_us_1709",
+   "path": "fleurs/en_us/1709.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "en_us",
+    "split": "test",
+    "id": 1709,
+    "fleurs_file": "9273458614645013056.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 8.64,
+   "num_samples": 138240,
+   "sha256": "da79d682cf10478840856d6b7536fd1671bd5d2a1f3f752e6b3239820dc64f3c",
+   "reference_text": {
+    "transcription": "the report is highly critical of almost every aspect of the present policy of the executive towards iraq and it urges an immediate change of direction",
+    "raw_transcription": "The Report is highly critical of almost every aspect of the present policy of the Executive towards Iraq and it urges an immediate change of direction."
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1660",
+   "path": "fleurs/cmn_hans_cn/1660.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1660,
+    "fleurs_file": "14273482665670127172.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 9.6,
+   "num_samples": 153600,
+   "sha256": "ee6cc55368433a7617b950753349a0aff7c519cb191d7cf574ace25654bd7ef6",
+   "reference_text": {
+    "transcription": "浪 漫 主 义 具 有 很 强 的 文 化 决 定 论 色 彩 这 源 于 歌 德 费 希 特 和 施 莱 格 尔 等 作 家",
+    "raw_transcription": "浪漫主义具有很强的文化决定论色彩。这源于歌德、费希特和施莱格尔等作家。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1661",
+   "path": "fleurs/cmn_hans_cn/1661.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1661,
+    "fleurs_file": "1061358881165519725.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 7.74,
+   "num_samples": 123840,
+   "sha256": "bc3adb3d5859557614980a3aa28b5aac49c98461a2519c8cc7e465ec2bca80f5",
+   "reference_text": {
+    "transcription": "他 没 有 设 定 削 减 数 额 只 是 表 示 将 根 据 中 国 的 经 济 产 出 来 决 定 数 额",
+    "raw_transcription": "他没有设定削减数额，只是表示将根据中国的经济产出来决定数额。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1662",
+   "path": "fleurs/cmn_hans_cn/1662.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1662,
+    "fleurs_file": "13372204995113843403.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 7.5,
+   "num_samples": 120000,
+   "sha256": "750436f4d1d98e5f718db3d9ab6b7767d45a94c5fa861084a35b1faa8e39b8bc",
+   "reference_text": {
+    "transcription": "合 金 基 本 上 由 两 种 或 以 上 金 属 混 合 而 成 不 要 忘 记 一 点 元 素 周 期 表 上 有 很 多 元 素",
+    "raw_transcription": "合金基本上由两种或以上金属混合而成。不要忘记一点，元素周期表上有很多元素。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1663",
+   "path": "fleurs/cmn_hans_cn/1663.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1663,
+    "fleurs_file": "17125746560393607835.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 13.38,
+   "num_samples": 214080,
+   "sha256": "392f214909fd828574a9a2166cfc3d1e3652db247a886f1b7efbcf8e4b30d3d5",
+   "reference_text": {
+    "transcription": "智利首选登山目的地科茶莫山谷 cochamó valley 被称为南美洲的优胜美地 yosemite这里有各式各样的花岗岩大石壁和峭壁",
+    "raw_transcription": "智利首选登山目的地科茶莫山谷 (Cochamó Valley) 被称为南美洲的优胜美地 (Yosemite)，这里有各式各样的花岗岩大石壁和峭壁。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1664",
+   "path": "fleurs/cmn_hans_cn/1664.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1664,
+    "fleurs_file": "11553758827513957267.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.4,
+   "num_samples": 182400,
+   "sha256": "b6b446a1ef208f4824b43d5b454311f09ca111aacb9a32753d3c39ca10a566a7",
+   "reference_text": {
+    "transcription": "搅 动 两 种 干 粉 使 其 混 合 然 后 用 干 净 的 湿 手 把 它 们 揉 成 一 个 球",
+    "raw_transcription": "搅动两种干粉使其混合，然后用干净的湿手把它们揉成一个球。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1665",
+   "path": "fleurs/cmn_hans_cn/1665.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1665,
+    "fleurs_file": "11220805329666166649.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 15.1,
+   "num_samples": 241600,
+   "sha256": "40f59ead72896bbb32fa6cd1575f788b25eeed8a8958f24400d547033b867f43",
+   "reference_text": {
+    "transcription": "据 透 露 这 份 文 件 将 提 及 边 界 争 端 巴 勒 斯 坦 希 望 以 1967 年 中 东 战 争 前 的 边 界 为 基 础",
+    "raw_transcription": "据透露，这份文件将提及边界争端，巴勒斯坦希望以1967年中东战争前的边界为基础。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1666",
+   "path": "fleurs/cmn_hans_cn/1666.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1666,
+    "fleurs_file": "11031078104467854733.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 8.16,
+   "num_samples": 130560,
+   "sha256": "7a6228c3dbee48e0b3b62a2dfb1c7de28ff6f1df0ea7826cfad302999947714b",
+   "reference_text": {
+    "transcription": "你 也 可 以 咨 询 除 贵 国 以 外 其 他 政 府 的 建 议 但 他 们 的 建 议 是 为 他 们 的 公 民 而 制 定 的",
+    "raw_transcription": "你也可以咨询除贵国以外其他政府的建议，但他们的建议是为他们的公民而制定的。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1667",
+   "path": "fleurs/cmn_hans_cn/1667.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1667,
+    "fleurs_file": "18066249635479552429.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 15.64,
+   "num_samples": 250240,
+   "sha256": "40cd72613240ca927daa82bad730462a6e30a565442ace1d3b88cf9a05f1abd1",
+   "reference_text": {
+    "transcription": "一 般 来 说 当 管 理 者 开 始 领 导 过 去 的 同 事 时 会 出 现 两 种 行 为 一 种 情 况 是 他 们 会 努 力 与 团 队 成 员 保 持 亲 密 关 系",
+    "raw_transcription": "一般来说，当管理者开始领导过去的同事时，会出现两种行为。一种情况是，他们会努力与团队成员保持“亲密关系”。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1668",
+   "path": "fleurs/cmn_hans_cn/1668.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1668,
+    "fleurs_file": "14773716009564433047.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 8.76,
+   "num_samples": 140160,
+   "sha256": "4083d823733158a276b6857fdcb8772f955bd3d58a790c3e5664fadbb02311f3",
+   "reference_text": {
+    "transcription": "买 一 张 万 能 卡 wild card 也 有 不 少 好 处 带 着 这 张 卡 你 可 以 进 入 南 非 的 一 些 公 园 或 全 部 的 国 家 公 园",
+    "raw_transcription": "买一张万能卡（Wild Card）也有不少好处。带着这张卡，你可以进入南非的一些公园或全部的国家公园。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1669",
+   "path": "fleurs/cmn_hans_cn/1669.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1669,
+    "fleurs_file": "13763174630354430252.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 6.84,
+   "num_samples": 109440,
+   "sha256": "dc03357b77309083b31e8a7a1c38136e18950f7e6541b7c9dfb0a29443a1fa67",
+   "reference_text": {
+    "transcription": "警 察 局 长 钱 德 拉 谢 卡 尔 索 兰 基 说 被 告 人 出 庭 时 都 蒙 住 了 脸",
+    "raw_transcription": "警察局长钱德拉·谢卡尔·索兰基说，被告人出庭时都蒙住了脸。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1670",
+   "path": "fleurs/cmn_hans_cn/1670.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1670,
+    "fleurs_file": "1626393343718951419.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 25.74,
+   "num_samples": 411840,
+   "sha256": "7cd23aba4dd33a8eea1b4fab65f80ce8e0bef1141329f5bd596cea099f7c6aa2",
+   "reference_text": {
+    "transcription": "它 们 的 热 行 为 不 像 地 球 上 的 大 型 洞 穴 那 么 稳 定 这 些 大 型 洞 穴 通 常 会 保 持 相 当 恒 定 的 温 度 但 它 们 与 地 下 深 穴 的 情 况 很 相 似 亚 利 桑 那 州 旗 杆 镇 美 国 地 质 调 查 局 usgs 太 空 地 质 团 队 和 北 亚 利 桑 那 大 学 的 格 伦 库 欣 说 道",
+    "raw_transcription": "“它们的热行为不像地球上的大型洞穴那么稳定，这些大型洞穴通常会保持相当恒定的温度，但它们与地下深穴的情况很相似，”亚利桑那州旗杆镇美国地质调查局 (USGS) 太空地质团队和北亚利桑那大学的格伦·库欣说道。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1671",
+   "path": "fleurs/cmn_hans_cn/1671.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1671,
+    "fleurs_file": "17865784740247963652.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.32,
+   "num_samples": 165120,
+   "sha256": "b731c2b9c1dde5afb49d49b6fc9cd8715a7883414fd31616153bb2905a86f63f",
+   "reference_text": {
+    "transcription": "国 会 从 2005 财 年 开 始 资 助 该 扫 黄 倡 议 并 规 定 联 邦 调 查 局 fbi 必 须 指 派 10 名 探 员 专 门 打 击 成 人 色 情",
+    "raw_transcription": "国会从 2005 财年开始资助该扫黄倡议，并规定联邦调查局 (FBI) 必须指派 10 名探员专门打击成人色情。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1672",
+   "path": "fleurs/cmn_hans_cn/1672.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1672,
+    "fleurs_file": "12601036378860326355.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 13.9,
+   "num_samples": 222400,
+   "sha256": "9323cc6c832d24c74f35e945919b8669f50129b69be99f710d0ebcf5b39e7663",
+   "reference_text": {
+    "transcription": "小 心 不 要 让 衣 服 变 得 太 热 这 可 能 会 产 生 收 缩 现 象 在 极 端 情 况 下 会 把 衣 服 烤 焦",
+    "raw_transcription": "小心不要让衣服变得太热（这可能会产生收缩现象，在极端情况下会把衣服烤焦）。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1673",
+   "path": "fleurs/cmn_hans_cn/1673.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1673,
+    "fleurs_file": "6897063611136666657.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 8.58,
+   "num_samples": 137280,
+   "sha256": "a3dcbb6412314fbb1c7067a82c22f54b61f4817fca2961103255158862a6bfd0",
+   "reference_text": {
+    "transcription": "在 独 立 战 争 期 间 十 三 个 州 最 初 根 据 联 邦 条 例 组 成 了 弱 小 的 中 央 政 府 国 会 是 其 唯 一 的 组 成 部 分",
+    "raw_transcription": "在独立战争期间，十三个州最初根据《联邦条例》组成了弱小的中央政府（国会是其唯一的组成部分）。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1674",
+   "path": "fleurs/cmn_hans_cn/1674.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1674,
+    "fleurs_file": "15619666715819820695.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 8.88,
+   "num_samples": 142080,
+   "sha256": "3d9db56ac4f30bda955473f96db0449296ad7944a795a9dd691926b93a6af293",
+   "reference_text": {
+    "transcription": "在 某 些 地 区 水 煮 一 分 钟 就 足 够 了 在 其 他 地 区 则 需 要 几 分 钟 的 时 间",
+    "raw_transcription": "在某些地区，水煮一分钟就足够了，在其他地区则需要几分钟的时间。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1675",
+   "path": "fleurs/cmn_hans_cn/1675.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1675,
+    "fleurs_file": "13333464656670504120.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.5,
+   "num_samples": 168000,
+   "sha256": "854942fd1afba4c89ccfb33042d67444b7edb6fc898bb9092ec6bd7882842989",
+   "reference_text": {
+    "transcription": "除 去 表 示 您 的 sie 之 外 的 所 有 名 词 都 应 以 大 写 字 母 开 头 即 使 在 句 子 中 间 也 应 如 此",
+    "raw_transcription": "除去表示您的“Sie”之外的所有名词都应以大写字母开头，即使在句子中间也应如此。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1676",
+   "path": "fleurs/cmn_hans_cn/1676.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1676,
+    "fleurs_file": "1153780427490892865.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 9.18,
+   "num_samples": 146880,
+   "sha256": "bd7cb482e02bfc1aeb2b4b049d9d91df3cdcf6a2acf3f91a7b60d12fc33766ec",
+   "reference_text": {
+    "transcription": "与 所 有 南 非 国 家 公 园 一 样 该 公 园 每 天 都 收 取 养 护 费 和 门 票 费",
+    "raw_transcription": "与所有南非国家公园一样，该公园每天都收取养护费和门票费。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1677",
+   "path": "fleurs/cmn_hans_cn/1677.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1677,
+    "fleurs_file": "16772375859841179841.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 7.98,
+   "num_samples": 127680,
+   "sha256": "f001781cc382dc5b14c14b5621ad99fa85e0632a1d93ca4147085cfbf25a4cf7",
+   "reference_text": {
+    "transcription": "如 今 唯 一 不 能 向 后 折 叠 翅 膀 的 昆 虫 是 蜻 蜓 和 蜉 蝣",
+    "raw_transcription": "如今，唯一不能向后折叠翅膀的昆虫是蜻蜓和蜉蝣。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1678",
+   "path": "fleurs/cmn_hans_cn/1678.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1678,
+    "fleurs_file": "13618157833815227507.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 17.58,
+   "num_samples": 281280,
+   "sha256": "cd2266b366d56fc3f015f976c7f5d43d48faccb93402e5ec776cf739e55709d4",
+   "reference_text": {
+    "transcription": "奥 利 弗 萨 克 斯 oliver sacks 在 他 的 论 文 总 统 的 演 讲 中 指 出 那 些 因 为 脑 损 伤 而 无 法 理 解 语 言 的 人 仍 然 能 够 准 确 地 判 断 说 话 人 是 否 有 诚 意",
+    "raw_transcription": "奥利弗·萨克斯 (Oliver Sacks) 在他的论文《总统的演讲》中指出，那些因为脑损伤而无法理解语言的人仍然能够准确地判断说话人是否有诚意。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1679",
+   "path": "fleurs/cmn_hans_cn/1679.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1679,
+    "fleurs_file": "15514325222679879585.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 9.68,
+   "num_samples": 154880,
+   "sha256": "224f091e14cab73115acddd4f42601270c3049b4ce09e3034ecc493103c2e958",
+   "reference_text": {
+    "transcription": "空 中 铁 匠 乐 队 已 经 取 消 了 他 们 巡 回 演 唱 会 的 剩 余 场 次",
+    "raw_transcription": "空中铁匠乐队已经取消了他们巡回演唱会的剩余场次。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1680",
+   "path": "fleurs/cmn_hans_cn/1680.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1680,
+    "fleurs_file": "13300750670399228150.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 15.66,
+   "num_samples": 250560,
+   "sha256": "04abd8b48032f117f3e1168dd285d575173d9f430689d4550d4a78b80806e936",
+   "reference_text": {
+    "transcription": "老 虎 是 全 能 运 动 员 它 会 攀 爬 虽 然 攀 爬 能 力 不 是 很 强 游 泳 跳 远 拉 力 能 达 到 人 类 大 力 士 的 五 倍",
+    "raw_transcription": "老虎是全能运动员，它会攀爬（虽然攀爬能力不是很强）、游泳、跳远，拉力能达到人类大力士的五倍。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1681",
+   "path": "fleurs/cmn_hans_cn/1681.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1681,
+    "fleurs_file": "14066003160545361452.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 13.32,
+   "num_samples": 213120,
+   "sha256": "4d7535a318e3886be334c99e0a4295f085361a86d4adca206492a274efe39cfa",
+   "reference_text": {
+    "transcription": "实 验 是 一 种 用 来 消 除 一 个 或 多 个 可 能 性 假 设 的 试 验 不 过 实 验 并 不 是 唯 一 的 方 法 提 出 问 题 及 进 行 观 察 也 可 以 指 导 科 学 研 究",
+    "raw_transcription": "实验是一种用来消除一个或多个可能性假设的试验，不过，实验并不是唯一的方法。提出问题及进行观察也可以指导科学研究。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1682",
+   "path": "fleurs/cmn_hans_cn/1682.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1682,
+    "fleurs_file": "11229861275679868227.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 19.3,
+   "num_samples": 308800,
+   "sha256": "bb93b8416cdb3da4209c056ac3de68afcb3f4510b258475e403011106c4eb4f1",
+   "reference_text": {
+    "transcription": "虽然没有人能确定作者是谁但这个大型羊皮纸文档尺寸为 29¾ 英寸乘以 24½ 英寸据称在刚写成的时候是卷起来存放的",
+    "raw_transcription": "虽然没有人能确定作者是谁，但这个大型羊皮纸文档（尺寸为 29¾ 英寸乘以 24½ 英寸）据称在刚写成的时候是卷起来存放的。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1683",
+   "path": "fleurs/cmn_hans_cn/1683.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1683,
+    "fleurs_file": "8477978912207506196.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.7,
+   "num_samples": 187200,
+   "sha256": "9e750fba657719e6d97a6d73173e3dd3039021b360fb92467d1f29efa4385dd6",
+   "reference_text": {
+    "transcription": "还 是 有 许 多 男 女 在 这 里 幸 存 了 下 来 他 们 如 今 仍 然 健 在 而 更 多 人 的 亲 人 有 的 在 那 里 被 屠 杀 有 的 一 直 做 苦 工 到 死 犹 太 人 和 非 犹 太 人 都 是 如 此",
+    "raw_transcription": "还是有许多男女在这里幸存了下来，他们如今仍然健在；而更多人的亲人，有的在那里被屠杀，有的一直做苦工到死，犹太人和非犹太人都是如此。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1684",
+   "path": "fleurs/cmn_hans_cn/1684.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1684,
+    "fleurs_file": "6434743737829208648.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 14.86,
+   "num_samples": 237760,
+   "sha256": "4fc59abef20df8584be55939b63df97bc85e729041aa912e5319864f119736ad",
+   "reference_text": {
+    "transcription": "阿 皮 亚 是 萨 摩 亚 的 首 都 该 城 镇 位 于 乌 波 卢 upolu 岛 上 人 口 数 量 不 足 4 万",
+    "raw_transcription": "阿皮亚是萨摩亚的首都。该城镇位于乌波卢（Upolu）岛上，人口数量不足 4 万。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1685",
+   "path": "fleurs/cmn_hans_cn/1685.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1685,
+    "fleurs_file": "12214278322285118031.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.34,
+   "num_samples": 181440,
+   "sha256": "f2f312768fa3d32a248165629722e289664ab025d105db9d8e05ed0812ea37d0",
+   "reference_text": {
+    "transcription": "例 如 世 界 上 最 常 见 的 静 态 图 像 摄 影 格 式 是 35mm 格 式 这 是 胶 片 电 影 时 代 末 期 占 主 导 地 位 的 电 影 尺 寸",
+    "raw_transcription": "例如，世界上最常见的静态图像摄影格式是 35mm 格式，这是胶片电影时代末期占主导地位的电影尺寸。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1686",
+   "path": "fleurs/cmn_hans_cn/1686.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1686,
+    "fleurs_file": "10852536777113131618.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 8.22,
+   "num_samples": 131520,
+   "sha256": "6ee04367bca5cad5b0e43c369b48ef0bc5263d942d6cd1e7afb282116f707432",
+   "reference_text": {
+    "transcription": "因 此 一 个 组 织 在 共 同 努 力 克 服 障 碍 的 过 程 中 往 往 会 带 来 新 的 创 新 流 程 以 满 足 客 户 的 需 求",
+    "raw_transcription": "因此，一个组织在共同努力克服障碍的过程中，往往会带来新的创新流程，以满足客户的需求。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1687",
+   "path": "fleurs/cmn_hans_cn/1687.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1687,
+    "fleurs_file": "12933878060487367144.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 6.66,
+   "num_samples": 106560,
+   "sha256": "72bf2a0c902be9be949365591a54c3fd3c40a9c274f3879632866c04df9236b6",
+   "reference_text": {
+    "transcription": "由 于 分 离 和 重 组 变 异 在 每 一 代 的 两 个 库 之 间 来 回 变 动",
+    "raw_transcription": "由于分离和重组，变异在每一代的两个库之间来回变动。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1688",
+   "path": "fleurs/cmn_hans_cn/1688.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1688,
+    "fleurs_file": "14341578705184191215.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 12.54,
+   "num_samples": 200640,
+   "sha256": "ab94007db39a5c80bbd5d9cd5fdf95876c593caa729b9642d520c90b4a76917f",
+   "reference_text": {
+    "transcription": "从 传 统 意 义 上 讲 海 军 的 任 务 是 确 保 国 家 保 持 运 输 人 员 和 货 物 的 能 力 同 时 干 扰 敌 人 运 输 其 人 员 和 货 物 的 能 力",
+    "raw_transcription": "从传统意义上讲，海军的任务是确保国家保持运输人员和货物的能力，同时，干扰敌人运输其人员和货物的能力。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1689",
+   "path": "fleurs/cmn_hans_cn/1689.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1689,
+    "fleurs_file": "14550638651919221566.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 17.1,
+   "num_samples": 273600,
+   "sha256": "e64ea5cf99e89544bc85f85edf836b41d51a566b45c93eaa25e309c9fcf2fd48",
+   "reference_text": {
+    "transcription": "欧 洲 是 片 面 积 相 对 较 小 但 有 着 许 多 独 立 国 家 的 大 陆 在 通 常 情 况 下 穿 越 多 个 国 家 旅 行 意 味 着 必 须 多 次 经 历 签 证 申 请 和 护 照 检 查",
+    "raw_transcription": "欧洲是片面积相对较小但有着许多独立国家的大陆。在通常情况下，穿越多个国家旅行意味着必须多次经历签证申请和护照检查。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1690",
+   "path": "fleurs/cmn_hans_cn/1690.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1690,
+    "fleurs_file": "11881689509934687775.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 14.16,
+   "num_samples": 226560,
+   "sha256": "bd46ff12343067af17f1c52b292291374200ddb9b251a932bf82b3518c1f9aa2",
+   "reference_text": {
+    "transcription": "我 们 同 意 美 国 奥 委 会 的 声 明 与 其 吊 销 执 照 不 如 在 我 们 组 织 内 部 继 续 推 进 有 意 义 的 变 革 可 能 更 有 利 于 维 护 运 动 员 和 俱 乐 部 的 利 益 及 其 运 动",
+    "raw_transcription": "我们同意美国奥委会的声明，与其吊销执照，不如在我们组织内部继续推进有意义的变革，可能更有利于维护运动员和俱乐部的利益及其运动。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1691",
+   "path": "fleurs/cmn_hans_cn/1691.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1691,
+    "fleurs_file": "10970596972697016742.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 6.9,
+   "num_samples": 110400,
+   "sha256": "588657ab1803c1361c7cc31cd4fb1cb2f2dc21a742d5f6e0499a6f8ab5aa975f",
+   "reference_text": {
+    "transcription": "在 某 些 航 线 上 大 型 公 司 有 自 己 的 飞 机 但 对 于 其 他 航 线 和 小 公 司 来 说 就 有 问 题 了",
+    "raw_transcription": "在某些航线上，大型公司有自己的飞机，但对于其他航线和小公司来说，就有问题了。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1692",
+   "path": "fleurs/cmn_hans_cn/1692.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1692,
+    "fleurs_file": "17639585860488007329.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.0,
+   "num_samples": 176000,
+   "sha256": "d4883ecc16a46d6a7dbea267ca6e3c5404eb1ba0f65f484a61fd59b09c5a024c",
+   "reference_text": {
+    "transcription": "日 本 原 子 能 机 构 表 示 核 电 站 检 测 出 了 放 射 性 物 质 铯 和 碘",
+    "raw_transcription": "日本原子能机构表示，核电站检测出了放射性物质铯和碘。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1693",
+   "path": "fleurs/cmn_hans_cn/1693.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1693,
+    "fleurs_file": "12820953356240413400.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 12.58,
+   "num_samples": 201280,
+   "sha256": "4f53ef385eaddc348efc59d4985760d2b17820b20837296b01899fb3977b1355",
+   "reference_text": {
+    "transcription": "但 在 队 长 输 掉 三 柱 门 后 印 度 在 结 束 这 一 局 的 比 赛 时 只 得 了 36 分 输 掉 7 个 三 柱 门",
+    "raw_transcription": "但在队长输掉三柱门后，印度在结束这一局的比赛时只得了 36 分，输掉 7 个三柱门。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1694",
+   "path": "fleurs/cmn_hans_cn/1694.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1694,
+    "fleurs_file": "11827617284665517873.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.8,
+   "num_samples": 188800,
+   "sha256": "0c91efd1d2949c58abae50782460416fcaf02cac837641ffe9f4587d3c210ee2",
+   "reference_text": {
+    "transcription": "孩 子 们 因 为 各 种 原 因 被 寄 养 原 因 有 被 忽 视 被 虐 待 甚 至 是 被 勒 索",
+    "raw_transcription": "孩子们因为各种原因被寄养，原因有被忽视、被虐待，甚至是被勒索。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1695",
+   "path": "fleurs/cmn_hans_cn/1695.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1695,
+    "fleurs_file": "12472899299695985973.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 13.26,
+   "num_samples": 212160,
+   "sha256": "6e32318d65ab2738c463bd51b199c6067ebf8e296767dfe21f01e3ea3eb4f2e5",
+   "reference_text": {
+    "transcription": "pa amb oli 是 一 种 在 夏 天 尤 为 流 行 的 简 单 晚 餐 面 包 搭 配 橄 榄 油 番 茄 手 头 上 任 何 佐 料 都 可 加 入 比 如 奶 酪 金 枪 鱼 等",
+    "raw_transcription": "Pa amb Oli 是一种在夏天尤为流行的简单晚餐：面包搭配橄榄油、番茄，手头上任何佐料都可加入，比如奶酪、金枪鱼等。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1696",
+   "path": "fleurs/cmn_hans_cn/1696.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1696,
+    "fleurs_file": "1146692660489015515.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 8.22,
+   "num_samples": 131520,
+   "sha256": "30b80d56c8421944063e2ba4ebe8df3a5e4c39ed77391edff859f88eb2574947",
+   "reference_text": {
+    "transcription": "该 大 学 的 研 究 人 员 表 示 这 两 种 化 合 物 相 互 作 用 形 成 的 晶 体 可 能 会 造 成 肾 脏 功 能 障 碍",
+    "raw_transcription": "该大学的研究人员表示，这两种化合物相互作用形成的晶体可能会造成肾脏功能障碍。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1697",
+   "path": "fleurs/cmn_hans_cn/1697.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1697,
+    "fleurs_file": "10674527227632117693.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 9.78,
+   "num_samples": 156480,
+   "sha256": "893cd999ca8c647be43bd0223c6e4b1b017339a834c52813c74afab579342411",
+   "reference_text": {
+    "transcription": "他 一 直 无 法 用 药 物 来 缓 解 疼 痛 因 为 比 赛 禁 止 参 赛 者 服 用 这 些 药 物",
+    "raw_transcription": "他一直无法用药物来缓解疼痛，因为比赛禁止参赛者服用这些药物。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1698",
+   "path": "fleurs/cmn_hans_cn/1698.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1698,
+    "fleurs_file": "10544065594858743613.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 9.72,
+   "num_samples": 155520,
+   "sha256": "f9aadc307e96390dddeec5d455120999196441dfda62db0e32fb79ab2f2a3744",
+   "reference_text": {
+    "transcription": "宇 宙 中 的 一 切 都 由 物 质 构 成 而 所 有 的 物 质 都 由 被 称 为 原 子 的 微 小 粒 子 组 成",
+    "raw_transcription": "宇宙中的一切都由物质构成，而所有的物质都由被称为原子的微小粒子组成。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1699",
+   "path": "fleurs/cmn_hans_cn/1699.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1699,
+    "fleurs_file": "2378996103615918493.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.76,
+   "num_samples": 188160,
+   "sha256": "de9b3b1638b364e17b6a367b7386057f83fc2e97b0b04588edb5e18797def3e1",
+   "reference_text": {
+    "transcription": "一 名 观 察 者 形 容 比 什 凯 克 bishkek 正 在 陷 入 无 政 府 状 态 成 群 的 人 们 在 街 上 游 荡 掠 夺 商 店 里 的 消 费 品",
+    "raw_transcription": "一名观察者形容比什凯克（Bishkek）正在陷入“无政府“ 状态，成群的人们在街上游荡，掠夺商店里的消费品。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1700",
+   "path": "fleurs/cmn_hans_cn/1700.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1700,
+    "fleurs_file": "10651933140664828475.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 12.62,
+   "num_samples": 201920,
+   "sha256": "19197a822288f97d4a5a808e155d30947366cc61e5755d293a1e3f0f7aa8d660",
+   "reference_text": {
+    "transcription": "阴 暗 面 下 面 的 地 壳 薄 一 些 高 地 下 的 地 壳 厚 一 些",
+    "raw_transcription": "阴暗面下面的地壳薄一些，高地下的地壳厚一些。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1701",
+   "path": "fleurs/cmn_hans_cn/1701.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1701,
+    "fleurs_file": "16741635656747751013.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 12.38,
+   "num_samples": 198080,
+   "sha256": "4c19da423f493e5b0629385e9b65eb127eb24cd13366a8673b742c354bad175b",
+   "reference_text": {
+    "transcription": "山 羊 似 乎 是 1 万 年 前 左 右 在 伊 朗 的 扎 格 罗 斯 山 脉 首 次 被 驯 养 的",
+    "raw_transcription": "山羊似乎是 1 万年前左右在伊朗的扎格罗斯山脉首次被驯养的。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1702",
+   "path": "fleurs/cmn_hans_cn/1702.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1702,
+    "fleurs_file": "1559221826082132977.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.14,
+   "num_samples": 178240,
+   "sha256": "7a8155ad2a76d027fde3983a7fb835e5cab948da3dc271083132265b23e205bf",
+   "reference_text": {
+    "transcription": "仅 仅 两 个 星 期 美 国 和 自 由 法 国 的 军 队 就 解 放 了 法 国 南 部 并 转 向 德 国",
+    "raw_transcription": "仅仅两个星期，美国和自由法国的军队就解放了法国南部，并转向德国。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1703",
+   "path": "fleurs/cmn_hans_cn/1703.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1703,
+    "fleurs_file": "11231516927974266547.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 9.36,
+   "num_samples": 149760,
+   "sha256": "e1d963515d9b21cfffde05537df8114de64f4385c8915c9f065a77a8e52b890f",
+   "reference_text": {
+    "transcription": "昨 天 马 尔 泰 利 在 由 9 名 成 员 组 成 的 新 临 时 选 举 委 员 会 cep 中 宣 誓 就 职",
+    "raw_transcription": "昨天，马尔泰利在由 9 名成员组成的新临时选举委员会 (CEP)中宣誓就职。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1704",
+   "path": "fleurs/cmn_hans_cn/1704.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1704,
+    "fleurs_file": "11044189448827036819.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 7.26,
+   "num_samples": 116160,
+   "sha256": "fdacff0c83b00495a3c3c2983e4ad582ef058aed8c77d146b4368e9d07e8dd1c",
+   "reference_text": {
+    "transcription": "1990 年 由 于 沙 漠 的 威 胁 它 被 列 入 了 濒 危 世 界 遗 产 名 录",
+    "raw_transcription": "1990 年，由于沙漠的威胁，它被列入了濒危世界遗产名录。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1705",
+   "path": "fleurs/cmn_hans_cn/1705.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1705,
+    "fleurs_file": "11338778690242874435.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 7.2,
+   "num_samples": 115200,
+   "sha256": "15a2022561cf7a0ff88e2d5d77bb4d67d4c387f52971c2538a550065e965cb02",
+   "reference_text": {
+    "transcription": "1940 年 8 月 15 日 盟 军 攻 入 法 国 南 部 这 次 进 攻 被 称 为 龙 骑 兵 行 动",
+    "raw_transcription": "1940 年 8 月 15 日，盟军攻入法国南部，这次进攻被称为“龙骑兵行动”。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1706",
+   "path": "fleurs/cmn_hans_cn/1706.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1706,
+    "fleurs_file": "12746401563499459395.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.76,
+   "num_samples": 188160,
+   "sha256": "9e28e1b2e8fc403c6422a45e40682016bf76ba00df31b9ee4d3516ca08211ecc",
+   "reference_text": {
+    "transcription": "更 传 统 的 教 堂 常 常 在 复 活 节 周 末 的 周 六 晚 上 举 行 复 活 节 守 夜 活 动 会 众 通 常 在 午 夜 钟 声 敲 响 之 时 涌 入 庆 典 庆 祝 基 督 的 复 活",
+    "raw_transcription": "更传统的教堂常常在复活节周末的周六晚上举行复活节守夜活动，会众通常在午夜钟声敲响之时涌入庆典，庆祝基督的复活。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1707",
+   "path": "fleurs/cmn_hans_cn/1707.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1707,
+    "fleurs_file": "2382187463198843534.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 6.48,
+   "num_samples": 103680,
+   "sha256": "594132a014360d8248ffd07c1586ff32072b39f6e136215465bd4dfca6bcdf31",
+   "reference_text": {
+    "transcription": "它 是 南 非 的 主 要 景 点 之 一 被 认 为 是 南 非 国 家 公 园 体 系 sanparks 的 主 打 景 点",
+    "raw_transcription": "它是南非的主要景点之一，被认为是南非国家公园体系 (SANParks) 的主打景点。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1708",
+   "path": "fleurs/cmn_hans_cn/1708.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1708,
+    "fleurs_file": "12033218428575912024.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 12.72,
+   "num_samples": 203520,
+   "sha256": "12aca72e54f6d89b4ff5eb4a0761f7c011ba56e8b03b63e7d5c0d6c206b88a7c",
+   "reference_text": {
+    "transcription": "胡 纳 已 经 辞 职 他 在 内 阁 中 的 位 置 将 由 国 会 议 员 埃 德 戴 维 ed davey 接 替 预 计 国 会 议 员 诺 曼 兰 姆 norman lamb 将 接 替 戴 维 空 出 的 商 务 部 长 一 职",
+    "raw_transcription": "胡纳已经辞职，他在内阁中的位置将由国会议员埃德·戴维 (Ed Davey) 接替。预计国会议员诺曼·兰姆 (Norman Lamb) 将接替戴维空出的商务部长一职。"
+   }
+  },
+  {
+   "name": "cmn_hans_cn_1709",
+   "path": "fleurs/cmn_hans_cn/1709.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "cmn_hans_cn",
+    "split": "test",
+    "id": 1709,
+    "fleurs_file": "11174681987322193954.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.32,
+   "num_samples": 165120,
+   "sha256": "8aa0c5f052efe4bbdf043b2bbd43e6c890d188c28405cee1ec09a1fe6bb23e6f",
+   "reference_text": {
+    "transcription": "该 报 告 对 行 政 当 局 目 前 对 伊 拉 克 政 策 的 几 乎 每 一 个 方 面 都 提 出 了 严 厉 批 评 并 敦 促 立 即 改 变 方 向",
+    "raw_transcription": "该报告对行政当局目前对伊拉克政策的几乎每一个方面都提出了严厉批评，并敦促立即改变方向。"
+   }
+  },
+  {
+   "name": "ja_jp_1661",
+   "path": "fleurs/ja_jp/1661.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1661,
+    "fleurs_file": "3962045524668225431.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 15.42,
+   "num_samples": 246720,
+   "sha256": "dc794afb9e809c6f889da9483108db13424d28b89582c91519571c9d156abc4f",
+   "reference_text": {
+    "transcription": "胡氏は 削減する数値を定めませんでしたが 削減は中国の経済産出量に基づいて実施されるだろうと述べました",
+    "raw_transcription": "胡氏は、削減する数値を定めませんでしたが、削減は中国の経済産出量に基づいて実施されるだろうと述べました。"
+   }
+  },
+  {
+   "name": "ja_jp_1662",
+   "path": "fleurs/ja_jp/1662.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1662,
+    "fleurs_file": "3483199886532772858.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 14.58,
+   "num_samples": 233280,
+   "sha256": "946338ff16c731e604892e82a76aa805e4e498d2e99e5fcf794ac7d2d3a7bb0d",
+   "reference_text": {
+    "transcription": "合金とは 基本的には2種類以上の金属の混合物です 周期表に載っているたくさんの元素を思い出してください",
+    "raw_transcription": "合金とは、基本的には2種類以上の金属の混合物です。周期表に載っているたくさんの元素を思い出してください。"
+   }
+  },
+  {
+   "name": "ja_jp_1664",
+   "path": "fleurs/ja_jp/1664.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1664,
+    "fleurs_file": "10728607480570481117.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 9.9,
+   "num_samples": 158400,
+   "sha256": "474a17fb976cf3a37e1707c37f97bfed6c13ec0d48fd9b5b28dfd6822f49430c",
+   "reference_text": {
+    "transcription": "乾いた粉を2つ合わせてくるくるとこね回し 清潔な濡れた手でぎゅっと握ります",
+    "raw_transcription": "乾いた粉を2つ合わせてくるくるとこね回し、清潔な濡れた手でぎゅっと握ります。"
+   }
+  },
+  {
+   "name": "ja_jp_1665",
+   "path": "fleurs/ja_jp/1665.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1665,
+    "fleurs_file": "14075324138632624979.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 16.74,
+   "num_samples": 267840,
+   "sha256": "c9361f5c154847405b5374d2f721b3befd299851aa8b7f366ab1ab679d9393da",
+   "reference_text": {
+    "transcription": "漏れ聞いた情報によれば 当該文書は国境紛争に言及するもので パレスチナの希望は1967年の中東戦争前の国境に基づくものです",
+    "raw_transcription": "漏れ聞いた情報によれば、当該文書は国境紛争に言及するもので、パレスチナの希望は1967年の中東戦争前の国境に基づくものです。"
+   }
+  },
+  {
+   "name": "ja_jp_1666",
+   "path": "fleurs/ja_jp/1666.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1666,
+    "fleurs_file": "17114283013388825890.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 13.56,
+   "num_samples": 216960,
+   "sha256": "27ce07143121e61a33a28e74102e74b09097b689477f9e2d158f409e6a358aac",
+   "reference_text": {
+    "transcription": "自国以外の政府からの助言を参考にしてもかいまいませんが そのような助言はその国の国民向けのものです",
+    "raw_transcription": "自国以外の政府からの助言を参考にしてもかいまいませんが、そのような助言はその国の国民向けのものです。"
+   }
+  },
+  {
+   "name": "ja_jp_1667",
+   "path": "fleurs/ja_jp/1667.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1667,
+    "fleurs_file": "11129391205542167306.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 17.82,
+   "num_samples": 285120,
+   "sha256": "dc59a9dde94eb34b48e24c24d4cf9acbe989c8dd85f8ca42dd34ad4162b1aefa",
+   "reference_text": {
+    "transcription": "一般的に言えば 管理職がかつての仲間を率いることになった場合 2とおりの行動が現れる可能性があります 1つは 仲間の1人 のままでいようとする行動です",
+    "raw_transcription": "一般的に言えば、管理職がかつての仲間を率いることになった場合、2とおりの行動が現れる可能性があります。1つは「仲間の1人」のままでいようとする行動です。"
+   }
+  },
+  {
+   "name": "ja_jp_1668",
+   "path": "fleurs/ja_jp/1668.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1668,
+    "fleurs_file": "6825423847683446812.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 13.38,
+   "num_samples": 214080,
+   "sha256": "afec801987bee4f82888446e70bacc8c8e81ff563e494c031ca24d3fe5d77ee7",
+   "reference_text": {
+    "transcription": "ワイルドカードを購入するとお得な場合があります 南アフリカの主な公園または南アフリカのすべての国立公園に入場できます",
+    "raw_transcription": "ワイルドカードを購入するとお得な場合があります。南アフリカの主な公園または南アフリカのすべての国立公園に入場できます。"
+   }
+  },
+  {
+   "name": "ja_jp_1669",
+   "path": "fleurs/ja_jp/1669.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1669,
+    "fleurs_file": "12526861755097705133.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.08,
+   "num_samples": 161280,
+   "sha256": "67e81b635f56cc53b013248029f59fdb5419578b1a1fe1f6c94f8da97361e0ff",
+   "reference_text": {
+    "transcription": "警察のチャンドラ シェカール ソランキ総監によれば 被告人は顔を隠して法廷に出頭したそうです",
+    "raw_transcription": "警察のチャンドラ・シェカール・ソランキ総監によれば、被告人は顔を隠して法廷に出頭したそうです。"
+   }
+  },
+  {
+   "name": "ja_jp_1670",
+   "path": "fleurs/ja_jp/1670.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1670,
+    "fleurs_file": "2630315561484880103.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 25.5,
+   "num_samples": 408000,
+   "sha256": "360c22fb890d7f40d898963fa7b4c7f19f69471e49ab4857e505fec28fad25a7",
+   "reference_text": {
+    "transcription": "「そうした熱挙動は、一定の温度をかなり保てる地球上の大洞窟ほど安定していないことが多いのですが、地中に深い穴ができる点は一致しています」と、米国地質調査所usgs宇宙地質学チームとアリゾナ州フラッグスタッフにあるノーザンアリゾナ大学のグレン・クッシング氏は述べています",
+    "raw_transcription": "「そうした熱挙動は、一定の温度をかなり保てる地球上の大洞窟ほど安定していないことが多いのですが、地中に深い穴ができる点は一致しています」と、米国地質調査所(USGS)宇宙地質学チームとアリゾナ州フラッグスタッフにあるノーザンアリゾナ大学のグレン・クッシング氏は述べています。"
+   }
+  },
+  {
+   "name": "ja_jp_1671",
+   "path": "fleurs/ja_jp/1671.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1671,
+    "fleurs_file": "1177380415303937241.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 18.42,
+   "num_samples": 294720,
+   "sha256": "865442cc9ccde90d0e079db09be3ddf49070d095f55a92613f4dcbb04bf9466a",
+   "reference_text": {
+    "transcription": "連邦議会は2005年度から猥褻物取締法への資金提供を開始し fbiはアダルトポルノに10人の捜査員を投入しなければならないと規定しました",
+    "raw_transcription": "連邦議会は2005年度から猥褻物取締法への資金提供を開始し、FBIはアダルトポルノに10人の捜査員を投入しなければならないと規定しました。"
+   }
+  },
+  {
+   "name": "ja_jp_1672",
+   "path": "fleurs/ja_jp/1672.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1672,
+    "fleurs_file": "10770212904668726521.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.76,
+   "num_samples": 188160,
+   "sha256": "a68da5448b04a9b17ea79a0be2b885c75f155e7f73a78810ee272b38109a471f",
+   "reference_text": {
+    "transcription": "生地の温度が上がりすぎないように気を付けてください縮みの原因になったり 極端な場合は焦げ付きの原因になります",
+    "raw_transcription": "生地の温度が上がりすぎないように気を付けてください（縮みの原因になったり、極端な場合は焦げ付きの原因になります）。"
+   }
+  },
+  {
+   "name": "ja_jp_1674",
+   "path": "fleurs/ja_jp/1674.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1674,
+    "fleurs_file": "1720153234976894727.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.5,
+   "num_samples": 168000,
+   "sha256": "be5721e38b844b658841a3778c762eaf18b27279c65a7f893b0b3f59562395f7",
+   "reference_text": {
+    "transcription": "1分間で沸騰する地域もあれば 沸騰するまでに何分もかかる地域もあります",
+    "raw_transcription": "1分間で沸騰する地域もあれば、沸騰するまでに何分もかかる地域もあります。"
+   }
+  },
+  {
+   "name": "ja_jp_1675",
+   "path": "fleurs/ja_jp/1675.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1675,
+    "fleurs_file": "13337337193228256508.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 15.9,
+   "num_samples": 254400,
+   "sha256": "e3d17bb2587aa876d60034fd1eae93fb4f4bd71671b6295631998ac360112dd2",
+   "reference_text": {
+    "transcription": "すべての名詞は あなた を指す単語sieと同様に 文の途中であっても常に大文字で始まります",
+    "raw_transcription": "すべての名詞は、「あなた」を指す単語Sieと同様に、文の途中であっても常に大文字で始まります。"
+   }
+  },
+  {
+   "name": "ja_jp_1676",
+   "path": "fleurs/ja_jp/1676.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1676,
+    "fleurs_file": "11774263488323033883.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.2,
+   "num_samples": 163200,
+   "sha256": "7375a5b44161c96cb57bb8e7023f62abf087f562ac6d5157b7da5a87a6c28e3a",
+   "reference_text": {
+    "transcription": "南アフリカにあるすべての国立公園と同様に この公園には毎日保護費と入園料がかかります",
+    "raw_transcription": "南アフリカにあるすべての国立公園と同様に、この公園には毎日保護費と入園料がかかります。"
+   }
+  },
+  {
+   "name": "ja_jp_1677",
+   "path": "fleurs/ja_jp/1677.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1677,
+    "fleurs_file": "17199837996097065477.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 8.34,
+   "num_samples": 133440,
+   "sha256": "b3ae2dd78bf3d966813cd1df0d9cfeeecff2cbe796ab365b57e2babf51f0a5c5",
+   "reference_text": {
+    "transcription": "現在 翅を折り返すことができない昆虫はトンボとカゲロウのみです",
+    "raw_transcription": "現在、翅を折り返すことができない昆虫はトンボとカゲロウのみです。"
+   }
+  },
+  {
+   "name": "ja_jp_1679",
+   "path": "fleurs/ja_jp/1679.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1679,
+    "fleurs_file": "12283431306979433028.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.62,
+   "num_samples": 169920,
+   "sha256": "052e07c27a1b5943083a4054b9d85930b0b8a044801215bbf353dedc42b7a36c",
+   "reference_text": {
+    "transcription": "エアロスミスはツアーで予定していたコンサートを中止しました",
+    "raw_transcription": "エアロスミスはツアーで予定していたコンサートを中止しました。"
+   }
+  },
+  {
+   "name": "ja_jp_1680",
+   "path": "fleurs/ja_jp/1680.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1680,
+    "fleurs_file": "12313100571975929157.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 13.5,
+   "num_samples": 216000,
+   "sha256": "d5564586f14f8bb207a167d95a55588abaa8695b0c3045598d4dc688c8adbcad",
+   "reference_text": {
+    "transcription": "実に均整の取れた体で運動能力の高い虎は うまくはないものの登ったり 泳いだり 長い距離を跳んだり たくましい人間の5倍の力で引っ張ったりできます",
+    "raw_transcription": "実に均整の取れた体で運動能力の高い虎は、（うまくはないものの）登ったり、泳いだり、長い距離を跳んだり、たくましい人間の5倍の力で引っ張ったりできます。"
+   }
+  },
+  {
+   "name": "ja_jp_1681",
+   "path": "fleurs/ja_jp/1681.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1681,
+    "fleurs_file": "1912687681650617524.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 16.2,
+   "num_samples": 259200,
+   "sha256": "085dda9083c5ecc8c88e96641386cd9c2d365fc0a67c4b1d11e698b942f35576",
+   "reference_text": {
+    "transcription": "しかし それだけではありません 実験とは 可能性のある仮説の1つ以上を排除するために使用される試験のことで 質問をしたり観察をしたりすることも科学研究の指針となります",
+    "raw_transcription": "しかし、それだけではありません。実験とは、可能性のある仮説の1つ以上を排除するために使用される試験のことで、質問をしたり観察をしたりすることも科学研究の指針となります。"
+   }
+  },
+  {
+   "name": "ja_jp_1683",
+   "path": "fleurs/ja_jp/1683.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1683,
+    "fleurs_file": "4917967489168307709.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 14.7,
+   "num_samples": 235200,
+   "sha256": "fc3461cac63344a04d90845831c08b6b90e3714ffd8636a1be5bedadb950a95a",
+   "reference_text": {
+    "transcription": "ここには当時を生き延びた多くの男女がおり ユダヤ人かどうかを問わず そこで大切な人が殺害されたり強制労働させられたりした人たちも大勢います",
+    "raw_transcription": "ここには当時を生き延びた多くの男女がおり、ユダヤ人かどうかを問わず、そこで大切な人が殺害されたり強制労働させられたりした人たちも大勢います。"
+   }
+  },
+  {
+   "name": "ja_jp_1684",
+   "path": "fleurs/ja_jp/1684.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1684,
+    "fleurs_file": "18261726414353582601.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 9.3,
+   "num_samples": 148800,
+   "sha256": "60dc9130867ef1e58a4e4015a43b76b4f4d0657337d95c53d29f66392e84b857",
+   "reference_text": {
+    "transcription": "アピアはサモアの首都です この町はウポル島にあり 人口は4万人弱です",
+    "raw_transcription": "アピアはサモアの首都です。この町はウポル島にあり、人口は4万人弱です。"
+   }
+  },
+  {
+   "name": "ja_jp_1685",
+   "path": "fleurs/ja_jp/1685.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1685,
+    "fleurs_file": "12304361216039751145.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 18.24,
+   "num_samples": 291840,
+   "sha256": "90936e1f62a87abd8cf8b56c855106f3595e9aa27b1ec7edecceaf3b235fe041",
+   "reference_text": {
+    "transcription": "例えば 世界で最も普及している静止画写真のフィルム形式は35 mmで これはアナログフィルム時代の終わり頃には主流のフィルムサイズでした",
+    "raw_transcription": "例えば、世界で最も普及している静止画写真のフィルム形式は35 mmで、これはアナログフィルム時代の終わり頃には主流のフィルムサイズでした。"
+   }
+  },
+  {
+   "name": "ja_jp_1686",
+   "path": "fleurs/ja_jp/1686.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1686,
+    "fleurs_file": "16954608784628657059.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 16.8,
+   "num_samples": 268800,
+   "sha256": "08324cfb7980f8ecd5036836b52218b316523cd23c01c7d9e4dba017e976ed19",
+   "reference_text": {
+    "transcription": "その結果 組織が協力して障害を克服するプロセスは 顧客のニーズに応えるための新しい革新的なプロセスにつながる可能性があります",
+    "raw_transcription": "その結果、組織が協力して障害を克服するプロセスは、顧客のニーズに応えるための新しい革新的なプロセスにつながる可能性があります。"
+   }
+  },
+  {
+   "name": "ja_jp_1687",
+   "path": "fleurs/ja_jp/1687.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1687,
+    "fleurs_file": "18366249632195354805.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 9.36,
+   "num_samples": 149760,
+   "sha256": "9c9aa056966923e80b005fcd548182f4d1e3b1992b6754b03b6ef39e3c645f15",
+   "reference_text": {
+    "transcription": "棲み分けと組み換えは 世代ごとに2つのプールの間を行き来しながら変異をシャッフルします",
+    "raw_transcription": "棲み分けと組み換えは、世代ごとに2つのプールの間を行き来しながら変異をシャッフルします。"
+   }
+  },
+  {
+   "name": "ja_jp_1688",
+   "path": "fleurs/ja_jp/1688.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1688,
+    "fleurs_file": "18279972750632495085.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 12.84,
+   "num_samples": 205440,
+   "sha256": "63b037f45be47593bc01a9eb86d024a572786dc33b6ccd1df2300c43715c9e71",
+   "reference_text": {
+    "transcription": "従来より 海軍の仕事は 自国民や物資を輸送する能力を維持すると同時に 敵国民や物資を輸送する能力を確実に妨害することでした",
+    "raw_transcription": "従来より、海軍の仕事は、自国民や物資を輸送する能力を維持すると同時に、敵国民や物資を輸送する能力を確実に妨害することでした。"
+   }
+  },
+  {
+   "name": "ja_jp_1690",
+   "path": "fleurs/ja_jp/1690.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1690,
+    "fleurs_file": "11241695122085346615.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 14.7,
+   "num_samples": 235200,
+   "sha256": "1adee0bad926c5308295bda4317dd0015edbd55df99a14e01c8dcebde1739fab",
+   "reference_text": {
+    "transcription": "私たちは 資格を剥奪するよりも 組織内で意味のある変革を進めた方が選手やクラブ そしてスポーツに資する可能性があるというusocの声明に同意しています",
+    "raw_transcription": "私たちは、資格を剥奪するよりも、組織内で意味のある変革を進めた方が選手やクラブ、そしてスポーツに資する可能性があるというUSOCの声明に同意しています。"
+   }
+  },
+  {
+   "name": "ja_jp_1691",
+   "path": "fleurs/ja_jp/1691.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1691,
+    "fleurs_file": "13548897059510104589.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 10.2,
+   "num_samples": 163200,
+   "sha256": "c13921878e26a711b6b17ec63fea5efb5942e5971813fffb638ba9c1a874aed4",
+   "reference_text": {
+    "transcription": "一部の路線では大企業は自社機を持っているが それ以外の路線や小規模企業では問題があった",
+    "raw_transcription": "一部の路線では大企業は自社機を持っているが、それ以外の路線や小規模企業では問題があった。"
+   }
+  },
+  {
+   "name": "ja_jp_1692",
+   "path": "fleurs/ja_jp/1692.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1692,
+    "fleurs_file": "11839263797655147469.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 9.66,
+   "num_samples": 154560,
+   "sha256": "aee28131e2fdccf32a14cf71cf8e5081b81bfa93015a2a6454c27abbf6d97b29",
+   "reference_text": {
+    "transcription": "日本の原子力庁によれば 原発内で放射性セシウムとヨウ素が特定されています",
+    "raw_transcription": "日本の原子力庁によれば、原発内で放射性セシウムとヨウ素が特定されています。"
+   }
+  },
+  {
+   "name": "ja_jp_1693",
+   "path": "fleurs/ja_jp/1693.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1693,
+    "fleurs_file": "16262976047321486579.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 17.52,
+   "num_samples": 280320,
+   "sha256": "075abd6b54f520a99753e3a3c9f5bf5f019e08b4fc3689585b4ce625d396fc86",
+   "reference_text": {
+    "transcription": "しかし キャプテンのウィケットを失った後 インドは7つのウィケットを失い 36ランしかできませんでした",
+    "raw_transcription": "しかし、キャプテンのウィケットを失った後、インドは7つのウィケットを失い、36ランしかできませんでした。"
+   }
+  },
+  {
+   "name": "ja_jp_1694",
+   "path": "fleurs/ja_jp/1694.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1694,
+    "fleurs_file": "14529552999499110287.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 16.98,
+   "num_samples": 271680,
+   "sha256": "4a9d62f3bbd1c8a41efc06d90e9d5d53610e74850e28ed2b6494e92d67702462",
+   "reference_text": {
+    "transcription": "子供たちが里親制度に預けられる理由は 育児放棄から虐待 さらには恐喝に至るまでさまざまです",
+    "raw_transcription": "子供たちが里親制度に預けられる理由は、育児放棄から虐待、さらには恐喝に至るまでさまざまです。"
+   }
+  },
+  {
+   "name": "ja_jp_1695",
+   "path": "fleurs/ja_jp/1695.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1695,
+    "fleurs_file": "13750077474248323895.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 12.42,
+   "num_samples": 198720,
+   "sha256": "8ba2c06de3a6934a175402a067a128e688e00915e94c84fe060a9d14fab74a66",
+   "reference_text": {
+    "transcription": "特に夏場には オリーブオイルを塗ったパンにトマトとチーズ チューナなどの調味料を加えた パンボリ というシンプルな料理が人気です",
+    "raw_transcription": "特に夏場には、オリーブオイルを塗ったパンにトマトとチーズ、チューナなどの調味料を加えた「パンボリ」というシンプルな料理が人気です。"
+   }
+  },
+  {
+   "name": "ja_jp_1696",
+   "path": "fleurs/ja_jp/1696.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1696,
+    "fleurs_file": "15711465553712193967.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.94,
+   "num_samples": 191040,
+   "sha256": "f4f4af36e6168686295f8ffcccf25a91b2f6f8c715e80d03abc341ddf1747ccd",
+   "reference_text": {
+    "transcription": "その大学の研究者たちによれば この2つの化合物は 互いに反応して腎臓の機能を阻害しうる結晶を形成します",
+    "raw_transcription": "その大学の研究者たちによれば、この2つの化合物は、互いに反応して腎臓の機能を阻害しうる結晶を形成します。"
+   }
+  },
+  {
+   "name": "ja_jp_1697",
+   "path": "fleurs/ja_jp/1697.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1697,
+    "fleurs_file": "9026361562934156346.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 14.1,
+   "num_samples": 225600,
+   "sha256": "2f2ba30337f22661498e1c48f70f171fa774265472dccc939afe90cf8fe1f1a2",
+   "reference_text": {
+    "transcription": "痛みを抑えるのに必要な薬がその大会で禁止されているため 彼は服用できませんでした",
+    "raw_transcription": "痛みを抑えるのに必要な薬がその大会で禁止されているため、彼は服用できませんでした。"
+   }
+  },
+  {
+   "name": "ja_jp_1698",
+   "path": "fleurs/ja_jp/1698.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1698,
+    "fleurs_file": "12611331702345578435.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.04,
+   "num_samples": 176640,
+   "sha256": "3942b29baaae8ef3f71b3c2471ec1eaa10c2a6e0dd6394669fd3ef97f514025d",
+   "reference_text": {
+    "transcription": "宇宙に存在するあらゆるものは物質でできています あらゆる物質は原子と呼ばれる微小な粒子でできています",
+    "raw_transcription": "宇宙に存在するあらゆるものは物質でできています。あらゆる物質は原子と呼ばれる微小な粒子でできています。"
+   }
+  },
+  {
+   "name": "ja_jp_1699",
+   "path": "fleurs/ja_jp/1699.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1699,
+    "fleurs_file": "11634744776139710083.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 13.98,
+   "num_samples": 223680,
+   "sha256": "5c2637d7792a9dc637cad4101e7a61d49fe79081f402abd0db434876b72935b8",
+   "reference_text": {
+    "transcription": "ある観察者がビシュケクを 無政府状態 に陥っていると表現したように ギャングたちが街路を徘徊し 日用品店を略奪しました",
+    "raw_transcription": "ある観察者がビシュケクを「無政府状態」に陥っていると表現したように、ギャングたちが街路を徘徊し、日用品店を略奪しました。"
+   }
+  },
+  {
+   "name": "ja_jp_1700",
+   "path": "fleurs/ja_jp/1700.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1700,
+    "fleurs_file": "13419550921847832608.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 7.5,
+   "num_samples": 120000,
+   "sha256": "38280f87ed133b2e440a9871db0ae4c159d4bf28dbe810660254f458d9366a67",
+   "reference_text": {
+    "transcription": "海の下は薄く 高地の下は厚くなっています",
+    "raw_transcription": "海の下は薄く、高地の下は厚くなっています。"
+   }
+  },
+  {
+   "name": "ja_jp_1701",
+   "path": "fleurs/ja_jp/1701.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1701,
+    "fleurs_file": "10457758295680448532.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.88,
+   "num_samples": 190080,
+   "sha256": "ad7c254aa4d25935fdc8078bd2296b478371a074906dcd880634622eb0650832",
+   "reference_text": {
+    "transcription": "ヤギの家畜化は 約1万年前に始まり その中心はイランのザグロス山脈西部であったとされています",
+    "raw_transcription": "ヤギの家畜化は、約1万年前に始まり、その中心はイランのザグロス山脈西部であったとされています。"
+   }
+  },
+  {
+   "name": "ja_jp_1702",
+   "path": "fleurs/ja_jp/1702.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1702,
+    "fleurs_file": "11654328233864473049.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 9.9,
+   "num_samples": 158400,
+   "sha256": "97684edce038014c8872762f3786f2f4d888cfe74fe749665b1cd2898e8d865f",
+   "reference_text": {
+    "transcription": "わずか2週間でアメリカ軍と自由フランス軍は南フランスを解放し ドイツに向かっていました",
+    "raw_transcription": "わずか2週間でアメリカ軍と自由フランス軍は南フランスを解放し、ドイツに向かっていました。"
+   }
+  },
+  {
+   "name": "ja_jp_1704",
+   "path": "fleurs/ja_jp/1704.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1704,
+    "fleurs_file": "3809847991485259210.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.7,
+   "num_samples": 187200,
+   "sha256": "3ed3f06036c34b2ffe4e7a73a28ee03927e81ce304ce6f0d37984450c57690ac",
+   "reference_text": {
+    "transcription": "砂漠の砂による脅威から保護するため 1990年には危険な世界遺産のリストに追加されました",
+    "raw_transcription": "砂漠の砂による脅威から保護するため、1990年には危険な世界遺産のリストに追加されました。"
+   }
+  },
+  {
+   "name": "ja_jp_1705",
+   "path": "fleurs/ja_jp/1705.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1705,
+    "fleurs_file": "14993981323281996452.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 12.48,
+   "num_samples": 199680,
+   "sha256": "ee56826f730535b29a374f6794fb559023459479c82935262b1d242f04920e41",
+   "reference_text": {
+    "transcription": "1940年8月15日 連合国は南フランスに侵攻し その侵攻は ドラグーン作戦 と呼ばれました",
+    "raw_transcription": "1940年8月15日、連合国は南フランスに侵攻し、その侵攻は「ドラグーン作戦」と呼ばれました。"
+   }
+  },
+  {
+   "name": "ja_jp_1707",
+   "path": "fleurs/ja_jp/1707.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1707,
+    "fleurs_file": "12099597964451318813.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.64,
+   "num_samples": 186240,
+   "sha256": "f6095357de2bd230cad0d5b8044e4f0f10b391635d3e2d58198482d905248895",
+   "reference_text": {
+    "transcription": "ここは南アフリカの主な観光地の1つであり 南アフリカ国立公園san parksの目玉とされています",
+    "raw_transcription": "ここは南アフリカの主な観光地の1つであり、南アフリカ国立公園（SAN Parks）の目玉とされています。"
+   }
+  },
+  {
+   "name": "ja_jp_1709",
+   "path": "fleurs/ja_jp/1709.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1709,
+    "fleurs_file": "12193914003531280379.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 12.72,
+   "num_samples": 203520,
+   "sha256": "45de3ef196410ab6333a8b5e3532d153f36bbd46105e4f592d1ed70fb450b86e",
+   "reference_text": {
+    "transcription": "本報告書は イラクに対する行政府の現在の政策のほぼすべての側面を強く批判し 即時の方向転換を促すものです",
+    "raw_transcription": "本報告書は、イラクに対する行政府の現在の政策のほぼすべての側面を強く批判し、即時の方向転換を促すものです。"
+   }
+  },
+  {
+   "name": "ja_jp_1710",
+   "path": "fleurs/ja_jp/1710.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1710,
+    "fleurs_file": "3299144644124471779.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 11.22,
+   "num_samples": 179520,
+   "sha256": "3002bab9a8b056d28f2d4804d3e45882ee2e0fb132820db5079eb118a4e7a427",
+   "reference_text": {
+    "transcription": "先週 経済産業省は appleが 深刻ではない とする過熱事故を追加で34件報告したと発表しました",
+    "raw_transcription": "先週、経済産業省は、Appleが「深刻ではない」とする過熱事故を追加で34件報告したと発表しました。"
+   }
+  },
+  {
+   "name": "ja_jp_1711",
+   "path": "fleurs/ja_jp/1711.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1711,
+    "fleurs_file": "609677003444030796.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 14.7,
+   "num_samples": 235200,
+   "sha256": "154ef5b79ad45b93d38a83af25365eb4df4824c08f453f1418bb43a9b006aefe",
+   "reference_text": {
+    "transcription": "これらの理論では ある種の人々が日常的に特定のことをしたがる動機について そして彼らに特定のことをさせる あるいはさせない環境要因について考察します",
+    "raw_transcription": "これらの理論では、ある種の人々が日常的に特定のことをしたがる動機について、そして彼らに特定のことをさせる、あるいはさせない環境要因について考察します。"
+   }
+  },
+  {
+   "name": "ja_jp_1712",
+   "path": "fleurs/ja_jp/1712.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1712,
+    "fleurs_file": "13666851289205711433.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 18.48,
+   "num_samples": 295680,
+   "sha256": "0e5457d3c06ef60da250b8ceccef00fb10aa49bf9626fa015b8a11007eb6328e",
+   "reference_text": {
+    "transcription": "1966年からスンダルバンスは野生動物保護区となり 現在では推定で400頭のロイヤルベンガルトラと約30,000頭のアクシスジカが生息しています",
+    "raw_transcription": "1966年からスンダルバンスは野生動物保護区となり、現在では推定で400頭のロイヤルベンガルトラと約30,000頭のアクシスジカが生息しています。"
+   }
+  },
+  {
+   "name": "ja_jp_1713",
+   "path": "fleurs/ja_jp/1713.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1713,
+    "fleurs_file": "7843547090466652782.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 17.1,
+   "num_samples": 273600,
+   "sha256": "dd28a27e2ba5ee8d2298c294fec177175a4e48118fd6701da80a152c0ac4fa41",
+   "reference_text": {
+    "transcription": "ゴマはかなり安全ですが ゴマ以外の場所を訪れる場合は 北キブ州で続く戦闘の状況を調査して理解する必要があります",
+    "raw_transcription": "ゴマはかなり安全ですが、ゴマ以外の場所を訪れる場合は、北キブ州で続く戦闘の状況を調査して理解する必要があります。"
+   }
+  },
+  {
+   "name": "ja_jp_1714",
+   "path": "fleurs/ja_jp/1714.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1714,
+    "fleurs_file": "17255811237948762984.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 14.28,
+   "num_samples": 228480,
+   "sha256": "441207a230d3b7b17a62ed67c56a08f006d7bddb8e81cc77321715fc456e3b09",
+   "reference_text": {
+    "transcription": "衛星はロケットで宇宙に送られました 科学者が宇宙で望遠鏡を使う理由は 地球の大気によって人間の視界に入る光や景色の一部が歪むからです",
+    "raw_transcription": "衛星はロケットで宇宙に送られました。科学者が宇宙で望遠鏡を使う理由は、地球の大気によって人間の視界に入る光や景色の一部が歪むからです。"
+   }
+  },
+  {
+   "name": "ja_jp_1715",
+   "path": "fleurs/ja_jp/1715.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1715,
+    "fleurs_file": "7599791601434743092.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 26.64,
+   "num_samples": 426240,
+   "sha256": "1a1233e6a98695b418720944f1b2e663ca01a94b0082908c869d13eb6dc4846b",
+   "reference_text": {
+    "transcription": "メトロの構内や車内の定期アナウンスはカタルーニャ語のみですが 事故による遅延などの際には自動システムによってスペイン語 英語 フランス語 アラビア語 日本語といった各言語でアナウンスされます",
+    "raw_transcription": "メトロの構内や車内の定期アナウンスはカタルーニャ語のみですが、事故による遅延などの際には自動システムによってスペイン語、英語、フランス語、アラビア語、日本語といった各言語でアナウンスされます。"
+   }
+  },
+  {
+   "name": "ja_jp_1716",
+   "path": "fleurs/ja_jp/1716.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1716,
+    "fleurs_file": "12706337775401995438.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 19.08,
+   "num_samples": 305280,
+   "sha256": "8bc37d61ea0f64699a33d08b2fff16950a081a939e3ec5d7cc96669702fa70b8",
+   "reference_text": {
+    "transcription": "芸能ニュースサイトtmzによると 写真家はセプルベダ大通りの反対車線に車を停め 道路を渡って進む前に警察の検問を写真に収めようとしたため 交通規制をしていたカリフォルニア州ハイウェイパトロールの警察官が横断して戻るように2回も命じたそうです",
+    "raw_transcription": "芸能ニュースサイトTMZによると、写真家はセプルベダ大通りの反対車線に車を停め、道路を渡って進む前に警察の検問を写真に収めようとしたため、交通規制をしていたカリフォルニア州ハイウェイパトロールの警察官が横断して戻るように2回も命じたそうです。"
+   }
+  },
+  {
+   "name": "ja_jp_1718",
+   "path": "fleurs/ja_jp/1718.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1718,
+    "fleurs_file": "11179370060482213220.wav",
+    "gender": 1,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 13.86,
+   "num_samples": 221760,
+   "sha256": "9389b3927602db17f8f69e44c38899b0d2ea71c6a5b848b422b4bf2ba728f65a",
+   "reference_text": {
+    "transcription": "骨董品について普遍的な定義はありません 税務署によっては 100年以上前のものを骨董品と定義しています",
+    "raw_transcription": "骨董品について普遍的な定義はありません。税務署によっては、100年以上前のものを骨董品と定義しています。"
+   }
+  },
+  {
+   "name": "ja_jp_1719",
+   "path": "fleurs/ja_jp/1719.wav",
+   "source": {
+    "repo": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "ja_jp",
+    "split": "test",
+    "id": 1719,
+    "fleurs_file": "2302499882394559724.wav",
+    "gender": 0,
+    "source_subtype": "FLOAT",
+    "to_pcm16": "round(x * 32768), clipped"
+   },
+   "license": "CC BY 4.0 (FLEURS)",
+   "duration_s": 13.62,
+   "num_samples": 217920,
+   "sha256": "ee074012f976a2b1de567589f0fdcf455c8e35c7ae8a396519e38b87d2839095",
+   "reference_text": {
+    "transcription": "悪天候とは 物理的被害 深刻な社会的混乱 人命に関わる被害につながりうる危険な気象現象の総称です",
+    "raw_transcription": "悪天候とは、物理的被害、深刻な社会的混乱、人命に関わる被害につながりうる危険な気象現象の総称です。"
+   }
+  }
+ ]
+}

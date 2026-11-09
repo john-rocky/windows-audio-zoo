@@ -1,0 +1,8 @@
+writeback: 10 texts -> C:\src\audiozoo\runs\first-a\kokoro\ovg-fp16-cpu\run1.writeback.json
+writeback: 10 texts -> C:\src\audiozoo\runs\first-a\kokoro\ovg-fp16-igpu\run1.writeback.json
+writeback: 0 texts -> C:\src\audiozoo\runs\first-a\kokoro\ovg-fp16-rtx\run1.writeback.json
+writeback: 10 texts -> C:\src\audiozoo\runs\first-a\kokoro\ovg-int8-cpu\run1.writeback.json
+writeback: 10 texts -> C:\src\audiozoo\runs\first-a\kokoro\ovg-int8-igpu\run1.writeback.json
+writeback: 10 texts -> C:\src\audiozoo\runs\first-a\kokoro\ort-fp32-cpu\run1.writeback.json
+writeback: 10 texts -> C:\src\audiozoo\runs\first-a\kokoro\ort-fp32-rtx\run1.writeback.json
+writeback: 0 texts -> C:\src\audiozoo\runs\first-a\kokoro\ort-fp32-igpu\run1.writeback.json

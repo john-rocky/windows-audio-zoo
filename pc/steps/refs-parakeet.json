@@ -1,0 +1,48 @@
+[
+ {
+  "name": "pip-ref",
+  "exe": "uv",
+  "args": [
+   "pip",
+   "install",
+   "--python",
+   "{ROOT}\\.venv-ref\\Scripts\\python.exe",
+   "-r",
+   "{ROOT}\\pc\\req\\ref.txt"
+  ],
+  "timeout_min": 45
+ },
+ {
+  "name": "versions-ref",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\venv_versions.py",
+   "--out",
+   "{ROOT}\\logs\\versions-ref.txt"
+  ],
+  "timeout_min": 5,
+  "venv": "ref"
+ },
+ {
+  "name": "ref-parakeet",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\ref_hf.py",
+   "--family",
+   "parakeet",
+   "--model-dir",
+   "{ROOT}\\models\\nvidia__parakeet-tdt-0.6b-v3",
+   "--set",
+   "S150",
+   "--langs",
+   "en_us",
+   "--fixtures",
+   "{FIX}",
+   "--out",
+   "{ROOT}\\refs\\parakeet\\ref.json"
+  ],
+  "timeout_min": 40,
+  "venv": "ref",
+  "ram_gb": 6
+ }
+]

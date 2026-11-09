@@ -1,0 +1,6 @@
+[2026-11-09T13:39:12.8133614+09:00] chain start: plan C:\src\audiozoo\pc\plans\first-bn.json mode first, 1 units, pid 35360
+[2026-11-09T13:39:16.9568155+09:00] adapters: 0x00000000_0x00012C48=nvidia, 0x00000000_0x0001260E=intel-gpu, 0x00000000_0x00012BB8=?, 0x00000000_0x00013E4C=npu?
+[2026-11-09T13:39:17.0811833+09:00] qwen3asr/ovg-int8-npu run 1 waits for 9 GB of free RAM (now 8.6 GB)
+[2026-11-09T13:40:19.2655945+09:00] qwen3asr/ovg-int8-npu run 1 start
+[2026-11-09T13:40:24.6044970+09:00] qwen3asr/ovg-int8-npu run 1 end: exit 1, ERROR, 3.19 s
+[2026-11-09T13:40:24.6205402+09:00] chain done: OK

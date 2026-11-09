@@ -1,0 +1,2772 @@
+{
+ "runner": "run_asr_ovg.py",
+ "started": "2026-11-10T03:32:43.134326+09:00",
+ "argv": [
+  "--model-dir",
+  "C:\\src\\audiozoo\\exports\\qwen3asr-ov-fp16",
+  "--family",
+  "qwen3asr",
+  "--device",
+  "CPU",
+  "--cache-dir",
+  "C:\\src\\audiozoo\\runs\\s4\\qwen3asr\\ovg-fp16-cpu\\cache",
+  "--set",
+  "S150",
+  "--fixtures",
+  "C:\\src\\audiozoo\\fixtures",
+  "--out",
+  "C:\\src\\audiozoo\\runs\\s4\\qwen3asr\\ovg-fp16-cpu\\run1.json"
+ ],
+ "pid": 3908,
+ "status": "OK",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.001
+ },
+ "rows": [
+  {
+   "id": "en_us_1660",
+   "lang": "en_us",
+   "seconds": 10.68,
+   "wall_s": 4.085903300030623,
+   "text": "Romanticism had a large element of cultural determinism, drawn from writers such as Goethe, Fichte, and Schlegel.",
+   "first_token_ms": 2156.70947265625,
+   "tokens": 32.0,
+   "tpot_ms": {
+    "mean": 62.16166305541992,
+    "std": 8.965893745422363
+   },
+   "generate_ms": {
+    "mean": 4084.212890625,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1661",
+   "lang": "en_us",
+   "seconds": 6.36,
+   "wall_s": 2.591810900019482,
+   "text": "He did not set a figure for the cuts, saying they will be made based on China's economic output.",
+   "first_token_ms": 1092.85302734375,
+   "tokens": 26.0,
+   "tpot_ms": {
+    "mean": 59.887184143066406,
+    "std": 6.3309807777404785
+   },
+   "generate_ms": {
+    "mean": 2590.468994140625,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1662",
+   "lang": "en_us",
+   "seconds": 8.38,
+   "wall_s": 3.0417197999777272,
+   "text": "Alloys are basically a mixture of two or more metals. Don't forget there are many elements on the periodic table.",
+   "first_token_ms": 1470.048095703125,
+   "tokens": 28.0,
+   "tpot_ms": {
+    "mean": 58.14510726928711,
+    "std": 0.9818583726882935
+   },
+   "generate_ms": {
+    "mean": 3040.4189453125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1663",
+   "lang": "en_us",
+   "seconds": 12.12,
+   "wall_s": 4.045986699988134,
+   "text": "Chocamo Valley, Chile's premier climbing destination, known as the Yosemite of South America, with a variety of granite big walls and crags.",
+   "first_token_ms": 1983.3302001953125,
+   "tokens": 34.0,
+   "tpot_ms": {
+    "mean": 62.440643310546875,
+    "std": 8.349458694458008
+   },
+   "generate_ms": {
+    "mean": 4044.326904296875,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1664",
+   "lang": "en_us",
+   "seconds": 8.36,
+   "wall_s": 2.800166699977126,
+   "text": "Swirl the two dry powders together, and then with clean wet hands, squeeze them into a ball.",
+   "first_token_ms": 1273.39453125,
+   "tokens": 26.0,
+   "tpot_ms": {
+    "mean": 60.99742889404297,
+    "std": 7.946119785308838
+   },
+   "generate_ms": {
+    "mean": 2798.923095703125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1665",
+   "lang": "en_us",
+   "seconds": 8.28,
+   "wall_s": 3.6757505999994464,
+   "text": "The document, according to the leak, will refer to the borders dispute, which Palestine wants based on the borders before the 1967 Middle East War.",
+   "first_token_ms": 1577.937255859375,
+   "tokens": 37.0,
+   "tpot_ms": {
+    "mean": 58.22897720336914,
+    "std": 0.8827055096626282
+   },
+   "generate_ms": {
+    "mean": 3674.6220703125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1666",
+   "lang": "en_us",
+   "seconds": 8.34,
+   "wall_s": 3.1165463000070304,
+   "text": "You may also wish to consult the advice of governments other than your own, but their advice is designed for their citizens.",
+   "first_token_ms": 1328.041748046875,
+   "tokens": 28.0,
+   "tpot_ms": {
+    "mean": 66.18122100830078,
+    "std": 12.339738845825195
+   },
+   "generate_ms": {
+    "mean": 3115.39697265625,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1667",
+   "lang": "en_us",
+   "seconds": 14.22,
+   "wall_s": 4.4374261000193655,
+   "text": "Generally speaking, two behaviors can emerge as managers begin to lead their former peers. One end of the spectrum is trying to remain one of the guys or gals.",
+   "first_token_ms": 2134.099853515625,
+   "tokens": 37.0,
+   "tpot_ms": {
+    "mean": 63.9084587097168,
+    "std": 9.07363510131836
+   },
+   "generate_ms": {
+    "mean": 4435.26611328125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1668",
+   "lang": "en_us",
+   "seconds": 13.32,
+   "wall_s": 4.197307499998715,
+   "text": "It may also be beneficial for one to buy a wild card, which provides entry to either selections of parks in South Africa or all of the South African national parks.",
+   "first_token_ms": 1988.533935546875,
+   "tokens": 37.0,
+   "tpot_ms": {
+    "mean": 61.28508758544922,
+    "std": 7.369935035705566
+   },
+   "generate_ms": {
+    "mean": 4195.22705078125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1669",
+   "lang": "en_us",
+   "seconds": 7.2,
+   "wall_s": 2.5544512000051327,
+   "text": "Police Superintendent Shandra Shekar Solanke said the accused appeared in court with covered faces.",
+   "first_token_ms": 1332.7203369140625,
+   "tokens": 22.0,
+   "tpot_ms": {
+    "mean": 58.10971450805664,
+    "std": 0.9785563349723816
+   },
+   "generate_ms": {
+    "mean": 2553.469970703125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1670",
+   "lang": "en_us",
+   "seconds": 29.3,
+   "wall_s": 9.024292599991895,
+   "text": "Their thermal behavior is not as steady as large caves on Earth that often maintain a fairly constant temperature, but this is consistent with these being deep holes in the ground,\" said Glenn Kuching, a United States Geological Survey astrogeology team, and of Northern Arizona University, located in Flagstaff, Arizona.",
+   "first_token_ms": 4667.76708984375,
+   "tokens": 66.0,
+   "tpot_ms": {
+    "mean": 66.94385528564453,
+    "std": 10.382818222045898
+   },
+   "generate_ms": {
+    "mean": 9019.9033203125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1671",
+   "lang": "en_us",
+   "seconds": 10.02,
+   "wall_s": 3.7807449999963865,
+   "text": "Congress began funding the Obscenity Initiative in fiscal 2005, and specified that the FBI must devote 10 agents to adult pornography.",
+   "first_token_ms": 1567.0836181640625,
+   "tokens": 35.0,
+   "tpot_ms": {
+    "mean": 65.05130004882812,
+    "std": 10.525524139404297
+   },
+   "generate_ms": {
+    "mean": 3779.291015625,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1672",
+   "lang": "en_us",
+   "seconds": 10.16,
+   "wall_s": 3.314797400031239,
+   "text": "Be careful not to allow fabric to become too hot, which can cause shrinkage, or in extreme cases, scorch.",
+   "first_token_ms": 1676.5574951171875,
+   "tokens": 29.0,
+   "tpot_ms": {
+    "mean": 58.44734191894531,
+    "std": 0.8983482122421265
+   },
+   "generate_ms": {
+    "mean": 3313.52197265625,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1673",
+   "lang": "en_us",
+   "seconds": 10.08,
+   "wall_s": 3.946451800002251,
+   "text": "During the Revolutionary War, the 13 states first formed a weak central government, with the Congress being its only component under the Articles of Confederation.",
+   "first_token_ms": 1915.56591796875,
+   "tokens": 35.0,
+   "tpot_ms": {
+    "mean": 59.6544189453125,
+    "std": 4.83112907409668
+   },
+   "generate_ms": {
+    "mean": 3944.283935546875,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1674",
+   "lang": "en_us",
+   "seconds": 5.64,
+   "wall_s": 2.5867407000041567,
+   "text": "In some areas, boiling water for a minute is enough, and in others, several minutes are needed.",
+   "first_token_ms": 1045.14453125,
+   "tokens": 25.0,
+   "tpot_ms": {
+    "mean": 64.17998504638672,
+    "std": 9.863394737243652
+   },
+   "generate_ms": {
+    "mean": 2585.9130859375,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1675",
+   "lang": "en_us",
+   "seconds": 8.76,
+   "wall_s": 3.123391500033904,
+   "text": "All nouns, alongside the words say for you, always begin with a capital letter, even in the middle of a sentence.",
+   "first_token_ms": 1489.5330810546875,
+   "tokens": 29.0,
+   "tpot_ms": {
+    "mean": 58.29413986206055,
+    "std": 1.01077401638031
+   },
+   "generate_ms": {
+    "mean": 3122.214111328125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1676",
+   "lang": "en_us",
+   "seconds": 9.42,
+   "wall_s": 3.15504320000764,
+   "text": "As with all South African national parks, there are daily conservation and entry fees for the park.",
+   "first_token_ms": 1767.1795654296875,
+   "tokens": 23.0,
+   "tpot_ms": {
+    "mean": 63.0063591003418,
+    "std": 9.333182334899902
+   },
+   "generate_ms": {
+    "mean": 3153.76904296875,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1677",
+   "lang": "en_us",
+   "seconds": 5.94,
+   "wall_s": 2.216374499956146,
+   "text": "Today, the only insects that cannot fold back their wings are dragonflies and mayflies.",
+   "first_token_ms": 1003.0490112304688,
+   "tokens": 22.0,
+   "tpot_ms": {
+    "mean": 57.71049880981445,
+    "std": 0.9874433875083923
+   },
+   "generate_ms": {
+    "mean": 2215.403076171875,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1678",
+   "lang": "en_us",
+   "seconds": 12.78,
+   "wall_s": 4.494830499985255,
+   "text": "Oliver Sacks, in his paper \"The President's Speech,\" indicated how people who are unable to understand speech because of brain damage are nevertheless able to assess sincerity accurately.",
+   "first_token_ms": 2249.172607421875,
+   "tokens": 39.0,
+   "tpot_ms": {
+    "mean": 59.03538513183594,
+    "std": 0.930630624294281
+   },
+   "generate_ms": {
+    "mean": 4492.97119140625,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1679",
+   "lang": "en_us",
+   "seconds": 3.96,
+   "wall_s": 1.8315348000032827,
+   "text": "Aerosmith have cancelled their remaining concerts on their tour.",
+   "first_token_ms": 869.5498046875,
+   "tokens": 16.0,
+   "tpot_ms": {
+    "mean": 64.0560531616211,
+    "std": 9.779837608337402
+   },
+   "generate_ms": {
+    "mean": 1830.8499755859375,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1680",
+   "lang": "en_us",
+   "seconds": 10.2,
+   "wall_s": 3.747695699974429,
+   "text": "A well-rounded athlete, the tiger can climb, though not well, swim, leap great distances, and pull with five times the force of a strong human.",
+   "first_token_ms": 1693.3974609375,
+   "tokens": 36.0,
+   "tpot_ms": {
+    "mean": 58.638668060302734,
+    "std": 0.8324229717254639
+   },
+   "generate_ms": {
+    "mean": 3746.18896484375,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1681",
+   "lang": "en_us",
+   "seconds": 19.98,
+   "wall_s": 6.017872299998999,
+   "text": "It isn't alone, though. Experimentation, and an experiment is a test that is used to eliminate one or more of the possible hypotheses. Asking questions and making observations also guide scientific research.",
+   "first_token_ms": 3269.497802734375,
+   "tokens": 43.0,
+   "tpot_ms": {
+    "mean": 65.35470581054688,
+    "std": 10.478962898254395
+   },
+   "generate_ms": {
+    "mean": 6014.98876953125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1682",
+   "lang": "en_us",
+   "seconds": 15.64,
+   "wall_s": 5.843211199971847,
+   "text": "While no one knows for certain who wrote it, it is known that early in its life, a large parchment document, it measures 29 3/4 inches by 24 1/2 inches, was rolled up for storage.",
+   "first_token_ms": 2389.045166015625,
+   "tokens": 54.0,
+   "tpot_ms": {
+    "mean": 65.12419128417969,
+    "std": 10.463583946228027
+   },
+   "generate_ms": {
+    "mean": 5841.078125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1683",
+   "lang": "en_us",
+   "seconds": 11.1,
+   "wall_s": 4.146126999985427,
+   "text": "There are still many men and women alive who survived their time here, and many more who had loved ones who were murdered or worked to death there, Jews and non-Jews alike.",
+   "first_token_ms": 1678.663818359375,
+   "tokens": 41.0,
+   "tpot_ms": {
+    "mean": 61.6381721496582,
+    "std": 7.912137031555176
+   },
+   "generate_ms": {
+    "mean": 4144.64599609375,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1684",
+   "lang": "en_us",
+   "seconds": 10.96,
+   "wall_s": 3.8487583000096492,
+   "text": "Apia is the capital of Samoa. The town is on the island of Upolu and has a population of just under 40,000.",
+   "first_token_ms": 1792.50537109375,
+   "tokens": 36.0,
+   "tpot_ms": {
+    "mean": 58.69497299194336,
+    "std": 0.8173326253890991
+   },
+   "generate_ms": {
+    "mean": 3847.27294921875,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1685",
+   "lang": "en_us",
+   "seconds": 13.92,
+   "wall_s": 4.745934500009753,
+   "text": "For example, the most common still image photography format in the world is 35 mm, which was the dominant film size at the close of the analog film era.",
+   "first_token_ms": 2549.939453125,
+   "tokens": 38.0,
+   "tpot_ms": {
+    "mean": 59.28264617919922,
+    "std": 0.8521968722343445
+   },
+   "generate_ms": {
+    "mean": 4743.85400390625,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1686",
+   "lang": "en_us",
+   "seconds": 12.12,
+   "wall_s": 4.254767999984324,
+   "text": "As a result, the process of an organization working together to overcome an obstacle can lead to a new, innovative process to serve the customer's needs.",
+   "first_token_ms": 2307.646484375,
+   "tokens": 34.0,
+   "tpot_ms": {
+    "mean": 58.93954086303711,
+    "std": 1.1370975971221924
+   },
+   "generate_ms": {
+    "mean": 4253.1201171875,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1687",
+   "lang": "en_us",
+   "seconds": 11.52,
+   "wall_s": 3.1421168000088073,
+   "text": "Segregation and recombination shuffle variation back and forth between the two pools with each generation.",
+   "first_token_ms": 1700.198486328125,
+   "tokens": 22.0,
+   "tpot_ms": {
+    "mean": 68.56180572509766,
+    "std": 12.589373588562012
+   },
+   "generate_ms": {
+    "mean": 3140.4609375,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1688",
+   "lang": "en_us",
+   "seconds": 17.44,
+   "wall_s": 5.570757900015451,
+   "text": "The job of an aviz has traditionally been to ensure that your country maintains the ability to move your people and goods, while at the same time interfering with your enemy's ability to move his people and goods.",
+   "first_token_ms": 2655.314208984375,
+   "tokens": 46.0,
+   "tpot_ms": {
+    "mean": 64.71382904052734,
+    "std": 9.84837532043457
+   },
+   "generate_ms": {
+    "mean": 5568.02880859375,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1689",
+   "lang": "en_us",
+   "seconds": 20.76,
+   "wall_s": 5.626017300004605,
+   "text": "Europe is a continent that is relatively small, but with many independent countries. Under normal circumstances, traveling through multiple countries would mean having to go through visa applications and passport control multiple times.",
+   "first_token_ms": 2927.200927734375,
+   "tokens": 41.0,
+   "tpot_ms": {
+    "mean": 67.37480926513672,
+    "std": 11.986920356750488
+   },
+   "generate_ms": {
+    "mean": 5622.85791015625,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1690",
+   "lang": "en_us",
+   "seconds": 19.66,
+   "wall_s": 5.422730799997225,
+   "text": "We agree with the USOC statement that the interests of our athletes and clubs and their sport may be better served by moving forward with meaningful change within our organization rather than desertification.",
+   "first_token_ms": 2895.712890625,
+   "tokens": 41.0,
+   "tpot_ms": {
+    "mean": 63.090003967285156,
+    "std": 7.57113790512085
+   },
+   "generate_ms": {
+    "mean": 5419.88720703125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1691",
+   "lang": "en_us",
+   "seconds": 9.36,
+   "wall_s": 3.2822927000233904,
+   "text": "On some routes, larger companies have their own planes, but for other routes and smaller firms, there was a problem.",
+   "first_token_ms": 1451.406005859375,
+   "tokens": 28.0,
+   "tpot_ms": {
+    "mean": 67.7372055053711,
+    "std": 12.135884284973145
+   },
+   "generate_ms": {
+    "mean": 3280.906005859375,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1692",
+   "lang": "en_us",
+   "seconds": 7.38,
+   "wall_s": 2.5424355999566615,
+   "text": "According to Japan's Nuclear Agency, radioactive calcium and iodine has been identified at the plant.",
+   "first_token_ms": 1264.006103515625,
+   "tokens": 23.0,
+   "tpot_ms": {
+    "mean": 58.0432014465332,
+    "std": 1.208809494972229
+   },
+   "generate_ms": {
+    "mean": 2541.426025390625,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1693",
+   "lang": "en_us",
+   "seconds": 8.52,
+   "wall_s": 3.2181269000284374,
+   "text": "But after losing the captain's wicket, India only made 36 runs, losing seven wickets to end the innings.",
+   "first_token_ms": 1425.6939697265625,
+   "tokens": 30.0,
+   "tpot_ms": {
+    "mean": 61.74831771850586,
+    "std": 8.979087829589844
+   },
+   "generate_ms": {
+    "mean": 3216.85791015625,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1694",
+   "lang": "en_us",
+   "seconds": 10.72,
+   "wall_s": 3.4854127999860793,
+   "text": "Children are placed in foster care for a wide variety of reasons that range from neglect to abuse, and even to extortion.",
+   "first_token_ms": 1720.189453125,
+   "tokens": 28.0,
+   "tpot_ms": {
+    "mean": 65.3061294555664,
+    "std": 11.074469566345215
+   },
+   "generate_ms": {
+    "mean": 3483.91796875,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1695",
+   "lang": "en_us",
+   "seconds": 12.24,
+   "wall_s": 4.4860134999617,
+   "text": "A simple popular dinner, especially during the summer, is the pa amboli, bread with olive oil, tomato, and any available condiments such as cheese, tuna fish, etc.",
+   "first_token_ms": 1951.190673828125,
+   "tokens": 41.0,
+   "tpot_ms": {
+    "mean": 63.31206130981445,
+    "std": 10.432748794555664
+   },
+   "generate_ms": {
+    "mean": 4484.201171875,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1696",
+   "lang": "en_us",
+   "seconds": 7.44,
+   "wall_s": 2.804265100043267,
+   "text": "The two compounds react with one another to form crystals that may block kidney function, researchers at the university said.",
+   "first_token_ms": 1354.30615234375,
+   "tokens": 26.0,
+   "tpot_ms": {
+    "mean": 57.93672180175781,
+    "std": 0.9217721819877625
+   },
+   "generate_ms": {
+    "mean": 2803.259033203125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1697",
+   "lang": "en_us",
+   "seconds": 6.36,
+   "wall_s": 2.7117782999994233,
+   "text": "He has been unable to take the drugs needed to overcome his pain, as they are banned from the games.",
+   "first_token_ms": 1059.9716796875,
+   "tokens": 26.0,
+   "tpot_ms": {
+    "mean": 66.01895904541016,
+    "std": 11.939632415771484
+   },
+   "generate_ms": {
+    "mean": 2710.8798828125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1698",
+   "lang": "en_us",
+   "seconds": 6.42,
+   "wall_s": 2.496705800003838,
+   "text": "Everything in the universe is made of matter. All matter is made of tiny particles called atoms.",
+   "first_token_ms": 1226.7337646484375,
+   "tokens": 23.0,
+   "tpot_ms": {
+    "mean": 57.66315460205078,
+    "std": 1.0557191371917725
+   },
+   "generate_ms": {
+    "mean": 2495.762939453125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1699",
+   "lang": "en_us",
+   "seconds": 9.6,
+   "wall_s": 3.794135699979961,
+   "text": "Bishkek was described as sinking into a state of anarchy by one observer, as gangs of people roam the streets and plunder stores of consumer goods.",
+   "first_token_ms": 1490.7232666015625,
+   "tokens": 35.0,
+   "tpot_ms": {
+    "mean": 67.69154357910156,
+    "std": 12.410988807678223
+   },
+   "generate_ms": {
+    "mean": 3792.697021484375,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1700",
+   "lang": "en_us",
+   "seconds": 7.2,
+   "wall_s": 2.0058774999924935,
+   "text": "It is thinner under the Maria and thicker under the Highlands.",
+   "first_token_ms": 1135.5062255859375,
+   "tokens": 16.0,
+   "tpot_ms": {
+    "mean": 57.925445556640625,
+    "std": 1.0947366952896118
+   },
+   "generate_ms": {
+    "mean": 2004.8349609375,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1701",
+   "lang": "en_us",
+   "seconds": 10.62,
+   "wall_s": 4.014098099956755,
+   "text": "Goats seem to have been first domesticated roughly 10,000 years ago in the Zagros Mountains of Iran.",
+   "first_token_ms": 1987.1773681640625,
+   "tokens": 31.0,
+   "tpot_ms": {
+    "mean": 67.5050277709961,
+    "std": 12.351444244384766
+   },
+   "generate_ms": {
+    "mean": 4012.77587890625,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1702",
+   "lang": "en_us",
+   "seconds": 10.18,
+   "wall_s": 3.282672700006515,
+   "text": "In just two weeks, the Americans and Free French forces had liberated Southern France and were turning towards Germany.",
+   "first_token_ms": 1610.1824951171875,
+   "tokens": 25.0,
+   "tpot_ms": {
+    "mean": 69.60693359375,
+    "std": 11.861838340759277
+   },
+   "generate_ms": {
+    "mean": 3281.18896484375,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1703",
+   "lang": "en_us",
+   "seconds": 10.12,
+   "wall_s": 2.5784965999773704,
+   "text": "Martelli sworn in a new provisional electoral council of nine members yesterday.",
+   "first_token_ms": 1582.9095458984375,
+   "tokens": 18.0,
+   "tpot_ms": {
+    "mean": 58.46084213256836,
+    "std": 1.066188097000122
+   },
+   "generate_ms": {
+    "mean": 2577.2099609375,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1704",
+   "lang": "en_us",
+   "seconds": 7.32,
+   "wall_s": 2.990850500005763,
+   "text": "In 1990, it was added to the list of World Heritage Sites in Danger due to the threat of desert sands.",
+   "first_token_ms": 1143.635986328125,
+   "tokens": 31.0,
+   "tpot_ms": {
+    "mean": 61.520790100097656,
+    "std": 7.9687886238098145
+   },
+   "generate_ms": {
+    "mean": 2989.715087890625,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1705",
+   "lang": "en_us",
+   "seconds": 10.12,
+   "wall_s": 3.4670787999639288,
+   "text": "On August 15, 1940, the Allies invaded southern France, and the invasion was called Operation Dragoon.",
+   "first_token_ms": 1581.3123779296875,
+   "tokens": 31.0,
+   "tpot_ms": {
+    "mean": 62.797943115234375,
+    "std": 10.595769882202148
+   },
+   "generate_ms": {
+    "mean": 3465.721923828125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1706",
+   "lang": "en_us",
+   "seconds": 12.72,
+   "wall_s": 4.328595900034998,
+   "text": "More traditional churches often hold an Easter vigil on Saturday night during the Easter weekend, with the congregations often breaking into celebration at the stroke of midnight to celebrate Christ's resurrection.",
+   "first_token_ms": 2075.430908203125,
+   "tokens": 39.0,
+   "tpot_ms": {
+    "mean": 59.23839569091797,
+    "std": 1.0163898468017578
+   },
+   "generate_ms": {
+    "mean": 4326.94677734375,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1707",
+   "lang": "en_us",
+   "seconds": 10.92,
+   "wall_s": 3.7793512000353076,
+   "text": "It's one of the main attractions of South Africa, and it's considered the flagship of South African national parks, sand parks.",
+   "first_token_ms": 2079.892822265625,
+   "tokens": 30.0,
+   "tpot_ms": {
+    "mean": 58.53631591796875,
+    "std": 1.1242002248764038
+   },
+   "generate_ms": {
+    "mean": 3777.902099609375,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1708",
+   "lang": "en_us",
+   "seconds": 13.18,
+   "wall_s": 4.8563854999956675,
+   "text": "Hulme has resigned, and he will be replaced in the cabinet by Ed Davey MP. Norman Lamb MP is expected to take the business ministry job Davey is vacating.",
+   "first_token_ms": 2381.905029296875,
+   "tokens": 41.0,
+   "tpot_ms": {
+    "mean": 61.799198150634766,
+    "std": 8.0885591506958
+   },
+   "generate_ms": {
+    "mean": 4854.328125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "en_us_1709",
+   "lang": "en_us",
+   "seconds": 8.64,
+   "wall_s": 3.3823251000139862,
+   "text": "The report is highly critical of almost every aspect of the present policy of the executive towards Iraq, and it urges an immediate change of direction.",
+   "first_token_ms": 1285.7271728515625,
+   "tokens": 32.0,
+   "tpot_ms": {
+    "mean": 67.57744598388672,
+    "std": 12.16804027557373
+   },
+   "generate_ms": {
+    "mean": 3381.135986328125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "cmn_hans_cn_1660",
+   "lang": "cmn_hans_cn",
+   "seconds": 9.6,
+   "wall_s": 3.123658999975305,
+   "text": "浪漫主义具有很强的文化决定论色彩，这源于歌德、费希特和施莱格尔等作家。",
+   "first_token_ms": 1485.7584228515625,
+   "tokens": 28.0,
+   "tpot_ms": {
+    "mean": 60.570899963378906,
+    "std": 7.6876397132873535
+   },
+   "generate_ms": {
+    "mean": 3121.889892578125,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1661",
+   "lang": "cmn_hans_cn",
+   "seconds": 7.74,
+   "wall_s": 2.7014764999621548,
+   "text": "它没有设定削减数额，只是表示将根据中国的经济产出来决定数额。",
+   "first_token_ms": 1540.232421875,
+   "tokens": 21.0,
+   "tpot_ms": {
+    "mean": 57.982269287109375,
+    "std": 1.0637630224227905
+   },
+   "generate_ms": {
+    "mean": 2700.325927734375,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1662",
+   "lang": "cmn_hans_cn",
+   "seconds": 7.5,
+   "wall_s": 2.647099399997387,
+   "text": "合金基本上由两种或以上金属混合而成。不要忘记一点，元素周期表上有很多元素。",
+   "first_token_ms": 1166.9761962890625,
+   "tokens": 25.0,
+   "tpot_ms": {
+    "mean": 61.59947204589844,
+    "std": 9.423232078552246
+   },
+   "generate_ms": {
+    "mean": 2646.053955078125,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1663",
+   "lang": "cmn_hans_cn",
+   "seconds": 13.38,
+   "wall_s": 4.104237999999896,
+   "text": "这里首选登山目的地科查莫山谷，被称为南美洲的优美胜地。这里有各式各样的花岗岩大石壁和峭壁。",
+   "first_token_ms": 2098.932861328125,
+   "tokens": 35.0,
+   "tpot_ms": {
+    "mean": 58.89339065551758,
+    "std": 0.8499269485473633
+   },
+   "generate_ms": {
+    "mean": 4101.7822265625,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1664",
+   "lang": "cmn_hans_cn",
+   "seconds": 11.4,
+   "wall_s": 3.424831299984362,
+   "text": "搅动两种干粉，使其混合，然后用干净的湿手把它们揉成一个球。",
+   "first_token_ms": 1888.81494140625,
+   "tokens": 26.0,
+   "tpot_ms": {
+    "mean": 61.359798431396484,
+    "std": 9.4627046585083
+   },
+   "generate_ms": {
+    "mean": 3423.2490234375,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1665",
+   "lang": "cmn_hans_cn",
+   "seconds": 15.1,
+   "wall_s": 4.265526000002865,
+   "text": "据透露，这份文件将提及边界争端。巴勒斯坦希望以一九六七年中东战争前的边界为基础。",
+   "first_token_ms": 2217.20703125,
+   "tokens": 31.0,
+   "tpot_ms": {
+    "mean": 68.19152069091797,
+    "std": 12.311854362487793
+   },
+   "generate_ms": {
+    "mean": 4263.408203125,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1666",
+   "lang": "cmn_hans_cn",
+   "seconds": 8.16,
+   "wall_s": 3.2127427000086755,
+   "text": "你也可以咨询除贵国以外其他政府的建议，但他们的建议是为他们的公民而制定的。",
+   "first_token_ms": 1639.5528564453125,
+   "tokens": 27.0,
+   "tpot_ms": {
+    "mean": 60.440677642822266,
+    "std": 7.589655876159668
+   },
+   "generate_ms": {
+    "mean": 3211.5048828125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "cmn_hans_cn_1667",
+   "lang": "cmn_hans_cn",
+   "seconds": 15.64,
+   "wall_s": 4.346075400011614,
+   "text": "一般来说，当管理者开始领导过去的同事时，会出现两种行为：一种情况是，他们会努力与团队成员保持亲密关系。",
+   "first_token_ms": 2552.109130859375,
+   "tokens": 31.0,
+   "tpot_ms": {
+    "mean": 59.71731185913086,
+    "std": 2.742532730102539
+   },
+   "generate_ms": {
+    "mean": 4344.10302734375,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1668",
+   "lang": "cmn_hans_cn",
+   "seconds": 8.76,
+   "wall_s": 3.2976577999652363,
+   "text": "买一张万能卡也有不少好处。带着这张卡，你可以进入南非的一些公园或者全部的国家公园。",
+   "first_token_ms": 1656.0009765625,
+   "tokens": 28.0,
+   "tpot_ms": {
+    "mean": 60.718284606933594,
+    "std": 8.92637825012207
+   },
+   "generate_ms": {
+    "mean": 3295.85595703125,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1669",
+   "lang": "cmn_hans_cn",
+   "seconds": 6.84,
+   "wall_s": 2.569682899978943,
+   "text": "警察局长钱德拉谢卡尔索兰基说：“被告人出庭时都蒙住了脸。”",
+   "first_token_ms": 1094.3829345703125,
+   "tokens": 24.0,
+   "tpot_ms": {
+    "mean": 64.07490539550781,
+    "std": 11.631593704223633
+   },
+   "generate_ms": {
+    "mean": 2568.693115234375,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1670",
+   "lang": "cmn_hans_cn",
+   "seconds": 25.74,
+   "wall_s": 8.606335400021635,
+   "text": "它们的热行为不像地球上的大型洞穴那么稳定。这些大型洞穴通常会保持相当恒定的温度，但它们与地下深穴的情况很相似。亚利桑那州旗杆镇，美国地质调查局（USGS）太空地质团队和北亚利桑那大学的格伦·库辛说道。",
+   "first_token_ms": 3834.573974609375,
+   "tokens": 75.0,
+   "tpot_ms": {
+    "mean": 64.41779327392578,
+    "std": 8.119391441345215
+   },
+   "generate_ms": {
+    "mean": 8602.2392578125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "cmn_hans_cn_1671",
+   "lang": "cmn_hans_cn",
+   "seconds": 10.32,
+   "wall_s": 4.031718700018246,
+   "text": "国会从2005年财年开始资助该扫扫黄倡议，并规定联邦调查局必须指派十名探员专门打击成人色情。",
+   "first_token_ms": 1892.5771484375,
+   "tokens": 36.0,
+   "tpot_ms": {
+    "mean": 61.061134338378906,
+    "std": 7.584471225738525
+   },
+   "generate_ms": {
+    "mean": 4030.19189453125,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1672",
+   "lang": "cmn_hans_cn",
+   "seconds": 13.9,
+   "wall_s": 3.7968013999634422,
+   "text": "小心不要让衣服变得太热，这可能会产生收缩现象，在极端情况下会把衣服烤焦。",
+   "first_token_ms": 2071.20947265625,
+   "tokens": 26.0,
+   "tpot_ms": {
+    "mean": 68.92057800292969,
+    "std": 13.16995620727539
+   },
+   "generate_ms": {
+    "mean": 3794.7041015625,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1673",
+   "lang": "cmn_hans_cn",
+   "seconds": 8.58,
+   "wall_s": 2.9240337000228465,
+   "text": "在独立战争期间，十三个州根据联邦条例组成了弱小的中央政府，国会是其唯一的组成部分。",
+   "first_token_ms": 1287.672607421875,
+   "tokens": 29.0,
+   "tpot_ms": {
+    "mean": 58.38322448730469,
+    "std": 1.1661595106124878
+   },
+   "generate_ms": {
+    "mean": 2922.864013671875,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1674",
+   "lang": "cmn_hans_cn",
+   "seconds": 8.88,
+   "wall_s": 3.0364702000515535,
+   "text": "在某些地区，水煮一分钟就足够了；在其他地区，则需要几分钟的时间。",
+   "first_token_ms": 1751.1026611328125,
+   "tokens": 23.0,
+   "tpot_ms": {
+    "mean": 58.35125732421875,
+    "std": 1.0542575120925903
+   },
+   "generate_ms": {
+    "mean": 3035.2890625,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1675",
+   "lang": "cmn_hans_cn",
+   "seconds": 10.5,
+   "wall_s": 3.6249227999942377,
+   "text": "除去表示零的 C 之外的所有名词，都应以大写字母开头，即便在句子中间也应如此。",
+   "first_token_ms": 1639.8621826171875,
+   "tokens": 30.0,
+   "tpot_ms": {
+    "mean": 68.38551330566406,
+    "std": 11.593381881713867
+   },
+   "generate_ms": {
+    "mean": 3623.50390625,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1676",
+   "lang": "cmn_hans_cn",
+   "seconds": 9.18,
+   "wall_s": 2.6141935999621637,
+   "text": "与所有南非国家公园一样，该公园每天都收取养护费和门票费。",
+   "first_token_ms": 1448.3497314453125,
+   "tokens": 21.0,
+   "tpot_ms": {
+    "mean": 58.20745086669922,
+    "std": 1.043918251991272
+   },
+   "generate_ms": {
+    "mean": 2612.94189453125,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1677",
+   "lang": "cmn_hans_cn",
+   "seconds": 7.98,
+   "wall_s": 2.9543842999846675,
+   "text": "如今，唯一不能向后折叠翅膀的昆虫是蜻蜓和蜉蝣。",
+   "first_token_ms": 1733.7828369140625,
+   "tokens": 21.0,
+   "tpot_ms": {
+    "mean": 60.947120666503906,
+    "std": 7.745995044708252
+   },
+   "generate_ms": {
+    "mean": 2953.158935546875,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1678",
+   "lang": "cmn_hans_cn",
+   "seconds": 17.58,
+   "wall_s": 5.522595899994485,
+   "text": "奥利弗·萨克斯（Oliver Sacks）在他的论文《总统的演讲》中指出，那些因为脑损伤而无法理解语言的人，仍然能够准确地判断说话人是否有诚意。",
+   "first_token_ms": 2518.82177734375,
+   "tokens": 46.0,
+   "tpot_ms": {
+    "mean": 66.67633056640625,
+    "std": 11.240046501159668
+   },
+   "generate_ms": {
+    "mean": 5519.84619140625,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "cmn_hans_cn_1679",
+   "lang": "cmn_hans_cn",
+   "seconds": 9.68,
+   "wall_s": 2.692441000021063,
+   "text": "空中铁匠乐队已经取消了他们巡回演唱会的剩余场次。",
+   "first_token_ms": 1493.0205078125,
+   "tokens": 19.0,
+   "tpot_ms": {
+    "mean": 66.52593231201172,
+    "std": 13.146631240844727
+   },
+   "generate_ms": {
+    "mean": 2690.966064453125,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1680",
+   "lang": "cmn_hans_cn",
+   "seconds": 15.66,
+   "wall_s": 4.554329000005964,
+   "text": "老虎是全能运动员，它会攀爬，虽然攀爬能力不是很强，游泳、跳跃、拉力能拿到人类大力士的五倍。",
+   "first_token_ms": 2475.44677734375,
+   "tokens": 36.0,
+   "tpot_ms": {
+    "mean": 59.322532653808594,
+    "std": 0.8024538159370422
+   },
+   "generate_ms": {
+    "mean": 4552.2001953125,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1681",
+   "lang": "cmn_hans_cn",
+   "seconds": 13.32,
+   "wall_s": 4.064969600003678,
+   "text": "实验是一种用来消除一个或多个可能性假设的实验。不过，实验并不是唯一的方法，提出问题以及进行观察也可以指导科学研究。",
+   "first_token_ms": 2233.458740234375,
+   "tokens": 32.0,
+   "tpot_ms": {
+    "mean": 59.007232666015625,
+    "std": 0.8675234913825989
+   },
+   "generate_ms": {
+    "mean": 4063.162109375,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1682",
+   "lang": "cmn_hans_cn",
+   "seconds": 19.3,
+   "wall_s": 6.167946000001393,
+   "text": "虽然没有人能确定作者是谁，但这个大型羊皮纸文档尺寸为二十九又四分之三英寸乘以二十四又二分之一英寸，据称在刚写成的时候是卷起来存放的。",
+   "first_token_ms": 3150.17822265625,
+   "tokens": 50.0,
+   "tpot_ms": {
+    "mean": 61.515384674072266,
+    "std": 6.019554138183594
+   },
+   "generate_ms": {
+    "mean": 6165.0068359375,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1683",
+   "lang": "cmn_hans_cn",
+   "seconds": 11.7,
+   "wall_s": 4.650015100021847,
+   "text": "还是有许多男女在这里幸存了下来，他们如今仍然健在，而更多人的亲人有的在那里被屠杀，有的一直做苦工到死，犹太人和非犹太人都是如此。",
+   "first_token_ms": 2007.44140625,
+   "tokens": 46.0,
+   "tpot_ms": {
+    "mean": 58.67610549926758,
+    "std": 0.7619929909706116
+   },
+   "generate_ms": {
+    "mean": 4648.3369140625,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1684",
+   "lang": "cmn_hans_cn",
+   "seconds": 14.86,
+   "wall_s": 4.097076600010041,
+   "text": "阿皮亚是萨摩亚的首都，该城镇位于乌波卢岛上，人口数量不足四万。",
+   "first_token_ms": 2496.405029296875,
+   "tokens": 28.0,
+   "tpot_ms": {
+    "mean": 59.1934928894043,
+    "std": 0.9599018096923828
+   },
+   "generate_ms": {
+    "mean": 4095.070068359375,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1685",
+   "lang": "cmn_hans_cn",
+   "seconds": 11.34,
+   "wall_s": 3.871721300005447,
+   "text": "例如，世界上最强常见的静态图像摄影格式是35mm格式，这是胶片电影时代末期占主导地位的电影尺寸。",
+   "first_token_ms": 1896.4281005859375,
+   "tokens": 33.0,
+   "tpot_ms": {
+    "mean": 61.66149139404297,
+    "std": 7.5341081619262695
+   },
+   "generate_ms": {
+    "mean": 3870.06689453125,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1686",
+   "lang": "cmn_hans_cn",
+   "seconds": 8.22,
+   "wall_s": 2.7973754000267945,
+   "text": "因此，一个组织在共同努力克服障碍的过程中，往往会带来新的创新流程，以满足客户的需求。",
+   "first_token_ms": 1267.2772216796875,
+   "tokens": 25.0,
+   "tpot_ms": {
+    "mean": 63.6867790222168,
+    "std": 10.86527156829834
+   },
+   "generate_ms": {
+    "mean": 2796.20703125,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1687",
+   "lang": "cmn_hans_cn",
+   "seconds": 6.66,
+   "wall_s": 2.344399199995678,
+   "text": "由于分离和重组，变异在每一代的两个库之间来回变动。",
+   "first_token_ms": 1242.32373046875,
+   "tokens": 20.0,
+   "tpot_ms": {
+    "mean": 57.923851013183594,
+    "std": 1.09016752243042
+   },
+   "generate_ms": {
+    "mean": 2343.341064453125,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1688",
+   "lang": "cmn_hans_cn",
+   "seconds": 12.54,
+   "wall_s": 3.9155976999900304,
+   "text": "从传统意义上讲，海军的任务是确保国家运输人员和货物的能力，同时干扰敌人运输及其人员和货物的能力。",
+   "first_token_ms": 1863.024658203125,
+   "tokens": 30.0,
+   "tpot_ms": {
+    "mean": 70.68170928955078,
+    "std": 13.088432312011719
+   },
+   "generate_ms": {
+    "mean": 3913.27197265625,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "cmn_hans_cn_1689",
+   "lang": "cmn_hans_cn",
+   "seconds": 17.1,
+   "wall_s": 4.999917000008281,
+   "text": "欧洲是片面积相对较小，但有着许多独立国家的大陆。在通常情况下，穿越多个国家旅行，意味着必须多次经历签证申请和护照检查。",
+   "first_token_ms": 2538.680419921875,
+   "tokens": 37.0,
+   "tpot_ms": {
+    "mean": 68.27894592285156,
+    "std": 12.489852905273438
+   },
+   "generate_ms": {
+    "mean": 4997.2919921875,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1690",
+   "lang": "cmn_hans_cn",
+   "seconds": 14.16,
+   "wall_s": 4.5886501999921165,
+   "text": "我们同意美国奥委会的声明。与其吊销执照，不如在我们组织内部继续推进有意义的变革，这样可能更有利于维护运动员和俱乐部的利益及其运动。",
+   "first_token_ms": 2081.842041015625,
+   "tokens": 41.0,
+   "tpot_ms": {
+    "mean": 62.60068893432617,
+    "std": 8.330824851989746
+   },
+   "generate_ms": {
+    "mean": 4586.328125,
+    "std": 0.0
+   },
+   "language": "English"
+  },
+  {
+   "id": "cmn_hans_cn_1691",
+   "lang": "cmn_hans_cn",
+   "seconds": 6.9,
+   "wall_s": 2.5361533999675885,
+   "text": "在某些航线上，大型公司有自己的飞机，但对于其他航线和小公司来说就有问题了。",
+   "first_token_ms": 1148.02880859375,
+   "tokens": 25.0,
+   "tpot_ms": {
+    "mean": 57.778629302978516,
+    "std": 0.9911052584648132
+   },
+   "generate_ms": {
+    "mean": 2535.158935546875,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1692",
+   "lang": "cmn_hans_cn",
+   "seconds": 11.0,
+   "wall_s": 3.109183499997016,
+   "text": "日本原子能机构表示，核电站检测出了放射性物质，碘和碘。",
+   "first_token_ms": 1871.235595703125,
+   "tokens": 22.0,
+   "tpot_ms": {
+    "mean": 58.84828186035156,
+    "std": 1.1023669242858887
+   },
+   "generate_ms": {
+    "mean": 3107.51806640625,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1693",
+   "lang": "cmn_hans_cn",
+   "seconds": 12.58,
+   "wall_s": 3.9842918000067584,
+   "text": "但在队长输掉三柱门后，印度在结束这一局的比赛时只得了三十六分，输掉了七个三柱门。",
+   "first_token_ms": 1870.301025390625,
+   "tokens": 33.0,
+   "tpot_ms": {
+    "mean": 65.98577117919922,
+    "std": 12.041565895080566
+   },
+   "generate_ms": {
+    "mean": 3982.5810546875,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1694",
+   "lang": "cmn_hans_cn",
+   "seconds": 11.8,
+   "wall_s": 3.1726714999531396,
+   "text": "孩子们因为各种原因被寄养，原因有被忽视、被虐待，甚至被勒索。",
+   "first_token_ms": 1758.51025390625,
+   "tokens": 25.0,
+   "tpot_ms": {
+    "mean": 58.834205627441406,
+    "std": 1.1607075929641724
+   },
+   "generate_ms": {
+    "mean": 3170.985107421875,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1695",
+   "lang": "cmn_hans_cn",
+   "seconds": 13.26,
+   "wall_s": 4.560058300034143,
+   "text": "帕玛森油是一种在夏天尤为流行的简单晚餐，面包搭配橄榄油、番茄，手上任何佐料都可加入，比如奶酪、金枪鱼等。",
+   "first_token_ms": 2255.065185546875,
+   "tokens": 40.0,
+   "tpot_ms": {
+    "mean": 59.03031539916992,
+    "std": 0.99762362241745
+   },
+   "generate_ms": {
+    "mean": 4557.74609375,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1696",
+   "lang": "cmn_hans_cn",
+   "seconds": 8.22,
+   "wall_s": 2.6514185999985784,
+   "text": "该大学的研究人员表示，这两种化合物相互作用形成的晶体可能会造成肾脏功能障碍。",
+   "first_token_ms": 1263.179931640625,
+   "tokens": 22.0,
+   "tpot_ms": {
+    "mean": 66.02949523925781,
+    "std": 11.109862327575684
+   },
+   "generate_ms": {
+    "mean": 2650.278076171875,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1697",
+   "lang": "cmn_hans_cn",
+   "seconds": 9.78,
+   "wall_s": 2.6634800999891013,
+   "text": "他一直无法用药来缓解疼痛，因为比赛禁止参赛者服用这些药物。",
+   "first_token_ms": 1494.6058349609375,
+   "tokens": 21.0,
+   "tpot_ms": {
+    "mean": 58.35512924194336,
+    "std": 1.0606125593185425
+   },
+   "generate_ms": {
+    "mean": 2662.14306640625,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1698",
+   "lang": "cmn_hans_cn",
+   "seconds": 9.72,
+   "wall_s": 3.313190199958626,
+   "text": "宇宙中的一切都由物质构成，而所有的物质都由被称为原子的微小颗粒组成。",
+   "first_token_ms": 1832.804443359375,
+   "tokens": 25.0,
+   "tpot_ms": {
+    "mean": 61.59921646118164,
+    "std": 8.745360374450684
+   },
+   "generate_ms": {
+    "mean": 3311.660888671875,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1699",
+   "lang": "cmn_hans_cn",
+   "seconds": 11.76,
+   "wall_s": 3.9485008000046946,
+   "text": "一名观察者形容彼时凯克正在陷入无政府状态，成群的人们在街上游荡，掠夺商店里的消费品。",
+   "first_token_ms": 1721.4700927734375,
+   "tokens": 33.0,
+   "tpot_ms": {
+    "mean": 69.5121841430664,
+    "std": 12.8202486038208
+   },
+   "generate_ms": {
+    "mean": 3946.366943359375,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1700",
+   "lang": "cmn_hans_cn",
+   "seconds": 12.62,
+   "wall_s": 2.9876994999940507,
+   "text": "阴暗面下面的地壳薄一些，高地下的地壳厚一些。",
+   "first_token_ms": 1865.1181640625,
+   "tokens": 20.0,
+   "tpot_ms": {
+    "mean": 58.95103073120117,
+    "std": 1.1132582426071167
+   },
+   "generate_ms": {
+    "mean": 2985.673095703125,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1701",
+   "lang": "cmn_hans_cn",
+   "seconds": 12.38,
+   "wall_s": 3.6660002999706194,
+   "text": "山羊似乎是一万年前左右在伊朗的扎格罗斯山脉首次被驯养的。",
+   "first_token_ms": 2309.332763671875,
+   "tokens": 24.0,
+   "tpot_ms": {
+    "mean": 58.89274215698242,
+    "std": 1.1003482341766357
+   },
+   "generate_ms": {
+    "mean": 3664.324951171875,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1702",
+   "lang": "cmn_hans_cn",
+   "seconds": 11.14,
+   "wall_s": 3.1165431999834254,
+   "text": "仅仅两个星期，美国和自由法国的军队就解放了法国南部，并转向德国。",
+   "first_token_ms": 1682.5572509765625,
+   "tokens": 23.0,
+   "tpot_ms": {
+    "mean": 65.0888900756836,
+    "std": 9.557796478271484
+   },
+   "generate_ms": {
+    "mean": 3114.989990234375,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1703",
+   "lang": "cmn_hans_cn",
+   "seconds": 9.36,
+   "wall_s": 3.1969631999963894,
+   "text": "昨天，马尔泰利在由九名成员组成的新临时选举委员会（CEP）中宣誓就职。",
+   "first_token_ms": 1505.0626220703125,
+   "tokens": 30.0,
+   "tpot_ms": {
+    "mean": 58.28068923950195,
+    "std": 0.8423665165901184
+   },
+   "generate_ms": {
+    "mean": 3195.68505859375,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1704",
+   "lang": "cmn_hans_cn",
+   "seconds": 7.26,
+   "wall_s": 2.853729199967347,
+   "text": "1990年，由于沙漠的威胁，它被列列入了濒危世界遗产名录。",
+   "first_token_ms": 1368.2237548828125,
+   "tokens": 26.0,
+   "tpot_ms": {
+    "mean": 59.36140823364258,
+    "std": 3.689232349395752
+   },
+   "generate_ms": {
+    "mean": 2852.72607421875,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1705",
+   "lang": "cmn_hans_cn",
+   "seconds": 7.2,
+   "wall_s": 2.762671299977228,
+   "text": "一九四零年八月十五日，盟军攻入法国南部，这次进攻被称为“龙骑兵行动”。",
+   "first_token_ms": 1139.08642578125,
+   "tokens": 29.0,
+   "tpot_ms": {
+    "mean": 57.92850112915039,
+    "std": 0.8703997135162354
+   },
+   "generate_ms": {
+    "mean": 2761.56494140625,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1706",
+   "lang": "cmn_hans_cn",
+   "seconds": 11.76,
+   "wall_s": 4.593880900007207,
+   "text": "更传统的教堂常常在复活节周末的周六晚上举行复活节守夜活动，会众通常在午夜钟声敲响之时涌入庆典，祭庆祝基督的复活。",
+   "first_token_ms": 2185.12890625,
+   "tokens": 42.0,
+   "tpot_ms": {
+    "mean": 58.699684143066406,
+    "std": 0.7312819957733154
+   },
+   "generate_ms": {
+    "mean": 4592.30078125,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1707",
+   "lang": "cmn_hans_cn",
+   "seconds": 6.48,
+   "wall_s": 2.507116799999494,
+   "text": "它是南非的主要景点之一，被认为是南非国家公园体系的主打景点。",
+   "first_token_ms": 1388.367919921875,
+   "tokens": 19.0,
+   "tpot_ms": {
+    "mean": 62.069461822509766,
+    "std": 10.536735534667969
+   },
+   "generate_ms": {
+    "mean": 2506.095947265625,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1708",
+   "lang": "cmn_hans_cn",
+   "seconds": 12.72,
+   "wall_s": 4.9730583999771625,
+   "text": "胡纳已经辞职，他在内阁中的位置将由国会议员艾德·戴维接替。预计国会议员诺曼·拉姆将接替艾维空出的商务部长一职。",
+   "first_token_ms": 1882.2747802734375,
+   "tokens": 48.0,
+   "tpot_ms": {
+    "mean": 65.71484375,
+    "std": 11.264541625976562
+   },
+   "generate_ms": {
+    "mean": 4971.365234375,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "cmn_hans_cn_1709",
+   "lang": "cmn_hans_cn",
+   "seconds": 10.32,
+   "wall_s": 3.2901824999717064,
+   "text": "该报告对行政当局目前对伊拉克政策的几乎每一个方面都提出了严厉批评，并敦促立即改变方向。",
+   "first_token_ms": 1591.237060546875,
+   "tokens": 28.0,
+   "tpot_ms": {
+    "mean": 62.8551025390625,
+    "std": 10.296212196350098
+   },
+   "generate_ms": {
+    "mean": 3288.802978515625,
+    "std": 0.0
+   },
+   "language": "Chinese"
+  },
+  {
+   "id": "ja_jp_1661",
+   "lang": "ja_jp",
+   "seconds": 15.42,
+   "wall_s": 4.938450799963903,
+   "text": "ゴシは削減する数値を明言ませんでしたが、削減は中国の経済産出量に基づいて実施されるだろうと述べました。",
+   "first_token_ms": 2475.25537109375,
+   "tokens": 41.0,
+   "tpot_ms": {
+    "mean": 61.51342010498047,
+    "std": 6.53453254699707
+   },
+   "generate_ms": {
+    "mean": 4936.259765625,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1662",
+   "lang": "ja_jp",
+   "seconds": 14.58,
+   "wall_s": 4.189047000021674,
+   "text": "合金とは基本的には2種類以上の金属の混合物です。周期表に載っているたくさんの元素を思い出してください。",
+   "first_token_ms": 2412.929931640625,
+   "tokens": 31.0,
+   "tpot_ms": {
+    "mean": 59.12303924560547,
+    "std": 1.0367062091827393
+   },
+   "generate_ms": {
+    "mean": 4187.07080078125,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1664",
+   "lang": "ja_jp",
+   "seconds": 9.9,
+   "wall_s": 4.0143527000327595,
+   "text": "乾いた粉を2つ合わせてクルクルとこね回し、せいかつな縫い立てでぎゅっと握ります。",
+   "first_token_ms": 1970.629638671875,
+   "tokens": 36.0,
+   "tpot_ms": {
+    "mean": 58.335113525390625,
+    "std": 0.8555082678794861
+   },
+   "generate_ms": {
+    "mean": 4012.81591796875,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1665",
+   "lang": "ja_jp",
+   "seconds": 16.74,
+   "wall_s": 5.884431500046048,
+   "text": "モレキータ情報によれば、当該文書は国境紛争に言及するもので、パレスチナの希望は1967年の中東戦争前の国境に基づくものです。",
+   "first_token_ms": 2767.95068359375,
+   "tokens": 53.0,
+   "tpot_ms": {
+    "mean": 59.873287200927734,
+    "std": 3.147076368331909
+   },
+   "generate_ms": {
+    "mean": 5881.93310546875,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1666",
+   "lang": "ja_jp",
+   "seconds": 13.56,
+   "wall_s": 4.236258200020529,
+   "text": "自国以外の政府からの助言を参考にしてもかわいえませんが、そのような助言はその国の国民向けなものです。",
+   "first_token_ms": 2230.0498046875,
+   "tokens": 35.0,
+   "tpot_ms": {
+    "mean": 58.9367790222168,
+    "std": 0.8086977005004883
+   },
+   "generate_ms": {
+    "mean": 4234.35400390625,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1667",
+   "lang": "ja_jp",
+   "seconds": 17.82,
+   "wall_s": 6.015720100025646,
+   "text": "一般的に言えば、管理職がかつての仲間を引き入れることになった場合、2通りの行動が現れる可能性があります。一つは仲間の一人のままでいようとする行動です。",
+   "first_token_ms": 3205.04248046875,
+   "tokens": 48.0,
+   "tpot_ms": {
+    "mean": 59.7328987121582,
+    "std": 0.7397971749305725
+   },
+   "generate_ms": {
+    "mean": 6013.06103515625,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1668",
+   "lang": "ja_jp",
+   "seconds": 13.38,
+   "wall_s": 4.623599999991711,
+   "text": "ワイルドカードを購入するとお得な場合があります。南アフリカの主な公園または南アフリカのすべての国立公園に入場できます。",
+   "first_token_ms": 2204.93212890625,
+   "tokens": 42.0,
+   "tpot_ms": {
+    "mean": 58.935298919677734,
+    "std": 0.8316583037376404
+   },
+   "generate_ms": {
+    "mean": 4621.77392578125,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1669",
+   "lang": "ja_jp",
+   "seconds": 10.08,
+   "wall_s": 4.161547399999108,
+   "text": "警察のチャンドラシェカールソランキ捜査官によれば、被告人は顔を隠して法廷に出頭したそうです。",
+   "first_token_ms": 1898.8787841796875,
+   "tokens": 38.0,
+   "tpot_ms": {
+    "mean": 61.09844970703125,
+    "std": 8.474428176879883
+   },
+   "generate_ms": {
+    "mean": 4160.02392578125,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1670",
+   "lang": "ja_jp",
+   "seconds": 25.5,
+   "wall_s": 9.63505130005069,
+   "text": "そうした熱気道は一定の温度をかなり保てる地球上の大洞窟ほど安定していないことが多いのですが、地中に深い穴ができる点を一致していますと、米国地質調査所（USGS）宇宙地質学チームとアリゾナ州フラッグスタックにあるノーザンアリゾナ大学のブレンクシング氏は述べています。",
+   "first_token_ms": 4041.409912109375,
+   "tokens": 87.0,
+   "tpot_ms": {
+    "mean": 64.98990631103516,
+    "std": 9.218351364135742
+   },
+   "generate_ms": {
+    "mean": 9631.3193359375,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1671",
+   "lang": "ja_jp",
+   "seconds": 18.42,
+   "wall_s": 6.443253799981903,
+   "text": "連邦議会は2005年度から挨拶物取締り放映の資金提供を開始し、FBIはアダルトポールの20人の捜査員を投入しなければならないと規定しました。",
+   "first_token_ms": 3009.56787109375,
+   "tokens": 57.0,
+   "tpot_ms": {
+    "mean": 61.25558853149414,
+    "std": 6.678975582122803
+   },
+   "generate_ms": {
+    "mean": 6440.4638671875,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1672",
+   "lang": "ja_jp",
+   "seconds": 11.76,
+   "wall_s": 4.173538600036409,
+   "text": "生地の温度が上がりすぎないように気をつけてください。縮みの原因になったり、極端な場合は焦げ付きの原因になります。",
+   "first_token_ms": 2115.733154296875,
+   "tokens": 36.0,
+   "tpot_ms": {
+    "mean": 58.72673797607422,
+    "std": 0.8784573674201965
+   },
+   "generate_ms": {
+    "mean": 4171.6640625,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1674",
+   "lang": "ja_jp",
+   "seconds": 10.5,
+   "wall_s": 3.392213899991475,
+   "text": "1分間で沸騰する地域もあれば、沸騰するまでに何分もかかる地域もあります。",
+   "first_token_ms": 1637.85205078125,
+   "tokens": 28.0,
+   "tpot_ms": {
+    "mean": 64.90042114257812,
+    "std": 11.325604438781738
+   },
+   "generate_ms": {
+    "mean": 3390.64306640625,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1675",
+   "lang": "ja_jp",
+   "seconds": 15.9,
+   "wall_s": 4.893832099973224,
+   "text": "すべての名詞は、あなたを指す単語「C」と同様に、文の途中であっても常に大文字で始まります。",
+   "first_token_ms": 2340.205322265625,
+   "tokens": 39.0,
+   "tpot_ms": {
+    "mean": 67.12677764892578,
+    "std": 11.647140502929688
+   },
+   "generate_ms": {
+    "mean": 4891.46484375,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1676",
+   "lang": "ja_jp",
+   "seconds": 10.2,
+   "wall_s": 3.8056374000152573,
+   "text": "南アフリカにいるすべての国立公園と同様に、この公園には毎日保護費と入園料がかかります。",
+   "first_token_ms": 1613.4498291015625,
+   "tokens": 36.0,
+   "tpot_ms": {
+    "mean": 62.58095932006836,
+    "std": 9.429216384887695
+   },
+   "generate_ms": {
+    "mean": 3804.27490234375,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1677",
+   "lang": "ja_jp",
+   "seconds": 8.34,
+   "wall_s": 2.849052700039465,
+   "text": "現在羽を折り返すことができない昆虫はトンボとカゲロウのみです。",
+   "first_token_ms": 1455.38037109375,
+   "tokens": 25.0,
+   "tpot_ms": {
+    "mean": 57.99695587158203,
+    "std": 1.0125352144241333
+   },
+   "generate_ms": {
+    "mean": 2847.7939453125,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1679",
+   "lang": "ja_jp",
+   "seconds": 10.62,
+   "wall_s": 3.332095100020524,
+   "text": "エアロスミスはツアーで予定していたコンサートを中止しました。",
+   "first_token_ms": 1861.60205078125,
+   "tokens": 24.0,
+   "tpot_ms": {
+    "mean": 63.84992218017578,
+    "std": 9.961089134216309
+   },
+   "generate_ms": {
+    "mean": 3330.637939453125,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1680",
+   "lang": "ja_jp",
+   "seconds": 13.5,
+   "wall_s": 5.300026699958835,
+   "text": "実に金線を解いた形で運動能力の高いトラはうまくは無いものの、登ったり泳いだり、長い距離を飛んだり、タクマシー人間の5倍の力で引っ張ったりできます。",
+   "first_token_ms": 1975.5147705078125,
+   "tokens": 55.0,
+   "tpot_ms": {
+    "mean": 61.520015716552734,
+    "std": 6.778080463409424
+   },
+   "generate_ms": {
+    "mean": 5298.09423828125,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1681",
+   "lang": "ja_jp",
+   "seconds": 16.2,
+   "wall_s": 5.527862399991136,
+   "text": "しかしそれだけではありません。実験とは可能性のある仮説の一つ以上を排除するために使用される試験のことで、質問をしたり観察をしたりすることも科学研究の指針となります。",
+   "first_token_ms": 2377.5703125,
+   "tokens": 53.0,
+   "tpot_ms": {
+    "mean": 60.53140640258789,
+    "std": 2.1667115688323975
+   },
+   "generate_ms": {
+    "mean": 5525.6611328125,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1683",
+   "lang": "ja_jp",
+   "seconds": 14.7,
+   "wall_s": 5.375652400020044,
+   "text": "ここには当時生き延びた多くの弾着があり、ユダヤ人かどうかを問わず、そこで大切な人が殺害されたり、強制労働させられたりした人たちも大勢います。",
+   "first_token_ms": 2158.513671875,
+   "tokens": 50.0,
+   "tpot_ms": {
+    "mean": 65.60248565673828,
+    "std": 11.415428161621094
+   },
+   "generate_ms": {
+    "mean": 5373.53515625,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1684",
+   "lang": "ja_jp",
+   "seconds": 9.3,
+   "wall_s": 3.4910025999997742,
+   "text": "アピアはサモアの人です。この町はウポルトにあり、人口は4万人弱です。",
+   "first_token_ms": 1467.406494140625,
+   "tokens": 31.0,
+   "tpot_ms": {
+    "mean": 67.39987182617188,
+    "std": 11.277711868286133
+   },
+   "generate_ms": {
+    "mean": 3489.85009765625,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1685",
+   "lang": "ja_jp",
+   "seconds": 18.24,
+   "wall_s": 5.687335100024939,
+   "text": "例えば、世界で最も普及している静止画写真のフィルム形式は35ミリで、これはアナログフィルム時代の終わり頃には主流のフィルムサイズでした。",
+   "first_token_ms": 2586.91943359375,
+   "tokens": 48.0,
+   "tpot_ms": {
+    "mean": 65.89777374267578,
+    "std": 10.254897117614746
+   },
+   "generate_ms": {
+    "mean": 5684.68701171875,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1686",
+   "lang": "ja_jp",
+   "seconds": 16.8,
+   "wall_s": 5.492250900017098,
+   "text": "その結果、組織や協力して障害を克服するプロセスは、顧客のニーズに応えるための新しい革新的なプロセスにつながる可能性があります。",
+   "first_token_ms": 2422.32568359375,
+   "tokens": 47.0,
+   "tpot_ms": {
+    "mean": 66.66995239257812,
+    "std": 11.634635925292969
+   },
+   "generate_ms": {
+    "mean": 5489.69677734375,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1687",
+   "lang": "ja_jp",
+   "seconds": 9.36,
+   "wall_s": 3.5744243999943137,
+   "text": "墨焼きと組み会はセラエごとに2つのプールの間を行き来しながら変位をシャッフルします。",
+   "first_token_ms": 1448.017333984375,
+   "tokens": 34.0,
+   "tpot_ms": {
+    "mean": 64.37830352783203,
+    "std": 9.938693046569824
+   },
+   "generate_ms": {
+    "mean": 3572.986083984375,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1688",
+   "lang": "ja_jp",
+   "seconds": 12.84,
+   "wall_s": 5.031350999954157,
+   "text": "従来より海軍の仕事は自国民や物資を輸送する能力を維持すると同時に敵国民や物資を輸送する能力を確実に妨害することでした。",
+   "first_token_ms": 2033.605712890625,
+   "tokens": 48.0,
+   "tpot_ms": {
+    "mean": 63.72250747680664,
+    "std": 9.932957649230957
+   },
+   "generate_ms": {
+    "mean": 5029.03515625,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1690",
+   "lang": "ja_jp",
+   "seconds": 14.7,
+   "wall_s": 5.1750408000079915,
+   "text": "私たちは資格を発達するよりも組織内で意味のある変革を進めた方が選手やクラブ、そしてスポーツに資する可能性があるという USOC の声明に同意しています。",
+   "first_token_ms": 2236.965087890625,
+   "tokens": 46.0,
+   "tpot_ms": {
+    "mean": 65.22957611083984,
+    "std": 10.46226692199707
+   },
+   "generate_ms": {
+    "mean": 5172.80517578125,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1691",
+   "lang": "ja_jp",
+   "seconds": 10.2,
+   "wall_s": 3.421711300034076,
+   "text": "一部の路線では大企業は自社機を持っているが、それ以外の路線や小規模企業では問題があった。",
+   "first_token_ms": 1614.251953125,
+   "tokens": 31.0,
+   "tpot_ms": {
+    "mean": 60.180633544921875,
+    "std": 6.480588436126709
+   },
+   "generate_ms": {
+    "mean": 3420.197998046875,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1692",
+   "lang": "ja_jp",
+   "seconds": 9.66,
+   "wall_s": 3.436473499983549,
+   "text": "日本の原子力庁によれば、原発内で放射性セシウムとヨウ素が特定されています。",
+   "first_token_ms": 1743.7581787109375,
+   "tokens": 30.0,
+   "tpot_ms": {
+    "mean": 58.286598205566406,
+    "std": 0.9219812154769897
+   },
+   "generate_ms": {
+    "mean": 3434.55908203125,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1693",
+   "lang": "ja_jp",
+   "seconds": 17.52,
+   "wall_s": 4.941999700036831,
+   "text": "しかし、キャプテンのウィケットを失った後、インドは7つのウィケットを失い、36ランしかできませんでした。",
+   "first_token_ms": 2964.25048828125,
+   "tokens": 34.0,
+   "tpot_ms": {
+    "mean": 59.83195877075195,
+    "std": 1.2104915380477905
+   },
+   "generate_ms": {
+    "mean": 4939.2919921875,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1694",
+   "lang": "ja_jp",
+   "seconds": 16.98,
+   "wall_s": 4.730100299988408,
+   "text": "子どもたちが里親制度に預けられる理由は、育児放棄から虐待、さらには強制に至るまで様々です。",
+   "first_token_ms": 2558.124755859375,
+   "tokens": 36.0,
+   "tpot_ms": {
+    "mean": 61.96599197387695,
+    "std": 7.791717529296875
+   },
+   "generate_ms": {
+    "mean": 4727.501953125,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1695",
+   "lang": "ja_jp",
+   "seconds": 12.42,
+   "wall_s": 5.0087896000477485,
+   "text": "特にナスバニーはオリーブオイルを塗ったパンにトマトとチーズ、チューナなどの調味料を加えたパンボリというシンプルな料理が人気です。",
+   "first_token_ms": 1857.3580322265625,
+   "tokens": 50.0,
+   "tpot_ms": {
+    "mean": 64.26791381835938,
+    "std": 10.527570724487305
+   },
+   "generate_ms": {
+    "mean": 5007.03515625,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1696",
+   "lang": "ja_jp",
+   "seconds": 11.94,
+   "wall_s": 4.692591500002891,
+   "text": "その大学の研究者たちによれば、この2つのカゴオブサ互いに反応し、腎臓の機能を阻害する結石を形成します。",
+   "first_token_ms": 1785.213623046875,
+   "tokens": 46.0,
+   "tpot_ms": {
+    "mean": 64.5610580444336,
+    "std": 10.211730003356934
+   },
+   "generate_ms": {
+    "mean": 4690.921875,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1697",
+   "lang": "ja_jp",
+   "seconds": 14.1,
+   "wall_s": 3.839912800001912,
+   "text": "痛みを抑えるのに必要な薬がその大会で禁止されているため、彼は服用できませんでした。",
+   "first_token_ms": 2073.90185546875,
+   "tokens": 26.0,
+   "tpot_ms": {
+    "mean": 70.52355194091797,
+    "std": 13.147727966308594
+   },
+   "generate_ms": {
+    "mean": 3837.532958984375,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1698",
+   "lang": "ja_jp",
+   "seconds": 11.04,
+   "wall_s": 3.9962031000177376,
+   "text": "宇宙に存在するあらゆるものは物質でできています。あらゆる物質は原子と呼ばれる微小な粒子でできています。",
+   "first_token_ms": 1667.83154296875,
+   "tokens": 38.0,
+   "tpot_ms": {
+    "mean": 62.870506286621094,
+    "std": 9.008543968200684
+   },
+   "generate_ms": {
+    "mean": 3994.52294921875,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1699",
+   "lang": "ja_jp",
+   "seconds": 13.98,
+   "wall_s": 4.797709300008137,
+   "text": "ある観察者がビスケを未然不常態に陥っていると表現しているように、ギャングたちが街道を徘徊し、日用品店を略奪しました。",
+   "first_token_ms": 2179.49560546875,
+   "tokens": 44.0,
+   "tpot_ms": {
+    "mean": 60.83173370361328,
+    "std": 6.151691436767578
+   },
+   "generate_ms": {
+    "mean": 4795.7177734375,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1700",
+   "lang": "ja_jp",
+   "seconds": 7.5,
+   "wall_s": 2.311684400017839,
+   "text": "海の下は薄く、高地の下は厚くなっています。",
+   "first_token_ms": 1266.174560546875,
+   "tokens": 19.0,
+   "tpot_ms": {
+    "mean": 58.00709533691406,
+    "std": 1.139370083808899
+   },
+   "generate_ms": {
+    "mean": 2310.7890625,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1701",
+   "lang": "ja_jp",
+   "seconds": 11.88,
+   "wall_s": 4.2605964000103995,
+   "text": "ヤギの家畜化は約1万年前に始まり、その中心はイランのザグ罗斯山脈西部であったとされています。",
+   "first_token_ms": 1988.9041748046875,
+   "tokens": 35.0,
+   "tpot_ms": {
+    "mean": 66.75234985351562,
+    "std": 10.548587799072266
+   },
+   "generate_ms": {
+    "mean": 4258.98779296875,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1702",
+   "lang": "ja_jp",
+   "seconds": 9.9,
+   "wall_s": 3.0805199000169523,
+   "text": "わずか2週間でアメリカ軍と自由フランス軍は南フランスを解放し、ドイツに向かっていました。",
+   "first_token_ms": 1495.6593017578125,
+   "tokens": 28.0,
+   "tpot_ms": {
+    "mean": 58.630767822265625,
+    "std": 1.001410961151123
+   },
+   "generate_ms": {
+    "mean": 3079.18505859375,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1704",
+   "lang": "ja_jp",
+   "seconds": 11.7,
+   "wall_s": 4.137613800005056,
+   "text": "砂漠の砂による脅威から保護するため、1990年には危険な世界遺産のリストに追加されました。",
+   "first_token_ms": 2019.7979736328125,
+   "tokens": 37.0,
+   "tpot_ms": {
+    "mean": 58.754249572753906,
+    "std": 0.7898308634757996
+   },
+   "generate_ms": {
+    "mean": 4135.4580078125,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1705",
+   "lang": "ja_jp",
+   "seconds": 12.48,
+   "wall_s": 4.568186599994078,
+   "text": "1940年8月15日、連合国は南フランスに侵攻し、その侵攻はドラグン作戦と呼ばれました。",
+   "first_token_ms": 2174.092041015625,
+   "tokens": 41.0,
+   "tpot_ms": {
+    "mean": 59.798763275146484,
+    "std": 5.9965715408325195
+   },
+   "generate_ms": {
+    "mean": 4566.53515625,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1707",
+   "lang": "ja_jp",
+   "seconds": 11.64,
+   "wall_s": 4.2673590000486,
+   "text": "ここは南アフリカの主な観光地の一つであり、南アフリカ国立公園（SAN Parks）の目玉とされています。",
+   "first_token_ms": 1907.673095703125,
+   "tokens": 39.0,
+   "tpot_ms": {
+    "mean": 62.03772735595703,
+    "std": 8.470577239990234
+   },
+   "generate_ms": {
+    "mean": 4265.60498046875,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1709",
+   "lang": "ja_jp",
+   "seconds": 12.72,
+   "wall_s": 4.4213472999981605,
+   "text": "本報告書はイラクに対する両政府の現在の政策のほぼすべての側面を強く批判し、即時の方向転換を促すものです。",
+   "first_token_ms": 1875.8824462890625,
+   "tokens": 40.0,
+   "tpot_ms": {
+    "mean": 65.20880126953125,
+    "std": 10.081972122192383
+   },
+   "generate_ms": {
+    "mean": 4419.5322265625,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1710",
+   "lang": "ja_jp",
+   "seconds": 11.22,
+   "wall_s": 4.484082899987698,
+   "text": "先週、経済産業省は、アップルが申告ではないとする過熱事項を追加で34件報告したと発表しました。",
+   "first_token_ms": 1760.1304931640625,
+   "tokens": 42.0,
+   "tpot_ms": {
+    "mean": 66.37345886230469,
+    "std": 11.049545288085938
+   },
+   "generate_ms": {
+    "mean": 4481.90478515625,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1711",
+   "lang": "ja_jp",
+   "seconds": 14.7,
+   "wall_s": 4.8978764999774285,
+   "text": "これらの理論では、ある種の人びとか日常的に特定のことを従う動機について、そして彼らに特定のことをさせる、あるいはさせない環境要因について考察します。",
+   "first_token_ms": 2140.833984375,
+   "tokens": 43.0,
+   "tpot_ms": {
+    "mean": 65.58560180664062,
+    "std": 10.867980003356934
+   },
+   "generate_ms": {
+    "mean": 4895.93798828125,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1712",
+   "lang": "ja_jp",
+   "seconds": 18.48,
+   "wall_s": 6.226300000038464,
+   "text": "1966年からスンダルバンスは野生動物保護国となり、現在では推定で400頭のロイヤルベンガルトラと約3万頭のアキシスジカが生息しています。",
+   "first_token_ms": 2634.7548828125,
+   "tokens": 57.0,
+   "tpot_ms": {
+    "mean": 64.06403350830078,
+    "std": 9.188685417175293
+   },
+   "generate_ms": {
+    "mean": 6222.97021484375,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1713",
+   "lang": "ja_jp",
+   "seconds": 17.1,
+   "wall_s": 5.46120850002626,
+   "text": "ゴマはかなり安全ですが、ゴマ以外の場所を訪れる場合は、北極部州で続く戦闘の状況を調査して理解する必要があります。",
+   "first_token_ms": 2779.043701171875,
+   "tokens": 44.0,
+   "tpot_ms": {
+    "mean": 62.30038833618164,
+    "std": 7.5633955001831055
+   },
+   "generate_ms": {
+    "mean": 5458.5771484375,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1714",
+   "lang": "ja_jp",
+   "seconds": 14.28,
+   "wall_s": 5.1974959000363015,
+   "text": "衛星はロケットで宇宙に送られました。科学者が宇宙で望遠鏡を使う理由は、地球の大気によって人間の視界に入る光や景色の一部が嫌がるからです。",
+   "first_token_ms": 2309.861083984375,
+   "tokens": 49.0,
+   "tpot_ms": {
+    "mean": 60.10846710205078,
+    "std": 4.142619609832764
+   },
+   "generate_ms": {
+    "mean": 5195.55908203125,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1715",
+   "lang": "ja_jp",
+   "seconds": 26.64,
+   "wall_s": 8.517378100019414,
+   "text": "メトロの構内や車内の定期アナウンスはカタルーニャ語のみですが、事故による支援などの際には自動システムによってスペイン語、英語、フランス語、アラビア語、日本語といった各言語でアナウンスされます。",
+   "first_token_ms": 4303.65966796875,
+   "tokens": 64.0,
+   "tpot_ms": {
+    "mean": 66.80029296875,
+    "std": 10.85884952545166
+   },
+   "generate_ms": {
+    "mean": 8512.8271484375,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1716",
+   "lang": "ja_jp",
+   "seconds": 19.08,
+   "wall_s": 8.469517200021073,
+   "text": "芸能ニュースサイト TMZによると、写真家はセプレベラ大通りの反対車線に車を止め、道路を渡って数前に警察の検問写真に収めようとしたため、交通規制をしていたカリフォルニア州ハイウェイパトロールの警察官が横断して戻るように理解も明示たそうです。",
+   "first_token_ms": 2748.180419921875,
+   "tokens": 88.0,
+   "tpot_ms": {
+    "mean": 65.72265625,
+    "std": 10.700647354125977
+   },
+   "generate_ms": {
+    "mean": 8466.64453125,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1718",
+   "lang": "ja_jp",
+   "seconds": 13.86,
+   "wall_s": 4.222061900014523,
+   "text": "コットン品について具体的な定義はありません。税務署によっては100年以上前のものをコットン品と定義しています。",
+   "first_token_ms": 2196.067138671875,
+   "tokens": 35.0,
+   "tpot_ms": {
+    "mean": 59.50667190551758,
+    "std": 2.0433757305145264
+   },
+   "generate_ms": {
+    "mean": 4219.92919921875,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  },
+  {
+   "id": "ja_jp_1719",
+   "lang": "ja_jp",
+   "seconds": 13.62,
+   "wall_s": 5.047313799965195,
+   "text": "悪天候とは、物理的被害、深刻な社会的混乱、人命にかかわる被害に繋がり得る危険な気象現象の総称です。",
+   "first_token_ms": 2250.28564453125,
+   "tokens": 48.0,
+   "tpot_ms": {
+    "mean": 59.463035583496094,
+    "std": 2.27463698387146
+   },
+   "generate_ms": {
+    "mean": 5045.57421875,
+    "std": 0.0
+   },
+   "language": "Japanese"
+  }
+ ],
+ "versions": {
+  "python": "3.12.16",
+  "openvino-genai": "2026.4.1.0",
+  "openvino": "2026.4.1",
+  "openvino-tokenizers": "2026.4.1.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": 9.693,
+ "workload": {
+  "set": "S150",
+  "first": 0,
+  "max_new_tokens": 512,
+  "decode": "greedy",
+  "language": "none (auto)",
+  "task": null,
+  "timestamps": false
+ },
+ "generation_config": {
+  "max_new_tokens": "18446744073709551615",
+  "num_beams": "1",
+  "do_sample": "False",
+  "language": "None",
+  "task": "None",
+  "return_timestamps": "False"
+ },
+ "warmup_s": 3.588,
+ "summary": {
+  "clips": 150,
+  "audio_s": 1806.26,
+  "wall_s": 611.009,
+  "rtf": 0.33827,
+  "empty": 0,
+  "first_token_ms_mean": 1952.62,
+  "split_half_rtf": [
+   0.33385,
+   0.34303
+  ]
+ },
+ "peak_working_set_bytes": 12104429568,
+ "peak_pagefile_bytes": 9620258816,
+ "ended": "2026-11-10T03:43:08.397746+09:00",
+ "process_s": 625.263
+}

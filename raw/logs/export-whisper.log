@@ -1,0 +1,8 @@
+[2026-11-09T13:22:22.1162309+09:00] steps export-whisper start: 3 steps, pid 26176
+[2026-11-09T13:22:22.1778082+09:00] patch-genai-whisper start: C:\src\audiozoo\.venv-ref\Scripts\python.exe -I C:\src\audiozoo\pc\patch_genai_whisper.py
+[2026-11-09T13:22:22.3564412+09:00] patch-genai-whisper end: exit 0, 0 min
+[2026-11-09T13:22:22.3705241+09:00] genai-whisper-fp32-cpu start: C:\src\audiozoo\.venv-ref\Scripts\python.exe -I -m onnxruntime_genai.models.builder -i C:\src\audiozoo\models\openai__whisper-large-v3-turbo -o C:\src\audiozoo\exports\whisper-genai-fp32-cpu -p fp32 -e cpu -c C:\src\audiozoo\exports\cache-genai
+[2026-11-09T13:22:58.2709355+09:00] genai-whisper-fp32-cpu end: exit 0, 0.6 min
+[2026-11-09T13:22:58.3245958+09:00] genai-whisper-fp16-cuda start: C:\src\audiozoo\.venv-ref\Scripts\python.exe -I -m onnxruntime_genai.models.builder -i C:\src\audiozoo\models\openai__whisper-large-v3-turbo -o C:\src\audiozoo\exports\whisper-genai-fp16-cuda -p fp16 -e cuda -c C:\src\audiozoo\exports\cache-genai
+[2026-11-09T13:23:28.1593986+09:00] genai-whisper-fp16-cuda end: exit 0, 0.5 min
+[2026-11-09T13:23:28.1752441+09:00] steps export-whisper done: OK

@@ -1,0 +1,63 @@
+{
+    "cell":  "kokoro/ort-fp32-rtx",
+    "device":  "rtx",
+    "role":  null,
+    "run":  1,
+    "mode":  "first",
+    "sitting":  "first-a",
+    "start":  "2026-11-09T15:10:29.4887442+09:00",
+    "osBuild":  "26200.9711",
+    "gate":  null,
+    "before":  {
+                   "load":  {
+                                "cpu":  98.5,
+                                "build_ms":  14312,
+                                "top":  [
+                                            "cl 27744 5.22 core",
+                                            "cl 33836 3.08 core",
+                                            "cl 13272 2.88 core",
+                                            "cl 4452 2.31 core",
+                                            "python 3168 1.02 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 2340 MHz, 14001 MHz, 19.51 W, 0 %, 0 MiB, 58",
+                   "availGB":  12.7
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-ort-cuda\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_tts_ort.py --model C:\\src\\audiozoo\\models\\onnx-community__Kokoro-82M-v1.0-ONNX\\onnx\\model.onnx --voice-bin C:\\src\\audiozoo\\models\\onnx-community__Kokoro-82M-v1.0-ONNX\\voices\\af_heart.bin --ep cuda --set T50 --fixtures C:\\src\\audiozoo\\fixtures --first 10 --out C:\\src\\audiozoo\\runs\\first-a\\kokoro\\ort-fp32-rtx\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  9544,
+                   "elapsedSeconds":  12.581,
+                   "peakWorkingSetBytes":  1283715072,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x00012C48":  {
+                                                                    "shared":  82,
+                                                                    "dedicated":  1352
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "6s P4, 1492 MHz, 9001 MHz, 17.13 W, 0 %, 772 MiB, 57",
+                                         "10s P4, 2160 MHz, 9001 MHz, 73.86 W, 32 %, 1352 MiB, 61"
+                                     ]
+               },
+    "after":  {
+                  "load":  {
+                               "cpu":  103,
+                               "build_ms":  12828,
+                               "top":  [
+                                           "cl 32452 4.56 core",
+                                           "cl 23428 3.87 core",
+                                           "python 3168 2.76 core",
+                                           "cl 10912 1.35 core",
+                                           "cl 29260 1.01 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 3135 MHz, 14001 MHz, 19.33 W, 0 %, 0 MiB, 58"
+              },
+    "end":  "2026-11-09T15:10:43.5640179+09:00",
+    "tries":  1
+}

@@ -1,0 +1,120 @@
+{
+ "cell": "parakeet/ort-fp32-rtx",
+ "model": "parakeet",
+ "runtime": "ONNX Runtime 1.31.1",
+ "form": "fp32",
+ "device": "rtx",
+ "device_name": "RTX 5080 Laptop",
+ "set": "S150",
+ "mode": "timed",
+ "sitting": "s4",
+ "status": "OK",
+ "record": {
+  "run": "raw/s4/parakeet/ort-fp32-rtx/run1.json",
+  "meta": "raw/s4/parakeet/ort-fp32-rtx/run1.meta.json",
+  "chain_log": "raw/s4/chain.log"
+ },
+ "error": null,
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime-gpu": "1.31.1",
+  "onnx-asr": "0.12.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": 13.558,
+ "summary": {
+  "clips": 50,
+  "audio_s": 545.68,
+  "wall_s": 5.822,
+  "rtf": 0.01067,
+  "empty": 0,
+  "first_token_ms_mean": null,
+  "split_half_rtf": [
+   0.01033,
+   0.01104
+  ]
+ },
+ "gate": {
+  "quietGate": "quiet",
+  "cpuReads": [
+   3.5,
+   0.6,
+   0.7
+  ],
+  "nvidiaMiB": 0,
+  "availGB": 25.2,
+  "ramNeedGB": 4,
+  "gpuEngines": null
+ },
+ "power": {
+  "msiUserScenarioMode": 1,
+  "overlayAc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "overlayDc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "battery": "status 2, 96 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 21.979,
+  "peakWorkingSetBytes": 3028246528,
+  "gpuMiBPeak": {
+   "0x00000000_0x00012C48": {
+    "shared": 204,
+    "dedicated": 3800
+   }
+  },
+  "exitCode": 0,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1,
+ "control": {
+  "known_rtf": 0.26228,
+  "known_from": "this sitting's head (3 runs, spread 0.7 %)",
+  "head": [
+   0.2631,
+   0.26228,
+   0.26128
+  ],
+  "tail": [
+   0.26548
+  ],
+  "verdict": "PASS (tail off 1.2 %)"
+ },
+ "accuracy": {
+  "en_us": {
+   "metric": "WER",
+   "err": 56,
+   "n": 1150,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 4.87
+  }
+ },
+ "reference": {
+  "path": "raw/refs/parakeet/ref.json",
+  "scores": {
+   "en_us": {
+    "metric": "WER",
+    "err": 59,
+    "n": 1150,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 5.13
+   }
+  }
+ },
+ "line": {
+  "en_us": {
+   "run": 4.87,
+   "ref": 5.13,
+   "bar": 5.63,
+   "pass": true
+  },
+  "empty": {
+   "n": 0,
+   "pass": true
+  },
+  "pass": true
+ },
+ "first_vs_timed_equal": "10/10"
+}

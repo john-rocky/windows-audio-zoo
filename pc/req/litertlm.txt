@@ -1,0 +1,4 @@
+# LiteRT-LM's Python API 0.19.1 (its Windows wheel carries litert-lm.dll, the DirectX shader compiler and the Intel OpenVINO
+# dispatch); its NPU backend imports the openvino package for the NPU libraries (litert_lm/interfaces.py NPU.__post_init__)
+litert-lm-api==0.19.1
+openvino==2026.4.1

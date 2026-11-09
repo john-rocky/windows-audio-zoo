@@ -1,0 +1,6 @@
+ENGINE_PID 30680
+{"n": 1, "id": "en_us_1660", "wall_s": 2.918, "text": "Romanticism had a large element of cultural determinism, dra"}
+{"n": 2, "id": "en_us_1661", "wall_s": 2.962, "text": "He did not set a figure for the cuts, saying they will be ma"}
+{"n": 10, "id": "en_us_1669", "wall_s": 2.918, "text": "Police Superintendent Chandra Shikhar Solanki said the accus"}
+{"n": 20, "id": "cmn_hans_cn_1669", "wall_s": 1.601, "text": "警察局长钱德拉谢卡尔索兰基说，被告人出庭时都蒙住了脸。"}
+{"n": 30, "id": "ja_jp_1671", "wall_s": 1.323, "text": ""}
