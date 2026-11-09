@@ -121,7 +121,14 @@ The walk ran in `C:\src\audiozoo` (absent before 10:39 on 11-09) on the shared P
 sittings. The scripts were fixed while it ran; the steps above are the fixed form.
 
 - Step 1 pushed two clip folders this project already had on the Mac (made earlier from the same sources);
-  `tools/fetch_clips.py`, which rebuilds them and checks every clip, came after the walk (below).
+  `tools/fetch_clips.py`, which rebuilds them and checks every clip, came after the walk (below). Step 1 as written
+  ran on 11-10 into an empty folder again (06:49 to 06:54, the same `C:\src\audiozoo`, absent before and deleted
+  after): `tools/fetch_clips.py --out` an empty folder PASS (370 clips, 0 bad, 0 warnings), `tools/pc.sh push` and
+  `pushfix` exit 0, and on the PC every clip a cell reads (150 FLEURS, the warm-up `en.wav`, 220 S220) had the
+  sha256 its pushed index names (371 of 371) and `pc\walk_check.ps1` printed OK on all ten of step 1's lines. The
+  rebuilt S150 index differs from the walked one only in `fixtures_root` (the output folder; no script reads it), and
+  the S220 index in its `source` line and the 20 LibriSpeech files' sha256 (a new WAV container around the same
+  samples).
 - Steps 1 and 2 started at 10:40 under the PC's suspend-on-lock helper; other jobs' locks held them suspended for
   most of the morning. `pc/req/genai-cuda.txt` gained the `[cuda,cudnn]` extras after setup had started, so the
   export list re-installs it first. One download (`nvidia_cudnn_cu13`) died on uv's 30 s read timeout after a
@@ -137,9 +144,11 @@ sittings. The scripts were fixed while it ran; the steps above are the fixed for
   processes killed at 13:00; they started again at 13:34. One runner fix came mid-walk: the ONNX Runtime cells on
   the OpenVINO EP looked for the device `GPU`, which the plugin names `GPU.0`; `parakeet/ort-fp32-igpu` ran again in
   `first-a2` (the Kokoro Intel GPU cell, run after the fix, failed in the EP's session creation).
-- `granite/litertlm-npu` was stopped by hand at 15:12, 21 minutes and 8 of its 70 first-pass clips in (it would have
-  reached its 30-minute limit without a runner JSON); its per-clip lines are kept in
-  `raw/first-an/granite/litertlm-npu/run1.stdout.kept.txt`.
+- `granite/litertlm-npu` was stopped by hand at 15:12, 22 minutes in, on a misread: the stop counted its 8 progress
+  lines as 8 clips, but the runner prints clips 1, 2 and every 10th, and the last line was clip 60, so 60 to 69 of
+  its 70 first-pass clips were done (11.6 to 28.5 s per printed clip: the last 10 clips at that pace take under 5
+  minutes, and its 30-minute limit was 8 minutes away; corrected 11-10). Its printed lines are kept in `raw/first-an/granite/litertlm-npu/run1.stdout.kept.txt`;
+  the cell did not run again in this walk.
 - Not in the steps: two diagnostic lists, `diag-qwen3` and `diag-qwen3b` (the qwen-asr package's PyTorch fp32, and the
   exported IR through optimum-intel's own Python class, 10 clips per language each), which placed the Qwen3-ASR
   OpenVINO cells' gap in the IR.

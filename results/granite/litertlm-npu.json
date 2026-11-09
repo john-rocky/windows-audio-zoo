@@ -16,7 +16,7 @@
   "meta": "raw/first-an/granite/litertlm-npu/run1.meta.json",
   "chain_log": "raw/first-an/chain.log"
  },
- "error": "stopped by hand 21 min in, at 8 of the 70 first-pass clips (about 160 s per clip; ended at 15:12 on 11-09, its clip lines in run1.stdout.kept.txt)",
+ "error": "stopped by hand 22 min in with 60 to 69 of the 70 first-pass clips done: the stop read the runner's progress lines (clips 1, 2 and every 10th) as 8 clips (ended at 15:12 on 11-09, its progress lines in run1.stdout.kept.txt; corrected 11-10)",
  "versions": null,
  "load_s": null,
  "summary": null,
@@ -44,5 +44,12 @@
   "timedOut": false,
   "suspendedSeconds": 0
  },
- "tries": 1
+ "tries": 1,
+ "progress": {
+  "printed": 8,
+  "last_n": 60,
+  "wall_s_printed": 151.37,
+  "audio_s_printed": 88.18,
+  "rtf_printed": 1.7166
+ }
 }

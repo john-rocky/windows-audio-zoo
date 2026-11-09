@@ -152,8 +152,29 @@ def cell_parts(cell):
 
 
 # runs that left no runner JSON, from the lane's notes (the chain's record does not say why an engine ended)
-NO_JSON_NOTE = {"granite/litertlm-npu": "stopped by hand 21 min in, at 8 of the 70 first-pass clips (about 160 s per "
-                                        "clip; ended at 15:12 on 11-09, its clip lines in run1.stdout.kept.txt)"}
+NO_JSON_NOTE = {"granite/litertlm-npu": "stopped by hand 22 min in with 60 to 69 of the 70 first-pass clips done: the "
+                                        "stop read the runner's progress lines (clips 1, 2 and every 10th) as 8 clips "
+                                        "(ended at 15:12 on 11-09, its progress lines in run1.stdout.kept.txt; "
+                                        "corrected 11-10)"}
+
+
+def progress(stdout_path):
+    """How far a run without runner JSON got, from its progress lines (pc/audiolib.py prints clips 1, 2 and every 10th
+    as {"n", "id", "wall_s"}): the last clip number printed, and the RTF over the printed clips (not a timing)."""
+    if not stdout_path.exists():
+        return None
+    rows = [json.loads(ln) for ln in stdout_path.read_text(encoding="utf-8", errors="replace").splitlines()
+            if ln.startswith('{"n"')]
+    if not rows:
+        return None
+    sec = {c["name"]: float(c["duration_s"]) for c in jload(S150_META)["clips"]}
+    sec.update({c["id"]: float(c["seconds"]) for c in jload(S220_INDEX)["clips"]})
+    if not all(r["id"] in sec for r in rows):
+        return {"printed": len(rows), "last_n": rows[-1]["n"]}
+    return {"printed": len(rows), "last_n": rows[-1]["n"],
+            "wall_s_printed": round(sum(r["wall_s"] for r in rows), 3),
+            "audio_s_printed": round(sum(sec[r["id"]] for r in rows), 3),
+            "rtf_printed": round(sum(r["wall_s"] for r in rows) / sum(sec[r["id"]] for r in rows), 4)}
 
 
 def latest(runs_dirs, cell):
@@ -209,6 +230,9 @@ def build(args):
             else:
                 r = {"status": "NO JSON", "error": NO_JSON_NOTE.get(cell) or f"no runner JSON: exit {code} after "
                                                                              f"{e.get('elapsedSeconds', 0):.0f} s"}
+            p = progress(mj.with_name("run1.stdout.txt"))
+            if p:
+                r["progress"] = p
         model, rt, form, dev = cell_parts(cell)
         doc = {"cell": cell, "model": model, "runtime": RUNTIME.get(rt, rt), "form": form, "device": dev,
                "device_name": DEVICE.get(dev, dev), "set": r.get("argv_set") or (r.get("workload") or {}).get("set"),
@@ -221,6 +245,8 @@ def build(args):
                "engine": {k: (m.get("engine") or {}).get(k) for k in ("elapsedSeconds", "peakWorkingSetBytes", "gpuMiBPeak",
                                                                      "exitCode", "timedOut", "suspendedSeconds")},
                "tries": m.get("tries")}
+        if r.get("progress"):
+            doc["progress"] = r["progress"]
         # LiteRT-LM's GPU log names its adapter (environment.cc "Selected adapter: ..."). Found 11-10: every Intel GPU run
         # of LiteRT-LM 0.19.1 here (first-a, s4) took the RTX although pc/run_asr_litertlm.py wrote GpuPreference=1
         # inside its own process

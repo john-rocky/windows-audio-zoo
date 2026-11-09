@@ -86,9 +86,16 @@ def row_this(d):
     rtf = s.get("rtf")
     ft = s.get("first_token_ms_mean")
     rec = d["record"]["run"] or d["record"]["meta"]
+    if st == "OK":
+        acc = acc_text(d)
+        rtf_cell = f"{rtf:.4f}" if (rtf and timed_ok) else (f"({rtf:.4f})" if rtf else "")
+    else:   # no score and no timing: the cell says so and how the run ended (the note has the detail)
+        acc = rtf_cell = "none: " + ("ERROR" if st in (None, "ERROR") else st)
+        p = d.get("progress") or {}
+        if p.get("rtf_printed"):
+            rtf_cell = f"({p['rtf_printed']:.4f}, the {p['printed']} printed clips)"
     return [MODEL[d["model"]], d["runtime"], d["form"], DEV.get(d["device"], d["device"]), d.get("set") or "",
-            acc_text(d) if st == "OK" else "", line_text(d) if st == "OK" else "—",
-            f"{rtf:.4f}" if (rtf and st == "OK" and timed_ok) else ("" if st != "OK" else f"({rtf:.4f})" if rtf else ""),
+            acc, line_text(d) if st == "OK" else "—", rtf_cell,
             f"{ft:.0f}" if (ft and st == "OK") else "", mem_text(d) if st == "OK" else "",
             f"`{rec}`", "; ".join(note)]
 
