@@ -8,6 +8,8 @@
  "set": "S150",
  "mode": "timed",
  "sitting": "s4",
+ "run_start": "2026-11-10T03:32:42.8811076+09:00",
+ "run_end": "2026-11-10T03:43:11.7136156+09:00",
  "status": "OK",
  "record": {
   "run": "raw/s4/qwen3asr/ovg-fp16-cpu/run1.json",

@@ -8,6 +8,8 @@
  "set": "S150",
  "mode": "timed",
  "sitting": "s4",
+ "run_start": "2026-11-10T01:19:35.4334925+09:00",
+ "run_end": "2026-11-10T01:30:10.1546797+09:00",
  "status": "OK",
  "record": {
   "run": "raw/s4/whisper/ovg-int8-rtx/run1.json",

@@ -8,6 +8,8 @@
  "set": "T50",
  "mode": "timed",
  "sitting": "s4",
+ "run_start": "2026-11-10T00:57:36.6050580+09:00",
+ "run_end": "2026-11-10T00:59:15.5120900+09:00",
  "status": "OK",
  "record": {
   "run": "raw/s4/kokoro/ovg-fp16-npu/run1.json",

@@ -8,6 +8,8 @@
  "set": "S220",
  "mode": "timed",
  "sitting": "s4",
+ "run_start": "2026-11-10T03:43:23.6894264+09:00",
+ "run_end": "2026-11-10T04:01:09.7993210+09:00",
  "status": "WRONG DEVICE",
  "record": {
   "run": "raw/s4/granite/litertlm-igpu/run1.json",

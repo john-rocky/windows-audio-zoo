@@ -8,6 +8,8 @@
  "set": null,
  "mode": "first",
  "sitting": "first-a",
+ "run_start": "2026-11-09T15:10:45.7528363+09:00",
+ "run_end": "2026-11-09T15:10:57.7010599+09:00",
  "status": "ERROR",
  "record": {
   "run": "raw/first-a/kokoro/ort-fp32-igpu/run1.json",

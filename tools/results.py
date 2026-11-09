@@ -212,7 +212,8 @@ def build(args):
         model, rt, form, dev = cell_parts(cell)
         doc = {"cell": cell, "model": model, "runtime": RUNTIME.get(rt, rt), "form": form, "device": dev,
                "device_name": DEVICE.get(dev, dev), "set": r.get("argv_set") or (r.get("workload") or {}).get("set"),
-               "mode": mode, "sitting": sitting, "status": r.get("status"),
+               "mode": mode, "sitting": sitting, "run_start": m.get("start"), "run_end": m.get("end"),
+               "status": r.get("status"),
                "record": {"run": str(rj.relative_to(K)) if rj else None, "meta": str(mj.relative_to(K)),
                           "chain_log": f"raw/{sitting}/chain.log"},
                "error": r.get("error"), "versions": r.get("versions"), "load_s": r.get("load_s"),

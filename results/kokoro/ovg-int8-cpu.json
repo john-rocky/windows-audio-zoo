@@ -8,6 +8,8 @@
  "set": "T50",
  "mode": "timed",
  "sitting": "s4",
+ "run_start": "2026-11-10T00:47:36.5569587+09:00",
+ "run_end": "2026-11-10T00:49:02.9469285+09:00",
  "status": "OK",
  "record": {
   "run": "raw/s4/kokoro/ovg-int8-cpu/run1.json",

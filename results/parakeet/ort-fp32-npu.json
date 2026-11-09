@@ -8,6 +8,8 @@
  "set": null,
  "mode": "first",
  "sitting": "first-an",
+ "run_start": "2026-11-09T15:12:20.2406621+09:00",
+ "run_end": "2026-11-09T15:12:46.0234353+09:00",
  "status": "ERROR",
  "record": {
   "run": "raw/first-an/parakeet/ort-fp32-npu/run1.json",

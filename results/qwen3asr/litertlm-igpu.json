@@ -8,6 +8,8 @@
  "set": "S150",
  "mode": "timed",
  "sitting": "s4",
+ "run_start": "2026-11-10T00:59:27.2118704+09:00",
+ "run_end": "2026-11-10T01:03:16.4250037+09:00",
  "status": "WRONG DEVICE",
  "record": {
   "run": "raw/s4/qwen3asr/litertlm-igpu/run1.json",

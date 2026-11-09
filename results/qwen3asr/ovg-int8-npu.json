@@ -8,6 +8,8 @@
  "set": null,
  "mode": "first",
  "sitting": "first-bn",
+ "run_start": "2026-11-09T13:40:19.2314874+09:00",
+ "run_end": "2026-11-09T13:40:24.5567844+09:00",
  "status": "ERROR",
  "record": {
   "run": "raw/first-bn/qwen3asr/ovg-int8-npu/run1.json",

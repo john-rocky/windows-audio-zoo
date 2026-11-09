@@ -8,6 +8,8 @@
  "set": "S150",
  "mode": "timed",
  "sitting": "s4",
+ "run_start": "2026-11-10T00:46:22.9663233+09:00",
+ "run_end": "2026-11-10T00:47:30.6207505+09:00",
  "status": "OK",
  "record": {
   "run": "raw/s4/whisper/ovg-int8-igpu/run1.json",

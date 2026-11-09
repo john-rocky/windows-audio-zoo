@@ -8,6 +8,8 @@
  "set": "S150",
  "mode": "timed",
  "sitting": "s4",
+ "run_start": "2026-11-10T01:39:39.7277326+09:00",
+ "run_end": "2026-11-10T01:50:38.7382609+09:00",
  "status": "OK",
  "record": {
   "run": "raw/s4/whisper/genai-fp32-igpu/run1.json",

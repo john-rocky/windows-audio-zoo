@@ -8,6 +8,8 @@
  "set": "S150",
  "mode": "timed",
  "sitting": "s4",
+ "run_start": "2026-11-10T00:39:29.8889254+09:00",
+ "run_end": "2026-11-10T00:40:36.9149916+09:00",
  "status": "OK",
  "record": {
   "run": "raw/s4/parakeet/ort-fp32-cpu/run1.json",

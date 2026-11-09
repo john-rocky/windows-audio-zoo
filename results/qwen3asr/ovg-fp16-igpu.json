@@ -8,6 +8,8 @@
  "set": "S150",
  "mode": "timed",
  "sitting": "s4",
+ "run_start": "2026-11-10T01:03:23.0859838+09:00",
+ "run_end": "2026-11-10T01:08:48.7335584+09:00",
  "status": "OK",
  "record": {
   "run": "raw/s4/qwen3asr/ovg-fp16-igpu/run1.json",

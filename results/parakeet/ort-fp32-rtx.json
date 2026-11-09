@@ -8,6 +8,8 @@
  "set": "S150",
  "mode": "timed",
  "sitting": "s4",
+ "run_start": "2026-11-10T00:37:02.3912520+09:00",
+ "run_end": "2026-11-10T00:37:26.2453868+09:00",
  "status": "OK",
  "record": {
   "run": "raw/s4/parakeet/ort-fp32-rtx/run1.json",

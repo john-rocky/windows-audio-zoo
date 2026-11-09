@@ -8,6 +8,8 @@
  "set": "S150",
  "mode": "timed",
  "sitting": "s4",
+ "run_start": "2026-11-10T01:14:19.3682578+09:00",
+ "run_end": "2026-11-10T01:19:29.4939675+09:00",
  "status": "OK",
  "record": {
   "run": "raw/s4/whisper/ovg-fp16-npu/run1.json",
