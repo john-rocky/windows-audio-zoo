@@ -1,0 +1,29 @@
+[
+ {
+  "name": "npu-plugin-dir-p1",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\npu_plugin_dir.py",
+   "--out",
+   "{ROOT}\\npujit\\p1",
+   "--dispatch",
+   "litertlm"
+  ],
+  "timeout_min": 10,
+  "venv": "litertlm",
+  "stop_on_fail": true
+ },
+ {
+  "name": "npu-plugin-dir-p2",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\npu_plugin_dir.py",
+   "--out",
+   "{ROOT}\\npujit\\p2",
+   "--dispatch",
+   "nightly"
+  ],
+  "timeout_min": 5,
+  "venv": "litertlm"
+ }
+]

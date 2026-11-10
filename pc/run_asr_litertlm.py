@@ -2,7 +2,8 @@
 encoder (Qwen3-ASR, Granite Speech) on one backend, one pass over a clip set after one untimed warm-up clip; one JSON.
 
     python run_asr_litertlm.py --bundle <file.litertlm> --family qwen3asr|granite --backend cpu|gpu|npu
-        [--audio-backend cpu|gpu|npu] [--gpu-pref 1|2] --set S150|S220 --fixtures <dir> --out run.json [--first N]
+        [--audio-backend cpu|gpu|npu] [--gpu-pref 1|2 [--gpu-pref-names real|asis]] [--npu-lib-dir <dir>]
+        --set S150|S220 --fixtures <dir> --out run.json [--first N]
 
 Per clip: a new conversation (greedy: top_k 1, top_p 1.0, temperature 0), one user message with the clip as
 Content.AudioFile(<path>) (the API reads the file: the timed span includes the read), the streamed reply
@@ -10,12 +11,24 @@ Content.AudioFile(<path>) (the API reads the file: the timed span includes the r
 Qwen3-ASR: chat_template = the checkpoint's official template (the same prompt string as the earlier Qwen3-ASR rows and OpenVINO
 GenAI), the language tag split off like qwen_asr's parse_asr_output; Granite: the bundle's own
 template with the instruction text of earlier Granite Speech work after the audio.
-GPU: --gpu-pref writes this interpreter's per-app GPU preference (HKCU\\Software\\Microsoft\\DirectX\\
-UserGpuPreferences, 1 = power saving = the Intel GPU, 2 = high performance = the RTX) for the run and removes it after
-(the way an earlier LiteRT-LM job on this PC pointed it at a GPU); the venvs come from a Python that only this repo uses, so no other job's
-python.exe shares the value. It does not work this way: written inside this process, the value left every Intel GPU
-run of LiteRT-LM 0.19.1 on the RTX (each log: "Selected adapter: NVIDIA GeForce RTX 5080 Laptop GPU"; that job wrote it
-before it started the exe). tools/results.py reads that log line and marks such a cell WRONG DEVICE.
+GPU: the Intel GPU rows get Windows' per-app GPU preference (HKCU\\Software\\Microsoft\\DirectX\\UserGpuPreferences,
+"GpuPreference=1;" = power saving = the Intel GPU) from pc/chain.ps1, written before this process starts under the
+paths the venv's launcher and its interpreter run by (the unit's "gpu_pref"); without a value LiteRT-LM 0.19.1's GPU
+backend takes the RTX. --gpu-pref writes the same value from inside this process (before the runtime's import) and
+removes it after: --gpu-pref-names asis names the interpreter as Python has it (uv's minor-version junction kept),
+which reached the Intel GPU (11-10); the default "real" (os.path.realpath, the junction's target) is the name the
+Intel GPU runs of 11-09/10 carried, and every one of them took the RTX. The venvs come from a Python that only this
+repo uses, so no other job's python.exe shares the value. The run's log names the adapter ("Selected adapter: ...");
+tools/results.py reads it and marks an Intel GPU cell that took another adapter WRONG DEVICE.
+NPU: LiteRT-LM 0.19.1's NPU() (no argument) points LiteRT at <litert_lm>\\vendors\\intel_openvino\\dispatch\\, the one
+folder it uses as both the dispatch library and the compiler plugin directory (runtime/util/litert_util.cc), and the
+wheel ships only the dispatch library there. A .litertlm that packages no TF_LITE_AUX model (the auxiliary model
+LiteRT-LM's specialized NPU executor reads; the litert-community Qwen3-ASR and Granite bundles) takes LiteRT's generic
+compiler-plugin path, finds no plugin and runs on the CPU through XNNPACK (the log: "No compiler plugin found",
+"XNNPACK delegate for CPU"; the NPU's memory stays 0).
+--npu-lib-dir <dir> passes NPU(litert_dispatch_lib_dir=<dir>), a folder made by pc/npu_plugin_dir.py with a compiler
+plugin beside a dispatch library, and puts the openvino package's libs folder on PATH the way NPU() does; the run's
+JSON lists the folder's files with their sha256.
 """
 import argparse
 import os
@@ -83,16 +96,38 @@ def split_raw(raw):
 GPUPREF_KEY = r"Software\Microsoft\DirectX\UserGpuPreferences"
 
 
-def set_gpu_pref(value):
-    """Write GpuPreference=<value>; for this interpreter's real exe (and the venv launcher); returns what was written."""
+def set_gpu_pref(value, names="real"):
+    """Write GpuPreference=<value>; for this interpreter's exe (and the venv launcher); returns what was written.
+    names "real": the paths through os.path.realpath (Z3's form: uv's minor-version junction resolved, so the name is
+    ...\\cpython-3.12.16-...\\python.exe; the GPU backend stayed on the RTX); "asis": the paths as Python has them (the
+    junction kept, ...\\cpython-3.12-...\\python.exe: the path the venv's launcher started the interpreter by, which
+    Get-Process's .Path shows; with this name the GPU backend took the Intel GPU, Z3b 11-10).
+    QueryFullProcessImageNameW gives the junction's target, the name that did not work."""
     import winreg
-    exes = sorted({os.path.realpath(p) for p in (getattr(sys, "_base_executable", sys.executable), sys.executable) if p})
+    raw = (getattr(sys, "_base_executable", sys.executable), sys.executable)
+    exes = sorted({(os.path.realpath(p) if names == "real" else os.path.abspath(p)) for p in raw if p})
     k = winreg.CreateKey(winreg.HKEY_CURRENT_USER, GPUPREF_KEY)
     for e in exes:
         winreg.SetValueEx(k, e, 0, winreg.REG_SZ, f"GpuPreference={value};")
     back = {e: winreg.QueryValueEx(k, e)[0] for e in exes}
     winreg.CloseKey(k)
     return back
+
+
+def _image_path():
+    """QueryFullProcessImageNameW for this process: on this PC the junction's target (cpython-3.12.16-...), not the
+    name a per-app GPU preference must carry (set_gpu_pref); recorded beside sys._base_executable."""
+    import ctypes
+    from ctypes import wintypes
+    k32 = ctypes.WinDLL("kernel32", use_last_error=True)
+    k32.GetCurrentProcess.restype = wintypes.HANDLE
+    k32.QueryFullProcessImageNameW.argtypes = [wintypes.HANDLE, wintypes.DWORD, wintypes.LPWSTR,
+                                               ctypes.POINTER(wintypes.DWORD)]
+    buf = ctypes.create_unicode_buffer(1024)
+    n = wintypes.DWORD(1024)
+    if not k32.QueryFullProcessImageNameW(k32.GetCurrentProcess(), 0, buf, ctypes.byref(n)):
+        return None
+    return buf.value
 
 
 def clear_gpu_pref(exes):
@@ -109,11 +144,38 @@ def clear_gpu_pref(exes):
         pass
 
 
-def backend_of(interfaces, name):
+def npu_lib_dir_record(path):
+    """The folder handed to NPU(litert_dispatch_lib_dir=...): each file's name, size and sha256, and the openvino
+    package's libs folder put on PATH (what NPU() does when it picks its own folder) with the devices OpenVINO sees."""
+    import hashlib
+    files = []
+    for name in sorted(os.listdir(path)):
+        p = os.path.join(path, name)
+        if os.path.isfile(p):
+            with open(p, "rb") as f:
+                files.append({"name": name, "bytes": os.path.getsize(p), "sha256": hashlib.sha256(f.read()).hexdigest()})
+    import json
+    man = os.path.join(path, "manifest.json")   # pc/npu_plugin_dir.py: where each file came from
+    manifest = None
+    if os.path.isfile(man):
+        with open(man, encoding="utf-8") as f:
+            manifest = json.load(f)
+    import openvino as ov
+    libs = os.path.join(os.path.dirname(ov.__file__), "libs")
+    cur = os.environ.get("PATH", "")
+    if libs not in cur.split(os.pathsep):
+        os.environ["PATH"] = f"{cur}{os.pathsep}{libs}" if cur else libs
+    return {"path": os.path.abspath(path), "files": files, "manifest": manifest, "openvino_libs_on_path": libs,
+            "openvino_devices": list(ov.Core().available_devices)}
+
+
+def backend_of(interfaces, name, npu_lib_dir=""):
     if name == "cpu":
         return interfaces.CPU()
     if name == "gpu":
         return interfaces.GPU()
+    if npu_lib_dir:
+        return interfaces.NPU(litert_dispatch_lib_dir=os.path.abspath(npu_lib_dir))
     return interfaces.NPU()
 
 
@@ -125,6 +187,8 @@ def main():
     ap.add_argument("--backend", required=True, choices=["cpu", "gpu", "npu"])
     ap.add_argument("--audio-backend", default="", choices=["", "cpu", "gpu", "npu"])
     ap.add_argument("--gpu-pref", type=int, default=0, choices=[0, 1, 2])
+    ap.add_argument("--gpu-pref-names", default="real", choices=["real", "asis"])
+    ap.add_argument("--npu-lib-dir", default="")
     ap.add_argument("--cache-dir", default="")
     args = ap.parse_args()
     max_new = 512 if args.family == "qwen3asr" else 256
@@ -134,9 +198,14 @@ def main():
     pref = {}
     try:
         rec["versions"] = al.versions(["litert-lm-api", "openvino", "numpy"])  # read before the imports: a failed import keeps them
+        rec["process_paths"] = {"sys._base_executable": getattr(sys, "_base_executable", None),
+                                "sys.executable": sys.executable,
+                                "QueryFullProcessImageNameW": _image_path() if os.name == "nt" else None}
         if args.gpu_pref:
-            pref = set_gpu_pref(args.gpu_pref)
+            pref = set_gpu_pref(args.gpu_pref, args.gpu_pref_names)
             rec["gpu_preference_written"] = pref
+        if args.npu_lib_dir:
+            rec["npu_lib_dir"] = npu_lib_dir_record(args.npu_lib_dir)
         import litert_lm
         from litert_lm import interfaces
         rows = al.clips(args.set, args.fixtures, args.first)
@@ -144,8 +213,8 @@ def main():
         cache = args.cache_dir or os.path.join(os.path.dirname(os.path.abspath(args.out)), "lm_cache")
         os.makedirs(cache, exist_ok=True)
         t = time.perf_counter()
-        eng = litert_lm.Engine(args.bundle, backend=backend_of(interfaces, args.backend),
-                               audio_backend=backend_of(interfaces, audio_backend), cache_dir=cache)
+        eng = litert_lm.Engine(args.bundle, backend=backend_of(interfaces, args.backend, args.npu_lib_dir),
+                               audio_backend=backend_of(interfaces, audio_backend, args.npu_lib_dir), cache_dir=cache)
         rec["load_s"] = round(time.perf_counter() - t, 3)
         rec["workload"] = {"set": args.set, "first": args.first, "max_new_tokens": max_new, "decode": "greedy (top_k 1)",
                            "backend": args.backend, "audio_backend": audio_backend, "cache_dir": cache,

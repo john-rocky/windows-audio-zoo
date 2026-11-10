@@ -60,7 +60,7 @@ feed_free() {  # feed_free <what>: wait (feed only, at most 60 min) until no oth
       (( i == 1 )) && say "feed stale: $1 waits"; sleep 30; continue
     fi
     b=$(printf '%s\n' "$feed" | awk '$3=="BUSY"' | tail -n 1)
-    if [[ "$b" == *"timing:"* && "$b" != *" BUSY Z3 "* ]]; then
+    if [[ "$b" == *"timing:"* && "$b" != *" BUSY ${Z3_LABEL:-Z3} "* ]]; then
       (( i == 1 )) && say "another lane's timing lock: $1 waits (${b:0:110})"; sleep 30; continue
     fi
     return 0

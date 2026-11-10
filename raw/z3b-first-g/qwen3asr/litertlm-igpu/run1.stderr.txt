@@ -1,0 +1,70 @@
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794276360.090786   33956 litert_lm_loader.cc:550] TFLite model type: tf_lite_vision_encoder not found for prefer activation type. Use system's default backend activation type. System's default activation type for Text decoder is fp16. Vision encoder and audio encoder default is fp32.
+W0000 00:00:1794276360.091347   21216 litert_lm_loader.cc:407] Section not found: SP_Tokenizer
+W0000 00:00:1794276360.091671   33956 litert_lm_loader.cc:532] TFLite model type: tf_lite_vision_encoder not found for backend constraints. Skipping.
+W0000 00:00:1794276360.091876   21216 litert_lm_loader.cc:407] Section not found: SP_Tokenizer
+W0000 00:00:1794276360.092207   21216 litert_lm_loader.cc:407] Section not found: HF_Tokenizer_Zlib
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001B8E9BA5DE0, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001B8E9B87060, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001B8E9B867C0, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001B8E9B87300, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+INFO: [delegate_webgpu.cc:349] Create WebGPU environment (use_low_power=0, enable_host_mapped_pointer=1)
+I0000 00:00:1794276361.411460   33956 environment.cc:570] Selected adapter: Intel(R) Graphics, arch=xe-3lpg, vendor=intel, backend=Direct3D 12, adapterType=Integrated GPU
+INFO: [delegate_webgpu.cc:370] Created a WebGPU environment.
+INFO: [environment.cc:47] Adding options to the existing LiteRT environment
+INFO: [gpu_environment.cc:459] Failed to create OpenCL context.
+INFO: [gpu_environment.h:155] Created LiteRT GpuEnvironment.
+INFO: [environment.cc:47] Adding options to the existing LiteRT environment
+I0000 00:00:1794276361.475041   33956 delegate_webgpu.cc:758] # of threads to upload weights = 2
+I0000 00:00:1794276361.475209   33956 delegate_webgpu.cc:766] # of threads to compile kernels = 1
+I0000 00:00:1794276365.515644   33956 delegate_kernel.cc:360] Total 112 external tensors are used for delegate inputs and outputs
+I0000 00:00:1794276365.516531   33956 delegate_kernel.cc:1015] Initializing WebGPU-based API from serialized data.
+I0000 00:00:1794276367.698604   33956 delegate_kernel.cc:360] Total 113 external tensors are used for delegate inputs and outputs
+I0000 00:00:1794276367.699544   33956 delegate_kernel.cc:1015] Initializing WebGPU-based API from serialized data.
+W0000 00:00:1794276367.815682   33956 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794276367.842004   33956 litert_lm_loader.cc:497] TFLite model for type: tf_lite_end_of_audio not found. Skipping.
+W0000 00:00:1794276367.842573   33956 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794276367.842935   33956 litert_lm_loader.cc:497] TFLite model for type: tf_lite_end_of_vision not found. Skipping.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1794276367.846460   33956 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794276367.846924   33956 litert_lm_loader.cc:497] TFLite model for type: tf_lite_per_layer_embedder not found. Skipping.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001B8F1321430, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001B8F1321490, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+W0000 00:00:1794276367.913317   33956 litert_lm_loader.cc:550] TFLite model type: tf_lite_vision_encoder not found for prefer activation type. Use system's default backend activation type. System's default activation type for Text decoder is fp16. Vision encoder and audio encoder default is fp32.
+W0000 00:00:1794276367.914221   33956 litert_lm_loader.cc:532] TFLite model type: tf_lite_vision_encoder not found for backend constraints. Skipping.
+W0000 00:00:1794276367.946643   33956 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794276367.946927   33956 litert_lm_loader.cc:497] TFLite model for type: tf_lite_audio_adapter not found. Skipping.
+W0000 00:00:1794276367.947060   33956 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794276367.947171   33956 litert_lm_loader.cc:497] TFLite model for type: tf_lite_audio_adapter not found. Skipping.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+E0000 00:00:1794276388.262155   33912 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794276388.296286   33912 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794276388.296748   33912 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794276388.303180   21528 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794276388.303613   21528 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794276388.303726   21528 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=000001B8F1321430, name=GPU WebGPU
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=000001B8F1321490, name=CpuAccelerator

@@ -1,0 +1,100 @@
+[
+ {
+  "name": "python",
+  "exe": "uv",
+  "args": [
+   "python",
+   "install",
+   "3.12"
+  ],
+  "timeout_min": 15,
+  "stop_on_fail": true
+ },
+ {
+  "name": "venv-litertlm",
+  "exe": "uv",
+  "args": [
+   "venv",
+   "{ROOT}\\.venv-litertlm",
+   "--python",
+   "3.12",
+   "--python-preference",
+   "only-managed",
+   "--allow-existing"
+  ],
+  "timeout_min": 10
+ },
+ {
+  "name": "pip-litertlm",
+  "exe": "uv",
+  "args": [
+   "pip",
+   "install",
+   "--python",
+   "{ROOT}\\.venv-litertlm\\Scripts\\python.exe",
+   "-r",
+   "{ROOT}\\pc\\req\\litertlm.txt"
+  ],
+  "timeout_min": 45
+ },
+ {
+  "name": "versions-litertlm",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\venv_versions.py",
+   "--out",
+   "{ROOT}\\logs\\versions-litertlm.txt"
+  ],
+  "timeout_min": 5,
+  "venv": "litertlm"
+ },
+ {
+  "name": "venv-ovg",
+  "exe": "uv",
+  "args": [
+   "venv",
+   "{ROOT}\\.venv-ovg",
+   "--python",
+   "3.12",
+   "--python-preference",
+   "only-managed",
+   "--allow-existing"
+  ],
+  "timeout_min": 10
+ },
+ {
+  "name": "pip-ovg",
+  "exe": "uv",
+  "args": [
+   "pip",
+   "install",
+   "--python",
+   "{ROOT}\\.venv-ovg\\Scripts\\python.exe",
+   "-r",
+   "{ROOT}\\pc\\req\\ovg.txt"
+  ],
+  "timeout_min": 45
+ },
+ {
+  "name": "versions-ovg",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\venv_versions.py",
+   "--out",
+   "{ROOT}\\logs\\versions-ovg.txt"
+  ],
+  "timeout_min": 5,
+  "venv": "ovg"
+ },
+ {
+  "name": "fixtures",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\check_fixtures.py",
+   "--fixtures",
+   "{FIX}"
+  ],
+  "timeout_min": 5,
+  "venv": "ovg"
+ }
+]

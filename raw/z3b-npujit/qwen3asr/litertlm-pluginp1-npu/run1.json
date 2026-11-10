@@ -1,0 +1,137 @@
+{
+ "runner": "run_asr_litertlm.py",
+ "started": "2026-11-10T13:09:11.565170+09:00",
+ "argv": [
+  "--bundle",
+  "C:\\src\\audiozoo\\models\\litert-community__Qwen3-ASR-1.7B\\Qwen3-ASR-1.7B.litertlm",
+  "--family",
+  "qwen3asr",
+  "--backend",
+  "npu",
+  "--npu-lib-dir",
+  "C:\\src\\audiozoo\\npujit\\p1",
+  "--cache-dir",
+  "C:\\src\\audiozoo\\runs\\z3b-npujit\\qwen3asr\\litertlm-pluginp1-npu\\cache",
+  "--audio-backend",
+  "cpu",
+  "--set",
+  "S150",
+  "--fixtures",
+  "C:\\src\\audiozoo\\fixtures",
+  "--first",
+  "1",
+  "--out",
+  "C:\\src\\audiozoo\\runs\\z3b-npujit\\qwen3asr\\litertlm-pluginp1-npu\\run1.json"
+ ],
+ "pid": 10064,
+ "status": "OK",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.001
+ },
+ "rows": [
+  {
+   "id": "en_us_1660",
+   "lang": "en_us",
+   "seconds": 10.68,
+   "wall_s": 3.1742348999832757,
+   "first_token_ms": 1384.594900009688,
+   "token_count": 437,
+   "raw": "language English<asr_text>Romanticism had a large element of cultural determinism, drawn from writers such as Goethe, Fichte, and Schlegel.",
+   "language": "English",
+   "text": "Romanticism had a large element of cultural determinism, drawn from writers such as Goethe, Fichte, and Schlegel."
+  },
+  {
+   "id": "cmn_hans_cn_1660",
+   "lang": "cmn_hans_cn",
+   "seconds": 9.6,
+   "wall_s": 2.846154800034128,
+   "first_token_ms": 1375.0908999936655,
+   "token_count": 433,
+   "raw": "language Chinese<asr_text>浪漫主义具有很强的文化决定论色彩，这源于歌德、费希特和施莱格尔等作家。",
+   "language": "Chinese",
+   "text": "浪漫主义具有很强的文化决定论色彩，这源于歌德、费希特和施莱格尔等作家。"
+  },
+  {
+   "id": "ja_jp_1661",
+   "lang": "ja_jp",
+   "seconds": 15.42,
+   "wall_s": 3.561883400019724,
+   "first_token_ms": 1353.9423000183888,
+   "token_count": 446,
+   "raw": "language Japanese<asr_text>コシは削減する数値をさらけませんでしたが、削減は中国の経済産出量に基づいて実施されるだろうと述べました。",
+   "language": "Japanese",
+   "text": "コシは削減する数値をさらけませんでしたが、削減は中国の経済産出量に基づいて実施されるだろうと述べました。"
+  }
+ ],
+ "versions": {
+  "python": "3.12.16",
+  "litert-lm-api": "0.19.1",
+  "openvino": "2026.4.1",
+  "numpy": "2.5.4"
+ },
+ "process_paths": {
+  "sys._base_executable": "C:\\src\\audiozoo\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+  "sys.executable": "C:\\src\\audiozoo\\.venv-litertlm\\Scripts\\python.exe",
+  "QueryFullProcessImageNameW": "C:\\src\\audiozoo\\python\\cpython-3.12.16-windows-x86_64-none\\python.exe"
+ },
+ "npu_lib_dir": {
+  "path": "C:\\src\\audiozoo\\npujit\\p1",
+  "files": [
+   {
+    "name": "LiteRtCompilerPlugin.dll",
+    "bytes": 582656,
+    "sha256": "f0bf1f04a207c21797fae69953339654f48445b1456e9045f9e4f100a90db6e1"
+   },
+   {
+    "name": "LiteRtDispatch.dll",
+    "bytes": 284160,
+    "sha256": "5719dda76c6b6bbff909ae04c82220e71a2a217616551031474c5c813ea63ebb"
+   },
+   {
+    "name": "manifest.json",
+    "bytes": 746,
+    "sha256": "66ef98020eaac273d7255cb991cda9360ff2e0f3dc95191ebe99f41aa927acdc"
+   }
+  ],
+  "openvino_libs_on_path": "C:\\src\\audiozoo\\.venv-litertlm\\Lib\\site-packages\\openvino\\libs",
+  "openvino_devices": [
+   "CPU",
+   "GPU.0",
+   "GPU.1",
+   "NPU"
+  ]
+ },
+ "load_s": 59.087,
+ "workload": {
+  "set": "S150",
+  "first": 1,
+  "max_new_tokens": 512,
+  "decode": "greedy (top_k 1)",
+  "backend": "npu",
+  "audio_backend": "cpu",
+  "cache_dir": "C:\\src\\audiozoo\\runs\\z3b-npujit\\qwen3asr\\litertlm-pluginp1-npu\\cache",
+  "prompt": "official chat template",
+  "input": "Content.AudioFile(path), read inside the timed span"
+ },
+ "warmup_s": 3.029,
+ "render_warmup": "<|im_start|>system\n<|im_end|>\n<|im_start|>user\n<|audio_start|><|audio_pad|><|audio_end|><|im_end|>\n<|im_start|>assistant\n",
+ "summary": {
+  "clips": 3,
+  "audio_s": 35.7,
+  "wall_s": 9.582,
+  "rtf": 0.26841,
+  "empty": 0,
+  "first_token_ms_mean": 1371.21,
+  "split_half_rtf": [
+   0.25809,
+   0.29647
+  ]
+ },
+ "peak_working_set_bytes": 12756443136,
+ "peak_pagefile_bytes": 9789865984,
+ "ended": "2026-11-10T13:10:27.294232+09:00",
+ "process_s": 75.729
+}

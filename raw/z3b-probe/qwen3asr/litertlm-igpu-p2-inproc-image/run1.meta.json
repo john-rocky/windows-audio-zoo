@@ -1,0 +1,81 @@
+{
+    "cell":  "qwen3asr/litertlm-igpu-p2-inproc-image",
+    "device":  "igpu",
+    "role":  null,
+    "run":  1,
+    "mode":  "first",
+    "sitting":  "z3b-probe",
+    "start":  "2026-11-10T11:03:01.4205138+09:00",
+    "osBuild":  "26200.9711",
+    "desktopLocked":  true,
+    "power":  {
+                  "msiUserScenarioMode":  1,
+                  "overlayAc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "overlayDc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "battery":  "status 2, 96 %"
+              },
+    "gate":  null,
+    "before":  {
+                   "load":  {
+                                "cpu":  12.1,
+                                "build_ms":  0,
+                                "top":  [
+                                            "python 18428 1.01 core",
+                                            "System 4 0.79 core",
+                                            "svchost 5080 0.02 core",
+                                            "svchost 5260 0.02 core",
+                                            "conhost 34972 0.02 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 3945 MHz, 14001 MHz, 17.51 W, 0 %, 0 MiB, 47",
+                   "availGB":  13.6
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-litertlm\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_asr_litertlm.py --bundle C:\\src\\audiozoo\\models\\litert-community__Qwen3-ASR-1.7B\\Qwen3-ASR-1.7B.litertlm --family qwen3asr --backend gpu --cache-dir C:\\src\\audiozoo\\runs\\z3b-probe\\qwen3asr\\litertlm-igpu-p2-inproc-image\\cache --audio-backend cpu --gpu-pref 1 --gpu-pref-names asis --set S150 --fixtures C:\\src\\audiozoo\\fixtures --first 1 --out C:\\src\\audiozoo\\runs\\z3b-probe\\qwen3asr\\litertlm-igpu-p2-inproc-image\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  10568,
+                   "enginePath":  "C:\\src\\audiozoo\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+                   "elapsedSeconds":  25.121,
+                   "peakWorkingSetBytes":  4237840384,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x00012C48":  {
+                                                                    "shared":  9,
+                                                                    "dedicated":  13
+                                                                },
+                                      "0x00000000_0x0001260E":  {
+                                                                    "shared":  2533,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x00012BB8":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P4, 1492 MHz, 9001 MHz, 12.86 W, 0 %, 14 MiB, 48",
+                                         "10s P2, 1492 MHz, 11001 MHz, 17.69 W, 0 %, 14 MiB, 49",
+                                         "15s P4, 277 MHz, 9001 MHz, 14.80 W, 0 %, 0 MiB, 50",
+                                         "20s P4, 1492 MHz, 9001 MHz, 13.11 W, 0 %, 0 MiB, 51"
+                                     ]
+               },
+    "selectedAdapter":  "Intel(R) Graphics, arch=xe-3lpg, vendor=intel, backend=Direct3D 12, adapterType=Integrated GPU",
+    "after":  {
+                  "load":  {
+                               "cpu":  7.2,
+                               "build_ms":  0,
+                               "top":  [
+                                           "python 18428 1 core",
+                                           "System 4 0.12 core",
+                                           "powershell 19400 0.02 core",
+                                           "svchost 3508 0.02 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 9097 MHz, 14001 MHz, 18.60 W, 0 %, 0 MiB, 54"
+              },
+    "end":  "2026-11-10T11:03:28.5371727+09:00",
+    "tries":  1
+}

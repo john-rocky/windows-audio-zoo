@@ -1,0 +1,18 @@
+{
+ "sitting": "z3b-first-n",
+ "made": "2026-11-10T11:01:46+09:00",
+ "mode": "first",
+ "note": "Z3b: the first pass of Granite Speech 5.0 2B on LiteRT-LM's NPU backend over every clip of S220 (Z3's first pass was stopped by hand at 60-69 of its 70 clips, 11-09 15:12). Untimed; killed at any other lane's lock and run again from its start once the lock has been free 60 s.",
+ "units": [
+  {
+   "cell": "granite/litertlm-npu",
+   "venv": "litertlm",
+   "script": "run_asr_litertlm.py",
+   "device": "npu",
+   "ram_need_gb": 7,
+   "timeout_min": 150,
+   "engines_gate": false,
+   "args": ["--bundle", "{ROOT}\\models\\litert-community__granite-speech-5.0-2b\\granite-speech-5.0-2b.litertlm", "--family", "granite", "--backend", "npu", "--cache-dir", "{RUN}\\cache", "--audio-backend", "cpu", "--set", "S220", "--fixtures", "{FIX}"]
+  }
+ ]
+}

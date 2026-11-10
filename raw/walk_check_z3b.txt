@@ -1,0 +1,41 @@
+OK      1 pc\chain.ps1
+OK      1 pc\steps.ps1
+OK      1 pc\zlib.ps1
+OK      1 pc\lock.ps1
+OK      1 pc\launch.ps1
+OK      1 pc\wait_done.ps1
+OK      1 pc\audiolib.py
+OK      1 shelf\hub_manifest.json
+OK      1 fixtures\meta.json
+OK      1 fixtures\s220\clips.json
+OK      2 python\cpython-3.12-windows-x86_64-none\python.exe
+OK      2 .venv-ovg\Scripts\python.exe
+OK      2 logs\versions-ovg.txt
+OK      2 .venv-litertlm\Scripts\python.exe
+OK      2 logs\versions-litertlm.txt
+DONE    2 logs\setup-z3b.done = OK 2026-11-10T10:58:01.5553399+09:00
+DONE    2 logs\fetch-z3b.done = OK 2026-11-10T11:00:55.8883334+09:00
+OK      2 models\fetch_report.json
+OK      2 models: 22 files of 3 repos checked by size (0 missing or different)
+OK      npu npujit\p1\LiteRtCompilerPlugin.dll
+OK      npu npujit\p1\LiteRtDispatch.dll
+OK      npu npujit\p1\manifest.json
+OK      npu npujit\p2\LiteRtCompilerPlugin.dll
+OK      npu npujit\p2\LiteRtDispatch.dll
+OK      npu npujit\p2\manifest.json
+DONE    npu logs\npujit-z3b.done = OK 2026-11-10T12:59:10.2086592+09:00
+DONE    sit runs\z3b-probe\chain.done = OK 2026-11-10T11:04:10.0806024+09:00
+RUNS    sit z3b-probe: OK 4
+DONE    sit runs\z3b-first-g\chain.done = OK 2026-11-10T11:17:46.0001152+09:00
+RUNS    sit z3b-first-g: OK 2
+DONE    sit runs\z3b-first-n\chain.done = OK 2026-11-10T11:53:19.2977977+09:00
+RUNS    sit z3b-first-n: OK 1
+DONE    sit runs\z3b-s5\chain.done = OK 2026-11-10T12:58:45.9851801+09:00
+RUNS    sit z3b-s5: no runner JSON 1, OK 5
+DONE    sit runs\z3b-npujit\chain.done = OK 2026-11-10T13:10:32.3167024+09:00
+RUNS    sit z3b-npujit: OK 2
+DONE    sit runs\z3b-first-q\chain.done = OK 2026-11-10T13:48:53.1957622+09:00
+RUNS    sit z3b-first-q: OK 1
+DONE    sit runs\z3b-s6\chain.done = OK 2026-11-10T14:08:26.2191485+09:00
+RUNS    sit z3b-s6: OK 4
+walk check: 0 missing

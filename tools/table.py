@@ -15,6 +15,8 @@ MODEL = {"whisper": "Whisper large-v3-turbo", "qwen3asr": "Qwen3-ASR 1.7B", "gra
          "parakeet": "Parakeet TDT 0.6B v3", "kokoro": "Kokoro-82M"}
 ORDER = ["whisper", "qwen3asr", "granite", "parakeet", "kokoro"]
 DEV = {"cpu": "CPU", "igpu": "Intel GPU", "rtx": "RTX 5080 Laptop", "npu": "Intel NPU"}
+# a LiteRT-LM cell whose NPU backend got the Intel OpenVINO compiler plugin beside its dispatch library (11-10)
+FORM = {"plugin": "bundle + Intel compiler plugin"}
 
 
 def jload(p):
@@ -56,12 +58,13 @@ def mem_text(d):
     ws = e.get("peakWorkingSetBytes")
     out = f"{ws / 2**30:.1f}" if ws else ""
     g = e.get("gpuMiBPeak") or {}
-    dd = [v.get("dedicated", 0) for v in g.values() if isinstance(v, dict)]
-    sh = [v.get("shared", 0) for v in g.values() if isinstance(v, dict)]
-    if dd and max(dd) > 0:
-        out += f" / GPU {max(dd) / 1024:.1f} ded"
-    elif sh and max(sh) > 0:
-        out += f" / GPU {max(sh) / 1024:.1f} shared"
+    # the adapter that held the most (an Intel GPU run also opens the RTX for a few MiB while it picks its adapter,
+    # Z3b 11-10: RTX 13 MiB dedicated beside 2235 MiB shared on the Intel GPU)
+    ads = [(v.get("dedicated", 0) + v.get("shared", 0), v.get("dedicated", 0), v.get("shared", 0))
+           for v in g.values() if isinstance(v, dict)]
+    if ads and max(ads)[0] > 0:
+        _, dd, sh = max(ads)
+        out += f" / GPU {dd / 1024:.1f} ded" if dd >= sh else f" / GPU {sh / 1024:.1f} shared"
     return out
 
 
@@ -72,7 +75,11 @@ def row_this(d):
     note = []
     if mode == "first":
         tts = d.get("set") == "T50" or d.get("model") == "kokoro"
-        note.append("first pass, 10 sentences, untimed" if tts else "first pass, 10 clips per language, untimed")
+        full = {"S150": 150, "S220": 220, "T50": 50}.get(d.get("set") or "")
+        if full and (d.get("summary") or {}).get("clips") == full:   # a first pass over every clip of its set (11-10)
+            note.append("first pass, every clip, untimed")
+        else:
+            note.append("first pass, 10 sentences, untimed" if tts else "first pass, 10 clips per language, untimed")
     timed_ok = mode == "timed"   # a timed row counts as a timing only when its sitting's tail row passed
     if mode == "timed":
         c = d.get("control") or {}
@@ -86,6 +93,23 @@ def row_this(d):
     rtf = s.get("rtf")
     ft = s.get("first_token_ms_mean")
     rec = d["record"]["run"] or d["record"]["meta"]
+    dev = DEV.get(d["device"], d["device"])
+    nc = d.get("npu_check") or {}
+    if d.get("ran_on") == "cpu" and nc.get("no_compiler_plugin"):   # LiteRT-LM's NPU backend, no plugin (11-10)
+        dev = "CPU (Intel NPU requested)"
+        note.append("the NPU backend ran on the CPU: no compiler plugin (LiteRT-LM 0.19.1's wheel ships the Intel "
+                    "dispatch library only), XNNPACK CPU delegate, 0 MiB on the NPU")
+    elif d.get("ran_on") == "cpu":   # a compiler plugin loaded, its NPU compile failed: no plugin applied
+        dev = "CPU (Intel NPU requested)"
+        note.append("the NPU backend ran on the CPU: the Intel compiler plugin's NPU compile failed "
+                    f"({len(nc.get('npu_compile_failed') or [])} partition), 0 compiler plugins applied, XNNPACK CPU "
+                    "delegate, 0 MiB on the NPU")
+    elif nc.get("ran_on") == "npu":
+        src = sorted({f.get("from", "").split(":")[0] for f in ((d.get("npu_lib_dir") or {}).get("manifest") or {})
+                      .get("files", []) if "CompilerPlugin" in f.get("name", "")})
+        note.append("the Intel OpenVINO compiler plugin" + (f" of {', '.join(src)}" if src else "") +
+                    f" beside LiteRT-LM's dispatch library ({len(nc.get('partitioned') or [])} subgraphs partitioned), "
+                    f"{nc.get('npu_mib_peak')} MiB on the NPU")
     if st == "OK":
         acc = acc_text(d)
         rtf_cell = f"{rtf:.4f}" if (rtf and timed_ok) else (f"({rtf:.4f})" if rtf else "")
@@ -94,7 +118,7 @@ def row_this(d):
         p = d.get("progress") or {}
         if p.get("rtf_printed"):
             rtf_cell = f"({p['rtf_printed']:.4f}, the {p['printed']} printed clips)"
-    return [MODEL[d["model"]], d["runtime"], d["form"], DEV.get(d["device"], d["device"]), d.get("set") or "",
+    return [MODEL[d["model"]], d["runtime"], FORM.get(d["form"], d["form"]), dev, d.get("set") or "",
             acc, line_text(d) if st == "OK" else "—", rtf_cell,
             f"{ft:.0f}" if (ft and st == "OK") else "", mem_text(d) if st == "OK" else "",
             f"`{rec}`", "; ".join(note)]

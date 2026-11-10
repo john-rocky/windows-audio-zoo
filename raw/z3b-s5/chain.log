@@ -1,0 +1,22 @@
+[2026-11-10T12:15:33.4444730+09:00] chain start: plan C:\src\audiozoo\pc\plans\z3b-s5.json mode timed, 6 units, pid 24432
+[2026-11-10T12:15:41.7353664+09:00] adapters: 0x00000000_0x00012C48=nvidia, 0x00000000_0x0001260E=intel-gpu, 0x00000000_0x00012BB8=?, 0x00000000_0x00013E4C=npu?
+[2026-11-10T12:15:41.8098602+09:00] settle 180 s inside the lock before the control rows
+[2026-11-10T12:18:49.3821713+09:00] control-warm run 1 start
+[2026-11-10T12:20:31.3673578+09:00] control-warm run 1 end: exit 0, OK, 99.903 s
+[2026-11-10T12:20:37.2928427+09:00] control-head run 1 start
+[2026-11-10T12:22:17.9498153+09:00] control-head run 1 end: exit 0, OK, 98.699 s
+[2026-11-10T12:22:17.9976603+09:00] control head: rtf 0.26185 vs known 0.26228 (plan): off 0.2 %
+[2026-11-10T12:22:29.7702315+09:00] qwen3asr/litertlm-igpu run 1 GpuPreference=1 written before the start on: C:\src\audiozoo\.venv-litertlm\Scripts\python.exe, C:\src\audiozoo\python\cpython-3.12-windows-x86_64-none\python.exe
+[2026-11-10T12:22:29.7722594+09:00] qwen3asr/litertlm-igpu run 1 start
+[2026-11-10T12:30:36.2884297+09:00] qwen3asr/litertlm-igpu run 1 Selected adapter: Intel(R) Graphics, arch=xe-3lpg, vendor=intel, backend=Direct3D 12, adapterType=Integrated GPU
+[2026-11-10T12:30:38.2343303+09:00] qwen3asr/litertlm-igpu run 1 end: exit 0, OK, 486.499 s
+[2026-11-10T12:30:44.7887852+09:00] granite/litertlm-igpu run 1 GpuPreference=1 written before the start on: C:\src\audiozoo\.venv-litertlm\Scripts\python.exe, C:\src\audiozoo\python\cpython-3.12-windows-x86_64-none\python.exe
+[2026-11-10T12:30:44.7887852+09:00] granite/litertlm-igpu run 1 start
+[2026-11-10T12:56:36.0380956+09:00] granite/litertlm-igpu run 1 Selected adapter: Intel(R) Graphics, arch=xe-3lpg, vendor=intel, backend=Direct3D 12, adapterType=Integrated GPU
+[2026-11-10T12:56:37.9972933+09:00] granite/litertlm-igpu run 1 end: exit 0, OK, 1551.241 s
+[2026-11-10T12:56:43.9286940+09:00] granite/litertlm-npu run 1 start
+[2026-11-10T12:57:00.0312253+09:00] granite/litertlm-npu run 1 end: exit 1, no runner JSON, 14.157 s
+[2026-11-10T12:57:05.9760408+09:00] control-tail run 1 start
+[2026-11-10T12:58:45.9694554+09:00] control-tail run 1 end: exit 0, OK, 98.045 s
+[2026-11-10T12:58:45.9851801+09:00] control tail: rtf 0.25959: PASS (tail off 1.0 %)
+[2026-11-10T12:58:45.9851801+09:00] chain done: OK

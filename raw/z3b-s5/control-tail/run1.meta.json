@@ -1,0 +1,94 @@
+{
+    "cell":  "control-tail",
+    "device":  "cpu",
+    "role":  "control-tail",
+    "run":  1,
+    "mode":  "timed",
+    "sitting":  "z3b-s5",
+    "start":  "2026-11-10T12:57:05.9281415+09:00",
+    "osBuild":  "26200.9711",
+    "desktopLocked":  true,
+    "power":  {
+                  "msiUserScenarioMode":  1,
+                  "overlayAc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "overlayDc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "battery":  "status 2, 96 %"
+              },
+    "gate":  {
+                 "quietGate":  "quiet",
+                 "cpuReads":  [
+                                  3.9,
+                                  0.5,
+                                  0.3
+                              ],
+                 "nvidiaMiB":  0,
+                 "availGB":  23.6,
+                 "ramNeedGB":  4,
+                 "gpuEngines":  null
+             },
+    "before":  {
+                   "load":  {
+                                "cpu":  3,
+                                "build_ms":  0,
+                                "top":  [
+                                            "System 4 0.46 core",
+                                            "powershell 24432 0.02 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 2115 MHz, 14001 MHz, 17.91 W, 0 %, 0 MiB, 50",
+                   "availGB":  23.7
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-ovg\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_asr_ovg.py --model-dir C:\\src\\audiozoo\\models\\OpenVINO__whisper-large-v3-turbo-int8-ov --family whisper --device CPU --cache-dir C:\\src\\audiozoo\\runs\\z3b-s5\\control-tail\\cache --set S150 --fixtures C:\\src\\audiozoo\\fixtures --first 10 --out C:\\src\\audiozoo\\runs\\z3b-s5\\control-tail\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  8456,
+                   "enginePath":  "C:\\src\\audiozoo\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+                   "elapsedSeconds":  98.045,
+                   "peakWorkingSetBytes":  2301022208,
+                   "gpuMiBPeak":  {
+
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P0, 2932 MHz, 14001 MHz, 18.00 W, 0 %, 0 MiB, 51",
+                                         "10s P0, 1440 MHz, 14001 MHz, 18.13 W, 0 %, 0 MiB, 51",
+                                         "15s P0, 2932 MHz, 14001 MHz, 18.16 W, 0 %, 0 MiB, 52",
+                                         "20s P0, 15382 MHz, 14001 MHz, 18.25 W, 0 %, 0 MiB, 52",
+                                         "25s P0, 165 MHz, 14001 MHz, 18.47 W, 0 %, 0 MiB, 53",
+                                         "30s P0, 187 MHz, 14001 MHz, 18.36 W, 0 %, 0 MiB, 53",
+                                         "35s P0, 232 MHz, 14001 MHz, 18.48 W, 0 %, 0 MiB, 54",
+                                         "40s P0, 855 MHz, 14001 MHz, 18.51 W, 0 %, 0 MiB, 54",
+                                         "45s P0, 180 MHz, 14001 MHz, 18.58 W, 0 %, 0 MiB, 54",
+                                         "50s P0, 705 MHz, 14001 MHz, 18.44 W, 0 %, 0 MiB, 55",
+                                         "55s P0, 3682 MHz, 14001 MHz, 18.69 W, 0 %, 0 MiB, 55",
+                                         "60s P0, 75 MHz, 14001 MHz, 18.64 W, 0 %, 0 MiB, 55",
+                                         "65s P0, 8287 MHz, 14001 MHz, 18.78 W, 0 %, 0 MiB, 55",
+                                         "70s P0, 120 MHz, 14001 MHz, 18.72 W, 0 %, 0 MiB, 55",
+                                         "75s P0, 5175 MHz, 14001 MHz, 18.85 W, 0 %, 0 MiB, 56",
+                                         "80s P0, 1147 MHz, 14001 MHz, 18.71 W, 0 %, 0 MiB, 56",
+                                         "85s P0, 11025 MHz, 14001 MHz, 18.99 W, 0 %, 0 MiB, 56",
+                                         "90s P0, 262 MHz, 14001 MHz, 18.94 W, 0 %, 0 MiB, 56",
+                                         "95s P0, 2257 MHz, 14001 MHz, 18.96 W, 0 %, 0 MiB, 56"
+                                     ]
+               },
+    "selectedAdapter":  null,
+    "after":  {
+                  "load":  {
+                               "cpu":  0.6,
+                               "build_ms":  0,
+                               "top":  [
+                                           "System 4 0.02 core",
+                                           "WmiPrvSE 7560 0.02 core",
+                                           "WUDFHost 1836 0.02 core",
+                                           "OneDrive.Sync.Service 11312 0.02 core",
+                                           "powershell 24432 0.02 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 660 MHz, 14001 MHz, 18.88 W, 0 %, 0 MiB, 56"
+              },
+    "end":  "2026-11-10T12:58:45.9536799+09:00",
+    "tries":  1
+}

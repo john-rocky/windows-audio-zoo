@@ -1,0 +1,24 @@
+[2026-11-10 13:49:03 JST] sitting z3b-s6 start (expected end about 14:17)
+[2026-11-10 13:50:05 JST] lock: TAKEN 2026-11-10T13:50:06.3911693+09:00
+[2026-11-10 13:50:26 JST] gate: PASS 2026-11-10T13:50:27.1018856+09:00
+[2026-11-10 13:50:47 JST] chain: STARTED 25312 (chain.ps1 running 20 s after the start)
+[2026-11-10T13:50:28.4197657+09:00] chain start: plan C:\src\audiozoo\pc\plans\z3b-s6.json mode timed, 4 units, pid 25312
+[2026-11-10T13:50:36.9920687+09:00] adapters: 0x00000000_0x00012C48=nvidia, 0x00000000_0x0001260E=intel-gpu, 0x00000000_0x00012BB8=?, 0x00000000_0x00013E4C=npu?
+[2026-11-10T13:50:37.0561688+09:00] settle 180 s inside the lock before the control rows
+[2026-11-10T13:53:44.7259977+09:00] control-warm run 1 start
+[2026-11-10T13:55:28.4595563+09:00] control-warm run 1 end: exit 0, OK, 101.738 s
+[2026-11-10T13:55:34.3809315+09:00] control-head run 1 start
+[2026-11-10T13:57:15.9239119+09:00] control-head run 1 end: exit 0, OK, 99.542 s
+[2026-11-10T13:57:15.9719203+09:00] control head: rtf 0.26307 vs known 0.26228 (plan): off 0.3 %
+[2026-11-10T13:57:21.9515443+09:00] qwen3asr/litertlm-plugin-npu run 1 start
+[2026-11-10T14:06:36.0318353+09:00] qwen3asr/litertlm-plugin-npu run 1 end: exit 0, OK, 552.107 s
+[2026-11-10T14:06:42.0254727+09:00] control-tail run 1 start
+[2026-11-10T14:08:26.1968889+09:00] control-tail run 1 end: exit 0, OK, 102.22 s
+[2026-11-10T14:08:26.1968889+09:00] control tail: rtf 0.26987: PASS (tail off 2.9 %)
+[2026-11-10T14:08:26.2191485+09:00] chain done: OK
+DONE OK 2026-11-10T14:08:26.2191485+09:00 (C:\src\audiozoo\runs\z3b-s6\chain.done)
+[2026-11-10 14:08:33 JST] chain wait: DONE OK 2026-11-10T14:08:26.2191485+09:00 (C:\src\audiozoo\runs\z3b-s6\chain.done)
+[2026-11-10 14:08:37 JST] lock after the chain: busy: Z3b timing: sitting z3b-s6 done, the records go to the Mac, until 14:28 at the latest 2026-11-10T14:08:26.2245181+09:00 (0 min)
+[2026-11-10 14:08:37 JST] pulled runs\z3b-s6 -> raw/z3b-s6
+[2026-11-10 14:08:41 JST] release: RELEASED 2026-11-10T14:08:42.2013781+09:00
+[2026-11-10 14:08:41 JST] sitting z3b-s6 end: DONE OK 2026-11-10T14:08:26.2191485+09:00 (C:\src\audiozoo\runs\z3b-s6\chain.done)

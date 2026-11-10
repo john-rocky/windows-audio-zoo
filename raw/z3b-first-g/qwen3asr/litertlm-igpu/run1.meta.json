@@ -1,0 +1,117 @@
+{
+    "cell":  "qwen3asr/litertlm-igpu",
+    "device":  "igpu",
+    "role":  null,
+    "run":  1,
+    "mode":  "first",
+    "sitting":  "z3b-first-g",
+    "start":  "2026-11-10T11:05:59.6712708+09:00",
+    "osBuild":  "26200.9711",
+    "desktopLocked":  true,
+    "power":  {
+                  "msiUserScenarioMode":  1,
+                  "overlayAc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "overlayDc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "battery":  "status 2, 96 %"
+              },
+    "gate":  null,
+    "before":  {
+                   "load":  {
+                                "cpu":  7.3,
+                                "build_ms":  0,
+                                "top":  [
+                                            "python 18428 0.99 core",
+                                            "LEDKeeper2 8936 0.03 core",
+                                            "svchost 5260 0.02 core",
+                                            "svchost 8284 0.02 core",
+                                            "WorkloadsSessionHost 12616 0.02 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 5745 MHz, 14001 MHz, 19.10 W, 0 %, 0 MiB, 56",
+                   "availGB":  14.1
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-litertlm\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_asr_litertlm.py --bundle C:\\src\\audiozoo\\models\\litert-community__Qwen3-ASR-1.7B\\Qwen3-ASR-1.7B.litertlm --family qwen3asr --backend gpu --cache-dir C:\\src\\audiozoo\\runs\\z3b-first-g\\qwen3asr\\litertlm-igpu\\cache --audio-backend cpu --set S150 --fixtures C:\\src\\audiozoo\\fixtures --first 10 --out C:\\src\\audiozoo\\runs\\z3b-first-g\\qwen3asr\\litertlm-igpu\\run1.json",
+    "gpuPreference":  {
+                          "value":  1,
+                          "exes":  [
+                                       "C:\\src\\audiozoo\\.venv-litertlm\\Scripts\\python.exe",
+                                       "C:\\src\\audiozoo\\python\\cpython-3.12-windows-x86_64-none\\python.exe"
+                                   ],
+                          "readBack":  {
+                                           "C:\\src\\audiozoo\\.venv-litertlm\\Scripts\\python.exe":  "GpuPreference=1;",
+                                           "C:\\src\\audiozoo\\python\\cpython-3.12-windows-x86_64-none\\python.exe":  "GpuPreference=1;"
+                                       },
+                          "writtenAt":  "2026-11-10T11:05:59.7263456+09:00",
+                          "names":  "image"
+                      },
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  11256,
+                   "enginePath":  "C:\\src\\audiozoo\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+                   "elapsedSeconds":  108.971,
+                   "peakWorkingSetBytes":  4222910464,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x00012C48":  {
+                                                                    "shared":  9,
+                                                                    "dedicated":  13
+                                                                },
+                                      "0x00000000_0x0001260E":  {
+                                                                    "shared":  2245,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x00012BB8":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P2, 1492 MHz, 11001 MHz, 18.33 W, 0 %, 14 MiB, 56",
+                                         "10s P4, 1492 MHz, 9001 MHz, 14.09 W, 0 %, 14 MiB, 56",
+                                         "15s P0, 3397 MHz, 14001 MHz, 19.26 W, 0 %, 0 MiB, 57",
+                                         "20s P4, 1492 MHz, 9001 MHz, 14.15 W, 0 %, 0 MiB, 57",
+                                         "25s P4, 1492 MHz, 9001 MHz, 14.28 W, 0 %, 0 MiB, 58",
+                                         "30s P0, 1447 MHz, 14001 MHz, 19.45 W, 0 %, 0 MiB, 59",
+                                         "35s P4, 1492 MHz, 9001 MHz, 14.49 W, 0 %, 0 MiB, 59",
+                                         "40s P2, 1492 MHz, 11001 MHz, 13.98 W, 0 %, 0 MiB, 59",
+                                         "45s P0, 1995 MHz, 14001 MHz, 19.94 W, 0 %, 0 MiB, 60",
+                                         "50s P4, 1492 MHz, 9001 MHz, 14.79 W, 0 %, 0 MiB, 59",
+                                         "55s P4, 1492 MHz, 9001 MHz, 14.54 W, 0 %, 0 MiB, 60",
+                                         "60s P0, 5460 MHz, 14001 MHz, 19.88 W, 0 %, 0 MiB, 60",
+                                         "65s P4, 1492 MHz, 9001 MHz, 14.76 W, 0 %, 0 MiB, 59",
+                                         "70s P4, 1492 MHz, 9001 MHz, 14.54 W, 0 %, 0 MiB, 59",
+                                         "75s P0, 2692 MHz, 14001 MHz, 19.65 W, 0 %, 0 MiB, 59",
+                                         "80s P4, 1492 MHz, 9001 MHz, 16.50 W, 0 %, 0 MiB, 59",
+                                         "85s P4, 1492 MHz, 9001 MHz, 14.43 W, 0 %, 0 MiB, 59",
+                                         "90s P0, 75 MHz, 14001 MHz, 19.54 W, 0 %, 0 MiB, 59",
+                                         "95s P4, 1492 MHz, 9001 MHz, 14.76 W, 0 %, 0 MiB, 59",
+                                         "100s P4, 1492 MHz, 9001 MHz, 14.54 W, 0 %, 0 MiB, 58",
+                                         "105s P0, 9645 MHz, 14001 MHz, 19.65 W, 0 %, 0 MiB, 59"
+                                     ]
+               },
+    "gpuPreferenceRemoved":  [
+                                 "C:\\src\\audiozoo\\.venv-litertlm\\Scripts\\python.exe",
+                                 "C:\\src\\audiozoo\\python\\cpython-3.12-windows-x86_64-none\\python.exe"
+                             ],
+    "gpuPreferenceRemovedAt":  "2026-11-10T11:07:48.7267722+09:00",
+    "selectedAdapter":  "Intel(R) Graphics, arch=xe-3lpg, vendor=intel, backend=Direct3D 12, adapterType=Integrated GPU",
+    "after":  {
+                  "load":  {
+                               "cpu":  8.8,
+                               "build_ms":  0,
+                               "top":  [
+                                           "python 18428 1 core",
+                                           "System 4 0.32 core",
+                                           "MsMpEng 5548 0.03 core",
+                                           "svchost 5480 0.02 core",
+                                           "LEDKeeper2 8936 0.02 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 2160 MHz, 14001 MHz, 19.51 W, 0 %, 0 MiB, 58"
+              },
+    "end":  "2026-11-10T11:07:50.7127266+09:00",
+    "tries":  1
+}

@@ -1,0 +1,11 @@
+{
+    "known_rtf":  0.26228,
+    "known_from":  "plan",
+    "head":  [
+                 0.26185
+             ],
+    "tail":  [
+                 0.25959
+             ],
+    "verdict":  "PASS (tail off 1.0 %)"
+}

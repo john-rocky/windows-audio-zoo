@@ -1,0 +1,24 @@
+# 2026-11-10 14:10 JST, the PC's C:\src\audiozoo after the sitting z3b-s6: the Z3b runs' cache folders
+# (runs\z3b-*\**\cache) and the dispatch library's weights files in the Windows temp folder
+# (litert_ov_bank_<hash>.bin, the three names in the stderr of the Qwen3-ASR plugin runs z3b-npujit, z3b-first-q and
+# z3b-s6) removed with Remove-Item -Recurse -Force; one line per path that existed: size before, gone afterwards.
+C:\src\audiozoo\runs\z3b-first-g\granite\litertlm-igpu\cache	3.30 GiB	gone=True
+C:\src\audiozoo\runs\z3b-first-g\qwen3asr\litertlm-igpu\cache	2.79 GiB	gone=True
+C:\src\audiozoo\runs\z3b-first-n\granite\litertlm-npu\cache	1.77 GiB	gone=True
+C:\src\audiozoo\runs\z3b-first-q\qwen3asr\litertlm-plugin-npu\cache	1.18 GiB	gone=True
+C:\src\audiozoo\runs\z3b-npujit\granite\litertlm-pluginp1-npu\cache	1.77 GiB	gone=True
+C:\src\audiozoo\runs\z3b-npujit\qwen3asr\litertlm-pluginp1-npu\cache	1.18 GiB	gone=True
+C:\src\audiozoo\runs\z3b-s5\control-head\cache	0.78 GiB	gone=True
+C:\src\audiozoo\runs\z3b-s5\control-tail\cache	0.78 GiB	gone=True
+C:\src\audiozoo\runs\z3b-s5\control-warm\cache	0.78 GiB	gone=True
+C:\src\audiozoo\runs\z3b-s5\granite\litertlm-igpu\cache	3.30 GiB	gone=True
+C:\src\audiozoo\runs\z3b-s5\granite\litertlm-npu\cache	1.77 GiB	gone=True
+C:\src\audiozoo\runs\z3b-s5\qwen3asr\litertlm-igpu\cache	2.79 GiB	gone=True
+C:\src\audiozoo\runs\z3b-s6\control-head\cache	0.78 GiB	gone=True
+C:\src\audiozoo\runs\z3b-s6\control-tail\cache	0.78 GiB	gone=True
+C:\src\audiozoo\runs\z3b-s6\control-warm\cache	0.78 GiB	gone=True
+C:\src\audiozoo\runs\z3b-s6\qwen3asr\litertlm-plugin-npu\cache	1.18 GiB	gone=True
+%USERPROFILE%\AppData\Local\Temp\litert_ov_bank_209d65f6d63f88ef.bin	2.87 GiB	gone=True
+%USERPROFILE%\AppData\Local\Temp\litert_ov_bank_d1a43028e9c55ebe.bin	2.87 GiB	gone=True
+%USERPROFILE%\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin	2.87 GiB	gone=True
+C: free 282.2 -> 319.0 GB

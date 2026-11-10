@@ -1,0 +1,6 @@
+[2026-11-10T12:59:08.5553298+09:00] steps npujit-z3b start: 2 steps, pid 27288
+[2026-11-10T12:59:08.5875679+09:00] npu-plugin-dir-p1 start: C:\src\audiozoo\.venv-litertlm\Scripts\python.exe -I C:\src\audiozoo\pc\npu_plugin_dir.py --out C:\src\audiozoo\npujit\p1 --dispatch litertlm
+[2026-11-10T12:59:09.9538483+09:00] npu-plugin-dir-p1 end: exit 0, 0 min
+[2026-11-10T12:59:09.9538483+09:00] npu-plugin-dir-p2 start: C:\src\audiozoo\.venv-litertlm\Scripts\python.exe -I C:\src\audiozoo\pc\npu_plugin_dir.py --out C:\src\audiozoo\npujit\p2 --dispatch nightly
+[2026-11-10T12:59:10.2086592+09:00] npu-plugin-dir-p2 end: exit 0, 0 min
+[2026-11-10T12:59:10.2086592+09:00] steps npujit-z3b done: OK

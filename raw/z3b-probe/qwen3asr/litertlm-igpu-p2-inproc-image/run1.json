@@ -1,0 +1,112 @@
+{
+ "runner": "run_asr_litertlm.py",
+ "started": "2026-11-10T11:03:01.694188+09:00",
+ "argv": [
+  "--bundle",
+  "C:\\src\\audiozoo\\models\\litert-community__Qwen3-ASR-1.7B\\Qwen3-ASR-1.7B.litertlm",
+  "--family",
+  "qwen3asr",
+  "--backend",
+  "gpu",
+  "--cache-dir",
+  "C:\\src\\audiozoo\\runs\\z3b-probe\\qwen3asr\\litertlm-igpu-p2-inproc-image\\cache",
+  "--audio-backend",
+  "cpu",
+  "--gpu-pref",
+  "1",
+  "--gpu-pref-names",
+  "asis",
+  "--set",
+  "S150",
+  "--fixtures",
+  "C:\\src\\audiozoo\\fixtures",
+  "--first",
+  "1",
+  "--out",
+  "C:\\src\\audiozoo\\runs\\z3b-probe\\qwen3asr\\litertlm-igpu-p2-inproc-image\\run1.json"
+ ],
+ "pid": 10568,
+ "status": "OK",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.001
+ },
+ "rows": [
+  {
+   "id": "en_us_1660",
+   "lang": "en_us",
+   "seconds": 10.68,
+   "wall_s": 3.3026378999929875,
+   "first_token_ms": 2044.0816000336781,
+   "token_count": 437,
+   "raw": "language English<asr_text>Romanticism had a large element of cultural determinism, drawn from writers such as Goethe, Fichte, and Schlegel.",
+   "language": "English",
+   "text": "Romanticism had a large element of cultural determinism, drawn from writers such as Goethe, Fichte, and Schlegel."
+  },
+  {
+   "id": "cmn_hans_cn_1660",
+   "lang": "cmn_hans_cn",
+   "seconds": 9.6,
+   "wall_s": 2.8678672999958508,
+   "first_token_ms": 1787.616700050421,
+   "token_count": 433,
+   "raw": "language Chinese<asr_text>浪漫主义具有很强的文化决定论色彩，这源于歌德、费希特和施莱格尔等作家。",
+   "language": "Chinese",
+   "text": "浪漫主义具有很强的文化决定论色彩，这源于歌德、费希特和施莱格尔等作家。"
+  },
+  {
+   "id": "ja_jp_1661",
+   "lang": "ja_jp",
+   "seconds": 15.42,
+   "wall_s": 3.284370699955616,
+   "first_token_ms": 2037.569899985101,
+   "token_count": 437,
+   "raw": "language Japanese<asr_text>コシは削減する数値をさらにませんでしたが、削減は中国の経済産出でした。",
+   "language": "Japanese",
+   "text": "コシは削減する数値をさらにませんでしたが、削減は中国の経済産出でした。"
+  }
+ ],
+ "versions": {
+  "python": "3.12.16",
+  "litert-lm-api": "0.19.1",
+  "openvino": "2026.4.1",
+  "numpy": "2.5.4"
+ },
+ "image_path": "C:\\src\\audiozoo\\python\\cpython-3.12.16-windows-x86_64-none\\python.exe",
+ "gpu_preference_written": {
+  "C:\\src\\audiozoo\\.venv-litertlm\\Scripts\\python.exe": "GpuPreference=1;",
+  "C:\\src\\audiozoo\\python\\cpython-3.12-windows-x86_64-none\\python.exe": "GpuPreference=1;"
+ },
+ "load_s": 8.953,
+ "workload": {
+  "set": "S150",
+  "first": 1,
+  "max_new_tokens": 512,
+  "decode": "greedy (top_k 1)",
+  "backend": "gpu",
+  "audio_backend": "cpu",
+  "cache_dir": "C:\\src\\audiozoo\\runs\\z3b-probe\\qwen3asr\\litertlm-igpu-p2-inproc-image\\cache",
+  "prompt": "official chat template",
+  "input": "Content.AudioFile(path), read inside the timed span"
+ },
+ "warmup_s": 2.952,
+ "render_warmup": "<|im_start|>system\n<|im_end|>\n<|im_start|>user\n<|audio_start|><|audio_pad|><|audio_end|><|im_end|>\n<|im_start|>assistant\n",
+ "summary": {
+  "clips": 3,
+  "audio_s": 35.7,
+  "wall_s": 9.455,
+  "rtf": 0.26484,
+  "empty": 0,
+  "first_token_ms_mean": 1956.42,
+  "split_half_rtf": [
+   0.25238,
+   0.29874
+  ]
+ },
+ "peak_working_set_bytes": 4237840384,
+ "peak_pagefile_bytes": 5375049728,
+ "ended": "2026-11-10T11:03:24.619509+09:00",
+ "process_s": 22.931
+}

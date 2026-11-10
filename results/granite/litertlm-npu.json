@@ -4,28 +4,49 @@
  "runtime": "LiteRT-LM 0.19.1",
  "form": "bundle",
  "device": "npu",
- "device_name": "Intel NPU",
- "set": null,
+ "device_name": "CPU (Intel NPU requested; no compiler plugin, XNNPACK)",
+ "set": "S220",
  "mode": "first",
- "sitting": "first-an",
- "run_start": "2026-11-09T14:50:16.8240023+09:00",
- "run_end": "2026-11-09T15:12:18.1218400+09:00",
- "status": "NO JSON",
+ "sitting": "z3b-first-n",
+ "run_start": "2026-11-10T11:02:15.0597918+09:00",
+ "run_end": "2026-11-10T11:53:19.2654719+09:00",
+ "status": "OK",
  "record": {
-  "run": null,
-  "meta": "raw/first-an/granite/litertlm-npu/run1.meta.json",
-  "chain_log": "raw/first-an/chain.log"
+  "run": "raw/z3b-first-n/granite/litertlm-npu/run1.json",
+  "meta": "raw/z3b-first-n/granite/litertlm-npu/run1.meta.json",
+  "chain_log": "raw/z3b-first-n/chain.log"
  },
- "error": "stopped by hand 22 min in with 60 to 69 of the 70 first-pass clips done: the stop read the runner's progress lines (clips 1, 2 and every 10th) as 8 clips (ended at 15:12 on 11-09, its progress lines in run1.stdout.kept.txt; corrected 11-10)",
- "versions": null,
- "load_s": null,
- "summary": null,
+ "error": null,
+ "versions": {
+  "python": "3.12.16",
+  "litert-lm-api": "0.19.1",
+  "openvino": "2026.4.1",
+  "numpy": "2.5.4"
+ },
+ "load_s": 14.656,
+ "summary": {
+  "clips": 220,
+  "audio_s": 2686.585,
+  "wall_s": 3030.457,
+  "rtf": 1.128,
+  "empty": 0,
+  "first_token_ms_mean": 8462.97,
+  "split_half_rtf": [
+   1.13622,
+   1.11991
+  ]
+ },
  "gate": null,
- "power": null,
- "desktop_locked": null,
+ "power": {
+  "msiUserScenarioMode": 1,
+  "overlayAc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "overlayDc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "battery": "status 2, 96 %"
+ },
+ "desktop_locked": true,
  "engine": {
-  "elapsedSeconds": 1319.131,
-  "peakWorkingSetBytes": 10968178688,
+  "elapsedSeconds": 3062.18,
+  "peakWorkingSetBytes": 10980749312,
   "gpuMiBPeak": {
    "0x00000000_0x00012C48": {
     "shared": 0,
@@ -40,16 +61,176 @@
     "dedicated": 0
    }
   },
-  "exitCode": 1,
+  "exitCode": 0,
   "timedOut": false,
   "suspendedSeconds": 0
  },
  "tries": 1,
- "progress": {
-  "printed": 8,
-  "last_n": 60,
-  "wall_s_printed": 151.37,
-  "audio_s_printed": 88.18,
-  "rtf_printed": 1.7166
+ "npu_check": {
+  "plugin_loaded": [],
+  "partitioned": [],
+  "plugins_applied": null,
+  "npu_compile_failed": [],
+  "no_compiler_plugin": true,
+  "xnnpack_cpu_delegate": true,
+  "npu_luids": [
+   "0x00000000_0x00013E4C"
+  ],
+  "npu_mib_peak": 0,
+  "ran_on": "cpu"
+ },
+ "ran_on": "cpu",
+ "accuracy": {
+  "groups": {
+   "en_fl": {
+    "err": 64,
+    "n": 1135,
+    "rate_pct": 5.639,
+    "clips": 50
+   },
+   "ja": {
+    "err": 141,
+    "n": 2689,
+    "rate_pct": 5.244,
+    "clips": 50
+   },
+   "eu": {
+    "err": 282,
+    "n": 2363,
+    "rate_pct": 11.934,
+    "clips": 100
+   },
+   "en_ls": {
+    "err": 10,
+    "n": 453,
+    "rate_pct": 2.208,
+    "clips": 20
+   },
+   "en70": {
+    "err": 74,
+    "n": 1588,
+    "rate_pct": 4.66,
+    "clips": 70
+   }
+  },
+  "sets": {
+   "en_ls": {
+    "err": 10,
+    "n": 453,
+    "clips": 20,
+    "empty": 0,
+    "loop": 0,
+    "not_eos": 0,
+    "ids_vs_ref": 0,
+    "ids_known": 0,
+    "rate_pct": 2.208
+   },
+   "en_fl": {
+    "err": 64,
+    "n": 1135,
+    "clips": 50,
+    "empty": 0,
+    "loop": 0,
+    "not_eos": 0,
+    "ids_vs_ref": 0,
+    "ids_known": 0,
+    "rate_pct": 5.639
+   },
+   "ja": {
+    "err": 141,
+    "n": 2689,
+    "clips": 50,
+    "empty": 0,
+    "loop": 0,
+    "not_eos": 0,
+    "ids_vs_ref": 0,
+    "ids_known": 0,
+    "rate_pct": 5.244
+   },
+   "fr": {
+    "err": 86,
+    "n": 638,
+    "clips": 25,
+    "empty": 0,
+    "loop": 0,
+    "not_eos": 0,
+    "ids_vs_ref": 0,
+    "ids_known": 0,
+    "rate_pct": 13.48
+   },
+   "de": {
+    "err": 58,
+    "n": 507,
+    "clips": 25,
+    "empty": 0,
+    "loop": 0,
+    "not_eos": 0,
+    "ids_vs_ref": 0,
+    "ids_known": 0,
+    "rate_pct": 11.44
+   },
+   "es": {
+    "err": 42,
+    "n": 637,
+    "clips": 25,
+    "empty": 0,
+    "loop": 0,
+    "not_eos": 0,
+    "ids_vs_ref": 0,
+    "ids_known": 0,
+    "rate_pct": 6.593
+   },
+   "pt": {
+    "err": 96,
+    "n": 581,
+    "clips": 25,
+    "empty": 0,
+    "loop": 0,
+    "not_eos": 0,
+    "ids_vs_ref": 0,
+    "ids_known": 0,
+    "rate_pct": 16.523
+   }
+  },
+  "totals": {
+   "clips": 220,
+   "empty": 0,
+   "loop": 0,
+   "not_eos": 0,
+   "ids_vs_ref": 0,
+   "ids_known": 0
+  }
+ },
+ "line": {
+  "en_fl": {
+   "run": 5.639,
+   "ref": 5.463,
+   "bar": 5.963,
+   "pass": true
+  },
+  "ja": {
+   "run": 5.244,
+   "ref": 5.132,
+   "bar": 5.632,
+   "pass": true
+  },
+  "eu": {
+   "run": 11.934,
+   "ref": 12.103,
+   "bar": 12.603,
+   "pass": true
+  },
+  "empty": {
+   "n": 0,
+   "pass": true
+  },
+  "loop": {
+   "n": 0,
+   "pass": true
+  },
+  "pass": true
+ },
+ "reference": {
+  "path": "raw/refs/granite-fp32/R_fp32_cpu.jsonl"
  }
 }

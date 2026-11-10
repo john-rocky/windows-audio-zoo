@@ -10,6 +10,8 @@
 #      20 min for that), then releases it.
 #
 #   tools/sitting.sh <plan name> [--resume] [--wait-hours N]
+# Z3_LOCK_WHAT="timing: sitting <plan> (<what>) until HH:MM": the lock text the PC's order gave the sitting (default
+# "timing: sitting <plan> until <expected end>"); the chain rewrites it per run.
 # --resume: the chain still runs and this side's wait ended or was stopped: wait for it again, then pull.
 # Log: raw/<plan>.sitting.log. Exit 1 when the lock, the gate or the chain failed (the lock is released on every exit).
 set -uo pipefail
@@ -26,26 +28,30 @@ pcsh="$K/tools/pc.sh"
 R="${Z3_PC_ROOT:-C:\\src\\audiozoo}"   # the PC folder (the same default as tools/pc.sh)
 say() { echo "[$(date '+%F %T %Z')] $*" | tee -a "$log"; }
 release() { say "release: $(Z3_FORCE=1 "$pcsh" lock release timing "${1:-0}" 2>&1 | tail -1)"; }
-until_hm=$(python3 -c "
-import json, datetime as d
-p = json.load(open('$K/pc/plans/$plan.json'))
-s = sum((u.get('est_sec') or 60 * u.get('timeout_min', 10)) + 90 for u in p['units'] for _ in range(u.get('runs', 1)))
-t = d.datetime.now().astimezone() + d.timedelta(seconds=s + 300 + 180)
-if p.get('end_by'):   # the chain starts no cell that would end past it (its tail row included): the lock goes back by then
-    t = min(t, d.datetime.fromisoformat(p['end_by']))
-print(t.strftime('%H:%M'))")
+# jq and date only (no Python on the Mac while it waits: another job may be timing on the Mac; 11-10)
+epoch_of() {  # an ISO time with a numeric offset (+09:00 or +0900) -> epoch seconds (BSD date on the Mac, GNU date else)
+  local t="${1%:*}${1##*:}"   # +09:00 -> +0900
+  [[ "$1" =~ [+-][0-9]{2}:[0-9]{2}$ ]] || t="$1"
+  date -j -f "%Y-%m-%dT%H:%M:%S%z" "$t" +%s 2>/dev/null || date -d "$1" +%s
+}
+est_s=$(jq '[.units[] | ((.est_sec // (60 * (.timeout_min // 10))) + 90) * (.runs // 1)] | add' "$K/pc/plans/$plan.json")
+end_s=$(( $(date +%s) + est_s + 300 + 180 ))
+end_by=$(jq -r '.end_by // empty' "$K/pc/plans/$plan.json")
+if [[ -n "$end_by" ]]; then   # the chain starts no cell that would end past it (its tail row included): the lock goes back by then
+  eb=$(epoch_of "$end_by"); (( eb < end_s )) && end_s=$eb
+fi
+until_hm=$(date -r "$end_s" +%H:%M 2>/dev/null || date -d "@$end_s" +%H:%M)
 
 free_for() {  # seconds busy.txt has been free in the feed, 0 when held (or the feed is stale)
-  local f; f=$(bash ~/code/standup/tools/winpc/busy_now.sh 2>/dev/null) || { echo 0; return; }
-  printf '%s\n' "$f" | awk '$3=="BUSY"' | tail -n 1 | python3 -c "
-import sys, datetime as d
-l = sys.stdin.read().split()
-if len(l) < 4 or l[3] != 'none': print(0)
-else: print(int((d.datetime.now(d.timezone.utc) - d.datetime.strptime(l[0], '%Y-%m-%dT%H:%M:%S%z')).total_seconds()))"
+  local f l; f=$(bash ~/code/standup/tools/winpc/busy_now.sh 2>/dev/null) || { echo 0; return; }
+  l=$(printf '%s\n' "$f" | awk '$3=="BUSY"' | tail -n 1)
+  read -r ts _ kind what _ <<< "$l"
+  if [[ "$kind" != "BUSY" || "$what" != "none" ]]; then echo 0; return; fi
+  echo $(( $(date +%s) - $(epoch_of "$ts") ))
 }
 
 ours_now() {  # the feed's lock is Z3's own (the first-pass block of Z3's slot runs right before the sitting)
-  bash ~/code/standup/tools/winpc/busy_now.sh 2>/dev/null | awk '$3=="BUSY"' | tail -n 1 | grep -q ' BUSY Z3 '
+  bash ~/code/standup/tools/winpc/busy_now.sh 2>/dev/null | awk '$3=="BUSY"' | tail -n 1 | grep -q " BUSY ${Z3_LABEL:-Z3} "
 }
 
 take() {
@@ -53,7 +59,7 @@ take() {
   while true; do
     n=0
     while ! ours_now && (( $(free_for) < 60 )); do (( n++ % 30 == 0 )) && say "waiting for busy.txt to be free 60 s (feed)"; sleep 10; done
-    r=$("$pcsh" lock take "timing: sitting $plan until $until_hm" 2>&1 | tail -1); say "lock: $r"
+    r=$("$pcsh" lock take "${Z3_LOCK_WHAT:-timing: sitting $plan until $until_hm}" 2>&1 | tail -1); say "lock: $r"
     [[ "$r" == TAKEN* || "$r" == OURS* || "$r" == STALE* ]] || return 1
     r=$(Z3_FORCE=1 "$pcsh" lock gate 2>&1 | tail -1); say "gate: $r"
     [[ "$r" == PASS* ]] && return 0
@@ -78,7 +84,7 @@ if [[ "$cw" != DONE* ]]; then
   exit 1
 fi
 st=$(Z3_FORCE=1 "$pcsh" lock status 2>&1 | head -1); say "lock after the chain: $st"
-if [[ "$st" == "busy: Z3 "* ]]; then
+if [[ "$st" == "busy: ${Z3_LABEL:-Z3} "* ]]; then
   Z3_FORCE=1 "$pcsh" pull "runs/$plan" raw && say "pulled runs\\$plan -> raw/$plan"
 else say "the lock is not ours after the chain: no pull now (pull runs/$plan in the next own lock or free time)"; fi
 release

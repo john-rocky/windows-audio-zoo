@@ -7,44 +7,44 @@
  "device_name": "Intel GPU",
  "set": "S150",
  "mode": "timed",
- "sitting": "s4",
- "run_start": "2026-11-10T00:59:27.2118704+09:00",
- "run_end": "2026-11-10T01:03:16.4250037+09:00",
- "status": "WRONG DEVICE",
+ "sitting": "z3b-s5",
+ "run_start": "2026-11-10T12:22:29.7127863+09:00",
+ "run_end": "2026-11-10T12:30:38.2185882+09:00",
+ "status": "OK",
  "record": {
-  "run": "raw/s4/qwen3asr/litertlm-igpu/run1.json",
-  "meta": "raw/s4/qwen3asr/litertlm-igpu/run1.meta.json",
-  "chain_log": "raw/s4/chain.log"
+  "run": "raw/z3b-s5/qwen3asr/litertlm-igpu/run1.json",
+  "meta": "raw/z3b-s5/qwen3asr/litertlm-igpu/run1.meta.json",
+  "chain_log": "raw/z3b-s5/chain.log"
  },
- "error": "ran on NVIDIA GeForce RTX 5080 Laptop GPU (log: Selected adapter); GpuPreference=1 was set inside the process",
+ "error": null,
  "versions": {
   "python": "3.12.16",
   "litert-lm-api": "0.19.1",
   "openvino": "2026.4.1",
   "numpy": "2.5.4"
  },
- "load_s": 5.679,
+ "load_s": 8.031,
  "summary": {
   "clips": 150,
   "audio_s": 1806.26,
-  "wall_s": 216.289,
-  "rtf": 0.11974,
-  "empty": 1,
-  "first_token_ms_mean": 1097.38,
+  "wall_s": 472.149,
+  "rtf": 0.2614,
+  "empty": 0,
+  "first_token_ms_mean": 1703.97,
   "split_half_rtf": [
-   0.11116,
-   0.12896
+   0.27765,
+   0.24393
   ]
  },
  "gate": {
   "quietGate": "quiet",
   "cpuReads": [
-   2.8,
-   0.6,
-   0.6
+   3.4,
+   0.7,
+   0.1
   ],
   "nvidiaMiB": 0,
-  "availGB": 25.2,
+  "availGB": 24.4,
   "ramNeedGB": 7,
   "gpuEngines": 0
  },
@@ -56,15 +56,15 @@
  },
  "desktop_locked": true,
  "engine": {
-  "elapsedSeconds": 227.263,
-  "peakWorkingSetBytes": 2373193728,
+  "elapsedSeconds": 486.499,
+  "peakWorkingSetBytes": 4263890944,
   "gpuMiBPeak": {
    "0x00000000_0x00012C48": {
-    "shared": 201,
-    "dedicated": 1980
+    "shared": 9,
+    "dedicated": 13
    },
    "0x00000000_0x0001260E": {
-    "shared": 0,
+    "shared": 2235,
     "dedicated": 0
    },
    "0x00000000_0x00012BB8": {
@@ -77,44 +77,55 @@
   "suspendedSeconds": 0
  },
  "tries": 1,
- "adapter": "NVIDIA GeForce RTX 5080 Laptop GPU, arch=blackwell, vendor=nvidia, backend=Direct3D 12, adapterType=Discrete GPU",
+ "adapter": "Intel(R) Graphics, arch=xe-3lpg, vendor=intel, backend=Direct3D 12, adapterType=Integrated GPU",
+ "gpu_preference": {
+  "value": 1,
+  "exes": [
+   "C:\\src\\audiozoo\\.venv-litertlm\\Scripts\\python.exe",
+   "C:\\src\\audiozoo\\python\\cpython-3.12-windows-x86_64-none\\python.exe"
+  ],
+  "readBack": {
+   "C:\\src\\audiozoo\\.venv-litertlm\\Scripts\\python.exe": "GpuPreference=1;",
+   "C:\\src\\audiozoo\\python\\cpython-3.12-windows-x86_64-none\\python.exe": "GpuPreference=1;"
+  },
+  "writtenAt": "2026-11-10T12:22:29.7661780+09:00",
+  "names": "image"
+ },
  "control": {
   "known_rtf": 0.26228,
-  "known_from": "this sitting's head (3 runs, spread 0.7 %)",
+  "known_from": "plan",
   "head": [
-   0.2631,
-   0.26228,
-   0.26128
+   0.26185
   ],
   "tail": [
-   0.26548
+   0.25959
   ],
-  "verdict": "PASS (tail off 1.2 %)"
+  "verdict": "PASS (tail off 1.0 %)"
  },
  "accuracy": {
   "en_us": {
    "metric": "WER",
-   "err": 200,
+   "err": 163,
    "n": 1150,
    "clips": 50,
    "empty": 0,
-   "rate_pct": 17.391
+   "rate_pct": 14.174
   },
   "cmn_hans_cn": {
    "metric": "CER",
-   "err": 891,
+   "err": 1031,
    "n": 1954,
    "clips": 50,
    "empty": 0,
-   "rate_pct": 45.599
+   "rate_pct": 52.764
   },
   "ja_jp": {
    "metric": "CER",
-   "err": 2841,
+   "err": 1896,
    "n": 2689,
    "clips": 50,
-   "empty": 1,
-   "rate_pct": 105.653
+   "empty": 0,
+   "rate_pct": 70.509
   }
  },
  "reference": {
@@ -148,28 +159,28 @@
  },
  "line": {
   "en_us": {
-   "run": 17.391,
+   "run": 14.174,
    "ref": 4.348,
    "bar": 4.848,
    "pass": false
   },
   "cmn_hans_cn": {
-   "run": 45.599,
+   "run": 52.764,
    "ref": 6.858,
    "bar": 7.358,
    "pass": false
   },
   "ja_jp": {
-   "run": 105.653,
+   "run": 70.509,
    "ref": 5.504,
    "bar": 6.004,
    "pass": false
   },
   "empty": {
-   "n": 1,
-   "pass": false
+   "n": 0,
+   "pass": true
   },
   "pass": false
  },
- "first_vs_timed_equal": "15/30"
+ "first_vs_timed_equal": "14/30"
 }

@@ -1,0 +1,174 @@
+{
+ "runner": "run_asr_litertlm.py",
+ "started": "2026-11-10T13:00:47.993235+09:00",
+ "argv": [
+  "--bundle",
+  "C:\\src\\audiozoo\\models\\litert-community__granite-speech-5.0-2b\\granite-speech-5.0-2b.litertlm",
+  "--family",
+  "granite",
+  "--backend",
+  "npu",
+  "--npu-lib-dir",
+  "C:\\src\\audiozoo\\npujit\\p1",
+  "--cache-dir",
+  "C:\\src\\audiozoo\\runs\\z3b-npujit\\granite\\litertlm-pluginp1-npu\\cache",
+  "--audio-backend",
+  "cpu",
+  "--set",
+  "S220",
+  "--fixtures",
+  "C:\\src\\audiozoo\\fixtures",
+  "--first",
+  "1",
+  "--out",
+  "C:\\src\\audiozoo\\runs\\z3b-npujit\\granite\\litertlm-pluginp1-npu\\run1.json"
+ ],
+ "pid": 32412,
+ "status": "OK",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.001
+ },
+ "rows": [
+  {
+   "id": "ls_clip00",
+   "lang": "en_ls",
+   "seconds": 5.855,
+   "wall_s": 9.660080999950878,
+   "first_token_ms": 6987.546499993186,
+   "token_count": 101,
+   "raw": "mister Quilter is the apostle of the middle classes, and we are glad to welcome his gospel.",
+   "text": "mister Quilter is the apostle of the middle classes, and we are glad to welcome his gospel."
+  },
+  {
+   "id": "en_us_1660",
+   "lang": "en_fl",
+   "seconds": 10.68,
+   "wall_s": 10.243693500000518,
+   "first_token_ms": 6944.77270002244,
+   "token_count": 154,
+   "raw": "Romanticism had a large element of cultural determinism, drawn from writers such as Goethe, Fichte and Schlegel.",
+   "text": "Romanticism had a large element of cultural determinism, drawn from writers such as Goethe, Fichte and Schlegel."
+  },
+  {
+   "id": "ja_jp_1661",
+   "lang": "ja",
+   "seconds": 15.42,
+   "wall_s": 16.434254200023133,
+   "first_token_ms": 9569.634400017094,
+   "token_count": 231,
+   "raw": "越は削減する数値を定めませんでしたが削減は中国の経済産出量に基づいて実施されるだろうと述べました。",
+   "text": "越は削減する数値を定めませんでしたが削減は中国の経済産出量に基づいて実施されるだろうと述べました。"
+  },
+  {
+   "id": "fr_fr_1660",
+   "lang": "fr",
+   "seconds": 7.86,
+   "wall_s": 11.27764380001463,
+   "first_token_ms": 6845.110299997032,
+   "token_count": 136,
+   "raw": "Le romantisme présentait un important élément de déterminisme culturel tiré, d'écrivains tels que Goethe, Fichte et Schlegel.",
+   "text": "Le romantisme présentait un important élément de déterminisme culturel tiré, d'écrivains tels que Goethe, Fichte et Schlegel."
+  },
+  {
+   "id": "de_de_1660",
+   "lang": "de",
+   "seconds": 10.38,
+   "wall_s": 11.438874300045427,
+   "first_token_ms": 6879.913600045256,
+   "token_count": 161,
+   "raw": "Die Romantik hatte ein starkes kulturell deterministisches Element, das sich aus Schriftstellern wie Goethe, Fichte und Schlegel schöpfte.",
+   "text": "Die Romantik hatte ein starkes kulturell deterministisches Element, das sich aus Schriftstellern wie Goethe, Fichte und Schlegel schöpfte."
+  },
+  {
+   "id": "es_419_1660",
+   "lang": "es",
+   "seconds": 10.86,
+   "wall_s": 12.801334999967366,
+   "first_token_ms": 8993.025099975057,
+   "token_count": 161,
+   "raw": "El elemento del determinismo cultural se encontraba muy presente en el romanticismo, según estudiosos como Goethe, Fichte y Schlegel.",
+   "text": "El elemento del determinismo cultural se encontraba muy presente en el romanticismo, según estudiosos como Goethe, Fichte y Schlegel."
+  },
+  {
+   "id": "pt_br_1660",
+   "lang": "pt",
+   "seconds": 10.68,
+   "wall_s": 10.34813270001905,
+   "first_token_ms": 6926.962700032163,
+   "token_count": 155,
+   "raw": "O romantismo tinha um grande elemento de determinismo cultural, extraído de escritores como Goethe, Fichte e Schelling.",
+   "text": "O romantismo tinha um grande elemento de determinismo cultural, extraído de escritores como Goethe, Fichte e Schelling."
+  }
+ ],
+ "versions": {
+  "python": "3.12.16",
+  "litert-lm-api": "0.19.1",
+  "openvino": "2026.4.1",
+  "numpy": "2.5.4"
+ },
+ "process_paths": {
+  "sys._base_executable": "C:\\src\\audiozoo\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+  "sys.executable": "C:\\src\\audiozoo\\.venv-litertlm\\Scripts\\python.exe",
+  "QueryFullProcessImageNameW": "C:\\src\\audiozoo\\python\\cpython-3.12.16-windows-x86_64-none\\python.exe"
+ },
+ "npu_lib_dir": {
+  "path": "C:\\src\\audiozoo\\npujit\\p1",
+  "files": [
+   {
+    "name": "LiteRtCompilerPlugin.dll",
+    "bytes": 582656,
+    "sha256": "f0bf1f04a207c21797fae69953339654f48445b1456e9045f9e4f100a90db6e1"
+   },
+   {
+    "name": "LiteRtDispatch.dll",
+    "bytes": 284160,
+    "sha256": "5719dda76c6b6bbff909ae04c82220e71a2a217616551031474c5c813ea63ebb"
+   },
+   {
+    "name": "manifest.json",
+    "bytes": 746,
+    "sha256": "66ef98020eaac273d7255cb991cda9360ff2e0f3dc95191ebe99f41aa927acdc"
+   }
+  ],
+  "openvino_libs_on_path": "C:\\src\\audiozoo\\.venv-litertlm\\Lib\\site-packages\\openvino\\libs",
+  "openvino_devices": [
+   "CPU",
+   "GPU.0",
+   "GPU.1",
+   "NPU"
+  ]
+ },
+ "load_s": 401.917,
+ "workload": {
+  "set": "S220",
+  "first": 1,
+  "max_new_tokens": 256,
+  "decode": "greedy (top_k 1)",
+  "backend": "npu",
+  "audio_backend": "cpu",
+  "cache_dir": "C:\\src\\audiozoo\\runs\\z3b-npujit\\granite\\litertlm-pluginp1-npu\\cache",
+  "prompt": "bundle template, instruction after the audio: 'transcribe the speech with proper punctuation and capitalization.'",
+  "input": "Content.AudioFile(path), read inside the timed span"
+ },
+ "warmup_s": 10.102,
+ "render_warmup": "USER: <|audio|>transcribe the speech with proper punctuation and capitalization.\n ASSISTANT:",
+ "summary": {
+  "clips": 7,
+  "audio_s": 71.735,
+  "wall_s": 82.204,
+  "rtf": 1.14594,
+  "empty": 0,
+  "first_token_ms_mean": 7592.42,
+  "split_half_rtf": [
+   1.13101,
+   1.16744
+  ]
+ },
+ "peak_working_set_bytes": 10985156608,
+ "peak_pagefile_bytes": 12290740224,
+ "ended": "2026-11-10T13:09:05.519290+09:00",
+ "process_s": 497.531
+}

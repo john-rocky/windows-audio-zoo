@@ -1,0 +1,2 @@
+OK LiteRtCompilerPlugin.dll 582656 f0bf1f04a207c21797fae69953339654f48445b1456e9045f9e4f100a90db6e1 <- ai_edge_litert_nightly-2.4.0.dev20261024-cp312-cp312-win_amd64.whl:ai_edge_litert/vendors/intel_openvino/compiler/LiteRtCompilerPlugin.dll
+OK LiteRtDispatch.dll 284160 83c594e0a9791855f622543514de8045d063eb2b6708e3ca5eeea56f66c09a49 <- ai_edge_litert_nightly-2.4.0.dev20261024-cp312-cp312-win_amd64.whl:ai_edge_litert/vendors/intel_openvino/dispatch/LiteRtDispatch.dll

@@ -11,7 +11,12 @@ if ($env:Z3_PCUP) { $Pcup = $env:Z3_PCUP }        # another folder for a dry run
 $Busy = Join-Path $Pcup "busy.txt"
 # a PC without the shared-PC folder (README walk elsewhere): the lock file and the presence notes start empty
 foreach ($d in @($Pcup, (Join-Path $Pcup "active"))) { if (-not (Test-Path $d)) { New-Item -ItemType Directory -Force $d | Out-Null } }
+# The name on the shared PC (lock text, notes): "Z3", or the first line of <root>\label.txt (the follow-up runs of
+# 11-10 are "Z3b": the shared PC's lock and notes start with the name of the job that runs)
 $Label = "Z3"
+$LabelFile = Join-Path $Root "label.txt"
+if (Test-Path -LiteralPath $LabelFile) { $Label = ((Get-Content -LiteralPath $LabelFile -TotalCount 1) -replace '\s', '') }
+if (-not $Label) { $Label = "Z3" }
 $BuildTools = @("cl", "link", "MSBuild", "cmake", "ninja", "nvcc", "cicc", "ptxas")
 $Smi = Join-Path $env:SystemRoot "System32\nvidia-smi.exe"
 Add-Type -AssemblyName Microsoft.VisualBasic

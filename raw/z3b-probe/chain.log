@@ -1,0 +1,17 @@
+[2026-11-10T11:02:23.8242286+09:00] chain start: plan C:\src\audiozoo\pc\plans\z3b-probe.json mode first, 4 units, pid 25756
+[2026-11-10T11:02:28.1088451+09:00] adapters: 0x00000000_0x00012C48=nvidia, 0x00000000_0x0001260E=intel-gpu, 0x00000000_0x00012BB8=?, 0x00000000_0x00013E4C=npu?
+[2026-11-10T11:02:30.4699228+09:00] qwen3asr/litertlm-igpu-p1-before-image run 1 GpuPreference=1 written before the start on: C:\src\audiozoo\.venv-litertlm\Scripts\python.exe, C:\src\audiozoo\python\cpython-3.12-windows-x86_64-none\python.exe
+[2026-11-10T11:02:30.4699228+09:00] qwen3asr/litertlm-igpu-p1-before-image run 1 start
+[2026-11-10T11:02:57.9545612+09:00] qwen3asr/litertlm-igpu-p1-before-image run 1 Selected adapter: Intel(R) Graphics, arch=xe-3lpg, vendor=intel, backend=Direct3D 12, adapterType=Integrated GPU
+[2026-11-10T11:02:59.9210225+09:00] qwen3asr/litertlm-igpu-p1-before-image run 1 end: exit 0, OK, 27.406 s
+[2026-11-10T11:03:01.4519869+09:00] qwen3asr/litertlm-igpu-p2-inproc-image run 1 start
+[2026-11-10T11:03:26.5889344+09:00] qwen3asr/litertlm-igpu-p2-inproc-image run 1 Selected adapter: Intel(R) Graphics, arch=xe-3lpg, vendor=intel, backend=Direct3D 12, adapterType=Integrated GPU
+[2026-11-10T11:03:28.5528861+09:00] qwen3asr/litertlm-igpu-p2-inproc-image run 1 end: exit 0, OK, 25.121 s
+[2026-11-10T11:03:30.5484296+09:00] qwen3asr/litertlm-igpu-p3-before-real run 1 GpuPreference=1 written before the start on: C:\src\audiozoo\.venv-litertlm\Scripts\python.exe, C:\src\audiozoo\python\cpython-3.12.16-windows-x86_64-none\python.exe
+[2026-11-10T11:03:30.5484296+09:00] qwen3asr/litertlm-igpu-p3-before-real run 1 start
+[2026-11-10T11:03:47.4854636+09:00] qwen3asr/litertlm-igpu-p3-before-real run 1 Selected adapter: NVIDIA GeForce RTX 5080 Laptop GPU, arch=blackwell, vendor=nvidia, backend=Direct3D 12, adapterType=Discrete GPU
+[2026-11-10T11:03:49.4481213+09:00] qwen3asr/litertlm-igpu-p3-before-real run 1 end: exit 0, OK, 16.929 s
+[2026-11-10T11:03:51.4440526+09:00] qwen3asr/litertlm-gpu-p0-none run 1 start
+[2026-11-10T11:04:08.1036061+09:00] qwen3asr/litertlm-gpu-p0-none run 1 Selected adapter: NVIDIA GeForce RTX 5080 Laptop GPU, arch=blackwell, vendor=nvidia, backend=Direct3D 12, adapterType=Discrete GPU
+[2026-11-10T11:04:10.0745057+09:00] qwen3asr/litertlm-gpu-p0-none run 1 end: exit 0, OK, 16.638 s
+[2026-11-10T11:04:10.0806024+09:00] chain done: OK

@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Replace account names with USER in the text files under the given paths, in place, before they are committed (the
 bench's Windows records write C:\\Users\\USER the same way). The names are given on the command line, so this file
-carries none of them. A JSON file that parsed before must still parse after.
+carries none of them. A JSON file that parsed before must still parse after. Bytes in, bytes out: line endings (the
+PC's CRLF records) and a BOM are kept as they are (2026-11-10: read_text / write_text had turned the CRLF
+of two logs and the scrubbed run records into LF). A file is read when its suffix is a text one or it is UTF-8
+without a NUL byte (the suffix list alone had left two `.err` logs with the PC account name unchecked).
 
     python3 tools/scrub.py --names <name>[,<name>...] <path> [<path> ...]      # prints the files it changed
     python3 tools/scrub.py --names <name>[,<name>...] --check <path> [...]     # exit 1 when a name is still there
@@ -38,15 +41,13 @@ def main():
     pats = [re.compile(r"(?i)(?<![A-Za-z0-9_])" + re.escape(n) + r"(?![A-Za-z0-9_])") for n in names]
     left = changed = 0
     for f in files(args.paths):
-        if f.suffix.lower() not in TEXT:
-            continue
+        b = f.read_bytes() if f.stat().st_size <= 64 * 2**20 else b"\0"
+        if f.suffix.lower() not in TEXT and b"\0" in b[:65536]:
+            continue   # a binary file; any other suffix (.err, .out, ...) is read when it is UTF-8 text
         try:
-            s = f.read_text(encoding="utf-8")
+            s = b.decode("utf-8")   # no newline translation; a BOM stays as U+FEFF
         except UnicodeDecodeError:
-            try:
-                s = f.read_text(encoding="utf-8-sig")
-            except UnicodeDecodeError:
-                continue
+            continue
         hits = sum(len(p.findall(s)) for p in pats)
         if not hits:
             continue
@@ -66,7 +67,9 @@ def main():
             t = p.sub("USER", t)
         if parsed:
             json.loads(t.lstrip("\ufeff"))  # raises if the replacement broke the file
-        f.write_text(t, encoding="utf-8")
+        if t.count("\r\n") != s.count("\r\n") or t.count("\n") != s.count("\n"):
+            raise SystemExit(f"{f}: the replacement changed the line endings")
+        f.write_bytes(t.encode("utf-8"))
         changed += 1
         print(f"scrubbed {f} ({hits})")
     if args.check and left:

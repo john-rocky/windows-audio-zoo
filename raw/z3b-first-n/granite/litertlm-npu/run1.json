@@ -1,0 +1,2269 @@
+{
+ "runner": "run_asr_litertlm.py",
+ "started": "2026-11-10T11:02:16.173189+09:00",
+ "argv": [
+  "--bundle",
+  "C:\\src\\audiozoo\\models\\litert-community__granite-speech-5.0-2b\\granite-speech-5.0-2b.litertlm",
+  "--family",
+  "granite",
+  "--backend",
+  "npu",
+  "--cache-dir",
+  "C:\\src\\audiozoo\\runs\\z3b-first-n\\granite\\litertlm-npu\\cache",
+  "--audio-backend",
+  "cpu",
+  "--set",
+  "S220",
+  "--fixtures",
+  "C:\\src\\audiozoo\\fixtures",
+  "--out",
+  "C:\\src\\audiozoo\\runs\\z3b-first-n\\granite\\litertlm-npu\\run1.json"
+ ],
+ "pid": 18428,
+ "status": "OK",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.001
+ },
+ "rows": [
+  {
+   "id": "ls_clip00",
+   "lang": "en_ls",
+   "seconds": 5.855,
+   "wall_s": 10.632805700006429,
+   "first_token_ms": 7554.754899989348,
+   "token_count": 101,
+   "raw": "mister Quilter is the apostle of the middle classes, and we are glad to welcome his gospel.",
+   "text": "mister Quilter is the apostle of the middle classes, and we are glad to welcome his gospel."
+  },
+  {
+   "id": "ls_clip01",
+   "lang": "en_ls",
+   "seconds": 4.815,
+   "wall_s": 9.096695799962617,
+   "first_token_ms": 7265.877099998761,
+   "token_count": 84,
+   "raw": "Nor is mister Quilter's manner less interesting than his matter.",
+   "text": "Nor is mister Quilter's manner less interesting than his matter."
+  },
+  {
+   "id": "ls_clip02",
+   "lang": "en_ls",
+   "seconds": 12.485,
+   "wall_s": 16.175931100035086,
+   "first_token_ms": 10928.265700000338,
+   "token_count": 181,
+   "raw": "He tells us that at this festive season of the year, with Christmas and roast beef looming before us, similes drawn from eating and its results occur most readily to the mind.",
+   "text": "He tells us that at this festive season of the year, with Christmas and roast beef looming before us, similes drawn from eating and its results occur most readily to the mind."
+  },
+  {
+   "id": "ls_clip03",
+   "lang": "en_ls",
+   "seconds": 9.9,
+   "wall_s": 11.105955000035465,
+   "first_token_ms": 7230.590199993458,
+   "token_count": 149,
+   "raw": "He has grave doubts whether Sir Frederic Leighton's work is really Greek after all, and can discover in it but little of rocky Ithaca.",
+   "text": "He has grave doubts whether Sir Frederic Leighton's work is really Greek after all, and can discover in it but little of rocky Ithaca."
+  },
+  {
+   "id": "ls_clip04",
+   "lang": "en_ls",
+   "seconds": 29.4,
+   "wall_s": 23.37028019997524,
+   "first_token_ms": 11334.59819998825,
+   "token_count": 404,
+   "raw": "Linnell's pictures are a sort of Upguard's and Adam's paintings, and Mason's exquisite idyls are as national as a jingo poem. Mr. Burke fosters landscapes smile at one much in the same way that Mr. Carker used to flash his teeth, and Mr. John Collier gives his sitter a cheerful slap on the back before he says, like a shampooer in a Turkish bath, \"Next man!\"",
+   "text": "Linnell's pictures are a sort of Upguard's and Adam's paintings, and Mason's exquisite idyls are as national as a jingo poem. Mr. Burke fosters landscapes smile at one much in the same way that Mr. Carker used to flash his teeth, and Mr. John Collier gives his sitter a cheerful slap on the back before he says, like a shampooer in a Turkish bath, \"Next man!\""
+  },
+  {
+   "id": "ls_clip05",
+   "lang": "en_ls",
+   "seconds": 9.01,
+   "wall_s": 10.916741099965293,
+   "first_token_ms": 7849.337099993136,
+   "token_count": 133,
+   "raw": "It is obviously unnecessary for us to point out how luminous these criticisms are, how delicate in expression.",
+   "text": "It is obviously unnecessary for us to point out how luminous these criticisms are, how delicate in expression."
+  },
+  {
+   "id": "ls_clip06",
+   "lang": "en_ls",
+   "seconds": 5.64,
+   "wall_s": 9.021282200003043,
+   "first_token_ms": 7117.647400009446,
+   "token_count": 92,
+   "raw": "On the general principles of art Mr. Quilter writes with equal lucidity.",
+   "text": "On the general principles of art Mr. Quilter writes with equal lucidity."
+  },
+  {
+   "id": "ls_clip07",
+   "lang": "en_ls",
+   "seconds": 9.24,
+   "wall_s": 9.915015499980655,
+   "first_token_ms": 7007.409799960442,
+   "token_count": 136,
+   "raw": "Painting, he tells us, is of a different quality to mathematics, and finish in art is adding more facto.",
+   "text": "Painting, he tells us, is of a different quality to mathematics, and finish in art is adding more facto."
+  },
+  {
+   "id": "ls_clip08",
+   "lang": "en_ls",
+   "seconds": 5.12,
+   "wall_s": 8.871285599947441,
+   "first_token_ms": 6969.45599996252,
+   "token_count": 89,
+   "raw": "As for etchings, they are of two kinds, British and foreign.",
+   "text": "As for etchings, they are of two kinds, British and foreign."
+  },
+  {
+   "id": "ls_clip09",
+   "lang": "en_ls",
+   "seconds": 18.29,
+   "wall_s": 15.544885499984957,
+   "first_token_ms": 9144.064599997364,
+   "token_count": 252,
+   "raw": "He laments most bitterly the divorce that has been made between decorative art and what we usually call pictures, makes the customary appeal to the Last Judgment, and reminds us that in the great days of art Michael Angelo was the furnishing upholsterer.",
+   "text": "He laments most bitterly the divorce that has been made between decorative art and what we usually call pictures, makes the customary appeal to the Last Judgment, and reminds us that in the great days of art Michael Angelo was the furnishing upholsterer."
+  },
+  {
+   "id": "ls_clip10",
+   "lang": "en_ls",
+   "seconds": 5.6,
+   "wall_s": 9.141999199986458,
+   "first_token_ms": 6965.62749997247,
+   "token_count": 94,
+   "raw": "near the fire, and the ornaments Fred brought home from India on the mantel board.",
+   "text": "near the fire, and the ornaments Fred brought home from India on the mantel board."
+  },
+  {
+   "id": "ls_clip11",
+   "lang": "en_ls",
+   "seconds": 15.115,
+   "wall_s": 14.231075000017881,
+   "first_token_ms": 9135.39980002679,
+   "token_count": 213,
+   "raw": "In fact, he is quite severe on mister Ruskin for not recognizing that a picture should denote the frailty of man, and remarks with pleasing courtesy and felicitous grace that many phases of feeling",
+   "text": "In fact, he is quite severe on mister Ruskin for not recognizing that a picture should denote the frailty of man, and remarks with pleasing courtesy and felicitous grace that many phases of feeling"
+  },
+  {
+   "id": "ls_clip12",
+   "lang": "en_ls",
+   "seconds": 5.38,
+   "wall_s": 8.387549399980344,
+   "first_token_ms": 6940.040300018154,
+   "token_count": 85,
+   "raw": "Only, unfortunately, his own work never does get good.",
+   "text": "Only, unfortunately, his own work never does get good."
+  },
+  {
+   "id": "ls_clip13",
+   "lang": "en_ls",
+   "seconds": 7.1,
+   "wall_s": 9.587325100030284,
+   "first_token_ms": 6807.54639999941,
+   "token_count": 114,
+   "raw": "mister Quilter has missed his chance, for he has failed even to make himself the tupper of painting.",
+   "text": "mister Quilter has missed his chance, for he has failed even to make himself the tupper of painting."
+  },
+  {
+   "id": "ls_clip14",
+   "lang": "en_ls",
+   "seconds": 2.245,
+   "wall_s": 6.710951399989426,
+   "first_token_ms": 5688.5859000030905,
+   "token_count": 52,
+   "raw": "By Harry Quilter, M. A.",
+   "text": "By Harry Quilter, M. A."
+  },
+  {
+   "id": "ls_clip15",
+   "lang": "en_ls",
+   "seconds": 10.885,
+   "wall_s": 13.749329799960833,
+   "first_token_ms": 9145.046899968293,
+   "token_count": 166,
+   "raw": "Because you were sleeping instead of conquering, The lovely rose princess has become a fiddle without a bow, While poor Shaggy sits there, a cooing dove.",
+   "text": "Because you were sleeping instead of conquering, The lovely rose princess has become a fiddle without a bow, While poor Shaggy sits there, a cooing dove."
+  },
+  {
+   "id": "ls_clip16",
+   "lang": "en_ls",
+   "seconds": 11.13,
+   "wall_s": 13.859109900018666,
+   "first_token_ms": 9218.937000026926,
+   "token_count": 168,
+   "raw": "\"He has gone, and gone for good,\" answered Polychrome, who had managed to squeeze into the room beside the dragon, and had witnessed the occurrences with much interest.",
+   "text": "\"He has gone, and gone for good,\" answered Polychrome, who had managed to squeeze into the room beside the dragon, and had witnessed the occurrences with much interest."
+  },
+  {
+   "id": "ls_clip17",
+   "lang": "en_ls",
+   "seconds": 11.475,
+   "wall_s": 16.865862899983767,
+   "first_token_ms": 11493.113400007132,
+   "token_count": 169,
+   "raw": "I have remained a prisoner only because I wished to be one. And with this he stepped forward and burst the stout chains as easily as if they had been threads.",
+   "text": "I have remained a prisoner only because I wished to be one. And with this he stepped forward and burst the stout chains as easily as if they had been threads."
+  },
+  {
+   "id": "ls_clip18",
+   "lang": "en_ls",
+   "seconds": 4.755,
+   "wall_s": 10.204603600024711,
+   "first_token_ms": 7637.2111000237055,
+   "token_count": 85,
+   "raw": "The little girl had been asleep, but she heard the raps and opened the door.",
+   "text": "The little girl had been asleep, but she heard the raps and opened the door."
+  },
+  {
+   "id": "ls_clip19",
+   "lang": "en_ls",
+   "seconds": 4.225,
+   "wall_s": 8.2635358000407,
+   "first_token_ms": 6189.602600003127,
+   "token_count": 78,
+   "raw": "The king has fled in disgrace and your friends are asking for you.",
+   "text": "The king has fled in disgrace and your friends are asking for you."
+  },
+  {
+   "id": "en_us_1660",
+   "lang": "en_fl",
+   "seconds": 10.68,
+   "wall_s": 11.791115600033663,
+   "first_token_ms": 7739.36380003579,
+   "token_count": 154,
+   "raw": "Romanticism had a large element of cultural determinism, drawn from writers such as Goethe, Fichte and Schlegel.",
+   "text": "Romanticism had a large element of cultural determinism, drawn from writers such as Goethe, Fichte and Schlegel."
+  },
+  {
+   "id": "en_us_1661",
+   "lang": "en_fl",
+   "seconds": 6.36,
+   "wall_s": 10.889229600026738,
+   "first_token_ms": 7650.249199999962,
+   "token_count": 107,
+   "raw": "He did not set a figure for the cuts, saying they will be made based on China's economic output.",
+   "text": "He did not set a figure for the cuts, saying they will be made based on China's economic output."
+  },
+  {
+   "id": "en_us_1662",
+   "lang": "en_fl",
+   "seconds": 8.38,
+   "wall_s": 11.313577399996575,
+   "first_token_ms": 7801.267300033942,
+   "token_count": 127,
+   "raw": "Alloys are basically a mixture of two or more metals, don't forget there are many elements on the periodic table.",
+   "text": "Alloys are basically a mixture of two or more metals, don't forget there are many elements on the periodic table."
+  },
+  {
+   "id": "en_us_1663",
+   "lang": "en_fl",
+   "seconds": 12.12,
+   "wall_s": 14.236088899953756,
+   "first_token_ms": 9738.115499960259,
+   "token_count": 172,
+   "raw": "Chacomo Valley: Chile's premier climbing destination, known as the Yosemite of South America, with a variety of granite big walls and crags.",
+   "text": "Chacomo Valley: Chile's premier climbing destination, known as the Yosemite of South America, with a variety of granite big walls and crags."
+  },
+  {
+   "id": "en_us_1664",
+   "lang": "en_fl",
+   "seconds": 8.36,
+   "wall_s": 11.597337499959394,
+   "first_token_ms": 7665.344699984416,
+   "token_count": 129,
+   "raw": "Whew! Swirl the two dry powders together and then with clean wet hands squeeze them into a ball. Come on.",
+   "text": "Whew! Swirl the two dry powders together and then with clean wet hands squeeze them into a ball. Come on."
+  },
+  {
+   "id": "en_us_1665",
+   "lang": "en_fl",
+   "seconds": 8.28,
+   "wall_s": 11.51923859998351,
+   "first_token_ms": 7644.150800013449,
+   "token_count": 134,
+   "raw": "The document, according to the leak, will refer to the borders dispute, which Palestine wants based on the borders before the 1967 Middle East War.",
+   "text": "The document, according to the leak, will refer to the borders dispute, which Palestine wants based on the borders before the 1967 Middle East War."
+  },
+  {
+   "id": "en_us_1666",
+   "lang": "en_fl",
+   "seconds": 8.34,
+   "wall_s": 10.589981199998874,
+   "first_token_ms": 7379.604500019923,
+   "token_count": 127,
+   "raw": "You may also wish to consult the advice of governments other than your own, but their advice is designed for their citizens.",
+   "text": "You may also wish to consult the advice of governments other than your own, but their advice is designed for their citizens."
+  },
+  {
+   "id": "en_us_1667",
+   "lang": "en_fl",
+   "seconds": 14.22,
+   "wall_s": 15.624925200012513,
+   "first_token_ms": 10504.394699994009,
+   "token_count": 197,
+   "raw": "Generally speaking, two behaviors can emerge as managers begin to lead their former peers. One end of the spectrum is trying to remain one of the guys, or gals.",
+   "text": "Generally speaking, two behaviors can emerge as managers begin to lead their former peers. One end of the spectrum is trying to remain one of the guys, or gals."
+  },
+  {
+   "id": "en_us_1668",
+   "lang": "en_fl",
+   "seconds": 13.32,
+   "wall_s": 15.480131199990865,
+   "first_token_ms": 10393.603899981827,
+   "token_count": 186,
+   "raw": "It may also be beneficial for one to buy a wild card which provides entry to either selections of parks in South Africa or all of the South African National Parks.",
+   "text": "It may also be beneficial for one to buy a wild card which provides entry to either selections of parks in South Africa or all of the South African National Parks."
+  },
+  {
+   "id": "en_us_1669",
+   "lang": "en_fl",
+   "seconds": 7.2,
+   "wall_s": 11.363111400045455,
+   "first_token_ms": 8276.794800010975,
+   "token_count": 111,
+   "raw": "Police superintendent Chandra Shekhar Solanki said the accused appeared in court with covered faces.",
+   "text": "Police superintendent Chandra Shekhar Solanki said the accused appeared in court with covered faces."
+  },
+  {
+   "id": "en_us_1670",
+   "lang": "en_fl",
+   "seconds": 29.3,
+   "wall_s": 19.844633999979123,
+   "first_token_ms": 11384.768799995072,
+   "token_count": 370,
+   "raw": "Their thermal behavior is not as steady as large caves on Earth that often maintain a fairly constant temperature, but is consistent with these being deep holes in the ground, said Landon quoting a United States Geological Survey astrogeology team and of Northern Arizona University located in Flagstaff, Arizona.",
+   "text": "Their thermal behavior is not as steady as large caves on Earth that often maintain a fairly constant temperature, but is consistent with these being deep holes in the ground, said Landon quoting a United States Geological Survey astrogeology team and of Northern Arizona University located in Flagstaff, Arizona."
+  },
+  {
+   "id": "en_us_1671",
+   "lang": "en_fl",
+   "seconds": 10.02,
+   "wall_s": 12.020326199999545,
+   "first_token_ms": 8240.549799986184,
+   "token_count": 146,
+   "raw": "Congress began funding the Obsenity Initiative in fiscal 2005 and specified that the FBI must devote ten agents to adult pornography.",
+   "text": "Congress began funding the Obsenity Initiative in fiscal 2005 and specified that the FBI must devote ten agents to adult pornography."
+  },
+  {
+   "id": "en_us_1672",
+   "lang": "en_fl",
+   "seconds": 10.16,
+   "wall_s": 12.063067599956412,
+   "first_token_ms": 8411.616299999878,
+   "token_count": 146,
+   "raw": "Be careful not to allow fabric to become too hot, which can cause shrinkage, or in extreme cases, scorch.",
+   "text": "Be careful not to allow fabric to become too hot, which can cause shrinkage, or in extreme cases, scorch."
+  },
+  {
+   "id": "en_us_1673",
+   "lang": "en_fl",
+   "seconds": 10.08,
+   "wall_s": 12.841360500024166,
+   "first_token_ms": 8478.179899975657,
+   "token_count": 150,
+   "raw": "During the Revolutionary War, the thirteen States first formed a weak central government, with the Congress being its only component under the Articles of Confederation.",
+   "text": "During the Revolutionary War, the thirteen States first formed a weak central government, with the Congress being its only component under the Articles of Confederation."
+  },
+  {
+   "id": "en_us_1674",
+   "lang": "en_fl",
+   "seconds": 5.64,
+   "wall_s": 10.978221600002144,
+   "first_token_ms": 8262.738100020215,
+   "token_count": 95,
+   "raw": "In some areas, boiling water for a minute is enough, in others several minutes are needed.",
+   "text": "In some areas, boiling water for a minute is enough, in others several minutes are needed."
+  },
+  {
+   "id": "en_us_1675",
+   "lang": "en_fl",
+   "seconds": 8.76,
+   "wall_s": 11.61080290004611,
+   "first_token_ms": 8065.69680001121,
+   "token_count": 134,
+   "raw": "All nouns alongside the word \"say\" for you always begin with a capital letter, even in the middle of a sentence.",
+   "text": "All nouns alongside the word \"say\" for you always begin with a capital letter, even in the middle of a sentence."
+  },
+  {
+   "id": "en_us_1676",
+   "lang": "en_fl",
+   "seconds": 9.42,
+   "wall_s": 11.094714599952567,
+   "first_token_ms": 8464.789499994367,
+   "token_count": 134,
+   "raw": "As with all South African national parks, there are daily conservation and entry fees for the park.",
+   "text": "As with all South African national parks, there are daily conservation and entry fees for the park."
+  },
+  {
+   "id": "en_us_1677",
+   "lang": "en_fl",
+   "seconds": 5.94,
+   "wall_s": 10.766817800002173,
+   "first_token_ms": 8199.09969996661,
+   "token_count": 97,
+   "raw": "Today, the only insects that cannot fold back their wings are dragonflies and mayflies.",
+   "text": "Today, the only insects that cannot fold back their wings are dragonflies and mayflies."
+  },
+  {
+   "id": "en_us_1678",
+   "lang": "en_fl",
+   "seconds": 12.78,
+   "wall_s": 15.489074099983554,
+   "first_token_ms": 10686.958000005689,
+   "token_count": 181,
+   "raw": "Oliver Sachs in his paper \"The President's Speech\" indicated how people who are unable to understand speech because of brain damage are nevertheless able to assess sincerity accurately.",
+   "text": "Oliver Sachs in his paper \"The President's Speech\" indicated how people who are unable to understand speech because of brain damage are nevertheless able to assess sincerity accurately."
+  },
+  {
+   "id": "en_us_1679",
+   "lang": "en_fl",
+   "seconds": 3.96,
+   "wall_s": 8.752289200027008,
+   "first_token_ms": 7065.628700016532,
+   "token_count": 73,
+   "raw": "Aerosmith have cancelled their remaining concerts on their tour.",
+   "text": "Aerosmith have cancelled their remaining concerts on their tour."
+  },
+  {
+   "id": "en_us_1680",
+   "lang": "en_fl",
+   "seconds": 10.2,
+   "wall_s": 13.022167200047988,
+   "first_token_ms": 8362.108000030275,
+   "token_count": 153,
+   "raw": "A well-rounded athlete, the tiger can climb, though not well, swim, leap great distances, and pull with five times the force of a strong human.",
+   "text": "A well-rounded athlete, the tiger can climb, though not well, swim, leap great distances, and pull with five times the force of a strong human."
+  },
+  {
+   "id": "en_us_1681",
+   "lang": "en_fl",
+   "seconds": 19.98,
+   "wall_s": 15.768567199993413,
+   "first_token_ms": 9975.343500031158,
+   "token_count": 258,
+   "raw": "It isn't alone, though, experimentation. And an experiment is a test that is used to eliminate one or more of the possible hypotheses. Asking questions and making observations also guide scientific research.",
+   "text": "It isn't alone, though, experimentation. And an experiment is a test that is used to eliminate one or more of the possible hypotheses. Asking questions and making observations also guide scientific research."
+  },
+  {
+   "id": "en_us_1682",
+   "lang": "en_fl",
+   "seconds": 15.64,
+   "wall_s": 17.22636390000116,
+   "first_token_ms": 10317.542799981311,
+   "token_count": 223,
+   "raw": "While no one knows for certain who wrote it, it is known that early in its life the large parchment document, it measures twenty nine three fourths inches by twenty four and a half inches, was rolled up for storage.",
+   "text": "While no one knows for certain who wrote it, it is known that early in its life the large parchment document, it measures twenty nine three fourths inches by twenty four and a half inches, was rolled up for storage."
+  },
+  {
+   "id": "en_us_1683",
+   "lang": "en_fl",
+   "seconds": 11.1,
+   "wall_s": 15.874907499994151,
+   "first_token_ms": 10429.551899957005,
+   "token_count": 166,
+   "raw": "There are still many men and women alive who survived their time here, and many more who had loved ones who were murdered or worked to death there, Jews and non Jews alike.",
+   "text": "There are still many men and women alive who survived their time here, and many more who had loved ones who were murdered or worked to death there, Jews and non Jews alike."
+  },
+  {
+   "id": "en_us_1684",
+   "lang": "en_fl",
+   "seconds": 10.96,
+   "wall_s": 14.765156000037678,
+   "first_token_ms": 10636.905000021216,
+   "token_count": 158,
+   "raw": "Apia is the capital of Samoa. The town is on the island of Upolu, and has a population of just under forty thousand.",
+   "text": "Apia is the capital of Samoa. The town is on the island of Upolu, and has a population of just under forty thousand."
+  },
+  {
+   "id": "en_us_1685",
+   "lang": "en_fl",
+   "seconds": 13.92,
+   "wall_s": 15.3837315000128,
+   "first_token_ms": 10519.499099988025,
+   "token_count": 193,
+   "raw": "For example, the most common still image photography format in the world is 35mm, which was the dominant film size at the close of the analog film era.",
+   "text": "For example, the most common still image photography format in the world is 35mm, which was the dominant film size at the close of the analog film era."
+  },
+  {
+   "id": "en_us_1686",
+   "lang": "en_fl",
+   "seconds": 12.12,
+   "wall_s": 14.336512200010475,
+   "first_token_ms": 10194.149400049355,
+   "token_count": 171,
+   "raw": "As a result, the process of an organization working together to overcome an obstacle can lead to a new innovative process to serve the customer's needs.",
+   "text": "As a result, the process of an organization working together to overcome an obstacle can lead to a new innovative process to serve the customer's needs."
+  },
+  {
+   "id": "en_us_1687",
+   "lang": "en_fl",
+   "seconds": 11.52,
+   "wall_s": 12.9882246000343,
+   "first_token_ms": 10360.130999993999,
+   "token_count": 154,
+   "raw": "Segregation and recombination shuffle variation back and forth between the two pools with each generation.",
+   "text": "Segregation and recombination shuffle variation back and forth between the two pools with each generation."
+  },
+  {
+   "id": "en_us_1688",
+   "lang": "en_fl",
+   "seconds": 17.44,
+   "wall_s": 17.369933400012087,
+   "first_token_ms": 10805.018200015184,
+   "token_count": 237,
+   "raw": "The job of an Ives has traditionally been to ensure that your country maintains the ability to move your people and goods while at the same time interfering with your enemy's ability to move his people and goods.",
+   "text": "The job of an Ives has traditionally been to ensure that your country maintains the ability to move your people and goods while at the same time interfering with your enemy's ability to move his people and goods."
+  },
+  {
+   "id": "en_us_1689",
+   "lang": "en_fl",
+   "seconds": 20.76,
+   "wall_s": 16.075267300009727,
+   "first_token_ms": 10590.22960002767,
+   "token_count": 265,
+   "raw": "Europe is a continent that is relatively small but with many independent countries. Under normal circumstances, traveling through multiple countries would mean having to go through visa applications and passport control multiple times.",
+   "text": "Europe is a continent that is relatively small but with many independent countries. Under normal circumstances, traveling through multiple countries would mean having to go through visa applications and passport control multiple times."
+  },
+  {
+   "id": "en_us_1690",
+   "lang": "en_fl",
+   "seconds": 19.66,
+   "wall_s": 16.66802290000487,
+   "first_token_ms": 10852.158599998802,
+   "token_count": 254,
+   "raw": "We agree with the USOC's statement that the interests of our athletes and clubs and their sport may be better served by moving forward with meaningful change within our organization rather than the certification.",
+   "text": "We agree with the USOC's statement that the interests of our athletes and clubs and their sport may be better served by moving forward with meaningful change within our organization rather than the certification."
+  },
+  {
+   "id": "en_us_1691",
+   "lang": "en_fl",
+   "seconds": 9.36,
+   "wall_s": 11.996541199972853,
+   "first_token_ms": 8422.221899963915,
+   "token_count": 138,
+   "raw": "On some routes the larger companies have their own planes, but for other routes and smaller firms there was a problem.",
+   "text": "On some routes the larger companies have their own planes, but for other routes and smaller firms there was a problem."
+  },
+  {
+   "id": "en_us_1692",
+   "lang": "en_fl",
+   "seconds": 7.38,
+   "wall_s": 11.408598300011363,
+   "first_token_ms": 8501.27710000379,
+   "token_count": 114,
+   "raw": "According to Japan's nuclear agency, radioactive cesium and iodine has been identified at the plant.",
+   "text": "According to Japan's nuclear agency, radioactive cesium and iodine has been identified at the plant."
+  },
+  {
+   "id": "en_us_1693",
+   "lang": "en_fl",
+   "seconds": 8.52,
+   "wall_s": 11.872205500025302,
+   "first_token_ms": 8343.184600002132,
+   "token_count": 131,
+   "raw": "But, after losing the captain's wicket India only made thirty-six runs, losing seven wickets to end the winnings.",
+   "text": "But, after losing the captain's wicket India only made thirty-six runs, losing seven wickets to end the winnings."
+  },
+  {
+   "id": "en_us_1694",
+   "lang": "en_fl",
+   "seconds": 10.72,
+   "wall_s": 11.539657399989665,
+   "first_token_ms": 8148.750699998345,
+   "token_count": 150,
+   "raw": "Children are placed in foster care for a wide variety of reasons that range from neglect to abuse and even to extortion.",
+   "text": "Children are placed in foster care for a wide variety of reasons that range from neglect to abuse and even to extortion."
+  },
+  {
+   "id": "en_us_1695",
+   "lang": "en_fl",
+   "seconds": 12.24,
+   "wall_s": 16.267449599981774,
+   "first_token_ms": 10646.136600000318,
+   "token_count": 181,
+   "raw": "A simple popular dinner, especially during the summer, is the _pe am olai_, bread with olive oil, tomato, and any available condiments such as cheese, tuna fish, etc.",
+   "text": "A simple popular dinner, especially during the summer, is the _pe am olai_, bread with olive oil, tomato, and any available condiments such as cheese, tuna fish, etc."
+  },
+  {
+   "id": "en_us_1696",
+   "lang": "en_fl",
+   "seconds": 7.44,
+   "wall_s": 11.74827360000927,
+   "first_token_ms": 8434.712400019635,
+   "token_count": 116,
+   "raw": "The two compounds react with one another to form crystals that may block kidney function, researchers at the university said.",
+   "text": "The two compounds react with one another to form crystals that may block kidney function, researchers at the university said."
+  },
+  {
+   "id": "en_us_1697",
+   "lang": "en_fl",
+   "seconds": 6.36,
+   "wall_s": 10.862719599972479,
+   "first_token_ms": 7904.752800008282,
+   "token_count": 106,
+   "raw": "He has been unable to take the drugs needed to overcome his pain as they are banned from the games.",
+   "text": "He has been unable to take the drugs needed to overcome his pain as they are banned from the games."
+  },
+  {
+   "id": "en_us_1698",
+   "lang": "en_fl",
+   "seconds": 6.42,
+   "wall_s": 10.833376499998849,
+   "first_token_ms": 8146.328500006348,
+   "token_count": 104,
+   "raw": "Everything in the universe is made of matter. All matter is made of tiny particles called atoms.",
+   "text": "Everything in the universe is made of matter. All matter is made of tiny particles called atoms."
+  },
+  {
+   "id": "en_us_1699",
+   "lang": "en_fl",
+   "seconds": 9.6,
+   "wall_s": 12.902074499987066,
+   "first_token_ms": 8212.931999994908,
+   "token_count": 147,
+   "raw": "Bishkek was described as sinking into a state of anarchy by one observer as gangs of people roamed the streets and plundered stores of consumer goods.",
+   "text": "Bishkek was described as sinking into a state of anarchy by one observer as gangs of people roamed the streets and plundered stores of consumer goods."
+  },
+  {
+   "id": "en_us_1700",
+   "lang": "en_fl",
+   "seconds": 7.2,
+   "wall_s": 10.34002760000294,
+   "first_token_ms": 8209.087299997918,
+   "token_count": 105,
+   "raw": "It is thinner under the maria and thicker under the highlands.",
+   "text": "It is thinner under the maria and thicker under the highlands."
+  },
+  {
+   "id": "en_us_1701",
+   "lang": "en_fl",
+   "seconds": 10.62,
+   "wall_s": 11.800262500008103,
+   "first_token_ms": 8246.909300039988,
+   "token_count": 151,
+   "raw": "Goats seem to have been first domesticated roughly 10,000 years ago in the Zagros Mountains of Iran.",
+   "text": "Goats seem to have been first domesticated roughly 10,000 years ago in the Zagros Mountains of Iran."
+  },
+  {
+   "id": "en_us_1702",
+   "lang": "en_fl",
+   "seconds": 10.18,
+   "wall_s": 10.890804000024218,
+   "first_token_ms": 8095.567199983634,
+   "token_count": 141,
+   "raw": "In just two weeks the Americans and free French forces had liberated southern France and were turning toward Germany.",
+   "text": "In just two weeks the Americans and free French forces had liberated southern France and were turning toward Germany."
+  },
+  {
+   "id": "en_us_1703",
+   "lang": "en_fl",
+   "seconds": 10.12,
+   "wall_s": 10.055391400004737,
+   "first_token_ms": 8080.961700004991,
+   "token_count": 135,
+   "raw": "Martelli swore in a new provisional electoral council of nine members yesterday.",
+   "text": "Martelli swore in a new provisional electoral council of nine members yesterday."
+  },
+  {
+   "id": "en_us_1704",
+   "lang": "en_fl",
+   "seconds": 7.32,
+   "wall_s": 11.972265899996273,
+   "first_token_ms": 8304.84230001457,
+   "token_count": 119,
+   "raw": "In nineteen-ninety it was added to the list of World Heritage Sites in danger due to the threat of desert sands.",
+   "text": "In nineteen-ninety it was added to the list of World Heritage Sites in danger due to the threat of desert sands."
+  },
+  {
+   "id": "en_us_1705",
+   "lang": "en_fl",
+   "seconds": 10.12,
+   "wall_s": 11.385593799990602,
+   "first_token_ms": 7975.472400023136,
+   "token_count": 144,
+   "raw": "On August fifteenth, nineteen-fourty, the Allies invaded southern France and the invasion was called Operation Dragoon.",
+   "text": "On August fifteenth, nineteen-fourty, the Allies invaded southern France and the invasion was called Operation Dragoon."
+  },
+  {
+   "id": "en_us_1706",
+   "lang": "en_fl",
+   "seconds": 12.72,
+   "wall_s": 15.834777700016275,
+   "first_token_ms": 10611.70150001999,
+   "token_count": 183,
+   "raw": "More traditional churches often hold an Easter vigil on Saturday night during the Easter weekend, with the congregations often breaking into celebration at the stroke of midnight to celebrate Christ's resurrection.",
+   "text": "More traditional churches often hold an Easter vigil on Saturday night during the Easter weekend, with the congregations often breaking into celebration at the stroke of midnight to celebrate Christ's resurrection."
+  },
+  {
+   "id": "en_us_1707",
+   "lang": "en_fl",
+   "seconds": 10.92,
+   "wall_s": 14.340257000003476,
+   "first_token_ms": 10569.568999984767,
+   "token_count": 156,
+   "raw": "It's one of the main attractions of South Africa and it's considered the flagship of South African national parks, Sandparks.",
+   "text": "It's one of the main attractions of South Africa and it's considered the flagship of South African national parks, Sandparks."
+  },
+  {
+   "id": "en_us_1708",
+   "lang": "en_fl",
+   "seconds": 13.18,
+   "wall_s": 16.11974900000496,
+   "first_token_ms": 10209.3585000257,
+   "token_count": 189,
+   "raw": "Hoon has resigned and he will be replaced in the Cabinet by Ed Davey, MP. Norman Lamb, MP, is expected to take the Business Ministry job Davey is vacating.",
+   "text": "Hoon has resigned and he will be replaced in the Cabinet by Ed Davey, MP. Norman Lamb, MP, is expected to take the Business Ministry job Davey is vacating."
+  },
+  {
+   "id": "en_us_1709",
+   "lang": "en_fl",
+   "seconds": 8.64,
+   "wall_s": 12.140785499999765,
+   "first_token_ms": 7956.913899979554,
+   "token_count": 134,
+   "raw": "The report is highly critical of almost every aspect of the present policy of the Executive towards Iraq, and it urges an immediate change of direction.",
+   "text": "The report is highly critical of almost every aspect of the present policy of the Executive towards Iraq, and it urges an immediate change of direction."
+  },
+  {
+   "id": "ja_jp_1661",
+   "lang": "ja",
+   "seconds": 15.42,
+   "wall_s": 17.7340714999591,
+   "first_token_ms": 10877.935399999842,
+   "token_count": 231,
+   "raw": "越は削減する数値を定めませんでしたが削減は中国の経済産出量に基づいて実施されるだろうと述べました。",
+   "text": "越は削減する数値を定めませんでしたが削減は中国の経済産出量に基づいて実施されるだろうと述べました。"
+  },
+  {
+   "id": "ja_jp_1662",
+   "lang": "ja",
+   "seconds": 14.58,
+   "wall_s": 14.709769500012044,
+   "first_token_ms": 9011.070600012317,
+   "token_count": 212,
+   "raw": "合金とは基本的には2種類以上の金属の混合物です周期表に載っているたくさんの元素を思い出してください",
+   "text": "合金とは基本的には2種類以上の金属の混合物です周期表に載っているたくさんの元素を思い出してください"
+  },
+  {
+   "id": "ja_jp_1664",
+   "lang": "ja",
+   "seconds": 9.9,
+   "wall_s": 12.711119699990377,
+   "first_token_ms": 6989.1115999780595,
+   "token_count": 165,
+   "raw": "乾いた粉をふたつ合わせてくるくるとこね回し清潔な縫い立てでぎゅっと握ります。",
+   "text": "乾いた粉をふたつ合わせてくるくるとこね回し清潔な縫い立てでぎゅっと握ります。"
+  },
+  {
+   "id": "ja_jp_1665",
+   "lang": "ja",
+   "seconds": 16.74,
+   "wall_s": 18.193409900006372,
+   "first_token_ms": 9222.938599996269,
+   "token_count": 260,
+   "raw": "漏れきた情報によれば、当該文書は国境紛争に言及するもので、パレスチナの希望は、１９６７年の中東戦争前の国境に基づくものです。",
+   "text": "漏れきた情報によれば、当該文書は国境紛争に言及するもので、パレスチナの希望は、１９６７年の中東戦争前の国境に基づくものです。"
+  },
+  {
+   "id": "ja_jp_1666",
+   "lang": "ja",
+   "seconds": 13.56,
+   "wall_s": 14.880530299968086,
+   "first_token_ms": 9072.56659999257,
+   "token_count": 204,
+   "raw": "自国以外の政府からの助言を参考にしてもかわいませんが、そのような助言はその国の国民向けのものです。",
+   "text": "自国以外の政府からの助言を参考にしてもかわいませんが、そのような助言はその国の国民向けのものです。"
+  },
+  {
+   "id": "ja_jp_1667",
+   "lang": "ja",
+   "seconds": 17.82,
+   "wall_s": 17.90378980000969,
+   "first_token_ms": 9082.997100020293,
+   "token_count": 270,
+   "raw": "一般的に言えば管理職がかつての仲間を引き入れることになった場合二通りの行動があらえる可能性があります一つは仲間の一人のままでいようとする行動です。",
+   "text": "一般的に言えば管理職がかつての仲間を引き入れることになった場合二通りの行動があらえる可能性があります一つは仲間の一人のままでいようとする行動です。"
+  },
+  {
+   "id": "ja_jp_1668",
+   "lang": "ja",
+   "seconds": 13.38,
+   "wall_s": 16.139320500020403,
+   "first_token_ms": 9181.188000016846,
+   "token_count": 211,
+   "raw": "ワイルドカードを購入するとお得な場合があります南アフリカの主な公園または南アフリカのすべての国立公園に入場できます。",
+   "text": "ワイルドカードを購入するとお得な場合があります南アフリカの主な公園または南アフリカのすべての国立公園に入場できます。"
+  },
+  {
+   "id": "ja_jp_1669",
+   "lang": "ja",
+   "seconds": 10.08,
+   "wall_s": 13.317595699976664,
+   "first_token_ms": 7004.692899994552,
+   "token_count": 173,
+   "raw": "警察のチャンドラシュカール・ソランキ総監によれば、被告人は顔を隠して法廷に出頭したそうです。",
+   "text": "警察のチャンドラシュカール・ソランキ総監によれば、被告人は顔を隠して法廷に出頭したそうです。"
+  },
+  {
+   "id": "ja_jp_1670",
+   "lang": "ja",
+   "seconds": 25.5,
+   "wall_s": 28.73171049996745,
+   "first_token_ms": 10313.16149997292,
+   "token_count": 421,
+   "raw": "そうした寝つき泥は一定の温度をかなり保てる地球上の大洞窟ほど安定していないことが多いのですが地中に深い穴ができる点を一致していますと米国地質調査所、ｕｓｇｓ宇宙地質学チームとアリゾナ州フラッグスタッフにあるノーザンアリゾナ大学のグレン・クッシング氏は述べています。",
+   "text": "そうした寝つき泥は一定の温度をかなり保てる地球上の大洞窟ほど安定していないことが多いのですが地中に深い穴ができる点を一致していますと米国地質調査所、ｕｓｇｓ宇宙地質学チームとアリゾナ州フラッグスタッフにあるノーザンアリゾナ大学のグレン・クッシング氏は述べています。"
+  },
+  {
+   "id": "ja_jp_1671",
+   "lang": "ja",
+   "seconds": 18.42,
+   "wall_s": 19.045671699976083,
+   "first_token_ms": 9078.640899970196,
+   "token_count": 285,
+   "raw": "連邦議会は２００５年度から、わいせつ物取締法への資金提供を開始し、ｆｂｉはアタローズポールの２０人の捜査員を投入しなければならないと規定しました。",
+   "text": "連邦議会は２００５年度から、わいせつ物取締法への資金提供を開始し、ｆｂｉはアタローズポールの２０人の捜査員を投入しなければならないと規定しました。"
+  },
+  {
+   "id": "ja_jp_1672",
+   "lang": "ja",
+   "seconds": 11.76,
+   "wall_s": 16.249104399990756,
+   "first_token_ms": 9050.733700045384,
+   "token_count": 197,
+   "raw": "生地の温度が上がりすぎないように気をつけてください、縮みの原因になったり極端な場合は焦げ付けの原因になります。",
+   "text": "生地の温度が上がりすぎないように気をつけてください、縮みの原因になったり極端な場合は焦げ付けの原因になります。"
+  },
+  {
+   "id": "ja_jp_1674",
+   "lang": "ja",
+   "seconds": 10.5,
+   "wall_s": 11.982761199993547,
+   "first_token_ms": 7036.115900031291,
+   "token_count": 164,
+   "raw": "一分間で沸騰する地域もあれば、沸騰するまでに何分もかかる地域もあります。",
+   "text": "一分間で沸騰する地域もあれば、沸騰するまでに何分もかかる地域もあります。"
+  },
+  {
+   "id": "ja_jp_1675",
+   "lang": "ja",
+   "seconds": 15.9,
+   "wall_s": 14.914307400002144,
+   "first_token_ms": 9078.044400026556,
+   "token_count": 225,
+   "raw": "すべての名詞はあなたを指す単語「し」と同様に文の途中であっても常に大文字で始まります。",
+   "text": "すべての名詞はあなたを指す単語「し」と同様に文の途中であっても常に大文字で始まります。"
+  },
+  {
+   "id": "ja_jp_1676",
+   "lang": "ja",
+   "seconds": 10.2,
+   "wall_s": 13.118825199955609,
+   "first_token_ms": 6916.444699978456,
+   "token_count": 171,
+   "raw": "南アフリカにいるすべての国立公園と同様に、この公園には毎日保護費と入園料がかかります。",
+   "text": "南アフリカにいるすべての国立公園と同様に、この公園には毎日保護費と入園料がかかります。"
+  },
+  {
+   "id": "ja_jp_1677",
+   "lang": "ja",
+   "seconds": 8.34,
+   "wall_s": 11.772510799986776,
+   "first_token_ms": 7069.611100014299,
+   "token_count": 142,
+   "raw": "現在、羽を折り返すことができない昆虫はトンボとカゲロウのみです。",
+   "text": "現在、羽を折り返すことができない昆虫はトンボとカゲロウのみです。"
+  },
+  {
+   "id": "ja_jp_1679",
+   "lang": "ja",
+   "seconds": 10.62,
+   "wall_s": 10.633485300000757,
+   "first_token_ms": 6973.94890000578,
+   "token_count": 157,
+   "raw": "エアロスミスは、ツアーで予定していたコンサートを中止しました。",
+   "text": "エアロスミスは、ツアーで予定していたコンサートを中止しました。"
+  },
+  {
+   "id": "ja_jp_1680",
+   "lang": "ja",
+   "seconds": 13.5,
+   "wall_s": 19.16281660000095,
+   "first_token_ms": 9181.059700029436,
+   "token_count": 235,
+   "raw": "実に金銭をとれたかわたで運動能力の高い虎はうまくはないものの登ったり泳いだり長い距離を飛んだりたくましい人間の５倍の力で引っ張ったりできます。",
+   "text": "実に金銭をとれたかわたで運動能力の高い虎はうまくはないものの登ったり泳いだり長い距離を飛んだりたくましい人間の５倍の力で引っ張ったりできます。"
+  },
+  {
+   "id": "ja_jp_1681",
+   "lang": "ja",
+   "seconds": 16.2,
+   "wall_s": 19.209519299969543,
+   "first_token_ms": 9102.440299990121,
+   "token_count": 262,
+   "raw": "しかしそれだけではありません実験とは可能性のある仮説の一つ以上排除するために使用される試験のことで質問をしたり観察をしたりすることも科学研究の指針となります",
+   "text": "しかしそれだけではありません実験とは可能性のある仮説の一つ以上排除するために使用される試験のことで質問をしたり観察をしたりすることも科学研究の指針となります"
+  },
+  {
+   "id": "ja_jp_1683",
+   "lang": "ja",
+   "seconds": 14.7,
+   "wall_s": 18.71331670001382,
+   "first_token_ms": 9096.930800005794,
+   "token_count": 243,
+   "raw": "ここには当時生き延びた多くの男女があり、ユダヤ人かどうかを問わず、そこで大切な人が殺害されたり、強制労働させられたりした人たちも大勢います。",
+   "text": "ここには当時生き延びた多くの男女があり、ユダヤ人かどうかを問わず、そこで大切な人が殺害されたり、強制労働させられたりした人たちも大勢います。"
+  },
+  {
+   "id": "ja_jp_1684",
+   "lang": "ja",
+   "seconds": 9.3,
+   "wall_s": 11.414288299973123,
+   "first_token_ms": 6964.370000001509,
+   "token_count": 148,
+   "raw": "アピアはサモアの首都です。この町はウポル島にあり、人口は四万人弱です。",
+   "text": "アピアはサモアの首都です。この町はウポル島にあり、人口は四万人弱です。"
+  },
+  {
+   "id": "ja_jp_1685",
+   "lang": "ja",
+   "seconds": 18.24,
+   "wall_s": 17.573363800009247,
+   "first_token_ms": 9058.484999986831,
+   "token_count": 270,
+   "raw": "例えば世界で最も普及している静止画写真のフィルム形式は３５ミリでこれはアナログフィルム時代の終わり頃には主流のフィルムサイズでした。",
+   "text": "例えば世界で最も普及している静止画写真のフィルム形式は３５ミリでこれはアナログフィルム時代の終わり頃には主流のフィルムサイズでした。"
+  },
+  {
+   "id": "ja_jp_1686",
+   "lang": "ja",
+   "seconds": 16.8,
+   "wall_s": 17.405814300000202,
+   "first_token_ms": 9048.948699957691,
+   "token_count": 254,
+   "raw": "その結果、組織が協力して障害を克服するプロセスは顧客のニーズに応えるための新しい革新的なプロセスにつながる可能性があります。",
+   "text": "その結果、組織が協力して障害を克服するプロセスは顧客のニーズに応えるための新しい革新的なプロセスにつながる可能性があります。"
+  },
+  {
+   "id": "ja_jp_1687",
+   "lang": "ja",
+   "seconds": 9.36,
+   "wall_s": 12.533785099978559,
+   "first_token_ms": 7098.817699996289,
+   "token_count": 160,
+   "raw": "炭焼きと組み替えは世代ごとに２つのプールの間を行き来しながら変位をシャッフルします。",
+   "text": "炭焼きと組み替えは世代ごとに２つのプールの間を行き来しながら変位をシャッフルします。"
+  },
+  {
+   "id": "ja_jp_1688",
+   "lang": "ja",
+   "seconds": 12.84,
+   "wall_s": 18.071727900009137,
+   "first_token_ms": 9186.904800008051,
+   "token_count": 220,
+   "raw": "従来より海軍の仕事は自国民や物資を輸送する能力を維持すると同時に敵国民や物資を輸送する能力を確実に妨害することでした。",
+   "text": "従来より海軍の仕事は自国民や物資を輸送する能力を維持すると同時に敵国民や物資を輸送する能力を確実に妨害することでした。"
+  },
+  {
+   "id": "ja_jp_1690",
+   "lang": "ja",
+   "seconds": 14.7,
+   "wall_s": 19.623000900028273,
+   "first_token_ms": 9127.680399978999,
+   "token_count": 250,
+   "raw": "私たちは資格を剥奪するよりも、組織内で意味のある変革を進めたほうが、選手やクラブ、そしてスポーツに資する可能性があるという、ｕｓｏｃの声明に同意しています。",
+   "text": "私たちは資格を剥奪するよりも、組織内で意味のある変革を進めたほうが、選手やクラブ、そしてスポーツに資する可能性があるという、ｕｓｏｃの声明に同意しています。"
+  },
+  {
+   "id": "ja_jp_1691",
+   "lang": "ja",
+   "seconds": 10.2,
+   "wall_s": 13.09082409995608,
+   "first_token_ms": 7023.911600001156,
+   "token_count": 170,
+   "raw": "一部の路線では大企業は自社機を持っているがそれ以外の路線や小規模企業では問題があった。",
+   "text": "一部の路線では大企業は自社機を持っているがそれ以外の路線や小規模企業では問題があった。"
+  },
+  {
+   "id": "ja_jp_1692",
+   "lang": "ja",
+   "seconds": 9.66,
+   "wall_s": 11.649646700010635,
+   "first_token_ms": 6967.881699965801,
+   "token_count": 156,
+   "raw": "日本の原子力庁によれば、原発内で放射性セシウムとヨウ素が特定されています。",
+   "text": "日本の原子力庁によれば、原発内で放射性セシウムとヨウ素が特定されています。"
+  },
+  {
+   "id": "ja_jp_1693",
+   "lang": "ja",
+   "seconds": 17.52,
+   "wall_s": 14.816333499969915,
+   "first_token_ms": 9126.96219998179,
+   "token_count": 242,
+   "raw": "しかし、キャプテンのウィケットを失った後、インドは７つのウィケットを失い、３６ランしかできませんでした。",
+   "text": "しかし、キャプテンのウィケットを失った後、インドは７つのウィケットを失い、３６ランしかできませんでした。"
+  },
+  {
+   "id": "ja_jp_1694",
+   "lang": "ja",
+   "seconds": 16.98,
+   "wall_s": 16.289928500016686,
+   "first_token_ms": 9210.355600051116,
+   "token_count": 247,
+   "raw": "子どもたちが佐藤や制度に預けられる理由は、育児放棄から落胤、さらには恐喝に至るまでさまざまです。",
+   "text": "子どもたちが佐藤や制度に預けられる理由は、育児放棄から落胤、さらには恐喝に至るまでさまざまです。"
+  },
+  {
+   "id": "ja_jp_1695",
+   "lang": "ja",
+   "seconds": 12.42,
+   "wall_s": 17.595268599980045,
+   "first_token_ms": 9240.186600014567,
+   "token_count": 212,
+   "raw": "特に那須場にはオリーブオイルを塗ったパンにトマトとチーズチューナなどの調味料を加えたぽんぼりというシンプルな料理が人気です。",
+   "text": "特に那須場にはオリーブオイルを塗ったパンにトマトとチーズチューナなどの調味料を加えたぽんぼりというシンプルな料理が人気です。"
+  },
+  {
+   "id": "ja_jp_1696",
+   "lang": "ja",
+   "seconds": 11.94,
+   "wall_s": 16.415369800000917,
+   "first_token_ms": 9090.51280003041,
+   "token_count": 198,
+   "raw": "その大学の研究者たちによれば、この二つの化合物は互いに反応して腎臓の機能を阻害しうる結晶を形成します。",
+   "text": "その大学の研究者たちによれば、この二つの化合物は互いに反応して腎臓の機能を阻害しうる結晶を形成します。"
+  },
+  {
+   "id": "ja_jp_1697",
+   "lang": "ja",
+   "seconds": 14.1,
+   "wall_s": 14.66627020004671,
+   "first_token_ms": 9466.161100019235,
+   "token_count": 204,
+   "raw": "痛みを抑えるのに必要な薬がその大会で禁止されているため彼は服用できませんでした。",
+   "text": "痛みを抑えるのに必要な薬がその大会で禁止されているため彼は服用できませんでした。"
+  },
+  {
+   "id": "ja_jp_1698",
+   "lang": "ja",
+   "seconds": 11.04,
+   "wall_s": 15.734187100024428,
+   "first_token_ms": 9301.031200040597,
+   "token_count": 183,
+   "raw": "宇宙に存在するあらゆるものは物質でできています。あらゆる物質は原子と呼ばれる微小な粒子でできています。",
+   "text": "宇宙に存在するあらゆるものは物質でできています。あらゆる物質は原子と呼ばれる微小な粒子でできています。"
+  },
+  {
+   "id": "ja_jp_1699",
+   "lang": "ja",
+   "seconds": 13.98,
+   "wall_s": 17.376139800006058,
+   "first_token_ms": 9125.944200030062,
+   "token_count": 226,
+   "raw": "ある観察者が、ビシュケクを未成不上隊に陥っていると表現したように、ギャングたちが街路を徘徊し、日用品店を略奪しました。",
+   "text": "ある観察者が、ビシュケクを未成不上隊に陥っていると表現したように、ギャングたちが街路を徘徊し、日用品店を略奪しました。"
+  },
+  {
+   "id": "ja_jp_1700",
+   "lang": "ja",
+   "seconds": 7.5,
+   "wall_s": 9.57076249999227,
+   "first_token_ms": 7016.652999969665,
+   "token_count": 115,
+   "raw": "海の下は薄く、高地の下は暑くなっています。",
+   "text": "海の下は薄く、高地の下は暑くなっています。"
+  },
+  {
+   "id": "ja_jp_1701",
+   "lang": "ja",
+   "seconds": 11.88,
+   "wall_s": 15.213803499995265,
+   "first_token_ms": 9258.411600021645,
+   "token_count": 188,
+   "raw": "ヤギの家畜化は約一年万年前に始まり、その中心はイランのザグロス山脈西部であったとされています。",
+   "text": "ヤギの家畜化は約一年万年前に始まり、その中心はイランのザグロス山脈西部であったとされています。"
+  },
+  {
+   "id": "ja_jp_1702",
+   "lang": "ja",
+   "seconds": 9.9,
+   "wall_s": 12.420972799998708,
+   "first_token_ms": 7110.860300017521,
+   "token_count": 162,
+   "raw": "僅か２週間でアメリカ軍と自由フランス軍は南フランスを解放しドイツに向かっていました。",
+   "text": "僅か２週間でアメリカ軍と自由フランス軍は南フランスを解放しドイツに向かっていました。"
+  },
+  {
+   "id": "ja_jp_1704",
+   "lang": "ja",
+   "seconds": 11.7,
+   "wall_s": 15.962984399986453,
+   "first_token_ms": 9351.32119996706,
+   "token_count": 191,
+   "raw": "砂漠の砂による脅威から保護するため、１９９０年には危険な世界遺産のリストに追加されました。",
+   "text": "砂漠の砂による脅威から保護するため、１９９０年には危険な世界遺産のリストに追加されました。"
+  },
+  {
+   "id": "ja_jp_1705",
+   "lang": "ja",
+   "seconds": 12.48,
+   "wall_s": 14.45267619995866,
+   "first_token_ms": 9025.971699971706,
+   "token_count": 189,
+   "raw": "1940年8月15日、連合国は南フランスに侵攻し、その侵攻はドラグーン作戦と呼ばれました。",
+   "text": "1940年8月15日、連合国は南フランスに侵攻し、その侵攻はドラグーン作戦と呼ばれました。"
+  },
+  {
+   "id": "ja_jp_1707",
+   "lang": "ja",
+   "seconds": 11.64,
+   "wall_s": 15.40395870001521,
+   "first_token_ms": 9093.1512999814,
+   "token_count": 187,
+   "raw": "ここは南アフリカの主な観光地の一つであり南アフリカ国立公園、ｓａｎパークスの目玉とされています。",
+   "text": "ここは南アフリカの主な観光地の一つであり南アフリカ国立公園、ｓａｎパークスの目玉とされています。"
+  },
+  {
+   "id": "ja_jp_1709",
+   "lang": "ja",
+   "seconds": 12.72,
+   "wall_s": 17.131526299985126,
+   "first_token_ms": 9035.30430002138,
+   "token_count": 213,
+   "raw": "本報告書はイラクに対する行政府の現在の政策のほぼすべての側面を強く批判し即時の方向転換を促すものです。",
+   "text": "本報告書はイラクに対する行政府の現在の政策のほぼすべての側面を強く批判し即時の方向転換を促すものです。"
+  },
+  {
+   "id": "ja_jp_1710",
+   "lang": "ja",
+   "seconds": 11.22,
+   "wall_s": 15.676793800026644,
+   "first_token_ms": 9091.151000000536,
+   "token_count": 186,
+   "raw": "先週、経済産業省はアップルが申告ではないとする過熱事故を追加で３４件報告したと発表しました。",
+   "text": "先週、経済産業省はアップルが申告ではないとする過熱事故を追加で３４件報告したと発表しました。"
+  },
+  {
+   "id": "ja_jp_1711",
+   "lang": "ja",
+   "seconds": 14.7,
+   "wall_s": 19.025026299990714,
+   "first_token_ms": 9178.3948999946,
+   "token_count": 245,
+   "raw": "これらの理論では、ある種の人々が日常的に特定のことを従う動機について、そして彼らに特定のことをさせる、あるいはさせない環境要因について考察します。",
+   "text": "これらの理論では、ある種の人々が日常的に特定のことを従う動機について、そして彼らに特定のことをさせる、あるいはさせない環境要因について考察します。"
+  },
+  {
+   "id": "ja_jp_1712",
+   "lang": "ja",
+   "seconds": 18.48,
+   "wall_s": 17.814643399964552,
+   "first_token_ms": 9099.760200013407,
+   "token_count": 275,
+   "raw": "１９６６年からスンダルバンスは野生動物保護区となり現在では推定で400頭のロイヤルベンガルトラと約3万頭のアクシスジカが生息しています。",
+   "text": "１９６６年からスンダルバンスは野生動物保護区となり現在では推定で400頭のロイヤルベンガルトラと約3万頭のアクシスジカが生息しています。"
+  },
+  {
+   "id": "ja_jp_1713",
+   "lang": "ja",
+   "seconds": 17.1,
+   "wall_s": 16.398679700039793,
+   "first_token_ms": 9184.213000000454,
+   "token_count": 249,
+   "raw": "ゴマはかなり安全ですがゴマ以外の場所を訪れる場合は北キブ州で続く戦闘の状況を調査して理解する必要があります。",
+   "text": "ゴマはかなり安全ですがゴマ以外の場所を訪れる場合は北キブ州で続く戦闘の状況を調査して理解する必要があります。"
+  },
+  {
+   "id": "ja_jp_1714",
+   "lang": "ja",
+   "seconds": 14.28,
+   "wall_s": 18.031905700045172,
+   "first_token_ms": 9181.071099999826,
+   "token_count": 235,
+   "raw": "衛星はロケットで宇宙に送られました。科学者が宇宙で貿易を使う理由は、地球の大気によって人間の視界に入る光や景色の一部がいわがむからです。",
+   "text": "衛星はロケットで宇宙に送られました。科学者が宇宙で貿易を使う理由は、地球の大気によって人間の視界に入る光や景色の一部がいわがむからです。"
+  },
+  {
+   "id": "ja_jp_1715",
+   "lang": "ja",
+   "seconds": 26.64,
+   "wall_s": 22.83805979997851,
+   "first_token_ms": 10316.22320000315,
+   "token_count": 386,
+   "raw": "メトロの構内や車内の定期アナウンスはカタルーニャ語のみですが事故による遅延などの際には自動システムによってスペイン語英語フランス語アラビア語日本語といった各言語でアナウンスされます",
+   "text": "メトロの構内や車内の定期アナウンスはカタルーニャ語のみですが事故による遅延などの際には自動システムによってスペイン語英語フランス語アラビア語日本語といった各言語でアナウンスされます"
+  },
+  {
+   "id": "ja_jp_1716",
+   "lang": "ja",
+   "seconds": 19.08,
+   "wall_s": 26.80519419995835,
+   "first_token_ms": 9237.0985999587,
+   "token_count": 352,
+   "raw": "芸能入所サイト、ｔｍｚによると、写真家はセプレベダ大通りの反対車線に車を止め道路を渡って住む前に警察の検問を写真に収めようとしたため、交通規制を透いたカリフォルニア州ハイウェイパトロールの警察官が横断して戻るように理解も明示したそうです。",
+   "text": "芸能入所サイト、ｔｍｚによると、写真家はセプレベダ大通りの反対車線に車を止め道路を渡って住む前に警察の検問を写真に収めようとしたため、交通規制を透いたカリフォルニア州ハイウェイパトロールの警察官が横断して戻るように理解も明示したそうです。"
+  },
+  {
+   "id": "ja_jp_1718",
+   "lang": "ja",
+   "seconds": 13.86,
+   "wall_s": 16.39650979998987,
+   "first_token_ms": 9323.026900005061,
+   "token_count": 219,
+   "raw": "骨董品については普遍的な定義はありません。税務署によっては、100年以上前のものを骨董品と定義しています。",
+   "text": "骨董品については普遍的な定義はありません。税務署によっては、100年以上前のものを骨董品と定義しています。"
+  },
+  {
+   "id": "ja_jp_1719",
+   "lang": "ja",
+   "seconds": 13.62,
+   "wall_s": 16.591183699958492,
+   "first_token_ms": 9230.812999943737,
+   "token_count": 218,
+   "raw": "悪天候とは物理的被害深刻な社会的困難人命に関わる被害につながりうる危険な気象現象の総称です。",
+   "text": "悪天候とは物理的被害深刻な社会的困難人命に関わる被害につながりうる危険な気象現象の総称です。"
+  },
+  {
+   "id": "fr_fr_1660",
+   "lang": "fr",
+   "seconds": 7.86,
+   "wall_s": 11.294213899993338,
+   "first_token_ms": 6871.5539000113495,
+   "token_count": 136,
+   "raw": "Le romantisme présentait un important élément de déterminisme culturel tiré, d'écrivains tels que Goethe, Fichte et Schlegel.",
+   "text": "Le romantisme présentait un important élément de déterminisme culturel tiré, d'écrivains tels que Goethe, Fichte et Schlegel."
+  },
+  {
+   "id": "fr_fr_1661",
+   "lang": "fr",
+   "seconds": 10.56,
+   "wall_s": 10.574049400049262,
+   "first_token_ms": 6907.033300027251,
+   "token_count": 157,
+   "raw": "Il n’a pas chiffré ces réductions, disant qu’elles seront basées sur la production économique chinoise.",
+   "text": "Il n’a pas chiffré ces réductions, disant qu’elles seront basées sur la production économique chinoise."
+  },
+  {
+   "id": "fr_fr_1662",
+   "lang": "fr",
+   "seconds": 7.14,
+   "wall_s": 11.845383499981835,
+   "first_token_ms": 6921.265899960417,
+   "token_count": 131,
+   "raw": "Les alliages sont essentiellement un mélange de deux métaux au plus, n'oubliez pas que le tableau périodique comporte de nombreux éléments.",
+   "text": "Les alliages sont essentiellement un mélange de deux métaux au plus, n'oubliez pas que le tableau périodique comporte de nombreux éléments."
+  },
+  {
+   "id": "fr_fr_1663",
+   "lang": "fr",
+   "seconds": 11.82,
+   "wall_s": 14.96689109998988,
+   "first_token_ms": 9029.371999960858,
+   "token_count": 187,
+   "raw": "Vallée de Cautchumo, la destination d'excellence pour l'escalade au Chili connue comme le Yosemite d'Amérique du Sud avec de nombreuses grandes parois et falaises granitiques différentes.",
+   "text": "Vallée de Cautchumo, la destination d'excellence pour l'escalade au Chili connue comme le Yosemite d'Amérique du Sud avec de nombreuses grandes parois et falaises granitiques différentes."
+  },
+  {
+   "id": "fr_fr_1664",
+   "lang": "fr",
+   "seconds": 7.8,
+   "wall_s": 10.67968890001066,
+   "first_token_ms": 6892.18989998335,
+   "token_count": 128,
+   "raw": "Mélanger les deux poudres sèche ensemble, puis, avec les mains propres et humides, presser les en boules.",
+   "text": "Mélanger les deux poudres sèche ensemble, puis, avec les mains propres et humides, presser les en boules."
+  },
+  {
+   "id": "fr_fr_1665",
+   "lang": "fr",
+   "seconds": 16.38,
+   "wall_s": 15.852926400024444,
+   "first_token_ms": 9027.242200041655,
+   "token_count": 239,
+   "raw": "D'après la fuite, le document portera sur le différend à la frontière que la Palestine revendique sur la base des frontières existantes avant la guerre du Moyen-Orient de mille neuf cent soixante-sept.",
+   "text": "D'après la fuite, le document portera sur le différend à la frontière que la Palestine revendique sur la base des frontières existantes avant la guerre du Moyen-Orient de mille neuf cent soixante-sept."
+  },
+  {
+   "id": "fr_fr_1666",
+   "lang": "fr",
+   "seconds": 11.64,
+   "wall_s": 12.979980500007514,
+   "first_token_ms": 9088.786599982996,
+   "token_count": 168,
+   "raw": "Vous pouvez également avoir recours au conseil d’autre gouvernement que le vôtre, mais leurs conseils sont adaptés à leurs citoyens.",
+   "text": "Vous pouvez également avoir recours au conseil d’autre gouvernement que le vôtre, mais leurs conseils sont adaptés à leurs citoyens."
+  },
+  {
+   "id": "fr_fr_1667",
+   "lang": "fr",
+   "seconds": 14.88,
+   "wall_s": 16.41450190002797,
+   "first_token_ms": 9079.568099987227,
+   "token_count": 228,
+   "raw": "De manière générale, deux comportements peuvent émerger lorsqu'un manager devient le chef d'anciens collègues, d'une des extrémités du spectre étant d'essayer de rester le bouc épinois ou la bonne copine.",
+   "text": "De manière générale, deux comportements peuvent émerger lorsqu'un manager devient le chef d'anciens collègues, d'une des extrémités du spectre étant d'essayer de rester le bouc épinois ou la bonne copine."
+  },
+  {
+   "id": "fr_fr_1668",
+   "lang": "fr",
+   "seconds": 7.62,
+   "wall_s": 11.917075100005604,
+   "first_token_ms": 6864.847999997437,
+   "token_count": 138,
+   "raw": "Il peut être avantageux de se procurer une wildcard qui donne accès à un certain parc d'Afrique du Sud ainsi qu'à tous les parcs nationaux sud-africains.",
+   "text": "Il peut être avantageux de se procurer une wildcard qui donne accès à un certain parc d'Afrique du Sud ainsi qu'à tous les parcs nationaux sud-africains."
+  },
+  {
+   "id": "fr_fr_1669",
+   "lang": "fr",
+   "seconds": 9.6,
+   "wall_s": 12.064462799986359,
+   "first_token_ms": 6886.207700008526,
+   "token_count": 157,
+   "raw": "Chandra Sekhar Solanki, commissaire de police, déclarait que les personnes accusées avaient le visage dissimulé lorsqu'elles ont comparu devant le tribunal.",
+   "text": "Chandra Sekhar Solanki, commissaire de police, déclarait que les personnes accusées avaient le visage dissimulé lorsqu'elles ont comparu devant le tribunal."
+  },
+  {
+   "id": "fr_fr_1670",
+   "lang": "fr",
+   "seconds": 21.78,
+   "wall_s": 21.340916000015568,
+   "first_token_ms": 9033.162600011565,
+   "token_count": 336,
+   "raw": "Leur comportement thermique n'est pas aussi stable que celui des grandes grottes de la planète qui maintiennent une température constante mais ils se ressemblent en ce qui sont des trous profonds dans la terre selon Glenn Cushing, membre de l'équipage de l'USGS, centre américain d'études géologiques et du personnel de l'Université d'Arizona du Nord situé à Flagstaff en Arizona.",
+   "text": "Leur comportement thermique n'est pas aussi stable que celui des grandes grottes de la planète qui maintiennent une température constante mais ils se ressemblent en ce qui sont des trous profonds dans la terre selon Glenn Cushing, membre de l'équipage de l'USGS, centre américain d'études géologiques et du personnel de l'Université d'Arizona du Nord situé à Flagstaff en Arizona."
+  },
+  {
+   "id": "fr_fr_1671",
+   "lang": "fr",
+   "seconds": 12.9,
+   "wall_s": 16.985653100011405,
+   "first_token_ms": 9019.01230000658,
+   "token_count": 212,
+   "raw": "Le Congrès a lancé le financement de l'initiative contre la pornographie au cours de l'exercice deux mille cinq, tout en précisant que le FBI s'apprêtait à effectuer dix agents à la lutte contre la pornographie adulte.",
+   "text": "Le Congrès a lancé le financement de l'initiative contre la pornographie au cours de l'exercice deux mille cinq, tout en précisant que le FBI s'apprêtait à effectuer dix agents à la lutte contre la pornographie adulte."
+  },
+  {
+   "id": "fr_fr_1672",
+   "lang": "fr",
+   "seconds": 7.74,
+   "wall_s": 11.853412299999036,
+   "first_token_ms": 6929.415600025095,
+   "token_count": 137,
+   "raw": "Éviter de ne pas laisser le tissu surchauffer, ce qui peut causer son rétrécissement ou, dans les cas extrêmes, le brûler.",
+   "text": "Éviter de ne pas laisser le tissu surchauffer, ce qui peut causer son rétrécissement ou, dans les cas extrêmes, le brûler."
+  },
+  {
+   "id": "fr_fr_1673",
+   "lang": "fr",
+   "seconds": 12.36,
+   "wall_s": 15.280353499983903,
+   "first_token_ms": 9043.384900025558,
+   "token_count": 195,
+   "raw": "Pendant la guerre révolutionnaire, les treize États ont d'abord formé un gouvernement central faible, le congrès étant sa seule composante, en vertu des articles de la confédération.",
+   "text": "Pendant la guerre révolutionnaire, les treize États ont d'abord formé un gouvernement central faible, le congrès étant sa seule composante, en vertu des articles de la confédération."
+  },
+  {
+   "id": "fr_fr_1674",
+   "lang": "fr",
+   "seconds": 7.5,
+   "wall_s": 10.779073600017,
+   "first_token_ms": 6847.412800008897,
+   "token_count": 126,
+   "raw": "Dans certaines localités, il suffit de faire bouillir l'eau pendant une minute, en d'autres, il faut le faire pendant plusieurs minutes.",
+   "text": "Dans certaines localités, il suffit de faire bouillir l'eau pendant une minute, en d'autres, il faut le faire pendant plusieurs minutes."
+  },
+  {
+   "id": "fr_fr_1675",
+   "lang": "fr",
+   "seconds": 7.32,
+   "wall_s": 10.512877899978776,
+   "first_token_ms": 6824.577799998224,
+   "token_count": 124,
+   "raw": "Tous les noms suivis du mot si qui signifie vous, commencent toujours par une majuscule même au milieu d'une phrase.",
+   "text": "Tous les noms suivis du mot si qui signifie vous, commencent toujours par une majuscule même au milieu d'une phrase."
+  },
+  {
+   "id": "fr_fr_1676",
+   "lang": "fr",
+   "seconds": 11.04,
+   "wall_s": 13.088524700026028,
+   "first_token_ms": 9055.990100023337,
+   "token_count": 163,
+   "raw": "Comme pour tous les parcs nationaux sud-africains, il existe des droits d'entrée et de conservation quotidiens pour le parc.",
+   "text": "Comme pour tous les parcs nationaux sud-africains, il existe des droits d'entrée et de conservation quotidiens pour le parc."
+  },
+  {
+   "id": "fr_fr_1677",
+   "lang": "fr",
+   "seconds": 6.6,
+   "wall_s": 10.94607789994916,
+   "first_token_ms": 6890.4714999953285,
+   "token_count": 118,
+   "raw": "Aujourd'hui, les seuls insectes qui ne peuvent pas replier leurs ailes sont les mouches, dragons et les éphémères.",
+   "text": "Aujourd'hui, les seuls insectes qui ne peuvent pas replier leurs ailes sont les mouches, dragons et les éphémères."
+  },
+  {
+   "id": "fr_fr_1679",
+   "lang": "fr",
+   "seconds": 4.44,
+   "wall_s": 7.721313800022472,
+   "first_token_ms": 5686.884899972938,
+   "token_count": 81,
+   "raw": "Le groupe Aerosmith a annulé les derniers concerts de sa tournée.",
+   "text": "Le groupe Aerosmith a annulé les derniers concerts de sa tournée."
+  },
+  {
+   "id": "fr_fr_1680",
+   "lang": "fr",
+   "seconds": 8.52,
+   "wall_s": 12.520467199967243,
+   "first_token_ms": 6936.777799972333,
+   "token_count": 151,
+   "raw": "Athlète équilibré, le tigre peut grimper mais parfois difficilement, nager, sauter de grande distance et tracter avec cinq fois la force d'un humain puissant.",
+   "text": "Athlète équilibré, le tigre peut grimper mais parfois difficilement, nager, sauter de grande distance et tracter avec cinq fois la force d'un humain puissant."
+  },
+  {
+   "id": "fr_fr_1682",
+   "lang": "fr",
+   "seconds": 13.8,
+   "wall_s": 16.273320899985265,
+   "first_token_ms": 9045.852999959607,
+   "token_count": 215,
+   "raw": "Bien que personne ne sache vraiment qui la rédige, on sait qu'à un stade précoce de son existence, le grand parchemin qui mesure environ vingt-neuf pouces trois quarts sur vingt-quatre pouces était entreposé roulé",
+   "text": "Bien que personne ne sache vraiment qui la rédige, on sait qu'à un stade précoce de son existence, le grand parchemin qui mesure environ vingt-neuf pouces trois quarts sur vingt-quatre pouces était entreposé roulé"
+  },
+  {
+   "id": "fr_fr_1683",
+   "lang": "fr",
+   "seconds": 11.46,
+   "wall_s": 16.30211709998548,
+   "first_token_ms": 9096.678800007794,
+   "token_count": 194,
+   "raw": "Il y a encore beaucoup de femmes et d'hommes en vie qui ont survécu à leur séjour ici et beaucoup d'autres qui ont revu leurs proches assassinés ou tués par le travail forcé, juifs ou non juifs indifféremment.",
+   "text": "Il y a encore beaucoup de femmes et d'hommes en vie qui ont survécu à leur séjour ici et beaucoup d'autres qui ont revu leurs proches assassinés ou tués par le travail forcé, juifs ou non juifs indifféremment."
+  },
+  {
+   "id": "fr_fr_1684",
+   "lang": "fr",
+   "seconds": 10.8,
+   "wall_s": 11.206115500011947,
+   "first_token_ms": 6911.319700011518,
+   "token_count": 162,
+   "raw": "Apia est la capitale des Samoa, la ville se trouve sur l'île d'Upolu et compte un peu moins de quarante mille habitants.",
+   "text": "Apia est la capitale des Samoa, la ville se trouve sur l'île d'Upolu et compte un peu moins de quarante mille habitants."
+  },
+  {
+   "id": "fr_fr_1685",
+   "lang": "fr",
+   "seconds": 8.1,
+   "wall_s": 12.596605200029444,
+   "first_token_ms": 6907.322100014426,
+   "token_count": 146,
+   "raw": "Par exemple, le format de photographie le plus courant du monde est le 35mm, c'était le format de pellicule le plus répandu à la fin de l'ère des films analogiques.",
+   "text": "Par exemple, le format de photographie le plus courant du monde est le 35mm, c'était le format de pellicule le plus répandu à la fin de l'ère des films analogiques."
+  },
+  {
+   "id": "fr_fr_1686",
+   "lang": "fr",
+   "seconds": 8.1,
+   "wall_s": 11.858062000013888,
+   "first_token_ms": 6914.47189997416,
+   "token_count": 140,
+   "raw": "Par conséquent, le processus d’une organisation travaillant ensemble pour surmonter un obstacle peut conduire à un nouveau processus innovant pour répondre aux besoins du client.",
+   "text": "Par conséquent, le processus d’une organisation travaillant ensemble pour surmonter un obstacle peut conduire à un nouveau processus innovant pour répondre aux besoins du client."
+  },
+  {
+   "id": "de_de_1660",
+   "lang": "de",
+   "seconds": 10.38,
+   "wall_s": 11.462314000003971,
+   "first_token_ms": 6912.950299971271,
+   "token_count": 161,
+   "raw": "Die Romantik hatte ein starkes kulturell deterministisches Element, das sich aus Schriftstellern wie Goethe, Fichte und Schlegel schöpfte.",
+   "text": "Die Romantik hatte ein starkes kulturell deterministisches Element, das sich aus Schriftstellern wie Goethe, Fichte und Schlegel schöpfte."
+  },
+  {
+   "id": "de_de_1661",
+   "lang": "de",
+   "seconds": 6.66,
+   "wall_s": 11.040873299993109,
+   "first_token_ms": 6862.661799998023,
+   "token_count": 122,
+   "raw": "Er nannte keine Zahl für die Kürzungen, sondern sagte, sie würden auf der Grundlage der Wirtschaftsleistung Chinas vorgenommen.",
+   "text": "Er nannte keine Zahl für die Kürzungen, sondern sagte, sie würden auf der Grundlage der Wirtschaftsleistung Chinas vorgenommen."
+  },
+  {
+   "id": "de_de_1662",
+   "lang": "de",
+   "seconds": 23.46,
+   "wall_s": 13.291373799962457,
+   "first_token_ms": 9131.227799982298,
+   "token_count": 290,
+   "raw": "Legierungen sind im Grunde eine Mischung aus zwei oder mehr Metallen. Vergessen Sie nicht, dass es viele Elemente im Periodensystem gibt.",
+   "text": "Legierungen sind im Grunde eine Mischung aus zwei oder mehr Metallen. Vergessen Sie nicht, dass es viele Elemente im Periodensystem gibt."
+  },
+  {
+   "id": "de_de_1663",
+   "lang": "de",
+   "seconds": 9.78,
+   "wall_s": 12.549319000041578,
+   "first_token_ms": 6866.028000018559,
+   "token_count": 164,
+   "raw": "Das Cochamo-Tal Chiles wichtigstes Kletterziel, bekannt als der \"Josephite-Nationalpark von Südamerika\" mit einer Vielzahl von großen Granitwänden und Klippen.",
+   "text": "Das Cochamo-Tal Chiles wichtigstes Kletterziel, bekannt als der \"Josephite-Nationalpark von Südamerika\" mit einer Vielzahl von großen Granitwänden und Klippen."
+  },
+  {
+   "id": "de_de_1664",
+   "lang": "de",
+   "seconds": 8.7,
+   "wall_s": 10.522183299995959,
+   "first_token_ms": 6857.562099990901,
+   "token_count": 136,
+   "raw": "Mischen Sie die zwei Trockenpulver zusammen und formen Sie dann mit sauberen, nassen Händen zu einem Ball.",
+   "text": "Mischen Sie die zwei Trockenpulver zusammen und formen Sie dann mit sauberen, nassen Händen zu einem Ball."
+  },
+  {
+   "id": "de_de_1665",
+   "lang": "de",
+   "seconds": 10.68,
+   "wall_s": 14.743657099956181,
+   "first_token_ms": 6915.697099990211,
+   "token_count": 190,
+   "raw": "Dem Leak zufolge bezieht sich das Dokument auf den Grenzstreit, in dem die Palästinenser ein Zurücksetzen der Grenzen in den Zustand vor dem Sechstagekrieg von neunzehnhundertsiebenundsechzig fordern.",
+   "text": "Dem Leak zufolge bezieht sich das Dokument auf den Grenzstreit, in dem die Palästinenser ein Zurücksetzen der Grenzen in den Zustand vor dem Sechstagekrieg von neunzehnhundertsiebenundsechzig fordern."
+  },
+  {
+   "id": "de_de_1666",
+   "lang": "de",
+   "seconds": 17.76,
+   "wall_s": 13.985269500000868,
+   "first_token_ms": 9063.124900043476,
+   "token_count": 239,
+   "raw": "Sie können auch die Ratschläge anderer Regierungen als der Iren konsultieren, deren Hinweise sind jedoch auf ihre eigenen Stadtbürger zugeschnitten.",
+   "text": "Sie können auch die Ratschläge anderer Regierungen als der Iren konsultieren, deren Hinweise sind jedoch auf ihre eigenen Stadtbürger zugeschnitten."
+  },
+  {
+   "id": "de_de_1667",
+   "lang": "de",
+   "seconds": 27.66,
+   "wall_s": 17.458451999991667,
+   "first_token_ms": 10270.142199995462,
+   "token_count": 356,
+   "raw": "Im Allgemeinen können sich zwei Verhaltensweisen abzeichnen, wenn Manager beginnen, ihre ehemaligen Kollegen zu leiten. Das eine Ende des Spektrums ist der Versuch, einer der Jungens oder eines der Mädels zu bleiben.",
+   "text": "Im Allgemeinen können sich zwei Verhaltensweisen abzeichnen, wenn Manager beginnen, ihre ehemaligen Kollegen zu leiten. Das eine Ende des Spektrums ist der Versuch, einer der Jungens oder eines der Mädels zu bleiben."
+  },
+  {
+   "id": "de_de_1668",
+   "lang": "de",
+   "seconds": 14.7,
+   "wall_s": 14.74766880000243,
+   "first_token_ms": 9072.510900034104,
+   "token_count": 212,
+   "raw": "Es kann sich auch lohnen eine Wildkatze zu kaufen, die Zutritt entweder zu ausgewählten Parks in Südafrika oder zu allen südafrikanischen Nationalparks gewährt.",
+   "text": "Es kann sich auch lohnen eine Wildkatze zu kaufen, die Zutritt entweder zu ausgewählten Parks in Südafrika oder zu allen südafrikanischen Nationalparks gewährt."
+  },
+  {
+   "id": "de_de_1669",
+   "lang": "de",
+   "seconds": 12.78,
+   "wall_s": 14.12420000002021,
+   "first_token_ms": 9082.167700049467,
+   "token_count": 189,
+   "raw": "Die Polizeipräsidentin Chandra Shukhar Solanki gab an, die Angeklagten seien mit bedeckten Gesichtern vor Gericht erschienen.",
+   "text": "Die Polizeipräsidentin Chandra Shukhar Solanki gab an, die Angeklagten seien mit bedeckten Gesichtern vor Gericht erschienen."
+  },
+  {
+   "id": "de_de_1671",
+   "lang": "de",
+   "seconds": 28.74,
+   "wall_s": 16.742159400018863,
+   "first_token_ms": 10401.732600003015,
+   "token_count": 358,
+   "raw": "Der Kongress begann im August 2005 mit der Finanzierung der Anti-Obzönitätsinitiative und legte fest, dass das FBI zehn Agenten für die erwachsenenpornografie einsetzen muss.",
+   "text": "Der Kongress begann im August 2005 mit der Finanzierung der Anti-Obzönitätsinitiative und legte fest, dass das FBI zehn Agenten für die erwachsenenpornografie einsetzen muss."
+  },
+  {
+   "id": "de_de_1672",
+   "lang": "de",
+   "seconds": 10.5,
+   "wall_s": 11.773927800008096,
+   "first_token_ms": 6957.7773999772035,
+   "token_count": 163,
+   "raw": "Geben Sie acht, dass der Stoff nicht zu heiß wird, das kann ihn schrumpfen lassen oder in extremen Fällen zu Verbrennungen führen.",
+   "text": "Geben Sie acht, dass der Stoff nicht zu heiß wird, das kann ihn schrumpfen lassen oder in extremen Fällen zu Verbrennungen führen."
+  },
+  {
+   "id": "de_de_1673",
+   "lang": "de",
+   "seconds": 12.6,
+   "wall_s": 15.089842099987436,
+   "first_token_ms": 9147.90510002058,
+   "token_count": 193,
+   "raw": "Während der Revolutionskämpfe fanden die dreizehn Bundesstaaten auf Basis des Bundesvertrages zuerst eine schwache zentrale Regierung, die nur aus dem Kongreß bestand.",
+   "text": "Während der Revolutionskämpfe fanden die dreizehn Bundesstaaten auf Basis des Bundesvertrages zuerst eine schwache zentrale Regierung, die nur aus dem Kongreß bestand."
+  },
+  {
+   "id": "de_de_1674",
+   "lang": "de",
+   "seconds": 12.06,
+   "wall_s": 12.346909899963066,
+   "first_token_ms": 9066.450599988457,
+   "token_count": 169,
+   "raw": "In einigen Gebieten genügt das Wasser eine Minute lang abzukochen, in anderen müssen es mehrere Minuten sein.",
+   "text": "In einigen Gebieten genügt das Wasser eine Minute lang abzukochen, in anderen müssen es mehrere Minuten sein."
+  },
+  {
+   "id": "de_de_1675",
+   "lang": "de",
+   "seconds": 15.84,
+   "wall_s": 12.800006700039376,
+   "first_token_ms": 9116.340800013859,
+   "token_count": 208,
+   "raw": "Alle Substantive beginnen neben dem Wort sie für you immer mit einem Großbuchstaben, auch in der Mitte eines Satzes.",
+   "text": "Alle Substantive beginnen neben dem Wort sie für you immer mit einem Großbuchstaben, auch in der Mitte eines Satzes."
+  },
+  {
+   "id": "de_de_1676",
+   "lang": "de",
+   "seconds": 6.06,
+   "wall_s": 10.618793400004506,
+   "first_token_ms": 6943.472899962217,
+   "token_count": 112,
+   "raw": "Wie alle südafrikanischen Nationalparks erhebt der Park tägliche Schutz- und Eintrittsgebühren.",
+   "text": "Wie alle südafrikanischen Nationalparks erhebt der Park tägliche Schutz- und Eintrittsgebühren."
+  },
+  {
+   "id": "de_de_1677",
+   "lang": "de",
+   "seconds": 5.4,
+   "wall_s": 10.64426229998935,
+   "first_token_ms": 6938.582800037693,
+   "token_count": 103,
+   "raw": "Heute sind Libellen und Eintragsfliegen die einzigen Insekten, die ihre Flügel nicht zurückklappen können.",
+   "text": "Heute sind Libellen und Eintragsfliegen die einzigen Insekten, die ihre Flügel nicht zurückklappen können."
+  },
+  {
+   "id": "de_de_1678",
+   "lang": "de",
+   "seconds": 16.02,
+   "wall_s": 15.662620699964464,
+   "first_token_ms": 9056.597499991767,
+   "token_count": 234,
+   "raw": "In seinem Artikel \"Die Rede des Präsidenten\" zeigte Oliver Sachs auf, wie Leute, die wegen eines Hirnschadens keine Sprache mehr verstehen können, trotzdem die Ehrlichkeit von Menschen richtig einschätzen können.",
+   "text": "In seinem Artikel \"Die Rede des Präsidenten\" zeigte Oliver Sachs auf, wie Leute, die wegen eines Hirnschadens keine Sprache mehr verstehen können, trotzdem die Ehrlichkeit von Menschen richtig einschätzen können."
+  },
+  {
+   "id": "de_de_1679",
+   "lang": "de",
+   "seconds": 6.66,
+   "wall_s": 9.256000099994708,
+   "first_token_ms": 6959.356800012756,
+   "token_count": 107,
+   "raw": "Aerosmith haben die noch ausstehenden Konzerte ihrer Tour abgesagt.",
+   "text": "Aerosmith haben die noch ausstehenden Konzerte ihrer Tour abgesagt."
+  },
+  {
+   "id": "de_de_1680",
+   "lang": "de",
+   "seconds": 9.9,
+   "wall_s": 12.390919699973892,
+   "first_token_ms": 6937.655899964739,
+   "token_count": 162,
+   "raw": "Als vielseitiger Athlet kann der Tiger klettern, wenn auch nicht besonders gut, schwimmen, große Strecken springen und mit der fünffachen Kraft eines starken Menschen ziehen.",
+   "text": "Als vielseitiger Athlet kann der Tiger klettern, wenn auch nicht besonders gut, schwimmen, große Strecken springen und mit der fünffachen Kraft eines starken Menschen ziehen."
+  },
+  {
+   "id": "de_de_1682",
+   "lang": "de",
+   "seconds": 19.38,
+   "wall_s": 18.278202200017404,
+   "first_token_ms": 8952.332600019872,
+   "token_count": 288,
+   "raw": "Zwar weiß niemand mit Sicherheit, wer es geschrieben hat, es ist allerdings bekannt, daß das große Pergamentdokument, welches neunundzwanzig dreiviertel Zoll mal vierundzwanzig ein halb Zoll ist, zu Beginn seines Lebens zur Aufbewahrung zusammengerollt wurde.",
+   "text": "Zwar weiß niemand mit Sicherheit, wer es geschrieben hat, es ist allerdings bekannt, daß das große Pergamentdokument, welches neunundzwanzig dreiviertel Zoll mal vierundzwanzig ein halb Zoll ist, zu Beginn seines Lebens zur Aufbewahrung zusammengerollt wurde."
+  },
+  {
+   "id": "de_de_1683",
+   "lang": "de",
+   "seconds": 10.68,
+   "wall_s": 13.38687819999177,
+   "first_token_ms": 6946.431099961046,
+   "token_count": 178,
+   "raw": "Es leben noch viele Männer und Frauen, die ihre Zeit hier überlebt haben und viele weitere mit Angehörigen, die dort ermordet wurden oder sich zu Tode arbeiteten, Juden und Nichtjuden gleichermaßen.",
+   "text": "Es leben noch viele Männer und Frauen, die ihre Zeit hier überlebt haben und viele weitere mit Angehörigen, die dort ermordet wurden oder sich zu Tode arbeiteten, Juden und Nichtjuden gleichermaßen."
+  },
+  {
+   "id": "de_de_1684",
+   "lang": "de",
+   "seconds": 12.36,
+   "wall_s": 13.648084499989636,
+   "first_token_ms": 9129.3791999924,
+   "token_count": 181,
+   "raw": "Apia ist die auf der Insel Upolu liegende Hauptstadt von Samoa und weist eine Einwohnerzahl von knapp unter vierzigtausend auf.",
+   "text": "Apia ist die auf der Insel Upolu liegende Hauptstadt von Samoa und weist eine Einwohnerzahl von knapp unter vierzigtausend auf."
+  },
+  {
+   "id": "de_de_1685",
+   "lang": "de",
+   "seconds": 22.08,
+   "wall_s": 14.389197700016666,
+   "first_token_ms": 9032.171300030313,
+   "token_count": 284,
+   "raw": "Zum Beispiel ist das weltweit am weitesten verbreitete Standbildformat 35mm, was der vorherrschenden Filmgröße am Ende der Analogfilmära entspricht.",
+   "text": "Zum Beispiel ist das weltweit am weitesten verbreitete Standbildformat 35mm, was der vorherrschenden Filmgröße am Ende der Analogfilmära entspricht."
+  },
+  {
+   "id": "de_de_1686",
+   "lang": "de",
+   "seconds": 9.48,
+   "wall_s": 12.082687499991152,
+   "first_token_ms": 6882.172299956437,
+   "token_count": 157,
+   "raw": "Im Ergebnis kann die gemeinschaftliche Arbeit einer Organisation an der Überwindung eines Hindernis zu einem neuen innovativen Verfahren führen, auf das Kundenbedürfnis einzugehen.",
+   "text": "Im Ergebnis kann die gemeinschaftliche Arbeit einer Organisation an der Überwindung eines Hindernis zu einem neuen innovativen Verfahren führen, auf das Kundenbedürfnis einzugehen."
+  },
+  {
+   "id": "es_419_1660",
+   "lang": "es",
+   "seconds": 10.86,
+   "wall_s": 12.88043810002273,
+   "first_token_ms": 9097.899999993388,
+   "token_count": 161,
+   "raw": "El elemento del determinismo cultural se encontraba muy presente en el romanticismo, según estudiosos como Goethe, Fichte y Schlegel.",
+   "text": "El elemento del determinismo cultural se encontraba muy presente en el romanticismo, según estudiosos como Goethe, Fichte y Schlegel."
+  },
+  {
+   "id": "es_419_1661",
+   "lang": "es",
+   "seconds": 7.8,
+   "wall_s": 10.538234999985434,
+   "first_token_ms": 6988.410899997689,
+   "token_count": 126,
+   "raw": "No mencionó una cifra para los recortes y manifestó que se harán en base a la producción económica de China.",
+   "text": "No mencionó una cifra para los recortes y manifestó que se harán en base a la producción económica de China."
+  },
+  {
+   "id": "es_419_1662",
+   "lang": "es",
+   "seconds": 8.82,
+   "wall_s": 10.374086900032125,
+   "first_token_ms": 6828.493500011973,
+   "token_count": 138,
+   "raw": "Las alaciones son básicamente una combinación de dos o más metales, recuerde que la tabla periódica tiene muchos elementos.",
+   "text": "Las alaciones son básicamente una combinación de dos o más metales, recuerde que la tabla periódica tiene muchos elementos."
+  },
+  {
+   "id": "es_419_1663",
+   "lang": "es",
+   "seconds": 15.42,
+   "wall_s": 14.718387199973222,
+   "first_token_ms": 9028.741999994963,
+   "token_count": 221,
+   "raw": "El valle de Cochemó es el destino para escalar más popular de Chile y es conocido como el Yosemite de Sudamérica, con variedad de extensos muros y rícos de granito.",
+   "text": "El valle de Cochemó es el destino para escalar más popular de Chile y es conocido como el Yosemite de Sudamérica, con variedad de extensos muros y rícos de granito."
+  },
+  {
+   "id": "es_419_1664",
+   "lang": "es",
+   "seconds": 10.02,
+   "wall_s": 11.57551259995671,
+   "first_token_ms": 6904.8890999984,
+   "token_count": 159,
+   "raw": "Agite ambos polvos secos juntos y después de hacerlo con las manos higienizadas y húmedas, exprímalos para formar una bola.",
+   "text": "Agite ambos polvos secos juntos y después de hacerlo con las manos higienizadas y húmedas, exprímalos para formar una bola."
+  },
+  {
+   "id": "es_419_1665",
+   "lang": "es",
+   "seconds": 17.1,
+   "wall_s": 15.677773999981582,
+   "first_token_ms": 9127.009899995755,
+   "token_count": 243,
+   "raw": "Según la información que se filtró, el documento tratará sobre el conflicto fronterizo que Palestina pretende resolver basándose en los límites vigentes en forma previa a la guerra del Medio Oriente de 1967.",
+   "text": "Según la información que se filtró, el documento tratará sobre el conflicto fronterizo que Palestina pretende resolver basándose en los límites vigentes en forma previa a la guerra del Medio Oriente de 1967."
+  },
+  {
+   "id": "es_419_1666",
+   "lang": "es",
+   "seconds": 10.14,
+   "wall_s": 10.174610799993388,
+   "first_token_ms": 6890.801100002136,
+   "token_count": 148,
+   "raw": "Es posible que quiera consultar las recomendaciones de otros gobiernos, pero están pensadas para sus propios ciudadanos.",
+   "text": "Es posible que quiera consultar las recomendaciones de otros gobiernos, pero están pensadas para sus propios ciudadanos."
+  },
+  {
+   "id": "es_419_1667",
+   "lang": "es",
+   "seconds": 18.3,
+   "wall_s": 15.505684899981134,
+   "first_token_ms": 9071.992499986663,
+   "token_count": 254,
+   "raw": "En general pueden darse dos tipos de comportamiento cuando los gerentes comienzan a liberar a sus antiguos compañeros. De un lado del espectro está el intento de continuar siendo uno de los muchachos o muchachas.",
+   "text": "En general pueden darse dos tipos de comportamiento cuando los gerentes comienzan a liberar a sus antiguos compañeros. De un lado del espectro está el intento de continuar siendo uno de los muchachos o muchachas."
+  },
+  {
+   "id": "es_419_1668",
+   "lang": "es",
+   "seconds": 12.6,
+   "wall_s": 13.776105800003279,
+   "first_token_ms": 9075.69120003609,
+   "token_count": 183,
+   "raw": "También puede ser conveniente comprar una \"wild card\" que permite la entrada a selecciones de parques en Sudáfrica o a todos los parques nacionales del país.",
+   "text": "También puede ser conveniente comprar una \"wild card\" que permite la entrada a selecciones de parques en Sudáfrica o a todos los parques nacionales del país."
+  },
+  {
+   "id": "es_419_1669",
+   "lang": "es",
+   "seconds": 11.22,
+   "wall_s": 14.167054200021084,
+   "first_token_ms": 9118.245500023477,
+   "token_count": 174,
+   "raw": "Según manifestara el superintendente de la policía, Chandrashekhar Solanki, los acusados se presentaron ante el tribunal con sus rostros cubiertos.",
+   "text": "Según manifestara el superintendente de la policía, Chandrashekhar Solanki, los acusados se presentaron ante el tribunal con sus rostros cubiertos."
+  },
+  {
+   "id": "es_419_1670",
+   "lang": "es",
+   "seconds": 29.46,
+   "wall_s": 20.831713600025978,
+   "first_token_ms": 10302.311600011308,
+   "token_count": 400,
+   "raw": "Si bien su comportamiento térmico no es tan regular como las grandes cuevas en nuestro planeta que suelen sostener una temperatura bastante estables, es consistente con estas profundas cavidades en el suelo sostuvo Glenn Cushing del equipo de arqueología del Servicio Geológico estadounidense (USGS) y de la Universidad del Norte de Arizona en Flagstaff, Arizona.",
+   "text": "Si bien su comportamiento térmico no es tan regular como las grandes cuevas en nuestro planeta que suelen sostener una temperatura bastante estables, es consistente con estas profundas cavidades en el suelo sostuvo Glenn Cushing del equipo de arqueología del Servicio Geológico estadounidense (USGS) y de la Universidad del Norte de Arizona en Flagstaff, Arizona."
+  },
+  {
+   "id": "es_419_1671",
+   "lang": "es",
+   "seconds": 13.62,
+   "wall_s": 15.54515530000208,
+   "first_token_ms": 9060.320599994157,
+   "token_count": 209,
+   "raw": "En el año fiscal dos mil cinco el Congreso inició la financiación de la campaña contra la obscenidad y dio la instrucción de que el FBI debe asignar diez agentes a ocuparse de la pornografía para adultos.",
+   "text": "En el año fiscal dos mil cinco el Congreso inició la financiación de la campaña contra la obscenidad y dio la instrucción de que el FBI debe asignar diez agentes a ocuparse de la pornografía para adultos."
+  },
+  {
+   "id": "es_419_1672",
+   "lang": "es",
+   "seconds": 7.62,
+   "wall_s": 10.20730690000346,
+   "first_token_ms": 6907.578600046691,
+   "token_count": 124,
+   "raw": "Procurar no dejar que la tela se caliente demasiado, ya que podría encogerse o en casos extremos quemarse.",
+   "text": "Procurar no dejar que la tela se caliente demasiado, ya que podría encogerse o en casos extremos quemarse."
+  },
+  {
+   "id": "es_419_1673",
+   "lang": "es",
+   "seconds": 14.22,
+   "wall_s": 14.10014360002242,
+   "first_token_ms": 9163.491400016937,
+   "token_count": 203,
+   "raw": "Durante la guerra de la revolución los tres Estados formaron en un principio un gobierno central endeble bajo los artículos de la Confederación en el que el Congreso era su único componente.",
+   "text": "Durante la guerra de la revolución los tres Estados formaron en un principio un gobierno central endeble bajo los artículos de la Confederación en el que el Congreso era su único componente."
+  },
+  {
+   "id": "es_419_1674",
+   "lang": "es",
+   "seconds": 9.12,
+   "wall_s": 9.567887799988966,
+   "first_token_ms": 6903.824499982875,
+   "token_count": 134,
+   "raw": "En algunos lugares basta con el biragua durante un minuto, en otros son necesarios varios más.",
+   "text": "En algunos lugares basta con el biragua durante un minuto, en otros son necesarios varios más."
+  },
+  {
+   "id": "es_419_1675",
+   "lang": "es",
+   "seconds": 14.58,
+   "wall_s": 13.704685400007293,
+   "first_token_ms": 9118.773100024555,
+   "token_count": 203,
+   "raw": "todos los sustantivos así como el vocablo si para significar usted llevan siempre su letra inicial mayúscula aunque estén ubicados en el medio de la oración",
+   "text": "todos los sustantivos así como el vocablo si para significar usted llevan siempre su letra inicial mayúscula aunque estén ubicados en el medio de la oración"
+  },
+  {
+   "id": "es_419_1676",
+   "lang": "es",
+   "seconds": 9.12,
+   "wall_s": 10.670082100026775,
+   "first_token_ms": 6860.7822000049055,
+   "token_count": 143,
+   "raw": "Como en todas las reservas naturales de Sudáfrica, existen tarifas diarias para la conservación y de acceso al parque.",
+   "text": "Como en todas las reservas naturales de Sudáfrica, existen tarifas diarias para la conservación y de acceso al parque."
+  },
+  {
+   "id": "es_419_1677",
+   "lang": "es",
+   "seconds": 10.02,
+   "wall_s": 10.785029499966186,
+   "first_token_ms": 6852.924000006169,
+   "token_count": 153,
+   "raw": "Actualmente los anisópteros y los efeñomerópteros son los únicos insectos incapaces de doblar sus alas.",
+   "text": "Actualmente los anisópteros y los efeñomerópteros son los únicos insectos incapaces de doblar sus alas."
+  },
+  {
+   "id": "es_419_1678",
+   "lang": "es",
+   "seconds": 16.56,
+   "wall_s": 15.416141399997286,
+   "first_token_ms": 9075.220400001854,
+   "token_count": 238,
+   "raw": "Oliver Sachs, en su artículo \"El discurso del presidente\", explicó la forma en que aquellos que no pueden comprender el habla a causa de un daño cerebral pueden no obstante evaluar la sinceridad con precisión.",
+   "text": "Oliver Sachs, en su artículo \"El discurso del presidente\", explicó la forma en que aquellos que no pueden comprender el habla a causa de un daño cerebral pueden no obstante evaluar la sinceridad con precisión."
+  },
+  {
+   "id": "es_419_1679",
+   "lang": "es",
+   "seconds": 5.58,
+   "wall_s": 8.800577699963469,
+   "first_token_ms": 6885.712399962358,
+   "token_count": 92,
+   "raw": "Aerosmith canceló los conciertos pendientes de su gira.",
+   "text": "Aerosmith canceló los conciertos pendientes de su gira."
+  },
+  {
+   "id": "es_419_1680",
+   "lang": "es",
+   "seconds": 13.68,
+   "wall_s": 14.463583700009622,
+   "first_token_ms": 9034.08449998824,
+   "token_count": 201,
+   "raw": "Atleta integral. El tigre tiene la habilidad de trepar pero no demasiado bien, nadar, dar extensos saltos y jalar cinco veces más fuerte que una persona robusta.",
+   "text": "Atleta integral. El tigre tiene la habilidad de trepar pero no demasiado bien, nadar, dar extensos saltos y jalar cinco veces más fuerte que una persona robusta."
+  },
+  {
+   "id": "es_419_1681",
+   "lang": "es",
+   "seconds": 12.96,
+   "wall_s": 14.579909500025678,
+   "first_token_ms": 9008.634100027848,
+   "token_count": 196,
+   "raw": "No se trata sin embargo de una experimentación es una prueba que se usa para descartar una o más de las posibles hipótesis haciendo preguntas y observaciones que guían la investigación científica.",
+   "text": "No se trata sin embargo de una experimentación es una prueba que se usa para descartar una o más de las posibles hipótesis haciendo preguntas y observaciones que guían la investigación científica."
+  },
+  {
+   "id": "es_419_1682",
+   "lang": "es",
+   "seconds": 17.82,
+   "wall_s": 17.281417299993336,
+   "first_token_ms": 9055.982399964705,
+   "token_count": 265,
+   "raw": "Aunque se desconoce a ciencia cierta quién lo redactó, se sabe que apenas fue confeccionado el enorme documento de pergamino mide veintinueve tres cuartos pulgadas por veinticuatro o medio pulgadas, fue enrollado para ser guardado.",
+   "text": "Aunque se desconoce a ciencia cierta quién lo redactó, se sabe que apenas fue confeccionado el enorme documento de pergamino mide veintinueve tres cuartos pulgadas por veinticuatro o medio pulgadas, fue enrollado para ser guardado."
+  },
+  {
+   "id": "es_419_1683",
+   "lang": "es",
+   "seconds": 14.34,
+   "wall_s": 16.31561829999555,
+   "first_token_ms": 9120.108000002801,
+   "token_count": 221,
+   "raw": "aún quedan muchos hombres y mujeres con vida que sobrevivieron a su estadía en este lugar y muchos más que tuvieron seres queridos los que asesinaron o trabajaron allí hasta su muerte tanto judíos como no judíos.",
+   "text": "aún quedan muchos hombres y mujeres con vida que sobrevivieron a su estadía en este lugar y muchos más que tuvieron seres queridos los que asesinaron o trabajaron allí hasta su muerte tanto judíos como no judíos."
+  },
+  {
+   "id": "es_419_1684",
+   "lang": "es",
+   "seconds": 9.36,
+   "wall_s": 10.821494099975098,
+   "first_token_ms": 6908.645599964075,
+   "token_count": 147,
+   "raw": "Capital de Samoa, la ciudad de Apia se encuentra en la isla de Opolu y cuenta con un poco menos de cuarenta mil habitantes.",
+   "text": "Capital de Samoa, la ciudad de Apia se encuentra en la isla de Opolu y cuenta con un poco menos de cuarenta mil habitantes."
+  },
+  {
+   "id": "pt_br_1660",
+   "lang": "pt",
+   "seconds": 10.68,
+   "wall_s": 10.319283799966797,
+   "first_token_ms": 6910.020399955101,
+   "token_count": 155,
+   "raw": "O romantismo tinha um grande elemento de determinismo cultural, extraído de escritores como Goethe, Fichte e Schelling.",
+   "text": "O romantismo tinha um grande elemento de determinismo cultural, extraído de escritores como Goethe, Fichte e Schelling."
+  },
+  {
+   "id": "pt_br_1661",
+   "lang": "pt",
+   "seconds": 9.24,
+   "wall_s": 10.676902000035625,
+   "first_token_ms": 6859.110500023235,
+   "token_count": 143,
+   "raw": "Ele não definiu um valor para os cortes, falando que eles serão feitos de acordo com a produção econômica da China.",
+   "text": "Ele não definiu um valor para os cortes, falando que eles serão feitos de acordo com a produção econômica da China."
+  },
+  {
+   "id": "pt_br_1662",
+   "lang": "pt",
+   "seconds": 27.06,
+   "wall_s": 18.13539569999557,
+   "first_token_ms": 10315.718700003345,
+   "token_count": 355,
+   "raw": "Ligas são simplesmente uma mistura de dois ou mais metais não se esqueça de que existem muitos elementos na tabela periódica ligas são simplesmente uma mistura de dois ou mais metais não se esqueça de que existem muitos elementos na tabela periódica",
+   "text": "Ligas são simplesmente uma mistura de dois ou mais metais não se esqueça de que existem muitos elementos na tabela periódica ligas são simplesmente uma mistura de dois ou mais metais não se esqueça de que existem muitos elementos na tabela periódica"
+  },
+  {
+   "id": "pt_br_1663",
+   "lang": "pt",
+   "seconds": 15.72,
+   "wall_s": 14.643836500006728,
+   "first_token_ms": 9091.299400024582,
+   "token_count": 223,
+   "raw": "Sendo o principal destino de escalada do Chile, o vale do Coxamó é conhecido como o yosemite da América do Sul, com uma variedade de grandes paredões e penhascos de granito.",
+   "text": "Sendo o principal destino de escalada do Chile, o vale do Coxamó é conhecido como o yosemite da América do Sul, com uma variedade de grandes paredões e penhascos de granito."
+  },
+  {
+   "id": "pt_br_1664",
+   "lang": "pt",
+   "seconds": 10.92,
+   "wall_s": 11.967378699977417,
+   "first_token_ms": 9064.194699982181,
+   "token_count": 154,
+   "raw": "Misture os dois pós e, com a mão limpa, moldes no formato de uma bola.",
+   "text": "Misture os dois pós e, com a mão limpa, moldes no formato de uma bola."
+  },
+  {
+   "id": "pt_br_1665",
+   "lang": "pt",
+   "seconds": 14.58,
+   "wall_s": 15.215245300030801,
+   "first_token_ms": 8991.411700029857,
+   "token_count": 216,
+   "raw": "O documento de acordo com o vazamento vai se referir à disputa de fronteiras que a Palestina quer com base nas fronteiras antes da guerra dos seis dias em mil novecentos e sessenta e sete.",
+   "text": "O documento de acordo com o vazamento vai se referir à disputa de fronteiras que a Palestina quer com base nas fronteiras antes da guerra dos seis dias em mil novecentos e sessenta e sete."
+  },
+  {
+   "id": "pt_br_1666",
+   "lang": "pt",
+   "seconds": 10.08,
+   "wall_s": 11.566756900050677,
+   "first_token_ms": 6891.118600033224,
+   "token_count": 159,
+   "raw": "Também é recomendável que você consulte outros governos além do seu, mas o aconselhamento deles é feito para os respectivos cidadãos.",
+   "text": "Também é recomendável que você consulte outros governos além do seu, mas o aconselhamento deles é feito para os respectivos cidadãos."
+  },
+  {
+   "id": "pt_br_1667",
+   "lang": "pt",
+   "seconds": 16.92,
+   "wall_s": 15.152487299987115,
+   "first_token_ms": 9102.73139999481,
+   "token_count": 239,
+   "raw": "Em termos gerais, duas condutas podem aflorar conforme gerentes começam a liderar seus antigos colegas de trabalho um lado do espectro tenta se manter como parte do grupo dos caras ou garotas.",
+   "text": "Em termos gerais, duas condutas podem aflorar conforme gerentes começam a liderar seus antigos colegas de trabalho um lado do espectro tenta se manter como parte do grupo dos caras ou garotas."
+  },
+  {
+   "id": "pt_br_1668",
+   "lang": "pt",
+   "seconds": 12.84,
+   "wall_s": 14.107218299992383,
+   "first_token_ms": 9061.971899995115,
+   "token_count": 189,
+   "raw": "pode ser muito útil também adquirir um wild card com ele você pode ter acesso a vários parques da África do Sul ou a todos os parques nacionais sul africanos",
+   "text": "pode ser muito útil também adquirir um wild card com ele você pode ter acesso a vários parques da África do Sul ou a todos os parques nacionais sul africanos"
+  },
+  {
+   "id": "pt_br_1669",
+   "lang": "pt",
+   "seconds": 10.8,
+   "wall_s": 10.786312600015663,
+   "first_token_ms": 6867.866199987475,
+   "token_count": 159,
+   "raw": "O acusado compareceu ao tribunal com rosto coberto, declarou o superintendente da polícia Chandrashekar Solanki.",
+   "text": "O acusado compareceu ao tribunal com rosto coberto, declarou o superintendente da polícia Chandrashekar Solanki."
+  },
+  {
+   "id": "pt_br_1671",
+   "lang": "pt",
+   "seconds": 12.48,
+   "wall_s": 14.152964400011115,
+   "first_token_ms": 9222.094700031448,
+   "token_count": 185,
+   "raw": "o congresso começou a financiar a iniciativa de obscenidade no ano fiscal de dois mil e cinco e especificou que o fbi deve dedicar dez agentes à pornografia adulta",
+   "text": "o congresso começou a financiar a iniciativa de obscenidade no ano fiscal de dois mil e cinco e especificou que o fbi deve dedicar dez agentes à pornografia adulta"
+  },
+  {
+   "id": "pt_br_1672",
+   "lang": "pt",
+   "seconds": 10.86,
+   "wall_s": 13.252469500002917,
+   "first_token_ms": 9080.536199966446,
+   "token_count": 164,
+   "raw": "cuidado para não deixar o tecido esquentar muito o que pode fazê-lo encolher ou em casos mais graves causar queimaduras",
+   "text": "cuidado para não deixar o tecido esquentar muito o que pode fazê-lo encolher ou em casos mais graves causar queimaduras"
+  },
+  {
+   "id": "pt_br_1673",
+   "lang": "pt",
+   "seconds": 15.06,
+   "wall_s": 13.72160609997809,
+   "first_token_ms": 9007.42119998904,
+   "token_count": 210,
+   "raw": "Durante a guerra revolucionária, os três Estados primeiro formaram um governo central fraco, sendo o congresso o seu único componente, conforme os artigos da confederação.",
+   "text": "Durante a guerra revolucionária, os três Estados primeiro formaram um governo central fraco, sendo o congresso o seu único componente, conforme os artigos da confederação."
+  },
+  {
+   "id": "pt_br_1674",
+   "lang": "pt",
+   "seconds": 10.14,
+   "wall_s": 10.11750380002195,
+   "first_token_ms": 6956.387599988375,
+   "token_count": 147,
+   "raw": "Em algumas áreas, ferver a água por um minuto é suficiente e em outras muitos minutos são necessários.",
+   "text": "Em algumas áreas, ferver a água por um minuto é suficiente e em outras muitos minutos são necessários."
+  },
+  {
+   "id": "pt_br_1675",
+   "lang": "pt",
+   "seconds": 12.9,
+   "wall_s": 13.326496199995745,
+   "first_token_ms": 9138.517700019293,
+   "token_count": 182,
+   "raw": "Todos os substantivos, juntamente com a palavra se é para você, sempre iniciam com a letra maiúscula, mesmo no meio de uma frase.",
+   "text": "Todos os substantivos, juntamente com a palavra se é para você, sempre iniciam com a letra maiúscula, mesmo no meio de uma frase."
+  },
+  {
+   "id": "pt_br_1676",
+   "lang": "pt",
+   "seconds": 9.12,
+   "wall_s": 11.166821899998467,
+   "first_token_ms": 7246.028599969577,
+   "token_count": 144,
+   "raw": "Há taxas para a entrada e conservação do parque, assim como acontece com todos os parques nacionais da África do Sul.",
+   "text": "Há taxas para a entrada e conservação do parque, assim como acontece com todos os parques nacionais da África do Sul."
+  },
+  {
+   "id": "pt_br_1677",
+   "lang": "pt",
+   "seconds": 10.2,
+   "wall_s": 10.332095799967647,
+   "first_token_ms": 6918.922399985604,
+   "token_count": 149,
+   "raw": "Hoje os únicos insetos que não podem dobrar suas asas para trás são libélulas e efêmeras.",
+   "text": "Hoje os únicos insetos que não podem dobrar suas asas para trás são libélulas e efêmeras."
+  },
+  {
+   "id": "pt_br_1678",
+   "lang": "pt",
+   "seconds": 18.06,
+   "wall_s": 15.654039899993222,
+   "first_token_ms": 9095.992600021418,
+   "token_count": 255,
+   "raw": "Oliver Sachs, em seu artigo, o discurso do presidente?, indicou como as pessoas que são incapazes de entender a fala por causa de dano cerebral são, apesar disto, capazes de avaliar sinceridade com precisão.",
+   "text": "Oliver Sachs, em seu artigo, o discurso do presidente?, indicou como as pessoas que são incapazes de entender a fala por causa de dano cerebral são, apesar disto, capazes de avaliar sinceridade com precisão."
+  },
+  {
+   "id": "pt_br_1679",
+   "lang": "pt",
+   "seconds": 5.76,
+   "wall_s": 8.714050599955954,
+   "first_token_ms": 6954.898299998604,
+   "token_count": 94,
+   "raw": "O Aerosmith cancelou os shows restantes da sua tourné.",
+   "text": "O Aerosmith cancelou os shows restantes da sua tourné."
+  },
+  {
+   "id": "pt_br_1680",
+   "lang": "pt",
+   "seconds": 14.16,
+   "wall_s": 15.086055999970995,
+   "first_token_ms": 9155.737199995201,
+   "token_count": 211,
+   "raw": "Um atleta bem equilibrado, o tigre pode escalar?, embora não bem? nadar? pular?, grandes distâncias? e puxar com cinco vezes a força de um humano forte.",
+   "text": "Um atleta bem equilibrado, o tigre pode escalar?, embora não bem? nadar? pular?, grandes distâncias? e puxar com cinco vezes a força de um humano forte."
+  },
+  {
+   "id": "pt_br_1681",
+   "lang": "pt",
+   "seconds": 19.14,
+   "wall_s": 15.089763200026937,
+   "first_token_ms": 9152.032100013457,
+   "token_count": 259,
+   "raw": "Não é, de fato, somente experimentação, um experimento é um teste usado para eliminar uma das possíveis hipóteses ou mais fazer perguntas, fazer observações também guia a uma pesquisa científica.",
+   "text": "Não é, de fato, somente experimentação, um experimento é um teste usado para eliminar uma das possíveis hipóteses ou mais fazer perguntas, fazer observações também guia a uma pesquisa científica."
+  },
+  {
+   "id": "pt_br_1682",
+   "lang": "pt",
+   "seconds": 20.28,
+   "wall_s": 17.104605000000447,
+   "first_token_ms": 9147.710499993991,
+   "token_count": 287,
+   "raw": "Embora ninguém saiba ao certo quem a escreveu é sabido que no início de sua existência o grande documento de pergaminho ele mede vinte e nove três quartos polegadas por vinte e quatro meio polegadas foi enrolado para ser armazenado",
+   "text": "Embora ninguém saiba ao certo quem a escreveu é sabido que no início de sua existência o grande documento de pergaminho ele mede vinte e nove três quartos polegadas por vinte e quatro meio polegadas foi enrolado para ser armazenado"
+  },
+  {
+   "id": "pt_br_1683",
+   "lang": "pt",
+   "seconds": 17.1,
+   "wall_s": 15.764029699959792,
+   "first_token_ms": 9033.417199971154,
+   "token_count": 244,
+   "raw": "ainda há muitos homens e mulheres vivos que sobreviveram ao seu período aqui e muitos outros tantos judeus e quanto não judeus cujos entes queridos foram assassinados ou lá trabalharam até a morte.",
+   "text": "ainda há muitos homens e mulheres vivos que sobreviveram ao seu período aqui e muitos outros tantos judeus e quanto não judeus cujos entes queridos foram assassinados ou lá trabalharam até a morte."
+  },
+  {
+   "id": "pt_br_1684",
+   "lang": "pt",
+   "seconds": 13.26,
+   "wall_s": 13.226878500019666,
+   "first_token_ms": 9065.052899997681,
+   "token_count": 188,
+   "raw": "Apia é a capital da Samoa? A cidade fica na ilha de Upolu, que tem uma população de pouco mais de quarenta mil habitantes.",
+   "text": "Apia é a capital da Samoa? A cidade fica na ilha de Upolu, que tem uma população de pouco mais de quarenta mil habitantes."
+  },
+  {
+   "id": "pt_br_1685",
+   "lang": "pt",
+   "seconds": 14.46,
+   "wall_s": 15.385687200003304,
+   "first_token_ms": 9067.812299996149,
+   "token_count": 217,
+   "raw": "Como exemplo, a forma de fotografia de imagem estática mais comum no planeta é a de trinta e cinco milímetros, que era o tamanho de filme que mais tinha em circulação no fim da era do filme analógico.",
+   "text": "Como exemplo, a forma de fotografia de imagem estática mais comum no planeta é a de trinta e cinco milímetros, que era o tamanho de filme que mais tinha em circulação no fim da era do filme analógico."
+  }
+ ],
+ "versions": {
+  "python": "3.12.16",
+  "litert-lm-api": "0.19.1",
+  "openvino": "2026.4.1",
+  "numpy": "2.5.4"
+ },
+ "image_path": "C:\\src\\audiozoo\\python\\cpython-3.12.16-windows-x86_64-none\\python.exe",
+ "load_s": 14.656,
+ "workload": {
+  "set": "S220",
+  "first": 0,
+  "max_new_tokens": 256,
+  "decode": "greedy (top_k 1)",
+  "backend": "npu",
+  "audio_backend": "cpu",
+  "cache_dir": "C:\\src\\audiozoo\\runs\\z3b-first-n\\granite\\litertlm-npu\\cache",
+  "prompt": "bundle template, instruction after the audio: 'transcribe the speech with proper punctuation and capitalization.'",
+  "input": "Content.AudioFile(path), read inside the timed span"
+ },
+ "warmup_s": 11.722,
+ "render_warmup": "USER: <|audio|>transcribe the speech with proper punctuation and capitalization.\n ASSISTANT:",
+ "summary": {
+  "clips": 220,
+  "audio_s": 2686.585,
+  "wall_s": 3030.457,
+  "rtf": 1.128,
+  "empty": 0,
+  "first_token_ms_mean": 8462.97,
+  "split_half_rtf": [
+   1.13622,
+   1.11991
+  ]
+ },
+ "peak_working_set_bytes": 10980749312,
+ "peak_pagefile_bytes": 12271218688,
+ "ended": "2026-11-10T11:53:15.621075+09:00",
+ "process_s": 3059.443
+}

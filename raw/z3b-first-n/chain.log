@@ -1,0 +1,5 @@
+[2026-11-10T11:02:02.8705002+09:00] chain start: plan C:\src\audiozoo\pc\plans\z3b-first-n.json mode first, 1 units, pid 31824
+[2026-11-10T11:02:12.8762659+09:00] adapters: 0x00000000_0x00012C48=nvidia, 0x00000000_0x0001260E=intel-gpu, 0x00000000_0x00012BB8=?, 0x00000000_0x00013E4C=npu?
+[2026-11-10T11:02:15.1234574+09:00] granite/litertlm-npu run 1 start
+[2026-11-10T11:53:19.2977977+09:00] granite/litertlm-npu run 1 end: exit 0, OK, 3062.18 s
+[2026-11-10T11:53:19.3137832+09:00] chain done: OK

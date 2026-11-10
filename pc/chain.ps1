@@ -56,7 +56,7 @@ New-Item -ItemType Directory -Force $out | Out-Null
 $log = Join-Path $out "chain.log"
 $done = Join-Path $out "chain.done"
 if (Test-Path $done) { Remove-Item $done -Force }   # a done file of an earlier start is not this run's
-$active = Join-Path $Pcup "active\Z3-$sit.txt"
+$active = Join-Path $Pcup "active\$Label-$sit.txt"
 $Fix = Join-Path $Root "fixtures"
 $SlotNow = Join-Path $Root "runs\slot_now.txt"
 $RetakeFreeSec = 60
@@ -120,7 +120,7 @@ function Invoke-Engine([string]$Exe, [string[]]$ArgList, [string]$Base, [int]$Ti
     $null = $proc.Handle
     $peak = [int64]0; $gpu = @{}; $nvSamples = @(); $next2 = 2.0; $next5 = 5.0; $timedOut = $false
     $yielded = $false; $susp = 0.0; $suspN = 0; $slotStop = $null
-    $engPid = $null; $engProc = $null
+    $engPid = $null; $engProc = $null; $engPath = $null
     try {
     while (-not $proc.HasExited) {
         # the venv's python.exe is a launcher that runs the interpreter as its child: watch the pid the runner prints
@@ -131,7 +131,7 @@ function Invoke-Engine([string]$Exe, [string[]]$ArgList, [string]$Base, [int]$Ti
                 if ($stxt -match 'ENGINE_PID (\d+)') {
                     $engPid = [int]$Matches[1]
                     $engProc = Get-Process -Id $engPid -ErrorAction SilentlyContinue
-                    if ($engProc) { $null = $engProc.Handle }
+                    if ($engProc) { $null = $engProc.Handle; try { $engPath = $engProc.Path } catch { } }
                 }
             } catch { }
         }
@@ -176,12 +176,74 @@ function Invoke-Engine([string]$Exe, [string[]]$ArgList, [string]$Base, [int]$Ti
     }
     $proc.WaitForExit()
     return [ordered]@{ exitCode = $(if ($timedOut -or $yielded) { $null } else { $proc.ExitCode }); timedOut = $timedOut; yielded = $yielded
-        suspendedSeconds = [math]::Round($susp, 1); suspensions = $suspN; enginePid = $engPid
+        suspendedSeconds = [math]::Round($susp, 1); suspensions = $suspN; enginePid = $engPid; enginePath = $engPath
         elapsedSeconds = [math]::Round($sw.Elapsed.TotalSeconds, 3); peakWorkingSetBytes = $peak; gpuMiBPeak = $gpu; nvidiaSamples = $nvSamples }
 }
 
 function Expand-Arg([string]$a, [string]$RunDir) {
     return $a.Replace("{HOME}", $HomeDir).Replace("{ROOT}", $Root).Replace("{FIX}", $Fix).Replace("{RUN}", $RunDir)
+}
+
+# A unit's "gpu_pref" (1 = power saving = the Intel GPU, 2 = high performance = the RTX): Windows' per-app GPU
+# preference (HKCU\Software\Microsoft\DirectX\UserGpuPreferences, value name = the exe's full path, "GpuPreference=N;")
+# written for the venv's launcher and for the interpreter it starts, BEFORE the engine process starts, and removed
+# after it ends (the way an earlier LiteRT-LM job on this PC pointed its exe at a GPU; 11-10). LiteRT-LM 0.19.1's
+# Python API has no device choice. Z3's runner (pc\run_asr_litertlm.py --gpu-pref) wrote the value under the junction's
+# target (os.path.realpath) and every Intel GPU run of Z3 took the RTX; under the path the process runs by (uv's
+# junction) it reached the Intel GPU, written before the start or inside the process (raw\z3b-probe). The run's meta
+# records what was written and read back, and the "Selected adapter:" line of its log.
+$GpuPrefSubKey = "Software\Microsoft\DirectX\UserGpuPreferences"
+# Names "image" (default): the launcher and the interpreter as pyvenv.cfg's home names it, through uv's minor-version
+# junction (...\cpython-3.12-...\python.exe: the image path Windows reports for the engine process, read 11-10);
+# "real": the launcher and the junction's target (...\cpython-3.12.16-...\python.exe, the name Z3's runner wrote);
+# "all": both.
+function Get-VenvExes([string]$Venv, [string]$NameForm = "image") {
+    $launcher = Join-Path $Root ".venv-$Venv\Scripts\python.exe"
+    $found = @($launcher)
+    $cfgPath = Join-Path $Root ".venv-$Venv\pyvenv.cfg"
+    if (Test-Path -LiteralPath $cfgPath) {
+        $homeLine = @(Get-Content -LiteralPath $cfgPath | Where-Object { $_ -match '^\s*home\s*=' })
+        if ($homeLine.Count) {
+            $pyDir = ($homeLine[0] -replace '^\s*home\s*=\s*', '').Trim()
+            if ($NameForm -in "image", "all") { $found += (Join-Path $pyDir "python.exe") }
+            if ($NameForm -in "real", "all") {
+                $di = Get-Item -LiteralPath $pyDir -ErrorAction SilentlyContinue
+                $tgt = if ($di -and $di.LinkType -and $di.Target) { @($di.Target)[0] } else { $pyDir }
+                $found += (Join-Path $tgt "python.exe")
+            }
+        }
+    }
+    return @($found | Where-Object { Test-Path -LiteralPath $_ } | Select-Object -Unique)
+}
+function Set-GpuPrefBefore([int]$Value, [string[]]$Exes) {
+    $key = [Microsoft.Win32.Registry]::CurrentUser.CreateSubKey($GpuPrefSubKey)
+    try {
+        foreach ($e in $Exes) { $key.SetValue($e, "GpuPreference=$Value;", [Microsoft.Win32.RegistryValueKind]::String) }
+        $back = [ordered]@{}
+        foreach ($e in $Exes) { $back[$e] = "$($key.GetValue($e))" }
+    } finally { $key.Close() }
+    return [ordered]@{ value = $Value; exes = @($Exes); readBack = $back; writtenAt = (Get-Date -Format o) }
+}
+function Clear-GpuPref([string[]]$Exes) {
+    $gone = @()
+    $key = [Microsoft.Win32.Registry]::CurrentUser.OpenSubKey($GpuPrefSubKey, $true)
+    if (-not $key) { return $gone }
+    try {
+        foreach ($e in $Exes) { if ($null -ne $key.GetValue($e)) { $key.DeleteValue($e, $false); $gone += $e } }
+    } finally { $key.Close() }
+    return $gone
+}
+# a value a stopped chain left on this repo's exes would send every later GPU run of that interpreter to its GPU:
+# removed at the chain's start (and logged)
+$script:prefExesAll = @(@($p.units) | ForEach-Object { $_.venv } | Where-Object { $_ } | Select-Object -Unique | ForEach-Object { Get-VenvExes $_ "all" })
+$leftPref = @(Clear-GpuPref $script:prefExesAll)
+if ($leftPref.Count) { Say $log "removed a GpuPreference value left on: $($leftPref -join ', ')" }
+function Get-SelectedAdapter([string]$Base) {
+    $f = "$Base.stderr.txt"
+    if (-not (Test-Path -LiteralPath $f)) { return $null }
+    $m = @(Select-String -LiteralPath $f -Pattern 'Selected adapter: (.*)$' -ErrorAction SilentlyContinue)
+    if (-not $m.Count) { return $null }
+    return @($m | ForEach-Object { $_.Matches[0].Groups[1].Value.Trim() } | Select-Object -Unique)
 }
 
 # One run of a unit; returns the chain's meta
@@ -198,8 +260,22 @@ function Run-Once($u, [int]$k, [string]$base) {
     $runDir = Split-Path -Parent $base
     $a = @("-u", (Join-Path $Root "pc\$($u.script)")) + @(@($u.args) | ForEach-Object { Expand-Arg "$_" $runDir }) + @("--out", "$base.json")
     $meta.command = "$py $($a -join ' ')"
+    $prefRec = $null
+    if ($u.gpu_pref) {
+        $prefNames = if ($u.gpu_pref_names) { "$($u.gpu_pref_names)" } else { "image" }
+        $prefRec = Set-GpuPrefBefore ([int]$u.gpu_pref) (Get-VenvExes $u.venv $prefNames)
+        $prefRec["names"] = $prefNames
+        $meta.gpuPreference = $prefRec
+        Say $log "$($u.cell) run $k GpuPreference=$($u.gpu_pref) written before the start on: $(@($prefRec.exes) -join ', ')"
+    }
     Say $log "$($u.cell) run $k start"
-    $meta.engine = Invoke-Engine $py $a $base ([int]$u.timeout_min) $yc $false
+    try {
+        $meta.engine = Invoke-Engine $py $a $base ([int]$u.timeout_min) $yc $false
+    } finally {
+        if ($prefRec) { $meta.gpuPreferenceRemoved = @(Clear-GpuPref @($prefRec.exes)); $meta.gpuPreferenceRemovedAt = (Get-Date -Format o) }
+    }
+    $meta.selectedAdapter = Get-SelectedAdapter $base
+    if ($meta.selectedAdapter) { Say $log "$($u.cell) run $k Selected adapter: $(@($meta.selectedAdapter) -join ' | ')" }
     $meta.after = [ordered]@{ load = (Measure-Load 1); nvidia = (Get-NvidiaLine) }
     $meta.end = Get-Date -Format o
     return $meta
@@ -437,9 +513,9 @@ try {
         Say $log "settle $SettleSeconds s inside the lock before the control rows"
         Start-Sleep -Seconds $SettleSeconds
     }
-    if ($Mode -eq "first") { Write-Utf8 $active "Z3 first pass of $sit ($(@($p.units).Count) units, no timing, yields to every lock) since $(Get-Date -Format o)" }
+    if ($Mode -eq "first") { Write-Utf8 $active "$Label first pass of $sit ($(@($p.units).Count) units, no timing, yields to every lock) since $(Get-Date -Format o)" }
     foreach ($u in @($p.units)) {
-        if ($Mode -eq "first") { Write-Utf8 $active "Z3 first pass of $sit ($(@($p.units).Count) units, no timing, yields to every lock), now $($u.cell), since $chainStart`r`nwritten $(Get-Date -Format HH:mm)" }
+        if ($Mode -eq "first") { Write-Utf8 $active "$Label first pass of $sit ($(@($p.units).Count) units, no timing, yields to every lock), now $($u.cell), since $chainStart`r`nwritten $(Get-Date -Format HH:mm)" }
         $runs = if ($Mode -eq "first") { 1 } elseif ($u.runs) { [int]$u.runs } else { 1 }
         if ($script:endByStop) { if (-not $u.role) { Leave-Cell $u }; continue }   # no take-back near end_by: the rest waits
         if (Test-PastEndBy $u $runs) { Leave-Cell $u; continue }

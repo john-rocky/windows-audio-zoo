@@ -4,7 +4,7 @@
  "runtime": "LiteRT-LM 0.19.1",
  "form": "bundle",
  "device": "npu",
- "device_name": "Intel NPU",
+ "device_name": "CPU (Intel NPU requested; no compiler plugin, XNNPACK)",
  "set": "S150",
  "mode": "timed",
  "sitting": "s4",
@@ -77,6 +77,20 @@
   "suspendedSeconds": 0
  },
  "tries": 1,
+ "npu_check": {
+  "plugin_loaded": [],
+  "partitioned": [],
+  "plugins_applied": null,
+  "npu_compile_failed": [],
+  "no_compiler_plugin": true,
+  "xnnpack_cpu_delegate": true,
+  "npu_luids": [
+   "0x00000000_0x00013E4C"
+  ],
+  "npu_mib_peak": 0,
+  "ran_on": "cpu"
+ },
+ "ran_on": "cpu",
  "control": {
   "known_rtf": 0.26228,
   "known_from": "this sitting's head (3 runs, spread 0.7 %)",

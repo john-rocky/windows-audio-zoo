@@ -1,0 +1,52 @@
+{
+ "sitting": "z3b-probe",
+ "made": "2026-11-10T11:01:46+09:00",
+ "mode": "first",
+ "note": "The probe of 11-10: which form of Windows' per-app GPU preference sends LiteRT-LM 0.19.1's GPU backend (Python API) to the Intel GPU. 1 clip per language (3) after the warm-up, read by each run's 'Selected adapter:' log line. p1 = the chain writes GpuPreference=1 before the engine process starts, for the launcher and the interpreter's image path (uv's junction kept); p2 = the runner writes it inside its process (Z3's form) but for the image path; p3 = the chain writes it before the start for the launcher and the junction's target (the name Z3 wrote); p0 = no value.",
+ "units": [
+  {
+   "cell": "qwen3asr/litertlm-igpu-p1-before-image",
+   "venv": "litertlm",
+   "script": "run_asr_litertlm.py",
+   "device": "igpu",
+   "ram_need_gb": 7,
+   "timeout_min": 15,
+   "engines_gate": true,
+   "gpu_pref": 1,
+   "gpu_pref_names": "image",
+   "args": ["--bundle", "{ROOT}\\models\\litert-community__Qwen3-ASR-1.7B\\Qwen3-ASR-1.7B.litertlm", "--family", "qwen3asr", "--backend", "gpu", "--cache-dir", "{RUN}\\cache", "--audio-backend", "cpu", "--set", "S150", "--fixtures", "{FIX}", "--first", "1"]
+  },
+  {
+   "cell": "qwen3asr/litertlm-igpu-p2-inproc-image",
+   "venv": "litertlm",
+   "script": "run_asr_litertlm.py",
+   "device": "igpu",
+   "ram_need_gb": 7,
+   "timeout_min": 15,
+   "engines_gate": true,
+   "args": ["--bundle", "{ROOT}\\models\\litert-community__Qwen3-ASR-1.7B\\Qwen3-ASR-1.7B.litertlm", "--family", "qwen3asr", "--backend", "gpu", "--cache-dir", "{RUN}\\cache", "--audio-backend", "cpu", "--gpu-pref", "1", "--gpu-pref-names", "asis", "--set", "S150", "--fixtures", "{FIX}", "--first", "1"]
+  },
+  {
+   "cell": "qwen3asr/litertlm-igpu-p3-before-real",
+   "venv": "litertlm",
+   "script": "run_asr_litertlm.py",
+   "device": "igpu",
+   "ram_need_gb": 7,
+   "timeout_min": 15,
+   "engines_gate": true,
+   "gpu_pref": 1,
+   "gpu_pref_names": "real",
+   "args": ["--bundle", "{ROOT}\\models\\litert-community__Qwen3-ASR-1.7B\\Qwen3-ASR-1.7B.litertlm", "--family", "qwen3asr", "--backend", "gpu", "--cache-dir", "{RUN}\\cache", "--audio-backend", "cpu", "--set", "S150", "--fixtures", "{FIX}", "--first", "1"]
+  },
+  {
+   "cell": "qwen3asr/litertlm-gpu-p0-none",
+   "venv": "litertlm",
+   "script": "run_asr_litertlm.py",
+   "device": "rtx",
+   "ram_need_gb": 7,
+   "timeout_min": 15,
+   "engines_gate": false,
+   "args": ["--bundle", "{ROOT}\\models\\litert-community__Qwen3-ASR-1.7B\\Qwen3-ASR-1.7B.litertlm", "--family", "qwen3asr", "--backend", "gpu", "--cache-dir", "{RUN}\\cache", "--audio-backend", "cpu", "--set", "S150", "--fixtures", "{FIX}", "--first", "1"]
+  }
+ ]
+}

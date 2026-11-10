@@ -7,45 +7,45 @@
  "device_name": "Intel GPU",
  "set": "S220",
  "mode": "timed",
- "sitting": "s4",
- "run_start": "2026-11-10T03:43:23.6894264+09:00",
- "run_end": "2026-11-10T04:01:09.7993210+09:00",
- "status": "WRONG DEVICE",
+ "sitting": "z3b-s5",
+ "run_start": "2026-11-10T12:30:44.7570059+09:00",
+ "run_end": "2026-11-10T12:56:37.9687339+09:00",
+ "status": "OK",
  "record": {
-  "run": "raw/s4/granite/litertlm-igpu/run1.json",
-  "meta": "raw/s4/granite/litertlm-igpu/run1.meta.json",
-  "chain_log": "raw/s4/chain.log"
+  "run": "raw/z3b-s5/granite/litertlm-igpu/run1.json",
+  "meta": "raw/z3b-s5/granite/litertlm-igpu/run1.meta.json",
+  "chain_log": "raw/z3b-s5/chain.log"
  },
- "error": "ran on NVIDIA GeForce RTX 5080 Laptop GPU (log: Selected adapter); GpuPreference=1 was set inside the process",
+ "error": null,
  "versions": {
   "python": "3.12.16",
   "litert-lm-api": "0.19.1",
   "openvino": "2026.4.1",
   "numpy": "2.5.4"
  },
- "load_s": 5.847,
+ "load_s": 8.494,
  "summary": {
   "clips": 220,
   "audio_s": 2686.585,
-  "wall_s": 1049.09,
-  "rtf": 0.39049,
+  "wall_s": 1531.715,
+  "rtf": 0.57013,
   "empty": 0,
-  "first_token_ms_mean": 4266.5,
+  "first_token_ms_mean": 4873.39,
   "split_half_rtf": [
-   0.39421,
-   0.38684
+   0.57486,
+   0.56549
   ]
  },
  "gate": {
   "quietGate": "quiet",
   "cpuReads": [
-   4.1,
-   0.3,
-   0.6
+   2.4,
+   1.8,
+   0.9
   ],
   "nvidiaMiB": 0,
-  "availGB": 24.4,
-  "ramNeedGB": 7,
+  "availGB": 24.3,
+  "ramNeedGB": 13,
   "gpuEngines": 0
  },
  "power": {
@@ -56,15 +56,15 @@
  },
  "desktop_locked": true,
  "engine": {
-  "elapsedSeconds": 1064.149,
-  "peakWorkingSetBytes": 3261411328,
+  "elapsedSeconds": 1551.241,
+  "peakWorkingSetBytes": 8030445568,
   "gpuMiBPeak": {
    "0x00000000_0x00012C48": {
-    "shared": 202,
-    "dedicated": 3630
+    "shared": 9,
+    "dedicated": 13
    },
    "0x00000000_0x0001260E": {
-    "shared": 0,
+    "shared": 4012,
     "dedicated": 0
    },
    "0x00000000_0x00012BB8": {
@@ -77,19 +77,30 @@
   "suspendedSeconds": 0
  },
  "tries": 1,
- "adapter": "NVIDIA GeForce RTX 5080 Laptop GPU, arch=blackwell, vendor=nvidia, backend=Direct3D 12, adapterType=Discrete GPU",
+ "adapter": "Intel(R) Graphics, arch=xe-3lpg, vendor=intel, backend=Direct3D 12, adapterType=Integrated GPU",
+ "gpu_preference": {
+  "value": 1,
+  "exes": [
+   "C:\\src\\audiozoo\\.venv-litertlm\\Scripts\\python.exe",
+   "C:\\src\\audiozoo\\python\\cpython-3.12-windows-x86_64-none\\python.exe"
+  ],
+  "readBack": {
+   "C:\\src\\audiozoo\\.venv-litertlm\\Scripts\\python.exe": "GpuPreference=1;",
+   "C:\\src\\audiozoo\\python\\cpython-3.12-windows-x86_64-none\\python.exe": "GpuPreference=1;"
+  },
+  "writtenAt": "2026-11-10T12:30:44.7887852+09:00",
+  "names": "image"
+ },
  "control": {
   "known_rtf": 0.26228,
-  "known_from": "this sitting's head (3 runs, spread 0.7 %)",
+  "known_from": "plan",
   "head": [
-   0.2631,
-   0.26228,
-   0.26128
+   0.26185
   ],
   "tail": [
-   0.26548
+   0.25959
   ],
-  "verdict": "PASS (tail off 1.2 %)"
+  "verdict": "PASS (tail off 1.0 %)"
  },
  "accuracy": {
   "groups": {
@@ -244,5 +255,5 @@
  "reference": {
   "path": "raw/refs/granite-fp32/R_fp32_cpu.jsonl"
  },
- "first_vs_timed_equal": "68/70"
+ "first_vs_timed_equal": "70/70"
 }

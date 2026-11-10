@@ -1,0 +1,3 @@
+ENGINE_PID 20528
+{"n": 1, "id": "en_us_1660", "wall_s": 3.312, "text": "Romanticism had a large element of cultural determinism, dra"}
+{"n": 2, "id": "cmn_hans_cn_1660", "wall_s": 2.991, "text": "浪漫主义具有很强的文化决定论色彩，这源于歌德、费希特和施莱格尔等作家。"}

@@ -20,7 +20,9 @@ run with status OK, else its latest first-pass run (first 10 clips per language,
 no runner JSON (the chain's time limit, a crash, a run stopped by hand) is still a row: its status comes from the
 chain's record (TIMEOUT / CRASH / NO JSON) and its record path is the meta file. A LiteRT-LM GPU run names the adapter
 it took in its log ("Selected adapter: ..."): an Intel GPU cell whose run took another adapter is WRONG DEVICE (its
-scores stay in the JSON, the table shows none).
+scores stay in the JSON, the table shows none). A LiteRT-LM NPU run says in its log whether a compiler plugin was
+loaded and in the chain's record how much NPU memory it held: no plugin, the XNNPACK CPU delegate and 0 MiB on the NPU
+= the run went through the CPU (doc "ran_on": "cpu"; the table's device cell says so, the numbers stay).
 """
 import argparse
 import json
@@ -177,6 +179,44 @@ def progress(stdout_path):
             "rtf_printed": round(sum(r["wall_s"] for r in rows) / sum(sec[r["id"]] for r in rows), 4)}
 
 
+def npu_luids(sitting):
+    """The NPU's adapter LUIDs of a sitting, from its chain log's "adapters:" line (pc/chain.ps1 names an adapter whose
+    only engine type is Neural "npu?"); LUIDs change at a reboot, so never a fixed value."""
+    log = K / "raw" / sitting / "chain.log"
+    if not log.exists():
+        return []
+    for ln in log.read_text(encoding="utf-8-sig", errors="replace").splitlines():
+        if "] adapters: " in ln:
+            return [kv.split("=", 1)[0].strip() for kv in ln.split("] adapters: ", 1)[1].split(",")
+                    if kv.split("=", 1)[-1].strip().startswith("npu")]
+    return []
+
+
+def npu_check(err_log, meta, sitting):
+    """Where a LiteRT-LM NPU-backend run went: its log's compiler-plugin lines and the NPU's memory peak."""
+    text = err_log.read_text(encoding="utf-8", errors="replace") if err_log.exists() else ""
+    g = (meta.get("engine") or {}).get("gpuMiBPeak") or {}
+    luids = npu_luids(sitting)
+    mib = [(g.get(lu) or {}).get("shared", 0) + (g.get(lu) or {}).get("dedicated", 0) for lu in luids if lu in g]
+    applied = [ln.split("compiler plugins were applied successfully", 1)[0].rsplit("]", 1)[-1].strip()
+               for ln in text.splitlines() if "compiler plugins were applied successfully" in ln]
+    c = {"plugin_loaded": [ln.split("Loaded plugin at:", 1)[1].strip() for ln in text.splitlines()
+                           if "Loaded plugin at:" in ln],
+         "partitioned": [ln.split("] ", 1)[-1].strip() for ln in text.splitlines() if "Partitioned subgraph" in ln],
+         "plugins_applied": int(applied[-1]) if applied and applied[-1].isdigit() else None,
+         "npu_compile_failed": [ln.strip() for ln in text.splitlines() if "vclAllocatedExecutableCreate" in ln],
+         "no_compiler_plugin": "No compiler plugin found" in text,
+         "xnnpack_cpu_delegate": "XNNPACK delegate for CPU" in text,
+         "npu_luids": luids, "npu_mib_peak": max(mib) if mib else None}
+    if (c["no_compiler_plugin"] or c["plugins_applied"] == 0) and c["npu_mib_peak"] == 0:
+        c["ran_on"] = "cpu"   # no plugin, or a plugin whose compile failed: the model stays on the CPU (XNNPACK)
+    elif c["plugins_applied"] and (c["npu_mib_peak"] or 0) > 0:
+        c["ran_on"] = "npu"
+    else:
+        c["ran_on"] = "unclear"
+    return c
+
+
 def latest(runs_dirs, cell):
     """(run json path or None, meta path, sitting, mode) of the row: the latest timed OK run, else the latest
     first-pass run; a run with only its meta file (no runner JSON) counts last."""
@@ -248,18 +288,31 @@ def build(args):
         if r.get("progress"):
             doc["progress"] = r["progress"]
         # LiteRT-LM's GPU log names its adapter (environment.cc "Selected adapter: ..."). Found 11-10: every Intel GPU run
-        # of LiteRT-LM 0.19.1 here (first-a, s4) took the RTX although pc/run_asr_litertlm.py wrote GpuPreference=1
-        # inside its own process
+        # of LiteRT-LM 0.19.1 in Z3 (first-a, s4) took the RTX: pc/run_asr_litertlm.py wrote GpuPreference=1 under the
+        # interpreter's junction-resolved path (os.path.realpath), not the path its process ran by (README, 11-10)
         err_log = mj.with_name("run1.stderr.txt")
         if err_log.exists():
             for ln in err_log.read_text(encoding="utf-8", errors="replace").splitlines():
                 if "Selected adapter:" in ln:
                     doc["adapter"] = ln.split("Selected adapter:", 1)[1].strip()
                     break
+        if m.get("gpuPreference"):
+            doc["gpu_preference"] = m["gpuPreference"]
         if dev == "igpu" and doc.get("adapter") and "intel" not in doc["adapter"].lower():
             doc["status"] = "WRONG DEVICE"
-            doc["error"] = (f"ran on {doc['adapter'].split(',')[0]} (log: Selected adapter); "
-                            "GpuPreference=1 was set inside the process")
+            doc["error"] = (f"ran on {doc['adapter'].split(',')[0]} (log: Selected adapter); GpuPreference=1 was "
+                            "written under the interpreter's junction-resolved path, not the path its process ran by")
+        # LiteRT-LM's NPU backend (found 11-10): a bundle that packages no TF_LITE_AUX model takes LiteRT's generic
+        # compiler-plugin path, and LiteRT-LM 0.19.1's wheel ships no compiler plugin = the model runs on the CPU
+        if dev == "npu" and rt == "litertlm":
+            doc["npu_check"] = npu_check(err_log, m, sitting)
+            if doc["npu_check"]["ran_on"] == "cpu":
+                doc["ran_on"] = "cpu"
+                why = ("no compiler plugin" if doc["npu_check"]["no_compiler_plugin"] else
+                       "the compiler plugin's NPU compile failed")
+                doc["device_name"] = f"CPU (Intel NPU requested; {why}, XNNPACK)"
+            if r.get("npu_lib_dir"):
+                doc["npu_lib_dir"] = r["npu_lib_dir"]
         if mode == "timed":
             ctl = K / "raw" / sitting / "control.json"
             doc["control"] = jload(ctl) if ctl.exists() else None

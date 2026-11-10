@@ -1,0 +1,36 @@
+[
+ {
+  "name": "python",
+  "exe": "uv",
+  "args": [
+   "python",
+   "install",
+   "3.12"
+  ],
+  "timeout_min": 15,
+  "stop_on_fail": true
+ },
+ {
+  "name": "fetch",
+  "exe": "uv",
+  "args": [
+   "run",
+   "--no-project",
+   "--python",
+   "3.12",
+   "--python-preference",
+   "only-managed",
+   "python",
+   "{ROOT}\\pc\\fetch.py",
+   "--manifest",
+   "{ROOT}\\shelf\\hub_manifest.json",
+   "--dest",
+   "{ROOT}\\models",
+   "--only",
+   "whisper-large-v3-turbo-int8-ov",
+   "litert-community/Qwen3-ASR-1.7B",
+   "litert-community/granite-speech-5.0-2b"
+  ],
+  "timeout_min": 120
+ }
+]

@@ -3,6 +3,8 @@
 # Before every connection it reads the shared lock feed on the Mac (~/code/standup/tools/winpc/busy_now.sh, no ssh):
 # another lane's "timing:" lock, or a feed older than 3 min, refuses the call (exit 3). Z3_FORCE=1 skips the read
 # (tools/sitting.sh inside Z3's own lock; `wait` never reads it: it is the one long connection of a running job).
+# Z3_LABEL=<lane> (default Z3): the lane name this repo's lock and notes start with, the same name as <PC folder>\label.txt
+# (a later lane running these scripts, Z3b on 11-10); tools/sitting.sh and mtools/ read their own lock by it.
 #
 #   pc.sh status                      busy.txt, the active\ and yield\ notes, free disk
 #   pc.sh ps                          run the PowerShell read from stdin (-EncodedCommand)
@@ -23,7 +25,7 @@ RF="${R//\\//}"                        # the same with forward slashes (ssh tar)
 if [[ -z "${Z3_FORCE:-}" && "${1:-}" != "wait" ]]; then
   feed=$(bash ~/code/standup/tools/winpc/busy_now.sh 2>&1) || { echo "REFUSED (lock feed stale or missing): $feed" >&2; exit 3; }
   busy=$(printf '%s\n' "$feed" | awk '$3=="BUSY"' | tail -n 1)
-  if [[ "$busy" == *"timing:"* && "$busy" != *" BUSY Z3 "* ]]; then
+  if [[ "$busy" == *"timing:"* && "$busy" != *" BUSY ${Z3_LABEL:-Z3} "* ]]; then
     echo "REFUSED (another lane's timing lock): ${busy}" >&2
     exit 3
   fi

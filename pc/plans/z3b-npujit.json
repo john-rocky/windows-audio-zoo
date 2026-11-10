@@ -1,0 +1,66 @@
+{
+  "sitting": "z3b-npujit",
+  "made": "2026-11-10T12:32:23+09:00",
+  "mode": "first",
+  "note": "Z3b: does LiteRT-LM 0.19.1 reach the Intel NPU when an Intel OpenVINO compiler plugin sits beside the dispatch library (litert_dispatch_lib_dir)? p1 = the plugin of ai-edge-litert-nightly 2.4.0.dev20261024 beside LiteRT-LM own dispatch library (pc/npu_plugin_dir.py --dispatch litertlm). One clip per language after the warm-up clip; run under a non-timing lock (RAM over 8 GB).",
+  "units": [
+    {
+      "cell": "granite/litertlm-pluginp1-npu",
+      "venv": "litertlm",
+      "script": "run_asr_litertlm.py",
+      "device": "npu",
+      "ram_need_gb": 13,
+      "timeout_min": 15,
+      "engines_gate": false,
+      "args": [
+        "--bundle",
+        "{ROOT}\\models\\litert-community__granite-speech-5.0-2b\\granite-speech-5.0-2b.litertlm",
+        "--family",
+        "granite",
+        "--backend",
+        "npu",
+        "--npu-lib-dir",
+        "{ROOT}\\npujit\\p1",
+        "--cache-dir",
+        "{RUN}\\cache",
+        "--audio-backend",
+        "cpu",
+        "--set",
+        "S220",
+        "--fixtures",
+        "{FIX}",
+        "--first",
+        "1"
+      ]
+    },
+    {
+      "cell": "qwen3asr/litertlm-pluginp1-npu",
+      "venv": "litertlm",
+      "script": "run_asr_litertlm.py",
+      "device": "npu",
+      "ram_need_gb": 9,
+      "timeout_min": 8,
+      "engines_gate": false,
+      "args": [
+        "--bundle",
+        "{ROOT}\\models\\litert-community__Qwen3-ASR-1.7B\\Qwen3-ASR-1.7B.litertlm",
+        "--family",
+        "qwen3asr",
+        "--backend",
+        "npu",
+        "--npu-lib-dir",
+        "{ROOT}\\npujit\\p1",
+        "--cache-dir",
+        "{RUN}\\cache",
+        "--audio-backend",
+        "cpu",
+        "--set",
+        "S150",
+        "--fixtures",
+        "{FIX}",
+        "--first",
+        "1"
+      ]
+    }
+  ]
+}

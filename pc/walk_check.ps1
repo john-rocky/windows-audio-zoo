@@ -8,8 +8,13 @@ sitting the run records against its plan. Exit 1 when a file is missing or a don
 first-a, first-an, first-b and first-bn are always checked; -Sittings adds the others. A done line that says FAIL is
 printed as it is: the walk's record says which redo list filled it. A cell a timed sitting left at its end_by
 (control.json left_cells) counts as "left (end_by)", not as missing: the later sitting that ran it belongs in -Sittings.
+
+  powershell -NoProfile -ExecutionPolicy Bypass -File pc\walk_check.ps1 -Z3b -Sittings z3b-probe,z3b-first-g,...
+
+-Z3b: the README's steps of 2026-11-10 ("again (2026-11-10)"): the pushed files, two venvs (ovg, litertlm), the three
+Hub repos of setup-z3b / fetch-z3b, the NPU plugin folders of npujit-z3b, and only the sittings given.
 #>
-param([string[]]$Sittings = @())   # "s1,s2" from -File, or s1,s2 (an array) from & inside PowerShell
+param([string[]]$Sittings = @(), [switch]$Z3b)   # "s1,s2" from -File, or s1,s2 (an array) from & inside PowerShell
 $ErrorActionPreference = "Stop"
 $Root = Split-Path $PSScriptRoot -Parent
 $script:miss = 0
@@ -29,16 +34,23 @@ function Done([string]$Step, [string]$Rel) {
 foreach ($f in "pc\chain.ps1", "pc\steps.ps1", "pc\zlib.ps1", "pc\lock.ps1", "pc\launch.ps1", "pc\wait_done.ps1",
                "pc\audiolib.py", "shelf\hub_manifest.json", "fixtures\meta.json", "fixtures\s220\clips.json") { Want "1" $f }
 # 2. setup, fetch: the interpreter, eight venvs and their version lists, every Hub file at its manifest size
+# (-Z3b: two venvs, the three repos of fetch-z3b)
 Want "2" "python\cpython-3.12-windows-x86_64-none\python.exe"
-foreach ($v in "ovg", "genai", "genai-cuda", "ort", "ort-cuda", "litertlm", "ref", "ovexport") {
+$venvs = if ($Z3b) { @("ovg", "litertlm") } else { @("ovg", "genai", "genai-cuda", "ort", "ort-cuda", "litertlm", "ref", "ovexport") }
+foreach ($v in $venvs) {
     Want "2" ".venv-$v\Scripts\python.exe"
     Want "2" "logs\versions-$v.txt"
 }
-Done "2" "logs\setup.done"
-Done "2" "logs\fetch.done"
+$suffix = if ($Z3b) { "-z3b" } else { "" }
+Done "2" "logs\setup$suffix.done"
+Done "2" "logs\fetch$suffix.done"
 Want "2" "models\fetch_report.json"
 $man = @(Get-Content (Join-Path $Root "shelf\hub_manifest.json") -Raw -Encoding UTF8 | ConvertFrom-Json)
 $man = @($man | ForEach-Object { $_ })   # PowerShell 5.1 reads a JSON list as one object
+if ($Z3b) {
+    $man = @($man | Where-Object { $_.repo -in "OpenVINO/whisper-large-v3-turbo-int8-ov", "litert-community/Qwen3-ASR-1.7B",
+                                               "litert-community/granite-speech-5.0-2b" })
+}
 $nf = 0; $mf = $script:miss
 foreach ($r in $man) {
     foreach ($f in @($r.files)) {
@@ -49,6 +61,13 @@ foreach ($r in $man) {
     }
 }
 "OK      2 models: $nf files of $($man.Count) repos checked by size ($($script:miss - $mf) missing or different)"
+if ($Z3b) {
+    # the NPU plugin folders (pc\npu_plugin_dir.py): the compiler plugin beside a dispatch library, and their manifest
+    foreach ($d in "p1", "p2") {
+        foreach ($f in "LiteRtCompilerPlugin.dll", "LiteRtDispatch.dll", "manifest.json") { Want "npu" "npujit\$d\$f" }
+    }
+    Done "npu" "logs\npujit-z3b.done"
+} else {
 # 3. references, the Whisper export for ONNX Runtime GenAI
 foreach ($m in "whisper", "parakeet", "kokoro") { Want "3" "refs\$m\ref.json" }
 Want "3" "refs\kokoro\ref.writeback.json"
@@ -62,7 +81,9 @@ foreach ($d in "qwen3asr-ov-fp16", "qwen3asr-ov-int8") {
     foreach ($f in "openvino_encoder_model.xml", "openvino_decoder_model.xml", "openvino_tokenizer.xml", "openvino_detokenizer.xml") { Want "4" "exports\$d\$f" }
 }
 Done "4" "logs\export-ov.done"
-$sits = @("first-a", "first-an", "first-b", "first-bn") + @($Sittings | ForEach-Object { $_ -split "," } | Where-Object { $_ })
+}
+$always = @(if (-not $Z3b) { "first-a", "first-an", "first-b", "first-bn" })
+$sits = $always + @($Sittings | ForEach-Object { $_ -split "," } | Where-Object { $_ })
 foreach ($s in $sits) {
     $plan = Join-Path $Root "pc\plans\$s.json"
     if (-not (Test-Path -LiteralPath $plan)) { "MISSING sit $s pc\plans\$s.json"; $script:miss++; continue }

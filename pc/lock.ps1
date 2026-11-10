@@ -61,8 +61,8 @@ switch ($Action) {
         "SLOT $What $(Get-Date -Format o)"
     }
     "note" {
-        $f = Join-Path $Pcup "active\Z3.txt"
-        if ($What) { Write-Utf8 $f "Z3 $What`r`nwritten $(Get-Date -Format HH:mm)"; "NOTE written $(Get-Date -Format o)" }
+        $f = Join-Path $Pcup "active\$Label.txt"
+        if ($What) { Write-Utf8 $f "$Label $What`r`nwritten $(Get-Date -Format HH:mm)"; "NOTE written $(Get-Date -Format o)" }
         else { Remove-Item $f -Force -ErrorAction SilentlyContinue; "NOTE removed $(Get-Date -Format o)" }
     }
 }

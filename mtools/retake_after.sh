@@ -20,7 +20,7 @@ else: print(int((d.datetime.now(d.timezone.utc) - d.datetime.strptime(l[0], '%Y-
 t0=$(date +%s); seen=""
 while [[ -z "$seen" ]]; do
   b=$(last_busy)
-  if [[ "$b" == *" BUSY "* && "$b" != *" BUSY none"* && "$b" != *" BUSY Z3 "* ]]; then seen="$b"; say "other lock: $b"; break; fi
+  if [[ "$b" == *" BUSY "* && "$b" != *" BUSY none"* && "$b" != *" BUSY ${Z3_LABEL:-Z3} "* ]]; then seen="$b"; say "other lock: $b"; break; fi
   (( $(date +%s) - t0 > waitmin * 60 )) && { say "no other lock in $waitmin min"; break; }
   sleep 10
 done

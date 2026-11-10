@@ -1,0 +1,1148 @@
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794286643.465878    7896 litert_lm_loader.cc:550] TFLite model type: tf_lite_vision_encoder not found for prefer activation type. Use system's default backend activation type. System's default activation type for Text decoder is fp16. Vision encoder and audio encoder default is fp32.
+W0000 00:00:1794286643.466640    7896 litert_lm_loader.cc:532] TFLite model type: tf_lite_vision_encoder not found for backend constraints. Skipping.
+W0000 00:00:1794286643.466143   20468 litert_lm_loader.cc:407] Section not found: SP_Tokenizer
+W0000 00:00:1794286643.470370   20468 litert_lm_loader.cc:407] Section not found: SP_Tokenizer
+W0000 00:00:1794286643.470443   20468 litert_lm_loader.cc:407] Section not found: HF_Tokenizer_Zlib
+W0000 00:00:1794286643.470529    7896 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794286643.470635    7896 litert_lm_loader.cc:497] TFLite model for type: tf_lite_aux not found. Skipping.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001FB18872E60, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001FB18874B40, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001FB188746C0, name=NpuAccelerator
+INFO: [npu_registry.cc:30] NPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001FB18874420, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001FB18874840, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+W0000 00:00:1794286643.479695    7896 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794286643.479788    7896 litert_lm_loader.cc:497] TFLite model for type: tf_lite_aux not found. Skipping.
+W0000 00:00:1794286643.479845    7896 llm_litert_compiled_model_executor_factory.cc:340] NPU backend requested, but TF_LITE_AUX is not packaged in the model. Using the generic LiteRT compiler-plugin path.
+INFO: [compiled_model.cc:697] External weight loader: 388 external constants mapped for compilation
+INFO: [compiler_plugin.cc:333] Attempting to load plugin at: C:/src/audiozoo/npujit/p1/LiteRtCompilerPlugin.dll
+INFO: [compiler_plugin.cc:276] Loading plugin at: C:/src/audiozoo/npujit/p1/LiteRtCompilerPlugin.dll
+INFO: [compiler_plugin.cc:286] Loaded plugin at: C:/src/audiozoo/npujit/p1/LiteRtCompilerPlugin.dll
+INFO: [compiler_plugin.cc:290] Resolved plugin api at: C:/src/audiozoo/npujit/p1/LiteRtCompilerPlugin.dll
+INFO: [compiler_plugin.cc:302] Initialize plugin at: C:/src/audiozoo/npujit/p1/LiteRtCompilerPlugin.dll
+INFO: [compiler_plugin.cc:1102] Applying plugin with SDK version: OpenVINO 2026.4.1-22982-e213a147257-releases/2026/4 (OpenVINO Runtime)
+INFO: [compiler_plugin.cc:1165] Registered 0 transformations.
+INFO: [compiler_plugin.cc:1172] Applied transformations.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [compiler_plugin.cc:598] Partition strategy: 0
+INFO: [compiler_plugin.cc:816] Partitioned subgraph<0>, selected 1242 ops, from a total of 1298 ops. resulted in 29 partitions.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:497] op type 151 is not supported
+INFO: [compiler_plugin.cc:598] Partition strategy: 0
+INFO: [compiler_plugin.cc:816] Partitioned subgraph<1>, selected 1188 ops, from a total of 1244 ops. resulted in 30 partitions.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:98] HarvestSharedConstants: registered 0 generated/derived constants
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:602] Weight sharing (NPU): building shared pool
+INFO: [litert/vendors/intel_openvino/compiler/weight_bank.cc:132] WeightBank::FinalizeDerivedBuffers: assigned 0 derived buffer id(s)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:107] Weight sharing: 530 buffers, 3084096108 bytes
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:142] Weight sharing: pruned 21 buffer(s) (288 bytes) superseded by a stacked/derived constant in every partition that referenced them
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p0: aliased 7 constants to the shared pool, tagged 7 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/openvino_version_info.cc:279] [OpenVINO Compiler] Runtime version: OpenVINO 2026.4.1-22982-e213a147257-releases/2026/4 (OpenVINO Runtime)
+INFO: [litert/vendors/intel_openvino/openvino_version_info.cc:304] [OpenVINO Compiler] Found device: NPU
+INFO: [litert/vendors/intel_openvino/openvino_version_info.cc:128] [OpenVINO Compiler]   Device 'NPU' full name: Intel(R) AI Boost
+INFO: [litert/vendors/intel_openvino/openvino_version_info.cc:144] [OpenVINO Compiler]   Device 'NPU' NPU platform: AUTO_DETECT
+INFO: [litert/vendors/intel_openvino/openvino_version_info.cc:161] [OpenVINO Compiler]   Device 'NPU' Level Zero / NPU driver version: 1004841 (0xF5529)
+INFO: [litert/vendors/intel_openvino/openvino_version_info.cc:180] [OpenVINO Compiler]   Device 'NPU' NPU compiler version: 8.4 (raw: 0x00080004)
+INFO: [litert/vendors/intel_openvino/openvino_version_info.cc:195] [OpenVINO Compiler]   Device 'NPU' NPU max tiles: 3
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 0 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p1: aliased 0 constants to the shared pool, tagged 0 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 1 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p2: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 2 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p3: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 3 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p4: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 4 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p5: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 5 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p6: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 6 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p7: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 7 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p8: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 8 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p9: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 9 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p10: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 10 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p11: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 11 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p12: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 12 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p13: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 13 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p14: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 14 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p15: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 15 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p16: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 16 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p17: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 17 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p18: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 18 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p19: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 19 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p20: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 20 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p21: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 21 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p22: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 22 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p23: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 23 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p24: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 24 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p25: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 25 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p26: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 26 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p27: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 27 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p28: aliased 9 constants to the shared pool, tagged 9 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 28 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p29: aliased 7 constants to the shared pool, tagged 7 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 29 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p30: aliased 0 constants to the shared pool, tagged 0 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 30 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p31: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 31 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p32: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 32 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p33: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 33 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p34: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 34 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p35: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 35 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p36: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 36 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p37: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 37 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p38: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 38 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p39: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 39 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p40: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 40 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p41: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 41 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p42: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 42 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p43: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 43 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p44: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 44 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p45: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 45 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p46: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 46 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p47: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 47 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p48: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 48 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p49: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 49 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p50: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 50 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p51: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 51 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p52: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 52 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p53: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 53 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p54: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 54 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p55: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 55 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p56: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 56 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p57: aliased 11 constants to the shared pool, tagged 11 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 57 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:44] Using default configuration (LATENCY mode)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_soc_config.cc:63] Soc model is null, Compile will proceed with default NPU compile.
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:643] Model loaded
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compile_context.cc:230] NPU weight sharing: enabled NPUW weightless compile knobs (single-token chunk pipeline)
+INFO: [litert/vendors/intel_openvino/compiler/alias_shared_constants.cc:222] Weight sharing (NPU) p58: aliased 7 constants to the shared pool, tagged 7 with WeightlessCacheAttribute, left 0 unshared (bytes differ from pool -- content-altered, e.g. i2->u2)
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:679] Compiling partition 58 for device NPU
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:686] Model export done
+INFO: [litert/vendors/intel_openvino/compiler/openvino_compiler_plugin.cc:745] Weight sharing: GlobalGraph container 3169186427 bytes (509 buffers, 59 subgraphs)
+INFO: [compiled_model.cc:1635] 1 compiler plugins were applied successfully: IntelOpenVINO compiler plugin (ver 0.1.0)
+INFO: [compiled_model.cc:1649] JIT compilation changed model, reserializing...
+INFO: [dispatch_delegate.cc:99] DispatchDelegate::DispatchDelegate
+INFO: [dispatch_accelerator.cc:138] Dispatch delegate getting hooks.
+INFO: [dispatch_delegate.cc:188] Lazy initializing Dispatch API for GetHooks.
+INFO: [litert_dispatch.cc:208] Loading shared library: C:/src/audiozoo/npujit/p1/LiteRtDispatch.dll
+INFO: [compiled_model.cc:1226] Accelerator returned null hooks.
+INFO: [dispatch_delegate.cc:129] DispatchDelegate::Initialize prefill_128
+INFO: [fabric_kernel.cc:39] Fabric bytecode check: No nodes to replace
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (590335 byte payload) for function_name 'Partition_0'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_0' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/openvino_version_info.cc:279] [OpenVINO Dispatch] Runtime version: OpenVINO 2026.4.1-22982-e213a147257-releases/2026/4 (OpenVINO Runtime)
+INFO: [external/litert/litert/vendors/intel_openvino/openvino_version_info.cc:304] [OpenVINO Dispatch] Found device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/openvino_version_info.cc:128] [OpenVINO Dispatch]   Device 'NPU' full name: Intel(R) AI Boost
+INFO: [external/litert/litert/vendors/intel_openvino/openvino_version_info.cc:144] [OpenVINO Dispatch]   Device 'NPU' NPU platform: AUTO_DETECT
+INFO: [external/litert/litert/vendors/intel_openvino/openvino_version_info.cc:161] [OpenVINO Dispatch]   Device 'NPU' Level Zero / NPU driver version: 1004841 (0xF5529)
+INFO: [external/litert/litert/vendors/intel_openvino/openvino_version_info.cc:180] [OpenVINO Dispatch]   Device 'NPU' NPU compiler version: 8.4 (raw: 0x00080004)
+INFO: [external/litert/litert/vendors/intel_openvino/openvino_version_info.cc:195] [OpenVINO Dispatch]   Device 'NPU' NPU max tiles: 3
+WARNING: [external/litert/litert/vendors/intel_openvino/dispatch/weight_bank_runtime.cc:135] NPU weight sharing: model is not file-backed (fd=-1); staging 3084095820-byte pool from memory, which faults it into RSS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/weight_bank_runtime.cc:474] NPU weight sharing: staged 3084095820-byte weights bank to 'C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' via memory
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (34585 byte payload) for function_name 'Partition_1'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_1' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1591274 byte payload) for function_name 'Partition_2'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_2' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849630 byte payload) for function_name 'Partition_3'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_3' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849630 byte payload) for function_name 'Partition_4'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_4' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849630 byte payload) for function_name 'Partition_5'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_5' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849630 byte payload) for function_name 'Partition_6'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_6' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849630 byte payload) for function_name 'Partition_7'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_7' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849630 byte payload) for function_name 'Partition_8'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_8' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849630 byte payload) for function_name 'Partition_9'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_9' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849630 byte payload) for function_name 'Partition_10'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_10' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849633 byte payload) for function_name 'Partition_11'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_11' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849637 byte payload) for function_name 'Partition_12'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_12' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849638 byte payload) for function_name 'Partition_13'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_13' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849638 byte payload) for function_name 'Partition_14'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_14' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849638 byte payload) for function_name 'Partition_15'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_15' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849638 byte payload) for function_name 'Partition_16'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_16' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849638 byte payload) for function_name 'Partition_17'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_17' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849638 byte payload) for function_name 'Partition_18'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_18' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849638 byte payload) for function_name 'Partition_19'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_19' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849638 byte payload) for function_name 'Partition_20'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_20' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849638 byte payload) for function_name 'Partition_21'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_21' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849638 byte payload) for function_name 'Partition_22'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_22' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849638 byte payload) for function_name 'Partition_23'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_23' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849638 byte payload) for function_name 'Partition_24'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_24' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849638 byte payload) for function_name 'Partition_25'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_25' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849638 byte payload) for function_name 'Partition_26'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_26' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1849638 byte payload) for function_name 'Partition_27'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_27' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1709223 byte payload) for function_name 'Partition_28'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_28' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [dispatch_delegate.cc:129] DispatchDelegate::Initialize decode
+INFO: [fabric_kernel.cc:39] Fabric bytecode check: No nodes to replace
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (397806 byte payload) for function_name 'Partition_29'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_29' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (34587 byte payload) for function_name 'Partition_30'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_30' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1107913 byte payload) for function_name 'Partition_31'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_31' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095945 byte payload) for function_name 'Partition_32'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_32' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095945 byte payload) for function_name 'Partition_33'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_33' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095945 byte payload) for function_name 'Partition_34'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_34' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095945 byte payload) for function_name 'Partition_35'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_35' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095945 byte payload) for function_name 'Partition_36'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_36' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095945 byte payload) for function_name 'Partition_37'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_37' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095945 byte payload) for function_name 'Partition_38'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_38' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095945 byte payload) for function_name 'Partition_39'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_39' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095948 byte payload) for function_name 'Partition_40'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_40' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095952 byte payload) for function_name 'Partition_41'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_41' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_42'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_42' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_43'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_43' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_44'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_44' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_45'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_45' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_46'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_46' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_47'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_47' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_48'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_48' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_49'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_49' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_50'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_50' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_51'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_51' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_52'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_52' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_53'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_53' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_54'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_54' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_55'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_55' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_56'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_56' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (1095953 byte payload) for function_name 'Partition_57'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_57' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:218] GlobalGraph: selected subgraph (4877389 byte payload) for function_name 'Partition_58'
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:248] Dispatch: using device 'NPU' from bytecode header
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:297] OpenVINO partition 'Partition_58' using device: NPU
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:391] GlobalGraph: importing weightless NPU blob with WEIGHTS_PATH='C:\Users\USER\AppData\Local\Temp\litert_ov_bank_0ef897e505e514f3.bin' (3084095820 byte pool)
+INFO: [external/litert/litert/vendors/intel_openvino/dispatch/invocation_context.cc:425] Openvino InvocationContext Initialize SUCCESS
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1794286703.146568    7896 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794286703.146658    7896 litert_lm_loader.cc:497] TFLite model for type: tf_lite_end_of_audio not found. Skipping.
+W0000 00:00:1794286703.146724    7896 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794286703.146807    7896 litert_lm_loader.cc:497] TFLite model for type: tf_lite_end_of_vision not found. Skipping.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+W0000 00:00:1794286703.148267    7896 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794286703.148370    7896 litert_lm_loader.cc:497] TFLite model for type: tf_lite_per_layer_embedder not found. Skipping.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001FD97B0E1E0, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=000001FD97B0EA80, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+W0000 00:00:1794286703.214933    7896 litert_lm_loader.cc:550] TFLite model type: tf_lite_vision_encoder not found for prefer activation type. Use system's default backend activation type. System's default activation type for Text decoder is fp16. Vision encoder and audio encoder default is fp32.
+W0000 00:00:1794286703.215608    7896 litert_lm_loader.cc:532] TFLite model type: tf_lite_vision_encoder not found for backend constraints. Skipping.
+W0000 00:00:1794286703.218943    7896 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794286703.219112    7896 litert_lm_loader.cc:497] TFLite model for type: tf_lite_audio_adapter not found. Skipping.
+W0000 00:00:1794286703.219197    7896 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794286703.219264    7896 litert_lm_loader.cc:497] TFLite model for type: tf_lite_audio_adapter not found. Skipping.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=000001FD97B0E1E0, name=GPU WebGPU
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=000001FD97B0EA80, name=CpuAccelerator

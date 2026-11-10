@@ -1,0 +1,236 @@
+{
+ "cell": "qwen3asr/litertlm-plugin-npu",
+ "model": "qwen3asr",
+ "runtime": "LiteRT-LM 0.19.1",
+ "form": "plugin",
+ "device": "npu",
+ "device_name": "Intel NPU",
+ "set": "S150",
+ "mode": "timed",
+ "sitting": "z3b-s6",
+ "run_start": "2026-11-10T13:57:21.8720509+09:00",
+ "run_end": "2026-11-10T14:06:36.0001958+09:00",
+ "status": "OK",
+ "record": {
+  "run": "raw/z3b-s6/qwen3asr/litertlm-plugin-npu/run1.json",
+  "meta": "raw/z3b-s6/qwen3asr/litertlm-plugin-npu/run1.meta.json",
+  "chain_log": "raw/z3b-s6/chain.log"
+ },
+ "error": null,
+ "versions": {
+  "python": "3.12.16",
+  "litert-lm-api": "0.19.1",
+  "openvino": "2026.4.1",
+  "numpy": "2.5.4"
+ },
+ "load_s": 59.756,
+ "summary": {
+  "clips": 150,
+  "audio_s": 1806.26,
+  "wall_s": 482.637,
+  "rtf": 0.2672,
+  "empty": 0,
+  "first_token_ms_mean": 1374.92,
+  "split_half_rtf": [
+   0.26,
+   0.27494
+  ]
+ },
+ "gate": {
+  "quietGate": "quiet",
+  "cpuReads": [
+   4.7,
+   0.5,
+   0.7
+  ],
+  "nvidiaMiB": 0,
+  "availGB": 22.1,
+  "ramNeedGB": 12,
+  "gpuEngines": null
+ },
+ "power": {
+  "msiUserScenarioMode": 1,
+  "overlayAc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "overlayDc": "ded574b5-45a0-4f42-8737-46345c09c238",
+  "battery": "status 2, 96 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 552.107,
+  "peakWorkingSetBytes": 12775985152,
+  "gpuMiBPeak": {
+   "0x00000000_0x00012C48": {
+    "shared": 0,
+    "dedicated": 0
+   },
+   "0x00000000_0x0001260E": {
+    "shared": 21,
+    "dedicated": 0
+   },
+   "0x00000000_0x00013E4C": {
+    "shared": 2378,
+    "dedicated": 0
+   }
+  },
+  "exitCode": 0,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1,
+ "npu_check": {
+  "plugin_loaded": [
+   "C:/src/audiozoo/npujit/p1/LiteRtCompilerPlugin.dll"
+  ],
+  "partitioned": [
+   "Partitioned subgraph<0>, selected 1242 ops, from a total of 1298 ops. resulted in 29 partitions.",
+   "Partitioned subgraph<1>, selected 1188 ops, from a total of 1244 ops. resulted in 30 partitions."
+  ],
+  "plugins_applied": 1,
+  "npu_compile_failed": [],
+  "no_compiler_plugin": false,
+  "xnnpack_cpu_delegate": true,
+  "npu_luids": [
+   "0x00000000_0x00013E4C"
+  ],
+  "npu_mib_peak": 2378,
+  "ran_on": "npu"
+ },
+ "npu_lib_dir": {
+  "path": "C:\\src\\audiozoo\\npujit\\p1",
+  "files": [
+   {
+    "name": "LiteRtCompilerPlugin.dll",
+    "bytes": 582656,
+    "sha256": "f0bf1f04a207c21797fae69953339654f48445b1456e9045f9e4f100a90db6e1"
+   },
+   {
+    "name": "LiteRtDispatch.dll",
+    "bytes": 284160,
+    "sha256": "5719dda76c6b6bbff909ae04c82220e71a2a217616551031474c5c813ea63ebb"
+   },
+   {
+    "name": "manifest.json",
+    "bytes": 746,
+    "sha256": "66ef98020eaac273d7255cb991cda9360ff2e0f3dc95191ebe99f41aa927acdc"
+   }
+  ],
+  "manifest": {
+   "dispatch": "litertlm",
+   "python": "3.12.16",
+   "files": [
+    {
+     "name": "LiteRtCompilerPlugin.dll",
+     "from": "ai_edge_litert_nightly-2.4.0.dev20261024-cp312-cp312-win_amd64.whl:ai_edge_litert/vendors/intel_openvino/compiler/LiteRtCompilerPlugin.dll",
+     "wheel_sha256": "d46091d1111f4168ef4fc9dcfedcc65efc269e09b23f37b3fed32d981afa7815",
+     "bytes": 582656,
+     "sha256": "f0bf1f04a207c21797fae69953339654f48445b1456e9045f9e4f100a90db6e1"
+    },
+    {
+     "name": "LiteRtDispatch.dll",
+     "from": "C:\\src\\audiozoo\\.venv-litertlm\\Lib\\site-packages\\litert_lm\\vendors\\intel_openvino\\dispatch\\LiteRtDispatch.dll",
+     "bytes": 284160,
+     "sha256": "5719dda76c6b6bbff909ae04c82220e71a2a217616551031474c5c813ea63ebb"
+    }
+   ]
+  },
+  "openvino_libs_on_path": "C:\\src\\audiozoo\\.venv-litertlm\\Lib\\site-packages\\openvino\\libs",
+  "openvino_devices": [
+   "CPU",
+   "GPU.0",
+   "GPU.1",
+   "NPU"
+  ]
+ },
+ "control": {
+  "known_rtf": 0.26228,
+  "known_from": "plan",
+  "head": [
+   0.26307
+  ],
+  "tail": [
+   0.26987
+  ],
+  "verdict": "PASS (tail off 2.9 %)"
+ },
+ "accuracy": {
+  "en_us": {
+   "metric": "WER",
+   "err": 51,
+   "n": 1150,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 4.435
+  },
+  "cmn_hans_cn": {
+   "metric": "CER",
+   "err": 127,
+   "n": 1954,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 6.499
+  },
+  "ja_jp": {
+   "metric": "CER",
+   "err": 145,
+   "n": 2689,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 5.392
+  }
+ },
+ "reference": {
+  "path": "raw/refs/qwen3asr-fp32/ref_transformers_official.jsonl",
+  "scores": {
+   "en_us": {
+    "metric": "WER",
+    "err": 50,
+    "n": 1150,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 4.348
+   },
+   "cmn_hans_cn": {
+    "metric": "CER",
+    "err": 134,
+    "n": 1954,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 6.858
+   },
+   "ja_jp": {
+    "metric": "CER",
+    "err": 148,
+    "n": 2689,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 5.504
+   }
+  }
+ },
+ "line": {
+  "en_us": {
+   "run": 4.435,
+   "ref": 4.348,
+   "bar": 4.848,
+   "pass": true
+  },
+  "cmn_hans_cn": {
+   "run": 6.499,
+   "ref": 6.858,
+   "bar": 7.358,
+   "pass": true
+  },
+  "ja_jp": {
+   "run": 5.392,
+   "ref": 5.504,
+   "bar": 6.004,
+   "pass": true
+  },
+  "empty": {
+   "n": 0,
+   "pass": true
+  },
+  "pass": true
+ },
+ "first_vs_timed_equal": "150/150"
+}

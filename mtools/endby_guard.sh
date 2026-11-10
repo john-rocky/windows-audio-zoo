@@ -28,7 +28,7 @@ say "$at: sitting $sit has not ended"
 while true; do
   done_on_mac && { say "sitting $sit ended while waiting: nothing to do"; exit 0; }
   b=$(last_busy)
-  if [[ "$b" == *"timing:"* && "$b" != *" BUSY Z3 "* ]]; then
+  if [[ "$b" == *"timing:"* && "$b" != *" BUSY ${Z3_LABEL:-Z3} "* ]]; then
     sleep 3; continue   # another lane's timing: no ssh; its return frees a minute in which the chain cannot take back yet
   fi
   break

@@ -46,13 +46,13 @@ $env:UV_HTTP_TIMEOUT = "600"; $env:UV_HTTP_RETRIES = "8"
 $env:HF_HUB_DISABLE_TELEMETRY = "1"; $env:ORT_DISABLE_TELEMETRY = "1"; $env:PYTHONUTF8 = "1"
 Say $log "steps $List start: $($steps.Count) steps, pid $PID"
 # the presence note of untimed work (the shared PC's rule: what and since when, rewritten as it goes, removed at the end)
-$note = Join-Path $Pcup "active\Z3-$List.txt"
+$note = Join-Path $Pcup "active\$Label-$List.txt"
 $since = Get-Date -Format o
 $fail = @()
 for ($i = 0; $i -lt $steps.Count; $i++) {
     $s = $steps[$i]
     $next = if ($i + 1 -lt $steps.Count) { $steps[$i + 1] } else { $null }
-    Write-Utf8 $note "Z3 untimed steps '$List' (download / venv / export / reference; killed and run again around other lanes' locks), now $($s.name), since $since`r`nwritten $(Get-Date -Format HH:mm)"
+    Write-Utf8 $note "$Label untimed steps '$List' (download / venv / export / reference; killed and run again around other lanes' locks), now $($s.name), since $since`r`nwritten $(Get-Date -Format HH:mm)"
     $a = @(@($s.args) | ForEach-Object { "$_".Replace("{ROOT}", $Root).Replace("{HOME}", $HomeDir).Replace("{FIX}", $Fix) })
     $exe = switch ($s.exe) {
         "py" { Join-Path $Root ".venv-$($s.venv)\Scripts\python.exe" }

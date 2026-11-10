@@ -70,10 +70,15 @@ def cells():
                 # both bundles' cards: the audio encoder runs on the CPU (Granite's 36 s file: "CPU only"; Qwen3-ASR's
                 # GPU rows: "LM on the GPU, audio encoder CPU"): the language model goes to the device
                 a += ["--audio-backend", "cpu"]
-            if pref:
+            if pref == 2:
                 a += ["--gpu-pref", str(pref)]
             c.append(cell(f"{fam}/litertlm-{dev}", "litertlm", "run_asr_litertlm.py", a, cset, dev, 7,
                           probe=(dev == "npu"), timeout=45 if dev == "cpu" else 30))
+            if pref == 1:
+                # Z3b (11-10): the Intel GPU through the chain, which writes GpuPreference=1 for the venv's exes before
+                # the engine process starts (pc/chain.ps1 "gpu_pref"); Z3's runner (--gpu-pref) wrote it under the
+                # junction's target (os.path.realpath) and every such run of Z3 took the RTX
+                c[-1]["gpu_pref"] = 1
     # Parakeet TDT 0.6B v3 (en_us)
     px = rf"{M}\istupakov__parakeet-tdt-0.6b-v3-onnx"
     for cid, venv, a, dev, probe in (
@@ -114,6 +119,8 @@ def unit(c, first=0):
     if first:
         a += ["--first", str(first)]
     u = {k: c[k] for k in ("cell", "venv", "script", "device", "ram_need_gb", "timeout_min", "engines_gate")}
+    if c.get("gpu_pref"):
+        u["gpu_pref"] = c["gpu_pref"]
     u["args"] = a
     return u
 
@@ -255,6 +262,9 @@ def main():
     ap.add_argument("--known", type=float, default=0)
     ap.add_argument("--slots", default="", help="JSON list of {who, release_at, give_up_at}")
     ap.add_argument("--end-by", default="", help="timed: ISO time no cell may run past (pc/chain.ps1 leaves the rest)")
+    ap.add_argument("--first-n", type=int, default=10,
+                    help="first: clips per language (0 = every clip of the set; Z3b's full first pass of one cell)")
+    ap.add_argument("--timeout-min", type=int, default=0, help="first / timed: every cell unit's time limit (minutes)")
     ap.add_argument("--no-windows", action="store_true",
                     help="timed: one block to end_by (pc/chain.ps1 opens no duty window for other lanes' notes)")
     args = ap.parse_args()
@@ -292,9 +302,11 @@ def main():
     plan = {"sitting": args.sitting, "made": __import__("datetime").datetime.now().astimezone().isoformat(timespec="seconds")}
     if args.what == "first":
         plan["mode"] = "first"
-        plan["units"] = [unit(c, first=10) for c in pick]
+        plan["units"] = [unit(c, first=args.first_n) for c in pick]
         for u in plan["units"]:
             u["timeout_min"] = max(15, u["timeout_min"] // 2) if u["device"] != "npu" else 30
+            if args.timeout_min:
+                u["timeout_min"] = args.timeout_min
     else:
         plan["mode"] = "timed"
         srcs = [s for s in args.est_from.split(",") if s]
@@ -317,6 +329,8 @@ def main():
             if e:
                 u["est_sec"] = e
                 u["timeout_min"] = max(u["timeout_min"], int(e * 2 / 60) + 5)
+            if args.timeout_min:
+                u["timeout_min"] = max(u["timeout_min"], args.timeout_min)
             cells_.append(u)
         # the shortest expected run first: an end_by leaves every cell after the first one that does not fit, so the
         # long cells go last (and to the later sitting), not the short ones behind them (11-09)

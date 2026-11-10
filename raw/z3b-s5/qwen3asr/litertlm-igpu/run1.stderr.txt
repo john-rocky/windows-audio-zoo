@@ -1,0 +1,180 @@
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794280950.010627   28496 litert_lm_loader.cc:550] TFLite model type: tf_lite_vision_encoder not found for prefer activation type. Use system's default backend activation type. System's default activation type for Text decoder is fp16. Vision encoder and audio encoder default is fp32.
+W0000 00:00:1794280950.011202   15760 litert_lm_loader.cc:407] Section not found: SP_Tokenizer
+W0000 00:00:1794280950.011448   28496 litert_lm_loader.cc:532] TFLite model type: tf_lite_vision_encoder not found for backend constraints. Skipping.
+W0000 00:00:1794280950.011619   15760 litert_lm_loader.cc:407] Section not found: SP_Tokenizer
+W0000 00:00:1794280950.011851   15760 litert_lm_loader.cc:407] Section not found: HF_Tokenizer_Zlib
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0000024BC3DB9A60, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0000024BC3DBA000, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0000024BC3DBA120, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0000024BC4014CF0, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+INFO: [delegate_webgpu.cc:349] Create WebGPU environment (use_low_power=0, enable_host_mapped_pointer=1)
+I0000 00:00:1794280951.436886   28496 environment.cc:570] Selected adapter: Intel(R) Graphics, arch=xe-3lpg, vendor=intel, backend=Direct3D 12, adapterType=Integrated GPU
+INFO: [delegate_webgpu.cc:370] Created a WebGPU environment.
+INFO: [environment.cc:47] Adding options to the existing LiteRT environment
+INFO: [gpu_environment.cc:459] Failed to create OpenCL context.
+INFO: [gpu_environment.h:155] Created LiteRT GpuEnvironment.
+INFO: [environment.cc:47] Adding options to the existing LiteRT environment
+I0000 00:00:1794280951.500242   28496 delegate_webgpu.cc:758] # of threads to upload weights = 2
+I0000 00:00:1794280951.500419   28496 delegate_webgpu.cc:766] # of threads to compile kernels = 1
+I0000 00:00:1794280956.251870   28496 delegate_kernel.cc:360] Total 112 external tensors are used for delegate inputs and outputs
+I0000 00:00:1794280956.253728   28496 delegate_kernel.cc:1015] Initializing WebGPU-based API from serialized data.
+I0000 00:00:1794280957.890440   28496 delegate_kernel.cc:360] Total 113 external tensors are used for delegate inputs and outputs
+I0000 00:00:1794280957.892376   28496 delegate_kernel.cc:1015] Initializing WebGPU-based API from serialized data.
+W0000 00:00:1794280957.967330   28496 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794280957.968007   28496 litert_lm_loader.cc:497] TFLite model for type: tf_lite_end_of_audio not found. Skipping.
+W0000 00:00:1794280957.968091   28496 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794280957.968153   28496 litert_lm_loader.cc:497] TFLite model for type: tf_lite_end_of_vision not found. Skipping.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1794280957.969762   28496 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794280957.969837   28496 litert_lm_loader.cc:497] TFLite model for type: tf_lite_per_layer_embedder not found. Skipping.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+WARNING: [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorNotFound.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0000024BC9AB7A00, name=GPU WebGPU
+INFO: [gpu_registry.cc:121] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0000024BC9AB77C0, name=CpuAccelerator
+INFO: [cpu_registry.cc:73] XNNPACK CPU accelerator registered.
+W0000 00:00:1794280958.033261   28496 litert_lm_loader.cc:550] TFLite model type: tf_lite_vision_encoder not found for prefer activation type. Use system's default backend activation type. System's default activation type for Text decoder is fp16. Vision encoder and audio encoder default is fp32.
+W0000 00:00:1794280958.035181   28496 litert_lm_loader.cc:532] TFLite model type: tf_lite_vision_encoder not found for backend constraints. Skipping.
+W0000 00:00:1794280958.037791   28496 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794280958.038646   28496 litert_lm_loader.cc:497] TFLite model for type: tf_lite_audio_adapter not found. Skipping.
+W0000 00:00:1794280958.038761   28496 litert_lm_loader.cc:407] Section not found: TFLiteModel
+W0000 00:00:1794280958.038845   28496 litert_lm_loader.cc:497] TFLite model for type: tf_lite_audio_adapter not found. Skipping.
+INFO: [compiled_model.cc:963] Flatbuffer model initialized directly from incoming litert model.
+E0000 00:00:1794280965.582794   30124 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794280965.585172   30124 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794280965.586216   30124 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794280965.586469   30124 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794280965.589394    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794280965.589606    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794280965.589790    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794280965.589870    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794280968.124230   18916 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794280968.126656   18916 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794280968.127487   18916 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794280968.127738   18916 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794280968.127860   18916 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794280968.132115    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794280968.132342    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794280968.132485    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794280968.132571    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794280968.132638    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794280995.735986   23072 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794280995.738981   23072 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794280995.739477   23072 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794280995.742738    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794280995.743046    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794280995.743156    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794281003.655145   14772 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794281003.660917    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794281006.265119    7268 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794281006.267581    7268 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794281006.267944    7268 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794281006.268779    7268 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794281006.268922    7268 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794281006.272395    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794281006.272601    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794281006.272830    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794281006.272953    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794281006.273038    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794281010.988138   10232 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794281010.996204    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794281190.514973   29448 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794281190.517555   29448 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794281190.518350   29448 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794281190.518629   29448 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794281190.521444    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794281190.521594    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794281190.521667    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794281190.521729    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794281400.916320    7028 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794281400.918366    7028 environment.cc:106] Validation error: [Texture (unlabeled 1024x256 px, TextureFormat::RGBA16Float)] usage (TextureBinding|Storage(write-only)) includes writable usage and another usage in the same synchronization scope.
+ - While validating compute pass usage.
+ - While finishing [CommandEncoder (unlabeled)].
+E0000 00:00:1794281400.923362    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+E0000 00:00:1794281400.923558    6216 environment.cc:106] Validation error: [Invalid CommandBuffer] is invalid due to a previous error.
+ - While calling [Queue].Submit([[Invalid CommandBuffer]])
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0000024BC9AB7A00, name=GPU WebGPU
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0000024BC9AB77C0, name=CpuAccelerator

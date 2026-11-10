@@ -1,0 +1,88 @@
+{
+    "cell":  "granite/litertlm-npu",
+    "device":  "npu",
+    "role":  null,
+    "run":  1,
+    "mode":  "timed",
+    "sitting":  "z3b-s5",
+    "start":  "2026-11-10T12:56:43.8952152+09:00",
+    "osBuild":  "26200.9711",
+    "desktopLocked":  true,
+    "power":  {
+                  "msiUserScenarioMode":  1,
+                  "overlayAc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "overlayDc":  "ded574b5-45a0-4f42-8737-46345c09c238",
+                  "battery":  "status 2, 96 %"
+              },
+    "gate":  {
+                 "quietGate":  "quiet",
+                 "cpuReads":  [
+                                  2.3,
+                                  1.6,
+                                  0.2
+                              ],
+                 "nvidiaMiB":  0,
+                 "availGB":  24.3,
+                 "ramNeedGB":  12,
+                 "gpuEngines":  null
+             },
+    "before":  {
+                   "load":  {
+                                "cpu":  2.8,
+                                "build_ms":  0,
+                                "top":  [
+                                            "System 4 0.38 core",
+                                            "WmiPrvSE 7560 0.02 core",
+                                            "svchost 17248 0.02 core",
+                                            "LEDKeeper2 8936 0.02 core",
+                                            "powershell 20844 0.02 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 14385 MHz, 14001 MHz, 18.11 W, 0 %, 0 MiB, 51",
+                   "availGB":  24.3
+               },
+    "command":  "C:\\src\\audiozoo\\.venv-litertlm\\Scripts\\python.exe -u C:\\src\\audiozoo\\pc\\run_asr_litertlm.py --bundle C:\\src\\audiozoo\\models\\litert-community__granite-speech-5.0-2b\\granite-speech-5.0-2b.litertlm --family granite --backend npu --cache-dir C:\\src\\audiozoo\\runs\\z3b-s5\\granite\\litertlm-npu\\cache --audio-backend cpu --set S220 --fixtures C:\\src\\audiozoo\\fixtures --out C:\\src\\audiozoo\\runs\\z3b-s5\\granite\\litertlm-npu\\run1.json",
+    "engine":  {
+                   "exitCode":  1,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  23836,
+                   "enginePath":  "C:\\src\\audiozoo\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+                   "elapsedSeconds":  14.157,
+                   "peakWorkingSetBytes":  10860109824,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x00012C48":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x0001260E":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x00013E4C":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P0, 2085 MHz, 14001 MHz, 18.00 W, 0 %, 0 MiB, 51",
+                                         "10s P0, 967 MHz, 14001 MHz, 18.02 W, 0 %, 0 MiB, 51"
+                                     ]
+               },
+    "selectedAdapter":  null,
+    "after":  {
+                  "load":  {
+                               "cpu":  11.5,
+                               "build_ms":  0,
+                               "top":  [
+                                           "System 4 1.3 core",
+                                           "python 23836 0.55 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 3855 MHz, 14001 MHz, 17.97 W, 0 %, 0 MiB, 51"
+              },
+    "end":  "2026-11-10T12:57:00.0219915+09:00",
+    "tries":  1
+}

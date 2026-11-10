@@ -1,0 +1,11 @@
+[2026-11-10T11:05:48.6227285+09:00] chain start: plan C:\src\audiozoo\pc\plans\z3b-first-g.json mode first, 2 units, pid 30500
+[2026-11-10T11:05:57.5095629+09:00] adapters: 0x00000000_0x00012C48=nvidia, 0x00000000_0x0001260E=intel-gpu, 0x00000000_0x00012BB8=?, 0x00000000_0x00013E4C=npu?
+[2026-11-10T11:05:59.7303535+09:00] qwen3asr/litertlm-igpu run 1 GpuPreference=1 written before the start on: C:\src\audiozoo\.venv-litertlm\Scripts\python.exe, C:\src\audiozoo\python\cpython-3.12-windows-x86_64-none\python.exe
+[2026-11-10T11:05:59.7303535+09:00] qwen3asr/litertlm-igpu run 1 start
+[2026-11-10T11:07:48.7583927+09:00] qwen3asr/litertlm-igpu run 1 Selected adapter: Intel(R) Graphics, arch=xe-3lpg, vendor=intel, backend=Direct3D 12, adapterType=Integrated GPU
+[2026-11-10T11:07:50.7387380+09:00] qwen3asr/litertlm-igpu run 1 end: exit 0, OK, 108.971 s
+[2026-11-10T11:07:52.7418150+09:00] granite/litertlm-igpu run 1 GpuPreference=1 written before the start on: C:\src\audiozoo\.venv-litertlm\Scripts\python.exe, C:\src\audiozoo\python\cpython-3.12-windows-x86_64-none\python.exe
+[2026-11-10T11:07:52.7438194+09:00] granite/litertlm-igpu run 1 start
+[2026-11-10T11:17:43.9739790+09:00] granite/litertlm-igpu run 1 Selected adapter: Intel(R) Graphics, arch=xe-3lpg, vendor=intel, backend=Direct3D 12, adapterType=Integrated GPU
+[2026-11-10T11:17:45.9524566+09:00] granite/litertlm-igpu run 1 end: exit 0, OK, 591.225 s
+[2026-11-10T11:17:46.0001152+09:00] chain done: OK
