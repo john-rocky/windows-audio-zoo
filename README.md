@@ -286,8 +286,12 @@ RTF 0.2672, 2378 MiB on the NPU. 119 of its 150 answers are the same text as the
 under 70 % or over 150 % of that answer's length.
 
 In each of the three plugin runs of Qwen3-ASR the dispatch library wrote a 3,084,095,820-byte weights file to the
-Windows temp folder (`litert_ov_bank_<hash>.bin`, a new name each run); the files were still there afterwards
-(`raw/logs/z3b_pc_cleanup.txt`, the cleanup that removed them).
+Windows temp folder (`litert_ov_bank_<16 hex digits>.bin`, a new random name each run); the files were still there
+afterwards (`raw/logs/z3b_pc_cleanup.txt`, the cleanup that removed them). The runner never closes the engine and ends
+its process with `os._exit` (`pc/run_asr_litertlm.py`), which skips the destructor that removes the file. That
+destructor is `NpuSharedBank::~NpuSharedBank` in `litert/vendors/intel_openvino/dispatch/weight_bank_runtime.cc` at
+LiteRT dcb657e8, the commit that LiteRT-LM v0.19.1's `WORKSPACE` pins as `LITERT_REF`. A run that ends without
+`os._exit` was not tried.
 
 The commands of 11-10, in order. `pc/plans/z3b-s5.json` and `z3b-s6.json` are the files as they ran: set their
 `end_by` (11-10 14:30 and 14:33) to a time ahead first, or the chain starts none of their cells. After the pulls,
