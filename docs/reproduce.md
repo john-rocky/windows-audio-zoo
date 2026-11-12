@@ -33,6 +33,11 @@ tools/pc.sh launch 'pc\steps.ps1' '-List fetch'
 tools/pc.sh wait "$R\logs\setup.done,$R\logs\fetch.done" "$R\logs\setup.log,$R\logs\fetch.log" 3
 ```
 
+Step 3 patches the installed copy of ONNX Runtime GenAI 0.19.0's model builder with `pc/patch_genai_whisper.py`. The
+lines the script edits are unchanged on the builder's main branch at 75fa2250c9 (2026-11-12). A fix for the builder
+itself is proposed in [microsoft/onnxruntime-genai#2940](https://github.com/microsoft/onnxruntime-genai/pull/2940), a
+draft pull request, open and not merged on 2026-11-12.
+
 ```bash
 # 3. the references (transformers fp32 CPU: Whisper, Parakeet; PyTorch Kokoro and the write-back of its waves) and the
 #    Whisper export for ONNX Runtime GenAI (pc/patch_genai_whisper.py fixes the 0.19.0 builder for a decoder whose

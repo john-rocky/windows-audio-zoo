@@ -6,7 +6,9 @@ than its encoder (whisper-large-v3-turbo: 32 encoder layers, 4 decoder layers) s
 The runtime reads those outputs by the decoder's layer count (src/models/io/cross_kv_cache.cpp, v0.19.0:
 layer_count_ = model.config_->model.decoder.num_hidden_layers; names from encoder.outputs.cross_present_*_names), so the
 encoder must make one pair per decoder layer. This edits the three loops of WhisperEncoder to count decoder layers, in
-the venv's installed copy of builders/whisper.py; the original stays beside it as whisper.py.orig.
+the venv's installed copy of builders/whisper.py; the original stays beside it as whisper.py.orig. The lines this script
+edits are unchanged on the builder's main branch at 75fa2250c9 (2026-11-12). A fix for the builder itself is proposed in
+https://github.com/microsoft/onnxruntime-genai/pull/2940 (a draft pull request, open and not merged on 2026-11-12).
 
     python patch_genai_whisper.py            # patch (a patched file is left as it is)
     python patch_genai_whisper.py --check    # print the state only
