@@ -1,0 +1,17 @@
+[2026-11-12T18:46:29.1856974+09:00] chain start: plan C:\src\distil\pc\plans\distil-first.json mode first, 7 units, pid 19068
+[2026-11-12T18:46:35.2129934+09:00] adapters: 0x00000000_0x00012799=nvidia, 0x00000000_0x00011F23=intel-gpu, 0x00000000_0x00013D59=npu?, 0x00000000_0x00012767=?
+[2026-11-12T18:46:37.5951989+09:00] distil-large-v3/genai-fp32-cpu run 1 start
+[2026-11-12T18:50:36.4661017+09:00] distil-large-v3/genai-fp32-cpu run 1 end: exit 0, OK, 236.83 s
+[2026-11-12T18:50:38.4773941+09:00] distil-large-v3/genai-fp32-igpu run 1 start
+[2026-11-12T18:54:56.4260587+09:00] distil-large-v3/genai-fp32-igpu run 1 end: exit 0, OK, 255.971 s
+[2026-11-12T18:54:58.4209979+09:00] distil-large-v3/genai-fp32-npu run 1 start
+[2026-11-12T18:55:06.7059703+09:00] distil-large-v3/genai-fp32-npu run 1 end: exit 1, ERROR, 6.292 s
+[2026-11-12T18:55:08.7180235+09:00] distil-large-v3/genai-fp16-rtx run 1 start
+[2026-11-12T18:55:32.9438119+09:00] distil-large-v3/genai-fp16-rtx run 1 end: exit 0, OK, 22.316 s
+[2026-11-12T18:55:34.9553772+09:00] distil-large-v3/genai-fp32-rtx run 1 start
+[2026-11-12T18:55:47.7900317+09:00] distil-large-v3/genai-fp32-rtx run 1 end: exit -1073741819, no runner JSON, 10.943 s
+[2026-11-12T18:55:49.7848746+09:00] distil-large-v3/genai-int4-cpu run 1 start
+[2026-11-12T19:00:16.0943702+09:00] distil-large-v3/genai-int4-cpu run 1 end: exit 0, OK, 264.274 s
+[2026-11-12T19:00:18.0859751+09:00] distil-large-v3/genai-int4-rtx run 1 start
+[2026-11-12T19:00:29.8630998+09:00] distil-large-v3/genai-int4-rtx run 1 end: exit 0, OK, 9.867 s
+[2026-11-12T19:00:29.8700888+09:00] chain done: OK

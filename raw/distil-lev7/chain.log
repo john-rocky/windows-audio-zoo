@@ -1,0 +1,11 @@
+[2026-11-12T22:25:18.5709087+09:00] chain start: plan C:\src\distil\pc\plans\distil-lev7.json mode first, 4 units, pid 21100
+[2026-11-12T22:25:27.5161637+09:00] adapters: 0x00000000_0x00012799=nvidia, 0x00000000_0x00011F23=intel-gpu, 0x00000000_0x00013D59=npu?, 0x00000000_0x00012767=?
+[2026-11-12T22:25:29.8059882+09:00] distil-large-v3/genai-int8_encnpustatic_ovgpu-npu run 1 start
+[2026-11-12T22:30:48.1032329+09:00] distil-large-v3/genai-int8_encnpustatic_ovgpu-npu run 1 end: exit 0, OK, 316.233 s
+[2026-11-12T22:30:49.6071638+09:00] distil-large-v3/genai-fp16_sharebuf-rtx run 1 start
+[2026-11-12T22:30:56.3158618+09:00] distil-large-v3/genai-fp16_sharebuf-rtx run 1 end: exit 1, ERROR, 4.672 s
+[2026-11-12T22:30:58.3326007+09:00] distil-large-v3/genai-fp16_sharebufcg-rtx run 1 start
+[2026-11-12T22:31:04.0123203+09:00] distil-large-v3/genai-fp16_sharebufcg-rtx run 1 end: exit 1, ERROR, 3.631 s
+[2026-11-12T22:31:05.9980288+09:00] distil-large-v3/genai-fp16_sharebufsdpa1-rtx run 1 start
+[2026-11-12T22:31:12.1562893+09:00] distil-large-v3/genai-fp16_sharebufsdpa1-rtx run 1 end: exit 1, ERROR, 4.173 s
+[2026-11-12T22:31:12.1662912+09:00] chain done: OK

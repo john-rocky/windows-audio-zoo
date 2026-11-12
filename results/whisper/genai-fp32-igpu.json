@@ -79,6 +79,7 @@
   "suspendedSeconds": 0
  },
  "tries": 1,
+ "encoder_on": "cpu",
  "control": {
   "known_rtf": 0.26228,
   "known_from": "this sitting's head (3 runs, spread 0.7 %)",

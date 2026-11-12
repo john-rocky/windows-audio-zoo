@@ -1,0 +1,29 @@
+[2026-11-12T19:40:34.3573584+09:00] chain start: plan C:\src\distil\pc\plans\distil-lev.json mode first, 13 units, pid 13564
+[2026-11-12T19:40:42.2644453+09:00] adapters: 0x00000000_0x00012799=nvidia, 0x00000000_0x00011F23=intel-gpu, 0x00000000_0x00013D59=npu?, 0x00000000_0x00012767=?
+[2026-11-12T19:40:43.7426735+09:00] distil-large-v3/genai-int8-cpu run 1 start
+[2026-11-12T19:45:34.5162392+09:00] distil-large-v3/genai-int8-cpu run 1 end: exit 0, OK, 288.681 s
+[2026-11-12T19:45:36.5404912+09:00] distil-large-v3/genai-int8-rtx run 1 start
+[2026-11-12T19:45:52.0427825+09:00] distil-large-v3/genai-int8-rtx run 1 end: exit 0, OK, 13.6 s
+[2026-11-12T19:45:54.0382440+09:00] distil-large-v3/genai-fp16_cudagraph-rtx run 1 start
+[2026-11-12T19:46:05.2210685+09:00] distil-large-v3/genai-fp16_cudagraph-rtx run 1 end: exit -1073741819, ERROR, 9.203 s
+[2026-11-12T19:46:07.2065716+09:00] distil-large-v3/genai-int8_cudagraph-rtx run 1 start
+[2026-11-12T19:46:16.8158357+09:00] distil-large-v3/genai-int8_cudagraph-rtx run 1 end: exit -1073741819, ERROR, 7.641 s
+[2026-11-12T19:46:18.8007476+09:00] distil-large-v3/genai-int4_cudagraph-rtx run 1 start
+[2026-11-12T19:46:29.9889779+09:00] distil-large-v3/genai-int4_cudagraph-rtx run 1 end: exit -1073741819, ERROR, 9.222 s
+[2026-11-12T19:46:31.9808914+09:00] distil-large-v3/genai-fp16_sdpa1-rtx run 1 start
+[2026-11-12T19:46:42.1735973+09:00] distil-large-v3/genai-fp16_sdpa1-rtx run 1 end: exit 0, OK, 8.291 s
+[2026-11-12T19:46:44.1814634+09:00] distil-large-v3/genai-fp16_kv132-rtx run 1 start
+[2026-11-12T19:46:54.9620013+09:00] distil-large-v3/genai-fp16_kv132-rtx run 1 end: exit 0, OK, 8.852 s
+[2026-11-12T19:46:56.4610913+09:00] distil-large-v3/genai-fp32_whole-igpu run 1 start
+[2026-11-12T19:47:46.5663038+09:00] distil-large-v3/genai-fp32_whole-igpu run 1 end: exit 0, OK, 48.125 s
+[2026-11-12T19:47:48.5652901+09:00] distil-large-v3/genai-fp32_ovcpu-cpu run 1 start
+[2026-11-12T19:52:05.9302811+09:00] distil-large-v3/genai-fp32_ovcpu-cpu run 1 end: exit 0, OK, 255.34 s
+[2026-11-12T19:52:07.9740542+09:00] distil-large-v3/genai-int8_ovcpu-cpu run 1 start
+[2026-11-12T19:55:24.2678087+09:00] distil-large-v3/genai-int8_ovcpu-cpu run 1 end: exit 0, OK, 194.308 s
+[2026-11-12T19:55:26.2790376+09:00] distil-large-v3/genai-fp16_webgpu-rtx run 1 start
+[2026-11-12T19:55:57.5592212+09:00] distil-large-v3/genai-fp16_webgpu-rtx run 1 end: exit 0, OK, 29.377 s
+[2026-11-12T19:55:59.5777684+09:00] distil-large-v3/genai-fp16_webgpu-igpu run 1 start
+[2026-11-12T19:58:09.7755919+09:00] distil-large-v3/genai-fp16_webgpu-igpu run 1 end: exit 0, OK, 128.239 s
+[2026-11-12T19:58:11.8802183+09:00] distil-large-v3/genai-fp32_encnpu-npu run 1 start
+[2026-11-12T19:58:16.0338445+09:00] distil-large-v3/genai-fp32_encnpu-npu run 1 end: exit 1, ERROR, 2.085 s
+[2026-11-12T19:58:16.0418431+09:00] chain done: OK

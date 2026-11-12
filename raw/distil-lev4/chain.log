@@ -1,0 +1,5 @@
+[2026-11-12T21:09:24.6524282+09:00] chain start: plan C:\src\distil\pc\plans\distil-lev4.json mode first, 1 units, pid 20688
+[2026-11-12T21:09:34.0116024+09:00] adapters: 0x00000000_0x00012799=nvidia, 0x00000000_0x00011F23=intel-gpu, 0x00000000_0x00013D59=npu?, 0x00000000_0x00012767=?
+[2026-11-12T21:09:36.3639078+09:00] distil-large-v3/genai-fp32_encnpu_ovcpu-npu run 1 start
+[2026-11-12T21:09:50.2875807+09:00] distil-large-v3/genai-fp32_encnpu_ovcpu-npu run 1 end: exit -1073741819, no runner JSON, 11.815 s
+[2026-11-12T21:09:50.3105826+09:00] chain done: OK

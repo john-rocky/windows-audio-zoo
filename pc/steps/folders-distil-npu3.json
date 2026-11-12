@@ -1,0 +1,23 @@
+[
+  {
+    "name": "npufolder-int8-enc-gpu",
+    "exe": "py",
+    "args": [
+      "{ROOT}\\pc\\genai_providers_folder.py",
+      "--src",
+      "{ROOT}\\exports\\distil-large-v3-genai-int8-cpu",
+      "--dst",
+      "{ROOT}\\exports\\distil-large-v3-genai-int8-openvino-encnpu-gpu",
+      "--provider",
+      "OpenVINO",
+      "--option",
+      "device_type=GPU",
+      "--encoder-option",
+      "device_type=NPU",
+      "--encoder-option",
+      "reshape_input=audio_features[1,128,3000]"
+    ],
+    "timeout_min": 3,
+    "venv": "ref"
+  }
+]

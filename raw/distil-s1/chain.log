@@ -1,0 +1,20 @@
+[2026-11-12T19:06:14.2309787+09:00] chain start: plan C:\src\distil\pc\plans\distil-s1.json mode timed, 7 units, pid 20276
+[2026-11-12T19:06:23.0586630+09:00] adapters: 0x00000000_0x00012799=nvidia, 0x00000000_0x00011F23=intel-gpu, 0x00000000_0x00013D59=npu?, 0x00000000_0x00012767=?
+[2026-11-12T19:06:23.1566707+09:00] settle 180 s inside the lock before the control rows
+[2026-11-12T19:09:30.9140564+09:00] control-warm run 1 start
+[2026-11-12T19:12:09.7208884+09:00] control-warm run 1 end: exit 0, OK, 156.732 s
+[2026-11-12T19:12:15.7585857+09:00] control-head run 1 start
+[2026-11-12T19:14:05.9244216+09:00] control-head run 1 end: exit 0, OK, 108.188 s
+[2026-11-12T19:14:33.3888013+09:00] control-head run 2 start
+[2026-11-12T19:16:15.7598456+09:00] control-head run 2 end: exit 0, OK, 100.447 s
+[2026-11-12T19:16:43.2514053+09:00] control-head run 3 start
+[2026-11-12T19:18:24.8597845+09:00] control-head run 3 end: exit 0, OK, 99.568 s
+[2026-11-12T19:18:25.0887107+09:00] chain error: control head: no known value (head spread 7.4 % over 3 runs)
+発生場所 C:\src\distil\pc\chain.ps1:490 文字:156
++ ... unt) runs"; throw "control head: no known value ($($script:control.ve ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (control head: n... % over 3 runs):String) [], RuntimeException
+    + FullyQualifiedErrorId : control head: no known value (head spread 7.4 % over 3 runs)
+ 
+
+[2026-11-12T19:18:25.0968654+09:00] chain done: FAIL control head: no known value (head spread 7.4 % over 3 runs)

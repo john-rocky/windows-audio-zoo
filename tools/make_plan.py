@@ -5,7 +5,7 @@ pc/chain.ps1), from the cell table below (PLAN.md sections 2 and 3).
     python3 tools/make_plan.py steps                                  # setup, fetch, export-whisper, export-ov, refs
     python3 tools/make_plan.py first --sitting first-a --group a --devices cpu,igpu,rtx   # first pass, 10 clips per language
     python3 tools/make_plan.py first --sitting first-an --group a --devices npu          # the NPU cells beside it
-    python3 tools/make_plan.py timed --sitting s1 --cells <id,id,...> --est-from first-a,first-b [--known <rtf>] [--end-by <iso>]
+    python3 tools/make_plan.py timed --sitting s1 --cells <id,id,...> --est-from first-a,first-b [--known <rtf>] [--end-by <iso>] [--control-est <s>] [--warm-runs 2]
     python3 tools/make_plan.py list                                   # the cell ids
     python3 tools/make_plan.py redo --from setup --names pip-genai,versions-genai   # pc/steps/redo-setup.json
 
@@ -52,6 +52,93 @@ def cells():
                   probe=True, timeout=30))
     c.append(cell("whisper/genai-fp16-rtx", "genai-cuda", "run_asr_genai.py",
                   ["--model-dir", rf"{X}\whisper-genai-fp16-cuda", "--ep", "cuda"], "S150", "rtx", 6))
+    # Distil-Whisper distil-large-v3 (an English model: the 50 en_us clips of S150), group d: the ORT GenAI exports of
+    # the same builder after pc/patch_genai_whisper.py (32 encoder layers, 2 decoder layers). The fp32 export on CUDA
+    # and the int4 exports are the speed levers' rows (precision, quant)
+    dx = rf"{X}\distil-large-v3-genai"
+    for cid, venv, a, dev, probe in (
+            ("distil-large-v3/genai-fp32-cpu", "genai", [rf"{dx}-fp32-cpu", "--ep", "cpu"], "cpu", False),
+            ("distil-large-v3/genai-fp32-igpu", "genai", [rf"{dx}-fp32-cpu", "--ep", "openvino", "--ov-device", "GPU"], "igpu", False),
+            ("distil-large-v3/genai-fp32-npu", "genai", [rf"{dx}-fp32-cpu", "--ep", "openvino", "--ov-device", "NPU"], "npu", True),
+            ("distil-large-v3/genai-fp16-rtx", "genai-cuda", [rf"{dx}-fp16-cuda", "--ep", "cuda"], "rtx", False),
+            ("distil-large-v3/genai-fp32-rtx", "genai-cuda", [rf"{dx}-fp32-cpu", "--ep", "cuda"], "rtx", False),
+            ("distil-large-v3/genai-int4-cpu", "genai", [rf"{dx}-int4-cpu", "--ep", "cpu"], "cpu", False),
+            ("distil-large-v3/genai-int4-rtx", "genai-cuda", [rf"{dx}-int4-cuda", "--ep", "cuda"], "rtx", False)):
+        c.append(cell(cid, venv, "run_asr_genai.py", ["--model-dir"] + a + ["--langs", "en_us"], "S150", dev, 6,
+                      probe=probe, group="d", timeout=30 if dev == "npu" else 20))
+    # distil-large-v3's speed levers (11-12), group dl: int8 weights (quant), CUDA graph and the attention kernel on the
+    # decoder (state, ep option), a 132-token KV buffer (shape: 4 + 128 new tokens against 4 + 440), the encoder on the
+    # same device as the decoder (--encoder-ep: "whole" = the Intel GPU's OpenVINO EP for both, "webgpu" = the WebGPU
+    # plugin EP for both on adapter 0 = the RTX or 1 = the Intel GPU, "ovcpu" = the OpenVINO EP on the CPU for both)
+    # and the encoder alone on the NPU (decoder on the CPU). A variant is named in the form part
+    # (<runtime>-<form>-<device>: tools/results.py reads three parts)
+    cg = ["--ep-option", "enable_cuda_graph=1"]
+    for cid, venv, a, dev, probe in (
+            ("distil-large-v3/genai-int8-cpu", "genai", [rf"{dx}-int8-cpu", "--ep", "cpu"], "cpu", False),
+            ("distil-large-v3/genai-int8-rtx", "genai-cuda", [rf"{dx}-int8-cuda", "--ep", "cuda"], "rtx", False),
+            ("distil-large-v3/genai-fp16_cudagraph-rtx", "genai-cuda", [rf"{dx}-fp16-cuda", "--ep", "cuda"] + cg, "rtx", False),
+            ("distil-large-v3/genai-int8_cudagraph-rtx", "genai-cuda", [rf"{dx}-int8-cuda", "--ep", "cuda"] + cg, "rtx", False),
+            ("distil-large-v3/genai-int4_cudagraph-rtx", "genai-cuda", [rf"{dx}-int4-cuda", "--ep", "cuda"] + cg, "rtx", False),
+            ("distil-large-v3/genai-fp16_sdpa1-rtx", "genai-cuda",
+             [rf"{dx}-fp16-cuda", "--ep", "cuda", "--ep-option", "sdpa_kernel=1"], "rtx", False),
+            ("distil-large-v3/genai-int4_sdpa1-rtx", "genai-cuda",
+             [rf"{dx}-int4-cuda", "--ep", "cuda", "--ep-option", "sdpa_kernel=1"], "rtx", False),
+            ("distil-large-v3/genai-int8_sdpa1-rtx", "genai-cuda",
+             [rf"{dx}-int8-cuda", "--ep", "cuda", "--ep-option", "sdpa_kernel=1"], "rtx", False),
+            ("distil-large-v3/genai-fp16_kv132-rtx", "genai-cuda", [rf"{dx}-fp16-cuda", "--ep", "cuda", "--max-new", "128"], "rtx", False),
+            ("distil-large-v3/genai-fp32_cuda-rtx", "genai-cuda", [rf"{dx}-fp32-cuda", "--ep", "cuda"], "rtx", False),
+            ("distil-large-v3/genai-fp32_whole-igpu", "genai",
+             [rf"{dx}-fp32-cpu", "--ep", "openvino", "--ov-device", "GPU", "--encoder-ep", "same"], "igpu", False),
+            ("distil-large-v3/genai-fp32_ovcpu-cpu", "genai",
+             [rf"{dx}-fp32-cpu", "--ep", "openvino", "--ov-device", "CPU", "--encoder-ep", "same"], "cpu", False),
+            ("distil-large-v3/genai-int8_ovcpu-cpu", "genai",
+             [rf"{dx}-int8-cpu", "--ep", "openvino", "--ov-device", "CPU", "--encoder-ep", "same"], "cpu", False),
+            # the OpenVINO EP named for the encoder and the decoder in the folder's own genai_config.json (11-12:
+            # pc/genai_providers_folder.py, run with --ep config, no provider set in code): int8 and int4 on the CPU,
+            # int8, int4 and fp32 on the Intel GPU (quant)
+            ("distil-large-v3/genai-int8_openvino-cpu", "genai", [rf"{dx}-int8-openvino-cpu", "--ep", "config"], "cpu", False),
+            ("distil-large-v3/genai-int4_openvino-cpu", "genai", [rf"{dx}-int4-openvino-cpu", "--ep", "config"], "cpu", False),
+            ("distil-large-v3/genai-int8_openvino-igpu", "genai", [rf"{dx}-int8-openvino-gpu", "--ep", "config"], "igpu", False),
+            ("distil-large-v3/genai-int4_openvino-igpu", "genai", [rf"{dx}-int4-openvino-gpu", "--ep", "config"], "igpu", False),
+            ("distil-large-v3/genai-fp32_openvino-igpu", "genai", [rf"{dx}-fp32-openvino-gpu", "--ep", "config"], "igpu", False),
+            ("distil-large-v3/genai-fp16_webgpu-rtx", "genai",
+             [rf"{dx}-fp16-webgpu", "--ep", "webgpu", "--ep-option", "adapterIndex=0", "--encoder-ep", "same"], "rtx", True),
+            ("distil-large-v3/genai-fp16_webgpu-igpu", "genai",
+             [rf"{dx}-fp16-webgpu", "--ep", "webgpu", "--ep-option", "adapterIndex=1", "--encoder-ep", "same"], "igpu", True),
+            ("distil-large-v3/genai-fp32_encnpu-npu", "genai",
+             [rf"{dx}-fp32-cpu", "--ep", "cpu", "--encoder-ep", "openvino-npu"], "npu", True),
+            # GenAI 0.19.0 refused the one above ("Running a model with multiple providers is not supported.
+            # Encountered OpenVINO and CPU"): the same OpenVINO EP for both, the encoder on the NPU, the decoder on
+            # the CPU
+            ("distil-large-v3/genai-fp32_encnpu_ovcpu-npu", "genai",
+             [rf"{dx}-fp32-cpu", "--ep", "openvino", "--ov-device", "CPU", "--encoder-ep", "openvino-npu"], "npu", True),
+            # that one ended with an access violation (0xC0000005, 12 s in) after the NPU compiler's message on its
+            # unbounded batch_size (distil-lev4: "Upper bounds are not specified for node
+            # '/model/preprocessing/Conv_1/WithoutBiases' ... bounds are '[9223372036854775807, 128, 3000]'"): the OpenVINO EP's reshape_input fixes the encoder's audio_features to [1,128,3000] in the
+            # folder's genai_config.json (pc/genai_providers_folder.py --encoder-option; steps folders-distil-npu and
+            # folders-distil-npu2). The decoder on the NPU with batch 1 and its lengths bounded, and both parts on the
+            # NPU, stop in the NPU compiler (distil-lev5). shape: the static encoder input; quant: the int8 export's
+            # encoder on the NPU; ep: the decoder on the Intel GPU; state: the compiled encoder cached (cache_dir), the
+            # same folder run twice (the first compiles, the second loads)
+            ("distil-large-v3/genai-fp32_encnpustatic_ovcpu-npu", "genai", [rf"{dx}-fp32-openvino-encnpu", "--ep", "config"], "npu", False),
+            ("distil-large-v3/genai-fp32_decnpubound_ovcpu-npu", "genai", [rf"{dx}-fp32-openvino-decnpu", "--ep", "config"], "npu", True),
+            ("distil-large-v3/genai-fp32_openvino-npu", "genai", [rf"{dx}-fp32-openvino-npu", "--ep", "config"], "npu", True),
+            ("distil-large-v3/genai-int8_encnpustatic_ovcpu-npu", "genai", [rf"{dx}-int8-openvino-encnpu", "--ep", "config"], "npu", True),
+            ("distil-large-v3/genai-fp32_encnpustatic_ovgpu-npu", "genai", [rf"{dx}-fp32-openvino-encnpu-gpu", "--ep", "config"], "npu", True),
+            ("distil-large-v3/genai-fp32_encnpucachea_ovcpu-npu", "genai", [rf"{dx}-fp32-openvino-encnpu-cache", "--ep", "config"], "npu", True),
+            ("distil-large-v3/genai-fp32_encnpucacheb_ovcpu-npu", "genai", [rf"{dx}-fp32-openvino-encnpu-cache", "--ep", "config"], "npu", True),
+            # distil-lev7: the int8 encoder on the NPU with the decoder on the Intel GPU (steps folders-distil-npu3);
+            # state: the KV buffer shared, past_present_share_buffer true in a copy of the fp16 CUDA export's
+            # genai_config.json (pc/genai_search_folder.py, steps folders-distil-sharebuf), alone, with the CUDA graph
+            # (which the builder's false refuses: "Graph capture is not supported with past_present_share_buffer set
+            # to false.") and with sdpa_kernel=1
+            ("distil-large-v3/genai-int8_encnpustatic_ovgpu-npu", "genai", [rf"{dx}-int8-openvino-encnpu-gpu", "--ep", "config"], "npu", True),
+            ("distil-large-v3/genai-fp16_sharebuf-rtx", "genai-cuda", [rf"{dx}-fp16-cuda-sharebuf", "--ep", "cuda"], "rtx", False),
+            ("distil-large-v3/genai-fp16_sharebufcg-rtx", "genai-cuda", [rf"{dx}-fp16-cuda-sharebuf", "--ep", "cuda"] + cg, "rtx", False),
+            ("distil-large-v3/genai-fp16_sharebufsdpa1-rtx", "genai-cuda",
+             [rf"{dx}-fp16-cuda-sharebuf", "--ep", "cuda", "--ep-option", "sdpa_kernel=1"], "rtx", False)):
+        c.append(cell(cid, venv, "run_asr_genai.py", ["--model-dir"] + a + ["--langs", "en_us"], "S150", dev, 6,
+                      probe=probe, group="dl", timeout=30 if dev == "npu" else 20))
     # Qwen3-ASR 1.7B
     for form in ("fp16", "int8"):
         for dev in ("cpu", "igpu", "npu", "rtx"):
@@ -173,6 +260,37 @@ def steps():
                                                "-i", w, "-o", rf"{X}\whisper-genai-fp16-cuda", "-p", "fp16", "-e", "cuda",
                                                "-c", r"{ROOT}\exports\cache-genai"], venv="ref", timeout=40, ram=8),
     ]
+    # Distil-Whisper distil-large-v3 (11-12): the same patch, then the builder from the checkpoint's model.safetensors
+    # (fp16 values; fp32 for the CPU export, as the transformers reference reads them); the int4 forms are separate
+    # (speed levers: a form the builder cannot make is a no-go row, not a failed walk)
+    dw = rf"{M}\distil-whisper__distil-large-v3"
+
+    def genai_export(name, form, ep):
+        return step(name, "py", ["-m", "onnxruntime_genai.models.builder", "-i", dw, "-o",
+                                 rf"{X}\distil-large-v3-genai-{form}-{ep}", "-p", form, "-e", ep,
+                                 "-c", r"{ROOT}\exports\cache-genai"], venv="ref", timeout=40, ram=8)
+    out["export-distil"] = [
+        step("patch-genai-whisper", "py", [r"{ROOT}\pc\patch_genai_whisper.py"], venv="ref", timeout=5, stop=True),
+        genai_export("genai-distil-fp32-cpu", "fp32", "cpu"),
+        genai_export("genai-distil-fp16-cuda", "fp16", "cuda"),
+    ]
+    out["export-distil-int4"] = [
+        step("patch-genai-whisper", "py", [r"{ROOT}\pc\patch_genai_whisper.py"], venv="ref", timeout=5, stop=True),
+        genai_export("genai-distil-int4-cpu", "int4", "cpu"),
+        genai_export("genai-distil-int4-cuda", "int4", "cuda"),
+    ]
+    out["export-distil-levers"] = [
+        step("patch-genai-whisper", "py", [r"{ROOT}\pc\patch_genai_whisper.py"], venv="ref", timeout=5, stop=True),
+        genai_export("genai-distil-int8-cpu", "int8", "cpu"),
+        genai_export("genai-distil-int8-cuda", "int8", "cuda"),
+        genai_export("genai-distil-fp16-webgpu", "fp16", "webgpu"),
+    ]
+    # the venvs and Hub files the distil-large-v3 cells and the control row need (a folder of its own on the PC)
+    keep = {"python"} | {f"{k}-{v}" for k in ("venv", "pip", "versions") for v in ("ovg", "genai", "genai-cuda", "ref")}
+    out["setup-distil"] = [x for x in s if x["name"] in keep] + [
+        step("fixtures", "py", [r"{ROOT}\pc\check_fixtures.py", "--fixtures", "{FIX}", "--sets", "S150"], venv="ovg", timeout=5)]
+    out["fetch-distil"] = [out["fetch"][0], step("fetch", "uv", out["fetch"][1]["args"] + [
+        "--only", "distil-whisper/distil-large-v3", "whisper-large-v3-turbo-int8-ov"], timeout=60)]
     # optimum-intel's Qwen3-ASR IR: over 8 GB each = the PC's lock once as "(not a timing)", at the slot of the PC's order
     out["export-ov"] = []
     for form in ("fp16", "int8"):
@@ -191,6 +309,11 @@ def steps():
         step("writeback-ref-kokoro", "py", [r"{ROOT}\pc\writeback.py", "--asr-dir",
                                             rf"{M}\OpenVINO__whisper-large-v3-turbo-fp16-ov", "--run-json",
                                             r"{ROOT}\refs\kokoro\ref.json"], venv="ovg", timeout=30, ram=4),
+    ]
+    out["refs-distil"] = [
+        step("ref-distil", "py", [r"{ROOT}\pc\ref_hf.py", "--family", "whisper", "--model-dir", dw, "--set", "S150",
+                                  "--langs", "en_us", "--fixtures", "{FIX}", "--out", r"{ROOT}\refs\distil-large-v3\ref.json"],
+             venv="ref", timeout=60, ram=6),
     ]
     # the Qwen3-ASR OpenVINO cells' first-pass gap from the reference of earlier Qwen3-ASR work (11-09): the exported checkpoint in its own
     # package, PyTorch fp32, on the first pass's 30 clips (pc/ref_qwen_asr_pkg.py)
@@ -260,6 +383,10 @@ def main():
     ap.add_argument("--est-from", default="")
     ap.add_argument("--devices", default="", help="only cells on these devices (cpu,igpu,rtx,npu)")
     ap.add_argument("--known", type=float, default=0)
+    ap.add_argument("--control-est", type=int, default=0,
+                    help="timed: the control row's expected seconds per run (default: its first-pass run in --est-from)")
+    ap.add_argument("--warm-runs", type=int, default=1,
+                    help="timed: uncounted control-warm runs before the head (2 when a first head run came out slow)")
     ap.add_argument("--slots", default="", help="JSON list of {who, release_at, give_up_at}")
     ap.add_argument("--end-by", default="", help="timed: ISO time no cell may run past (pc/chain.ps1 leaves the rest)")
     ap.add_argument("--first-n", type=int, default=10,
@@ -310,7 +437,7 @@ def main():
     else:
         plan["mode"] = "timed"
         srcs = [s for s in args.est_from.split(",") if s]
-        units = [dict(CONTROL, cell="control-warm", role="control-warm"),
+        units = [dict(CONTROL, cell="control-warm", role="control-warm", **({"runs": args.warm_runs} if args.warm_runs > 1 else {})),
                  dict(CONTROL, cell="control-head", role="control-head", runs=1 if args.known else 3)]
         # the control row is the first pass of whisper/ovg-int8-cpu (the same 30 clips): its run time is the control's
         ce = None
@@ -319,6 +446,8 @@ def main():
             if mj.exists():
                 ce = round(float(json.loads(mj.read_text(encoding="utf-8-sig"))["engine"]["elapsedSeconds"]))
                 break
+        if args.control_est:
+            ce = args.control_est
         if ce:
             for u in units:
                 u["est_sec"] = ce

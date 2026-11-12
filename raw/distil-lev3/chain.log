@@ -1,0 +1,15 @@
+[2026-11-12T20:27:50.7461758+09:00] chain start: plan C:\src\distil\pc\plans\distil-lev3.json mode first, 6 units, pid 19588
+[2026-11-12T20:28:01.8848360+09:00] adapters: 0x00000000_0x00012799=nvidia, 0x00000000_0x00011F23=intel-gpu, 0x00000000_0x00013D59=npu?, 0x00000000_0x00012767=?
+[2026-11-12T20:28:04.2463218+09:00] distil-large-v3/genai-fp32_cuda-rtx run 1 start
+[2026-11-12T20:28:34.6012714+09:00] distil-large-v3/genai-fp32_cuda-rtx run 1 end: exit -1073741819, OK, 28.266 s
+[2026-11-12T20:28:36.6992730+09:00] distil-large-v3/genai-int8_openvino-cpu run 1 start
+[2026-11-12T20:31:55.7857205+09:00] distil-large-v3/genai-int8_openvino-cpu run 1 end: exit 0, OK, 197.01 s
+[2026-11-12T20:31:57.8403987+09:00] distil-large-v3/genai-int4_openvino-cpu run 1 start
+[2026-11-12T20:35:36.6017065+09:00] distil-large-v3/genai-int4_openvino-cpu run 1 end: exit 0, OK, 216.729 s
+[2026-11-12T20:35:38.6319505+09:00] distil-large-v3/genai-int8_openvino-igpu run 1 start
+[2026-11-12T20:36:42.4644842+09:00] distil-large-v3/genai-int8_openvino-igpu run 1 end: exit 0, OK, 61.743 s
+[2026-11-12T20:36:44.5089752+09:00] distil-large-v3/genai-int4_openvino-igpu run 1 start
+[2026-11-12T20:37:38.4380052+09:00] distil-large-v3/genai-int4_openvino-igpu run 1 end: exit 0, OK, 51.927 s
+[2026-11-12T20:37:40.4955230+09:00] distil-large-v3/genai-fp32_openvino-igpu run 1 start
+[2026-11-12T20:38:36.9171509+09:00] distil-large-v3/genai-fp32_openvino-igpu run 1 end: exit 0, OK, 54.993 s
+[2026-11-12T20:38:36.9291508+09:00] chain done: OK

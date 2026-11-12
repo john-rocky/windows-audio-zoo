@@ -1,0 +1,96 @@
+{
+    "cell":  "control-warm",
+    "device":  "cpu",
+    "role":  "control-warm",
+    "run":  1,
+    "mode":  "timed",
+    "sitting":  "distil-s1e",
+    "start":  "2026-11-12T22:01:48.6733863+09:00",
+    "osBuild":  "26200.9711",
+    "desktopLocked":  true,
+    "power":  {
+                  "msiUserScenarioMode":  2,
+                  "overlayAc":  "00000000-0000-0000-0000-000000000000",
+                  "overlayDc":  "00000000-0000-0000-0000-000000000000",
+                  "battery":  "status 2, 95 %"
+              },
+    "gate":  {
+                 "quietGate":  "quiet",
+                 "cpuReads":  [
+                                  0.4,
+                                  0.5,
+                                  0.9
+                              ],
+                 "nvidiaMiB":  0,
+                 "availGB":  24.1,
+                 "ramNeedGB":  4,
+                 "gpuEngines":  null
+             },
+    "before":  {
+                   "load":  {
+                                "cpu":  3.5,
+                                "build_ms":  0,
+                                "top":  [
+                                            "System 4 0.37 core",
+                                            "DCv2 13300 0.09 core",
+                                            "svchost 18052 0.02 core",
+                                            "taskhostw 15108 0.02 core",
+                                            "svchost 8560 0.02 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 37 MHz, 14001 MHz, 16.82 W, 0 %, 0 MiB, 41",
+                   "availGB":  24.1
+               },
+    "command":  "C:\\src\\distil\\.venv-ovg\\Scripts\\python.exe -u C:\\src\\distil\\pc\\run_asr_ovg.py --model-dir C:\\src\\distil\\models\\OpenVINO__whisper-large-v3-turbo-int8-ov --family whisper --device CPU --cache-dir C:\\src\\distil\\runs\\distil-s1e\\control-warm\\cache --set S150 --fixtures C:\\src\\distil\\fixtures --first 10 --out C:\\src\\distil\\runs\\distil-s1e\\control-warm\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  15064,
+                   "enginePath":  "C:\\src\\distil\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+                   "elapsedSeconds":  98.665,
+                   "peakWorkingSetBytes":  2300715008,
+                   "gpuMiBPeak":  {
+
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P0, 645 MHz, 14001 MHz, 17.19 W, 0 %, 0 MiB, 43",
+                                         "10s P0, 1005 MHz, 14001 MHz, 17.32 W, 0 %, 0 MiB, 45",
+                                         "15s P0, 9075 MHz, 14001 MHz, 17.53 W, 0 %, 0 MiB, 47",
+                                         "20s P0, 1575 MHz, 14001 MHz, 17.71 W, 0 %, 0 MiB, 48",
+                                         "25s P0, 150 MHz, 14001 MHz, 18.07 W, 0 %, 0 MiB, 50",
+                                         "30s P0, 1702 MHz, 14001 MHz, 18.40 W, 0 %, 0 MiB, 52",
+                                         "35s P0, 31522 MHz, 14001 MHz, 18.68 W, 0 %, 0 MiB, 53",
+                                         "40s P0, 1200 MHz, 14001 MHz, 18.84 W, 0 %, 0 MiB, 54",
+                                         "45s P0, 5122 MHz, 14001 MHz, 19.05 W, 0 %, 0 MiB, 55",
+                                         "50s P0, 1582 MHz, 14001 MHz, 19.08 W, 0 %, 0 MiB, 56",
+                                         "55s P0, 555 MHz, 14001 MHz, 19.30 W, 0 %, 0 MiB, 56",
+                                         "60s P0, 1807 MHz, 14001 MHz, 19.41 W, 0 %, 0 MiB, 57",
+                                         "65s P0, 6427 MHz, 14001 MHz, 19.45 W, 0 %, 0 MiB, 57",
+                                         "70s P0, 157 MHz, 14001 MHz, 19.54 W, 0 %, 0 MiB, 58",
+                                         "75s P0, 1605 MHz, 14001 MHz, 19.66 W, 0 %, 0 MiB, 58",
+                                         "80s P0, 4320 MHz, 14001 MHz, 19.63 W, 0 %, 0 MiB, 58",
+                                         "85s P0, 1785 MHz, 14001 MHz, 19.85 W, 0 %, 0 MiB, 59",
+                                         "90s P0, 525 MHz, 14001 MHz, 19.95 W, 0 %, 0 MiB, 59",
+                                         "95s P0, 1200 MHz, 14001 MHz, 19.88 W, 0 %, 0 MiB, 59"
+                                     ]
+               },
+    "selectedAdapter":  null,
+    "after":  {
+                  "load":  {
+                               "cpu":  1,
+                               "build_ms":  0,
+                               "top":  [
+                                           "System 4 0.08 core",
+                                           "svchost 8560 0.03 core",
+                                           "powershell 11612 0.03 core",
+                                           "WmiPrvSE 7980 0.02 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 2692 MHz, 14001 MHz, 19.95 W, 0 %, 0 MiB, 59"
+              },
+    "end":  "2026-11-12T22:03:29.5032922+09:00",
+    "tries":  1
+}

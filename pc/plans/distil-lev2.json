@@ -1,0 +1,53 @@
+{
+ "sitting": "distil-lev2",
+ "made": "2026-11-12T20:03:36+09:00",
+ "mode": "first",
+ "units": [
+  {
+   "cell": "distil-large-v3/genai-int4_sdpa1-rtx",
+   "venv": "genai-cuda",
+   "script": "run_asr_genai.py",
+   "device": "rtx",
+   "ram_need_gb": 6,
+   "timeout_min": 15,
+   "engines_gate": false,
+   "args": [
+    "--model-dir",
+    "{ROOT}\\exports\\distil-large-v3-genai-int4-cuda",
+    "--ep",
+    "cuda",
+    "--ep-option",
+    "sdpa_kernel=1",
+    "--langs",
+    "en_us",
+    "--set",
+    "S150",
+    "--fixtures",
+    "{FIX}"
+   ]
+  },
+  {
+   "cell": "distil-large-v3/genai-int8_sdpa1-rtx",
+   "venv": "genai-cuda",
+   "script": "run_asr_genai.py",
+   "device": "rtx",
+   "ram_need_gb": 6,
+   "timeout_min": 15,
+   "engines_gate": false,
+   "args": [
+    "--model-dir",
+    "{ROOT}\\exports\\distil-large-v3-genai-int8-cuda",
+    "--ep",
+    "cuda",
+    "--ep-option",
+    "sdpa_kernel=1",
+    "--langs",
+    "en_us",
+    "--set",
+    "S150",
+    "--fixtures",
+    "{FIX}"
+   ]
+  }
+ ]
+}

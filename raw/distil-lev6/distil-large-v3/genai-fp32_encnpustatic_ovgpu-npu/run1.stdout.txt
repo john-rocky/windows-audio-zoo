@@ -1,0 +1,8 @@
+ENGINE_PID 18300
+{"n": 1, "id": "en_us_1660", "wall_s": 0.563, "text": "Romanticism had a large element of cultural determinism draw"}
+{"n": 2, "id": "en_us_1661", "wall_s": 0.51, "text": "He did not set a figure for the cuts saying they will be mad"}
+{"n": 10, "id": "en_us_1669", "wall_s": 0.726, "text": "Police Superintendent Chandra Shikar Solonki said that accus"}
+{"n": 20, "id": "en_us_1679", "wall_s": 0.453, "text": "Aerosmith have cancelled their remaining concerts on their t"}
+{"n": 30, "id": "en_us_1689", "wall_s": 0.634, "text": "Europe is a continent that is relatively small but with many"}
+{"n": 40, "id": "en_us_1699", "wall_s": 0.642, "text": "Bishkek was described as sinking into a state of anarchy by "}
+{"n": 50, "id": "en_us_1709", "wall_s": 0.563, "text": "The report is highly critical of the almost every aspect of "}

@@ -1,0 +1,126 @@
+{
+    "cell":  "distil-large-v3/genai-fp32_encnpustatic_ovgpu-npu",
+    "device":  "npu",
+    "role":  null,
+    "run":  1,
+    "mode":  "first",
+    "sitting":  "distil-lev6",
+    "start":  "2026-11-12T21:43:27.9816029+09:00",
+    "osBuild":  "26200.9711",
+    "desktopLocked":  true,
+    "power":  {
+                  "msiUserScenarioMode":  2,
+                  "overlayAc":  "00000000-0000-0000-0000-000000000000",
+                  "overlayDc":  "00000000-0000-0000-0000-000000000000",
+                  "battery":  "status 2, 95 %"
+              },
+    "gate":  null,
+    "before":  {
+                   "load":  {
+                                "cpu":  3.2,
+                                "build_ms":  0,
+                                "top":  [
+                                            "System 4 0.34 core",
+                                            "DCv2 13300 0.09 core",
+                                            "svchost 3480 0.02 core",
+                                            "WmiPrvSE 7980 0.02 core",
+                                            "conhost 15596 0.02 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 2002 MHz, 14001 MHz, 18.58 W, 0 %, 0 MiB, 53",
+                   "availGB":  24
+               },
+    "command":  "C:\\src\\distil\\.venv-genai\\Scripts\\python.exe -u C:\\src\\distil\\pc\\run_asr_genai.py --model-dir C:\\src\\distil\\exports\\distil-large-v3-genai-fp32-openvino-encnpu-gpu --ep config --langs en_us --set S150 --fixtures C:\\src\\distil\\fixtures --out C:\\src\\distil\\runs\\distil-lev6\\distil-large-v3\\genai-fp32_encnpustatic_ovgpu-npu\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  18300,
+                   "enginePath":  "C:\\src\\distil\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+                   "elapsedSeconds":  253.941,
+                   "peakWorkingSetBytes":  9278115840,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x00012799":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x00011F23":  {
+                                                                    "shared":  695,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x00013D59":  {
+                                                                    "shared":  1604,
+                                                                    "dedicated":  0
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P0, 9847 MHz, 14001 MHz, 18.79 W, 0 %, 0 MiB, 53",
+                                         "10s P0, 1567 MHz, 14001 MHz, 18.72 W, 0 %, 0 MiB, 53",
+                                         "15s P0, 4950 MHz, 14001 MHz, 18.68 W, 0 %, 0 MiB, 53",
+                                         "20s P0, 157 MHz, 14001 MHz, 18.75 W, 0 %, 0 MiB, 53",
+                                         "25s P0, 1380 MHz, 14001 MHz, 18.61 W, 0 %, 0 MiB, 53",
+                                         "30s P0, 4140 MHz, 14001 MHz, 18.70 W, 0 %, 0 MiB, 53",
+                                         "35s P0, 8010 MHz, 14001 MHz, 18.72 W, 0 %, 0 MiB, 53",
+                                         "40s P0, 262 MHz, 14001 MHz, 18.67 W, 0 %, 0 MiB, 53",
+                                         "45s P0, 1972 MHz, 14001 MHz, 18.66 W, 0 %, 0 MiB, 53",
+                                         "50s P0, 15952 MHz, 14001 MHz, 18.65 W, 0 %, 0 MiB, 53",
+                                         "55s P0, 2295 MHz, 14001 MHz, 18.61 W, 0 %, 0 MiB, 53",
+                                         "60s P0, 8175 MHz, 14001 MHz, 18.59 W, 0 %, 0 MiB, 53",
+                                         "65s P0, 262 MHz, 14001 MHz, 18.66 W, 0 %, 0 MiB, 52",
+                                         "70s P0, 1485 MHz, 14001 MHz, 18.56 W, 0 %, 0 MiB, 53",
+                                         "75s P0, 7950 MHz, 14001 MHz, 18.68 W, 0 %, 0 MiB, 53",
+                                         "80s P0, 33547 MHz, 14001 MHz, 18.63 W, 0 %, 0 MiB, 53",
+                                         "85s P0, 247 MHz, 14001 MHz, 18.66 W, 0 %, 0 MiB, 53",
+                                         "90s P0, 2640 MHz, 14001 MHz, 18.54 W, 0 %, 0 MiB, 53",
+                                         "95s P0, 1192 MHz, 14001 MHz, 18.58 W, 0 %, 0 MiB, 53",
+                                         "100s P0, 1762 MHz, 14001 MHz, 18.65 W, 0 %, 0 MiB, 53",
+                                         "105s P0, 2115 MHz, 14001 MHz, 18.63 W, 0 %, 0 MiB, 53",
+                                         "110s P0, 825 MHz, 14001 MHz, 18.53 W, 0 %, 0 MiB, 53",
+                                         "115s P0, 3150 MHz, 14001 MHz, 18.63 W, 0 %, 0 MiB, 53",
+                                         "120s P0, 5767 MHz, 14001 MHz, 18.53 W, 0 %, 0 MiB, 52",
+                                         "125s P0, 195 MHz, 14001 MHz, 18.61 W, 0 %, 0 MiB, 53",
+                                         "130s P0, 1515 MHz, 14001 MHz, 18.66 W, 0 %, 0 MiB, 52",
+                                         "135s P0, 5145 MHz, 14001 MHz, 18.54 W, 0 %, 0 MiB, 52",
+                                         "140s P0, 12562 MHz, 14001 MHz, 18.58 W, 0 %, 0 MiB, 52",
+                                         "145s P0, 1770 MHz, 14001 MHz, 18.48 W, 0 %, 0 MiB, 52",
+                                         "151s P0, 4432 MHz, 14001 MHz, 18.43 W, 0 %, 0 MiB, 52",
+                                         "155s P0, 930 MHz, 14001 MHz, 18.43 W, 0 %, 0 MiB, 52",
+                                         "160s P0, 480 MHz, 14001 MHz, 18.44 W, 0 %, 0 MiB, 52",
+                                         "165s P0, 2145 MHz, 14001 MHz, 18.44 W, 0 %, 0 MiB, 52",
+                                         "170s P0, 315 MHz, 14001 MHz, 18.49 W, 0 %, 0 MiB, 52",
+                                         "175s P0, 60335 MHz, 14001 MHz, 18.49 W, 0 %, 0 MiB, 52",
+                                         "180s P0, 1530 MHz, 14001 MHz, 18.51 W, 0 %, 0 MiB, 52",
+                                         "185s P0, 3645 MHz, 14001 MHz, 18.49 W, 0 %, 0 MiB, 52",
+                                         "190s P0, 1702 MHz, 14001 MHz, 18.48 W, 0 %, 0 MiB, 52",
+                                         "195s P0, 517 MHz, 14001 MHz, 18.41 W, 0 %, 0 MiB, 52",
+                                         "200s P0, 2692 MHz, 14001 MHz, 18.43 W, 0 %, 0 MiB, 52",
+                                         "205s P0, 19485 MHz, 14001 MHz, 18.45 W, 0 %, 0 MiB, 52",
+                                         "210s P0, 862 MHz, 14001 MHz, 18.44 W, 0 %, 0 MiB, 52",
+                                         "215s P0, 1762 MHz, 14001 MHz, 18.47 W, 0 %, 0 MiB, 52",
+                                         "220s P0, 4267 MHz, 14001 MHz, 18.41 W, 0 %, 0 MiB, 52",
+                                         "225s P0, 4185 MHz, 14001 MHz, 18.46 W, 0 %, 0 MiB, 52",
+                                         "230s P0, 1432 MHz, 14001 MHz, 18.34 W, 0 %, 0 MiB, 52",
+                                         "236s P0, 135 MHz, 14001 MHz, 18.47 W, 0 %, 0 MiB, 52",
+                                         "240s P0, 1260 MHz, 14001 MHz, 18.52 W, 0 %, 0 MiB, 52",
+                                         "245s P0, 2250 MHz, 14001 MHz, 18.53 W, 0 %, 0 MiB, 52",
+                                         "250s P0, 22537 MHz, 14001 MHz, 18.46 W, 0 %, 0 MiB, 52"
+                                     ]
+               },
+    "selectedAdapter":  null,
+    "after":  {
+                  "load":  {
+                               "cpu":  5.7,
+                               "build_ms":  0,
+                               "top":  [
+                                           "System 4 0.89 core",
+                                           "NVDisplay.Container 3056 0.02 core",
+                                           "powershell 11700 0.02 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 1207 MHz, 14001 MHz, 18.47 W, 0 %, 0 MiB, 52"
+              },
+    "end":  "2026-11-12T21:47:43.1839860+09:00",
+    "tries":  1
+}

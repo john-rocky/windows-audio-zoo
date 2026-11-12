@@ -1,0 +1,65 @@
+[
+  {
+    "name": "npufolder-enc",
+    "exe": "py",
+    "args": [
+      "{ROOT}\\pc\\genai_providers_folder.py",
+      "--src",
+      "{ROOT}\\exports\\distil-large-v3-genai-fp32-cpu",
+      "--dst",
+      "{ROOT}\\exports\\distil-large-v3-genai-fp32-openvino-encnpu",
+      "--provider",
+      "OpenVINO",
+      "--option",
+      "device_type=CPU",
+      "--encoder-option",
+      "device_type=NPU",
+      "--encoder-option",
+      "reshape_input=audio_features[1,128,3000]"
+    ],
+    "timeout_min": 3,
+    "venv": "ref"
+  },
+  {
+    "name": "npufolder-dec",
+    "exe": "py",
+    "args": [
+      "{ROOT}\\pc\\genai_providers_folder.py",
+      "--src",
+      "{ROOT}\\exports\\distil-large-v3-genai-fp32-cpu",
+      "--dst",
+      "{ROOT}\\exports\\distil-large-v3-genai-fp32-openvino-decnpu",
+      "--provider",
+      "OpenVINO",
+      "--option",
+      "device_type=CPU",
+      "--decoder-option",
+      "device_type=NPU",
+      "--decoder-option",
+      "reshape_input=input_ids[1,1..448],past_key_self_0[1,20,0..448,64],past_key_self_1[1,20,0..448,64],past_value_self_0[1,20,0..448,64],past_value_self_1[1,20,0..448,64],past_key_cross_0[1,20,1500,64],past_key_cross_1[1,20,1500,64],past_value_cross_0[1,20,1500,64],past_value_cross_1[1,20,1500,64]"
+    ],
+    "timeout_min": 3,
+    "venv": "ref"
+  },
+  {
+    "name": "npufolder-both",
+    "exe": "py",
+    "args": [
+      "{ROOT}\\pc\\genai_providers_folder.py",
+      "--src",
+      "{ROOT}\\exports\\distil-large-v3-genai-fp32-cpu",
+      "--dst",
+      "{ROOT}\\exports\\distil-large-v3-genai-fp32-openvino-npu",
+      "--provider",
+      "OpenVINO",
+      "--option",
+      "device_type=NPU",
+      "--encoder-option",
+      "reshape_input=audio_features[1,128,3000]",
+      "--decoder-option",
+      "reshape_input=input_ids[1,1..448],past_key_self_0[1,20,0..448,64],past_key_self_1[1,20,0..448,64],past_value_self_0[1,20,0..448,64],past_value_self_1[1,20,0..448,64],past_key_cross_0[1,20,1500,64],past_key_cross_1[1,20,1500,64],past_value_cross_0[1,20,1500,64],past_value_cross_1[1,20,1500,64]"
+    ],
+    "timeout_min": 3,
+    "venv": "ref"
+  }
+]

@@ -12,8 +12,8 @@ K = pathlib.Path(__file__).resolve().parents[1]
 OUT = K / "RESULTS_AUDIO_WINDOWS.md"
 BEGIN, END = "<!-- table:begin -->", "<!-- table:end -->"
 MODEL = {"whisper": "Whisper large-v3-turbo", "qwen3asr": "Qwen3-ASR 1.7B", "granite": "Granite Speech 5.0 2B",
-         "parakeet": "Parakeet TDT 0.6B v3", "kokoro": "Kokoro-82M"}
-ORDER = ["whisper", "qwen3asr", "granite", "parakeet", "kokoro"]
+         "parakeet": "Parakeet TDT 0.6B v3", "kokoro": "Kokoro-82M", "distil-large-v3": "Distil-Whisper distil-large-v3"}
+ORDER = ["whisper", "distil-large-v3", "qwen3asr", "granite", "parakeet", "kokoro"]
 DEV = {"cpu": "CPU", "igpu": "Intel GPU", "rtx": "RTX 5080 Laptop", "npu": "Intel NPU"}
 # a LiteRT-LM cell whose NPU backend got the Intel OpenVINO compiler plugin beside its dispatch library (11-10)
 FORM = {"plugin": "bundle + Intel compiler plugin"}
@@ -76,7 +76,9 @@ def row_this(d):
     if mode == "first":
         tts = d.get("set") == "T50" or d.get("model") == "kokoro"
         full = {"S150": 150, "S220": 220, "T50": 50}.get(d.get("set") or "")
-        if full and (d.get("summary") or {}).get("clips") == full:   # a first pass over every clip of its set (11-10)
+        if d.get("model") == "distil-large-v3":   # an English model: its first pass is the 50 en_us clips (11-12)
+            note.append("first pass, the 50 en_us clips, untimed")
+        elif full and (d.get("summary") or {}).get("clips") == full:   # a first pass over every clip of its set (11-10)
             note.append("first pass, every clip, untimed")
         else:
             note.append("first pass, 10 sentences, untimed" if tts else "first pass, 10 clips per language, untimed")
@@ -104,6 +106,19 @@ def row_this(d):
         note.append("the NPU backend ran on the CPU: the Intel compiler plugin's NPU compile failed "
                     f"({len(nc.get('npu_compile_failed') or [])} partition), 0 compiler plugins applied, XNNPACK CPU "
                     "delegate, 0 MiB on the NPU")
+    elif d.get("encoder_on") == "cpu":   # ONNX Runtime GenAI: --ep reached the decoder only (11-12)
+        note.append(f"decoder on the {dev}, encoder on the CPU (the provider was set in code; the export's "
+                    "genai_config.json names none for the encoder)")
+        dev = f"{dev} (decoder)"
+    elif d.get("encoder_session_options"):   # --encoder-ep same / openvino-gpu / openvino-npu (11-12)
+        prov = "; ".join(" ".join([k] + [f"{a}={b}" for a, b in v.items()])
+                         for o in d["encoder_session_options"].get("provider_options", []) for k, v in o.items())
+        note.append(f"encoder on {prov} (`--encoder-ep`: a copy of the export's genai_config.json)")
+    elif d.get("config_providers") is not None:   # --ep config (11-12): the folder's genai_config.json as it is
+        prov = "; ".join(f"{part} " + (", ".join(" ".join([k] + [f"{a}={b}" for a, b in v.items()])
+                                                 for o in opts for k, v in o.items()) or "CPU")
+                         for part, opts in d["config_providers"].items())
+        note.append(f"providers from the folder's genai_config.json: {prov}")
     elif nc.get("ran_on") == "npu":
         src = sorted({f.get("from", "").split(":")[0] for f in ((d.get("npu_lib_dir") or {}).get("manifest") or {})
                       .get("files", []) if "CompilerPlugin" in f.get("name", "")})

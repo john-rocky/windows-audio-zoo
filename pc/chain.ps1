@@ -21,6 +21,8 @@ The chain adds "--out <run dir>\run<k>.json" to every unit's arguments.
   run would end past 30 min of the hold, the lock is released for 16.5 min (window.txt), taken again once the other
   lane's lock has been gone 60 s, settled -SettleSeconds (180 s) and gated again. The lock's text says until when the
   run is expected. The sitting also settles 180 s inside the lock before control-warm (the queue's rule, line 5).
+  Every timed run but the sitting's first starts -BetweenRunsSeconds (20 s) after the run before it; the control
+  tail starts -TailIdleSeconds (150 s) after the last cell.
   Slots (no window.txt): the plan's slots [{ who, release_at, give_up_at }] (a fixed slot: a run that would end past
   release_at - 60 s does not start; the lock is held idle to release_at), and runs\slot_now.txt ("<who> <give up min>",
   written from the Mac at the user's word: a run in flight gets 8 min to end, then is stopped and run again after the
@@ -46,7 +48,10 @@ param(
     [int]$HoldAtEndMin = 20,
     # the PC's rule (11-09): a timing right after another lane's heavy lock waits 180 s inside the lock
     # before its control (no wait: +54 % / +30 %; 180 s: within +4.7 %). Here: before control-warm and after every take-back.
-    [int]$SettleSeconds = 180
+    [int]$SettleSeconds = 180,
+    # the idle before the control tail (11-12): a control right after a CPU-heavy cell reads slow (distil-s1c: +7.4 %,
+    # started 27 s after the OpenVINO EP CPU int8 cell ended; other sittings on this PC: within 5 % after 90 to 180 s idle)
+    [int]$TailIdleSeconds = 150
 )
 . "$PSScriptRoot\zlib.ps1"
 $p = Get-Content $Plan -Raw -Encoding UTF8 | ConvertFrom-Json
@@ -460,9 +465,9 @@ function Test-PastEndBy($u, [int]$Runs) {
     if ($script:leftCells.Count) { return $true }
     $est = Get-RunEstSec $u
     if ($est -le 0) { $est = 60 * [double]$u.timeout_min }
-    $need = $est * $Runs + $BetweenRunsSeconds * ($Runs - 1) + 240
+    $need = ($est + $BetweenRunsSeconds) * $Runs + 240
     $tail = @($p.units | Where-Object { $_.role -eq "control-tail" } | Select-Object -First 1)
-    if ($tail.Count) { $need += Get-RunEstSec $tail[0] }
+    if ($tail.Count) { $need += (Get-RunEstSec $tail[0]) + $TailIdleSeconds }
     if ($p.windows -ne $false -and @(Get-OthersWaiting).Count) { $need += 990 + $SettleSeconds }   # no gap in one block
     return ((Get-Date).AddSeconds($need) -gt $EndBy)
 }
@@ -477,6 +482,7 @@ function Get-Rtf([string]$JsonPath) {
     return $null
 }
 $script:control = [ordered]@{ known_rtf = $p.control_known_rtf; known_from = $(if ($p.control_known_rtf) { "plan" } else { $null }); head = @(); tail = @(); verdict = $null }
+$script:timedRuns = 0
 function Check-Control($u) {
     $dir = Join-Path $out ($u.cell -replace '/', '\')
     $vals = @(1..([int]$(if ($u.runs) { $u.runs } else { 1 })) | ForEach-Object { Get-Rtf (Join-Path $dir "run$_.json") })
@@ -521,11 +527,17 @@ try {
         if (Test-PastEndBy $u $runs) { Leave-Cell $u; continue }
         $left = $false
         for ($k = 1; $k -le $runs; $k++) {
+            # the same rest before every timed run but the sitting's first (11-12): a unit's first run used to start
+            # about 6 s after the unit before it ended, every other run about 27 s after the run before; in two sittings
+            # the first control-head run, the only one started that soon, was the slowest of the three (spread 7.4 %, 9.9 %)
+            if ($Mode -eq "timed" -and $script:timedRuns -gt 0) {
+                Start-Sleep -Seconds $(if ($u.role -eq "control-tail") { $TailIdleSeconds } else { $BetweenRunsSeconds })
+            }
             if ($Mode -eq "timed") { Invoke-Duty "unit $($u.cell) run $k" $u }
             if ($script:endByStop) { if (-not $u.role) { Leave-Cell $u }; $left = $true; break }
             if ($k -eq 1 -and (Test-PastEndBy $u $runs)) { Leave-Cell $u; $left = $true; break }   # a duty gap ate the time
             Run-Unit $u $k
-            if ($Mode -eq "timed" -and $k -lt $runs) { Start-Sleep -Seconds $BetweenRunsSeconds }
+            $script:timedRuns++
         }
         if ($left) { continue }
         if ($Mode -eq "timed" -and $u.role -in "control-head", "control-tail") { Check-Control $u }

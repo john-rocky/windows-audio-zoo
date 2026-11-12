@@ -1,0 +1,17 @@
+[
+  {
+    "name": "sharebuf-fp16-cuda",
+    "exe": "py",
+    "args": [
+      "{ROOT}\\pc\\genai_search_folder.py",
+      "--src",
+      "{ROOT}\\exports\\distil-large-v3-genai-fp16-cuda",
+      "--dst",
+      "{ROOT}\\exports\\distil-large-v3-genai-fp16-cuda-sharebuf",
+      "--set",
+      "past_present_share_buffer=true"
+    ],
+    "timeout_min": 3,
+    "venv": "ref"
+  }
+]

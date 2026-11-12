@@ -1,0 +1,18 @@
+{
+    "0x00000000_0x00012799":  {
+                                  "kind":  "nvidia",
+                                  "engtypes":  "3D,Copy,JPEG_Decode_1,OFA_0,Security,VideoDecode,VideoEncode,VR"
+                              },
+    "0x00000000_0x00011F23":  {
+                                  "kind":  "intel-gpu",
+                                  "engtypes":  ",3D,Compute,Copy,GSC,Neural,VideoDecode,VideoProcessing"
+                              },
+    "0x00000000_0x00013D59":  {
+                                  "kind":  "npu?",
+                                  "engtypes":  "Neural"
+                              },
+    "0x00000000_0x00012767":  {
+                                  "kind":  "?",
+                                  "engtypes":  "3D"
+                              }
+}

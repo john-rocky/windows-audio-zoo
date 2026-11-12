@@ -36,7 +36,7 @@ tools/pc.sh wait "$R\logs\setup.done,$R\logs\fetch.done" "$R\logs\setup.log,$R\l
 Step 3 patches the installed copy of ONNX Runtime GenAI 0.19.0's model builder with `pc/patch_genai_whisper.py`. The
 lines the script edits are unchanged on the builder's main branch at 75fa2250c9 (2026-11-12). A fix for the builder
 itself is proposed in [microsoft/onnxruntime-genai#2940](https://github.com/microsoft/onnxruntime-genai/pull/2940), a
-draft pull request, open and not merged on 2026-11-12.
+pull request, open and not merged on 2026-11-12.
 
 ```bash
 # 3. the references (transformers fp32 CPU: Whisper, Parakeet; PyTorch Kokoro and the write-back of its waves) and the
@@ -167,3 +167,76 @@ sittings. The scripts were fixed while it ran; the steps above are the fixed for
   `cpython-3.12.16-windows-x86_64-none`), while the process runs by the junction's path; each run's log says
   `Selected adapter: NVIDIA GeForce RTX 5080 Laptop GPU`. `tools/results.py` marked those cells WRONG DEVICE until the
   runs of 11-10 replaced them (the next section); the RTX runs' records stay in `raw/first-a/` and `raw/s4/`.
+
+### Distil-Whisper distil-large-v3 (2026-11-12)
+
+Distil-Whisper distil-large-v3 was added on 11-12 in a folder of its own on the shared PC (`C:\src\distil` below), with
+a label of its own in its `label.txt` (the lock text and notes of these steps start with it). It is an English model:
+its reference and its cells run on the 50 en_us clips of S150 (`--langs en_us`).
+From the Mac, with `tools/pc.sh`'s PC folder and label variables (named in its header) set to that folder and that label:
+
+```bash
+R='C:\src\distil'
+bash tools/pc.sh push                                              # pc/ and shelf/
+bash tools/pc.sh pushfix clips/s150 clips/s220                     # the clips as in the walk above (these steps read S150's 50 en_us clips)
+bash tools/pc.sh launch 'pc\steps.ps1' '-List setup-distil'        # Python 3.12, four venvs (ovg, genai, genai-cuda, ref), the S150 clips checked
+bash tools/pc.sh launch 'pc\steps.ps1' '-List fetch-distil'        # distil-whisper/distil-large-v3 at 8031d2e6 and the control row's IR
+bash tools/pc.sh launch 'pc\steps.ps1' '-List export-distil'       # pc/patch_genai_whisper.py, then the builder: fp32 CPU, fp16 CUDA
+bash tools/pc.sh launch 'pc\steps.ps1' '-List refs-distil'         # transformers fp32 on the CPU, the 50 en_us clips
+bash tools/pc.sh launch 'pc\steps.ps1' '-List export-distil-int4'  # int4 CPU, int4 CUDA
+bash tools/pc.sh launch 'pc\steps.ps1' '-List export-distil-levers'   # int8 CPU, int8 CUDA, fp16 WebGPU
+bash tools/pc.sh launch 'pc\chain.ps1' "-Plan $R\\pc\\plans\\distil-first.json -Mode first"   # the first pass: 7 cells, 50 clips each
+python3 tools/make_plan.py first --sitting distil-lev --first-n 0 --group dl                     # the speed levers: 13 cells then (group dl has 33 now: run the committed pc/plans/distil-lev.json)
+bash tools/pc.sh push && bash tools/pc.sh launch 'pc\chain.ps1' "-Plan $R\\pc\\plans\\distil-lev.json -Mode first"
+python3 tools/make_plan.py first --sitting distil-lev2 --cells distil-large-v3/genai-int4_sdpa1-rtx,distil-large-v3/genai-int8_sdpa1-rtx --first-n 0 --timeout-min 15
+bash tools/pc.sh push && bash tools/pc.sh launch 'pc\chain.ps1' "-Plan $R\\pc\\plans\\distil-lev2.json -Mode first"
+bash tools/pc.sh launch 'pc\steps.ps1' '-List export-distil-fp32cuda'    # fp32 CUDA
+bash tools/pc.sh launch 'pc\steps.ps1' '-List folders-distil-openvino'   # five folders whose genai_config.json names the OpenVINO EP
+bash tools/pc.sh launch 'pc\chain.ps1' "-Plan $R\\pc\\plans\\distil-lev3.json -Mode first"   # fp32 CUDA and the five folders
+python3 tools/make_plan.py timed --sitting distil-s1d --known 0.26692 --control-est 104 --no-windows --end-by 2026-11-12T21:14:00+09:00 --est-from distil-s1c,distil-lev3,distil-lev,distil-lev2,distil-first --cells distil-large-v3/genai-fp16_sdpa1-rtx,distil-large-v3/genai-fp16-rtx,distil-large-v3/genai-fp32_openvino-igpu,distil-large-v3/genai-int4_openvino-igpu,distil-large-v3/genai-int8_openvino-cpu,distil-large-v3/genai-fp32-cpu
+bash tools/pc.sh push && bash tools/sitting.sh distil-s1d
+bash tools/pc.sh launch 'pc\chain.ps1' "-Plan $R\\pc\\plans\\distil-lev4.json -Mode first"   # the encoder on the NPU
+bash tools/pc.sh launch 'pc\steps.ps1' '-List folders-distil-npu'        # the NPU folders, the input shapes given
+bash tools/pc.sh launch 'pc\chain.ps1' "-Plan $R\\pc\\plans\\distil-lev5.json -Mode first"
+bash tools/pc.sh launch 'pc\steps.ps1' '-List folders-distil-npu2'       # int8 on the NPU, the decoder on the Intel GPU, the compile cache
+bash tools/pc.sh launch 'pc\chain.ps1' "-Plan $R\\pc\\plans\\distil-lev6.json -Mode first"
+python3 tools/make_plan.py timed --sitting distil-s1e --known 0.26692 --control-est 104 --no-windows --end-by 2026-11-12T22:26:00+09:00 --est-from distil-lev6,distil-lev5 --cells distil-large-v3/genai-int8_encnpustatic_ovcpu-npu
+bash tools/pc.sh push && bash tools/sitting.sh distil-s1e
+bash tools/pc.sh launch 'pc\steps.ps1' '-List folders-distil-sharebuf'   # the fp16 CUDA export with the KV buffer shared
+bash tools/pc.sh launch 'pc\steps.ps1' '-List folders-distil-npu3'       # the int8 encoder on the NPU, the decoder on the Intel GPU
+python3 tools/make_plan.py first --sitting distil-lev7 --first-n 0 --cells distil-large-v3/genai-fp16_sharebuf-rtx,distil-large-v3/genai-fp16_sharebufcg-rtx,distil-large-v3/genai-fp16_sharebufsdpa1-rtx,distil-large-v3/genai-int8_encnpustatic_ovgpu-npu
+bash tools/pc.sh push && bash tools/pc.sh launch 'pc\chain.ps1' "-Plan $R\\pc\\plans\\distil-lev7.json -Mode first"
+python3 tools/results.py build --runs distil-first,distil-lev,distil-lev2,distil-lev3,distil-lev4,distil-lev5,distil-lev6,distil-s1d,distil-s1e,distil-lev7
+```
+
+The plans `distil-lev3` to `distil-lev6` were written by hand; `distil-first` (group d) and `distil-lev` (group dl, 13 cells
+at the time) by `tools/make_plan.py first`; the others as above. All are in `pc/plans/`.
+
+- `setup-distil` and `fetch-distil` ran side by side; each later list started after the one before it had ended
+  (`logs\<list>.done`).
+- Without `pc/patch_genai_whisper.py`, the 0.19.0 builder stops on this model with `IndexError: index 2 is out of
+  range` (32 encoder layers, 2 decoder layers).
+- First pass: the NPU cell stopped in the NPU compiler (`Reshape node 'Reshape_130': expected exactly 1 dynamic output
+  bound dimension, got 2`), as Whisper large-v3-turbo's NPU cell did. The encoder compiles for the NPU only with its
+  input shape fixed, the OpenVINO EP's `reshape_input` `audio_features[1,128,3000]` in the folder's
+  `genai_config.json`; without it the process ended with an access violation (exit 0xC0000005, 12 s in) after the
+  compiler's message `Upper bounds are not specified for node '/model/preprocessing/Conv_1/WithoutBiases'`
+  (`distil-lev4`). The fp32 export's decoder does not compile for the NPU with its lengths bounded (`Can't compute total
+  shape size on dynamic shape`, `distil-lev5`; the int8 decoder was not tried there), so the NPU rows run the decoder on
+  the OpenVINO EP's CPU or Intel GPU device (GenAI 0.19.0 refuses a model with two providers, `genai-fp32_encnpu-npu`
+  in `distil-lev`).
+- `genai-fp32_encnpucachea_ovcpu-npu` and `genai-fp32_encnpucacheb_ovcpu-npu` run one folder twice, in that order
+  (`distil-lev6`): its encoder's entry sets the OpenVINO EP's `cache_dir`, so the first compiles the encoder and writes
+  it there and the second loads it from there (`docs/measuring.md`, `load_s`).
+- The `genai-*_openvino-*` cells run folders made by `pc/genai_providers_folder.py` (hard links to an export, and a
+  `genai_config.json` that names the OpenVINO EP for the encoder and the decoder) with `pc/run_asr_genai.py --ep
+  config`; the folder of `genai-int8_openvino-cpu` holds the files of the Hub repo
+  mlboydaisuke/distil-large-v3-onnxruntime-genai-int8-openvino.
+- Three timed sittings did not give rows: `distil-s1` and `distil-s1b` stopped at their control head (head spread 7.4 %
+  and 9.9 %), and the control tail of `distil-s1c` was 7.4 % slower than its head (`docs/measuring.md`); their records
+  stay in `raw/`. `tools/results.py` takes no timed run of a sitting whose control tail did not pass. The timed rows
+  are from `distil-s1d`, whose control head was 1.1 % and its tail 1.8 % off the known value 0.26692 (the median of
+  `distil-s1c`'s three head runs), and the Intel NPU row from `distil-s1e` (head 1.5 %, tail 2.5 %).
+- The fp32 CPU export with `--ep cuda` (`genai-fp32-rtx`) ended with an access violation; the export made for CUDA
+  (`-p fp32 -e cuda`, `export-distil-fp32cuda`) gave all 50 answers there (`genai-fp32_cuda-rtx`), and its process
+  then ended with the same exit code, 0xC0000005, after writing its results.

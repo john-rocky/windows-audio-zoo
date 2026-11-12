@@ -1,0 +1,50 @@
+{
+ "cell": "distil-large-v3/genai-fp16_sharebuf-rtx",
+ "model": "distil-large-v3",
+ "runtime": "ONNX Runtime GenAI 0.19.0",
+ "form": "fp16_sharebuf",
+ "device": "rtx",
+ "device_name": "RTX 5080 Laptop",
+ "set": "S150",
+ "mode": "first",
+ "sitting": "distil-lev7",
+ "run_start": "2026-11-12T22:30:49.5562695+09:00",
+ "run_end": "2026-11-12T22:30:56.2938628+09:00",
+ "status": "ERROR",
+ "record": {
+  "run": "raw/distil-lev7/distil-large-v3/genai-fp16_sharebuf-rtx/run1.json",
+  "meta": "raw/distil-lev7/distil-large-v3/genai-fp16_sharebuf-rtx/run1.meta.json",
+  "chain_log": "raw/distil-lev7/chain.log"
+ },
+ "error": "Traceback (most recent call last):\n  File \"C:\\src\\distil\\pc\\run_asr_genai.py\", line 180, in main\n    _, ws, _, _ = run(al.warmup_wav(args.fixtures), \"en_us\")\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\src\\distil\\pc\\run_asr_genai.py\", line 166, in run\n    gen.set_inputs(inputs)\nRuntimeError: Non-zero status code returned while running MultiHeadAttention node. Name:'/model/layers.0/attn/MultiHeadAttention' Status Message: N:\\_work\\1\\s\\onnxruntime\\core\\framework\\op_kernel.cc:87 onnxruntime::OpKernelContext::OutputMLValue [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : The output OrtValue provided for output 'present_key_self_0' of node '/model/layers.0/attn/MultiHeadAttention' (MultiHeadAttention) has shape {1,20,444,64} but the computed output shape for this run is {1,20,448,64}. When calling Run() with pre-allocated output OrtValues on a model with dynamic output shapes, either supply unallocated output OrtValues or ensure the pre-allocated shapes match the expected output shapes for each run.\n\n",
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime-genai-cuda": "0.19.0",
+  "onnxruntime-gpu": "1.31.1",
+  "numpy": "2.5.4"
+ },
+ "load_s": 2.092,
+ "summary": null,
+ "gate": null,
+ "power": {
+  "msiUserScenarioMode": 2,
+  "overlayAc": "00000000-0000-0000-0000-000000000000",
+  "overlayDc": "00000000-0000-0000-0000-000000000000",
+  "battery": "status 2, 95 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 4.672,
+  "peakWorkingSetBytes": 1130938368,
+  "gpuMiBPeak": {
+   "0x00000000_0x00012799": {
+    "shared": 204,
+    "dedicated": 3050
+   }
+  },
+  "exitCode": 1,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1
+}

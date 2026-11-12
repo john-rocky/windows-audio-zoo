@@ -1,0 +1,7 @@
+[2026-11-12T19:59:40.2985294+09:00] chain start: plan C:\src\distil\pc\plans\distil-lev2.json mode first, 2 units, pid 3356
+[2026-11-12T19:59:52.8351084+09:00] adapters: 0x00000000_0x00012799=nvidia, 0x00000000_0x00011F23=intel-gpu, 0x00000000_0x00013D59=npu?, 0x00000000_0x00012767=?
+[2026-11-12T19:59:55.5602488+09:00] distil-large-v3/genai-int4_sdpa1-rtx run 1 start
+[2026-11-12T20:00:11.0514048+09:00] distil-large-v3/genai-int4_sdpa1-rtx run 1 end: exit 0, OK, 13.451 s
+[2026-11-12T20:00:13.0926112+09:00] distil-large-v3/genai-int8_sdpa1-rtx run 1 start
+[2026-11-12T20:00:26.3944846+09:00] distil-large-v3/genai-int8_sdpa1-rtx run 1 end: exit 0, OK, 11.287 s
+[2026-11-12T20:00:26.4142950+09:00] chain done: OK

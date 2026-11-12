@@ -1,0 +1,2 @@
+ENGINE_PID 2940
+[ERROR] 21:09:39.595 [IE::FrontEnd::importNetwork]   Upper bounds are not specified for node '/model/preprocessing/Conv_1/WithoutBiases' (type 'Convolution'): input '0' bounds are '[9223372036854775807, 128, 3000]'

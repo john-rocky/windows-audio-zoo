@@ -1,0 +1,9 @@
+[2026-11-12T21:28:19.6010292+09:00] chain start: plan C:\src\distil\pc\plans\distil-lev5.json mode first, 3 units, pid 11568
+[2026-11-12T21:28:29.9834154+09:00] adapters: 0x00000000_0x00012799=nvidia, 0x00000000_0x00011F23=intel-gpu, 0x00000000_0x00013D59=npu?, 0x00000000_0x00012767=?
+[2026-11-12T21:28:32.2358663+09:00] distil-large-v3/genai-fp32_encnpustatic_ovcpu-npu run 1 start
+[2026-11-12T21:32:49.1705921+09:00] distil-large-v3/genai-fp32_encnpustatic_ovcpu-npu run 1 end: exit 0, OK, 254.9 s
+[2026-11-12T21:32:51.1777618+09:00] distil-large-v3/genai-fp32_decnpubound_ovcpu-npu run 1 start
+[2026-11-12T21:32:58.3434786+09:00] distil-large-v3/genai-fp32_decnpubound_ovcpu-npu run 1 end: exit 1, ERROR, 5.175 s
+[2026-11-12T21:33:00.3432427+09:00] distil-large-v3/genai-fp32_openvino-npu run 1 start
+[2026-11-12T21:36:39.1044124+09:00] distil-large-v3/genai-fp32_openvino-npu run 1 end: exit 1, ERROR, 216.755 s
+[2026-11-12T21:36:39.1150831+09:00] chain done: OK

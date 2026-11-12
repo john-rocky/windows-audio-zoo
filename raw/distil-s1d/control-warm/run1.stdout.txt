@@ -1,0 +1,6 @@
+ENGINE_PID 7312
+{"n": 1, "id": "en_us_1660", "wall_s": 3.132, "text": " Romanticism had a large element of cultural determinism dra"}
+{"n": 2, "id": "en_us_1661", "wall_s": 3.095, "text": " He did not set a figure for the cuts saying they will be ma"}
+{"n": 10, "id": "en_us_1669", "wall_s": 3.004, "text": " Police Superintendent Chandra Shekar Solanke said the accus"}
+{"n": 20, "id": "cmn_hans_cn_1669", "wall_s": 3.255, "text": "警察局长钱德拉·谢卡尔·索兰基说被告人出庭时都蒙住了脸"}
+{"n": 30, "id": "ja_jp_1671", "wall_s": 3.175, "text": "連邦議会は2005年度からYセスブス取締法への資金提供を開始しFBIはアタルズポルノに10人の捜査員を投入しなければなら"}

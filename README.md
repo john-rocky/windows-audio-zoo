@@ -5,13 +5,13 @@ Speech recognition and text-to-speech models tested on one Windows laptop in Nov
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/john-rocky/windows-audio-zoo/main/docs/images/results-dark.svg">
-  <img alt="Stacked bars, one per model, counting its results by verdict. Whisper large-v3-turbo: 10 matched, 2 did not match, 2 did not finish. Qwen3-ASR 1.7B: 3 matched, 7 did not match, 1 did not finish. Granite Speech 5.0 2B: 4 matched. Parakeet TDT 0.6B v3: 3 matched, 1 did not match, 1 did not finish. Kokoro-82M: 2 matched, 5 did not match, 3 did not finish." src="docs/images/results-light.svg" width="860">
+  <img alt="Stacked bars, one per model, counting its results by verdict. Whisper large-v3-turbo: 10 matched, 2 did not match, 2 did not finish. Distil-Whisper distil-large-v3: 28 matched, 12 did not finish. Qwen3-ASR 1.7B: 3 matched, 7 did not match, 1 did not finish. Granite Speech 5.0 2B: 4 matched. Parakeet TDT 0.6B v3: 3 matched, 1 did not match, 1 did not finish. Kokoro-82M: 2 matched, 5 did not match, 3 did not finish." src="docs/images/results-light.svg" width="860">
 </picture>
 </p>
 
 A speech recognition result matches when its word or character error rate in every language is within 0.5 points of the original model in fp32 on the CPU, and no transcript is empty. A text-to-speech result matches when Whisper's transcript of its audio has an error rate within 1.0 point of the original model's. The same model can match on one runtime and not on another, so these counts say nothing about a model as a whole.
 
-- **Speech recognition:** Whisper large-v3-turbo, Qwen3-ASR 1.7B, Granite Speech 5.0 2B, Parakeet TDT 0.6B v3
+- **Speech recognition:** Whisper large-v3-turbo, Distil-Whisper distil-large-v3, Qwen3-ASR 1.7B, Granite Speech 5.0 2B, Parakeet TDT 0.6B v3
 - **Text-to-speech:** Kokoro-82M
 - **Runtimes:** OpenVINO GenAI 2026.4.1, ONNX Runtime GenAI 0.19.0, ONNX Runtime 1.31.1 with the OpenVINO and WebGPU plugins, LiteRT-LM 0.19.1
 - **Processors:** the CPU, Intel GPU and Intel NPU of a Core Ultra 9 386H, and an RTX 5080 Laptop GPU at its 95 W cap

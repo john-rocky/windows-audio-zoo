@@ -219,7 +219,8 @@ def npu_check(err_log, meta, sitting):
 
 def latest(runs_dirs, cell):
     """(run json path or None, meta path, sitting, mode) of the row: the latest timed OK run, else the latest
-    first-pass run; a run with only its meta file (no runner JSON) counts last."""
+    first-pass run; a run with only its meta file (no runner JSON) counts last. A timed run of a sitting whose control
+    tail did not pass (raw/<sitting>/control.json verdict other than PASS, distil-s1c of 11-12) is not a row."""
     timed, first = [], []
     for s in runs_dirs:
         d = K / "raw" / s / cell
@@ -227,6 +228,10 @@ def latest(runs_dirs, cell):
         if not mj.exists():
             continue
         m = jload(mj)
+        if m.get("mode") == "timed":
+            ctl = K / "raw" / s / "control.json"
+            if not ctl.exists() or not str(jload(ctl).get("verdict") or "").startswith("PASS"):
+                continue
         (timed if m.get("mode") == "timed" else first).append((rj if rj.exists() else None, mj, s, m.get("mode")))
     for lst in (timed, first):
         ok = [x for x in lst if x[0] and jload(x[0]).get("status") == "OK"]
@@ -313,6 +318,19 @@ def build(args):
                 doc["device_name"] = f"CPU (Intel NPU requested; {why}, XNNPACK)"
             if r.get("npu_lib_dir"):
                 doc["npu_lib_dir"] = r["npu_lib_dir"]
+        # ONNX Runtime GenAI (found 11-12): pc/run_asr_genai.py sets --ep in code (clear_providers / append_provider),
+        # which in 0.19.0 changes the decoder's session options only (src/config.cpp); the Whisper encoder takes the
+        # session options of its own genai_config.json entry (src/models/whisper.cpp), and the builder's -e cpu exports
+        # these cells load name no provider there = the CPU EP. A run that wrote no encoder options (--encoder-ep config,
+        # every run before 11-12) ran its encoder on the CPU.
+        av = r.get("argv") or []
+        if rt == "genai" and "--ep" in av and av[av.index("--ep") + 1] in ("openvino", "webgpu") \
+                and not r.get("encoder_session_options"):
+            doc["encoder_on"] = "cpu"
+        if r.get("encoder_session_options"):
+            doc["encoder_session_options"] = r["encoder_session_options"]
+        if r.get("config_providers") is not None:   # --ep config: the folder's genai_config.json as it is
+            doc["config_providers"] = r["config_providers"]
         if mode == "timed":
             ctl = K / "raw" / sitting / "control.json"
             doc["control"] = jload(ctl) if ctl.exists() else None

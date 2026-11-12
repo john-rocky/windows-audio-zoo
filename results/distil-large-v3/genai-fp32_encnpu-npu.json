@@ -1,0 +1,57 @@
+{
+ "cell": "distil-large-v3/genai-fp32_encnpu-npu",
+ "model": "distil-large-v3",
+ "runtime": "ONNX Runtime GenAI 0.19.0",
+ "form": "fp32_encnpu",
+ "device": "npu",
+ "device_name": "Intel NPU",
+ "set": null,
+ "mode": "first",
+ "sitting": "distil-lev",
+ "run_start": "2026-11-12T19:58:11.8271108+09:00",
+ "run_end": "2026-11-12T19:58:16.0149074+09:00",
+ "status": "ERROR",
+ "record": {
+  "run": "raw/distil-lev/distil-large-v3/genai-fp32_encnpu-npu/run1.json",
+  "meta": "raw/distil-lev/distil-large-v3/genai-fp32_encnpu-npu/run1.meta.json",
+  "chain_log": "raw/distil-lev/chain.log"
+ },
+ "error": "Traceback (most recent call last):\n  File \"C:\\src\\distil\\pc\\run_asr_genai.py\", line 124, in main\n    model = make_model(og, args, rec)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\src\\distil\\pc\\run_asr_genai.py\", line 96, in make_model\n    return og.Model(config)\n           ^^^^^^^^^^^^^^^^\nRuntimeError: Running a model with multiple providers is not supported. Encountered OpenVINO and CPU\n",
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime-genai": "0.19.0",
+  "onnxruntime": "1.31.1",
+  "onnxruntime-ep-openvino": "1.8.1",
+  "onnxruntime-ep-webgpu": "0.5.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": null,
+ "summary": null,
+ "gate": null,
+ "power": {
+  "msiUserScenarioMode": 2,
+  "overlayAc": "00000000-0000-0000-0000-000000000000",
+  "overlayDc": "00000000-0000-0000-0000-000000000000",
+  "battery": "status 2, 95 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 2.085,
+  "peakWorkingSetBytes": 141312000,
+  "gpuMiBPeak": {},
+  "exitCode": 1,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1,
+ "encoder_session_options": {
+  "log_id": "onnxruntime-genai",
+  "provider_options": [
+   {
+    "OpenVINO": {
+     "device_type": "NPU"
+    }
+   }
+  ]
+ }
+}

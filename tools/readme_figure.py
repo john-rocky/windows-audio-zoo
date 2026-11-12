@@ -17,8 +17,9 @@ THEMES = {
     "light": {"text": "#0b0b0b", "muted": "#52514e", "pass": "#2a78d6", "fail": "#eb6834", "none": "#b4b2a7"},
     "dark": {"text": "#f0efec", "muted": "#c3c2b7", "pass": "#3987e5", "fail": "#d95926", "none": "#6f6e66"},
 }
-MODELS = [("whisper", "Whisper large-v3-turbo"), ("qwen3asr", "Qwen3-ASR 1.7B"), ("granite", "Granite Speech 5.0 2B"),
-          ("parakeet", "Parakeet TDT 0.6B v3"), ("kokoro", "Kokoro-82M")]
+MODELS = [("whisper", "Whisper large-v3-turbo"), ("distil-large-v3", "Distil-Whisper distil-large-v3"),
+          ("qwen3asr", "Qwen3-ASR 1.7B"), ("granite", "Granite Speech 5.0 2B"), ("parakeet", "Parakeet TDT 0.6B v3"),
+          ("kokoro", "Kokoro-82M")]
 KEYS = [("pass", "Matched the original model"), ("fail", "Did not match"), ("none", "Did not finish")]
 TITLE = "Results per model, checked against the original model"
 WIDTH, BAR, GAP = 860, 24, 2

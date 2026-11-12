@@ -1,0 +1,61 @@
+{
+ "cell": "distil-large-v3/genai-fp32-npu",
+ "model": "distil-large-v3",
+ "runtime": "ONNX Runtime GenAI 0.19.0",
+ "form": "fp32",
+ "device": "npu",
+ "device_name": "Intel NPU",
+ "set": null,
+ "mode": "first",
+ "sitting": "distil-first",
+ "run_start": "2026-11-12T18:54:58.3789899+09:00",
+ "run_end": "2026-11-12T18:55:06.6889725+09:00",
+ "status": "ERROR",
+ "record": {
+  "run": "raw/distil-first/distil-large-v3/genai-fp32-npu/run1.json",
+  "meta": "raw/distil-first/distil-large-v3/genai-fp32-npu/run1.meta.json",
+  "chain_log": "raw/distil-first/chain.log"
+ },
+ "error": "Traceback (most recent call last):\n  File \"C:\\src\\distil\\pc\\run_asr_genai.py\", line 74, in main\n    model = make_model(og, args)\n            ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\src\\distil\\pc\\run_asr_genai.py\", line 48, in make_model\n    return og.Model(config)\n           ^^^^^^^^^^^^^^^^\nRuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\plugin\\src\\plugin.cpp:560:\nException from src\\plugins\\intel_npu\\src\\compiler_adapter\\src\\compiler_impl.cpp:323:\nCompilation failed. vclAllocatedExecutableCreate4 result: 0x78000004 - [NPU_VCL] Compiler returned msg:\nReshape node 'Reshape_130': expected exactly 1 dynamic output bound dimension, got 2\n\n\n\n\n",
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime-genai": "0.19.0",
+  "onnxruntime": "1.31.1",
+  "onnxruntime-ep-openvino": "1.8.1",
+  "onnxruntime-ep-webgpu": "0.5.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": null,
+ "summary": null,
+ "gate": null,
+ "power": {
+  "msiUserScenarioMode": 2,
+  "overlayAc": "00000000-0000-0000-0000-000000000000",
+  "overlayDc": "00000000-0000-0000-0000-000000000000",
+  "battery": "status 2, 95 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 6.292,
+  "peakWorkingSetBytes": 3670814720,
+  "gpuMiBPeak": {
+   "0x00000000_0x00012799": {
+    "shared": 0,
+    "dedicated": 0
+   },
+   "0x00000000_0x00011F23": {
+    "shared": 23,
+    "dedicated": 0
+   },
+   "0x00000000_0x00013D59": {
+    "shared": 0,
+    "dedicated": 0
+   }
+  },
+  "exitCode": 1,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1,
+ "encoder_on": "cpu"
+}

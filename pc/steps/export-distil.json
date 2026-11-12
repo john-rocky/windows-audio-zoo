@@ -1,0 +1,54 @@
+[
+ {
+  "name": "patch-genai-whisper",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\patch_genai_whisper.py"
+  ],
+  "timeout_min": 5,
+  "venv": "ref",
+  "stop_on_fail": true
+ },
+ {
+  "name": "genai-distil-fp32-cpu",
+  "exe": "py",
+  "args": [
+   "-m",
+   "onnxruntime_genai.models.builder",
+   "-i",
+   "{ROOT}\\models\\distil-whisper__distil-large-v3",
+   "-o",
+   "{ROOT}\\exports\\distil-large-v3-genai-fp32-cpu",
+   "-p",
+   "fp32",
+   "-e",
+   "cpu",
+   "-c",
+   "{ROOT}\\exports\\cache-genai"
+  ],
+  "timeout_min": 40,
+  "venv": "ref",
+  "ram_gb": 8
+ },
+ {
+  "name": "genai-distil-fp16-cuda",
+  "exe": "py",
+  "args": [
+   "-m",
+   "onnxruntime_genai.models.builder",
+   "-i",
+   "{ROOT}\\models\\distil-whisper__distil-large-v3",
+   "-o",
+   "{ROOT}\\exports\\distil-large-v3-genai-fp16-cuda",
+   "-p",
+   "fp16",
+   "-e",
+   "cuda",
+   "-c",
+   "{ROOT}\\exports\\cache-genai"
+  ],
+  "timeout_min": 40,
+  "venv": "ref",
+  "ram_gb": 8
+ }
+]

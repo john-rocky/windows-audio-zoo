@@ -1,0 +1,32 @@
+[2026-11-12 19:20:44 JST] sitting distil-s1b start (expected end about 19:51)
+[2026-11-12 19:21:47 JST] lock: TAKEN 2026-11-12T19:21:47.3727105+09:00
+[2026-11-12 19:22:08 JST] gate: PASS 2026-11-12T19:22:08.6535828+09:00
+[2026-11-12 19:22:29 JST] chain: STARTED 11380 (chain.ps1 running 20 s after the start)
+[2026-11-12T19:22:09.8095359+09:00] chain start: plan C:\src\distil\pc\plans\distil-s1b.json mode timed, 6 units, pid 11380
+[2026-11-12T19:22:18.8461265+09:00] adapters: 0x00000000_0x00012799=nvidia, 0x00000000_0x00011F23=intel-gpu, 0x00000000_0x00013D59=npu?, 0x00000000_0x00012767=?
+[2026-11-12T19:22:18.9692824+09:00] settle 180 s inside the lock before the control rows
+[2026-11-12T19:25:26.7504375+09:00] control-warm run 1 start
+[2026-11-12T19:27:08.8992715+09:00] control-warm run 1 end: exit 0, OK, 100.168 s
+[2026-11-12T19:27:36.3916623+09:00] control-warm run 2 start
+[2026-11-12T19:29:19.9561331+09:00] control-warm run 2 end: exit 0, OK, 101.58 s
+[2026-11-12T19:29:25.9977173+09:00] control-head run 1 start
+[2026-11-12T19:31:16.6061697+09:00] control-head run 1 end: exit 0, OK, 108.623 s
+[2026-11-12T19:31:44.0092921+09:00] control-head run 2 start
+[2026-11-12T19:33:24.2070703+09:00] control-head run 2 end: exit 0, OK, 98.219 s
+[2026-11-12T19:33:51.6607627+09:00] control-head run 3 start
+[2026-11-12T19:35:34.3150714+09:00] control-head run 3 end: exit 0, OK, 101.557 s
+[2026-11-12T19:35:34.4549194+09:00] chain error: control head: no known value (head spread 9.9 % over 3 runs)
+発生場所 C:\src\distil\pc\chain.ps1:490 文字:156
++ ... unt) runs"; throw "control head: no known value ($($script:control.ve ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (control head: n... % over 3 runs):String) [], RuntimeException
+    + FullyQualifiedErrorId : control head: no known value (head spread 9.9 % over 3 runs)
+ 
+
+[2026-11-12T19:35:34.4629133+09:00] chain done: FAIL control head: no known value (head spread 9.9 % over 3 runs)
+DONE FAIL control head: no known value (head spread 9.9 % over 3 runs) 2026-11-12T19:35:34.4599279+09:00 (C:\src\distil\runs\distil-s1b\chain.done)
+[2026-11-12 19:35:45 JST] chain wait: DONE FAIL control head: no known value (head spread 9.9 % over 3 runs) 2026-11-12T19:35:34.4599279+09:00 (C:\src\distil\runs\distil-s1b\chain.done)
+[2026-11-12 19:35:46 JST] lock after the chain: busy: DISTIL timing: sitting distil-s1b done, the records go to the Mac, until 19:55 at the latest 2026-11-12T19:35:34.4689015+09:00 (0 min)
+[2026-11-12 19:35:46 JST] pulled runs\distil-s1b -> raw/distil-s1b
+[2026-11-12 19:35:49 JST] release: RELEASED 2026-11-12T19:35:49.7716143+09:00
+[2026-11-12 19:35:49 JST] sitting distil-s1b end: DONE FAIL control head: no known value (head spread 9.9 % over 3 runs) 2026-11-12T19:35:34.4599279+09:00 (C:\src\distil\runs\distil-s1b\chain.done)

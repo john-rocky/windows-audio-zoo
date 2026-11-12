@@ -1,0 +1,117 @@
+{
+ "cell": "distil-large-v3/genai-fp32-cpu",
+ "model": "distil-large-v3",
+ "runtime": "ONNX Runtime GenAI 0.19.0",
+ "form": "fp32",
+ "device": "cpu",
+ "device_name": "CPU (Core Ultra 9 386H)",
+ "set": "S150",
+ "mode": "timed",
+ "sitting": "distil-s1d",
+ "run_start": "2026-11-12T20:59:24.3276365+09:00",
+ "run_end": "2026-11-12T21:03:19.8766348+09:00",
+ "status": "OK",
+ "record": {
+  "run": "raw/distil-s1d/distil-large-v3/genai-fp32-cpu/run1.json",
+  "meta": "raw/distil-s1d/distil-large-v3/genai-fp32-cpu/run1.meta.json",
+  "chain_log": "raw/distil-s1d/chain.log"
+ },
+ "error": null,
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime-genai": "0.19.0",
+  "onnxruntime": "1.31.1",
+  "onnxruntime-ep-openvino": "1.8.1",
+  "onnxruntime-ep-webgpu": "0.5.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": 3.001,
+ "summary": {
+  "clips": 50,
+  "audio_s": 545.68,
+  "wall_s": 225.916,
+  "rtf": 0.41401,
+  "empty": 0,
+  "first_token_ms_mean": 4317.02,
+  "split_half_rtf": [
+   0.39712,
+   0.43246
+  ]
+ },
+ "gate": {
+  "quietGate": "quiet",
+  "cpuReads": [
+   4,
+   1.3,
+   0.8
+  ],
+  "nvidiaMiB": 0,
+  "availGB": 23.4,
+  "ramNeedGB": 6,
+  "gpuEngines": null
+ },
+ "power": {
+  "msiUserScenarioMode": 2,
+  "overlayAc": "00000000-0000-0000-0000-000000000000",
+  "overlayDc": "00000000-0000-0000-0000-000000000000",
+  "battery": "status 2, 95 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 233.55,
+  "peakWorkingSetBytes": 3658289152,
+  "gpuMiBPeak": {},
+  "exitCode": 0,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1,
+ "control": {
+  "known_rtf": 0.26692,
+  "known_from": "plan",
+  "head": [
+   0.26389
+  ],
+  "tail": [
+   0.26208
+  ],
+  "verdict": "PASS (tail off 1.8 %)"
+ },
+ "accuracy": {
+  "en_us": {
+   "metric": "WER",
+   "err": 76,
+   "n": 1150,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 6.609
+  }
+ },
+ "reference": {
+  "path": "raw/refs/distil-large-v3/ref.json",
+  "scores": {
+   "en_us": {
+    "metric": "WER",
+    "err": 75,
+    "n": 1150,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 6.522
+   }
+  }
+ },
+ "line": {
+  "en_us": {
+   "run": 6.609,
+   "ref": 6.522,
+   "bar": 7.022,
+   "pass": true
+  },
+  "empty": {
+   "n": 0,
+   "pass": true
+  },
+  "pass": true
+ },
+ "first_vs_timed_equal": "50/50"
+}

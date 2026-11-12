@@ -1532,5 +1532,81 @@
     "blob": "23a296174457c31b22b694f6e07e4e1b558122bf"
    }
   ]
+ },
+ {
+  "repo": "distil-whisper/distil-large-v3",
+  "folder": "",
+  "revision": "8031d2e6ce6631b7fc45629dddfc00271116d981",
+  "license": "mit",
+  "main_now": "8031d2e6ce6631b7fc45629dddfc00271116d981",
+  "bytes": 1517263704,
+  "files": [
+   {
+    "path": "added_tokens.json",
+    "size": 34648,
+    "sha256": null,
+    "blob": "1b33526d33aaa60d79f78ae8651dae50b730185a"
+   },
+   {
+    "path": "config.json",
+    "size": 1372,
+    "sha256": null,
+    "blob": "97351715f879c367e9652c547ba442dda9b14297"
+   },
+   {
+    "path": "generation_config.json",
+    "size": 4247,
+    "sha256": null,
+    "blob": "5e0fbee4bb0aa340897130c0f93f896203d17b76"
+   },
+   {
+    "path": "merges.txt",
+    "size": 493869,
+    "sha256": null,
+    "blob": "6038932a2a1f09a66991b1c2adae0d14066fa29e"
+   },
+   {
+    "path": "model.safetensors",
+    "size": 1512874472,
+    "sha256": "065e3775409aa2fb0e6893a91f7210d3f4c930536ab79acaa56dafbf7be3a475",
+    "blob": "29c8d1d12c06d0620aaf11bd644acdc4d36a8c17"
+   },
+   {
+    "path": "normalizer.json",
+    "size": 52666,
+    "sha256": null,
+    "blob": "dd6ae819ad738ac1a546e9f9282ef325c33b9ea0"
+   },
+   {
+    "path": "preprocessor_config.json",
+    "size": 340,
+    "sha256": null,
+    "blob": "931c77a740890c46365c7ae0c9d350ba3cca908f"
+   },
+   {
+    "path": "special_tokens_map.json",
+    "size": 2072,
+    "sha256": null,
+    "blob": "3c18e97162d572f2b1d62e7e1c7b805f1be11dbe"
+   },
+   {
+    "path": "tokenizer.json",
+    "size": 2480617,
+    "sha256": null,
+    "blob": "3a5e2ba63acdcac9a19ba56cf9bd27f185bfff61"
+   },
+   {
+    "path": "tokenizer_config.json",
+    "size": 282843,
+    "sha256": null,
+    "blob": "06ffdc8308eae6bb7bd1fdd81e94b0a881a539ab"
+   },
+   {
+    "path": "vocab.json",
+    "size": 1036558,
+    "sha256": null,
+    "blob": "0f3456460629e21d559c6daa23ab6ce3644e8271"
+   }
+  ]
  }
 ]

@@ -1,0 +1,34 @@
+[2026-11-12 20:43:56 JST] sitting distil-s1d start (expected end about 21:14)
+[2026-11-12 20:44:59 JST] lock: TAKEN 2026-11-12T20:44:59.4135859+09:00
+[2026-11-12 20:45:19 JST] gate: PASS 2026-11-12T20:45:19.5885621+09:00
+[2026-11-12 20:45:40 JST] chain: STARTED 15160 (chain.ps1 running 20 s after the start)
+[2026-11-12T20:45:20.8786875+09:00] chain start: plan C:\src\distil\pc\plans\distil-s1d.json mode timed, 9 units, pid 15160
+[2026-11-12T20:45:29.8923939+09:00] adapters: 0x00000000_0x00012799=nvidia, 0x00000000_0x00011F23=intel-gpu, 0x00000000_0x00013D59=npu?, 0x00000000_0x00012767=?
+[2026-11-12T20:45:30.0113975+09:00] settle 180 s inside the lock before the control rows
+[2026-11-12T20:48:37.8770111+09:00] control-warm run 1 start
+[2026-11-12T20:50:19.3212222+09:00] control-warm run 1 end: exit 0, OK, 99.307 s
+[2026-11-12T20:50:46.8278604+09:00] control-head run 1 start
+[2026-11-12T20:52:28.7328460+09:00] control-head run 1 end: exit 0, OK, 99.857 s
+[2026-11-12T20:52:28.8041812+09:00] control head: rtf 0.26389 vs known 0.26692 (plan): off 1.1 %
+[2026-11-12T20:52:56.2446190+09:00] distil-large-v3/genai-fp16-rtx run 1 start
+[2026-11-12T20:53:08.0121639+09:00] distil-large-v3/genai-fp16-rtx run 1 end: exit 0, OK, 9.851 s
+[2026-11-12T20:53:35.5174697+09:00] distil-large-v3/genai-fp16_sdpa1-rtx run 1 start
+[2026-11-12T20:53:45.2079169+09:00] distil-large-v3/genai-fp16_sdpa1-rtx run 1 end: exit 0, OK, 7.782 s
+[2026-11-12T20:54:19.0403495+09:00] distil-large-v3/genai-int4_openvino-igpu run 1 start
+[2026-11-12T20:54:58.0368056+09:00] distil-large-v3/genai-int4_openvino-igpu run 1 end: exit 0, OK, 37.022 s
+[2026-11-12T20:55:25.8971654+09:00] distil-large-v3/genai-fp32_openvino-igpu run 1 start
+[2026-11-12T20:56:08.1755063+09:00] distil-large-v3/genai-fp32_openvino-igpu run 1 end: exit 0, OK, 40.296 s
+[2026-11-12T20:56:35.6902279+09:00] distil-large-v3/genai-int8_openvino-cpu run 1 start
+[2026-11-12T20:58:56.9084898+09:00] distil-large-v3/genai-int8_openvino-cpu run 1 end: exit 0, OK, 139.237 s
+[2026-11-12T20:59:24.3710233+09:00] distil-large-v3/genai-fp32-cpu run 1 start
+[2026-11-12T21:03:19.8976266+09:00] distil-large-v3/genai-fp32-cpu run 1 end: exit 0, OK, 233.55 s
+[2026-11-12T21:05:57.3631938+09:00] control-tail run 1 start
+[2026-11-12T21:07:38.5625422+09:00] control-tail run 1 end: exit 0, OK, 99.133 s
+[2026-11-12T21:07:38.5745741+09:00] control tail: rtf 0.26208: PASS (tail off 1.8 %)
+[2026-11-12T21:07:38.5905600+09:00] chain done: OK
+DONE OK 2026-11-12T21:07:38.5895752+09:00 (C:\src\distil\runs\distil-s1d\chain.done)
+[2026-11-12 21:07:42 JST] chain wait: DONE OK 2026-11-12T21:07:38.5895752+09:00 (C:\src\distil\runs\distil-s1d\chain.done)
+[2026-11-12 21:07:43 JST] lock after the chain: busy: DISTIL timing: sitting distil-s1d done, the records go to the Mac, until 21:27 at the latest 2026-11-12T21:07:38.5975729+09:00 (0 min)
+[2026-11-12 21:07:43 JST] pulled runs\distil-s1d -> raw/distil-s1d
+[2026-11-12 21:07:45 JST] release: RELEASED 2026-11-12T21:07:45.2632982+09:00
+[2026-11-12 21:07:45 JST] sitting distil-s1d end: DONE OK 2026-11-12T21:07:38.5895752+09:00 (C:\src\distil\runs\distil-s1d\chain.done)

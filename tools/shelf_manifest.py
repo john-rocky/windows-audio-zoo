@@ -39,6 +39,11 @@ SOURCES = [
     ("onnx-community/Kokoro-82M-v1.0-ONNX", "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
      ["config.json", "tokenizer.json", "tokenizer_config.json", "onnx/model.onnx", "onnx/model_fp16.onnx", "voices/af_heart.bin"]),
     ("hexgrad/Kokoro-82M", "f3ff3571791e39611d31c381e3a41a3af07b4987", ["config.json", "kokoro-v1_0.pth", "voices/af_heart.pt"]),
+    # Distil-Whisper distil-large-v3 (added 2026-11-12, revision read from the Hub API that day): the checkpoint (ORT
+    # GenAI's builder, the transformers reference); model.safetensors only (fp16), not the fp32 variant or onnx/
+    ("distil-whisper/distil-large-v3", "8031d2e6ce6631b7fc45629dddfc00271116d981",
+     ["config.json", "generation_config.json", "model.safetensors", "*token*", "vocab.json", "merges.txt",
+      "normalizer.json", "preprocessor_config.json", "added_tokens.json", "special_tokens_map.json"]),
 ]
 
 

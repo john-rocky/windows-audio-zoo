@@ -1,0 +1,17 @@
+{
+    "known_rtf":  0.26692,
+    "known_from":  "this sitting\u0027s head (3 runs, spread 4.6 %)",
+    "head":  [
+                 0.26692,
+                 0.2666,
+                 0.27877
+             ],
+    "tail":  [
+                 0.28675
+             ],
+    "verdict":  "TAIL OFF 7.4 %: the rows of this sitting are not used",
+    "left_cells":  [
+                       "distil-large-v3/genai-fp32-cpu"
+                   ],
+    "end_by":  "2026-11-12T20:33:00+09:00"
+}

@@ -1,0 +1,45 @@
+{
+ "cell": "distil-large-v3/genai-fp32-rtx",
+ "model": "distil-large-v3",
+ "runtime": "ONNX Runtime GenAI 0.19.0",
+ "form": "fp32",
+ "device": "rtx",
+ "device_name": "RTX 5080 Laptop",
+ "set": null,
+ "mode": "first",
+ "sitting": "distil-first",
+ "run_start": "2026-11-12T18:55:34.9063347+09:00",
+ "run_end": "2026-11-12T18:55:47.7850165+09:00",
+ "status": "CRASH",
+ "record": {
+  "run": null,
+  "meta": "raw/distil-first/distil-large-v3/genai-fp32-rtx/run1.meta.json",
+  "chain_log": "raw/distil-first/chain.log"
+ },
+ "error": "no runner JSON: exit 0xC0000005 after 11 s",
+ "versions": null,
+ "load_s": null,
+ "summary": null,
+ "gate": null,
+ "power": {
+  "msiUserScenarioMode": 2,
+  "overlayAc": "00000000-0000-0000-0000-000000000000",
+  "overlayDc": "00000000-0000-0000-0000-000000000000",
+  "battery": "status 2, 95 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 10.943,
+  "peakWorkingSetBytes": 3221487616,
+  "gpuMiBPeak": {
+   "0x00000000_0x00012799": {
+    "shared": 76,
+    "dedicated": 1448
+   }
+  },
+  "exitCode": -1073741819,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1
+}

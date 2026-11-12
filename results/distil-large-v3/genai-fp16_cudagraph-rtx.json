@@ -1,0 +1,50 @@
+{
+ "cell": "distil-large-v3/genai-fp16_cudagraph-rtx",
+ "model": "distil-large-v3",
+ "runtime": "ONNX Runtime GenAI 0.19.0",
+ "form": "fp16_cudagraph",
+ "device": "rtx",
+ "device_name": "RTX 5080 Laptop",
+ "set": "S150",
+ "mode": "first",
+ "sitting": "distil-lev",
+ "run_start": "2026-11-12T19:45:54.0012448+09:00",
+ "run_end": "2026-11-12T19:46:05.2030685+09:00",
+ "status": "ERROR",
+ "record": {
+  "run": "raw/distil-lev/distil-large-v3/genai-fp16_cudagraph-rtx/run1.json",
+  "meta": "raw/distil-lev/distil-large-v3/genai-fp16_cudagraph-rtx/run1.meta.json",
+  "chain_log": "raw/distil-lev/chain.log"
+ },
+ "error": "Traceback (most recent call last):\n  File \"C:\\src\\distil\\pc\\run_asr_genai.py\", line 157, in main\n    _, ws, _, _ = run(al.warmup_wav(args.fixtures), \"en_us\")\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\src\\distil\\pc\\run_asr_genai.py\", line 142, in run\n    gen = og.Generator(model, params)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Graph capture is not supported with past_present_share_buffer set to false.\n",
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime-genai-cuda": "0.19.0",
+  "onnxruntime-gpu": "1.31.1",
+  "numpy": "2.5.4"
+ },
+ "load_s": 2.13,
+ "summary": null,
+ "gate": null,
+ "power": {
+  "msiUserScenarioMode": 2,
+  "overlayAc": "00000000-0000-0000-0000-000000000000",
+  "overlayDc": "00000000-0000-0000-0000-000000000000",
+  "battery": "status 2, 95 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 9.203,
+  "peakWorkingSetBytes": 618803200,
+  "gpuMiBPeak": {
+   "0x00000000_0x00012799": {
+    "shared": 204,
+    "dedicated": 2568
+   }
+  },
+  "exitCode": -1073741819,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1
+}

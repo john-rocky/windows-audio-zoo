@@ -1,0 +1,57 @@
+{
+ "runner": "run_asr_genai.py",
+ "started": "2026-11-12T22:30:49.823922+09:00",
+ "argv": [
+  "--model-dir",
+  "C:\\src\\distil\\exports\\distil-large-v3-genai-fp16-cuda-sharebuf",
+  "--ep",
+  "cuda",
+  "--langs",
+  "en_us",
+  "--set",
+  "S150",
+  "--fixtures",
+  "C:\\src\\distil\\fixtures",
+  "--out",
+  "C:\\src\\distil\\runs\\distil-lev7\\distil-large-v3\\genai-fp16_sharebuf-rtx\\run1.json"
+ ],
+ "pid": 4960,
+ "status": "ERROR",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.001
+ },
+ "rows": [],
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime-genai-cuda": "0.19.0",
+  "onnxruntime-gpu": "1.31.1",
+  "numpy": "2.5.4"
+ },
+ "cuda_dll_dirs": [
+  "C:\\src\\distil\\.venv-genai-cuda\\Lib\\site-packages\\nvidia\\cu13\\bin\\x86_64",
+  "C:\\src\\distil\\.venv-genai-cuda\\Lib\\site-packages\\nvidia\\cudnn\\bin"
+ ],
+ "load_s": 2.092,
+ "device_type": "CUDA",
+ "workload": {
+  "set": "S150",
+  "langs": [
+   "en_us"
+  ],
+  "first": 0,
+  "max_new_tokens": 440,
+  "decode": "greedy",
+  "language": "fixed per clip",
+  "task": "transcribe",
+  "timestamps": false,
+  "input": "WAV path (og.Audios.open), read inside the timed span"
+ },
+ "error": "Traceback (most recent call last):\n  File \"C:\\src\\distil\\pc\\run_asr_genai.py\", line 180, in main\n    _, ws, _, _ = run(al.warmup_wav(args.fixtures), \"en_us\")\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\src\\distil\\pc\\run_asr_genai.py\", line 166, in run\n    gen.set_inputs(inputs)\nRuntimeError: Non-zero status code returned while running MultiHeadAttention node. Name:'/model/layers.0/attn/MultiHeadAttention' Status Message: N:\\_work\\1\\s\\onnxruntime\\core\\framework\\op_kernel.cc:87 onnxruntime::OpKernelContext::OutputMLValue [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : The output OrtValue provided for output 'present_key_self_0' of node '/model/layers.0/attn/MultiHeadAttention' (MultiHeadAttention) has shape {1,20,444,64} but the computed output shape for this run is {1,20,448,64}. When calling Run() with pre-allocated output OrtValues on a model with dynamic output shapes, either supply unallocated output OrtValues or ensure the pre-allocated shapes match the expected output shapes for each run.\n\n",
+ "peak_working_set_bytes": 1131216896,
+ "peak_pagefile_bytes": 5009936384,
+ "ended": "2026-11-12T22:30:53.834893+09:00",
+ "process_s": 4.011
+}

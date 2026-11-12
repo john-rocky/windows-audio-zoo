@@ -1,0 +1,11 @@
+[2026-11-12T21:38:01.2955345+09:00] chain start: plan C:\src\distil\pc\plans\distil-lev6.json mode first, 4 units, pid 11700
+[2026-11-12T21:38:11.7418451+09:00] adapters: 0x00000000_0x00012799=nvidia, 0x00000000_0x00011F23=intel-gpu, 0x00000000_0x00013D59=npu?, 0x00000000_0x00012767=?
+[2026-11-12T21:38:13.9855824+09:00] distil-large-v3/genai-int8_encnpustatic_ovcpu-npu run 1 start
+[2026-11-12T21:43:26.0178441+09:00] distil-large-v3/genai-int8_encnpustatic_ovcpu-npu run 1 end: exit 0, OK, 310.004 s
+[2026-11-12T21:43:28.0285975+09:00] distil-large-v3/genai-fp32_encnpustatic_ovgpu-npu run 1 start
+[2026-11-12T21:47:43.2048972+09:00] distil-large-v3/genai-fp32_encnpustatic_ovgpu-npu run 1 end: exit 0, OK, 253.941 s
+[2026-11-12T21:47:45.2239014+09:00] distil-large-v3/genai-fp32_encnpucachea_ovcpu-npu run 1 start
+[2026-11-12T21:52:04.1682395+09:00] distil-large-v3/genai-fp32_encnpucachea_ovcpu-npu run 1 end: exit 0, OK, 256.967 s
+[2026-11-12T21:52:05.6975531+09:00] distil-large-v3/genai-fp32_encnpucacheb_ovcpu-npu run 1 start
+[2026-11-12T21:52:49.2479777+09:00] distil-large-v3/genai-fp32_encnpucacheb_ovcpu-npu run 1 end: exit 0, OK, 41.559 s
+[2026-11-12T21:52:49.2569829+09:00] chain done: OK

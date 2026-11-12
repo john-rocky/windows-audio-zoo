@@ -1,0 +1,97 @@
+{
+ "cell": "distil-large-v3/genai-int8_sdpa1-rtx",
+ "model": "distil-large-v3",
+ "runtime": "ONNX Runtime GenAI 0.19.0",
+ "form": "int8_sdpa1",
+ "device": "rtx",
+ "device_name": "RTX 5080 Laptop",
+ "set": "S150",
+ "mode": "first",
+ "sitting": "distil-lev2",
+ "run_start": "2026-11-12T20:00:13.0456117+09:00",
+ "run_end": "2026-11-12T20:00:26.3694802+09:00",
+ "status": "OK",
+ "record": {
+  "run": "raw/distil-lev2/distil-large-v3/genai-int8_sdpa1-rtx/run1.json",
+  "meta": "raw/distil-lev2/distil-large-v3/genai-int8_sdpa1-rtx/run1.meta.json",
+  "chain_log": "raw/distil-lev2/chain.log"
+ },
+ "error": null,
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime-genai-cuda": "0.19.0",
+  "onnxruntime-gpu": "1.31.1",
+  "numpy": "2.5.4"
+ },
+ "load_s": 2.893,
+ "summary": {
+  "clips": 50,
+  "audio_s": 545.68,
+  "wall_s": 6.701,
+  "rtf": 0.01228,
+  "empty": 0,
+  "first_token_ms_mean": 94.13,
+  "split_half_rtf": [
+   0.01219,
+   0.01238
+  ]
+ },
+ "gate": null,
+ "power": {
+  "msiUserScenarioMode": 2,
+  "overlayAc": "00000000-0000-0000-0000-000000000000",
+  "overlayDc": "00000000-0000-0000-0000-000000000000",
+  "battery": "status 2, 95 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 11.287,
+  "peakWorkingSetBytes": 1243942912,
+  "gpuMiBPeak": {
+   "0x00000000_0x00012799": {
+    "shared": 204,
+    "dedicated": 2060
+   }
+  },
+  "exitCode": 0,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1,
+ "accuracy": {
+  "en_us": {
+   "metric": "WER",
+   "err": 76,
+   "n": 1150,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 6.609
+  }
+ },
+ "reference": {
+  "path": "raw/refs/distil-large-v3/ref.json",
+  "scores": {
+   "en_us": {
+    "metric": "WER",
+    "err": 75,
+    "n": 1150,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 6.522
+   }
+  }
+ },
+ "line": {
+  "en_us": {
+   "run": 6.609,
+   "ref": 6.522,
+   "bar": 7.022,
+   "pass": true
+  },
+  "empty": {
+   "n": 0,
+   "pass": true
+  },
+  "pass": true
+ }
+}

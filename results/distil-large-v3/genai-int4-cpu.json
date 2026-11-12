@@ -1,0 +1,94 @@
+{
+ "cell": "distil-large-v3/genai-int4-cpu",
+ "model": "distil-large-v3",
+ "runtime": "ONNX Runtime GenAI 0.19.0",
+ "form": "int4",
+ "device": "cpu",
+ "device_name": "CPU (Core Ultra 9 386H)",
+ "set": "S150",
+ "mode": "first",
+ "sitting": "distil-first",
+ "run_start": "2026-11-12T18:55:49.7528757+09:00",
+ "run_end": "2026-11-12T19:00:16.0773729+09:00",
+ "status": "OK",
+ "record": {
+  "run": "raw/distil-first/distil-large-v3/genai-int4-cpu/run1.json",
+  "meta": "raw/distil-first/distil-large-v3/genai-int4-cpu/run1.meta.json",
+  "chain_log": "raw/distil-first/chain.log"
+ },
+ "error": null,
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime-genai": "0.19.0",
+  "onnxruntime": "1.31.1",
+  "onnxruntime-ep-openvino": "1.8.1",
+  "onnxruntime-ep-webgpu": "0.5.0",
+  "numpy": "2.5.4"
+ },
+ "load_s": 1.511,
+ "summary": {
+  "clips": 50,
+  "audio_s": 545.68,
+  "wall_s": 257.329,
+  "rtf": 0.47158,
+  "empty": 0,
+  "first_token_ms_mean": 5084.24,
+  "split_half_rtf": [
+   0.45237,
+   0.49257
+  ]
+ },
+ "gate": null,
+ "power": {
+  "msiUserScenarioMode": 2,
+  "overlayAc": "00000000-0000-0000-0000-000000000000",
+  "overlayDc": "00000000-0000-0000-0000-000000000000",
+  "battery": "status 2, 95 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 264.274,
+  "peakWorkingSetBytes": 1811423232,
+  "gpuMiBPeak": {},
+  "exitCode": 0,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1,
+ "accuracy": {
+  "en_us": {
+   "metric": "WER",
+   "err": 75,
+   "n": 1150,
+   "clips": 50,
+   "empty": 0,
+   "rate_pct": 6.522
+  }
+ },
+ "reference": {
+  "path": "raw/refs/distil-large-v3/ref.json",
+  "scores": {
+   "en_us": {
+    "metric": "WER",
+    "err": 75,
+    "n": 1150,
+    "clips": 50,
+    "empty": 0,
+    "rate_pct": 6.522
+   }
+  }
+ },
+ "line": {
+  "en_us": {
+   "run": 6.522,
+   "ref": 6.522,
+   "bar": 7.022,
+   "pass": true
+  },
+  "empty": {
+   "n": 0,
+   "pass": true
+  },
+  "pass": true
+ }
+}

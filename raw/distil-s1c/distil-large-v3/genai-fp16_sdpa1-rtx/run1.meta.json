@@ -1,0 +1,82 @@
+{
+    "cell":  "distil-large-v3/genai-fp16_sdpa1-rtx",
+    "device":  "rtx",
+    "role":  null,
+    "run":  1,
+    "mode":  "timed",
+    "sitting":  "distil-s1c",
+    "start":  "2026-11-12T20:15:10.3898378+09:00",
+    "osBuild":  "26200.9711",
+    "desktopLocked":  true,
+    "power":  {
+                  "msiUserScenarioMode":  2,
+                  "overlayAc":  "00000000-0000-0000-0000-000000000000",
+                  "overlayDc":  "00000000-0000-0000-0000-000000000000",
+                  "battery":  "status 2, 95 %"
+              },
+    "gate":  {
+                 "quietGate":  "quiet",
+                 "cpuReads":  [
+                                  1,
+                                  0.6,
+                                  0.1
+                              ],
+                 "nvidiaMiB":  0,
+                 "availGB":  22.5,
+                 "ramNeedGB":  6,
+                 "gpuEngines":  null
+             },
+    "before":  {
+                   "load":  {
+                                "cpu":  2.7,
+                                "build_ms":  0,
+                                "top":  [
+                                            "System 4 0.34 core",
+                                            "WUDFHost 6912 0.02 core",
+                                            "WmiPrvSE 7980 0.02 core",
+                                            "powershell 12484 0.02 core",
+                                            "DCv2 13300 0.02 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 120 MHz, 14001 MHz, 18.51 W, 0 %, 0 MiB, 52",
+                   "availGB":  22.5
+               },
+    "command":  "C:\\src\\distil\\.venv-genai-cuda\\Scripts\\python.exe -u C:\\src\\distil\\pc\\run_asr_genai.py --model-dir C:\\src\\distil\\exports\\distil-large-v3-genai-fp16-cuda --ep cuda --ep-option sdpa_kernel=1 --langs en_us --set S150 --fixtures C:\\src\\distil\\fixtures --out C:\\src\\distil\\runs\\distil-s1c\\distil-large-v3\\genai-fp16_sdpa1-rtx\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  4996,
+                   "enginePath":  "C:\\src\\distil\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+                   "elapsedSeconds":  9.41,
+                   "peakWorkingSetBytes":  1291407360,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x00012799":  {
+                                                                    "shared":  204,
+                                                                    "dedicated":  3026
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P0, 1815 MHz, 14001 MHz, 91.13 W, 71 %, 3026 MiB, 58"
+                                     ]
+               },
+    "selectedAdapter":  null,
+    "after":  {
+                  "load":  {
+                               "cpu":  4.3,
+                               "build_ms":  0,
+                               "top":  [
+                                           "System 4 0.5 core",
+                                           "msedge 14608 0.08 core",
+                                           "DCv2 13300 0.06 core",
+                                           "csrss 1464 0.02 core",
+                                           "svchost 2324 0.02 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 7 MHz, 14001 MHz, 18.90 W, 0 %, 0 MiB, 54"
+              },
+    "end":  "2026-11-12T20:15:21.7402340+09:00",
+    "tries":  1
+}

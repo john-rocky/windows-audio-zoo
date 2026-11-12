@@ -1,0 +1,178 @@
+[
+ {
+  "name": "python",
+  "exe": "uv",
+  "args": [
+   "python",
+   "install",
+   "3.12"
+  ],
+  "timeout_min": 15,
+  "stop_on_fail": true
+ },
+ {
+  "name": "venv-ovg",
+  "exe": "uv",
+  "args": [
+   "venv",
+   "{ROOT}\\.venv-ovg",
+   "--python",
+   "3.12",
+   "--python-preference",
+   "only-managed",
+   "--allow-existing"
+  ],
+  "timeout_min": 10
+ },
+ {
+  "name": "pip-ovg",
+  "exe": "uv",
+  "args": [
+   "pip",
+   "install",
+   "--python",
+   "{ROOT}\\.venv-ovg\\Scripts\\python.exe",
+   "-r",
+   "{ROOT}\\pc\\req\\ovg.txt"
+  ],
+  "timeout_min": 45
+ },
+ {
+  "name": "versions-ovg",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\venv_versions.py",
+   "--out",
+   "{ROOT}\\logs\\versions-ovg.txt"
+  ],
+  "timeout_min": 5,
+  "venv": "ovg"
+ },
+ {
+  "name": "venv-genai",
+  "exe": "uv",
+  "args": [
+   "venv",
+   "{ROOT}\\.venv-genai",
+   "--python",
+   "3.12",
+   "--python-preference",
+   "only-managed",
+   "--allow-existing"
+  ],
+  "timeout_min": 10
+ },
+ {
+  "name": "pip-genai",
+  "exe": "uv",
+  "args": [
+   "pip",
+   "install",
+   "--python",
+   "{ROOT}\\.venv-genai\\Scripts\\python.exe",
+   "-r",
+   "{ROOT}\\pc\\req\\genai.txt"
+  ],
+  "timeout_min": 45
+ },
+ {
+  "name": "versions-genai",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\venv_versions.py",
+   "--out",
+   "{ROOT}\\logs\\versions-genai.txt"
+  ],
+  "timeout_min": 5,
+  "venv": "genai"
+ },
+ {
+  "name": "venv-genai-cuda",
+  "exe": "uv",
+  "args": [
+   "venv",
+   "{ROOT}\\.venv-genai-cuda",
+   "--python",
+   "3.12",
+   "--python-preference",
+   "only-managed",
+   "--allow-existing"
+  ],
+  "timeout_min": 10
+ },
+ {
+  "name": "pip-genai-cuda",
+  "exe": "uv",
+  "args": [
+   "pip",
+   "install",
+   "--python",
+   "{ROOT}\\.venv-genai-cuda\\Scripts\\python.exe",
+   "-r",
+   "{ROOT}\\pc\\req\\genai-cuda.txt"
+  ],
+  "timeout_min": 45
+ },
+ {
+  "name": "versions-genai-cuda",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\venv_versions.py",
+   "--out",
+   "{ROOT}\\logs\\versions-genai-cuda.txt"
+  ],
+  "timeout_min": 5,
+  "venv": "genai-cuda"
+ },
+ {
+  "name": "venv-ref",
+  "exe": "uv",
+  "args": [
+   "venv",
+   "{ROOT}\\.venv-ref",
+   "--python",
+   "3.12",
+   "--python-preference",
+   "only-managed",
+   "--allow-existing"
+  ],
+  "timeout_min": 10
+ },
+ {
+  "name": "pip-ref",
+  "exe": "uv",
+  "args": [
+   "pip",
+   "install",
+   "--python",
+   "{ROOT}\\.venv-ref\\Scripts\\python.exe",
+   "-r",
+   "{ROOT}\\pc\\req\\ref.txt"
+  ],
+  "timeout_min": 45
+ },
+ {
+  "name": "versions-ref",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\venv_versions.py",
+   "--out",
+   "{ROOT}\\logs\\versions-ref.txt"
+  ],
+  "timeout_min": 5,
+  "venv": "ref"
+ },
+ {
+  "name": "fixtures",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\check_fixtures.py",
+   "--fixtures",
+   "{FIX}",
+   "--sets",
+   "S150"
+  ],
+  "timeout_min": 5,
+  "venv": "ovg"
+ }
+]

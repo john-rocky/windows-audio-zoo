@@ -1,0 +1,87 @@
+[
+  {
+    "name": "ovfolder-int8-cpu",
+    "exe": "py",
+    "args": [
+      "{ROOT}\\pc\\genai_providers_folder.py",
+      "--src",
+      "{ROOT}\\exports\\distil-large-v3-genai-int8-cpu",
+      "--dst",
+      "{ROOT}\\exports\\distil-large-v3-genai-int8-openvino-cpu",
+      "--provider",
+      "OpenVINO",
+      "--option",
+      "device_type=CPU"
+    ],
+    "timeout_min": 3,
+    "venv": "ref"
+  },
+  {
+    "name": "ovfolder-int4-cpu",
+    "exe": "py",
+    "args": [
+      "{ROOT}\\pc\\genai_providers_folder.py",
+      "--src",
+      "{ROOT}\\exports\\distil-large-v3-genai-int4-cpu",
+      "--dst",
+      "{ROOT}\\exports\\distil-large-v3-genai-int4-openvino-cpu",
+      "--provider",
+      "OpenVINO",
+      "--option",
+      "device_type=CPU"
+    ],
+    "timeout_min": 3,
+    "venv": "ref"
+  },
+  {
+    "name": "ovfolder-int8-gpu",
+    "exe": "py",
+    "args": [
+      "{ROOT}\\pc\\genai_providers_folder.py",
+      "--src",
+      "{ROOT}\\exports\\distil-large-v3-genai-int8-cpu",
+      "--dst",
+      "{ROOT}\\exports\\distil-large-v3-genai-int8-openvino-gpu",
+      "--provider",
+      "OpenVINO",
+      "--option",
+      "device_type=GPU"
+    ],
+    "timeout_min": 3,
+    "venv": "ref"
+  },
+  {
+    "name": "ovfolder-int4-gpu",
+    "exe": "py",
+    "args": [
+      "{ROOT}\\pc\\genai_providers_folder.py",
+      "--src",
+      "{ROOT}\\exports\\distil-large-v3-genai-int4-cpu",
+      "--dst",
+      "{ROOT}\\exports\\distil-large-v3-genai-int4-openvino-gpu",
+      "--provider",
+      "OpenVINO",
+      "--option",
+      "device_type=GPU"
+    ],
+    "timeout_min": 3,
+    "venv": "ref"
+  },
+  {
+    "name": "ovfolder-fp32-gpu",
+    "exe": "py",
+    "args": [
+      "{ROOT}\\pc\\genai_providers_folder.py",
+      "--src",
+      "{ROOT}\\exports\\distil-large-v3-genai-fp32-cpu",
+      "--dst",
+      "{ROOT}\\exports\\distil-large-v3-genai-fp32-openvino-gpu",
+      "--provider",
+      "OpenVINO",
+      "--option",
+      "device_type=GPU"
+    ],
+    "timeout_min": 3,
+    "venv": "ref"
+  }
+]

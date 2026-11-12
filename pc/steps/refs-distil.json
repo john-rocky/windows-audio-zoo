@@ -1,0 +1,24 @@
+[
+ {
+  "name": "ref-distil",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\ref_hf.py",
+   "--family",
+   "whisper",
+   "--model-dir",
+   "{ROOT}\\models\\distil-whisper__distil-large-v3",
+   "--set",
+   "S150",
+   "--langs",
+   "en_us",
+   "--fixtures",
+   "{FIX}",
+   "--out",
+   "{ROOT}\\refs\\distil-large-v3\\ref.json"
+  ],
+  "timeout_min": 60,
+  "venv": "ref",
+  "ram_gb": 6
+ }
+]

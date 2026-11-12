@@ -1,0 +1,32 @@
+{
+  "sitting": "distil-lev4",
+  "made": "2026-11-12T20:47:53+09:00",
+  "mode": "first",
+  "units": [
+    {
+      "cell": "distil-large-v3/genai-fp32_encnpu_ovcpu-npu",
+      "venv": "genai",
+      "script": "run_asr_genai.py",
+      "device": "npu",
+      "ram_need_gb": 6,
+      "timeout_min": 30,
+      "engines_gate": false,
+      "args": [
+        "--model-dir",
+        "{ROOT}\\exports\\distil-large-v3-genai-fp32-cpu",
+        "--ep",
+        "openvino",
+        "--ov-device",
+        "CPU",
+        "--encoder-ep",
+        "openvino-npu",
+        "--langs",
+        "en_us",
+        "--set",
+        "S150",
+        "--fixtures",
+        "{FIX}"
+      ]
+    }
+  ]
+}

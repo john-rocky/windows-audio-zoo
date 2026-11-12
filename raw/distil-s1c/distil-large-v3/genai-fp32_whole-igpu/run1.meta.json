@@ -1,0 +1,96 @@
+{
+    "cell":  "distil-large-v3/genai-fp32_whole-igpu",
+    "device":  "igpu",
+    "role":  null,
+    "run":  1,
+    "mode":  "timed",
+    "sitting":  "distil-s1c",
+    "start":  "2026-11-12T20:17:51.7757703+09:00",
+    "osBuild":  "26200.9711",
+    "desktopLocked":  true,
+    "power":  {
+                  "msiUserScenarioMode":  2,
+                  "overlayAc":  "00000000-0000-0000-0000-000000000000",
+                  "overlayDc":  "00000000-0000-0000-0000-000000000000",
+                  "battery":  "status 2, 95 %"
+              },
+    "gate":  {
+                 "quietGate":  "quiet",
+                 "cpuReads":  [
+                                  0.8,
+                                  2,
+                                  2.3
+                              ],
+                 "nvidiaMiB":  0,
+                 "availGB":  22.5,
+                 "ramNeedGB":  6,
+                 "gpuEngines":  0
+             },
+    "before":  {
+                   "load":  {
+                                "cpu":  1.7,
+                                "build_ms":  0,
+                                "top":  [
+                                            "WmiPrvSE 7980 0.09 core",
+                                            "DCv2 13300 0.06 core",
+                                            "System 4 0.02 core",
+                                            "WmiApSrv 6360 0.02 core",
+                                            "WUDFHost 6912 0.02 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 2542 MHz, 14001 MHz, 17.94 W, 0 %, 0 MiB, 48",
+                   "availGB":  22.5
+               },
+    "command":  "C:\\src\\distil\\.venv-genai\\Scripts\\python.exe -u C:\\src\\distil\\pc\\run_asr_genai.py --model-dir C:\\src\\distil\\exports\\distil-large-v3-genai-fp32-cpu --ep openvino --ov-device GPU --encoder-ep same --langs en_us --set S150 --fixtures C:\\src\\distil\\fixtures --out C:\\src\\distil\\runs\\distil-s1c\\distil-large-v3\\genai-fp32_whole-igpu\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  19792,
+                   "enginePath":  "C:\\src\\distil\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+                   "elapsedSeconds":  45.952,
+                   "peakWorkingSetBytes":  4151152640,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x00012799":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x00011F23":  {
+                                                                    "shared":  2490,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x00013D59":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P0, 12577 MHz, 14001 MHz, 18.05 W, 0 %, 0 MiB, 48",
+                                         "10s P0, 1687 MHz, 14001 MHz, 18.06 W, 0 %, 0 MiB, 49",
+                                         "15s P0, 4312 MHz, 14001 MHz, 17.86 W, 0 %, 0 MiB, 49",
+                                         "20s P0, 4417 MHz, 14001 MHz, 18.00 W, 0 %, 0 MiB, 50",
+                                         "25s P0, 23842 MHz, 14001 MHz, 18.14 W, 0 %, 0 MiB, 51",
+                                         "30s P0, 1800 MHz, 14001 MHz, 18.06 W, 0 %, 0 MiB, 51",
+                                         "35s P0, 5017 MHz, 14001 MHz, 18.33 W, 0 %, 0 MiB, 51",
+                                         "40s P0, 15585 MHz, 14001 MHz, 18.18 W, 0 %, 0 MiB, 52",
+                                         "45s P0, 6322 MHz, 14001 MHz, 18.54 W, 0 %, 0 MiB, 52"
+                                     ]
+               },
+    "selectedAdapter":  null,
+    "after":  {
+                  "load":  {
+                               "cpu":  1.8,
+                               "build_ms":  0,
+                               "top":  [
+                                           "System 4 0.26 core",
+                                           "powershell 12484 0.02 core",
+                                           "svchost 5252 0.02 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 17700 MHz, 14001 MHz, 18.48 W, 0 %, 0 MiB, 52"
+              },
+    "end":  "2026-11-12T20:18:39.7041775+09:00",
+    "tries":  1
+}

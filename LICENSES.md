@@ -22,6 +22,7 @@ pinned revisions.
 | OpenVINO/Kokoro-82M-int8-ov | 9c035d0b | apache-2.0 | OpenVINO GenAI cells |
 | onnx-community/Kokoro-82M-v1.0-ONNX | 1939ad2a | apache-2.0 | ONNX Runtime cells |
 | hexgrad/Kokoro-82M | f3ff3571 | apache-2.0 | PyTorch reference |
+| distil-whisper/distil-large-v3 | 8031d2e6 | mit (read 2026-11-12) | ORT GenAI builder export, transformers reference |
 
 ## Packages (PyPI, pinned in pc/req/)
 

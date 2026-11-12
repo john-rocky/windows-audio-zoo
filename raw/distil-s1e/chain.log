@@ -1,0 +1,14 @@
+[2026-11-12T21:58:31.8970449+09:00] chain start: plan C:\src\distil\pc\plans\distil-s1e.json mode timed, 4 units, pid 11612
+[2026-11-12T21:58:40.8667512+09:00] adapters: 0x00000000_0x00012799=nvidia, 0x00000000_0x00011F23=intel-gpu, 0x00000000_0x00013D59=npu?, 0x00000000_0x00012767=?
+[2026-11-12T21:58:40.9860710+09:00] settle 180 s inside the lock before the control rows
+[2026-11-12T22:01:48.7808682+09:00] control-warm run 1 start
+[2026-11-12T22:03:29.5471718+09:00] control-warm run 1 end: exit 0, OK, 98.665 s
+[2026-11-12T22:03:57.0209049+09:00] control-head run 1 start
+[2026-11-12T22:05:38.7474541+09:00] control-head run 1 end: exit 0, OK, 99.687 s
+[2026-11-12T22:05:38.7934592+09:00] control head: rtf 0.26293 vs known 0.26692 (plan): off 1.5 %
+[2026-11-12T22:06:06.3065724+09:00] distil-large-v3/genai-int8_encnpustatic_ovcpu-npu run 1 start
+[2026-11-12T22:11:19.9032508+09:00] distil-large-v3/genai-int8_encnpustatic_ovcpu-npu run 1 end: exit 0, OK, 311.628 s
+[2026-11-12T22:13:57.3649991+09:00] control-tail run 1 start
+[2026-11-12T22:15:37.8311153+09:00] control-tail run 1 end: exit 0, OK, 98.487 s
+[2026-11-12T22:15:37.8431150+09:00] control tail: rtf 0.26032: PASS (tail off 2.5 %)
+[2026-11-12T22:15:37.8608693+09:00] chain done: OK

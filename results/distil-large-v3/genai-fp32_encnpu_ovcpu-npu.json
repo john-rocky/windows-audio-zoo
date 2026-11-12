@@ -1,0 +1,53 @@
+{
+ "cell": "distil-large-v3/genai-fp32_encnpu_ovcpu-npu",
+ "model": "distil-large-v3",
+ "runtime": "ONNX Runtime GenAI 0.19.0",
+ "form": "fp32_encnpu_ovcpu",
+ "device": "npu",
+ "device_name": "Intel NPU",
+ "set": null,
+ "mode": "first",
+ "sitting": "distil-lev4",
+ "run_start": "2026-11-12T21:09:36.2979637+09:00",
+ "run_end": "2026-11-12T21:09:50.2725753+09:00",
+ "status": "CRASH",
+ "record": {
+  "run": null,
+  "meta": "raw/distil-lev4/distil-large-v3/genai-fp32_encnpu_ovcpu-npu/run1.meta.json",
+  "chain_log": "raw/distil-lev4/chain.log"
+ },
+ "error": "no runner JSON: exit 0xC0000005 after 12 s",
+ "versions": null,
+ "load_s": null,
+ "summary": null,
+ "gate": null,
+ "power": {
+  "msiUserScenarioMode": 2,
+  "overlayAc": "00000000-0000-0000-0000-000000000000",
+  "overlayDc": "00000000-0000-0000-0000-000000000000",
+  "battery": "status 2, 95 %"
+ },
+ "desktop_locked": true,
+ "engine": {
+  "elapsedSeconds": 11.815,
+  "peakWorkingSetBytes": 5434363904,
+  "gpuMiBPeak": {
+   "0x00000000_0x00012799": {
+    "shared": 0,
+    "dedicated": 0
+   },
+   "0x00000000_0x00011F23": {
+    "shared": 23,
+    "dedicated": 0
+   },
+   "0x00000000_0x00013D59": {
+    "shared": 0,
+    "dedicated": 0
+   }
+  },
+  "exitCode": -1073741819,
+  "timedOut": false,
+  "suspendedSeconds": 0
+ },
+ "tries": 1
+}

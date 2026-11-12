@@ -1,0 +1,59 @@
+{
+ "runner": "run_asr_genai.py",
+ "started": "2026-11-12T21:33:00.558475+09:00",
+ "argv": [
+  "--model-dir",
+  "C:\\src\\distil\\exports\\distil-large-v3-genai-fp32-openvino-npu",
+  "--ep",
+  "config",
+  "--langs",
+  "en_us",
+  "--set",
+  "S150",
+  "--fixtures",
+  "C:\\src\\distil\\fixtures",
+  "--out",
+  "C:\\src\\distil\\runs\\distil-lev5\\distil-large-v3\\genai-fp32_openvino-npu\\run1.json"
+ ],
+ "pid": 4608,
+ "status": "ERROR",
+ "power_throttling": {
+  "execution_speed_throttling": "off (High QoS)",
+  "set_ok": true,
+  "error": 0,
+  "s_after_audiolib_import": 0.001
+ },
+ "rows": [],
+ "versions": {
+  "python": "3.12.16",
+  "onnxruntime-genai": "0.19.0",
+  "onnxruntime": "1.31.1",
+  "onnxruntime-ep-openvino": "1.8.1",
+  "onnxruntime-ep-webgpu": "0.5.0",
+  "numpy": "2.5.4"
+ },
+ "cuda_dll_dirs": [],
+ "config_providers": {
+  "encoder": [
+   {
+    "OpenVINO": {
+     "device_type": "NPU",
+     "reshape_input": "audio_features[1,128,3000]"
+    }
+   }
+  ],
+  "decoder": [
+   {
+    "OpenVINO": {
+     "device_type": "NPU",
+     "reshape_input": "input_ids[1,1..448],past_key_self_0[1,20,0..448,64],past_key_self_1[1,20,0..448,64],past_value_self_0[1,20,0..448,64],past_value_self_1[1,20,0..448,64],past_key_cross_0[1,20,1500,64],past_key_cross_1[1,20,1500,64],past_value_cross_0[1,20,1500,64],past_value_cross_1[1,20,1500,64]"
+    }
+   }
+  ]
+ },
+ "error": "Traceback (most recent call last):\n  File \"C:\\src\\distil\\pc\\run_asr_genai.py\", line 147, in main\n    model = make_model(og, args, rec)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\src\\distil\\pc\\run_asr_genai.py\", line 95, in make_model\n    return og.Model(og.Config(args.model_dir))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Exception from src\\inference\\src\\cpp\\core.cpp:120:\nException from src\\inference\\src\\dev\\plugin.cpp:54:\nException from src\\plugins\\intel_npu\\src\\plugin\\src\\plugin.cpp:560:\nException from src\\plugins\\intel_npu\\src\\compiler_adapter\\src\\compiler_impl.cpp:323:\nCompilation failed. vclAllocatedExecutableCreate4 result: 0x78000004 - [NPU_VCL] Compiler returned msg:\nCan't compute total shape size on dynamic shape\n\n\n\n\n",
+ "peak_working_set_bytes": 9282064384,
+ "peak_pagefile_bytes": 7213355008,
+ "ended": "2026-11-12T21:36:35.863429+09:00",
+ "process_s": 215.306
+}

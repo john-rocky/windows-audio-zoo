@@ -1,0 +1,54 @@
+[
+ {
+  "name": "patch-genai-whisper",
+  "exe": "py",
+  "args": [
+   "{ROOT}\\pc\\patch_genai_whisper.py"
+  ],
+  "timeout_min": 5,
+  "venv": "ref",
+  "stop_on_fail": true
+ },
+ {
+  "name": "genai-distil-int4-cpu",
+  "exe": "py",
+  "args": [
+   "-m",
+   "onnxruntime_genai.models.builder",
+   "-i",
+   "{ROOT}\\models\\distil-whisper__distil-large-v3",
+   "-o",
+   "{ROOT}\\exports\\distil-large-v3-genai-int4-cpu",
+   "-p",
+   "int4",
+   "-e",
+   "cpu",
+   "-c",
+   "{ROOT}\\exports\\cache-genai"
+  ],
+  "timeout_min": 40,
+  "venv": "ref",
+  "ram_gb": 8
+ },
+ {
+  "name": "genai-distil-int4-cuda",
+  "exe": "py",
+  "args": [
+   "-m",
+   "onnxruntime_genai.models.builder",
+   "-i",
+   "{ROOT}\\models\\distil-whisper__distil-large-v3",
+   "-o",
+   "{ROOT}\\exports\\distil-large-v3-genai-int4-cuda",
+   "-p",
+   "int4",
+   "-e",
+   "cuda",
+   "-c",
+   "{ROOT}\\exports\\cache-genai"
+  ],
+  "timeout_min": 40,
+  "venv": "ref",
+  "ram_gb": 8
+ }
+]

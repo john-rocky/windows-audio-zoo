@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\src\distil\pc\run_asr_genai.py", line 157, in main
+    _, ws, _, _ = run(al.warmup_wav(args.fixtures), "en_us")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\src\distil\pc\run_asr_genai.py", line 142, in run
+    gen = og.Generator(model, params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Graph capture is not supported with past_present_share_buffer set to false.
+

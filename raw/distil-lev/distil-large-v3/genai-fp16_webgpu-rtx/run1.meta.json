@@ -1,0 +1,83 @@
+{
+    "cell":  "distil-large-v3/genai-fp16_webgpu-rtx",
+    "device":  "rtx",
+    "role":  null,
+    "run":  1,
+    "mode":  "first",
+    "sitting":  "distil-lev",
+    "start":  "2026-11-12T19:55:26.2300370+09:00",
+    "osBuild":  "26200.9711",
+    "desktopLocked":  true,
+    "power":  {
+                  "msiUserScenarioMode":  2,
+                  "overlayAc":  "00000000-0000-0000-0000-000000000000",
+                  "overlayDc":  "00000000-0000-0000-0000-000000000000",
+                  "battery":  "status 2, 95 %"
+              },
+    "gate":  null,
+    "before":  {
+                   "load":  {
+                                "cpu":  12.8,
+                                "build_ms":  0,
+                                "top":  [
+                                            "java 3744 1.03 core",
+                                            "System 4 0.55 core",
+                                            "python 13692 0.14 core",
+                                            "OneDrive.Sync.Service 12824 0.11 core",
+                                            "WmiPrvSE 7980 0.11 core"
+                                        ]
+                            },
+                   "nvidia":  "P0, 5100 MHz, 14001 MHz, 18.91 W, 0 %, 0 MiB, 55",
+                   "availGB":  20.2
+               },
+    "command":  "C:\\src\\distil\\.venv-genai\\Scripts\\python.exe -u C:\\src\\distil\\pc\\run_asr_genai.py --model-dir C:\\src\\distil\\exports\\distil-large-v3-genai-fp16-webgpu --ep webgpu --ep-option adapterIndex=0 --encoder-ep same --langs en_us --set S150 --fixtures C:\\src\\distil\\fixtures --out C:\\src\\distil\\runs\\distil-lev\\distil-large-v3\\genai-fp16_webgpu-rtx\\run1.json",
+    "engine":  {
+                   "exitCode":  0,
+                   "timedOut":  false,
+                   "yielded":  false,
+                   "suspendedSeconds":  0,
+                   "suspensions":  0,
+                   "enginePid":  488,
+                   "enginePath":  "C:\\src\\distil\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+                   "elapsedSeconds":  29.377,
+                   "peakWorkingSetBytes":  1095168000,
+                   "gpuMiBPeak":  {
+                                      "0x00000000_0x00012799":  {
+                                                                    "shared":  66,
+                                                                    "dedicated":  1820
+                                                                },
+                                      "0x00000000_0x00011F23":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                },
+                                      "0x00000000_0x00012767":  {
+                                                                    "shared":  0,
+                                                                    "dedicated":  0
+                                                                }
+                                  },
+                   "nvidiaSamples":  [
+                                         "5s P4, 1702 MHz, 9001 MHz, 20.63 W, 5 %, 1778 MiB, 55",
+                                         "10s P4, 1890 MHz, 9001 MHz, 109.33 W, 96 %, 1816 MiB, 66",
+                                         "15s P2, 1582 MHz, 11001 MHz, 86.38 W, 100 %, 1820 MiB, 67",
+                                         "20s P2, 1455 MHz, 11001 MHz, 73.51 W, 100 %, 1820 MiB, 69",
+                                         "25s P2, 1687 MHz, 11001 MHz, 92.52 W, 100 %, 1820 MiB, 70"
+                                     ]
+               },
+    "selectedAdapter":  null,
+    "after":  {
+                  "load":  {
+                               "cpu":  13.9,
+                               "build_ms":  0,
+                               "top":  [
+                                           "java 3744 1.09 core",
+                                           "System 4 0.44 core",
+                                           "python 14128 0.16 core",
+                                           "OneDrive.Sync.Service 12824 0.12 core",
+                                           "WmiPrvSE 7980 0.08 core"
+                                       ]
+                           },
+                  "nvidia":  "P0, 1387 MHz, 14001 MHz, 20.54 W, 0 %, 0 MiB, 62"
+              },
+    "end":  "2026-11-12T19:55:57.5402205+09:00",
+    "tries":  1
+}

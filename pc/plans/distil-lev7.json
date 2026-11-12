@@ -1,0 +1,95 @@
+{
+ "sitting": "distil-lev7",
+ "made": "2026-11-12T22:08:25+09:00",
+ "mode": "first",
+ "units": [
+  {
+   "cell": "distil-large-v3/genai-int8_encnpustatic_ovgpu-npu",
+   "venv": "genai",
+   "script": "run_asr_genai.py",
+   "device": "npu",
+   "ram_need_gb": 6,
+   "timeout_min": 30,
+   "engines_gate": false,
+   "args": [
+    "--model-dir",
+    "{ROOT}\\exports\\distil-large-v3-genai-int8-openvino-encnpu-gpu",
+    "--ep",
+    "config",
+    "--langs",
+    "en_us",
+    "--set",
+    "S150",
+    "--fixtures",
+    "{FIX}"
+   ]
+  },
+  {
+   "cell": "distil-large-v3/genai-fp16_sharebuf-rtx",
+   "venv": "genai-cuda",
+   "script": "run_asr_genai.py",
+   "device": "rtx",
+   "ram_need_gb": 6,
+   "timeout_min": 15,
+   "engines_gate": false,
+   "args": [
+    "--model-dir",
+    "{ROOT}\\exports\\distil-large-v3-genai-fp16-cuda-sharebuf",
+    "--ep",
+    "cuda",
+    "--langs",
+    "en_us",
+    "--set",
+    "S150",
+    "--fixtures",
+    "{FIX}"
+   ]
+  },
+  {
+   "cell": "distil-large-v3/genai-fp16_sharebufcg-rtx",
+   "venv": "genai-cuda",
+   "script": "run_asr_genai.py",
+   "device": "rtx",
+   "ram_need_gb": 6,
+   "timeout_min": 15,
+   "engines_gate": false,
+   "args": [
+    "--model-dir",
+    "{ROOT}\\exports\\distil-large-v3-genai-fp16-cuda-sharebuf",
+    "--ep",
+    "cuda",
+    "--ep-option",
+    "enable_cuda_graph=1",
+    "--langs",
+    "en_us",
+    "--set",
+    "S150",
+    "--fixtures",
+    "{FIX}"
+   ]
+  },
+  {
+   "cell": "distil-large-v3/genai-fp16_sharebufsdpa1-rtx",
+   "venv": "genai-cuda",
+   "script": "run_asr_genai.py",
+   "device": "rtx",
+   "ram_need_gb": 6,
+   "timeout_min": 15,
+   "engines_gate": false,
+   "args": [
+    "--model-dir",
+    "{ROOT}\\exports\\distil-large-v3-genai-fp16-cuda-sharebuf",
+    "--ep",
+    "cuda",
+    "--ep-option",
+    "sdpa_kernel=1",
+    "--langs",
+    "en_us",
+    "--set",
+    "S150",
+    "--fixtures",
+    "{FIX}"
+   ]
+  }
+ ]
+}
