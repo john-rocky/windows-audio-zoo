@@ -1,6 +1,6 @@
 #!/bin/bash
 # One timed Z3 sitting on the PC, from the Mac:
-#   1. wait on the Mac (the shared feed, ~/code/standup/tools/winpc/busy_now.sh, every 10 s, no ssh) until busy.txt
+#   1. wait on the Mac (the lock feed: PC_FEED_CMD, as in tools/pc.sh; every 10 s, no ssh) until busy.txt
 #      has been free for 60 s in a row
 #   2. the Z3 lock ("Z3 timing: sitting <plan> ... until HH:MM") and the lane's quiet gate (3 x 5 s under 15 % CPU,
 #      RTX empty, build tools quiet; at most 10 min, else the lock goes back and the sitting waits 10 min)
@@ -16,6 +16,7 @@
 # Log: raw/<plan>.sitting.log. Exit 1 when the lock, the gate or the chain failed (the lock is released on every exit).
 set -uo pipefail
 K="$(cd "$(dirname "$0")/.." && pwd)"
+: "${PC_FEED_CMD:?set PC_FEED_CMD to the command that prints the PC lock feed (tools/pc.sh header)}"
 plan="$1"; shift || true
 resume=0; waith=12
 while (( $# )); do
@@ -43,7 +44,7 @@ fi
 until_hm=$(date -r "$end_s" +%H:%M 2>/dev/null || date -d "@$end_s" +%H:%M)
 
 free_for() {  # seconds busy.txt has been free in the feed, 0 when held (or the feed is stale)
-  local f l; f=$(bash ~/code/standup/tools/winpc/busy_now.sh 2>/dev/null) || { echo 0; return; }
+  local f l; f=$(bash -c "$PC_FEED_CMD" 2>/dev/null) || { echo 0; return; }
   l=$(printf '%s\n' "$f" | awk '$3=="BUSY"' | tail -n 1)
   read -r ts _ kind what _ <<< "$l"
   if [[ "$kind" != "BUSY" || "$what" != "none" ]]; then echo 0; return; fi
@@ -51,7 +52,7 @@ free_for() {  # seconds busy.txt has been free in the feed, 0 when held (or the 
 }
 
 ours_now() {  # the feed's lock is Z3's own (the first-pass block of Z3's slot runs right before the sitting)
-  bash ~/code/standup/tools/winpc/busy_now.sh 2>/dev/null | awk '$3=="BUSY"' | tail -n 1 | grep -q " BUSY ${Z3_LABEL:-Z3} "
+  bash -c "$PC_FEED_CMD" 2>/dev/null | awk '$3=="BUSY"' | tail -n 1 | grep -q " BUSY ${Z3_LABEL:-Z3} "
 }
 
 take() {

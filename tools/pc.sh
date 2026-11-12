@@ -1,10 +1,14 @@
 #!/bin/bash
 # Mac-side calls to the PC (ssh winpc; its default shell is PowerShell), one SSH connection per call.
-# Before every connection it reads the shared lock feed on the Mac (~/code/standup/tools/winpc/busy_now.sh, no ssh):
+# Before every connection it reads the PC's lock feed on the Mac, with the command in PC_FEED_CMD (no ssh):
 # another lane's "timing:" lock, or a feed older than 3 min, refuses the call (exit 3). Z3_FORCE=1 skips the read
 # (tools/sitting.sh inside Z3's own lock; `wait` never reads it: it is the one long connection of a running job).
 # Z3_LABEL=<lane> (default Z3): the lane name this repo's lock and notes start with, the same name as <PC folder>\label.txt
 # (a later lane running these scripts, Z3b on 11-10); tools/sitting.sh and mtools/ read their own lock by it.
+# PC_FEED_CMD=<command>: prints the PC's lock state, a line `<ISO time> <HH:MM:SS> BUSY <holder, or none when free>
+# [<lock text>]` (the last BUSY line counts; other lines are not read), and exits non-zero when that state is stale or
+# missing. This repo has no such command; tools/sitting.sh and mtools/ run the same one and stop at their start
+# without it.
 #
 #   pc.sh status                      busy.txt, the active\ and yield\ notes, free disk
 #   pc.sh ps                          run the PowerShell read from stdin (-EncodedCommand)
@@ -23,7 +27,8 @@ R="${Z3_PC_ROOT:-C:\\src\\audiozoo}"   # the PC folder (README walk: another emp
 RF="${R//\\//}"                        # the same with forward slashes (ssh tar)
 
 if [[ -z "${Z3_FORCE:-}" && "${1:-}" != "wait" ]]; then
-  feed=$(bash ~/code/standup/tools/winpc/busy_now.sh 2>&1) || { echo "REFUSED (lock feed stale or missing): $feed" >&2; exit 3; }
+  [[ -n "${PC_FEED_CMD:-}" ]] || { echo "REFUSED (PC_FEED_CMD is not set: the command that prints the PC lock feed, this file's header)" >&2; exit 3; }
+  feed=$(bash -c "$PC_FEED_CMD" 2>&1) || { echo "REFUSED (lock feed stale or missing): $feed" >&2; exit 3; }
   busy=$(printf '%s\n' "$feed" | awk '$3=="BUSY"' | tail -n 1)
   if [[ "$busy" == *"timing:"* && "$busy" != *" BUSY ${Z3_LABEL:-Z3} "* ]]; then
     echo "REFUSED (another lane's timing lock): ${busy}" >&2

@@ -10,13 +10,14 @@
 # Log: raw/<sitting>.endby_guard.log.
 set -uo pipefail
 K="$(cd "$(dirname "$0")/.." && pwd)"
+: "${PC_FEED_CMD:?set PC_FEED_CMD to the command that prints the PC lock feed (tools/pc.sh header)}"
 cd "$K"
 sit="${1:?sitting}"; at="${2:?HH:MM:SS}"; dry="${3:-}"
 R="${Z3_PC_ROOT:-C:\\src\\audiozoo}"
 log="$K/raw/$sit.endby_guard.log"
 say() { echo "[$(date '+%F %T %Z')] $*" | tee -a "$log"; }
 done_on_mac() { grep -q "sitting $sit end:" "raw/$sit.sitting.log" 2>/dev/null; }
-last_busy() { bash ~/code/standup/tools/winpc/busy_now.sh 2>/dev/null | awk '$3=="BUSY"' | tail -n 1; }
+last_busy() { bash -c "$PC_FEED_CMD" 2>/dev/null | awk '$3=="BUSY"' | tail -n 1; }
 
 say "guard for sitting $sit armed: acts at $at if its chain has not ended"
 while [[ "$(date +%H:%M:%S)" < "$at" ]]; do

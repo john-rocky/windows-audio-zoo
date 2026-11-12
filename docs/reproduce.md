@@ -11,11 +11,11 @@ suspended process would keep its RAM). A step over 8 GB takes the PC's lock once
 PC's order gives it.
 
 `Z3` is this repo's label on the shared PC (its lock text and notes) and in the scripts' environment variables.
-What the walk needs from outside this repo: the shared PC's lock feed on the Mac,
-`~/code/standup/tools/winpc/busy_now.sh` (not part of this repo). `tools/pc.sh` reads it before every connection
-and refuses without it (`Z3_FORCE=1` skips the read); `tools/sitting.sh` and four scripts in `mtools/`
-(`sittings_run.sh`, `retake_after.sh`, `endby_guard.sh`, `wait_free.sh`) wait on it, and without it a timed
-sitting waits forever. Step 7 scores with a Python that has openai-whisper 20250625 (`Z3_SCORE_PY`).
+What the walk needs from outside this repo: a command on the Mac that prints the shared PC's lock feed, named in
+`PC_FEED_CMD` (its output is described in `tools/pc.sh`'s header; this repo has no such command). `tools/pc.sh` runs
+it before every connection and refuses without it (`Z3_FORCE=1` skips the read); `tools/sitting.sh` and four
+scripts in `mtools/` (`sittings_run.sh`, `retake_after.sh`, `endby_guard.sh`, `wait_free.sh`) wait on it and stop
+at their start without it. Step 7 scores with a Python that has openai-whisper 20250625 (`Z3_SCORE_PY`).
 
 ```bash
 export Z3_PC_ROOT='C:\src\audiozoo'

@@ -28,6 +28,7 @@
 # Log: raw/sittings_run.log; each sitting's own log is raw/<s>.sitting.log.
 set -uo pipefail
 K="$(cd "$(dirname "$0")/.." && pwd)"
+: "${PC_FEED_CMD:?set PC_FEED_CMD to the command that prints the PC lock feed (tools/pc.sh header)}"
 cd "$K"
 after=""; from="s1"; slots=""; endby=""; leftname=""; notbefore=""; ownhead=0; afterquiet=0; nowindows=0
 while (( $# )); do
@@ -43,7 +44,7 @@ log="$K/raw/sittings_run.log"
 leftf="$K/raw/left_cells.txt"
 R="${Z3_PC_ROOT:-C:\\src\\audiozoo}"
 say() { echo "[$(date '+%F %T %Z')] $*" | tee -a "$log"; }
-last_busy() { bash ~/code/standup/tools/winpc/busy_now.sh 2>/dev/null | awk '$3=="BUSY"' | tail -n 1; }
+last_busy() { bash -c "$PC_FEED_CMD" 2>/dev/null | awk '$3=="BUSY"' | tail -n 1; }
 plan() {  # plan <only> [known] [cells]
   local a=(python3 tools/sittings.py --first "$FIRST" --only "$1")
   [[ -n "${2:-}" ]] && a+=(--known "$2")
@@ -56,7 +57,7 @@ plan() {  # plan <only> [known] [cells]
 feed_free() {  # feed_free <what>: wait (feed only, at most 60 min) until no other lane holds a timing lock
   local i feed b
   for i in $(seq 1 120); do
-    if ! feed=$(bash ~/code/standup/tools/winpc/busy_now.sh 2>/dev/null); then
+    if ! feed=$(bash -c "$PC_FEED_CMD" 2>/dev/null); then
       (( i == 1 )) && say "feed stale: $1 waits"; sleep 30; continue
     fi
     b=$(printf '%s\n' "$feed" | awk '$3=="BUSY"' | tail -n 1)

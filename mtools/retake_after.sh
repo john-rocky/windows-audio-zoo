@@ -7,9 +7,10 @@
 #   mtools/retake_after.sh "<what>" [wait min, default 20]
 set -uo pipefail
 K="$(cd "$(dirname "$0")/.." && pwd)"
+: "${PC_FEED_CMD:?set PC_FEED_CMD to the command that prints the PC lock feed (tools/pc.sh header)}"
 what="$1"; waitmin="${2:-20}"
 say() { echo "[$(date '+%F %T %Z')] $*"; }
-last_busy() { bash ~/code/standup/tools/winpc/busy_now.sh 2>/dev/null | awk '$3=="BUSY"' | tail -n 1; }
+last_busy() { bash -c "$PC_FEED_CMD" 2>/dev/null | awk '$3=="BUSY"' | tail -n 1; }
 free_for() {  # seconds busy.txt has been free in the feed, 0 when held
   last_busy | python3 -c "
 import sys, datetime as d
